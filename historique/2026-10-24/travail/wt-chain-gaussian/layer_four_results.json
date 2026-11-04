@@ -1,0 +1,15 @@
+{
+  "seed": 2026102435,
+  "training_samples": 160,
+  "validation_samples": 160,
+  "parameters": 32,
+  "ansatz": "data-dependent affine diagonal plus constant rank-eight endpoint-affine skew update",
+  "runs": [
+    {"start": 0, "evaluations": 232, "training_l2": 125.36997898270815, "validation_l2": 279.9417537963075},
+    {"start": 1, "evaluations": 222, "training_l2": 117.82235962928175, "validation_l2": 220.75011362096154},
+    {"start": 2, "evaluations": 250, "training_l2": 122.37392666708632, "validation_l2": 196.11376934824673}
+  ],
+  "exact_construction_found": false,
+  "is_impossibility_proof": false,
+  "is_frozen_development_evaluation": false
+}

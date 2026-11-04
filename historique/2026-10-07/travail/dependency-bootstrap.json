@@ -1,0 +1,8 @@
+{
+  "mathlib_tag": "v4.34.1",
+  "mathlib_archive_sha256": "c586ce5d3f83f85903826b613347b81e9eb6da885ecbbf22f72b2a3197a2904e",
+  "git_tag": "v2.56.0.windows.2",
+  "git_asset": "MinGit-2.56.0.2-64-bit.zip",
+  "git_asset_sha256": "da35e72aa21c005a5a0d298cfbae110bc1609a815730ea0dde84b01a1b3cd3be",
+  "git_release_digest": "sha256:da35e72aa21c005a5a0d298cfbae110bc1609a815730ea0dde84b01a1b3cd3be"
+}

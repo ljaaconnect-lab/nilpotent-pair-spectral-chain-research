@@ -1,0 +1,36 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fusion-ntt\\TerminalDifference.lean",
+  "version": 15,
+  "completed": true,
+  "seconds": 0.468,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 8,
+          "line": 36
+        },
+        "start": {
+          "character": 4,
+          "line": 36
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase cons\nR : Type u_1\ninst✝ : Semiring R\np : R[X]\nps : List R[X]\nih : (∀ p ∈ ps, p.coeff 0 = 0) → ps.prod.coeff ps.length = (List.map (fun p => p.coeff 1) ps).prod\nhz : ∀ p_1 ∈ p :: ps, p_1.coeff 0 = 0\n⊢ ∑ x ∈ Finset.antidiagonal (ps.length + 1), p.coeff x.1 * ps.prod.coeff x.2 =\n    p.coeff 1 * (List.map (fun p => p.coeff 1) ps).prod",
+      "range": {
+        "end": {
+          "character": 8,
+          "line": 36
+        },
+        "start": {
+          "character": 4,
+          "line": 36
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "node": "n76",
+  "source": "AtomicSecondPrefix.lean",
+  "domain": "Every natural n including0 and every commutative ring R",
+  "leaves": {
+    "B1": "Finite distributivity on arbitrary H subset Fin n",
+    "B2": "Actual erase-j inner sum equals full product of sums minus its diagonal",
+    "B3": "The actual seed+two-insertion subset table, summed with (-1)^(U.card+J.card) on the available J powerset, equals the signed B2 expression; support cardinality2 is explicitly proved",
+    "B4": "Explicit initialized row, row, pointwise-product vectors and three totals recover that actual response via complements"
+  },
+  "table_definition": "ActualClosedSubsetTransfer.state: seed delta_empty, step sum_j_in_U row_j*previous(U.erase j)",
+  "baseline_import": "Independent audited n73 olean, no dependency compilation",
+  "compiler_cap": 3,
+  "compiler_authorization": "Coordinator explicitly authorized after SchurComplement build",
+  "score": "Four exact leaves plus complete source exit0 and standard axiom audits; root remains0",
+  "initialization_gates": "n multiplications +3*max(n-1,0) additions",
+  "query_gates": "O(n) for a specified J, three subtraction sums, product, diagonal subtraction and known sign literal",
+  "ordinary_constants": "0,1,-1; no nonconstant division",
+  "forbidden_claims": ["free all-f contraction", "polynomial all-prefix closure", "unknown target input", "root conjecture proved"]
+}

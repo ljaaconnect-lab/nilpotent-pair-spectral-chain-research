@@ -1,0 +1,38 @@
+{
+  "scope": "Finite exact development checks only; all general statements remain unverified by Lean.",
+  "checks": {
+    "n2_central_pairing": true,
+    "base_2_injective_finite": true,
+    "n2_diagonal_pair_filter": true,
+    "base_3_injective_finite": true,
+    "n3_diagonal_pair_filter": true,
+    "base_4_injective_finite": true,
+    "n4_diagonal_pair_filter": true
+  },
+  "passed": 7,
+  "total": 7,
+  "labels": [
+    {
+      "n": 2,
+      "K": 3,
+      "assignment_count": 4,
+      "permutation_pairs": 4,
+      "bad_pairs": 0
+    },
+    {
+      "n": 3,
+      "K": 26,
+      "assignment_count": 27,
+      "permutation_pairs": 36,
+      "bad_pairs": 0
+    },
+    {
+      "n": 4,
+      "K": 255,
+      "assignment_count": 256,
+      "permutation_pairs": 576,
+      "bad_pairs": 0
+    }
+  ],
+  "n2_H": "-alpha*t**4 + alpha*t**3 + beta*t**3 - beta*t**2"
+}

@@ -1,0 +1,27 @@
+{
+  "node": "n73",
+  "artifact_goal": "ActualClosedSubsetTransfer.lean",
+  "target": "F0(U)=delta(U=empty), F(k+1)(U)=sum_(j in U) b(k,j) Fk(U.erase j); terminal full subset at k=n equals sum over permutations, then marked central target",
+  "root_statement_unchanged": true,
+  "root_credit": false,
+  "state_dimension": "2^n, explicitly exponential; not the polynomial family required by Conjecture 1.5",
+  "formal_invocation_cap": 8,
+  "counting": "Every candidate, diagnostic probe and new dependency compilation counts within both n73 cap 8 and shared continuation window 20",
+  "required_complete_claims": [
+    "Actual finite scalar initialization",
+    "All-n closed subset update",
+    "Exact injection-prefix invariant or equivalent actual polynomial coefficient invariant",
+    "Terminal equality to the true permutation sum and marked target"
+  ],
+  "development": "Actual compiler and #print axioms; no replacement numerical identity credited as all-n proof",
+  "test_boundary": "Fresh coordinator replay only if complete all-n baseline theorem compiled",
+  "forbidden": [
+    "No sorry/custom axioms/native_decide",
+    "No assumptions asserting closure or target identity",
+    "No arbitrary M,u,v substituted for the actual subset transfer",
+    "No root success for an exponential state family",
+    "No repeated generic matrix-compiler helper",
+    "No counterexample generation"
+  ],
+  "root_conjecture_verified": false
+}

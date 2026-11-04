@@ -1,0 +1,67 @@
+{
+  "status": "helper_bridge_verified",
+  "dev_score": 1.0,
+  "root_conjecture_verified": false,
+  "lean_verified": true,
+  "verified_scope": "Core algebraic helper lemmas, no root circuit-complexity assertion",
+  "source": "CoreBridge.lean",
+  "report_output": "verification-report.json",
+  "source_sha256": "2fbe2125ab53233e0d21165dcf8ed765eb0bb986d5ddb0a87dfb84c5003b2100",
+  "attempts": [
+    {
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n3\\CoreBridge.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'CollisionCoreBridge.decode_head' depends on axioms: [propext]\n'CollisionCoreBridge.decode_tail' depends on axioms: [propext]\n'CollisionCoreBridge.encodeDigits_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionCoreBridge.central_label_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionCoreBridge.orbit_stabilizes' depends on axioms: [propext]\n'CollisionCoreBridge.n2_pair_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionCoreBridge.n2_central_convolution' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "error_stack": [],
+  "compiler_version": {
+    "command": [
+      "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n",
+    "stderr": ""
+  },
+  "axiom_audit": {
+    "CollisionCoreBridge.decode_head": [
+      "propext"
+    ],
+    "CollisionCoreBridge.decode_tail": [
+      "propext"
+    ],
+    "CollisionCoreBridge.encodeDigits_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionCoreBridge.central_label_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionCoreBridge.orbit_stabilizes": [
+      "propext"
+    ],
+    "CollisionCoreBridge.n2_pair_factorization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionCoreBridge.n2_central_convolution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "accepted_trust_base": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}

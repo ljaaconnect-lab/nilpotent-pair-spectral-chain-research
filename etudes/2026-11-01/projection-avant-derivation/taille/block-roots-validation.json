@@ -1,0 +1,996 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "etudes/2026-11-01/projection-avant-derivation/direct_projection.py": "61da9626c023ca87db059a63f2845adbfb0a2f3db4d1762804b04cb18891ab19",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06",
+    "etudes/2026-11-01/projection-avant-derivation/taille/CROISSANCE_PROJECTION.md": "2a358fcf6d678b0e048ef173637b465aef44ad275391f2243f1736659ed065e8",
+    "etudes/2026-11-01/projection-avant-derivation/taille/verify_block_roots.py": "0962aa7edcb82c2dc69ec16d14a074e76ab2b472dc4af259064ba61c800fa20c"
+  },
+  "scope": "The exact immediate-projection compiler only; not a lower bound for all scalar circuits.",
+  "general_claim": "For n=2^k>=4, C_Y(n)>=binomial(n,n/2)>=2^(n/2).",
+  "compiler_uses_jet_tables": false,
+  "witnesses_are_external_checks_only": true,
+  "general_reachability_proof_formalized_in_lean": false,
+  "cases": [
+    {
+      "n": 4,
+      "m": 2,
+      "Q": 97,
+      "N": 8,
+      "labels": [
+        1,
+        4,
+        1,
+        0
+      ],
+      "status": "passed",
+      "final_scalar_gates": 110,
+      "allocated_compiler_nodes": 268,
+      "row_blocks": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "roots_per_family": 6,
+      "left_roots_reachable": 6,
+      "right_roots_reachable": 6,
+      "marked_products_reachable_through_additions": 6,
+      "witness_query_allocations": 0,
+      "separator_entries_per_family": 36,
+      "separator_checks_all_three_families": 108,
+      "final_output_separator_checks": 6,
+      "original_input_separator": "z=1; a_ij=0 on the chosen bijection, 22 elsewhere",
+      "queries": [
+        {
+          "columns": [
+            0,
+            1
+          ],
+          "left_root": 147,
+          "right_root": 250,
+          "product_root": 251,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            2
+          ],
+          "left_root": 183,
+          "right_root": 241,
+          "product_root": 242,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            3
+          ],
+          "left_root": 245,
+          "right_root": 187,
+          "product_root": 246,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            2
+          ],
+          "left_root": 201,
+          "right_root": 259,
+          "product_root": 260,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            3
+          ],
+          "left_root": 255,
+          "right_root": 197,
+          "product_root": 256,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            2,
+            3
+          ],
+          "left_root": 264,
+          "right_root": 156,
+          "product_root": 265,
+          "allocated_nodes": 0
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "m": 4,
+      "Q": 97,
+      "N": 16,
+      "labels": [
+        1,
+        4,
+        9,
+        0,
+        9,
+        4,
+        1,
+        0
+      ],
+      "status": "passed",
+      "final_scalar_gates": 2270,
+      "allocated_compiler_nodes": 6800,
+      "row_blocks": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7
+        ]
+      ],
+      "roots_per_family": 70,
+      "left_roots_reachable": 70,
+      "right_roots_reachable": 70,
+      "marked_products_reachable_through_additions": 70,
+      "witness_query_allocations": 0,
+      "separator_entries_per_family": 4900,
+      "separator_checks_all_three_families": 14700,
+      "final_output_separator_checks": 70,
+      "original_input_separator": "z=1; a_ij=0 on the chosen bijection, 22 elsewhere",
+      "queries": [
+        {
+          "columns": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "left_root": 1017,
+          "right_root": 6334,
+          "product_root": 6335,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            1,
+            2,
+            4
+          ],
+          "left_root": 1599,
+          "right_root": 6283,
+          "product_root": 6284,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            1,
+            2,
+            5
+          ],
+          "left_root": 2658,
+          "right_root": 6295,
+          "product_root": 6296,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            1,
+            2,
+            6
+          ],
+          "left_root": 4321,
+          "right_root": 6307,
+          "product_root": 6308,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            1,
+            2,
+            7
+          ],
+          "left_root": 6319,
+          "right_root": 4333,
+          "product_root": 6320,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "left_root": 1560,
+          "right_root": 6192,
+          "product_root": 6193,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            1,
+            3,
+            5
+          ],
+          "left_root": 2564,
+          "right_root": 6148,
+          "product_root": 6149,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            1,
+            3,
+            6
+          ],
+          "left_root": 4180,
+          "right_root": 6160,
+          "product_root": 6161,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            1,
+            3,
+            7
+          ],
+          "left_root": 6178,
+          "right_root": 4192,
+          "product_root": 6179,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            1,
+            4,
+            5
+          ],
+          "left_root": 2610,
+          "right_root": 6230,
+          "product_root": 6231,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            1,
+            4,
+            6
+          ],
+          "left_root": 4219,
+          "right_root": 6205,
+          "product_root": 6206,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            1,
+            4,
+            7
+          ],
+          "left_root": 6217,
+          "right_root": 4231,
+          "product_root": 6218,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            1,
+            5,
+            6
+          ],
+          "left_root": 4269,
+          "right_root": 6255,
+          "product_root": 6256,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            1,
+            5,
+            7
+          ],
+          "left_root": 6243,
+          "right_root": 4257,
+          "product_root": 6244,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            1,
+            6,
+            7
+          ],
+          "left_root": 6268,
+          "right_root": 2635,
+          "product_root": 6269,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "left_root": 1478,
+          "right_root": 5998,
+          "product_root": 5999,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            2,
+            3,
+            5
+          ],
+          "left_root": 2430,
+          "right_root": 5954,
+          "product_root": 5955,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            2,
+            3,
+            6
+          ],
+          "left_root": 3986,
+          "right_root": 5966,
+          "product_root": 5967,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            2,
+            3,
+            7
+          ],
+          "left_root": 5984,
+          "right_root": 3998,
+          "product_root": 5985,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            2,
+            4,
+            5
+          ],
+          "left_root": 2373,
+          "right_root": 5884,
+          "product_root": 5885,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "left_root": 3849,
+          "right_root": 5835,
+          "product_root": 5836,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            2,
+            4,
+            7
+          ],
+          "left_root": 5865,
+          "right_root": 3879,
+          "product_root": 5866,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            2,
+            5,
+            6
+          ],
+          "left_root": 3935,
+          "right_root": 5921,
+          "product_root": 5922,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            2,
+            5,
+            7
+          ],
+          "left_root": 5903,
+          "right_root": 3917,
+          "product_root": 5904,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            2,
+            6,
+            7
+          ],
+          "left_root": 5940,
+          "right_root": 2410,
+          "product_root": 5941,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            3,
+            4,
+            5
+          ],
+          "left_root": 2508,
+          "right_root": 6081,
+          "product_root": 6082,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            3,
+            4,
+            6
+          ],
+          "left_root": 4070,
+          "right_root": 6056,
+          "product_root": 6057,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            3,
+            4,
+            7
+          ],
+          "left_root": 6068,
+          "right_root": 4082,
+          "product_root": 6069,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            3,
+            5,
+            6
+          ],
+          "left_root": 4044,
+          "right_root": 6030,
+          "product_root": 6031,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            3,
+            5,
+            7
+          ],
+          "left_root": 6012,
+          "right_root": 4032,
+          "product_root": 6013,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            3,
+            6,
+            7
+          ],
+          "left_root": 6043,
+          "right_root": 2483,
+          "product_root": 6044,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            4,
+            5,
+            6
+          ],
+          "left_root": 4133,
+          "right_root": 6119,
+          "product_root": 6120,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            4,
+            5,
+            7
+          ],
+          "left_root": 6107,
+          "right_root": 4121,
+          "product_root": 6108,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            4,
+            6,
+            7
+          ],
+          "left_root": 6095,
+          "right_root": 2522,
+          "product_root": 6096,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            0,
+            5,
+            6,
+            7
+          ],
+          "left_root": 6133,
+          "right_root": 1531,
+          "product_root": 6134,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "left_root": 1713,
+          "right_root": 6599,
+          "product_root": 6600,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            2,
+            3,
+            5
+          ],
+          "left_root": 2838,
+          "right_root": 6561,
+          "product_root": 6562,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            2,
+            3,
+            6
+          ],
+          "left_root": 4587,
+          "right_root": 6573,
+          "product_root": 6574,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            2,
+            3,
+            7
+          ],
+          "left_root": 6585,
+          "right_root": 4599,
+          "product_root": 6586,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            2,
+            4,
+            5
+          ],
+          "left_root": 2799,
+          "right_root": 6509,
+          "product_root": 6510,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            2,
+            4,
+            6
+          ],
+          "left_root": 4498,
+          "right_root": 6484,
+          "product_root": 6485,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            2,
+            4,
+            7
+          ],
+          "left_root": 6496,
+          "right_root": 4510,
+          "product_root": 6497,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            2,
+            5,
+            6
+          ],
+          "left_root": 4548,
+          "right_root": 6534,
+          "product_root": 6535,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            2,
+            5,
+            7
+          ],
+          "left_root": 6522,
+          "right_root": 4536,
+          "product_root": 6523,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            2,
+            6,
+            7
+          ],
+          "left_root": 6547,
+          "right_root": 2824,
+          "product_root": 6548,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            3,
+            4,
+            5
+          ],
+          "left_root": 2738,
+          "right_root": 6418,
+          "product_root": 6419,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            3,
+            4,
+            6
+          ],
+          "left_root": 4407,
+          "right_root": 6393,
+          "product_root": 6394,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            3,
+            4,
+            7
+          ],
+          "left_root": 6405,
+          "right_root": 4419,
+          "product_root": 6406,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            3,
+            5,
+            6
+          ],
+          "left_root": 4381,
+          "right_root": 6367,
+          "product_root": 6368,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            3,
+            5,
+            7
+          ],
+          "left_root": 6349,
+          "right_root": 4369,
+          "product_root": 6350,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            3,
+            6,
+            7
+          ],
+          "left_root": 6380,
+          "right_root": 2713,
+          "product_root": 6381,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            4,
+            5,
+            6
+          ],
+          "left_root": 4470,
+          "right_root": 6456,
+          "product_root": 6457,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            4,
+            5,
+            7
+          ],
+          "left_root": 6444,
+          "right_root": 4458,
+          "product_root": 6445,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            4,
+            6,
+            7
+          ],
+          "left_root": 6432,
+          "right_root": 2752,
+          "product_root": 6433,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            1,
+            5,
+            6,
+            7
+          ],
+          "left_root": 6470,
+          "right_root": 1666,
+          "product_root": 6471,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "left_root": 2945,
+          "right_root": 6728,
+          "product_root": 6729,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            2,
+            3,
+            4,
+            6
+          ],
+          "left_root": 4717,
+          "right_root": 6703,
+          "product_root": 6704,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            2,
+            3,
+            4,
+            7
+          ],
+          "left_root": 6715,
+          "right_root": 4729,
+          "product_root": 6716,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            2,
+            3,
+            5,
+            6
+          ],
+          "left_root": 4691,
+          "right_root": 6677,
+          "product_root": 6678,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            2,
+            3,
+            5,
+            7
+          ],
+          "left_root": 6665,
+          "right_root": 4679,
+          "product_root": 6666,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            2,
+            3,
+            6,
+            7
+          ],
+          "left_root": 6690,
+          "right_root": 2920,
+          "product_root": 6691,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            2,
+            4,
+            5,
+            6
+          ],
+          "left_root": 4652,
+          "right_root": 6638,
+          "product_root": 6639,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            2,
+            4,
+            5,
+            7
+          ],
+          "left_root": 6626,
+          "right_root": 4640,
+          "product_root": 6627,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            2,
+            4,
+            6,
+            7
+          ],
+          "left_root": 6614,
+          "right_root": 2874,
+          "product_root": 6615,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            2,
+            5,
+            6,
+            7
+          ],
+          "left_root": 6652,
+          "right_root": 1736,
+          "product_root": 6653,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "left_root": 4793,
+          "right_root": 6779,
+          "product_root": 6780,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            3,
+            4,
+            5,
+            7
+          ],
+          "left_root": 6767,
+          "right_root": 4781,
+          "product_root": 6768,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            3,
+            4,
+            6,
+            7
+          ],
+          "left_root": 6755,
+          "right_root": 2968,
+          "product_root": 6756,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            3,
+            5,
+            6,
+            7
+          ],
+          "left_root": 6743,
+          "right_root": 1775,
+          "product_root": 6744,
+          "allocated_nodes": 0
+        },
+        {
+          "columns": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "left_root": 6794,
+          "right_root": 1106,
+          "product_root": 6795,
+          "allocated_nodes": 0
+        }
+      ]
+    }
+  ]
+}

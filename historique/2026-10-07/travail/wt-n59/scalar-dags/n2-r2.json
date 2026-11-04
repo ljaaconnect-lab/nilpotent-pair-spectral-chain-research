@@ -1,0 +1,248 @@
+{
+  "artifact_version": "n57-dense-scalar-compiler-v1",
+  "dimension": 2,
+  "exponent": 3,
+  "input_construction_cost": "Explicit hypothesis S",
+  "input_count": 8,
+  "instructions": [
+    "square",
+    "multiplyBase"
+  ],
+  "stages": [
+    {
+      "instruction": "square",
+      "node_start": 8,
+      "node_end_exclusive": 20,
+      "outputs": [
+        [
+          10,
+          13
+        ],
+        [
+          16,
+          19
+        ]
+      ]
+    },
+    {
+      "instruction": "multiplyBase",
+      "node_start": 20,
+      "node_end_exclusive": 32,
+      "outputs": [
+        [
+          22,
+          25
+        ],
+        [
+          28,
+          31
+        ]
+      ]
+    }
+  ],
+  "contraction_start": 32,
+  "nodes": [
+    {
+      "op": "input",
+      "name": "M[0,0]"
+    },
+    {
+      "op": "input",
+      "name": "M[0,1]"
+    },
+    {
+      "op": "input",
+      "name": "M[1,0]"
+    },
+    {
+      "op": "input",
+      "name": "M[1,1]"
+    },
+    {
+      "op": "input",
+      "name": "u[0]"
+    },
+    {
+      "op": "input",
+      "name": "u[1]"
+    },
+    {
+      "op": "input",
+      "name": "v[0]"
+    },
+    {
+      "op": "input",
+      "name": "v[1]"
+    },
+    {
+      "op": "mul",
+      "left": 0,
+      "right": 0
+    },
+    {
+      "op": "mul",
+      "left": 1,
+      "right": 2
+    },
+    {
+      "op": "add",
+      "left": 8,
+      "right": 9
+    },
+    {
+      "op": "mul",
+      "left": 0,
+      "right": 1
+    },
+    {
+      "op": "mul",
+      "left": 1,
+      "right": 3
+    },
+    {
+      "op": "add",
+      "left": 11,
+      "right": 12
+    },
+    {
+      "op": "mul",
+      "left": 2,
+      "right": 0
+    },
+    {
+      "op": "mul",
+      "left": 3,
+      "right": 2
+    },
+    {
+      "op": "add",
+      "left": 14,
+      "right": 15
+    },
+    {
+      "op": "mul",
+      "left": 2,
+      "right": 1
+    },
+    {
+      "op": "mul",
+      "left": 3,
+      "right": 3
+    },
+    {
+      "op": "add",
+      "left": 17,
+      "right": 18
+    },
+    {
+      "op": "mul",
+      "left": 10,
+      "right": 0
+    },
+    {
+      "op": "mul",
+      "left": 13,
+      "right": 2
+    },
+    {
+      "op": "add",
+      "left": 20,
+      "right": 21
+    },
+    {
+      "op": "mul",
+      "left": 10,
+      "right": 1
+    },
+    {
+      "op": "mul",
+      "left": 13,
+      "right": 3
+    },
+    {
+      "op": "add",
+      "left": 23,
+      "right": 24
+    },
+    {
+      "op": "mul",
+      "left": 16,
+      "right": 0
+    },
+    {
+      "op": "mul",
+      "left": 19,
+      "right": 2
+    },
+    {
+      "op": "add",
+      "left": 26,
+      "right": 27
+    },
+    {
+      "op": "mul",
+      "left": 16,
+      "right": 1
+    },
+    {
+      "op": "mul",
+      "left": 19,
+      "right": 3
+    },
+    {
+      "op": "add",
+      "left": 29,
+      "right": 30
+    },
+    {
+      "op": "mul",
+      "left": 22,
+      "right": 6
+    },
+    {
+      "op": "mul",
+      "left": 25,
+      "right": 7
+    },
+    {
+      "op": "add",
+      "left": 32,
+      "right": 33
+    },
+    {
+      "op": "mul",
+      "left": 28,
+      "right": 6
+    },
+    {
+      "op": "mul",
+      "left": 31,
+      "right": 7
+    },
+    {
+      "op": "add",
+      "left": 35,
+      "right": 36
+    },
+    {
+      "op": "mul",
+      "left": 4,
+      "right": 34
+    },
+    {
+      "op": "mul",
+      "left": 5,
+      "right": 37
+    },
+    {
+      "op": "add",
+      "left": 38,
+      "right": 39
+    }
+  ],
+  "output": 40,
+  "additions": 11,
+  "multiplications": 22,
+  "scalar_gates": 33,
+  "unknown_target_initialization": false
+}

@@ -1,0 +1,278 @@
+{
+  "n": 2,
+  "family": "identity",
+  "K": 3,
+  "model": "Q with z,t leaves and fan-in-two add/mul gates",
+  "gates": 48,
+  "output": 54,
+  "nodes": [
+    {
+      "op": "variable",
+      "name": "z"
+    },
+    {
+      "op": "mul",
+      "left": 0,
+      "right": 0
+    },
+    {
+      "op": "mul",
+      "left": 1,
+      "right": 1
+    },
+    {
+      "op": "mul",
+      "left": 2,
+      "right": 2
+    },
+    {
+      "op": "constant",
+      "value": "2"
+    },
+    {
+      "op": "mul",
+      "left": 4,
+      "right": 0
+    },
+    {
+      "op": "constant",
+      "value": "1"
+    },
+    {
+      "op": "mul",
+      "left": 6,
+      "right": 1
+    },
+    {
+      "op": "mul",
+      "left": 6,
+      "right": 2
+    },
+    {
+      "op": "mul",
+      "left": 4,
+      "right": 3
+    },
+    {
+      "op": "variable",
+      "name": "t"
+    },
+    {
+      "op": "mul",
+      "left": 10,
+      "right": 10
+    },
+    {
+      "op": "mul",
+      "left": 7,
+      "right": 10
+    },
+    {
+      "op": "mul",
+      "left": 9,
+      "right": 11
+    },
+    {
+      "op": "constant",
+      "value": "0"
+    },
+    {
+      "op": "mul",
+      "left": 5,
+      "right": 6
+    },
+    {
+      "op": "mul",
+      "left": 12,
+      "right": 14
+    },
+    {
+      "op": "add",
+      "left": 15,
+      "right": 16
+    },
+    {
+      "op": "mul",
+      "left": 5,
+      "right": 14
+    },
+    {
+      "op": "mul",
+      "left": 12,
+      "right": 6
+    },
+    {
+      "op": "add",
+      "left": 18,
+      "right": 19
+    },
+    {
+      "op": "mul",
+      "left": 8,
+      "right": 6
+    },
+    {
+      "op": "mul",
+      "left": 13,
+      "right": 14
+    },
+    {
+      "op": "add",
+      "left": 21,
+      "right": 22
+    },
+    {
+      "op": "mul",
+      "left": 8,
+      "right": 14
+    },
+    {
+      "op": "mul",
+      "left": 13,
+      "right": 6
+    },
+    {
+      "op": "add",
+      "left": 24,
+      "right": 25
+    },
+    {
+      "op": "add",
+      "left": 17,
+      "right": 26
+    },
+    {
+      "op": "constant",
+      "value": "-1"
+    },
+    {
+      "op": "mul",
+      "left": 27,
+      "right": 28
+    },
+    {
+      "op": "add",
+      "left": 17,
+      "right": 29
+    },
+    {
+      "op": "add",
+      "left": 26,
+      "right": 29
+    },
+    {
+      "op": "mul",
+      "left": 5,
+      "right": 30
+    },
+    {
+      "op": "mul",
+      "left": 12,
+      "right": 23
+    },
+    {
+      "op": "add",
+      "left": 32,
+      "right": 33
+    },
+    {
+      "op": "mul",
+      "left": 5,
+      "right": 20
+    },
+    {
+      "op": "mul",
+      "left": 12,
+      "right": 31
+    },
+    {
+      "op": "add",
+      "left": 35,
+      "right": 36
+    },
+    {
+      "op": "mul",
+      "left": 8,
+      "right": 30
+    },
+    {
+      "op": "mul",
+      "left": 13,
+      "right": 23
+    },
+    {
+      "op": "add",
+      "left": 38,
+      "right": 39
+    },
+    {
+      "op": "mul",
+      "left": 8,
+      "right": 20
+    },
+    {
+      "op": "mul",
+      "left": 13,
+      "right": 31
+    },
+    {
+      "op": "add",
+      "left": 41,
+      "right": 42
+    },
+    {
+      "op": "add",
+      "left": 34,
+      "right": 43
+    },
+    {
+      "op": "constant",
+      "value": "-1/2"
+    },
+    {
+      "op": "mul",
+      "left": 44,
+      "right": 45
+    },
+    {
+      "op": "mul",
+      "left": 28,
+      "right": 11
+    },
+    {
+      "op": "add",
+      "left": 10,
+      "right": 47
+    },
+    {
+      "op": "mul",
+      "left": 46,
+      "right": 48
+    },
+    {
+      "op": "mul",
+      "left": 10,
+      "right": 10
+    },
+    {
+      "op": "mul",
+      "left": 50,
+      "right": 10
+    },
+    {
+      "op": "mul",
+      "left": 51,
+      "right": 51
+    },
+    {
+      "op": "add",
+      "left": 6,
+      "right": 52
+    },
+    {
+      "op": "add",
+      "left": 53,
+      "right": 49
+    }
+  ]
+}

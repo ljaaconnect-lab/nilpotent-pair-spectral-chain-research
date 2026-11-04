@@ -1,0 +1,19 @@
+{
+  "node_id": "n73",
+  "artifact_version": "n73-actual-subset-baseline-v1",
+  "dev_score": 1.0,
+  "baseline_score": "4/4",
+  "root_conjecture_score": 0,
+  "result": "Actual all-n closed subset recurrence verified; arbitrary matrix terminal is its permanent, marked terminal is the exact marked central coefficient",
+  "insight": "An honest globally closed reference family exists with known delta initialization and explicit row update; its dimension is 2^n, leaving scalar compression and the uniform polynomial constructor open",
+  "branch_ref": "arbor/n73",
+  "source": "ActualClosedSubsetTransfer.lean",
+  "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+  "report": "n73-strict-report.json",
+  "compiler_invocations": 4,
+  "dependency_builds": 0,
+  "probe_compilations": 0,
+  "accepted_declarations": 18,
+  "root_conjecture_verified": false,
+  "heldout_tests_run": false
+}

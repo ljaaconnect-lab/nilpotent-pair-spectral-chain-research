@@ -1,0 +1,235 @@
+{
+  "all_ones_four_by_four": [
+    {
+      "choices": [
+        0,
+        0,
+        0
+      ],
+      "anchor_triples": [
+        "6",
+        "6",
+        "6"
+      ],
+      "triple_234": "6",
+      "determinant": "20"
+    },
+    {
+      "choices": [
+        0,
+        0,
+        1
+      ],
+      "anchor_triples": [
+        "6",
+        "6",
+        "6"
+      ],
+      "triple_234": "6",
+      "determinant": "20"
+    },
+    {
+      "choices": [
+        0,
+        1,
+        0
+      ],
+      "anchor_triples": [
+        "6",
+        "6",
+        "6"
+      ],
+      "triple_234": "-10",
+      "determinant": "20"
+    },
+    {
+      "choices": [
+        0,
+        1,
+        1
+      ],
+      "anchor_triples": [
+        "6",
+        "6",
+        "6"
+      ],
+      "triple_234": "6",
+      "determinant": "20"
+    },
+    {
+      "choices": [
+        1,
+        0,
+        0
+      ],
+      "anchor_triples": [
+        "6",
+        "6",
+        "6"
+      ],
+      "triple_234": "6",
+      "determinant": "20"
+    },
+    {
+      "choices": [
+        1,
+        0,
+        1
+      ],
+      "anchor_triples": [
+        "6",
+        "6",
+        "6"
+      ],
+      "triple_234": "-10",
+      "determinant": "20"
+    },
+    {
+      "choices": [
+        1,
+        1,
+        0
+      ],
+      "anchor_triples": [
+        "6",
+        "6",
+        "6"
+      ],
+      "triple_234": "6",
+      "determinant": "20"
+    },
+    {
+      "choices": [
+        1,
+        1,
+        1
+      ],
+      "anchor_triples": [
+        "6",
+        "6",
+        "6"
+      ],
+      "triple_234": "6",
+      "determinant": "20"
+    }
+  ],
+  "proper_layers_counterexample": [
+    {
+      "choices": [
+        0,
+        0,
+        0
+      ],
+      "anchor_triples": [
+        "8",
+        "8",
+        "8"
+      ],
+      "triple_234": "8",
+      "determinant": "40"
+    },
+    {
+      "choices": [
+        0,
+        0,
+        1
+      ],
+      "anchor_triples": [
+        "8",
+        "8",
+        "8"
+      ],
+      "triple_234": "8",
+      "determinant": "40"
+    },
+    {
+      "choices": [
+        0,
+        1,
+        0
+      ],
+      "anchor_triples": [
+        "8",
+        "8",
+        "8"
+      ],
+      "triple_234": "-72",
+      "determinant": "0"
+    },
+    {
+      "choices": [
+        0,
+        1,
+        1
+      ],
+      "anchor_triples": [
+        "8",
+        "8",
+        "8"
+      ],
+      "triple_234": "8",
+      "determinant": "40"
+    },
+    {
+      "choices": [
+        1,
+        0,
+        0
+      ],
+      "anchor_triples": [
+        "8",
+        "8",
+        "8"
+      ],
+      "triple_234": "8",
+      "determinant": "40"
+    },
+    {
+      "choices": [
+        1,
+        0,
+        1
+      ],
+      "anchor_triples": [
+        "8",
+        "8",
+        "8"
+      ],
+      "triple_234": "-72",
+      "determinant": "0"
+    },
+    {
+      "choices": [
+        1,
+        1,
+        0
+      ],
+      "anchor_triples": [
+        "8",
+        "8",
+        "8"
+      ],
+      "triple_234": "8",
+      "determinant": "40"
+    },
+    {
+      "choices": [
+        1,
+        1,
+        1
+      ],
+      "anchor_triples": [
+        "8",
+        "8",
+        "8"
+      ],
+      "triple_234": "8",
+      "determinant": "40"
+    }
+  ],
+  "layered_repairs": {
+    "layer_two_single_determinant": true,
+    "layer_three_two_determinants": true,
+    "layer_four_seven_moment_continuation": true
+  }
+}

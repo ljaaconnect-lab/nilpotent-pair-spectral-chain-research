@@ -1,0 +1,26 @@
+{
+  "node": "n62",
+  "frozen_before_first_candidate_compilation": true,
+  "namespace": "CollisionDirectProjector",
+  "coefficient_ring": "R : Type, [CommRing R]",
+  "definitions": {
+    "bilinear": "a + b*x + c*y + d*x*y",
+    "mixedCofactor": "bilinear a b c d 1 1 - bilinear a b c d 1 0 - bilinear a b c d 0 1 + bilinear a b c d 0 0",
+    "localCorrection": "bilinear a b c d x y - 2*x*y*mixedCofactor a b c d",
+    "phase": "fun s => if p s then -P s else P s",
+    "inversionPhase": "product_i:Fin n product_l in Ioi i (if sigma i < sigma l then (1:R) else -1)"
+  },
+  "obligations": {
+    "local_mixed_cofactor": "forall a b c d:R, mixedCofactor a b c d = d",
+    "local_xy_correction": "forall a b c d x y:R, localCorrection a b c d x y = a + b*x + c*y - d*x*y",
+    "phase_involution": "forall S:Type p:S->Prop [DecidablePred p] P:S->R, phase p (phase p P) = P",
+    "phase_commute": "forall S:Type p q:S->Prop [DecidablePred p] [DecidablePred q] P:S->R, phase p (phase q P) = phase q (phase p P)",
+    "inversion_phase_eq_signCoeff": "forall n:Nat sigma:Equiv.Perm(Fin n), (inversionPhase sigma:R) = CollisionDeterminantBridge.signCoeff sigma",
+    "corrected_signed_weight": "forall n:Nat b:Matrix(Fin n)(Fin n)R sigma:Equiv.Perm(Fin n), (inversionPhase sigma:R) * (CollisionDeterminantBridge.signCoeff sigma * CollisionDeterminantBridge.weight b sigma) = CollisionDeterminantBridge.weight b sigma",
+    "corrected_signed_sum": "forall n:Nat b:Matrix(Fin n)(Fin n)R, sum_sigma ((inversionPhase sigma:R) * (CollisionDeterminantBridge.signCoeff sigma * CollisionDeterminantBridge.weight b sigma)) = sum_sigma CollisionDeterminantBridge.weight b sigma"
+  },
+  "root_conjecture_verified": false,
+  "pointwise_actions_are_free_scalar_gates": false,
+  "candidate_budget": 12,
+  "heldout_tests_run": false
+}

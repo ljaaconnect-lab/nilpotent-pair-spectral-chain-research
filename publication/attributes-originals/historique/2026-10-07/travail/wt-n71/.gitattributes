@@ -1,0 +1,5 @@
+/ScalarDAG.lean -text
+/compile_n71.py -text
+/verify_n71.py -text
+/n71-* -text
+/n71-compiler-rounds/** -text

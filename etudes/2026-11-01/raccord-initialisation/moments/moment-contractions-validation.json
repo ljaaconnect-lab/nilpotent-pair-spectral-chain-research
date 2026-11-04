@@ -1,0 +1,261 @@
+{
+  "status": "passed",
+  "source_sha256": "db579897288ae75579336d6c297176a001d5fa384be59e07ce7ac54ce68ff7a1",
+  "cases": [
+    {
+      "prime": 17,
+      "n": 1,
+      "sample": 0,
+      "max_moment": 0,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 17,
+      "n": 1,
+      "sample": 1,
+      "max_moment": 0,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 17,
+      "n": 2,
+      "sample": 0,
+      "max_moment": 1,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 17,
+      "n": 2,
+      "sample": 1,
+      "max_moment": 1,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 17,
+      "n": 3,
+      "sample": 0,
+      "max_moment": 3,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 17,
+      "n": 3,
+      "sample": 1,
+      "max_moment": 3,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 17,
+      "n": 4,
+      "sample": 0,
+      "max_moment": 6,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 17,
+      "n": 4,
+      "sample": 1,
+      "max_moment": 6,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 17,
+      "n": 5,
+      "sample": 0,
+      "max_moment": 10,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 17,
+      "n": 5,
+      "sample": 1,
+      "max_moment": 10,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 17,
+      "n": 6,
+      "sample": 0,
+      "max_moment": 3,
+      "all_orders_and_readout": false
+    },
+    {
+      "prime": 17,
+      "n": 6,
+      "sample": 1,
+      "max_moment": 3,
+      "all_orders_and_readout": false
+    },
+    {
+      "prime": 97,
+      "n": 1,
+      "sample": 0,
+      "max_moment": 0,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 97,
+      "n": 1,
+      "sample": 1,
+      "max_moment": 0,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 97,
+      "n": 2,
+      "sample": 0,
+      "max_moment": 1,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 97,
+      "n": 2,
+      "sample": 1,
+      "max_moment": 1,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 97,
+      "n": 3,
+      "sample": 0,
+      "max_moment": 3,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 97,
+      "n": 3,
+      "sample": 1,
+      "max_moment": 3,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 97,
+      "n": 4,
+      "sample": 0,
+      "max_moment": 6,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 97,
+      "n": 4,
+      "sample": 1,
+      "max_moment": 6,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 97,
+      "n": 5,
+      "sample": 0,
+      "max_moment": 10,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 97,
+      "n": 5,
+      "sample": 1,
+      "max_moment": 10,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 97,
+      "n": 6,
+      "sample": 0,
+      "max_moment": 3,
+      "all_orders_and_readout": false
+    },
+    {
+      "prime": 97,
+      "n": 6,
+      "sample": 1,
+      "max_moment": 3,
+      "all_orders_and_readout": false
+    },
+    {
+      "prime": 998244353,
+      "n": 1,
+      "sample": 0,
+      "max_moment": 0,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 998244353,
+      "n": 1,
+      "sample": 1,
+      "max_moment": 0,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 998244353,
+      "n": 2,
+      "sample": 0,
+      "max_moment": 1,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 998244353,
+      "n": 2,
+      "sample": 1,
+      "max_moment": 1,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 998244353,
+      "n": 3,
+      "sample": 0,
+      "max_moment": 3,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 998244353,
+      "n": 3,
+      "sample": 1,
+      "max_moment": 3,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 998244353,
+      "n": 4,
+      "sample": 0,
+      "max_moment": 6,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 998244353,
+      "n": 4,
+      "sample": 1,
+      "max_moment": 6,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 998244353,
+      "n": 5,
+      "sample": 0,
+      "max_moment": 10,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 998244353,
+      "n": 5,
+      "sample": 1,
+      "max_moment": 10,
+      "all_orders_and_readout": true
+    },
+    {
+      "prime": 998244353,
+      "n": 6,
+      "sample": 0,
+      "max_moment": 3,
+      "all_orders_and_readout": false
+    },
+    {
+      "prime": 998244353,
+      "n": 6,
+      "sample": 1,
+      "max_moment": 3,
+      "all_orders_and_readout": false
+    }
+  ],
+  "case_count": 36,
+  "general_polynomial_closure": false,
+  "scope": "Exact all-order identities on n<=5; fixed orders 0..3 on n=6. Enumeration belongs to verifier only."
+}

@@ -1,0 +1,48 @@
+{
+  "status": "helper_bridge_verified",
+  "dev_score": 1.0,
+  "root_conjecture_verified": false,
+  "lean_verified": true,
+  "verified_scope": "Generated n2 factorization and rational list-coefficient convolution",
+  "source": "GeneratedCoreN2.lean",
+  "report_output": "generated-core-verification-report.json",
+  "source_sha256": "5c36f6762f305ab4d656050f4484bf914c4726dc4f24e335ff2630c69e3432d6",
+  "attempts": [
+    {
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n3\\GeneratedCoreN2.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'GeneratedCollisionN2.factorization' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneratedCollisionN2.central_convolution' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "error_stack": [],
+  "compiler_version": {
+    "command": [
+      "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n",
+    "stderr": ""
+  },
+  "axiom_audit": {
+    "GeneratedCollisionN2.factorization": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "GeneratedCollisionN2.central_convolution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "accepted_trust_base": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ]
+}

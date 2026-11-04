@@ -1,0 +1,118 @@
+{
+  "node": "n73",
+  "kind": "independent committed baseline replay",
+  "commit": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+  "source": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n73-independent\\ActualClosedSubsetTransfer.lean",
+  "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+  "executor_source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+  "canonical_LF_source_equal": true,
+  "raw_source_equal": true,
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-o",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n73-independent\\ActualClosedSubsetTransfer.olean",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n73-independent\\ActualClosedSubsetTransfer.lean"
+  ],
+  "exit_code": 0,
+  "stdout": "'ActualClosedSubsetTransfer.initial_state' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.step_state' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.rowProduct_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.terminal_permutation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.terminal_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.marked_central' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.marked_target' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.state_dimension' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.subsetExponent_apply' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.subsetExponent_support' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.subsetExponent_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.subsetExponent_erase' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.coefficient_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.coefficient_invariant' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.occupation_eq_iff_bijective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.expanded_linear_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.sum_bijective_functions' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ActualClosedSubsetTransfer.full_coefficient_permutation' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "elapsed_seconds": 78.78200000000652,
+  "timeout_seconds": 600,
+  "audits": {
+    "ActualClosedSubsetTransfer.initial_state": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.step_state": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.rowProduct_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.terminal_permutation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.terminal_matrix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.marked_central": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.marked_target": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.state_dimension": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.subsetExponent_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.subsetExponent_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.subsetExponent_zero_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.subsetExponent_erase": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.coefficient_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.coefficient_invariant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.occupation_eq_iff_bijective": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.expanded_linear_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.sum_bijective_functions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ActualClosedSubsetTransfer.full_coefficient_permutation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "accepted_declarations": 18,
+  "baseline_verified": true,
+  "root_conjecture_verified": false,
+  "state_dimension": "2^n",
+  "compiled_sha256": "0da0016584b968d151ba7936c4e4cb06e8bbd31cda4f0a2c443c4658fc840504"
+}

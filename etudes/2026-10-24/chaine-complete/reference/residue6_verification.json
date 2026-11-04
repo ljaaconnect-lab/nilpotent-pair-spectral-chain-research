@@ -1,0 +1,44 @@
+{
+  "symbolic_degree_six_cases": [
+    {
+      "occupation": [
+        3,
+        3
+      ],
+      "coefficient": "-a01**3"
+    },
+    {
+      "occupation": [
+        4,
+        2
+      ],
+      "coefficient": "0"
+    },
+    {
+      "occupation": [
+        3,
+        2,
+        1
+      ],
+      "coefficient": "a01**2*a02"
+    },
+    {
+      "occupation": [
+        2,
+        2,
+        2
+      ],
+      "coefficient": "a01*a02*a12 + d012**2"
+    },
+    {
+      "occupation": [
+        2,
+        2,
+        1,
+        1
+      ],
+      "coefficient": "-a01*a02*a13 - a01*a03*a12"
+    }
+  ],
+  "all_exact": true
+}

@@ -1,0 +1,631 @@
+{
+  "node": "n61",
+  "boundary": "root-only frozen positive rational cases",
+  "commit": "2a3a6830f57eb8df200f920ec5058214bec5c32e",
+  "source_sha256": "9974e6b1feec828f656d56cd6537f4a3f70c10fee2b2c701eb9e2b7a38f9cf2d",
+  "frozen_lf_source_sha256": "baf3ad1ba13b39e6895f86f1319ee7c928e3ad37283ea48ba133331b91d30320",
+  "case_file_sha256": "98537e66108c753efc6e6197a8cfac126da42e21e2c903875a3e8216c5216172",
+  "root_conjecture_verified": false,
+  "scope": "Independent evaluation of every scalar DAG node with z formal; no polynomial asymptotic bound.",
+  "cases": [
+    {
+      "case": "n2-projector-holdout-0",
+      "n": 2,
+      "checks": {
+        "canonical_polynomial": true,
+        "exact_gate_count": true,
+        "output_nonempty": true,
+        "binary_scalar_topology": true
+      },
+      "gates": 20,
+      "output_terms": 2,
+      "literal_bits_max": 11,
+      "seconds": 0.0022631999891018495,
+      "metadata": {
+        "states": 2,
+        "all_partial_matching_state_bound": 7,
+        "attempts": 1,
+        "compatible_transitions": 1,
+        "preprocessing_integer_adds": 1,
+        "preprocessing_integer_muls": 1,
+        "maximum_integer_coefficient_bit_length": 2,
+        "coefficient_l1_bound": 3,
+        "stages": [
+          {
+            "row_pair": [
+              0,
+              1
+            ],
+            "nonzero_matching_states": 2
+          }
+        ],
+        "distinct_complementary_minors": 2,
+        "minor_cache_bound": 6,
+        "edge_product_cache_entries": 3,
+        "allocated_gates_before_liveness": 19,
+        "reachable_gates": 13,
+        "gate_counts": {
+          "variable": 4,
+          "add": 7,
+          "constant": 3,
+          "mul": 6
+        },
+        "construction_seconds": 0.0012893999955849722,
+        "cost_scope": "Each determinant and edge product uses scalar gates; universal integer preprocessing is separately counted.",
+        "generic_gates": 13,
+        "marked_gates": 20,
+        "marker_gates": 7
+      }
+    },
+    {
+      "case": "n2-projector-holdout-1",
+      "n": 2,
+      "checks": {
+        "canonical_polynomial": true,
+        "exact_gate_count": true,
+        "output_nonempty": true,
+        "binary_scalar_topology": true
+      },
+      "gates": 20,
+      "output_terms": 2,
+      "literal_bits_max": 9,
+      "seconds": 0.0019598999933805317,
+      "metadata": {
+        "states": 2,
+        "all_partial_matching_state_bound": 7,
+        "attempts": 1,
+        "compatible_transitions": 1,
+        "preprocessing_integer_adds": 1,
+        "preprocessing_integer_muls": 1,
+        "maximum_integer_coefficient_bit_length": 2,
+        "coefficient_l1_bound": 3,
+        "stages": [
+          {
+            "row_pair": [
+              0,
+              1
+            ],
+            "nonzero_matching_states": 2
+          }
+        ],
+        "distinct_complementary_minors": 2,
+        "minor_cache_bound": 6,
+        "edge_product_cache_entries": 3,
+        "allocated_gates_before_liveness": 19,
+        "reachable_gates": 13,
+        "gate_counts": {
+          "variable": 4,
+          "add": 7,
+          "constant": 3,
+          "mul": 6
+        },
+        "construction_seconds": 0.0010637000086717308,
+        "cost_scope": "Each determinant and edge product uses scalar gates; universal integer preprocessing is separately counted.",
+        "generic_gates": 13,
+        "marked_gates": 20,
+        "marker_gates": 7
+      }
+    },
+    {
+      "case": "n3-projector-holdout-0",
+      "n": 3,
+      "checks": {
+        "canonical_polynomial": true,
+        "exact_gate_count": true,
+        "output_nonempty": true,
+        "binary_scalar_topology": true
+      },
+      "gates": 125,
+      "output_terms": 6,
+      "literal_bits_max": 11,
+      "seconds": 0.00587009999435395,
+      "metadata": {
+        "states": 13,
+        "all_partial_matching_state_bound": 34,
+        "attempts": 42,
+        "compatible_transitions": 15,
+        "preprocessing_integer_adds": 15,
+        "preprocessing_integer_muls": 14,
+        "maximum_integer_coefficient_bit_length": 3,
+        "coefficient_l1_bound": 343,
+        "stages": [
+          {
+            "row_pair": [
+              0,
+              1
+            ],
+            "nonzero_matching_states": 4
+          },
+          {
+            "row_pair": [
+              0,
+              2
+            ],
+            "nonzero_matching_states": 9
+          },
+          {
+            "row_pair": [
+              1,
+              2
+            ],
+            "nonzero_matching_states": 13
+          }
+        ],
+        "distinct_complementary_minors": 11,
+        "minor_cache_bound": 20,
+        "edge_product_cache_entries": 18,
+        "allocated_gates_before_liveness": 138,
+        "reachable_gates": 108,
+        "gate_counts": {
+          "variable": 9,
+          "add": 48,
+          "constant": 7,
+          "mul": 60
+        },
+        "construction_seconds": 0.0029784999933326617,
+        "cost_scope": "Each determinant and edge product uses scalar gates; universal integer preprocessing is separately counted.",
+        "generic_gates": 108,
+        "marked_gates": 125,
+        "marker_gates": 17
+      }
+    },
+    {
+      "case": "n3-projector-holdout-1",
+      "n": 3,
+      "checks": {
+        "canonical_polynomial": true,
+        "exact_gate_count": true,
+        "output_nonempty": true,
+        "binary_scalar_topology": true
+      },
+      "gates": 125,
+      "output_terms": 6,
+      "literal_bits_max": 12,
+      "seconds": 0.0060784999950556085,
+      "metadata": {
+        "states": 13,
+        "all_partial_matching_state_bound": 34,
+        "attempts": 42,
+        "compatible_transitions": 15,
+        "preprocessing_integer_adds": 15,
+        "preprocessing_integer_muls": 14,
+        "maximum_integer_coefficient_bit_length": 3,
+        "coefficient_l1_bound": 343,
+        "stages": [
+          {
+            "row_pair": [
+              0,
+              1
+            ],
+            "nonzero_matching_states": 4
+          },
+          {
+            "row_pair": [
+              0,
+              2
+            ],
+            "nonzero_matching_states": 9
+          },
+          {
+            "row_pair": [
+              1,
+              2
+            ],
+            "nonzero_matching_states": 13
+          }
+        ],
+        "distinct_complementary_minors": 11,
+        "minor_cache_bound": 20,
+        "edge_product_cache_entries": 18,
+        "allocated_gates_before_liveness": 138,
+        "reachable_gates": 108,
+        "gate_counts": {
+          "variable": 9,
+          "add": 48,
+          "constant": 7,
+          "mul": 60
+        },
+        "construction_seconds": 0.004031299991765991,
+        "cost_scope": "Each determinant and edge product uses scalar gates; universal integer preprocessing is separately counted.",
+        "generic_gates": 108,
+        "marked_gates": 125,
+        "marker_gates": 17
+      }
+    },
+    {
+      "case": "n4-projector-holdout-0",
+      "n": 4,
+      "checks": {
+        "canonical_polynomial": true,
+        "exact_gate_count": true,
+        "output_nonempty": true,
+        "binary_scalar_topology": true
+      },
+      "gates": 1021,
+      "output_terms": 24,
+      "literal_bits_max": 11,
+      "seconds": 0.09011049999389797,
+      "metadata": {
+        "states": 99,
+        "all_partial_matching_state_bound": 209,
+        "attempts": 1326,
+        "compatible_transitions": 201,
+        "preprocessing_integer_adds": 201,
+        "preprocessing_integer_muls": 221,
+        "maximum_integer_coefficient_bit_length": 4,
+        "coefficient_l1_bound": 4826809,
+        "stages": [
+          {
+            "row_pair": [
+              0,
+              1
+            ],
+            "nonzero_matching_states": 7
+          },
+          {
+            "row_pair": [
+              0,
+              2
+            ],
+            "nonzero_matching_states": 21
+          },
+          {
+            "row_pair": [
+              0,
+              3
+            ],
+            "nonzero_matching_states": 49
+          },
+          {
+            "row_pair": [
+              1,
+              2
+            ],
+            "nonzero_matching_states": 62
+          },
+          {
+            "row_pair": [
+              1,
+              3
+            ],
+            "nonzero_matching_states": 81
+          },
+          {
+            "row_pair": [
+              2,
+              3
+            ],
+            "nonzero_matching_states": 99
+          }
+        ],
+        "distinct_complementary_minors": 54,
+        "minor_cache_bound": 70,
+        "edge_product_cache_entries": 122,
+        "allocated_gates_before_liveness": 1230,
+        "reachable_gates": 990,
+        "gate_counts": {
+          "variable": 16,
+          "add": 445,
+          "constant": 10,
+          "mul": 545
+        },
+        "construction_seconds": 0.04830329999094829,
+        "cost_scope": "Each determinant and edge product uses scalar gates; universal integer preprocessing is separately counted.",
+        "generic_gates": 990,
+        "marked_gates": 1021,
+        "marker_gates": 31
+      }
+    },
+    {
+      "case": "n4-projector-holdout-1",
+      "n": 4,
+      "checks": {
+        "canonical_polynomial": true,
+        "exact_gate_count": true,
+        "output_nonempty": true,
+        "binary_scalar_topology": true
+      },
+      "gates": 1021,
+      "output_terms": 24,
+      "literal_bits_max": 9,
+      "seconds": 0.08482080000976566,
+      "metadata": {
+        "states": 99,
+        "all_partial_matching_state_bound": 209,
+        "attempts": 1326,
+        "compatible_transitions": 201,
+        "preprocessing_integer_adds": 201,
+        "preprocessing_integer_muls": 221,
+        "maximum_integer_coefficient_bit_length": 4,
+        "coefficient_l1_bound": 4826809,
+        "stages": [
+          {
+            "row_pair": [
+              0,
+              1
+            ],
+            "nonzero_matching_states": 7
+          },
+          {
+            "row_pair": [
+              0,
+              2
+            ],
+            "nonzero_matching_states": 21
+          },
+          {
+            "row_pair": [
+              0,
+              3
+            ],
+            "nonzero_matching_states": 49
+          },
+          {
+            "row_pair": [
+              1,
+              2
+            ],
+            "nonzero_matching_states": 62
+          },
+          {
+            "row_pair": [
+              1,
+              3
+            ],
+            "nonzero_matching_states": 81
+          },
+          {
+            "row_pair": [
+              2,
+              3
+            ],
+            "nonzero_matching_states": 99
+          }
+        ],
+        "distinct_complementary_minors": 54,
+        "minor_cache_bound": 70,
+        "edge_product_cache_entries": 122,
+        "allocated_gates_before_liveness": 1230,
+        "reachable_gates": 990,
+        "gate_counts": {
+          "variable": 16,
+          "add": 445,
+          "constant": 10,
+          "mul": 545
+        },
+        "construction_seconds": 0.043007799991755746,
+        "cost_scope": "Each determinant and edge product uses scalar gates; universal integer preprocessing is separately counted.",
+        "generic_gates": 990,
+        "marked_gates": 1021,
+        "marker_gates": 31
+      }
+    },
+    {
+      "case": "n5-projector-holdout-0",
+      "n": 5,
+      "checks": {
+        "canonical_polynomial": true,
+        "exact_gate_count": true,
+        "output_nonempty": true,
+        "binary_scalar_topology": true
+      },
+      "gates": 10552,
+      "output_terms": 120,
+      "literal_bits_max": 12,
+      "seconds": 1.4277309000026435,
+      "metadata": {
+        "states": 813,
+        "all_partial_matching_state_bound": 1546,
+        "attempts": 31190,
+        "compatible_transitions": 3030,
+        "preprocessing_integer_adds": 3030,
+        "preprocessing_integer_muls": 3119,
+        "maximum_integer_coefficient_bit_length": 5,
+        "coefficient_l1_bound": 16679880978201,
+        "stages": [
+          {
+            "row_pair": [
+              0,
+              1
+            ],
+            "nonzero_matching_states": 11
+          },
+          {
+            "row_pair": [
+              0,
+              2
+            ],
+            "nonzero_matching_states": 41
+          },
+          {
+            "row_pair": [
+              0,
+              3
+            ],
+            "nonzero_matching_states": 121
+          },
+          {
+            "row_pair": [
+              0,
+              4
+            ],
+            "nonzero_matching_states": 305
+          },
+          {
+            "row_pair": [
+              1,
+              2
+            ],
+            "nonzero_matching_states": 363
+          },
+          {
+            "row_pair": [
+              1,
+              3
+            ],
+            "nonzero_matching_states": 423
+          },
+          {
+            "row_pair": [
+              1,
+              4
+            ],
+            "nonzero_matching_states": 533
+          },
+          {
+            "row_pair": [
+              2,
+              3
+            ],
+            "nonzero_matching_states": 618
+          },
+          {
+            "row_pair": [
+              2,
+              4
+            ],
+            "nonzero_matching_states": 703
+          },
+          {
+            "row_pair": [
+              3,
+              4
+            ],
+            "nonzero_matching_states": 813
+          }
+        ],
+        "distinct_complementary_minors": 227,
+        "minor_cache_bound": 252,
+        "edge_product_cache_entries": 949,
+        "allocated_gates_before_liveness": 14085,
+        "reachable_gates": 10503,
+        "gate_counts": {
+          "variable": 25,
+          "add": 5175,
+          "constant": 14,
+          "mul": 5328
+        },
+        "construction_seconds": 0.5816919000062626,
+        "cost_scope": "Each determinant and edge product uses scalar gates; universal integer preprocessing is separately counted.",
+        "generic_gates": 10503,
+        "marked_gates": 10552,
+        "marker_gates": 49
+      }
+    },
+    {
+      "case": "n5-projector-holdout-1",
+      "n": 5,
+      "checks": {
+        "canonical_polynomial": true,
+        "exact_gate_count": true,
+        "output_nonempty": true,
+        "binary_scalar_topology": true
+      },
+      "gates": 10552,
+      "output_terms": 120,
+      "literal_bits_max": 12,
+      "seconds": 1.272112200007541,
+      "metadata": {
+        "states": 813,
+        "all_partial_matching_state_bound": 1546,
+        "attempts": 31190,
+        "compatible_transitions": 3030,
+        "preprocessing_integer_adds": 3030,
+        "preprocessing_integer_muls": 3119,
+        "maximum_integer_coefficient_bit_length": 5,
+        "coefficient_l1_bound": 16679880978201,
+        "stages": [
+          {
+            "row_pair": [
+              0,
+              1
+            ],
+            "nonzero_matching_states": 11
+          },
+          {
+            "row_pair": [
+              0,
+              2
+            ],
+            "nonzero_matching_states": 41
+          },
+          {
+            "row_pair": [
+              0,
+              3
+            ],
+            "nonzero_matching_states": 121
+          },
+          {
+            "row_pair": [
+              0,
+              4
+            ],
+            "nonzero_matching_states": 305
+          },
+          {
+            "row_pair": [
+              1,
+              2
+            ],
+            "nonzero_matching_states": 363
+          },
+          {
+            "row_pair": [
+              1,
+              3
+            ],
+            "nonzero_matching_states": 423
+          },
+          {
+            "row_pair": [
+              1,
+              4
+            ],
+            "nonzero_matching_states": 533
+          },
+          {
+            "row_pair": [
+              2,
+              3
+            ],
+            "nonzero_matching_states": 618
+          },
+          {
+            "row_pair": [
+              2,
+              4
+            ],
+            "nonzero_matching_states": 703
+          },
+          {
+            "row_pair": [
+              3,
+              4
+            ],
+            "nonzero_matching_states": 813
+          }
+        ],
+        "distinct_complementary_minors": 227,
+        "minor_cache_bound": 252,
+        "edge_product_cache_entries": 949,
+        "allocated_gates_before_liveness": 14085,
+        "reachable_gates": 10503,
+        "gate_counts": {
+          "variable": 25,
+          "add": 5175,
+          "constant": 14,
+          "mul": 5328
+        },
+        "construction_seconds": 0.4549579000013182,
+        "cost_scope": "Each determinant and edge product uses scalar gates; universal integer preprocessing is separately counted.",
+        "generic_gates": 10503,
+        "marked_gates": 10552,
+        "marker_gates": 49
+      }
+    }
+  ],
+  "passed": 32,
+  "total": 32,
+  "score": 1.0
+}

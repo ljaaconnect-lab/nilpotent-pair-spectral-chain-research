@@ -1,0 +1,16 @@
+{
+  "node": "n38",
+  "round": 22,
+  "kind": "candidate",
+  "source": "LabelBridge.lean",
+  "source_sha256": "aa8b4b7616567a32b25f8739efd9bfd3b78409991091c296713e84e1fc036c90",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n38\\LabelBridge.lean"
+  ],
+  "LEAN_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n38",
+  "exit_code": 0,
+  "stdout": "'CollisionLabelBridge.digit_step_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.encodeDigits_lt_pow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexedLabelFrom_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexedLabel_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexedLabel_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexedLabel_le_max' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.assignmentLabel_le_max' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.assignmentLabel_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.occupation_all_ones_selector' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.assignmentLabel_sum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.occupation_sum_selector' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.assignmentLabels_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "root_conjecture_verified": false
+}

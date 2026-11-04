@@ -1,0 +1,221 @@
+{
+  "node": "n73",
+  "artifact_version": "n73-actual-subset-baseline-v1",
+  "status": "actual_subset_baseline_verified",
+  "source": "ActualClosedSubsetTransfer.lean",
+  "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+  "compiled_artifact_sha256": "0da0016584b968d151ba7936c4e4cb06e8bbd31cda4f0a2c443c4658fc840504",
+  "dev_score": 1.0,
+  "baseline_score": "4/4",
+  "root_conjecture_score": 0,
+  "root_conjecture_verified": false,
+  "root_polynomial_gate_bound_proved": false,
+  "uniform_polynomial_constructor_proved": false,
+  "state_dimension": "2^n; explicitly exponential",
+  "required_obligations": {
+    "initial_state": "forall b,U, state b 0 U=if U=empty then 1 else 0",
+    "step_state": "forall b,k,U, state b (k+1) U=sum j in U,b k j*state b k(U.erase j)",
+    "coefficient_invariant": "forall b,k,U, state b k U=(rowProduct b k).coeff(subsetExponent U)",
+    "terminal_permutation": "forall b, state b n univ=sum sigma:Perm(Fin n), product i:Fin n,b i.val(sigma i)",
+    "terminal_matrix": "forall B, state(matrixRows B)n univ=sum sigma:Perm(Fin n), product i:Fin n,B i(sigma i)",
+    "marked_central": "forall n>=2,A rational matrix, state(matrixRows(markedWeights A))n univ=(markedHhat A).coeff(centralDegree n)",
+    "state_dimension": "Fintype.card(Finset(Fin n))=2^n"
+  },
+  "unclosed_obligations": [],
+  "accepted_declarations": 18,
+  "declarations": [
+    "ActualClosedSubsetTransfer.occupation_eq_iff_bijective",
+    "ActualClosedSubsetTransfer.expanded_linear_product",
+    "ActualClosedSubsetTransfer.sum_bijective_functions",
+    "ActualClosedSubsetTransfer.full_coefficient_permutation",
+    "ActualClosedSubsetTransfer.subsetExponent_apply",
+    "ActualClosedSubsetTransfer.subsetExponent_support",
+    "ActualClosedSubsetTransfer.subsetExponent_zero_iff",
+    "ActualClosedSubsetTransfer.subsetExponent_erase",
+    "ActualClosedSubsetTransfer.coefficient_step",
+    "ActualClosedSubsetTransfer.coefficient_invariant",
+    "ActualClosedSubsetTransfer.initial_state",
+    "ActualClosedSubsetTransfer.step_state",
+    "ActualClosedSubsetTransfer.rowProduct_eq",
+    "ActualClosedSubsetTransfer.terminal_permutation",
+    "ActualClosedSubsetTransfer.terminal_matrix",
+    "ActualClosedSubsetTransfer.marked_central",
+    "ActualClosedSubsetTransfer.marked_target",
+    "ActualClosedSubsetTransfer.state_dimension"
+  ],
+  "exact_source_statements": {
+    "occupation_eq_iff_bijective": "(f : Fin n \u2192 Fin n) :\n    occupation f = subsetExponent Finset.univ \u2194 Function.Bijective f",
+    "expanded_linear_product": "(b : Nat \u2192 Fin n \u2192 R) :\n    (\u220f i : Fin n, linearForm (b i.val)) =\n      \u2211 f : Fin n \u2192 Fin n,\n        monomial (occupation f) (\u220f i : Fin n, b i.val (f i))",
+    "sum_bijective_functions": "(w : (Fin n \u2192 Fin n) \u2192 R) :\n    (\u2211 f : Fin n \u2192 Fin n, if Function.Bijective f then w f else 0) =\n      \u2211 \u03c3 : Equiv.Perm (Fin n), w \u03c3",
+    "full_coefficient_permutation": "(b : Nat \u2192 Fin n \u2192 R) :\n    (\u220f i : Fin n, linearForm (b i.val)).coeff (subsetExponent Finset.univ) =\n      \u2211 \u03c3 : Equiv.Perm (Fin n), \u220f i : Fin n, b i.val (\u03c3 i)",
+    "subsetExponent_apply": "(U : Finset (Fin n)) (j : Fin n) :\n    subsetExponent U j = if j \u2208 U then 1 else 0",
+    "subsetExponent_support": "(U : Finset (Fin n)) :\n    (subsetExponent U).support = U",
+    "subsetExponent_zero_iff": "(U : Finset (Fin n)) :\n    subsetExponent U = 0 \u2194 U = \u2205",
+    "subsetExponent_erase": "(U : Finset (Fin n)) (j : Fin n) :\n    subsetExponent U - Finsupp.single j 1 = subsetExponent (U.erase j)",
+    "coefficient_step": "(c : Fin n \u2192 R) (p : MvPolynomial (Fin n) R)\n    (U : Finset (Fin n)) :\n    (linearForm c * p).coeff (subsetExponent U) =\n      \u2211 j \u2208 U, c j * p.coeff (subsetExponent (U.erase j))",
+    "coefficient_invariant": "(b : Nat \u2192 Fin n \u2192 R) (k : Nat)\n    (U : Finset (Fin n)) :\n    state b k U = (rowProduct b k).coeff (subsetExponent U)",
+    "initial_state": "(b : Nat \u2192 Fin n \u2192 R) (U : Finset (Fin n)) :\n    state b 0 U = if U = \u2205 then 1 else 0",
+    "step_state": "(b : Nat \u2192 Fin n \u2192 R) (k : Nat) (U : Finset (Fin n)) :\n    state b (k + 1) U = \u2211 j \u2208 U, b k j * state b k (U.erase j)",
+    "rowProduct_eq": "(b : Nat \u2192 Fin n \u2192 R) (k : Nat) :\n    rowProduct b k = \u220f i : Fin k, linearForm (b i.val)",
+    "terminal_permutation": "(b : Nat \u2192 Fin n \u2192 R) :\n    state b n Finset.univ =\n      \u2211 \u03c3 : Equiv.Perm (Fin n), \u220f i : Fin n, b i.val (\u03c3 i)",
+    "terminal_matrix": "(B : Matrix (Fin n) (Fin n) R) :\n    state (matrixRows B) n Finset.univ =\n      \u2211 \u03c3 : Equiv.Perm (Fin n), \u220f i : Fin n, B i (\u03c3 i)",
+    "marked_central": "(n : Nat) (hn : 2 \u2264 n)\n    (A : Matrix (Fin n) (Fin n) Rat) :\n    state (matrixRows (markedWeights A)) n Finset.univ =\n      (markedHhat A).coeff (centralDegree n)",
+    "marked_target": "(A : Matrix (Fin n) (Fin n) Rat) :\n    state (matrixRows (markedWeights A)) n Finset.univ = markedPermanent A",
+    "state_dimension": "(n : Nat) :\n    Fintype.card (Finset (Fin n)) = 2 ^ n"
+  },
+  "source_context": "namespace ActualClosedSubsetTransfer; variable {R:Type} [CommRing R] {n:Nat}; noncomputable section; each declaration captures its actual free variables",
+  "axiom_audit": {
+    "ActualClosedSubsetTransfer.occupation_eq_iff_bijective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.expanded_linear_product": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.sum_bijective_functions": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.full_coefficient_permutation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.subsetExponent_apply": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.subsetExponent_support": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.subsetExponent_zero_iff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.subsetExponent_erase": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.coefficient_step": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.coefficient_invariant": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.initial_state": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.step_state": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.rowProduct_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.terminal_permutation": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.terminal_matrix": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.marked_central": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.marked_target": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ActualClosedSubsetTransfer.state_dimension": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "accepted_trust_base": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "compiler_invocations": 4,
+  "all_kind_invocation_cap": 8,
+  "candidate_invocations": 4,
+  "dependency_builds": 0,
+  "probe_compilations": 0,
+  "compiler_exit_code": 0,
+  "final_compiler_round": 4,
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-o",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n73\\ActualClosedSubsetTransfer.olean",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n73\\ActualClosedSubsetTransfer.lean"
+  ],
+  "LEAN_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n73;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+  "LEAN_SRC_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\src\\lean\\lake",
+  "LEAN_SYSROOT": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+  "invocation_history": [
+    {
+      "round": 1,
+      "kind": "candidate",
+      "source_sha256": "7471f8c12a9425d6e3ab238bdd2cc80d3ee90a181b88fb417b45dce4e8524e71",
+      "exit_code": 1,
+      "elapsed_seconds": 89.89100000000326
+    },
+    {
+      "round": 2,
+      "kind": "candidate",
+      "source_sha256": "fcc4f518de61421e0182fd54785918f4b1851a8524928e394593b3caa9714655",
+      "exit_code": 0,
+      "elapsed_seconds": 32.23399999999674
+    },
+    {
+      "round": 3,
+      "kind": "candidate",
+      "source_sha256": "062cc41c7c028f480fd201da51793a816b684981c7302ea5adddc721596d8457",
+      "exit_code": 0,
+      "elapsed_seconds": 39.828000000008615
+    },
+    {
+      "round": 4,
+      "kind": "candidate",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "exit_code": 0,
+      "elapsed_seconds": 70.95299999999406
+    }
+  ],
+  "frozen_protocol_sha256": "a4273a0b4e9ff493519336778d45f521b4023c83b200936be3f27ce8280a3b71",
+  "formal_contract_sha256": "071613cf5fab741c420797d641a77dc7bac3f654544ae08f8793864b4f2199ff",
+  "blueprint_sha256": "dfc15a8af20ac4188f370fb3b7461f5bc390a5844bd657e2f2a7a4d4fbd752ca",
+  "dependency_provenance_sha256": "1b26f318702c506ffec1d8ada4dd65e30bd916cc395c628e5975d25d2a2e3f11",
+  "direct_mathlib_import_provenance_sha256": "f4eebd0d15aa5106077e42b6e7ee2e5cc3aa73529ba955999f115485e27c61bd",
+  "compiler_warnings": [],
+  "cache_mutated": false,
+  "heldout_tests_run": false,
+  "constraint_history": "Round1 explicit permutation membership was required after simp unfolded bijectivity into a multiset goal; round2 uses the genuine sigma.bijective proof",
+  "scope": "Effective closed subset recurrence for arbitrary explicit B, its all-size coefficient invariant, exact permanent and marked central output; no polynomial compression claim",
+  "errors": []
+}

@@ -1,0 +1,27 @@
+{
+  "node": "n65",
+  "artifact_version": "n65-inversion-jet-audit-v1",
+  "dev_score": null,
+  "score_reason": "No eligible complete polynomial scalar candidate isolated; identity-only checks would not satisfy the frozen three-obligation metric.",
+  "obligations": {
+    "complete_explicit_scalar_data_and_transition": "unclosed; J0,J1 only, companion conditional on missing J2..JD",
+    "polynomial_gate_literal_initialization_certificate": "unclosed; polynomial bound derived only for partial initializer",
+    "exact_root_target_identity": "informal derivation only; no accepted Lean chain or full target circuit"
+  },
+  "numerical_experiments": 0,
+  "formal_candidate_compiles": 0,
+  "formal_probes": 0,
+  "held_out_access": false,
+  "shared_arbor_writes": false,
+  "outputs_writes": false,
+  "counterexample_campaigns": false,
+  "lower_bound_experiments": false,
+  "partial_constructor": "initial_jets.py: build_initial_jets(n,A=None) returns actual two-output scalar DAG for J0,J1 only",
+  "derived_unexecuted_counts": {
+    "n_values": [2,3,4,5],
+    "generic": [33,203,1699,16569],
+    "marked": [40,220,1730,16618]
+  },
+  "remaining_constructive_lemma": "Uniform polynomial-size state map Psi_X satisfying actual differential intertwining Psi_X(LF)=M(X)Psi_X(F) on every reachable F, with charged initial Psi_X(1), boundary, transition, admissible constants and literal bit costs. An entrywise basis relation with variable M(X) alone is insufficient because L differentiates M.",
+  "root_conjecture_verified": false
+}

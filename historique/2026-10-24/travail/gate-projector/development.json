@@ -1,0 +1,16 @@
+{
+  "correct_on_finite_cases": 56,
+  "gate_counts": {
+    "1": 1,
+    "2": 10,
+    "3": 31,
+    "4": 76,
+    "5": 173,
+    "6": 386,
+    "7": 859
+  },
+  "score": 1912,
+  "score_direction": "min",
+  "global_polynomial_proof": false,
+  "candidate_sha256": "875a2629279b75ee5a3fc06501bb2f8abc398df95aad16a2911487226fe7f218"
+}

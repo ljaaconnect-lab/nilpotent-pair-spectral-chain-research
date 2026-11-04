@@ -1,0 +1,4 @@
+'ConditionalCriterion.compose_input_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConditionalCriterion.Pi_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConditionalCriterion.polynomial_composed_budget' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConditionalCriterion.conditional_target_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]

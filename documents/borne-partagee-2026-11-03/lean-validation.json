@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\borne-partagee-2026-11-03\\SharedChainBounds.lean"
+  ],
+  "source": "SharedChainBounds.lean",
+  "source_sha256": "11c1a37df6125d1722a77ac58a991658f3cbb37abecdc1067b26728a135ccba9",
+  "replay_sha256": "de2dfbd8babd1afc508009a4252c125a1ee2c0122ab4f50d59d9fd9ccefec6ab",
+  "source_changed_during_check": false,
+  "exit_code": 0,
+  "seconds": 16.485,
+  "stdout": "'SharedChainBounds.coefficient_preparation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedChainBounds.closed_state_compositions' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedChainBounds.fused_reader_total' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedChainBounds.explicit_spectral_overhead' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedChainBounds.linearised_source_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "coefficient_preparation_bound",
+    "closed_state_compositions",
+    "fused_reader_total",
+    "explicit_spectral_overhead",
+    "linearised_source_budget"
+  ],
+  "scope": "Arithmetic consequences of independently justified gate-count hypotheses.",
+  "compiler_formalised": false,
+  "provenance_lemma_formalised": false,
+  "polynomial_observation_initialisation_proved": false,
+  "complete_chain_polynomial_bound_proved": false
+}

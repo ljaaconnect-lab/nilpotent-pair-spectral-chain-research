@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\tentative-cloture-2026-11-03\\TotalFusionObstruction.lean"
+  ],
+  "source": "TotalFusionObstruction.lean",
+  "source_sha256": "60d0e93619898d63e8f8ec5e1615195f2b8f0e0210813e0673edf6c1adb543f4",
+  "replay_sha256": "b8474127aac488ee33730402ae79d588364eb0f515e7937c693b3f6f0da9a492",
+  "environment_helper": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\lean_check.py",
+  "environment_helper_sha256": "a5e21cfb624e5258009425f6c6eecaf0eb1b529d953bbb2607717dab44a439ad",
+  "source_changed_during_check": false,
+  "exit_code": 0,
+  "seconds": 17.25,
+  "stdout": "'TotalFusionObstruction.delta_bilinear' depends on axioms: [propext, Quot.sound]\n'TotalFusionObstruction.native_examples' depends on axioms: [propext, Quot.sound]\n'TotalFusionObstruction.equal_parameter_sum' depends on axioms: [propext, Quot.sound]\n'TotalFusionObstruction.delta_values' depends on axioms: [propext, Quot.sound]\n'TotalFusionObstruction.no_reader_of_sum' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "delta_bilinear",
+    "native_examples",
+    "equal_parameter_sum",
+    "delta_values",
+    "no_reader_of_sum"
+  ],
+  "all_theorem_axioms_printed": true,
+  "source_has_no_placeholders_or_added_axioms": true,
+  "scope": "Concrete obstruction to a reader depending only on u+v, including native rows at z=1; no claim against other circuits.",
+  "field": "ZMod 97",
+  "D": "D(x,y)=x*y",
+  "delta": "D(u+v)-D(u)-D(v)+D(0)=u0*v1+u1*v0",
+  "examples": {
+    "left_rows": [
+      [
+        1,
+        5
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "right_rows": [
+      [
+        3,
+        3
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "native_left_a": [
+      0,
+      2,
+      2,
+      0
+    ],
+    "native_right_a": [
+      14,
+      14,
+      14,
+      14
+    ],
+    "z": 1,
+    "same_sum": [
+      6,
+      6
+    ],
+    "different_delta": [
+      26,
+      18
+    ]
+  },
+  "general_polynomial_circuit_impossibility_claimed": false,
+  "other_state_representations_excluded": false,
+  "native_polynomial_bound_proved": false,
+  "lean_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)"
+}

@@ -1,0 +1,61 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fusion-ntt\\TerminalDifference.lean",
+  "version": 11,
+  "completed": true,
+  "seconds": 0.86,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 45,
+          "line": 22
+        },
+        "start": {
+          "character": 22,
+          "line": 22
+        }
+      },
+      "message": "Function expected at\n  List.mem_cons_self\nbut this term has type\n  ?m.86 ∈ ?m.86 :: ?m.87\n\nNote: Expected a function because this term is being applied to the argument\n  p",
+      "range": {
+        "end": {
+          "character": 45,
+          "line": 22
+        },
+        "start": {
+          "character": 22,
+          "line": 22
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 47,
+          "line": 22
+        },
+        "start": {
+          "character": 4,
+          "line": 22
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase pos\nR : Type u_1\ninst✝ : Semiring R\np : R[X]\nps : List R[X]\nih : (∀ p ∈ ps, p.coeff 0 = 0) → ∀ k < ps.length, ps.prod.coeff k = 0\nhz : ∀ p_1 ∈ p :: ps, p_1.coeff 0 = 0\nk : ℕ\nhk : k < (p :: ps).length\na b : ℕ\nhab : (a, b) ∈ Finset.antidiagonal k\nha : a = 0\n⊢ p.coeff 0 * ps.prod.coeff b = 0",
+      "range": {
+        "end": {
+          "character": 47,
+          "line": 22
+        },
+        "start": {
+          "character": 4,
+          "line": 22
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    }
+  ]
+}

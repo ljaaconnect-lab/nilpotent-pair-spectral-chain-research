@@ -1,0 +1,17 @@
+{
+  "node": "n65",
+  "hypothesis": "Bounded-spectrum inversion-operator jet recurrence with charged scalar states",
+  "dev_boundary": "Scalar graph or fixed structured matrix candidate on formal input entries n=2,3,4,5, only positive identity checks; full fan-in-two gate accounting",
+  "test_boundary": "Coordinator fresh checkout of committed candidate; new fixed rational matrices with independent exact scalar interpreter and direct finite target oracle",
+  "score_definition": "Three obligations: correct explicit scalar data and transition; polynomial gate/literal/initialization certificate; exact root-target identity. Report each as proved, finite-only or unclosed. Local numeric score does not close root.",
+  "positive_only": true,
+  "forbidden": [
+    "counterexample campaigns",
+    "lower-bound experiments",
+    "free differential operators",
+    "free paired projection",
+    "unknown target in initialization",
+    "assuming existence of polynomial representation"
+  ],
+  "root_conjecture_verified": false
+}

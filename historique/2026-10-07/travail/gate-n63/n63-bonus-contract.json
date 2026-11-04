@@ -1,0 +1,11 @@
+{
+  "node": "n63",
+  "authorized_by_root_after_primary_bounds": true,
+  "fixed_before_bonus_compilation": true,
+  "declaration": "CollisionMobiusBridge.sign_coefficient_natAbs_bound",
+  "statement": "forall alpha:Type* [DecidableEq alpha] q:Finset alpha -> Nat S:Finset alpha n:Nat (hcard:S.card<=n), Int.natAbs(coefficient (fun T => (-1:Int)^(q T)) S) < (2:Nat)^(n+1)",
+  "bound_on_f_discharged": "abs((-1:Int)^(q T))=1 by abs_pow; no bound on f is assumed",
+  "part_of_four_obligation_score": false,
+  "root_conjecture_score": 0,
+  "global_compression_proved": false
+}

@@ -1,0 +1,156 @@
+{
+  "date": "2026-11-01",
+  "status": "exact_insertion_compiler_verified",
+  "general_polynomial_solution": false,
+  "numeric_spectral_tables": 16,
+  "formal_z_spectral_tables": 5,
+  "costs": [
+    {
+      "n": 1,
+      "N": 2,
+      "Q": 998244353,
+      "labels": [
+        15
+      ],
+      "scalar_gates": 9,
+      "generated_operator_nodes": 3,
+      "reachable_operator_nodes": 1,
+      "subset_states": 0,
+      "operator_action_fully_expanded": true,
+      "polynomial_gate_bound_proved": false
+    },
+    {
+      "n": 2,
+      "N": 4,
+      "Q": 998244353,
+      "labels": [
+        3,
+        11
+      ],
+      "scalar_gates": 56,
+      "generated_operator_nodes": 7,
+      "reachable_operator_nodes": 5,
+      "subset_states": 0,
+      "operator_action_fully_expanded": true,
+      "polynomial_gate_bound_proved": false
+    },
+    {
+      "n": 3,
+      "N": 4,
+      "Q": 998244353,
+      "labels": [
+        10,
+        4,
+        5
+      ],
+      "scalar_gates": 143,
+      "generated_operator_nodes": 19,
+      "reachable_operator_nodes": 17,
+      "subset_states": 0,
+      "operator_action_fully_expanded": true,
+      "polynomial_gate_bound_proved": false
+    },
+    {
+      "n": 4,
+      "N": 8,
+      "Q": 998244353,
+      "labels": [
+        3,
+        10,
+        7,
+        15
+      ],
+      "scalar_gates": 932,
+      "generated_operator_nodes": 57,
+      "reachable_operator_nodes": 55,
+      "subset_states": 0,
+      "operator_action_fully_expanded": true,
+      "polynomial_gate_bound_proved": false
+    },
+    {
+      "n": 5,
+      "N": 8,
+      "Q": 998244353,
+      "labels": [
+        10,
+        10,
+        5,
+        14,
+        15
+      ],
+      "scalar_gates": 3212,
+      "generated_operator_nodes": 177,
+      "reachable_operator_nodes": 175,
+      "subset_states": 0,
+      "operator_action_fully_expanded": true,
+      "polynomial_gate_bound_proved": false
+    },
+    {
+      "n": 6,
+      "N": 8,
+      "Q": 998244353,
+      "labels": [
+        1,
+        7,
+        0,
+        11,
+        14,
+        15
+      ],
+      "scalar_gates": 11332,
+      "generated_operator_nodes": 551,
+      "reachable_operator_nodes": 549,
+      "subset_states": 0,
+      "operator_action_fully_expanded": true,
+      "polynomial_gate_bound_proved": false
+    },
+    {
+      "n": 7,
+      "N": 8,
+      "Q": 998244353,
+      "labels": [
+        9,
+        10,
+        6,
+        5,
+        0,
+        6,
+        9
+      ],
+      "scalar_gates": 39677,
+      "generated_operator_nodes": 1703,
+      "reachable_operator_nodes": 1701,
+      "subset_states": 0,
+      "operator_action_fully_expanded": true,
+      "polynomial_gate_bound_proved": false
+    },
+    {
+      "n": 8,
+      "N": 16,
+      "Q": 998244353,
+      "labels": [
+        15,
+        15,
+        5,
+        7,
+        15,
+        0,
+        6,
+        12
+      ],
+      "scalar_gates": 272376,
+      "generated_operator_nodes": 5221,
+      "reachable_operator_nodes": 5219,
+      "subset_states": 0,
+      "operator_action_fully_expanded": true,
+      "polynomial_gate_bound_proved": false
+    }
+  ],
+  "code_sha256": {
+    "etudes/2026-11-01/fermeture-generale/circuit.py": "5f2b80d00dbe08b4430353d87e5fddea0058c5076dc8b90b0ddef2ea03200861",
+    "etudes/2026-11-01/fermeture-generale/insertion_circuit.py": "33e3cc84a849ca61d54eed3a8ec979bcb2926e7a704be25a4b48c730e39c6cd3",
+    "etudes/2026-11-01/fermeture-generale/verifier.py": "0e5c24c0200a294c355da0f06ade7ca44299ead5e78a6ddf3191c2c74b535e27",
+    "etudes/2026-11-01/operateurs-horloge/circuit.py": "4960f0f6dc50f73f85c444f6028a7061129eda6ca326974b5bf167ab9870bb31",
+    "etudes/2026-10-24/chaine-complete/reference/dag.py": "73959d4040fa2cdf642c653bbedd68e3be60fb5853c9ce081202f5620c50a08d"
+  }
+}

@@ -1,0 +1,159 @@
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:34:6: error: Type mismatch
+  Finset.sum_sub_distrib
+has type
+  ∀ (f g : ?m.118 → ?m.119), ∑ x ∈ ?m.120, (f x - g x) = ∑ x ∈ ?m.120, f x - ∑ x ∈ ?m.120, g x
+but is expected to have type
+  ∑ j ∈ H, (∑ k ∈ H, b j * c k - b j * c j) = ∑ j ∈ H, ∑ k ∈ H, b j * c k - ∑ j ∈ H, b j * c j
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:70:33: warning: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Finsupp.add_apply, subsetExponent_apply, hju] at hj
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:78:34: warning: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [subsetExponent_apply, hne, Ne.symm hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:78:61: warning: This simp argument is unused:
+  Ne.symm hne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [subsetExponent_apply, Finsupp.single_apply, hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:81:36: warning: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [subsetExponent_apply, hne, Ne.symm hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:81:58: warning: This simp argument is unused:
+  hne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [subsetExponent_apply, Finsupp.single_apply, Ne.symm hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:82:36: warning: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [subsetExponent_apply, hlj, hlk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:89:72: error: unsolved goals
+R : Type
+inst✝ : CommRing R
+n : ℕ
+b c : Fin n → R
+U : Finset (Fin n)
+⊢ linearForm (twoRows b c 0) * linearForm (twoRows b c 1) = linearForm b * linearForm c
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:87:54: error: unsolved goals
+R : Type
+inst✝ : CommRing R
+n : ℕ
+b c : Fin n → R
+U : Finset (Fin n)
+hp : rowProduct (twoRows b c) 2 = linearForm b * linearForm c
+⊢ (∑ x, ∑ x_1, if x_1 ≠ x ∧ U = {x_1, x} then b x_1 * c x else 0) =
+    ∑ j, ∑ k, if j ≠ k ∧ U = {j, k} then b j * c k else 0
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:90:22: warning: This simp argument is unused:
+  twoRows
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rowProduct, mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:128:6: error(lean.unknownIdentifier): Unknown constant `Ne.comm`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:126:2: error: unsolved goals
+case pos
+R : Type
+inst✝ : CommRing R
+n : ℕ
+H : Finset (Fin n)
+b c : Fin n → R
+j k : Fin n
+hne : j ≠ k
+⊢ (if j ∈ H ∧ k ∈ H then b j * c k else 0) = if j ∈ H then if ¬k = j ∧ k ∈ H then b j * c k else 0 else 0
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:129:33: error(lean.unknownIdentifier): Unknown constant `Ne.comm`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:129:2: error: unsolved goals
+case neg
+R : Type
+inst✝ : CommRing R
+n : ℕ
+H : Finset (Fin n)
+b c : Fin n → R
+j k : Fin n
+hne : ¬j ≠ k
+⊢ j ∈ H → ¬k = j → k ∈ H → 0 = b j * c k
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:128:15: warning: This simp argument is unused:
+  and_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hne, Finset.sum_ite_eq', Finset.mem_powerset, Finset.insert_subset_iff, Finset.singleton_subset_iff,
+    Finset.mem_erase, Ne.comm, and_left_comm, and_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:128:25: warning: This simp argument is unused:
+  and_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hne, Finset.sum_ite_eq', Finset.mem_powerset, Finset.insert_subset_iff, Finset.singleton_subset_iff,
+    Finset.mem_erase, Ne.comm, and_comm, and_assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:128:40: warning: This simp argument is unused:
+  and_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hne, Finset.sum_ite_eq', Finset.mem_powerset, Finset.insert_subset_iff, Finset.singleton_subset_iff,
+    Finset.mem_erase, Ne.comm, and_comm, and_left_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:143:74: error: unsolved goals
+case pos
+R : Type
+inst✝ : CommRing R
+n : ℕ
+H : Finset (Fin n)
+b c : Fin n → R
+j : Fin n
+a✝ : j ∈ Finset.univ
+hj : j ∈ H
+⊢ (∑ x, if ¬x = j ∧ x ∈ H then b j * c x else 0) = ∑ k ∈ H, b j * c k - b j * c j
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:164:3: error: unexpected token 'initialize'; expected identifier
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:179:5: error: unexpected token 'initialize'; expected ')', '_', '↑', '↥', '⇑', identifier or term
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:179:16: error(lean.unknownIdentifier): Unknown identifier `b`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:179:19: error: unexpected token ')'; expected command
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:183:5: error: unexpected token 'initialize'; expected ')', '_', '↑', '↥', '⇑', identifier or term
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:183:16: error(lean.unknownIdentifier): Unknown identifier `b`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:183:19: error: unexpected token ')'; expected command
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:184:16: error(lean.unknownIdentifier): Unknown identifier `b`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:184:19: error: unexpected token ')'; expected command
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:185:16: error(lean.unknownIdentifier): Unknown identifier `b`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:185:19: error: unexpected token ')'; expected command
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:189:11: error: unexpected token 'initialize'; expected ')', '↑', '↥', '⇑' or term
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:189:22: error(lean.unknownIdentifier): Unknown identifier `b`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:189:25: error: unexpected token ')'; expected command
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:191:30: error: unexpected token ','; expected '{', identifier or term
+'AtomicSecondPrefix.B1_distribution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.erase_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.B2_remove_diagonal' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.seed_is_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.insertion_is_erase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.pair_exponent_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.table_two_pair_expansion' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.table_two_zero_of_card_ne' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.signed_response_eq_mass' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.powerset_pair_indicator' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.table_two_mass' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.B3_actual_response' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.complement_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.initialized_diagonal' does not depend on any axioms
+'AtomicSecondPrefix.initialized_totals' does not depend on any axioms
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:208:14: error(lean.unknownIdentifier): Unknown constant `AtomicSecondPrefix.B4_initialized_query`

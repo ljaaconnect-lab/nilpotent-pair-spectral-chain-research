@@ -1,0 +1,19 @@
+{
+  "node": "n76",
+  "baseline_commit": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+  "baseline_source": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n73-independent\\ActualClosedSubsetTransfer.lean",
+  "baseline_source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+  "baseline_olean": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n73-independent\\ActualClosedSubsetTransfer.olean",
+  "baseline_olean_sha256": "0da0016584b968d151ba7936c4e4cb06e8bbd31cda4f0a2c443c4658fc840504",
+  "independent_replay_exit_code": 0,
+  "independent_replay_audits": 18,
+  "proof_cache": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache",
+  "proof_cache_resolved": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache",
+  "environment_source": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib-environment.json",
+  "environment_keys": [
+    "LEAN_PATH",
+    "LEAN_SRC_PATH",
+    "LEAN_SYSROOT"
+  ],
+  "compiler_calls": 0
+}

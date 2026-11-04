@@ -1,0 +1,99 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "elapsed_seconds": 86.422,
+  "new_closure_theorems": 25,
+  "reused_cost_induction_theorems": 6,
+  "source_sha256": {
+    "documents/fermeture-native-2026-11-03/AuxiliaryErasure.lean": "61f744b1965e479226532e05a2c5c9f27a0a944ee4919134edaf01f505f93536",
+    "documents/fermeture-native-2026-11-03/CertifiedScalarClosure.lean": "b09edb916051ee7b7506acacb9a8e64210260084c3c426fb040b79a908f4a0e1",
+    "documents/fermeture-native-2026-11-03/SharedStateClosure.lean": "3a8967002e677b413ed521ac6d2f2b0646a3b50ac553e30dd19a4b66f53b968e",
+    "documents/fermeture-native-2026-11-03/TerminalLabelNecessity.lean": "9e4d34eab3d36e155270f844d553099866936b0376bf3439245eb9654721e26a",
+    "documents/fermeture-native-2026-11-03/TerminalTaggedClosure.lean": "629fb2f327960bd626d6b5847ebe6841094685e857e9576166273cc99bfbd09a",
+    "documents/fermeture-native-2026-11-03/replay_all.py": "f32c5b73adb461af8fbe5b910aca741b4692d5987c43ea69580d0d2761e16f52",
+    "documents/fermeture-native-2026-11-03/replay_auxiliary_erasure.py": "abe7cf68d97779abcc6dc9914ede7191a6fb512adcfad50a1dccdb77b6dd9380",
+    "documents/fermeture-native-2026-11-03/replay_certified_closure.py": "0261ac7be792122e18aa670ec171d4b15fe14e7ba166c960c0767196be0de507",
+    "documents/fermeture-native-2026-11-03/replay_shared_state.py": "ac65b62b49c531772a0ee3481e1c073cc5b6fd6b267ab16b6a030b967eae7548",
+    "documents/fermeture-native-2026-11-03/replay_tagged_closure.py": "c9f78d572fed20d89c6c50826eb1a3e28a9d17b950170281ca6bf13bf9b7c0df",
+    "documents/fermeture-native-2026-11-03/replay_terminal_label.py": "16982f94470bb188d136cceb50cc8fc325ce0f8baf6609336f5d600972a2037c",
+    "documents/induction-native-2026-11-03/SharedCostInduction.lean": "4a697eaa53d71cf620fad2dcf766ea41dbad3f6816435538d8e8125ab27a6009",
+    "etudes/2026-11-01/lean-operateurs/lean_check.py": "a5e21cfb624e5258009425f6c6eecaf0eb1b529d953bbb2607717dab44a439ad"
+  },
+  "sources_unchanged": true,
+  "runs": [
+    {
+      "command": [
+        "C:\\Users\\REGIS\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\fermeture-native-2026-11-03\\replay_auxiliary_erasure.py",
+        "--write-report"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'AuxiliaryErasure.erase_correct' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AuxiliaryErasure.erase_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AuxiliaryErasure.erase_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AuxiliaryErasure.independent_of_spec' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AuxiliaryErasure.scalarization_sufficiency' depends on axioms: [propext, Classical.choice, Quot.sound]\n{\"status\": \"passed\", \"theorems\": 5, \"seconds\": 14.062}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\REGIS\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\fermeture-native-2026-11-03\\replay_shared_state.py",
+        "--write-report"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'SharedStateClosure.extend_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedStateClosure.old_wires_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedStateClosure.new_outputs_computed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedStateClosure.extend_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedStateClosure.circuit_eval_natural' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedStateClosure.shared_chain_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedStateClosure.shared_chain_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedStateClosure.shared_chain_correct' depends on axioms: [propext, Classical.choice, Quot.sound]\n{\"status\": \"passed\", \"theorems\": 8, \"seconds\": 14.782}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\REGIS\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\fermeture-native-2026-11-03\\replay_terminal_label.py",
+        "--write-report"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'TerminalLabelNecessity.scalar_representative_eq_zero' does not depend on any axioms\n'TerminalLabelNecessity.scalar_representative_forces_zero' does not depend on any axioms\n'TerminalLabelNecessity.nonzero_terminal_has_no_scalar_representative' does not depend on any axioms\n{\"status\": \"passed\", \"theorems\": 3, \"seconds\": 13.75}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\REGIS\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\fermeture-native-2026-11-03\\replay_tagged_closure.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'TerminalTaggedClosure.tag_add' depends on axioms: [propext]\n'TerminalTaggedClosure.tag_scalar_mul' depends on axioms: [propext]\n'TerminalTaggedClosure.tag_linear_readout' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TerminalTaggedClosure.tagged_scalar_closure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TerminalTaggedClosure.native_tagged_readout' depends on axioms: [propext, Classical.choice, Quot.sound]\n{\"status\": \"passed\", \"theorems\": 5}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "-j1",
+        "-o",
+        "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\fermeture-native\\build\\SharedCostInduction.olean",
+        "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\induction-native-2026-11-03\\SharedCostInduction.lean"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'SharedCostInduction.accumulated_cost' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedCostInduction.uniform_increment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedCostInduction.bounded_increment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedCostInduction.polynomial_two_term_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedCostInduction.polynomial_monomial_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedCostInduction.polynomial_family_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Users\\REGIS\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-B",
+        "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\fermeture-native-2026-11-03\\replay_certified_closure.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "stdout": "'CertifiedScalarClosure.reader_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CertifiedScalarClosure.reader_tagged_correct' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CertifiedScalarClosure.certified_scalar_closure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CertifiedScalarClosure.certified_polynomial_family' depends on axioms: [propext, Classical.choice, Quot.sound]\n{\"status\": \"passed\", \"theorems\": 4}\n",
+      "stderr": ""
+    }
+  ],
+  "normalization_is_a_hypothesis_of_scalar_readout": true,
+  "general_native_normalization_constructed": false,
+  "unconditional_native_scalar_polynomiality_proved": false
+}

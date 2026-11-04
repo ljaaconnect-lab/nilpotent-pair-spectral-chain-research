@@ -1,0 +1,19 @@
+{
+  "dev_score": 1.0,
+  "result": {
+    "node_id": "n17",
+    "artifact_version": "n17-general-pairing-v1",
+    "status": "general_coefficient_pairing_kernel_verified",
+    "Rat_declarations_accepted": 9,
+    "generic_ring_declarations_accepted": 9,
+    "local_compiler_rounds": 18,
+    "global_compiler_rounds_after_node": 36,
+    "compiler_exit_code_Rat": 0,
+    "compiler_exit_code_generic_ring": 0,
+    "strict_audit": "passed; source hashes match compiler logs, standard trust base only, no sorryAx",
+    "root_conjecture_verified": false,
+    "heldout_tests_run": false
+  },
+  "insight": "For every finite duplicate-free list of natural labels bounded by K, arbitrary weights and signs in {1,-1}, the actual sparse-product coefficient at K equals the unsigned weighted sum. This is proved over Rat and over any Lean.Grind.CommRing R. It closes the general diagonal-cancellation algebra in Step B; determinant/Vandermonde specialization and the polynomial scalar extractor remain separate obligations.",
+  "branch_ref": "arbor/n17"
+}

@@ -1,0 +1,16 @@
+{
+  "node": "n62",
+  "module": "Mathlib.GroupTheory.Perm.Fin",
+  "theorem": "Equiv.Perm.sign_eq_prod_prod_Ioi",
+  "mathlib_commit": null,
+  "source_sha256": "8dd395d98c0a15a149e25a600117c086f30ae8cfa7cf30c008ad0d3453f23657",
+  "compiled_module_sha256": "3a36120beffe72bc5d0be64bec4ed01c169e26422fe77c7c765f56f03f5701ca",
+  "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\GroupTheory\\Perm\\Fin.lean",
+  "compiled_module_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\GroupTheory\\Perm\\Fin.olean",
+  "lean_version": "4.34.1",
+  "read_only_dependency": true,
+  "axiom_audit_obligation": "CollisionDirectProjector.inversion_phase_eq_signCoeff",
+  "has_separate_mathlib_git_repository": false,
+  "git_provenance_note": "Sources are prepared in an extracted cache; enclosing research-repository HEAD is not a Mathlib revision.",
+  "toolchain_declaration": "leanprover/lean4:v4.34.1"
+}

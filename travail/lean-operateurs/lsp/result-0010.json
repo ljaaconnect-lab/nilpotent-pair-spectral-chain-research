@@ -1,0 +1,59 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\PartitionCertificate.lean",
+  "version": 1,
+  "seconds": 26.219,
+  "diagnostics": [
+    {
+      "code": "lean.unknownIdentifier",
+      "fullRange": {
+        "end": {
+          "character": 56,
+          "line": 34
+        },
+        "start": {
+          "character": 46,
+          "line": 34
+        }
+      },
+      "message": "Unknown constant `Nat.choose`",
+      "range": {
+        "end": {
+          "character": 56,
+          "line": 34
+        },
+        "start": {
+          "character": 46,
+          "line": 34
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "code": "lean.unknownIdentifier",
+      "fullRange": {
+        "end": {
+          "character": 51,
+          "line": 44
+        },
+        "start": {
+          "character": 38,
+          "line": 44
+        }
+      },
+      "message": "Unknown constant `Nat.factorial`",
+      "range": {
+        "end": {
+          "character": 51,
+          "line": 44
+        },
+        "start": {
+          "character": 38,
+          "line": 44
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    }
+  ]
+}

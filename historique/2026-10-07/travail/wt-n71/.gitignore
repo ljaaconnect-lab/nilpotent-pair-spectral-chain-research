@@ -1,0 +1,5 @@
+__pycache__/
+.arbor/
+*.pyc
+/ScalarDAG.olean
+/.n71-compile-lock

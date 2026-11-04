@@ -1,0 +1,83 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fermeture-generale\\Insertion.lean",
+  "version": 14,
+  "completed": true,
+  "seconds": 0.5,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 48
+        },
+        "start": {
+          "character": 0,
+          "line": 48
+        }
+      },
+      "message": "'OrientedOperators.FullInsertion.insert_after_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 48
+        },
+        "start": {
+          "character": 0,
+          "line": 48
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 49
+        },
+        "start": {
+          "character": 0,
+          "line": 49
+        }
+      },
+      "message": "'OrientedOperators.FullInsertion.insertion_commutes' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 49
+        },
+        "start": {
+          "character": 0,
+          "line": 49
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 50
+        },
+        "start": {
+          "character": 0,
+          "line": 50
+        }
+      },
+      "message": "'OrientedOperators.FullInsertion.insertion_commutes_on_polynomials' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 50
+        },
+        "start": {
+          "character": 0,
+          "line": 50
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "etudes/2026-11-01/projection-avant-derivation/direct_projection.py": "61da9626c023ca87db059a63f2845adbfb0a2f3db4d1762804b04cb18891ab19",
+    "etudes/2026-11-01/projection-avant-derivation/verify_direct_projection.py": "a6bf3930c6c1aa2349fa7904cae661867f8ad257397c5fc21eeeb18adaa3fae0",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/verify_shared_operator_dag.py": "26b8ccc63937921a894d3e272ceaadd4445f19e862f62a3be536bb539d8037e9"
+  },
+  "cases": [
+    {
+      "n": 1,
+      "Q": 97,
+      "N": 2,
+      "labels": [
+        1
+      ],
+      "status": "passed",
+      "numeric_tables": 4,
+      "intermediate_stage_checks": 8,
+      "formal_z_tables": 2,
+      "prefix_reconstruction_checks": 0,
+      "zero_z_test": true,
+      "zero_amplitude_row_test": true,
+      "complete_chain_scalar_gates": 3,
+      "allocated_nodes": 9,
+      "stages": [
+        {
+          "processed_columns": 0,
+          "homogeneous_degree": 1,
+          "remaining_auxiliary_variables": [
+            0
+          ],
+          "scalar_gates": 4,
+          "root": 8
+        },
+        {
+          "processed_columns": 1,
+          "homogeneous_degree": 0,
+          "remaining_auxiliary_variables": [],
+          "scalar_gates": 3,
+          "root": 6
+        }
+      ],
+      "seconds": 0.0
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "N": 4,
+      "labels": [
+        1,
+        0
+      ],
+      "status": "passed",
+      "numeric_tables": 4,
+      "intermediate_stage_checks": 12,
+      "formal_z_tables": 2,
+      "prefix_reconstruction_checks": 0,
+      "zero_z_test": true,
+      "zero_amplitude_row_test": true,
+      "complete_chain_scalar_gates": 18,
+      "allocated_nodes": 40,
+      "stages": [
+        {
+          "processed_columns": 0,
+          "homogeneous_degree": 2,
+          "remaining_auxiliary_variables": [
+            0,
+            1
+          ],
+          "scalar_gates": 22,
+          "root": 30
+        },
+        {
+          "processed_columns": 1,
+          "homogeneous_degree": 1,
+          "remaining_auxiliary_variables": [
+            1
+          ],
+          "scalar_gates": 20,
+          "root": 36
+        },
+        {
+          "processed_columns": 2,
+          "homogeneous_degree": 0,
+          "remaining_auxiliary_variables": [],
+          "scalar_gates": 18,
+          "root": 39
+        }
+      ],
+      "seconds": 0.0
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "labels": [
+        1,
+        0,
+        1
+      ],
+      "status": "passed",
+      "numeric_tables": 4,
+      "intermediate_stage_checks": 16,
+      "formal_z_tables": 2,
+      "prefix_reconstruction_checks": 2,
+      "zero_z_test": true,
+      "zero_amplitude_row_test": true,
+      "complete_chain_scalar_gates": 49,
+      "allocated_nodes": 116,
+      "stages": [
+        {
+          "processed_columns": 0,
+          "homogeneous_degree": 3,
+          "remaining_auxiliary_variables": [
+            0,
+            1,
+            2
+          ],
+          "scalar_gates": 52,
+          "root": 66
+        },
+        {
+          "processed_columns": 1,
+          "homogeneous_degree": 2,
+          "remaining_auxiliary_variables": [
+            1,
+            2
+          ],
+          "scalar_gates": 51,
+          "root": 82
+        },
+        {
+          "processed_columns": 2,
+          "homogeneous_degree": 1,
+          "remaining_auxiliary_variables": [
+            2
+          ],
+          "scalar_gates": 52,
+          "root": 104
+        },
+        {
+          "processed_columns": 3,
+          "homogeneous_degree": 0,
+          "remaining_auxiliary_variables": [],
+          "scalar_gates": 49,
+          "root": 115
+        }
+      ],
+      "seconds": 0.016
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 8,
+      "labels": [
+        1,
+        4,
+        1,
+        0
+      ],
+      "status": "passed",
+      "numeric_tables": 4,
+      "intermediate_stage_checks": 20,
+      "formal_z_tables": 0,
+      "prefix_reconstruction_checks": 2,
+      "zero_z_test": true,
+      "zero_amplitude_row_test": true,
+      "complete_chain_scalar_gates": 110,
+      "allocated_nodes": 268,
+      "stages": [
+        {
+          "processed_columns": 0,
+          "homogeneous_degree": 4,
+          "remaining_auxiliary_variables": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "scalar_gates": 94,
+          "root": 116
+        },
+        {
+          "processed_columns": 1,
+          "homogeneous_degree": 3,
+          "remaining_auxiliary_variables": [
+            1,
+            2,
+            3
+          ],
+          "scalar_gates": 94,
+          "root": 140
+        },
+        {
+          "processed_columns": 2,
+          "homogeneous_degree": 2,
+          "remaining_auxiliary_variables": [
+            2,
+            3
+          ],
+          "scalar_gates": 102,
+          "root": 180
+        },
+        {
+          "processed_columns": 3,
+          "homogeneous_degree": 1,
+          "remaining_auxiliary_variables": [
+            3
+          ],
+          "scalar_gates": 114,
+          "root": 238
+        },
+        {
+          "processed_columns": 4,
+          "homogeneous_degree": 0,
+          "remaining_auxiliary_variables": [],
+          "scalar_gates": 110,
+          "root": 267
+        }
+      ],
+      "seconds": 0.015
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "labels": [
+        1,
+        4,
+        1,
+        0,
+        1
+      ],
+      "status": "passed",
+      "numeric_tables": 4,
+      "intermediate_stage_checks": 24,
+      "formal_z_tables": 0,
+      "prefix_reconstruction_checks": 2,
+      "zero_z_test": true,
+      "zero_amplitude_row_test": true,
+      "complete_chain_scalar_gates": 223,
+      "allocated_nodes": 627,
+      "stages": [
+        {
+          "processed_columns": 0,
+          "homogeneous_degree": 5,
+          "remaining_auxiliary_variables": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "scalar_gates": 148,
+          "root": 180
+        },
+        {
+          "processed_columns": 1,
+          "homogeneous_degree": 4,
+          "remaining_auxiliary_variables": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "scalar_gates": 149,
+          "root": 217
+        },
+        {
+          "processed_columns": 2,
+          "homogeneous_degree": 3,
+          "remaining_auxiliary_variables": [
+            2,
+            3,
+            4
+          ],
+          "scalar_gates": 162,
+          "root": 281
+        },
+        {
+          "processed_columns": 3,
+          "homogeneous_degree": 2,
+          "remaining_auxiliary_variables": [
+            3,
+            4
+          ],
+          "scalar_gates": 191,
+          "root": 395
+        },
+        {
+          "processed_columns": 4,
+          "homogeneous_degree": 1,
+          "remaining_auxiliary_variables": [
+            4
+          ],
+          "scalar_gates": 228,
+          "root": 549
+        },
+        {
+          "processed_columns": 5,
+          "homogeneous_degree": 0,
+          "remaining_auxiliary_variables": [],
+          "scalar_gates": 223,
+          "root": 626
+        }
+      ],
+      "seconds": 0.078
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "N": 8,
+      "labels": [
+        1,
+        4,
+        1,
+        0,
+        1,
+        4
+      ],
+      "status": "passed",
+      "numeric_tables": 4,
+      "intermediate_stage_checks": 28,
+      "formal_z_tables": 0,
+      "prefix_reconstruction_checks": 0,
+      "zero_z_test": true,
+      "zero_amplitude_row_test": true,
+      "complete_chain_scalar_gates": 472,
+      "allocated_nodes": 1366,
+      "stages": [
+        {
+          "processed_columns": 0,
+          "homogeneous_degree": 6,
+          "remaining_auxiliary_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "scalar_gates": 214,
+          "root": 258
+        },
+        {
+          "processed_columns": 1,
+          "homogeneous_degree": 5,
+          "remaining_auxiliary_variables": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "scalar_gates": 216,
+          "root": 304
+        },
+        {
+          "processed_columns": 2,
+          "homogeneous_degree": 4,
+          "remaining_auxiliary_variables": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "scalar_gates": 236,
+          "root": 387
+        },
+        {
+          "processed_columns": 3,
+          "homogeneous_degree": 3,
+          "remaining_auxiliary_variables": [
+            3,
+            4,
+            5
+          ],
+          "scalar_gates": 284,
+          "root": 545
+        },
+        {
+          "processed_columns": 4,
+          "homogeneous_degree": 2,
+          "remaining_auxiliary_variables": [
+            4,
+            5
+          ],
+          "scalar_gates": 372,
+          "root": 813
+        },
+        {
+          "processed_columns": 5,
+          "homogeneous_degree": 1,
+          "remaining_auxiliary_variables": [
+            5
+          ],
+          "scalar_gates": 478,
+          "root": 1181
+        },
+        {
+          "processed_columns": 6,
+          "homogeneous_degree": 0,
+          "remaining_auxiliary_variables": [],
+          "scalar_gates": 472,
+          "root": 1365
+        }
+      ],
+      "seconds": 0.157
+    },
+    {
+      "n": 7,
+      "Q": 97,
+      "N": 8,
+      "labels": [
+        1,
+        4,
+        1,
+        0,
+        1,
+        4,
+        1
+      ],
+      "status": "passed",
+      "numeric_tables": 4,
+      "intermediate_stage_checks": 32,
+      "formal_z_tables": 0,
+      "prefix_reconstruction_checks": 0,
+      "zero_z_test": true,
+      "zero_amplitude_row_test": true,
+      "complete_chain_scalar_gates": 1013,
+      "allocated_nodes": 2980,
+      "stages": [
+        {
+          "processed_columns": 0,
+          "homogeneous_degree": 7,
+          "remaining_auxiliary_variables": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "scalar_gates": 292,
+          "root": 350
+        },
+        {
+          "processed_columns": 1,
+          "homogeneous_degree": 6,
+          "remaining_auxiliary_variables": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "scalar_gates": 295,
+          "root": 405
+        },
+        {
+          "processed_columns": 2,
+          "homogeneous_degree": 5,
+          "remaining_auxiliary_variables": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "scalar_gates": 321,
+          "root": 509
+        },
+        {
+          "processed_columns": 3,
+          "homogeneous_degree": 4,
+          "remaining_auxiliary_variables": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "scalar_gates": 388,
+          "root": 716
+        },
+        {
+          "processed_columns": 4,
+          "homogeneous_degree": 3,
+          "remaining_auxiliary_variables": [
+            4,
+            5,
+            6
+          ],
+          "scalar_gates": 524,
+          "root": 1091
+        },
+        {
+          "processed_columns": 5,
+          "homogeneous_degree": 2,
+          "remaining_auxiliary_variables": [
+            5,
+            6
+          ],
+          "scalar_gates": 753,
+          "root": 1725
+        },
+        {
+          "processed_columns": 6,
+          "homogeneous_degree": 1,
+          "remaining_auxiliary_variables": [
+            6
+          ],
+          "scalar_gates": 1020,
+          "root": 2561
+        },
+        {
+          "processed_columns": 7,
+          "homogeneous_degree": 0,
+          "remaining_auxiliary_variables": [],
+          "scalar_gates": 1013,
+          "root": 2979
+        }
+      ],
+      "seconds": 0.578
+    }
+  ],
+  "numeric_tables": 28,
+  "intermediate_stage_checks": 140,
+  "formal_z_tables": 6,
+  "prefix_reconstruction_checks": 6,
+  "general_polynomial_closure": false,
+  "general_quasipolynomial_closure": false,
+  "lean_formalization_of_this_compiler": false,
+  "compiler_uses_jet_tables": false,
+  "compiler_uses_subset_states": false,
+  "compiler_runtime_arithmetic_gates": [
+    "+",
+    "*"
+  ],
+  "contract": "Same homogeneous oriented collision projector and fused spectral routing. Sequential first derivatives compiled into scalar gates, with immediate zero substitution. Data inputs a,z only."
+}

@@ -1,0 +1,107 @@
+{
+  "node": "n76",
+  "round": 2,
+  "invocation_counted": true,
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-DmaxHeartbeats=20000",
+    "-o",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n76\\AtomicSecondPrefix.olean",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n76\\AtomicSecondPrefix.lean"
+  ],
+  "source": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n76\\AtomicSecondPrefix.lean",
+  "source_archive": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n76\\AtomicSecondPrefix.round2.lean",
+  "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+  "dependency_provenance": "n76-dependency-provenance.json",
+  "exit_code": 0,
+  "environment": {
+    "LEAN_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n76;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n73-independent;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+    "LEAN_SRC_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\src\\lean\\lake",
+    "LEAN_SYSROOT": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1"
+  },
+  "elapsed_seconds": 57.92200000000594,
+  "audits": {
+    "AtomicSecondPrefix.B1_distribution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.erase_diagonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.B2_remove_diagonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.seed_is_empty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.insertion_is_erase": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.pair_exponent_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.table_two_pair_expansion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.table_two_zero_of_card_ne": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.signed_response_eq_mass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.powerset_pair_indicator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.table_two_mass": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.B3_actual_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.complement_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.initialized_diagonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.initialized_totals": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicSecondPrefix.B4_initialized_query": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "accepted_complete_file": true,
+  "compiled_sha256": "f75267e1ad930762ccbb9d34eaeb0e925d419d44c0dd51299040a481b743d4a3"
+}

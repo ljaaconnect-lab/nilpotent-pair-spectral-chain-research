@@ -1,0 +1,33 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fermeture-generale\\Insertion.lean",
+  "version": 7,
+  "completed": true,
+  "seconds": 0.422,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 51,
+          "line": 16
+        },
+        "start": {
+          "character": 32,
+          "line": 16
+        }
+      },
+      "message": "This simp argument is unused:\n  Function.comp_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Multiset.bind_map, insert, Multiset.bind_add, Multiset.bind_singleton, ← Multiset.map_bind]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+      "range": {
+        "end": {
+          "character": 51,
+          "line": 16
+        },
+        "start": {
+          "character": 32,
+          "line": 16
+        }
+      },
+      "severity": 2,
+      "source": "Lean 4"
+    }
+  ]
+}

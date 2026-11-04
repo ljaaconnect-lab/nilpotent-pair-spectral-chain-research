@@ -1,0 +1,20 @@
+{
+  "node": "n54",
+  "round": 4,
+  "candidate_round": 3,
+  "kind": "candidate",
+  "source": "PolynomialBridge.lean",
+  "snapshot": "n54-compiler-rounds\\round-04-source.lean",
+  "source_sha256": "95fdb4a58a0da22fab15d671a6ebe306dc430f21d58a745ab3fd20ad509c3ca6",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n54\\PolynomialBridge.lean"
+  ],
+  "cwd": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n54",
+  "LEAN_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n54;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+  "environment_source": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib-environment.json",
+  "exit_code": 1,
+  "stdout": "'GeneralCollisionPolynomialBridge.interp_append' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPolynomialBridge.interp_monomial_multiply' depends on axioms: [propext, Classical.choice, Quot.sound]\nC:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n54\\PolynomialBridge.lean:31:2: error: unsolved goals\ncase nil\nR : Type\ninst\u271d : CommRing R\nq : SparsePolynomial R\n\u22a2 interp (multiply [] q) = interp [] * interp q\n\ncase cons\nR : Type\ninst\u271d : CommRing R\nq : SparsePolynomial R\nhead\u271d : \u2115 \u00d7 R\ntail\u271d : List (\u2115 \u00d7 R)\ntail_ih\u271d : interp (multiply tail\u271d q) = interp tail\u271d * interp q\n\u22a2 interp (multiply (head\u271d :: tail\u271d) q) = interp (head\u271d :: tail\u271d) * interp q\n'GeneralCollisionPolynomialBridge.interp_multiply' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "root_conjecture_verified": false
+}

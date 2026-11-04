@@ -1,0 +1,314 @@
+{
+  "node": "n64",
+  "commit": "c785376a2d255cc76db771d239c86c89cc7b888f",
+  "source_integrity": {
+    "raw_sha256": "a6d43547b6b01c1d9e0d02eaa663007636270e1f79b25efbb1c6344ded735183",
+    "canonical_lf_sha256": "1bd0c45b3273065b2718bcea6dbca5f64ede5e85353d7f145cc8dcbd6e3634c7"
+  },
+  "protocol_integrity": {
+    "raw_sha256": "7482e8108ae48333e0795389767a0665ceafeaf2e10021a16fe3532f013721db",
+    "canonical_lf_sha256": "99dbda90822331560f761733ead1977ba0078ed685fa6d3340ed7613674cb104"
+  },
+  "imported_source_integrity": {
+    "pfaffian_coefficients.py": "1bd0c45b3273065b2718bcea6dbca5f64ede5e85353d7f145cc8dcbd6e3634c7",
+    "candidate.py": "10a1d2c75d67679442c257fb7b62f454471d1ecdcd2501c36604ec90490f767d",
+    "euler_identity.py": "2b346b46e559f6b1d39f422e2bb4878b228bc148552effd04c11dd5dc1be11d9"
+  },
+  "boundary_sha256": "a9e2f5172e08a7587626958aaa4524aa88fe51e146acb06ea7fdcdba56aaef8a",
+  "cases": 24,
+  "passed": 96,
+  "total": 96,
+  "test_score": 1.0,
+  "details": [
+    {
+      "n": 6,
+      "matching_size": 0,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 1,
+      "trace_scalar_gates": 6
+    },
+    {
+      "n": 6,
+      "matching_size": 1,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 0,
+      "trace_scalar_gates": 6
+    },
+    {
+      "n": 6,
+      "matching_size": 2,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": -2,
+      "trace_scalar_gates": 139
+    },
+    {
+      "n": 6,
+      "matching_size": 3,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 4,
+      "trace_scalar_gates": 139
+    },
+    {
+      "n": 6,
+      "matching_size": 4,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": -4,
+      "trace_scalar_gates": 853
+    },
+    {
+      "n": 6,
+      "matching_size": 5,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 8,
+      "trace_scalar_gates": 853
+    },
+    {
+      "n": 6,
+      "matching_size": 6,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": -8,
+      "trace_scalar_gates": 2990
+    },
+    {
+      "n": 6,
+      "matching_size": 6,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 0,
+      "trace_scalar_gates": 2990
+    },
+    {
+      "n": 7,
+      "matching_size": 0,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 1,
+      "trace_scalar_gates": 6
+    },
+    {
+      "n": 7,
+      "matching_size": 1,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 0,
+      "trace_scalar_gates": 6
+    },
+    {
+      "n": 7,
+      "matching_size": 2,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": -2,
+      "trace_scalar_gates": 139
+    },
+    {
+      "n": 7,
+      "matching_size": 3,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 4,
+      "trace_scalar_gates": 139
+    },
+    {
+      "n": 7,
+      "matching_size": 4,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 0,
+      "trace_scalar_gates": 853
+    },
+    {
+      "n": 7,
+      "matching_size": 5,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 0,
+      "trace_scalar_gates": 853
+    },
+    {
+      "n": 7,
+      "matching_size": 6,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 0,
+      "trace_scalar_gates": 2990
+    },
+    {
+      "n": 7,
+      "matching_size": 7,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": -16,
+      "trace_scalar_gates": 2990
+    },
+    {
+      "n": 8,
+      "matching_size": 0,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 1,
+      "trace_scalar_gates": 6
+    },
+    {
+      "n": 8,
+      "matching_size": 1,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 0,
+      "trace_scalar_gates": 6
+    },
+    {
+      "n": 8,
+      "matching_size": 2,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 0,
+      "trace_scalar_gates": 139
+    },
+    {
+      "n": 8,
+      "matching_size": 3,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 4,
+      "trace_scalar_gates": 139
+    },
+    {
+      "n": 8,
+      "matching_size": 4,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": -8,
+      "trace_scalar_gates": 853
+    },
+    {
+      "n": 8,
+      "matching_size": 5,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 8,
+      "trace_scalar_gates": 853
+    },
+    {
+      "n": 8,
+      "matching_size": 6,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": -16,
+      "trace_scalar_gates": 2990
+    },
+    {
+      "n": 8,
+      "matching_size": 7,
+      "tests": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "expected_coefficient": 64,
+      "trace_scalar_gates": 2990
+    }
+  ],
+  "formal_pfaffian_status": "unverified generic Lean theorem; finite local identity evidence only",
+  "root_conjecture_verified": false
+}

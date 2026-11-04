@@ -1,0 +1,9 @@
+{
+  "original_check": "Raw bytes hash rejected before reading test cases",
+  "resolution": "Git checkout changes LF to CRLF only; canonical full source matches frozen development source",
+  "commit": "2a3a6830f57eb8df200f920ec5058214bec5c32e",
+  "raw_sha256": "9974e6b1feec828f656d56cd6537f4a3f70c10fee2b2c701eb9e2b7a38f9cf2d",
+  "canonical_lf_sha256": "baf3ad1ba13b39e6895f86f1319ee7c928e3ad37283ea48ba133331b91d30320",
+  "normalization": "CRLF -> LF; no other content transformation",
+  "test_cases_evaluated_before_resolution": 0
+}

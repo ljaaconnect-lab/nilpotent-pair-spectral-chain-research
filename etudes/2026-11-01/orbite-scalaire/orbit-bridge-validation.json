@@ -1,0 +1,7046 @@
+{
+  "status": "pass",
+  "schema_version": 1,
+  "source_sha256": "f7c3584cbf0713fdfdf349e44431ceb9be7186829396f626b32355f8334cd2fc",
+  "collision_observer_sha256": "53eb5d5890e2d5d8187928a41fec58de5697e98cb85c3b2dab3a64506432867e",
+  "seed": 2026110107,
+  "original_input_cases": 20,
+  "numeric_tables": 20,
+  "formal_z_tables": 16,
+  "total_complete_tables": 36,
+  "all_projector_stages_checked": 1008,
+  "scope": {
+    "chain": "Original a,z -> G_B -> moment observation oracle -> companion projector DAG -> actual INTT -> corrected Omega coordinate",
+    "moments": "mu_(j,f) = sum_assignments amplitude * phase * kappa(m)^j",
+    "finite_differences": "Ordinary differences of product_i sum_j B_ij s_j at base zero; computed only as an independent small oracle",
+    "formal_parameters": "All z markers formal for n<=4; original a entries sampled in the stated prime field",
+    "direct_initialization_checked": "mu_0 via product of row sums; mu_1 via the row-pair Leibniz formula, with O(n^3) scalar arithmetic. This does not initialize all remaining moments.",
+    "no_initialization_polynomial_bound_claimed": true,
+    "no_full_scalar_polynomial_compiler_claimed": true
+  },
+  "verification_cost": {
+    "moment_initialization": "Enumerates n^n assignments; exponential verification-only initializer, never a supplied polynomial circuit I(n,N).",
+    "finite_difference_oracle": "Enumerates 2^n parameter evaluations for each frequency; expanded polynomial arithmetic in formal-z mode.",
+    "terminal_oracle": "Enumerates n! bijective assignments only for independent testing.",
+    "companion_component": "The actual tested component has exactly N*(4h^2+2h) ordinary scalar gates once moments are supplied.",
+    "inverse_ntt": "All N^2 summands are evaluated independently; no collapse to a presumed channel in the tested path.",
+    "counter_scope": "Counts instrumented polynomial arithmetic and enumerations; field exponentiation, input preparation, and Python overhead are not included. This is not a complete scalar gate count.",
+    "instrumented_work_counters": {
+      "field_additions": 1510117,
+      "field_multiplications": 1672231,
+      "finite_difference_orbit_evaluations": 2464,
+      "inverse_ntt_summands": 1056,
+      "moment_initializer_assignments": 14804,
+      "polynomial_add_calls": 1451432,
+      "polynomial_multiply_calls": 28656,
+      "polynomial_scale_calls": 1437376,
+      "stage_oracle_binning_assignments": 117392,
+      "terminal_oracle_assignments": 744
+    }
+  },
+  "cases": [
+    {
+      "prime": 17,
+      "n": 1,
+      "h": 0,
+      "N": 2,
+      "generator": 3,
+      "omega": 16,
+      "label_kind": "all_zero",
+      "labels": [
+        0
+      ],
+      "a": [
+        [
+          0
+        ]
+      ],
+      "numeric_z": 1,
+      "target_channel": 0,
+      "universal_correction_gamma": 1,
+      "raw_paired_orientation_sign": 1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 1,
+          "companion_gate_count_per_frequency": 0,
+          "component_gate_count_all_frequencies": 0,
+          "all_projector_stages_checked": 2,
+          "moment_table_sha256": "56a18a7cd0dae19fbafaeb861c053d8fc8b1d00ae2e28eb7e252e09ddabfb587",
+          "stage_table_sha256_by_frequency": [
+            "fc177945a85784c3c0cdee2a04baf0c9bb9e3accbbeb28cfebe50198236821e6",
+            "fc177945a85784c3c0cdee2a04baf0c9bb9e3accbbeb28cfebe50198236821e6"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                1
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                0,
+                1
+              ]
+            ],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                0,
+                1
+              ]
+            ],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 23,
+            "field_multiplications": 26,
+            "finite_difference_orbit_evaluations": 4,
+            "inverse_ntt_summands": 4,
+            "moment_initializer_assignments": 1,
+            "polynomial_add_calls": 25,
+            "polynomial_multiply_calls": 6,
+            "polynomial_scale_calls": 24,
+            "stage_oracle_binning_assignments": 2,
+            "terminal_oracle_assignments": 1
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 0,
+          "component_gate_count_all_frequencies": 0,
+          "all_projector_stages_checked": 2,
+          "moment_table_sha256": "c6e23af38c96d783b99e6d8fc51cbaee91a6e77d6c48cb459405f54d180cb0aa",
+          "stage_table_sha256_by_frequency": [
+            "c0229f6cd220f20b19d19e988fa318d5c6d579b5b0b328fb5de938977cfbb78a",
+            "c0229f6cd220f20b19d19e988fa318d5c6d579b5b0b328fb5de938977cfbb78a"
+          ],
+          "output_frequencies": [
+            [
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                1,
+                1
+              ]
+            ],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                1,
+                1
+              ]
+            ],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 23,
+            "field_multiplications": 26,
+            "finite_difference_orbit_evaluations": 4,
+            "inverse_ntt_summands": 4,
+            "moment_initializer_assignments": 1,
+            "polynomial_add_calls": 25,
+            "polynomial_multiply_calls": 6,
+            "polynomial_scale_calls": 24,
+            "stage_oracle_binning_assignments": 2,
+            "terminal_oracle_assignments": 1
+          }
+        }
+      ]
+    },
+    {
+      "prime": 17,
+      "n": 1,
+      "h": 0,
+      "N": 2,
+      "generator": 3,
+      "omega": 16,
+      "label_kind": "random",
+      "labels": [
+        -1
+      ],
+      "a": [
+        [
+          0
+        ]
+      ],
+      "numeric_z": 8,
+      "target_channel": 1,
+      "universal_correction_gamma": 1,
+      "raw_paired_orientation_sign": 1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 8,
+          "companion_gate_count_per_frequency": 0,
+          "component_gate_count_all_frequencies": 0,
+          "all_projector_stages_checked": 2,
+          "moment_table_sha256": "93d56f19255b0c30b030d92debe7eaecdd51323c3a58d5f0d063d28481566abd",
+          "stage_table_sha256_by_frequency": [
+            "757aaf344c7d4d7620d7bb5e4583327b5ec67d85e99dba3387b81930c62b043c",
+            "3ed1cb3cc05b5ccf2375bdad47b008bf75ff27a80ea401efd0b66fbea1b86e69"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                8
+              ]
+            ],
+            [
+              [
+                0,
+                9
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [],
+            [
+              [
+                0,
+                8
+              ]
+            ]
+          ],
+          "terminal_oracle_table": [
+            [],
+            [
+              [
+                0,
+                8
+              ]
+            ]
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 23,
+            "field_multiplications": 26,
+            "finite_difference_orbit_evaluations": 4,
+            "inverse_ntt_summands": 4,
+            "moment_initializer_assignments": 1,
+            "polynomial_add_calls": 25,
+            "polynomial_multiply_calls": 6,
+            "polynomial_scale_calls": 24,
+            "stage_oracle_binning_assignments": 2,
+            "terminal_oracle_assignments": 1
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 0,
+          "component_gate_count_all_frequencies": 0,
+          "all_projector_stages_checked": 2,
+          "moment_table_sha256": "d8d48a68d67884fb5f7e7ac97576a678c861d1d0bdb273a4283494b2fa4c5dce",
+          "stage_table_sha256_by_frequency": [
+            "c0229f6cd220f20b19d19e988fa318d5c6d579b5b0b328fb5de938977cfbb78a",
+            "9cac33dffd8e4fa818699238a5e313214dbe3a7b66837a68a8a2f84e9fba5cea"
+          ],
+          "output_frequencies": [
+            [
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                16
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [],
+            [
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          "terminal_oracle_table": [
+            [],
+            [
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 23,
+            "field_multiplications": 26,
+            "finite_difference_orbit_evaluations": 4,
+            "inverse_ntt_summands": 4,
+            "moment_initializer_assignments": 1,
+            "polynomial_add_calls": 25,
+            "polynomial_multiply_calls": 6,
+            "polynomial_scale_calls": 24,
+            "stage_oracle_binning_assignments": 2,
+            "terminal_oracle_assignments": 1
+          }
+        }
+      ]
+    },
+    {
+      "prime": 17,
+      "n": 2,
+      "h": 1,
+      "N": 4,
+      "generator": 3,
+      "omega": 13,
+      "label_kind": "all_zero",
+      "labels": [
+        0,
+        0
+      ],
+      "a": [
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "numeric_z": 6,
+      "target_channel": 0,
+      "universal_correction_gamma": -1,
+      "raw_paired_orientation_sign": -1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 6,
+          "companion_gate_count_per_frequency": 6,
+          "component_gate_count_all_frequencies": 24,
+          "all_projector_stages_checked": 8,
+          "moment_table_sha256": "bcfc53595295e4483b4a82822ea43c59f7184a097104203b2bd81b98c3539338",
+          "stage_table_sha256_by_frequency": [
+            "71d50196566c716a224adee1c2d21cfde705e6f7c241ffaaed390caa325e25aa",
+            "71d50196566c716a224adee1c2d21cfde705e6f7c241ffaaed390caa325e25aa",
+            "71d50196566c716a224adee1c2d21cfde705e6f7c241ffaaed390caa325e25aa",
+            "71d50196566c716a224adee1c2d21cfde705e6f7c241ffaaed390caa325e25aa"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                11
+              ]
+            ],
+            [
+              [
+                0,
+                11
+              ]
+            ],
+            [
+              [
+                0,
+                11
+              ]
+            ],
+            [
+              [
+                0,
+                11
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                0,
+                11
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                0,
+                11
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 218,
+            "field_multiplications": 236,
+            "finite_difference_orbit_evaluations": 16,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 4,
+            "polynomial_add_calls": 210,
+            "polynomial_multiply_calls": 60,
+            "polynomial_scale_calls": 192,
+            "stage_oracle_binning_assignments": 16,
+            "terminal_oracle_assignments": 2
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 6,
+          "component_gate_count_all_frequencies": 24,
+          "all_projector_stages_checked": 8,
+          "moment_table_sha256": "f846b94cd1de5fac18ccbaad99eb7298e3568c89af162301e442497895960018",
+          "stage_table_sha256_by_frequency": [
+            "9cbbee585b438665cb287a67cdc9129aa165ebe5fd702ed30f2bea1ff1017015",
+            "9cbbee585b438665cb287a67cdc9129aa165ebe5fd702ed30f2bea1ff1017015",
+            "9cbbee585b438665cb287a67cdc9129aa165ebe5fd702ed30f2bea1ff1017015",
+            "9cbbee585b438665cb287a67cdc9129aa165ebe5fd702ed30f2bea1ff1017015"
+          ],
+          "output_frequencies": [
+            [
+              [
+                6,
+                11
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            [
+              [
+                6,
+                11
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            [
+              [
+                6,
+                11
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            [
+              [
+                6,
+                11
+              ],
+              [
+                9,
+                10
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                6,
+                11
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                6,
+                11
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 338,
+            "field_multiplications": 376,
+            "finite_difference_orbit_evaluations": 16,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 4,
+            "polynomial_add_calls": 210,
+            "polynomial_multiply_calls": 60,
+            "polynomial_scale_calls": 192,
+            "stage_oracle_binning_assignments": 16,
+            "terminal_oracle_assignments": 2
+          }
+        }
+      ]
+    },
+    {
+      "prime": 17,
+      "n": 2,
+      "h": 1,
+      "N": 4,
+      "generator": 3,
+      "omega": 13,
+      "label_kind": "random",
+      "labels": [
+        8,
+        8
+      ],
+      "a": [
+        [
+          0,
+          5
+        ],
+        [
+          9,
+          14
+        ]
+      ],
+      "numeric_z": 1,
+      "target_channel": 0,
+      "universal_correction_gamma": -1,
+      "raw_paired_orientation_sign": -1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 1,
+          "companion_gate_count_per_frequency": 6,
+          "component_gate_count_all_frequencies": 24,
+          "all_projector_stages_checked": 8,
+          "moment_table_sha256": "07df7ae1ba6b339f546deddfd5e0ebbdbaf793141d1d235b38c29da78180fc0e",
+          "stage_table_sha256_by_frequency": [
+            "b554ffa76080441c293408fdcca0c2dd3b43c4c9a35d2391517cd095ce887552",
+            "b554ffa76080441c293408fdcca0c2dd3b43c4c9a35d2391517cd095ce887552",
+            "b554ffa76080441c293408fdcca0c2dd3b43c4c9a35d2391517cd095ce887552",
+            "b554ffa76080441c293408fdcca0c2dd3b43c4c9a35d2391517cd095ce887552"
+          ],
+          "output_frequencies": [
+            [],
+            [],
+            [],
+            []
+          ],
+          "inverse_ntt_table": [
+            [],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 194,
+            "field_multiplications": 200,
+            "finite_difference_orbit_evaluations": 16,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 4,
+            "polynomial_add_calls": 210,
+            "polynomial_multiply_calls": 60,
+            "polynomial_scale_calls": 192,
+            "stage_oracle_binning_assignments": 16,
+            "terminal_oracle_assignments": 2
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 6,
+          "component_gate_count_all_frequencies": 24,
+          "all_projector_stages_checked": 8,
+          "moment_table_sha256": "3731f3b1030038ad2511057224a68b5a7f8cb46827416b3863d818fc4f9e8275",
+          "stage_table_sha256_by_frequency": [
+            "5d42ef08905aa72215412780ba1bc9ca82d5e8339840141fb0c64b761dc945d1",
+            "5d42ef08905aa72215412780ba1bc9ca82d5e8339840141fb0c64b761dc945d1",
+            "5d42ef08905aa72215412780ba1bc9ca82d5e8339840141fb0c64b761dc945d1",
+            "5d42ef08905aa72215412780ba1bc9ca82d5e8339840141fb0c64b761dc945d1"
+          ],
+          "output_frequencies": [
+            [
+              [
+                6,
+                7
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            [
+              [
+                6,
+                7
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            [
+              [
+                6,
+                7
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            [
+              [
+                6,
+                7
+              ],
+              [
+                9,
+                10
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                6,
+                7
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                6,
+                7
+              ],
+              [
+                9,
+                10
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 338,
+            "field_multiplications": 376,
+            "finite_difference_orbit_evaluations": 16,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 4,
+            "polynomial_add_calls": 210,
+            "polynomial_multiply_calls": 60,
+            "polynomial_scale_calls": 192,
+            "stage_oracle_binning_assignments": 16,
+            "terminal_oracle_assignments": 2
+          }
+        }
+      ]
+    },
+    {
+      "prime": 17,
+      "n": 3,
+      "h": 3,
+      "N": 4,
+      "generator": 3,
+      "omega": 13,
+      "label_kind": "all_zero",
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "a": [
+        [
+          0,
+          4,
+          5
+        ],
+        [
+          0,
+          6,
+          5
+        ],
+        [
+          3,
+          7,
+          10
+        ]
+      ],
+      "numeric_z": 12,
+      "target_channel": 0,
+      "universal_correction_gamma": -1,
+      "raw_paired_orientation_sign": -1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 12,
+          "companion_gate_count_per_frequency": 42,
+          "component_gate_count_all_frequencies": 168,
+          "all_projector_stages_checked": 16,
+          "moment_table_sha256": "948c69b34d60c77f329046c4e90ede680e34416a084a3431d538d0fdcd1774a6",
+          "stage_table_sha256_by_frequency": [
+            "8b7d932120bb892c625da9f8a75bf77ae1deff4218f06895da01332be22f81ef",
+            "8b7d932120bb892c625da9f8a75bf77ae1deff4218f06895da01332be22f81ef",
+            "8b7d932120bb892c625da9f8a75bf77ae1deff4218f06895da01332be22f81ef",
+            "8b7d932120bb892c625da9f8a75bf77ae1deff4218f06895da01332be22f81ef"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                15
+              ]
+            ],
+            [
+              [
+                0,
+                15
+              ]
+            ],
+            [
+              [
+                0,
+                15
+              ]
+            ],
+            [
+              [
+                0,
+                15
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                0,
+                15
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                0,
+                15
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 792,
+            "field_multiplications": 904,
+            "finite_difference_orbit_evaluations": 32,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 27,
+            "polynomial_add_calls": 1210,
+            "polynomial_multiply_calls": 240,
+            "polynomial_scale_calls": 1108,
+            "stage_oracle_binning_assignments": 108,
+            "terminal_oracle_assignments": 6
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 42,
+          "component_gate_count_all_frequencies": 168,
+          "all_projector_stages_checked": 16,
+          "moment_table_sha256": "d47b89973859d1cdd982336db954bb52dedcf51f15a6928a64448a66a0a75939",
+          "stage_table_sha256_by_frequency": [
+            "531c277cd2759a06e17c6451242f07c46d7640b675bc6b8af37a5b7f322ef3d0",
+            "531c277cd2759a06e17c6451242f07c46d7640b675bc6b8af37a5b7f322ef3d0",
+            "531c277cd2759a06e17c6451242f07c46d7640b675bc6b8af37a5b7f322ef3d0",
+            "531c277cd2759a06e17c6451242f07c46d7640b675bc6b8af37a5b7f322ef3d0"
+          ],
+          "output_frequencies": [
+            [
+              [
+                84,
+                15
+              ],
+              [
+                140,
+                8
+              ],
+              [
+                161,
+                8
+              ],
+              [
+                273,
+                14
+              ]
+            ],
+            [
+              [
+                84,
+                15
+              ],
+              [
+                140,
+                8
+              ],
+              [
+                161,
+                8
+              ],
+              [
+                273,
+                14
+              ]
+            ],
+            [
+              [
+                84,
+                15
+              ],
+              [
+                140,
+                8
+              ],
+              [
+                161,
+                8
+              ],
+              [
+                273,
+                14
+              ]
+            ],
+            [
+              [
+                84,
+                15
+              ],
+              [
+                140,
+                8
+              ],
+              [
+                161,
+                8
+              ],
+              [
+                273,
+                14
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                84,
+                15
+              ],
+              [
+                140,
+                8
+              ],
+              [
+                161,
+                8
+              ],
+              [
+                273,
+                14
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                84,
+                15
+              ],
+              [
+                140,
+                8
+              ],
+              [
+                161,
+                8
+              ],
+              [
+                273,
+                14
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 2908,
+            "field_multiplications": 3336,
+            "finite_difference_orbit_evaluations": 32,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 27,
+            "polynomial_add_calls": 1210,
+            "polynomial_multiply_calls": 240,
+            "polynomial_scale_calls": 1108,
+            "stage_oracle_binning_assignments": 108,
+            "terminal_oracle_assignments": 6
+          }
+        }
+      ]
+    },
+    {
+      "prime": 17,
+      "n": 3,
+      "h": 3,
+      "N": 4,
+      "generator": 3,
+      "omega": 13,
+      "label_kind": "random",
+      "labels": [
+        -5,
+        7,
+        3
+      ],
+      "a": [
+        [
+          0,
+          12,
+          15
+        ],
+        [
+          11,
+          6,
+          8
+        ],
+        [
+          15,
+          0,
+          11
+        ]
+      ],
+      "numeric_z": 16,
+      "target_channel": 1,
+      "universal_correction_gamma": -1,
+      "raw_paired_orientation_sign": -1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 16,
+          "companion_gate_count_per_frequency": 42,
+          "component_gate_count_all_frequencies": 168,
+          "all_projector_stages_checked": 16,
+          "moment_table_sha256": "eb369317db3e0c3c3dbff19a28614c6610f9669819c9ef4f11d53d6d070bcbee",
+          "stage_table_sha256_by_frequency": [
+            "5497b67513d6f29cb3dcc4b6e5aab185ecc631a628f9a394cbda4fbbb5f85a69",
+            "7f5ce11292fdcd1992e6f33050631e4859f1e4f23ddd4233db6a6c818b6b29c2",
+            "3597d8fd35945c68d4721d7e14b8dfc27ca29b4bd6213da74afdfad34172529f",
+            "317b9f3f37df26b92c890498fffea1231884a9080f3311f29a4b4b38533cfa8c"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                13
+              ]
+            ],
+            [
+              [
+                0,
+                16
+              ]
+            ],
+            [
+              [
+                0,
+                4
+              ]
+            ],
+            [
+              [
+                0,
+                1
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [],
+            [
+              [
+                0,
+                13
+              ]
+            ],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [],
+            [
+              [
+                0,
+                13
+              ]
+            ],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 1102,
+            "field_multiplications": 1212,
+            "finite_difference_orbit_evaluations": 32,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 27,
+            "polynomial_add_calls": 1210,
+            "polynomial_multiply_calls": 240,
+            "polynomial_scale_calls": 1108,
+            "stage_oracle_binning_assignments": 108,
+            "terminal_oracle_assignments": 6
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 42,
+          "component_gate_count_all_frequencies": 168,
+          "all_projector_stages_checked": 16,
+          "moment_table_sha256": "7a1542e06baa0436b0a4bdd40e8e98180c67e2b2adeee8fe6097c87d38cabeda",
+          "stage_table_sha256_by_frequency": [
+            "97822cd38f05029b677767f4942c64580f4f31cb349929e22c4a002d8a4b8632",
+            "b17b5f6ecdfcea9493ab262b96d302868abd5facb55a3ad0a04b06ae79211333",
+            "cf6253b49a542403c4d201f21dc005c69ee770a4f0bff49504342252df26d335",
+            "de8965025b311f91e74557cd206037f5c3fc5d91cdf3dab80d9eb916a34a19b0"
+          ],
+          "output_frequencies": [
+            [
+              [
+                84,
+                7
+              ],
+              [
+                98,
+                1
+              ],
+              [
+                140,
+                15
+              ],
+              [
+                161,
+                14
+              ],
+              [
+                266,
+                13
+              ],
+              [
+                273,
+                9
+              ]
+            ],
+            [
+              [
+                84,
+                6
+              ],
+              [
+                98,
+                13
+              ],
+              [
+                140,
+                8
+              ],
+              [
+                161,
+                12
+              ],
+              [
+                266,
+                16
+              ],
+              [
+                273,
+                15
+              ]
+            ],
+            [
+              [
+                84,
+                10
+              ],
+              [
+                98,
+                16
+              ],
+              [
+                140,
+                2
+              ],
+              [
+                161,
+                3
+              ],
+              [
+                266,
+                4
+              ],
+              [
+                273,
+                8
+              ]
+            ],
+            [
+              [
+                84,
+                11
+              ],
+              [
+                98,
+                4
+              ],
+              [
+                140,
+                9
+              ],
+              [
+                161,
+                5
+              ],
+              [
+                266,
+                1
+              ],
+              [
+                273,
+                2
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [],
+            [
+              [
+                84,
+                7
+              ],
+              [
+                98,
+                1
+              ],
+              [
+                140,
+                15
+              ],
+              [
+                161,
+                14
+              ],
+              [
+                266,
+                13
+              ],
+              [
+                273,
+                9
+              ]
+            ],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [],
+            [
+              [
+                84,
+                7
+              ],
+              [
+                98,
+                1
+              ],
+              [
+                140,
+                15
+              ],
+              [
+                161,
+                14
+              ],
+              [
+                266,
+                13
+              ],
+              [
+                273,
+                9
+              ]
+            ],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 4290,
+            "field_multiplications": 4932,
+            "finite_difference_orbit_evaluations": 32,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 27,
+            "polynomial_add_calls": 1210,
+            "polynomial_multiply_calls": 240,
+            "polynomial_scale_calls": 1108,
+            "stage_oracle_binning_assignments": 108,
+            "terminal_oracle_assignments": 6
+          }
+        }
+      ]
+    },
+    {
+      "prime": 17,
+      "n": 4,
+      "h": 6,
+      "N": 8,
+      "generator": 3,
+      "omega": 9,
+      "label_kind": "all_zero",
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "a": [
+        [
+          0,
+          0,
+          10,
+          10
+        ],
+        [
+          13,
+          7,
+          5,
+          1
+        ],
+        [
+          12,
+          1,
+          12,
+          14
+        ],
+        [
+          2,
+          13,
+          4,
+          2
+        ]
+      ],
+      "numeric_z": 12,
+      "target_channel": 0,
+      "universal_correction_gamma": 1,
+      "raw_paired_orientation_sign": 1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 12,
+          "companion_gate_count_per_frequency": 156,
+          "component_gate_count_all_frequencies": 1248,
+          "all_projector_stages_checked": 56,
+          "moment_table_sha256": "a2f84c4b02bf354598e5fb64ab0c5dd5432918ad440b16a54e73d1acf3dc724f",
+          "stage_table_sha256_by_frequency": [
+            "e7804d95b70ee1a9c3ad054c167ddacda4b08a2c751ef2531ff34dbbdd970e93",
+            "e7804d95b70ee1a9c3ad054c167ddacda4b08a2c751ef2531ff34dbbdd970e93",
+            "e7804d95b70ee1a9c3ad054c167ddacda4b08a2c751ef2531ff34dbbdd970e93",
+            "e7804d95b70ee1a9c3ad054c167ddacda4b08a2c751ef2531ff34dbbdd970e93",
+            "e7804d95b70ee1a9c3ad054c167ddacda4b08a2c751ef2531ff34dbbdd970e93",
+            "e7804d95b70ee1a9c3ad054c167ddacda4b08a2c751ef2531ff34dbbdd970e93",
+            "e7804d95b70ee1a9c3ad054c167ddacda4b08a2c751ef2531ff34dbbdd970e93",
+            "e7804d95b70ee1a9c3ad054c167ddacda4b08a2c751ef2531ff34dbbdd970e93"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                8
+              ]
+            ],
+            [
+              [
+                0,
+                8
+              ]
+            ],
+            [
+              [
+                0,
+                8
+              ]
+            ],
+            [
+              [
+                0,
+                8
+              ]
+            ],
+            [
+              [
+                0,
+                8
+              ]
+            ],
+            [
+              [
+                0,
+                8
+              ]
+            ],
+            [
+              [
+                0,
+                8
+              ]
+            ],
+            [
+              [
+                0,
+                8
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                0,
+                8
+              ]
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                0,
+                8
+              ]
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 9514,
+            "field_multiplications": 10632,
+            "finite_difference_orbit_evaluations": 128,
+            "inverse_ntt_summands": 64,
+            "moment_initializer_assignments": 256,
+            "polynomial_add_calls": 21528,
+            "polynomial_multiply_calls": 1456,
+            "polynomial_scale_calls": 20832,
+            "stage_oracle_binning_assignments": 2048,
+            "terminal_oracle_assignments": 24
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 156,
+          "component_gate_count_all_frequencies": 1248,
+          "all_projector_stages_checked": 56,
+          "moment_table_sha256": "ce002b375faa806f78d8e81a84fb562443b0db9c40294326ae55b372d1d889ff",
+          "stage_table_sha256_by_frequency": [
+            "2b1ddb2e08b0801816d3f0973f7b76c48347d4e2d38a03af493bdbe6c4144ac4",
+            "2b1ddb2e08b0801816d3f0973f7b76c48347d4e2d38a03af493bdbe6c4144ac4",
+            "2b1ddb2e08b0801816d3f0973f7b76c48347d4e2d38a03af493bdbe6c4144ac4",
+            "2b1ddb2e08b0801816d3f0973f7b76c48347d4e2d38a03af493bdbe6c4144ac4",
+            "2b1ddb2e08b0801816d3f0973f7b76c48347d4e2d38a03af493bdbe6c4144ac4",
+            "2b1ddb2e08b0801816d3f0973f7b76c48347d4e2d38a03af493bdbe6c4144ac4",
+            "2b1ddb2e08b0801816d3f0973f7b76c48347d4e2d38a03af493bdbe6c4144ac4",
+            "2b1ddb2e08b0801816d3f0973f7b76c48347d4e2d38a03af493bdbe6c4144ac4"
+          ],
+          "output_frequencies": [
+            [
+              [
+                4680,
+                12
+              ],
+              [
+                4740,
+                14
+              ],
+              [
+                5160,
+                11
+              ],
+              [
+                5250,
+                5
+              ],
+              [
+                6180,
+                16
+              ],
+              [
+                6210,
+                8
+              ],
+              [
+                33060,
+                11
+              ],
+              [
+                33090,
+                14
+              ],
+              [
+                33345,
+                5
+              ],
+              [
+                33825,
+                6
+              ]
+            ],
+            [
+              [
+                4680,
+                12
+              ],
+              [
+                4740,
+                14
+              ],
+              [
+                5160,
+                11
+              ],
+              [
+                5250,
+                5
+              ],
+              [
+                6180,
+                16
+              ],
+              [
+                6210,
+                8
+              ],
+              [
+                33060,
+                11
+              ],
+              [
+                33090,
+                14
+              ],
+              [
+                33345,
+                5
+              ],
+              [
+                33825,
+                6
+              ]
+            ],
+            [
+              [
+                4680,
+                12
+              ],
+              [
+                4740,
+                14
+              ],
+              [
+                5160,
+                11
+              ],
+              [
+                5250,
+                5
+              ],
+              [
+                6180,
+                16
+              ],
+              [
+                6210,
+                8
+              ],
+              [
+                33060,
+                11
+              ],
+              [
+                33090,
+                14
+              ],
+              [
+                33345,
+                5
+              ],
+              [
+                33825,
+                6
+              ]
+            ],
+            [
+              [
+                4680,
+                12
+              ],
+              [
+                4740,
+                14
+              ],
+              [
+                5160,
+                11
+              ],
+              [
+                5250,
+                5
+              ],
+              [
+                6180,
+                16
+              ],
+              [
+                6210,
+                8
+              ],
+              [
+                33060,
+                11
+              ],
+              [
+                33090,
+                14
+              ],
+              [
+                33345,
+                5
+              ],
+              [
+                33825,
+                6
+              ]
+            ],
+            [
+              [
+                4680,
+                12
+              ],
+              [
+                4740,
+                14
+              ],
+              [
+                5160,
+                11
+              ],
+              [
+                5250,
+                5
+              ],
+              [
+                6180,
+                16
+              ],
+              [
+                6210,
+                8
+              ],
+              [
+                33060,
+                11
+              ],
+              [
+                33090,
+                14
+              ],
+              [
+                33345,
+                5
+              ],
+              [
+                33825,
+                6
+              ]
+            ],
+            [
+              [
+                4680,
+                12
+              ],
+              [
+                4740,
+                14
+              ],
+              [
+                5160,
+                11
+              ],
+              [
+                5250,
+                5
+              ],
+              [
+                6180,
+                16
+              ],
+              [
+                6210,
+                8
+              ],
+              [
+                33060,
+                11
+              ],
+              [
+                33090,
+                14
+              ],
+              [
+                33345,
+                5
+              ],
+              [
+                33825,
+                6
+              ]
+            ],
+            [
+              [
+                4680,
+                12
+              ],
+              [
+                4740,
+                14
+              ],
+              [
+                5160,
+                11
+              ],
+              [
+                5250,
+                5
+              ],
+              [
+                6180,
+                16
+              ],
+              [
+                6210,
+                8
+              ],
+              [
+                33060,
+                11
+              ],
+              [
+                33090,
+                14
+              ],
+              [
+                33345,
+                5
+              ],
+              [
+                33825,
+                6
+              ]
+            ],
+            [
+              [
+                4680,
+                12
+              ],
+              [
+                4740,
+                14
+              ],
+              [
+                5160,
+                11
+              ],
+              [
+                5250,
+                5
+              ],
+              [
+                6180,
+                16
+              ],
+              [
+                6210,
+                8
+              ],
+              [
+                33060,
+                11
+              ],
+              [
+                33090,
+                14
+              ],
+              [
+                33345,
+                5
+              ],
+              [
+                33825,
+                6
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                4680,
+                12
+              ],
+              [
+                4740,
+                14
+              ],
+              [
+                5160,
+                11
+              ],
+              [
+                5250,
+                5
+              ],
+              [
+                6180,
+                16
+              ],
+              [
+                6210,
+                8
+              ],
+              [
+                33060,
+                11
+              ],
+              [
+                33090,
+                14
+              ],
+              [
+                33345,
+                5
+              ],
+              [
+                33825,
+                6
+              ]
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                4680,
+                12
+              ],
+              [
+                4740,
+                14
+              ],
+              [
+                5160,
+                11
+              ],
+              [
+                5250,
+                5
+              ],
+              [
+                6180,
+                16
+              ],
+              [
+                6210,
+                8
+              ],
+              [
+                33060,
+                11
+              ],
+              [
+                33090,
+                14
+              ],
+              [
+                33345,
+                5
+              ],
+              [
+                33825,
+                6
+              ]
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 61394,
+            "field_multiplications": 78024,
+            "finite_difference_orbit_evaluations": 128,
+            "inverse_ntt_summands": 64,
+            "moment_initializer_assignments": 256,
+            "polynomial_add_calls": 21528,
+            "polynomial_multiply_calls": 1456,
+            "polynomial_scale_calls": 20832,
+            "stage_oracle_binning_assignments": 2048,
+            "terminal_oracle_assignments": 24
+          }
+        }
+      ]
+    },
+    {
+      "prime": 17,
+      "n": 4,
+      "h": 6,
+      "N": 8,
+      "generator": 3,
+      "omega": 9,
+      "label_kind": "random",
+      "labels": [
+        2,
+        9,
+        -6,
+        1
+      ],
+      "a": [
+        [
+          0,
+          4,
+          5,
+          13
+        ],
+        [
+          12,
+          13,
+          6,
+          9
+        ],
+        [
+          0,
+          1,
+          1,
+          14
+        ],
+        [
+          3,
+          9,
+          8,
+          11
+        ]
+      ],
+      "numeric_z": 9,
+      "target_channel": 6,
+      "universal_correction_gamma": 1,
+      "raw_paired_orientation_sign": 1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 9,
+          "companion_gate_count_per_frequency": 156,
+          "component_gate_count_all_frequencies": 1248,
+          "all_projector_stages_checked": 56,
+          "moment_table_sha256": "37321c85de685d4a64f67ad4103267b9d8fe2b1a0ca6a8be2718b9a0a0b143b8",
+          "stage_table_sha256_by_frequency": [
+            "6dd0a06bed7f713149ba7f8744070d6c7ea6fcbe51d06edad585b3dea3c3f637",
+            "db2bd7429d0b5e62f050e9d4ff193452ec0a964cdbe58108d30decd03886de7b",
+            "bd05136cb923d4303329d5c52d3f375bb322151d1a78c663a6fbc312bafe7d97",
+            "ba46b92d0fb9350571ec61aee1374ad98bbba4f73dac13d8ea75f9be457bcb85",
+            "6b90289ec92eb771d61d5c1b968688a7549717e27058aef3e87b338b1e7e9dc6",
+            "51772cec8052641f58e780ab0786d45b5f898bb9342e8e2711925ebf0611f32c",
+            "f70c02bdc2bd54d148103604239f9fa828644a15491a0ebf4196612469a39026",
+            "55dfe820d0ca924c72d617e2daf623db743676e47fb6d99ed69262ec57555435"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                5
+              ]
+            ],
+            [
+              [
+                0,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                12
+              ]
+            ],
+            [
+              [
+                0,
+                14
+              ]
+            ],
+            [
+              [
+                0,
+                5
+              ]
+            ],
+            [
+              [
+                0,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                12
+              ]
+            ],
+            [
+              [
+                0,
+                14
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              [
+                0,
+                5
+              ]
+            ],
+            []
+          ],
+          "terminal_oracle_table": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              [
+                0,
+                5
+              ]
+            ],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 9319,
+            "field_multiplications": 10288,
+            "finite_difference_orbit_evaluations": 128,
+            "inverse_ntt_summands": 64,
+            "moment_initializer_assignments": 256,
+            "polynomial_add_calls": 21528,
+            "polynomial_multiply_calls": 1456,
+            "polynomial_scale_calls": 20832,
+            "stage_oracle_binning_assignments": 2048,
+            "terminal_oracle_assignments": 24
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 156,
+          "component_gate_count_all_frequencies": 1248,
+          "all_projector_stages_checked": 56,
+          "moment_table_sha256": "51799976cfe73d505688814c78082693d889f662d5b9db4d8e2264b52c1f3753",
+          "stage_table_sha256_by_frequency": [
+            "9b0061b99e3f88bc188b9f23cf1ce1de0a39eaabb4f60ea3c12daa7d255397e6",
+            "1e023afa1d45246d8899241acfe585d487da6e6d20f2c8e3995d95b1a0b5c370",
+            "bbba9d868e56ccbae5212ecbde85ab36d7ed5bbc8b864e073e6a1a3939bf3074",
+            "438293aa4a702453fcc5955c9f38d717fca85470372c0b73b7f2b3fa6228e656",
+            "1fef5ba63138a785d6d4167b0003805da14c6eaa19067a30e84fda873352f43d",
+            "550cf56947ae7ba31f3a3e365d30b45587f9685498f96b8305e3d7df28a5a13a",
+            "d85adf57139a89d2e1677faa9a74d19be28f2797c67f6297eafab616d19d8ce5",
+            "051fa83911ab7c780a5dddf175a9820003a600d5094c144922ccd7d3a73ca058"
+          ],
+          "output_frequencies": [
+            [
+              [
+                4740,
+                4
+              ],
+              [
+                8580,
+                13
+              ],
+              [
+                9345,
+                1
+              ],
+              [
+                10260,
+                1
+              ],
+              [
+                10305,
+                12
+              ],
+              [
+                17025,
+                1
+              ],
+              [
+                33300,
+                10
+              ],
+              [
+                33345,
+                1
+              ]
+            ],
+            [
+              [
+                4740,
+                16
+              ],
+              [
+                8580,
+                1
+              ],
+              [
+                9345,
+                4
+              ],
+              [
+                10260,
+                4
+              ],
+              [
+                10305,
+                14
+              ],
+              [
+                17025,
+                4
+              ],
+              [
+                33300,
+                6
+              ],
+              [
+                33345,
+                4
+              ]
+            ],
+            [
+              [
+                4740,
+                13
+              ],
+              [
+                8580,
+                4
+              ],
+              [
+                9345,
+                16
+              ],
+              [
+                10260,
+                16
+              ],
+              [
+                10305,
+                5
+              ],
+              [
+                17025,
+                16
+              ],
+              [
+                33300,
+                7
+              ],
+              [
+                33345,
+                16
+              ]
+            ],
+            [
+              [
+                4740,
+                1
+              ],
+              [
+                8580,
+                16
+              ],
+              [
+                9345,
+                13
+              ],
+              [
+                10260,
+                13
+              ],
+              [
+                10305,
+                3
+              ],
+              [
+                17025,
+                13
+              ],
+              [
+                33300,
+                11
+              ],
+              [
+                33345,
+                13
+              ]
+            ],
+            [
+              [
+                4740,
+                4
+              ],
+              [
+                8580,
+                13
+              ],
+              [
+                9345,
+                1
+              ],
+              [
+                10260,
+                1
+              ],
+              [
+                10305,
+                12
+              ],
+              [
+                17025,
+                1
+              ],
+              [
+                33300,
+                10
+              ],
+              [
+                33345,
+                1
+              ]
+            ],
+            [
+              [
+                4740,
+                16
+              ],
+              [
+                8580,
+                1
+              ],
+              [
+                9345,
+                4
+              ],
+              [
+                10260,
+                4
+              ],
+              [
+                10305,
+                14
+              ],
+              [
+                17025,
+                4
+              ],
+              [
+                33300,
+                6
+              ],
+              [
+                33345,
+                4
+              ]
+            ],
+            [
+              [
+                4740,
+                13
+              ],
+              [
+                8580,
+                4
+              ],
+              [
+                9345,
+                16
+              ],
+              [
+                10260,
+                16
+              ],
+              [
+                10305,
+                5
+              ],
+              [
+                17025,
+                16
+              ],
+              [
+                33300,
+                7
+              ],
+              [
+                33345,
+                16
+              ]
+            ],
+            [
+              [
+                4740,
+                1
+              ],
+              [
+                8580,
+                16
+              ],
+              [
+                9345,
+                13
+              ],
+              [
+                10260,
+                13
+              ],
+              [
+                10305,
+                3
+              ],
+              [
+                17025,
+                13
+              ],
+              [
+                33300,
+                11
+              ],
+              [
+                33345,
+                13
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              [
+                4740,
+                4
+              ],
+              [
+                8580,
+                13
+              ],
+              [
+                9345,
+                1
+              ],
+              [
+                10260,
+                1
+              ],
+              [
+                10305,
+                12
+              ],
+              [
+                17025,
+                1
+              ],
+              [
+                33300,
+                10
+              ],
+              [
+                33345,
+                1
+              ]
+            ],
+            []
+          ],
+          "terminal_oracle_table": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              [
+                4740,
+                4
+              ],
+              [
+                8580,
+                13
+              ],
+              [
+                9345,
+                1
+              ],
+              [
+                10260,
+                1
+              ],
+              [
+                10305,
+                12
+              ],
+              [
+                17025,
+                1
+              ],
+              [
+                33300,
+                10
+              ],
+              [
+                33345,
+                1
+              ]
+            ],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 64624,
+            "field_multiplications": 78696,
+            "finite_difference_orbit_evaluations": 128,
+            "inverse_ntt_summands": 64,
+            "moment_initializer_assignments": 256,
+            "polynomial_add_calls": 21528,
+            "polynomial_multiply_calls": 1456,
+            "polynomial_scale_calls": 20832,
+            "stage_oracle_binning_assignments": 2048,
+            "terminal_oracle_assignments": 24
+          }
+        }
+      ]
+    },
+    {
+      "prime": 17,
+      "n": 5,
+      "h": 10,
+      "N": 8,
+      "generator": 3,
+      "omega": 9,
+      "label_kind": "all_zero",
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "a": [
+        [
+          0,
+          1,
+          14,
+          3,
+          1
+        ],
+        [
+          1,
+          9,
+          12,
+          5,
+          7
+        ],
+        [
+          7,
+          11,
+          1,
+          6,
+          10
+        ],
+        [
+          13,
+          5,
+          11,
+          16,
+          13
+        ],
+        [
+          0,
+          7,
+          3,
+          7,
+          9
+        ]
+      ],
+      "numeric_z": 4,
+      "target_channel": 0,
+      "universal_correction_gamma": 1,
+      "raw_paired_orientation_sign": 1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": false,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 4,
+          "companion_gate_count_per_frequency": 420,
+          "component_gate_count_all_frequencies": 3360,
+          "all_projector_stages_checked": 88,
+          "moment_table_sha256": "19905f52b16ba73480681ac54d7e479ede1993ab2da38b9614957f02e911a4d2",
+          "stage_table_sha256_by_frequency": [
+            "5ff86a23d3ef756a951aca7de5873ed348a5af8d8769efef3d516939198202bd",
+            "5ff86a23d3ef756a951aca7de5873ed348a5af8d8769efef3d516939198202bd",
+            "5ff86a23d3ef756a951aca7de5873ed348a5af8d8769efef3d516939198202bd",
+            "5ff86a23d3ef756a951aca7de5873ed348a5af8d8769efef3d516939198202bd",
+            "5ff86a23d3ef756a951aca7de5873ed348a5af8d8769efef3d516939198202bd",
+            "5ff86a23d3ef756a951aca7de5873ed348a5af8d8769efef3d516939198202bd",
+            "5ff86a23d3ef756a951aca7de5873ed348a5af8d8769efef3d516939198202bd",
+            "5ff86a23d3ef756a951aca7de5873ed348a5af8d8769efef3d516939198202bd"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                3
+              ]
+            ],
+            [
+              [
+                0,
+                3
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                0,
+                3
+              ]
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                0,
+                3
+              ]
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 185488,
+            "field_multiplications": 193944,
+            "finite_difference_orbit_evaluations": 256,
+            "inverse_ntt_summands": 64,
+            "moment_initializer_assignments": 3125,
+            "polynomial_add_calls": 316912,
+            "polynomial_multiply_calls": 3640,
+            "polynomial_scale_calls": 315032,
+            "stage_oracle_binning_assignments": 25000,
+            "terminal_oracle_assignments": 120
+          }
+        }
+      ]
+    },
+    {
+      "prime": 17,
+      "n": 5,
+      "h": 10,
+      "N": 8,
+      "generator": 3,
+      "omega": 9,
+      "label_kind": "random",
+      "labels": [
+        6,
+        11,
+        4,
+        14,
+        -8
+      ],
+      "a": [
+        [
+          0,
+          1,
+          0,
+          0,
+          13
+        ],
+        [
+          0,
+          0,
+          9,
+          5,
+          10
+        ],
+        [
+          7,
+          16,
+          11,
+          7,
+          14
+        ],
+        [
+          8,
+          1,
+          5,
+          16,
+          16
+        ],
+        [
+          3,
+          6,
+          6,
+          1,
+          9
+        ]
+      ],
+      "numeric_z": 16,
+      "target_channel": 3,
+      "universal_correction_gamma": 1,
+      "raw_paired_orientation_sign": 1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": false,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 16,
+          "companion_gate_count_per_frequency": 420,
+          "component_gate_count_all_frequencies": 3360,
+          "all_projector_stages_checked": 88,
+          "moment_table_sha256": "0d1a2e4d4f660dc43d0a2f56b5322e956b4cbddca2c3624183f6d571a2543422",
+          "stage_table_sha256_by_frequency": [
+            "68d2941927618cb386fe7eb16f6f61b6d8c5cfdb98ab239293237730f6c3ecb5",
+            "e8501665f153b66137c3d07226e3f48fd20b351cb82dd279a88289576aba5166",
+            "d242c3d2136be15af3e2f14630d2e91e7608d12fd91e693e78a4bc19a609208a",
+            "c299d0536b448f7243fbcf8d1fff808b0312311bc438d37c2e281a3a23bc3445",
+            "8dc2b36de22fe882ee27fdca11d357bca4bfb387471423c28ad8c3131064f4bc",
+            "69146a4f4bca97004b0ce278c1b9726ea516ca91f2dfe137216d9238971c04ca",
+            "9f35b55e5077507820c94097848ee7c3296de49c00bd9baaa07f2fa39ac8abd6",
+            "082aac9105c07f36f5881d63e465433b771026cd41d8b754897abba5a60a7037"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                4
+              ]
+            ],
+            [
+              [
+                0,
+                9
+              ]
+            ],
+            [
+              [
+                0,
+                16
+              ]
+            ],
+            [
+              [
+                0,
+                2
+              ]
+            ],
+            [
+              [
+                0,
+                13
+              ]
+            ],
+            [
+              [
+                0,
+                8
+              ]
+            ],
+            [
+              [
+                0,
+                1
+              ]
+            ],
+            [
+              [
+                0,
+                15
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [],
+            [],
+            [],
+            [
+              [
+                0,
+                4
+              ]
+            ],
+            [],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [],
+            [],
+            [],
+            [
+              [
+                0,
+                4
+              ]
+            ],
+            [],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 243288,
+            "field_multiplications": 253201,
+            "finite_difference_orbit_evaluations": 256,
+            "inverse_ntt_summands": 64,
+            "moment_initializer_assignments": 3125,
+            "polynomial_add_calls": 316912,
+            "polynomial_multiply_calls": 3640,
+            "polynomial_scale_calls": 315032,
+            "stage_oracle_binning_assignments": 25000,
+            "terminal_oracle_assignments": 120
+          }
+        }
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 1,
+      "h": 0,
+      "N": 2,
+      "generator": 5,
+      "omega": 96,
+      "label_kind": "all_zero",
+      "labels": [
+        0
+      ],
+      "a": [
+        [
+          0
+        ]
+      ],
+      "numeric_z": 76,
+      "target_channel": 0,
+      "universal_correction_gamma": 1,
+      "raw_paired_orientation_sign": 1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 76,
+          "companion_gate_count_per_frequency": 0,
+          "component_gate_count_all_frequencies": 0,
+          "all_projector_stages_checked": 2,
+          "moment_table_sha256": "bcbe2358714a2e83e6909f4ee612c654c55c3a48cd71585952ca4b6e15dbd32e",
+          "stage_table_sha256_by_frequency": [
+            "4a0f20b15d367c3f31534cd4f6784532f87e5b41ec117808a750e4647523d426",
+            "4a0f20b15d367c3f31534cd4f6784532f87e5b41ec117808a750e4647523d426"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                76
+              ]
+            ],
+            [
+              [
+                0,
+                76
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                0,
+                76
+              ]
+            ],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                0,
+                76
+              ]
+            ],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 23,
+            "field_multiplications": 26,
+            "finite_difference_orbit_evaluations": 4,
+            "inverse_ntt_summands": 4,
+            "moment_initializer_assignments": 1,
+            "polynomial_add_calls": 25,
+            "polynomial_multiply_calls": 6,
+            "polynomial_scale_calls": 24,
+            "stage_oracle_binning_assignments": 2,
+            "terminal_oracle_assignments": 1
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 0,
+          "component_gate_count_all_frequencies": 0,
+          "all_projector_stages_checked": 2,
+          "moment_table_sha256": "c6e23af38c96d783b99e6d8fc51cbaee91a6e77d6c48cb459405f54d180cb0aa",
+          "stage_table_sha256_by_frequency": [
+            "c0229f6cd220f20b19d19e988fa318d5c6d579b5b0b328fb5de938977cfbb78a",
+            "c0229f6cd220f20b19d19e988fa318d5c6d579b5b0b328fb5de938977cfbb78a"
+          ],
+          "output_frequencies": [
+            [
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                1,
+                1
+              ]
+            ],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                1,
+                1
+              ]
+            ],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 23,
+            "field_multiplications": 26,
+            "finite_difference_orbit_evaluations": 4,
+            "inverse_ntt_summands": 4,
+            "moment_initializer_assignments": 1,
+            "polynomial_add_calls": 25,
+            "polynomial_multiply_calls": 6,
+            "polynomial_scale_calls": 24,
+            "stage_oracle_binning_assignments": 2,
+            "terminal_oracle_assignments": 1
+          }
+        }
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 1,
+      "h": 0,
+      "N": 2,
+      "generator": 5,
+      "omega": 96,
+      "label_kind": "random",
+      "labels": [
+        0
+      ],
+      "a": [
+        [
+          0
+        ]
+      ],
+      "numeric_z": 7,
+      "target_channel": 0,
+      "universal_correction_gamma": 1,
+      "raw_paired_orientation_sign": 1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 7,
+          "companion_gate_count_per_frequency": 0,
+          "component_gate_count_all_frequencies": 0,
+          "all_projector_stages_checked": 2,
+          "moment_table_sha256": "20784e082a49bda3dd2705bc23109e52b416e8e9cce93f40088b4376797b6d09",
+          "stage_table_sha256_by_frequency": [
+            "4fcef66a0a206294f595bcb71f3c18f1346b453c182e4cea31cc2a5a56c1ff41",
+            "4fcef66a0a206294f595bcb71f3c18f1346b453c182e4cea31cc2a5a56c1ff41"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                7
+              ]
+            ],
+            [
+              [
+                0,
+                7
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                0,
+                7
+              ]
+            ],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                0,
+                7
+              ]
+            ],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 23,
+            "field_multiplications": 26,
+            "finite_difference_orbit_evaluations": 4,
+            "inverse_ntt_summands": 4,
+            "moment_initializer_assignments": 1,
+            "polynomial_add_calls": 25,
+            "polynomial_multiply_calls": 6,
+            "polynomial_scale_calls": 24,
+            "stage_oracle_binning_assignments": 2,
+            "terminal_oracle_assignments": 1
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 0,
+          "component_gate_count_all_frequencies": 0,
+          "all_projector_stages_checked": 2,
+          "moment_table_sha256": "c6e23af38c96d783b99e6d8fc51cbaee91a6e77d6c48cb459405f54d180cb0aa",
+          "stage_table_sha256_by_frequency": [
+            "c0229f6cd220f20b19d19e988fa318d5c6d579b5b0b328fb5de938977cfbb78a",
+            "c0229f6cd220f20b19d19e988fa318d5c6d579b5b0b328fb5de938977cfbb78a"
+          ],
+          "output_frequencies": [
+            [
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                1,
+                1
+              ]
+            ],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                1,
+                1
+              ]
+            ],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 23,
+            "field_multiplications": 26,
+            "finite_difference_orbit_evaluations": 4,
+            "inverse_ntt_summands": 4,
+            "moment_initializer_assignments": 1,
+            "polynomial_add_calls": 25,
+            "polynomial_multiply_calls": 6,
+            "polynomial_scale_calls": 24,
+            "stage_oracle_binning_assignments": 2,
+            "terminal_oracle_assignments": 1
+          }
+        }
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 2,
+      "h": 1,
+      "N": 4,
+      "generator": 5,
+      "omega": 22,
+      "label_kind": "all_zero",
+      "labels": [
+        0,
+        0
+      ],
+      "a": [
+        [
+          0,
+          14
+        ],
+        [
+          84,
+          6
+        ]
+      ],
+      "numeric_z": 21,
+      "target_channel": 0,
+      "universal_correction_gamma": -1,
+      "raw_paired_orientation_sign": -1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 21,
+          "companion_gate_count_per_frequency": 6,
+          "component_gate_count_all_frequencies": 24,
+          "all_projector_stages_checked": 8,
+          "moment_table_sha256": "8a7deffca76651122fbd64ab5a9081748aa1fdc23c12f39137482d3c7132dc1e",
+          "stage_table_sha256_by_frequency": [
+            "1eb6d0049e2805c845aac4a158e4308c30d08b46c52cd6890bb73d1f854c8bb2",
+            "1eb6d0049e2805c845aac4a158e4308c30d08b46c52cd6890bb73d1f854c8bb2",
+            "1eb6d0049e2805c845aac4a158e4308c30d08b46c52cd6890bb73d1f854c8bb2",
+            "1eb6d0049e2805c845aac4a158e4308c30d08b46c52cd6890bb73d1f854c8bb2"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                51
+              ]
+            ],
+            [
+              [
+                0,
+                51
+              ]
+            ],
+            [
+              [
+                0,
+                51
+              ]
+            ],
+            [
+              [
+                0,
+                51
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                0,
+                51
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                0,
+                51
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 218,
+            "field_multiplications": 236,
+            "finite_difference_orbit_evaluations": 16,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 4,
+            "polynomial_add_calls": 210,
+            "polynomial_multiply_calls": 60,
+            "polynomial_scale_calls": 192,
+            "stage_oracle_binning_assignments": 16,
+            "terminal_oracle_assignments": 2
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 6,
+          "component_gate_count_all_frequencies": 24,
+          "all_projector_stages_checked": 8,
+          "moment_table_sha256": "a6fe7584732a78fc1ac9db44adad8610d60f5e53e983b8d4199f9d9ea21ff3e4",
+          "stage_table_sha256_by_frequency": [
+            "11ccac36d9844bc576e6b0ae506a4451e046c6952084bf9c7a1a323c9ae056fd",
+            "11ccac36d9844bc576e6b0ae506a4451e046c6952084bf9c7a1a323c9ae056fd",
+            "11ccac36d9844bc576e6b0ae506a4451e046c6952084bf9c7a1a323c9ae056fd",
+            "11ccac36d9844bc576e6b0ae506a4451e046c6952084bf9c7a1a323c9ae056fd"
+          ],
+          "output_frequencies": [
+            [
+              [
+                6,
+                25
+              ],
+              [
+                9,
+                37
+              ]
+            ],
+            [
+              [
+                6,
+                25
+              ],
+              [
+                9,
+                37
+              ]
+            ],
+            [
+              [
+                6,
+                25
+              ],
+              [
+                9,
+                37
+              ]
+            ],
+            [
+              [
+                6,
+                25
+              ],
+              [
+                9,
+                37
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                6,
+                25
+              ],
+              [
+                9,
+                37
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                6,
+                25
+              ],
+              [
+                9,
+                37
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 338,
+            "field_multiplications": 376,
+            "finite_difference_orbit_evaluations": 16,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 4,
+            "polynomial_add_calls": 210,
+            "polynomial_multiply_calls": 60,
+            "polynomial_scale_calls": 192,
+            "stage_oracle_binning_assignments": 16,
+            "terminal_oracle_assignments": 2
+          }
+        }
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 2,
+      "h": 1,
+      "N": 4,
+      "generator": 5,
+      "omega": 22,
+      "label_kind": "random",
+      "labels": [
+        5,
+        2
+      ],
+      "a": [
+        [
+          0,
+          78
+        ],
+        [
+          82,
+          90
+        ]
+      ],
+      "numeric_z": 44,
+      "target_channel": 3,
+      "universal_correction_gamma": -1,
+      "raw_paired_orientation_sign": -1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 44,
+          "companion_gate_count_per_frequency": 6,
+          "component_gate_count_all_frequencies": 24,
+          "all_projector_stages_checked": 8,
+          "moment_table_sha256": "c052ccb256e31363670d7e5fdc8fc23e89a1740345775b3dfecd8d48622f71a7",
+          "stage_table_sha256_by_frequency": [
+            "c1d91ced84d0c744fe0eecf7c8bad923c01d8cfe683d6f0b45d976bccda78211",
+            "097f2191f6c2f11a91bd9e4f2bbb29771cdbb95e4f1da39858bad42cdc9d6432",
+            "2080765ae282635d9e9231af449b5e205fbf54f9a08414aa3e698b355916e8e1",
+            "9fbf3376554f1035d697ed23bb59e3610bdafe7042f8ea5842a759201968e6c5"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                13
+              ]
+            ],
+            [
+              [
+                0,
+                5
+              ]
+            ],
+            [
+              [
+                0,
+                84
+              ]
+            ],
+            [
+              [
+                0,
+                92
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [],
+            [],
+            [],
+            [
+              [
+                0,
+                13
+              ]
+            ]
+          ],
+          "terminal_oracle_table": [
+            [],
+            [],
+            [],
+            [
+              [
+                0,
+                13
+              ]
+            ]
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 218,
+            "field_multiplications": 236,
+            "finite_difference_orbit_evaluations": 16,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 4,
+            "polynomial_add_calls": 210,
+            "polynomial_multiply_calls": 60,
+            "polynomial_scale_calls": 192,
+            "stage_oracle_binning_assignments": 16,
+            "terminal_oracle_assignments": 2
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 6,
+          "component_gate_count_all_frequencies": 24,
+          "all_projector_stages_checked": 8,
+          "moment_table_sha256": "187b2a29ffb09eab97b0a980fafe602f5c67f09a3a1097ee6330172b3da7588a",
+          "stage_table_sha256_by_frequency": [
+            "c7bd84da59e4d822d2395de050d59b9d6e3543481448463a232480aefc4bbce6",
+            "414c4ac64add71bc631b26cfab69b184d6250d506628e0a4f6391959f4097099",
+            "c5659e5d31ffe6deae1f1ba976c9dc30752fc8a3b7ec4ac7ec6b66907507c608",
+            "63d47050a56b6a28135a05272aa57d8170488f94e548ad2a9af7085cf6facc0b"
+          ],
+          "output_frequencies": [
+            [
+              [
+                6,
+                41
+              ],
+              [
+                9,
+                50
+              ]
+            ],
+            [
+              [
+                6,
+                68
+              ],
+              [
+                9,
+                64
+              ]
+            ],
+            [
+              [
+                6,
+                56
+              ],
+              [
+                9,
+                47
+              ]
+            ],
+            [
+              [
+                6,
+                29
+              ],
+              [
+                9,
+                33
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [],
+            [],
+            [],
+            [
+              [
+                6,
+                41
+              ],
+              [
+                9,
+                50
+              ]
+            ]
+          ],
+          "terminal_oracle_table": [
+            [],
+            [],
+            [],
+            [
+              [
+                6,
+                41
+              ],
+              [
+                9,
+                50
+              ]
+            ]
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 338,
+            "field_multiplications": 376,
+            "finite_difference_orbit_evaluations": 16,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 4,
+            "polynomial_add_calls": 210,
+            "polynomial_multiply_calls": 60,
+            "polynomial_scale_calls": 192,
+            "stage_oracle_binning_assignments": 16,
+            "terminal_oracle_assignments": 2
+          }
+        }
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 3,
+      "h": 3,
+      "N": 4,
+      "generator": 5,
+      "omega": 22,
+      "label_kind": "all_zero",
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "a": [
+        [
+          0,
+          64,
+          7
+        ],
+        [
+          90,
+          3,
+          92
+        ],
+        [
+          79,
+          19,
+          60
+        ]
+      ],
+      "numeric_z": 6,
+      "target_channel": 0,
+      "universal_correction_gamma": -1,
+      "raw_paired_orientation_sign": -1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 6,
+          "companion_gate_count_per_frequency": 42,
+          "component_gate_count_all_frequencies": 168,
+          "all_projector_stages_checked": 16,
+          "moment_table_sha256": "a9ed4cf3c2551ca2fbc9dc263f0100e4fd7df4b0db00e3f71bf5a4c1c0efcf61",
+          "stage_table_sha256_by_frequency": [
+            "7abba6fcb1dc94a835fbc01a3e5be23e64181221924a3e7ee879274e302068db",
+            "7abba6fcb1dc94a835fbc01a3e5be23e64181221924a3e7ee879274e302068db",
+            "7abba6fcb1dc94a835fbc01a3e5be23e64181221924a3e7ee879274e302068db",
+            "7abba6fcb1dc94a835fbc01a3e5be23e64181221924a3e7ee879274e302068db"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                77
+              ]
+            ],
+            [
+              [
+                0,
+                77
+              ]
+            ],
+            [
+              [
+                0,
+                77
+              ]
+            ],
+            [
+              [
+                0,
+                77
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                0,
+                77
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                0,
+                77
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 1150,
+            "field_multiplications": 1252,
+            "finite_difference_orbit_evaluations": 32,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 27,
+            "polynomial_add_calls": 1210,
+            "polynomial_multiply_calls": 240,
+            "polynomial_scale_calls": 1108,
+            "stage_oracle_binning_assignments": 108,
+            "terminal_oracle_assignments": 6
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 42,
+          "component_gate_count_all_frequencies": 168,
+          "all_projector_stages_checked": 16,
+          "moment_table_sha256": "f64e845ac2b362926e2ddb8f738e457eb725ec4bbb3e9dbcc9452ee457dd8be8",
+          "stage_table_sha256_by_frequency": [
+            "b7f54eb0dcf513f4614078f45bb3c3692e9c1317dee7ede225bd4392d73f5a1c",
+            "b7f54eb0dcf513f4614078f45bb3c3692e9c1317dee7ede225bd4392d73f5a1c",
+            "b7f54eb0dcf513f4614078f45bb3c3692e9c1317dee7ede225bd4392d73f5a1c",
+            "b7f54eb0dcf513f4614078f45bb3c3692e9c1317dee7ede225bd4392d73f5a1c"
+          ],
+          "output_frequencies": [
+            [
+              [
+                84,
+                25
+              ],
+              [
+                98,
+                59
+              ],
+              [
+                140,
+                87
+              ],
+              [
+                161,
+                3
+              ],
+              [
+                266,
+                26
+              ],
+              [
+                273,
+                23
+              ]
+            ],
+            [
+              [
+                84,
+                25
+              ],
+              [
+                98,
+                59
+              ],
+              [
+                140,
+                87
+              ],
+              [
+                161,
+                3
+              ],
+              [
+                266,
+                26
+              ],
+              [
+                273,
+                23
+              ]
+            ],
+            [
+              [
+                84,
+                25
+              ],
+              [
+                98,
+                59
+              ],
+              [
+                140,
+                87
+              ],
+              [
+                161,
+                3
+              ],
+              [
+                266,
+                26
+              ],
+              [
+                273,
+                23
+              ]
+            ],
+            [
+              [
+                84,
+                25
+              ],
+              [
+                98,
+                59
+              ],
+              [
+                140,
+                87
+              ],
+              [
+                161,
+                3
+              ],
+              [
+                266,
+                26
+              ],
+              [
+                273,
+                23
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                84,
+                25
+              ],
+              [
+                98,
+                59
+              ],
+              [
+                140,
+                87
+              ],
+              [
+                161,
+                3
+              ],
+              [
+                266,
+                26
+              ],
+              [
+                273,
+                23
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                84,
+                25
+              ],
+              [
+                98,
+                59
+              ],
+              [
+                140,
+                87
+              ],
+              [
+                161,
+                3
+              ],
+              [
+                266,
+                26
+              ],
+              [
+                273,
+                23
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 4290,
+            "field_multiplications": 4932,
+            "finite_difference_orbit_evaluations": 32,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 27,
+            "polynomial_add_calls": 1210,
+            "polynomial_multiply_calls": 240,
+            "polynomial_scale_calls": 1108,
+            "stage_oracle_binning_assignments": 108,
+            "terminal_oracle_assignments": 6
+          }
+        }
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 3,
+      "h": 3,
+      "N": 4,
+      "generator": 5,
+      "omega": 22,
+      "label_kind": "random",
+      "labels": [
+        3,
+        1,
+        -6
+      ],
+      "a": [
+        [
+          0,
+          93,
+          19
+        ],
+        [
+          49,
+          83,
+          41
+        ],
+        [
+          77,
+          91,
+          65
+        ]
+      ],
+      "numeric_z": 87,
+      "target_channel": 2,
+      "universal_correction_gamma": -1,
+      "raw_paired_orientation_sign": -1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 87,
+          "companion_gate_count_per_frequency": 42,
+          "component_gate_count_all_frequencies": 168,
+          "all_projector_stages_checked": 16,
+          "moment_table_sha256": "b3ac52739c7f267a032f6a1ca3f2c2dad983f13444863eae139236a5cfdeb541",
+          "stage_table_sha256_by_frequency": [
+            "af9560bb44015cfe5710b8150fe2a0196c844d4b3d3b823fbfe715c47dd95108",
+            "4c39a293ca0a806b4eae5e654f8055ffb59400101fc58251daaaaeeb060d0f47",
+            "c8589aec8e7044ad3bef7767fa11fa90b22f309304552ec44584e652d495015f",
+            "023c8c45990cf9563cfbc518bd8b7203f961e147d59bf721b2a06300b4a5a5b2"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                69
+              ]
+            ],
+            [
+              [
+                0,
+                28
+              ]
+            ],
+            [
+              [
+                0,
+                69
+              ]
+            ],
+            [
+              [
+                0,
+                28
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [],
+            [],
+            [
+              [
+                0,
+                69
+              ]
+            ],
+            []
+          ],
+          "terminal_oracle_table": [
+            [],
+            [],
+            [
+              [
+                0,
+                69
+              ]
+            ],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 1150,
+            "field_multiplications": 1252,
+            "finite_difference_orbit_evaluations": 32,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 27,
+            "polynomial_add_calls": 1210,
+            "polynomial_multiply_calls": 240,
+            "polynomial_scale_calls": 1108,
+            "stage_oracle_binning_assignments": 108,
+            "terminal_oracle_assignments": 6
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 42,
+          "component_gate_count_all_frequencies": 168,
+          "all_projector_stages_checked": 16,
+          "moment_table_sha256": "dd025315bc9eedc0334f4a2796ee747082d9c7bc86f8acda0e1e810b9ff086fb",
+          "stage_table_sha256_by_frequency": [
+            "b505e6dca27ba5cfea05a87239a106323f497fc560c6fb00ee642b9d04f86b47",
+            "f5208985299891387c81c59cf3644f2d2e7f43b7bd8ae375b61d07e2ac00af48",
+            "923ce291b5459e848e13454ad6fa213b915e8881455a8c03af45e6878991d14a",
+            "5e92e816b3acf5aa78d921609ea3fb8c829459d3c3c56cbacaf5caf24a75f1f4"
+          ],
+          "output_frequencies": [
+            [
+              [
+                84,
+                53
+              ],
+              [
+                98,
+                18
+              ],
+              [
+                140,
+                10
+              ],
+              [
+                161,
+                57
+              ],
+              [
+                266,
+                29
+              ],
+              [
+                273,
+                68
+              ]
+            ],
+            [
+              [
+                84,
+                44
+              ],
+              [
+                98,
+                79
+              ],
+              [
+                140,
+                87
+              ],
+              [
+                161,
+                40
+              ],
+              [
+                266,
+                68
+              ],
+              [
+                273,
+                29
+              ]
+            ],
+            [
+              [
+                84,
+                53
+              ],
+              [
+                98,
+                18
+              ],
+              [
+                140,
+                10
+              ],
+              [
+                161,
+                57
+              ],
+              [
+                266,
+                29
+              ],
+              [
+                273,
+                68
+              ]
+            ],
+            [
+              [
+                84,
+                44
+              ],
+              [
+                98,
+                79
+              ],
+              [
+                140,
+                87
+              ],
+              [
+                161,
+                40
+              ],
+              [
+                266,
+                68
+              ],
+              [
+                273,
+                29
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [],
+            [],
+            [
+              [
+                84,
+                53
+              ],
+              [
+                98,
+                18
+              ],
+              [
+                140,
+                10
+              ],
+              [
+                161,
+                57
+              ],
+              [
+                266,
+                29
+              ],
+              [
+                273,
+                68
+              ]
+            ],
+            []
+          ],
+          "terminal_oracle_table": [
+            [],
+            [],
+            [
+              [
+                84,
+                53
+              ],
+              [
+                98,
+                18
+              ],
+              [
+                140,
+                10
+              ],
+              [
+                161,
+                57
+              ],
+              [
+                266,
+                29
+              ],
+              [
+                273,
+                68
+              ]
+            ],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 4290,
+            "field_multiplications": 4932,
+            "finite_difference_orbit_evaluations": 32,
+            "inverse_ntt_summands": 16,
+            "moment_initializer_assignments": 27,
+            "polynomial_add_calls": 1210,
+            "polynomial_multiply_calls": 240,
+            "polynomial_scale_calls": 1108,
+            "stage_oracle_binning_assignments": 108,
+            "terminal_oracle_assignments": 6
+          }
+        }
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 4,
+      "h": 6,
+      "N": 8,
+      "generator": 5,
+      "omega": 64,
+      "label_kind": "all_zero",
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "a": [
+        [
+          0,
+          7,
+          66,
+          53
+        ],
+        [
+          51,
+          67,
+          73,
+          71
+        ],
+        [
+          2,
+          51,
+          71,
+          35
+        ],
+        [
+          64,
+          55,
+          25,
+          49
+        ]
+      ],
+      "numeric_z": 29,
+      "target_channel": 0,
+      "universal_correction_gamma": 1,
+      "raw_paired_orientation_sign": 1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 29,
+          "companion_gate_count_per_frequency": 156,
+          "component_gate_count_all_frequencies": 1248,
+          "all_projector_stages_checked": 56,
+          "moment_table_sha256": "0acce18bff4dc10a3fd01d4d56bf4c272c960ee906f929fa2b67cf4071e11fae",
+          "stage_table_sha256_by_frequency": [
+            "9273bcc7e11215346c0f24b711ff35484ba4b889ef7984aa762b4ad05b56d3e2",
+            "9273bcc7e11215346c0f24b711ff35484ba4b889ef7984aa762b4ad05b56d3e2",
+            "9273bcc7e11215346c0f24b711ff35484ba4b889ef7984aa762b4ad05b56d3e2",
+            "9273bcc7e11215346c0f24b711ff35484ba4b889ef7984aa762b4ad05b56d3e2",
+            "9273bcc7e11215346c0f24b711ff35484ba4b889ef7984aa762b4ad05b56d3e2",
+            "9273bcc7e11215346c0f24b711ff35484ba4b889ef7984aa762b4ad05b56d3e2",
+            "9273bcc7e11215346c0f24b711ff35484ba4b889ef7984aa762b4ad05b56d3e2",
+            "9273bcc7e11215346c0f24b711ff35484ba4b889ef7984aa762b4ad05b56d3e2"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                72
+              ]
+            ],
+            [
+              [
+                0,
+                72
+              ]
+            ],
+            [
+              [
+                0,
+                72
+              ]
+            ],
+            [
+              [
+                0,
+                72
+              ]
+            ],
+            [
+              [
+                0,
+                72
+              ]
+            ],
+            [
+              [
+                0,
+                72
+              ]
+            ],
+            [
+              [
+                0,
+                72
+              ]
+            ],
+            [
+              [
+                0,
+                72
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                0,
+                72
+              ]
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                0,
+                72
+              ]
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 19648,
+            "field_multiplications": 21400,
+            "finite_difference_orbit_evaluations": 128,
+            "inverse_ntt_summands": 64,
+            "moment_initializer_assignments": 256,
+            "polynomial_add_calls": 21528,
+            "polynomial_multiply_calls": 1456,
+            "polynomial_scale_calls": 20832,
+            "stage_oracle_binning_assignments": 2048,
+            "terminal_oracle_assignments": 24
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 156,
+          "component_gate_count_all_frequencies": 1248,
+          "all_projector_stages_checked": 56,
+          "moment_table_sha256": "8994e5275bdcbf04d3ccccd0e8d7000ed7e60cb12dbd16fd9e202e7f1cf2b749",
+          "stage_table_sha256_by_frequency": [
+            "67a92f0d565c0a20f2bca7389449851ed63eac1a00d821c42efd4441965ad814",
+            "67a92f0d565c0a20f2bca7389449851ed63eac1a00d821c42efd4441965ad814",
+            "67a92f0d565c0a20f2bca7389449851ed63eac1a00d821c42efd4441965ad814",
+            "67a92f0d565c0a20f2bca7389449851ed63eac1a00d821c42efd4441965ad814",
+            "67a92f0d565c0a20f2bca7389449851ed63eac1a00d821c42efd4441965ad814",
+            "67a92f0d565c0a20f2bca7389449851ed63eac1a00d821c42efd4441965ad814",
+            "67a92f0d565c0a20f2bca7389449851ed63eac1a00d821c42efd4441965ad814",
+            "67a92f0d565c0a20f2bca7389449851ed63eac1a00d821c42efd4441965ad814"
+          ],
+          "output_frequencies": [
+            [
+              [
+                4680,
+                52
+              ],
+              [
+                4740,
+                49
+              ],
+              [
+                5160,
+                81
+              ],
+              [
+                5250,
+                41
+              ],
+              [
+                6180,
+                94
+              ],
+              [
+                6210,
+                72
+              ],
+              [
+                8520,
+                67
+              ],
+              [
+                8580,
+                65
+              ],
+              [
+                9240,
+                2
+              ],
+              [
+                9345,
+                76
+              ],
+              [
+                10260,
+                61
+              ],
+              [
+                10305,
+                27
+              ],
+              [
+                16680,
+                47
+              ],
+              [
+                16770,
+                19
+              ],
+              [
+                16920,
+                70
+              ],
+              [
+                17025,
+                41
+              ],
+              [
+                18450,
+                82
+              ],
+              [
+                18465,
+                45
+              ],
+              [
+                33060,
+                55
+              ],
+              [
+                33090,
+                38
+              ],
+              [
+                33300,
+                20
+              ],
+              [
+                33345,
+                82
+              ],
+              [
+                33810,
+                88
+              ],
+              [
+                33825,
+                27
+              ]
+            ],
+            [
+              [
+                4680,
+                52
+              ],
+              [
+                4740,
+                49
+              ],
+              [
+                5160,
+                81
+              ],
+              [
+                5250,
+                41
+              ],
+              [
+                6180,
+                94
+              ],
+              [
+                6210,
+                72
+              ],
+              [
+                8520,
+                67
+              ],
+              [
+                8580,
+                65
+              ],
+              [
+                9240,
+                2
+              ],
+              [
+                9345,
+                76
+              ],
+              [
+                10260,
+                61
+              ],
+              [
+                10305,
+                27
+              ],
+              [
+                16680,
+                47
+              ],
+              [
+                16770,
+                19
+              ],
+              [
+                16920,
+                70
+              ],
+              [
+                17025,
+                41
+              ],
+              [
+                18450,
+                82
+              ],
+              [
+                18465,
+                45
+              ],
+              [
+                33060,
+                55
+              ],
+              [
+                33090,
+                38
+              ],
+              [
+                33300,
+                20
+              ],
+              [
+                33345,
+                82
+              ],
+              [
+                33810,
+                88
+              ],
+              [
+                33825,
+                27
+              ]
+            ],
+            [
+              [
+                4680,
+                52
+              ],
+              [
+                4740,
+                49
+              ],
+              [
+                5160,
+                81
+              ],
+              [
+                5250,
+                41
+              ],
+              [
+                6180,
+                94
+              ],
+              [
+                6210,
+                72
+              ],
+              [
+                8520,
+                67
+              ],
+              [
+                8580,
+                65
+              ],
+              [
+                9240,
+                2
+              ],
+              [
+                9345,
+                76
+              ],
+              [
+                10260,
+                61
+              ],
+              [
+                10305,
+                27
+              ],
+              [
+                16680,
+                47
+              ],
+              [
+                16770,
+                19
+              ],
+              [
+                16920,
+                70
+              ],
+              [
+                17025,
+                41
+              ],
+              [
+                18450,
+                82
+              ],
+              [
+                18465,
+                45
+              ],
+              [
+                33060,
+                55
+              ],
+              [
+                33090,
+                38
+              ],
+              [
+                33300,
+                20
+              ],
+              [
+                33345,
+                82
+              ],
+              [
+                33810,
+                88
+              ],
+              [
+                33825,
+                27
+              ]
+            ],
+            [
+              [
+                4680,
+                52
+              ],
+              [
+                4740,
+                49
+              ],
+              [
+                5160,
+                81
+              ],
+              [
+                5250,
+                41
+              ],
+              [
+                6180,
+                94
+              ],
+              [
+                6210,
+                72
+              ],
+              [
+                8520,
+                67
+              ],
+              [
+                8580,
+                65
+              ],
+              [
+                9240,
+                2
+              ],
+              [
+                9345,
+                76
+              ],
+              [
+                10260,
+                61
+              ],
+              [
+                10305,
+                27
+              ],
+              [
+                16680,
+                47
+              ],
+              [
+                16770,
+                19
+              ],
+              [
+                16920,
+                70
+              ],
+              [
+                17025,
+                41
+              ],
+              [
+                18450,
+                82
+              ],
+              [
+                18465,
+                45
+              ],
+              [
+                33060,
+                55
+              ],
+              [
+                33090,
+                38
+              ],
+              [
+                33300,
+                20
+              ],
+              [
+                33345,
+                82
+              ],
+              [
+                33810,
+                88
+              ],
+              [
+                33825,
+                27
+              ]
+            ],
+            [
+              [
+                4680,
+                52
+              ],
+              [
+                4740,
+                49
+              ],
+              [
+                5160,
+                81
+              ],
+              [
+                5250,
+                41
+              ],
+              [
+                6180,
+                94
+              ],
+              [
+                6210,
+                72
+              ],
+              [
+                8520,
+                67
+              ],
+              [
+                8580,
+                65
+              ],
+              [
+                9240,
+                2
+              ],
+              [
+                9345,
+                76
+              ],
+              [
+                10260,
+                61
+              ],
+              [
+                10305,
+                27
+              ],
+              [
+                16680,
+                47
+              ],
+              [
+                16770,
+                19
+              ],
+              [
+                16920,
+                70
+              ],
+              [
+                17025,
+                41
+              ],
+              [
+                18450,
+                82
+              ],
+              [
+                18465,
+                45
+              ],
+              [
+                33060,
+                55
+              ],
+              [
+                33090,
+                38
+              ],
+              [
+                33300,
+                20
+              ],
+              [
+                33345,
+                82
+              ],
+              [
+                33810,
+                88
+              ],
+              [
+                33825,
+                27
+              ]
+            ],
+            [
+              [
+                4680,
+                52
+              ],
+              [
+                4740,
+                49
+              ],
+              [
+                5160,
+                81
+              ],
+              [
+                5250,
+                41
+              ],
+              [
+                6180,
+                94
+              ],
+              [
+                6210,
+                72
+              ],
+              [
+                8520,
+                67
+              ],
+              [
+                8580,
+                65
+              ],
+              [
+                9240,
+                2
+              ],
+              [
+                9345,
+                76
+              ],
+              [
+                10260,
+                61
+              ],
+              [
+                10305,
+                27
+              ],
+              [
+                16680,
+                47
+              ],
+              [
+                16770,
+                19
+              ],
+              [
+                16920,
+                70
+              ],
+              [
+                17025,
+                41
+              ],
+              [
+                18450,
+                82
+              ],
+              [
+                18465,
+                45
+              ],
+              [
+                33060,
+                55
+              ],
+              [
+                33090,
+                38
+              ],
+              [
+                33300,
+                20
+              ],
+              [
+                33345,
+                82
+              ],
+              [
+                33810,
+                88
+              ],
+              [
+                33825,
+                27
+              ]
+            ],
+            [
+              [
+                4680,
+                52
+              ],
+              [
+                4740,
+                49
+              ],
+              [
+                5160,
+                81
+              ],
+              [
+                5250,
+                41
+              ],
+              [
+                6180,
+                94
+              ],
+              [
+                6210,
+                72
+              ],
+              [
+                8520,
+                67
+              ],
+              [
+                8580,
+                65
+              ],
+              [
+                9240,
+                2
+              ],
+              [
+                9345,
+                76
+              ],
+              [
+                10260,
+                61
+              ],
+              [
+                10305,
+                27
+              ],
+              [
+                16680,
+                47
+              ],
+              [
+                16770,
+                19
+              ],
+              [
+                16920,
+                70
+              ],
+              [
+                17025,
+                41
+              ],
+              [
+                18450,
+                82
+              ],
+              [
+                18465,
+                45
+              ],
+              [
+                33060,
+                55
+              ],
+              [
+                33090,
+                38
+              ],
+              [
+                33300,
+                20
+              ],
+              [
+                33345,
+                82
+              ],
+              [
+                33810,
+                88
+              ],
+              [
+                33825,
+                27
+              ]
+            ],
+            [
+              [
+                4680,
+                52
+              ],
+              [
+                4740,
+                49
+              ],
+              [
+                5160,
+                81
+              ],
+              [
+                5250,
+                41
+              ],
+              [
+                6180,
+                94
+              ],
+              [
+                6210,
+                72
+              ],
+              [
+                8520,
+                67
+              ],
+              [
+                8580,
+                65
+              ],
+              [
+                9240,
+                2
+              ],
+              [
+                9345,
+                76
+              ],
+              [
+                10260,
+                61
+              ],
+              [
+                10305,
+                27
+              ],
+              [
+                16680,
+                47
+              ],
+              [
+                16770,
+                19
+              ],
+              [
+                16920,
+                70
+              ],
+              [
+                17025,
+                41
+              ],
+              [
+                18450,
+                82
+              ],
+              [
+                18465,
+                45
+              ],
+              [
+                33060,
+                55
+              ],
+              [
+                33090,
+                38
+              ],
+              [
+                33300,
+                20
+              ],
+              [
+                33345,
+                82
+              ],
+              [
+                33810,
+                88
+              ],
+              [
+                33825,
+                27
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                4680,
+                52
+              ],
+              [
+                4740,
+                49
+              ],
+              [
+                5160,
+                81
+              ],
+              [
+                5250,
+                41
+              ],
+              [
+                6180,
+                94
+              ],
+              [
+                6210,
+                72
+              ],
+              [
+                8520,
+                67
+              ],
+              [
+                8580,
+                65
+              ],
+              [
+                9240,
+                2
+              ],
+              [
+                9345,
+                76
+              ],
+              [
+                10260,
+                61
+              ],
+              [
+                10305,
+                27
+              ],
+              [
+                16680,
+                47
+              ],
+              [
+                16770,
+                19
+              ],
+              [
+                16920,
+                70
+              ],
+              [
+                17025,
+                41
+              ],
+              [
+                18450,
+                82
+              ],
+              [
+                18465,
+                45
+              ],
+              [
+                33060,
+                55
+              ],
+              [
+                33090,
+                38
+              ],
+              [
+                33300,
+                20
+              ],
+              [
+                33345,
+                82
+              ],
+              [
+                33810,
+                88
+              ],
+              [
+                33825,
+                27
+              ]
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                4680,
+                52
+              ],
+              [
+                4740,
+                49
+              ],
+              [
+                5160,
+                81
+              ],
+              [
+                5250,
+                41
+              ],
+              [
+                6180,
+                94
+              ],
+              [
+                6210,
+                72
+              ],
+              [
+                8520,
+                67
+              ],
+              [
+                8580,
+                65
+              ],
+              [
+                9240,
+                2
+              ],
+              [
+                9345,
+                76
+              ],
+              [
+                10260,
+                61
+              ],
+              [
+                10305,
+                27
+              ],
+              [
+                16680,
+                47
+              ],
+              [
+                16770,
+                19
+              ],
+              [
+                16920,
+                70
+              ],
+              [
+                17025,
+                41
+              ],
+              [
+                18450,
+                82
+              ],
+              [
+                18465,
+                45
+              ],
+              [
+                33060,
+                55
+              ],
+              [
+                33090,
+                38
+              ],
+              [
+                33300,
+                20
+              ],
+              [
+                33345,
+                82
+              ],
+              [
+                33810,
+                88
+              ],
+              [
+                33825,
+                27
+              ]
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 164280,
+            "field_multiplications": 205216,
+            "finite_difference_orbit_evaluations": 128,
+            "inverse_ntt_summands": 64,
+            "moment_initializer_assignments": 256,
+            "polynomial_add_calls": 21528,
+            "polynomial_multiply_calls": 1456,
+            "polynomial_scale_calls": 20832,
+            "stage_oracle_binning_assignments": 2048,
+            "terminal_oracle_assignments": 24
+          }
+        }
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 4,
+      "h": 6,
+      "N": 8,
+      "generator": 5,
+      "omega": 64,
+      "label_kind": "random",
+      "labels": [
+        -3,
+        0,
+        5,
+        10
+      ],
+      "a": [
+        [
+          0,
+          40,
+          87,
+          55
+        ],
+        [
+          84,
+          85,
+          45,
+          76
+        ],
+        [
+          39,
+          57,
+          46,
+          69
+        ],
+        [
+          37,
+          70,
+          46,
+          33
+        ]
+      ],
+      "numeric_z": 11,
+      "target_channel": 4,
+      "universal_correction_gamma": 1,
+      "raw_paired_orientation_sign": 1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": true,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 11,
+          "companion_gate_count_per_frequency": 156,
+          "component_gate_count_all_frequencies": 1248,
+          "all_projector_stages_checked": 56,
+          "moment_table_sha256": "a80600311a5494150ce1e47916ad570b03e04f71d67113af285785fd7224e38e",
+          "stage_table_sha256_by_frequency": [
+            "a760436726d2bf29770786100115dfc6e8bd09856da93b5dc0997c183940a109",
+            "07ed66a23e9a4bb3e3b98012d312c278d3f5d324344de3ca58ab14c85dcff422",
+            "73573c03fd178a2a7de3b03f52f31f4ee2344aca02d76ad0cb63de9b1bb1aad4",
+            "cafc1c21c72ba3da57134d1a16f7da21836832211c9216caf92f7358f2c9eb1a",
+            "f313c7cb40adfdd138dec980e4cc16038f85e997a2700272fabc3ae54fa3c97c",
+            "6cc52a8d29fe217ec7ef00f94c592839d1448ee9c52de3936a09713d6f4fe835",
+            "e42265d4086724317113e0ecade13fab5fcc91c74e03985e9e4d11e7f933c515",
+            "a92f89c46b3276046fafab1bc915883b320ec6c6c19e72c992dc4eca29c3dc96"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                84
+              ]
+            ],
+            [
+              [
+                0,
+                13
+              ]
+            ],
+            [
+              [
+                0,
+                84
+              ]
+            ],
+            [
+              [
+                0,
+                13
+              ]
+            ],
+            [
+              [
+                0,
+                84
+              ]
+            ],
+            [
+              [
+                0,
+                13
+              ]
+            ],
+            [
+              [
+                0,
+                84
+              ]
+            ],
+            [
+              [
+                0,
+                13
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [],
+            [],
+            [],
+            [],
+            [
+              [
+                0,
+                84
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [],
+            [],
+            [],
+            [],
+            [
+              [
+                0,
+                84
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 19625,
+            "field_multiplications": 21381,
+            "finite_difference_orbit_evaluations": 128,
+            "inverse_ntt_summands": 64,
+            "moment_initializer_assignments": 256,
+            "polynomial_add_calls": 21528,
+            "polynomial_multiply_calls": 1456,
+            "polynomial_scale_calls": 20832,
+            "stage_oracle_binning_assignments": 2048,
+            "terminal_oracle_assignments": 24
+          }
+        },
+        {
+          "mode": "formal_z",
+          "z": null,
+          "companion_gate_count_per_frequency": 156,
+          "component_gate_count_all_frequencies": 1248,
+          "all_projector_stages_checked": 56,
+          "moment_table_sha256": "65480aecb1a6e9dc26207749222e5b261b7ed62793aab94e02a3814131cb14ce",
+          "stage_table_sha256_by_frequency": [
+            "8c6927287239ca85460172bd3884bca6eba68e2700ecdb7ca35a0efff0c88486",
+            "678d757832988d6ec8e27e4eb7492f2197c77c0f394c3bc5c936b57563786f76",
+            "ccc26df3199c5966bed4051bf16cfa9646e1fe42ac7edd0a8665d3023d9db6ed",
+            "595cb80145cea1a57609a7d5ebecbd96072fcd59a471d2c3eb400567b9ffe5c0",
+            "3290fbf6d621ba0377d3022a0f023f9bcd95a5bc5586d4de16127df139d40d77",
+            "0005bca5f7c3f35ee6133e78beaaa40476c021b553c260cab8e4cb0ba0ee848a",
+            "acb0004fa8db107289c02d62cfba14cbd0e4c49bb41e27507235a36f4c8b4cef",
+            "ee4c91f2f78d50d7bfd69e6ea05311279a4a06f71746f2ecd61343cd27ab51b7"
+          ],
+          "output_frequencies": [
+            [
+              [
+                4680,
+                7
+              ],
+              [
+                4740,
+                35
+              ],
+              [
+                5160,
+                95
+              ],
+              [
+                5250,
+                21
+              ],
+              [
+                6180,
+                75
+              ],
+              [
+                6210,
+                85
+              ],
+              [
+                8520,
+                58
+              ],
+              [
+                8580,
+                96
+              ],
+              [
+                9240,
+                77
+              ],
+              [
+                9345,
+                33
+              ],
+              [
+                10260,
+                71
+              ],
+              [
+                10305,
+                92
+              ],
+              [
+                16680,
+                5
+              ],
+              [
+                16770,
+                93
+              ],
+              [
+                16920,
+                93
+              ],
+              [
+                17025,
+                26
+              ],
+              [
+                18450,
+                90
+              ],
+              [
+                18465,
+                28
+              ],
+              [
+                33060,
+                22
+              ],
+              [
+                33090,
+                12
+              ],
+              [
+                33300,
+                60
+              ],
+              [
+                33345,
+                19
+              ],
+              [
+                33810,
+                36
+              ],
+              [
+                33825,
+                50
+              ]
+            ],
+            [
+              [
+                4680,
+                90
+              ],
+              [
+                4740,
+                62
+              ],
+              [
+                5160,
+                2
+              ],
+              [
+                5250,
+                76
+              ],
+              [
+                6180,
+                22
+              ],
+              [
+                6210,
+                12
+              ],
+              [
+                8520,
+                39
+              ],
+              [
+                8580,
+                1
+              ],
+              [
+                9240,
+                20
+              ],
+              [
+                9345,
+                64
+              ],
+              [
+                10260,
+                26
+              ],
+              [
+                10305,
+                5
+              ],
+              [
+                16680,
+                92
+              ],
+              [
+                16770,
+                4
+              ],
+              [
+                16920,
+                4
+              ],
+              [
+                17025,
+                71
+              ],
+              [
+                18450,
+                7
+              ],
+              [
+                18465,
+                69
+              ],
+              [
+                33060,
+                75
+              ],
+              [
+                33090,
+                85
+              ],
+              [
+                33300,
+                37
+              ],
+              [
+                33345,
+                78
+              ],
+              [
+                33810,
+                61
+              ],
+              [
+                33825,
+                47
+              ]
+            ],
+            [
+              [
+                4680,
+                7
+              ],
+              [
+                4740,
+                35
+              ],
+              [
+                5160,
+                95
+              ],
+              [
+                5250,
+                21
+              ],
+              [
+                6180,
+                75
+              ],
+              [
+                6210,
+                85
+              ],
+              [
+                8520,
+                58
+              ],
+              [
+                8580,
+                96
+              ],
+              [
+                9240,
+                77
+              ],
+              [
+                9345,
+                33
+              ],
+              [
+                10260,
+                71
+              ],
+              [
+                10305,
+                92
+              ],
+              [
+                16680,
+                5
+              ],
+              [
+                16770,
+                93
+              ],
+              [
+                16920,
+                93
+              ],
+              [
+                17025,
+                26
+              ],
+              [
+                18450,
+                90
+              ],
+              [
+                18465,
+                28
+              ],
+              [
+                33060,
+                22
+              ],
+              [
+                33090,
+                12
+              ],
+              [
+                33300,
+                60
+              ],
+              [
+                33345,
+                19
+              ],
+              [
+                33810,
+                36
+              ],
+              [
+                33825,
+                50
+              ]
+            ],
+            [
+              [
+                4680,
+                90
+              ],
+              [
+                4740,
+                62
+              ],
+              [
+                5160,
+                2
+              ],
+              [
+                5250,
+                76
+              ],
+              [
+                6180,
+                22
+              ],
+              [
+                6210,
+                12
+              ],
+              [
+                8520,
+                39
+              ],
+              [
+                8580,
+                1
+              ],
+              [
+                9240,
+                20
+              ],
+              [
+                9345,
+                64
+              ],
+              [
+                10260,
+                26
+              ],
+              [
+                10305,
+                5
+              ],
+              [
+                16680,
+                92
+              ],
+              [
+                16770,
+                4
+              ],
+              [
+                16920,
+                4
+              ],
+              [
+                17025,
+                71
+              ],
+              [
+                18450,
+                7
+              ],
+              [
+                18465,
+                69
+              ],
+              [
+                33060,
+                75
+              ],
+              [
+                33090,
+                85
+              ],
+              [
+                33300,
+                37
+              ],
+              [
+                33345,
+                78
+              ],
+              [
+                33810,
+                61
+              ],
+              [
+                33825,
+                47
+              ]
+            ],
+            [
+              [
+                4680,
+                7
+              ],
+              [
+                4740,
+                35
+              ],
+              [
+                5160,
+                95
+              ],
+              [
+                5250,
+                21
+              ],
+              [
+                6180,
+                75
+              ],
+              [
+                6210,
+                85
+              ],
+              [
+                8520,
+                58
+              ],
+              [
+                8580,
+                96
+              ],
+              [
+                9240,
+                77
+              ],
+              [
+                9345,
+                33
+              ],
+              [
+                10260,
+                71
+              ],
+              [
+                10305,
+                92
+              ],
+              [
+                16680,
+                5
+              ],
+              [
+                16770,
+                93
+              ],
+              [
+                16920,
+                93
+              ],
+              [
+                17025,
+                26
+              ],
+              [
+                18450,
+                90
+              ],
+              [
+                18465,
+                28
+              ],
+              [
+                33060,
+                22
+              ],
+              [
+                33090,
+                12
+              ],
+              [
+                33300,
+                60
+              ],
+              [
+                33345,
+                19
+              ],
+              [
+                33810,
+                36
+              ],
+              [
+                33825,
+                50
+              ]
+            ],
+            [
+              [
+                4680,
+                90
+              ],
+              [
+                4740,
+                62
+              ],
+              [
+                5160,
+                2
+              ],
+              [
+                5250,
+                76
+              ],
+              [
+                6180,
+                22
+              ],
+              [
+                6210,
+                12
+              ],
+              [
+                8520,
+                39
+              ],
+              [
+                8580,
+                1
+              ],
+              [
+                9240,
+                20
+              ],
+              [
+                9345,
+                64
+              ],
+              [
+                10260,
+                26
+              ],
+              [
+                10305,
+                5
+              ],
+              [
+                16680,
+                92
+              ],
+              [
+                16770,
+                4
+              ],
+              [
+                16920,
+                4
+              ],
+              [
+                17025,
+                71
+              ],
+              [
+                18450,
+                7
+              ],
+              [
+                18465,
+                69
+              ],
+              [
+                33060,
+                75
+              ],
+              [
+                33090,
+                85
+              ],
+              [
+                33300,
+                37
+              ],
+              [
+                33345,
+                78
+              ],
+              [
+                33810,
+                61
+              ],
+              [
+                33825,
+                47
+              ]
+            ],
+            [
+              [
+                4680,
+                7
+              ],
+              [
+                4740,
+                35
+              ],
+              [
+                5160,
+                95
+              ],
+              [
+                5250,
+                21
+              ],
+              [
+                6180,
+                75
+              ],
+              [
+                6210,
+                85
+              ],
+              [
+                8520,
+                58
+              ],
+              [
+                8580,
+                96
+              ],
+              [
+                9240,
+                77
+              ],
+              [
+                9345,
+                33
+              ],
+              [
+                10260,
+                71
+              ],
+              [
+                10305,
+                92
+              ],
+              [
+                16680,
+                5
+              ],
+              [
+                16770,
+                93
+              ],
+              [
+                16920,
+                93
+              ],
+              [
+                17025,
+                26
+              ],
+              [
+                18450,
+                90
+              ],
+              [
+                18465,
+                28
+              ],
+              [
+                33060,
+                22
+              ],
+              [
+                33090,
+                12
+              ],
+              [
+                33300,
+                60
+              ],
+              [
+                33345,
+                19
+              ],
+              [
+                33810,
+                36
+              ],
+              [
+                33825,
+                50
+              ]
+            ],
+            [
+              [
+                4680,
+                90
+              ],
+              [
+                4740,
+                62
+              ],
+              [
+                5160,
+                2
+              ],
+              [
+                5250,
+                76
+              ],
+              [
+                6180,
+                22
+              ],
+              [
+                6210,
+                12
+              ],
+              [
+                8520,
+                39
+              ],
+              [
+                8580,
+                1
+              ],
+              [
+                9240,
+                20
+              ],
+              [
+                9345,
+                64
+              ],
+              [
+                10260,
+                26
+              ],
+              [
+                10305,
+                5
+              ],
+              [
+                16680,
+                92
+              ],
+              [
+                16770,
+                4
+              ],
+              [
+                16920,
+                4
+              ],
+              [
+                17025,
+                71
+              ],
+              [
+                18450,
+                7
+              ],
+              [
+                18465,
+                69
+              ],
+              [
+                33060,
+                75
+              ],
+              [
+                33090,
+                85
+              ],
+              [
+                33300,
+                37
+              ],
+              [
+                33345,
+                78
+              ],
+              [
+                33810,
+                61
+              ],
+              [
+                33825,
+                47
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [],
+            [],
+            [],
+            [],
+            [
+              [
+                4680,
+                7
+              ],
+              [
+                4740,
+                35
+              ],
+              [
+                5160,
+                95
+              ],
+              [
+                5250,
+                21
+              ],
+              [
+                6180,
+                75
+              ],
+              [
+                6210,
+                85
+              ],
+              [
+                8520,
+                58
+              ],
+              [
+                8580,
+                96
+              ],
+              [
+                9240,
+                77
+              ],
+              [
+                9345,
+                33
+              ],
+              [
+                10260,
+                71
+              ],
+              [
+                10305,
+                92
+              ],
+              [
+                16680,
+                5
+              ],
+              [
+                16770,
+                93
+              ],
+              [
+                16920,
+                93
+              ],
+              [
+                17025,
+                26
+              ],
+              [
+                18450,
+                90
+              ],
+              [
+                18465,
+                28
+              ],
+              [
+                33060,
+                22
+              ],
+              [
+                33090,
+                12
+              ],
+              [
+                33300,
+                60
+              ],
+              [
+                33345,
+                19
+              ],
+              [
+                33810,
+                36
+              ],
+              [
+                33825,
+                50
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [],
+            [],
+            [],
+            [],
+            [
+              [
+                4680,
+                7
+              ],
+              [
+                4740,
+                35
+              ],
+              [
+                5160,
+                95
+              ],
+              [
+                5250,
+                21
+              ],
+              [
+                6180,
+                75
+              ],
+              [
+                6210,
+                85
+              ],
+              [
+                8520,
+                58
+              ],
+              [
+                8580,
+                96
+              ],
+              [
+                9240,
+                77
+              ],
+              [
+                9345,
+                33
+              ],
+              [
+                10260,
+                71
+              ],
+              [
+                10305,
+                92
+              ],
+              [
+                16680,
+                5
+              ],
+              [
+                16770,
+                93
+              ],
+              [
+                16920,
+                93
+              ],
+              [
+                17025,
+                26
+              ],
+              [
+                18450,
+                90
+              ],
+              [
+                18465,
+                28
+              ],
+              [
+                33060,
+                22
+              ],
+              [
+                33090,
+                12
+              ],
+              [
+                33300,
+                60
+              ],
+              [
+                33345,
+                19
+              ],
+              [
+                33810,
+                36
+              ],
+              [
+                33825,
+                50
+              ]
+            ],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 164280,
+            "field_multiplications": 205216,
+            "finite_difference_orbit_evaluations": 128,
+            "inverse_ntt_summands": 64,
+            "moment_initializer_assignments": 256,
+            "polynomial_add_calls": 21528,
+            "polynomial_multiply_calls": 1456,
+            "polynomial_scale_calls": 20832,
+            "stage_oracle_binning_assignments": 2048,
+            "terminal_oracle_assignments": 24
+          }
+        }
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 5,
+      "h": 10,
+      "N": 8,
+      "generator": 5,
+      "omega": 64,
+      "label_kind": "all_zero",
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "a": [
+        [
+          0,
+          35,
+          40,
+          16,
+          9
+        ],
+        [
+          1,
+          14,
+          31,
+          16,
+          51
+        ],
+        [
+          82,
+          24,
+          29,
+          82,
+          19
+        ],
+        [
+          58,
+          67,
+          36,
+          27,
+          73
+        ],
+        [
+          24,
+          6,
+          29,
+          62,
+          54
+        ]
+      ],
+      "numeric_z": 7,
+      "target_channel": 0,
+      "universal_correction_gamma": 1,
+      "raw_paired_orientation_sign": 1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": false,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 7,
+          "companion_gate_count_per_frequency": 420,
+          "component_gate_count_all_frequencies": 3360,
+          "all_projector_stages_checked": 88,
+          "moment_table_sha256": "17da249e0f8cd2a4776db780ccd50580ac70596881798d3aa94503be0ede9775",
+          "stage_table_sha256_by_frequency": [
+            "cd473ffc1a56f946297a903e92d5c4e93140412f3ec271e325ead5ff780b3d85",
+            "cd473ffc1a56f946297a903e92d5c4e93140412f3ec271e325ead5ff780b3d85",
+            "cd473ffc1a56f946297a903e92d5c4e93140412f3ec271e325ead5ff780b3d85",
+            "cd473ffc1a56f946297a903e92d5c4e93140412f3ec271e325ead5ff780b3d85",
+            "cd473ffc1a56f946297a903e92d5c4e93140412f3ec271e325ead5ff780b3d85",
+            "cd473ffc1a56f946297a903e92d5c4e93140412f3ec271e325ead5ff780b3d85",
+            "cd473ffc1a56f946297a903e92d5c4e93140412f3ec271e325ead5ff780b3d85",
+            "cd473ffc1a56f946297a903e92d5c4e93140412f3ec271e325ead5ff780b3d85"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                77
+              ]
+            ],
+            [
+              [
+                0,
+                77
+              ]
+            ],
+            [
+              [
+                0,
+                77
+              ]
+            ],
+            [
+              [
+                0,
+                77
+              ]
+            ],
+            [
+              [
+                0,
+                77
+              ]
+            ],
+            [
+              [
+                0,
+                77
+              ]
+            ],
+            [
+              [
+                0,
+                77
+              ]
+            ],
+            [
+              [
+                0,
+                77
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [
+              [
+                0,
+                77
+              ]
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [
+              [
+                0,
+                77
+              ]
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 302384,
+            "field_multiplications": 314600,
+            "finite_difference_orbit_evaluations": 256,
+            "inverse_ntt_summands": 64,
+            "moment_initializer_assignments": 3125,
+            "polynomial_add_calls": 316912,
+            "polynomial_multiply_calls": 3640,
+            "polynomial_scale_calls": 315032,
+            "stage_oracle_binning_assignments": 25000,
+            "terminal_oracle_assignments": 120
+          }
+        }
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 5,
+      "h": 10,
+      "N": 8,
+      "generator": 5,
+      "omega": 64,
+      "label_kind": "random",
+      "labels": [
+        -16,
+        -2,
+        -12,
+        -4,
+        15
+      ],
+      "a": [
+        [
+          0,
+          79,
+          38,
+          92,
+          69
+        ],
+        [
+          65,
+          63,
+          49,
+          24,
+          50
+        ],
+        [
+          18,
+          73,
+          4,
+          6,
+          75
+        ],
+        [
+          47,
+          25,
+          51,
+          16,
+          16
+        ],
+        [
+          33,
+          62,
+          17,
+          18,
+          25
+        ]
+      ],
+      "numeric_z": 81,
+      "target_channel": 5,
+      "universal_correction_gamma": 1,
+      "raw_paired_orientation_sign": 1,
+      "corrected_Omega_coordinate_sign": 1,
+      "formal_numeric_specialization_passed": false,
+      "modes": [
+        {
+          "mode": "numeric_z",
+          "z": 81,
+          "companion_gate_count_per_frequency": 420,
+          "component_gate_count_all_frequencies": 3360,
+          "all_projector_stages_checked": 88,
+          "moment_table_sha256": "ba38134a9bd79a156690b5295ff74e044cbc387c40d9db11c8fec3784d5620cc",
+          "stage_table_sha256_by_frequency": [
+            "2a63b8cfcf5b0df112bee8e01ca7eb4d56a7fe8ec4197bf39e3c487b8994b7bf",
+            "3658b8582c3fbf3279a84ec4f27a88106f18b3e66d2f18c4ff0473a973b2b2de",
+            "a84aa974d49b8b0824942956ab8304026ddc3436d009c8f31554174f28624c45",
+            "4351ba248f3dcf4bc2f45042de5b8dce0db43ac4c7ed42f7e14998c4034fe609",
+            "b2e7f72f8b8c0da4d59b5eaa00abc4cf486ed14c88cadcf2fae3b319c123ddd8",
+            "c877b88a1e370c71f614d86809638a6c8f8f9875cb0ff0cfd5d176fe2bc9b356",
+            "4db3ac7415df358f3201ae583d3665277e384f21e6092fed12b3ec2c189feec6",
+            "1d9f475751062bc18a23ed5c3d39784e186c85ce6f2115e49b017cc1247d50b0"
+          ],
+          "output_frequencies": [
+            [
+              [
+                0,
+                33
+              ]
+            ],
+            [
+              [
+                0,
+                22
+              ]
+            ],
+            [
+              [
+                0,
+                47
+              ]
+            ],
+            [
+              [
+                0,
+                96
+              ]
+            ],
+            [
+              [
+                0,
+                64
+              ]
+            ],
+            [
+              [
+                0,
+                75
+              ]
+            ],
+            [
+              [
+                0,
+                50
+              ]
+            ],
+            [
+              [
+                0,
+                1
+              ]
+            ]
+          ],
+          "inverse_ntt_table": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              [
+                0,
+                33
+              ]
+            ],
+            [],
+            []
+          ],
+          "terminal_oracle_table": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              [
+                0,
+                33
+              ]
+            ],
+            [],
+            []
+          ],
+          "characteristic_recurrence_passed": true,
+          "direct_mu_0_preparation_passed": true,
+          "direct_mu_1_pair_formula_passed": true,
+          "all_companion_stages_passed": true,
+          "independent_projector_passed": true,
+          "ordinary_finite_differences_passed": true,
+          "complete_inverse_ntt_passed": true,
+          "verifier_work_counters": {
+            "field_additions": 243917,
+            "field_multiplications": 254261,
+            "finite_difference_orbit_evaluations": 256,
+            "inverse_ntt_summands": 64,
+            "moment_initializer_assignments": 3125,
+            "polynomial_add_calls": 316912,
+            "polynomial_multiply_calls": 3640,
+            "polynomial_scale_calls": 315032,
+            "stage_oracle_binning_assignments": 25000,
+            "terminal_oracle_assignments": 120
+          }
+        }
+      ]
+    }
+  ],
+  "case_data_sha256": "104ba413797e30fee04efd49f2b53b63ec92be6c654f3131140dc9981aa87496"
+}

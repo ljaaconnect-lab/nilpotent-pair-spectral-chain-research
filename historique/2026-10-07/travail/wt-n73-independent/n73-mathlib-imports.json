@@ -1,0 +1,31 @@
+{
+  "modules": {
+    "Mathlib.Algebra.MvPolynomial.Basic": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\Algebra\\MvPolynomial\\Basic.lean",
+      "source_sha256": "7b61c67ecb295e766b2fc1a3408e9a5dd22e75ed6fe4dd467675cb4b2551b4e2",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Algebra\\MvPolynomial\\Basic.olean",
+      "compiled_sha256": "f45f38e2e5ab525bb164c7b181e61b94c9f68ade27bb78564b8e9efe32d6df81"
+    },
+    "Mathlib.Algebra.BigOperators.Ring.Finset": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\Algebra\\BigOperators\\Ring\\Finset.lean",
+      "source_sha256": "3260deb025880a9c56b258bc0d9c53106aab2452599141b1e1c8f5bb0f589aa3",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Algebra\\BigOperators\\Ring\\Finset.olean",
+      "compiled_sha256": "461ea90da5b2f88be1d114dac7f7d23de296aa4ba529e3b55380dbcf2277fad8"
+    },
+    "Mathlib.Data.Fintype.EquivFin": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\Data\\Fintype\\EquivFin.lean",
+      "source_sha256": "891fdb687fc067b1511701992301e28de0d4fd6ab53d74a96f51be39d5aa8f92",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Data\\Fintype\\EquivFin.olean",
+      "compiled_sha256": "41e11fcf3d29b9942e77f149d7846063c35c308093af69a6d2b4a1dc280becfb"
+    },
+    "Mathlib.Data.Fintype.Powerset": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\Data\\Fintype\\Powerset.lean",
+      "source_sha256": "f0e2b6563fb6bf505db894994fffc54566c37c1de08ac8bba92d16e8dd3bcc5d",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Data\\Fintype\\Powerset.olean",
+      "compiled_sha256": "3fc02c9c66091008cd260f880badea83554ef7eccf3224a8bcb095c49702d7b1"
+    }
+  },
+  "cache_mutated": false,
+  "inherited_n71_provenance": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n71\\n71-dependency-provenance.json",
+  "inherited_n71_provenance_sha256": "1ce322de088b7143b43dc85966e28c35718badfa4a539c9d4cea4cda22d0bd32"
+}

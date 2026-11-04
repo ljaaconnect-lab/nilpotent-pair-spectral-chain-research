@@ -1,0 +1,9 @@
+{
+  "all_delivered_sources_recompiled": true,
+  "source_count": 15,
+  "accepted_ledger_declarations": 130,
+  "all_exit_codes_zero": true,
+  "unexpected_axioms": [],
+  "root_conjecture_verified": false,
+  "scope": "Actual delivered source files checked by their packaged replay driver; auxiliary results only."
+}

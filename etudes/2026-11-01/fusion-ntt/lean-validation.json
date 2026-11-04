@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "full_chain_formalization": false,
+  "general_polynomial_solution": false,
+  "files": [
+    {
+      "source": "FusionFourier.lean",
+      "sha256": "4dc805924e660e674f27a1ae827b504588a490bec5ea1cf334bb8b38f4f9ec20",
+      "source_changed_during_check": false,
+      "exit_code": 0,
+      "seconds": 14.797,
+      "stdout": "'OrientedOperators.FusionFourier.fourier_pairs' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrientedOperators.FusionFourier.fourier_fused' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrientedOperators.FusionFourier.difference_fusion' depends on axioms: [propext]\n'OrientedOperators.FusionFourier.fourier_convolution' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "TerminalDifference.lean",
+      "sha256": "645f597f9cd880998d0dd1ad1103dd4eaff2fc3c29aad7c882caf3999f60741d",
+      "source_changed_during_check": false,
+      "exit_code": 0,
+      "seconds": 18.844,
+      "stdout": "'OrientedOperators.TerminalDifference.coeff_product_below_length' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'OrientedOperators.TerminalDifference.coeff_product_at_length' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'OrientedOperators.TerminalDifference.coeff_transport_differences' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    }
+  ]
+}

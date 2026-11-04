@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\fermeture-native-2026-11-03\\TerminalLabelNecessity.lean"
+  ],
+  "source_sha256": {
+    "documents/fermeture-native-2026-11-03/TerminalLabelNecessity.lean": "9e4d34eab3d36e155270f844d553099866936b0376bf3439245eb9654721e26a",
+    "documents/fermeture-native-2026-11-03/replay_terminal_label.py": "16982f94470bb188d136cceb50cc8fc325ce0f8baf6609336f5d600972a2037c",
+    "etudes/2026-11-01/lean-operateurs/lean_check.py": "a5e21cfb624e5258009425f6c6eecaf0eb1b529d953bbb2607717dab44a439ad"
+  },
+  "source_changed_during_check": false,
+  "exit_code": 0,
+  "seconds": 13.75,
+  "stdout": "'TerminalLabelNecessity.scalar_representative_eq_zero' does not depend on any axioms\n'TerminalLabelNecessity.scalar_representative_forces_zero' does not depend on any axioms\n'TerminalLabelNecessity.nonzero_terminal_has_no_scalar_representative' does not depend on any axioms\n",
+  "stderr": "",
+  "theorems": [
+    "scalar_representative_eq_zero",
+    "scalar_representative_forces_zero",
+    "nonzero_terminal_has_no_scalar_representative"
+  ],
+  "all_theorem_axioms_printed": true,
+  "source_has_no_placeholders_or_added_axioms": true,
+  "scope": "An augmentation-kernel value has a scalar-embedded representative only when both are zero. A nonzero such value cannot be represented by an embedded scalar with its terminal label erased.",
+  "augmentation_and_section_are_explicit_hypotheses": true,
+  "application_to_specific_oriented_quotient_formalized": false,
+  "terminal_coefficient_extraction_constructed": false,
+  "auxiliary_erasure_of_oriented_value_asserted": false,
+  "complete_scalar_chain_polynomial_bound_proved": false
+}

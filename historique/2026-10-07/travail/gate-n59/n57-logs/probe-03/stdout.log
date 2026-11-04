@@ -1,0 +1,20 @@
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n57\MatrixScalarCompiler.lean:78:46: warning: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sumCircuit, Circuit.eval]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n57\MatrixScalarCompiler.lean:92:6: error: 'change' tactic failed, pattern
+  (sumCircuit (r + 1)).gates + 0 + 0 + 1 = r + 1 + 1 - 1
+is not definitionally equal to target
+  (sumCircuit (r + 1 + 1)).gates = r + 1 + 1 - 1
+'DenseScalar.matrix_power_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.sumCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.sumCircuit_gates' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'DenseScalar.dotCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.dotCircuit_gates' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'DenseScalar.denseProduct_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.denseProduct_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.denseProduct_raw_gates' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'DenseScalar.dense_product_gate_count' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

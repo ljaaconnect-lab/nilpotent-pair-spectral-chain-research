@@ -1,0 +1,147 @@
+{
+  "status": "passed",
+  "source": "verify_collision_spectrum.py",
+  "sha256": "3fad6d32cf622b77e6ace9747ac814b75299a1bb53a26cbc46ac449f35d173b5",
+  "contract": "Exponential coefficient/assignment oracles verify identities only; no polynomial scalar circuit is claimed.",
+  "general_polynomial_closure": false,
+  "associativity_cases": 120,
+  "intertwining_cases": 120,
+  "spectral_values": 692,
+  "moment_checks": 596,
+  "complete_chain_tables": [
+    {
+      "n": 1,
+      "Q": 17,
+      "N": 2,
+      "M": 1,
+      "passed": true
+    },
+    {
+      "n": 2,
+      "Q": 17,
+      "N": 4,
+      "M": 2,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "Q": 17,
+      "N": 4,
+      "M": 4,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "Q": 17,
+      "N": 8,
+      "M": 8,
+      "passed": true
+    },
+    {
+      "n": 5,
+      "Q": 17,
+      "N": 8,
+      "M": 16,
+      "passed": true
+    },
+    {
+      "n": 6,
+      "Q": 17,
+      "N": 8,
+      "M": 16,
+      "passed": true
+    },
+    {
+      "n": 1,
+      "Q": 97,
+      "N": 2,
+      "M": 1,
+      "passed": true
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "N": 4,
+      "M": 2,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "M": 4,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 8,
+      "M": 8,
+      "passed": true
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "M": 16,
+      "passed": true
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "N": 8,
+      "M": 16,
+      "passed": true
+    }
+  ],
+  "formal_z_tables": [
+    {
+      "n": 1,
+      "Q": 17,
+      "formal_z": true,
+      "passed": true
+    },
+    {
+      "n": 2,
+      "Q": 17,
+      "formal_z": true,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "Q": 17,
+      "formal_z": true,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "Q": 17,
+      "formal_z": true,
+      "passed": true
+    },
+    {
+      "n": 1,
+      "Q": 97,
+      "formal_z": true,
+      "passed": true
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "formal_z": true,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "formal_z": true,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "formal_z": true,
+      "passed": true
+    }
+  ]
+}

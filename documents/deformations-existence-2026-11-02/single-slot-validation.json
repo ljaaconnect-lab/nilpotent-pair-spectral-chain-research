@@ -1,0 +1,380 @@
+{
+  "status": "passed",
+  "source_file": "single_slot_example.py",
+  "source_sha256": "ef48d76a3a91364ca30f439f0e9f387e753b54ea2a9c16b1f6c927dec81e79e8",
+  "dependencies": [
+    {
+      "file": "check_degree_barrier.py",
+      "sha256": "9a3cbb10fada652210aa6ed6cf81aeecc52efb291b42b9ab4508f182a23bb1a8"
+    }
+  ],
+  "method": "Exact formal coefficient identities over F_5, F_7, F_97",
+  "scope": {
+    "n_is_fixed_at_two": true,
+    "general_favorable_deformation_existence_established": false,
+    "general_polynomial_scalar_bound_established": false,
+    "whole_table_degree_obstruction_contradicted": false,
+    "single_slot_projection_precedes_reconstruction": true,
+    "scalar_evaluator_inputs": "a_00,a_01,a_10,a_11,z only",
+    "terminal_amplitude_is_an_input": false,
+    "universal_orientation_sign_absorbed_in_final_basis": true,
+    "formal_T_and_z_exponents_preserved": true,
+    "exponents_reduced_modulo_p_minus_one": false,
+    "coefficient_tensor_expansion_is_validation_oracle_only": true,
+    "all_fields_have_odd_characteristic": true
+  },
+  "counts": {
+    "fields": 3,
+    "formal_tensor_coordinates": 12,
+    "signed_boolean_coefficient_checks": 12,
+    "rank_checks": 6,
+    "formal_determinants": 6,
+    "INTT_coefficient_checks": 24,
+    "formal_marked_output_monomials": 48,
+    "original_input_evaluations": 972
+  },
+  "case_records": [
+    {
+      "p": 5,
+      "n": 2,
+      "N": 2,
+      "omega": 4,
+      "sampling_points": [
+        1
+      ],
+      "L": 1,
+      "s": 1,
+      "mu": 0,
+      "groups": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "factor_group_assignments": [
+        0,
+        1
+      ],
+      "P_1": [
+        [
+          [
+            1
+          ],
+          []
+        ],
+        [
+          [
+            0,
+            3,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ],
+      "P_2": [
+        [
+          [
+            1,
+            1,
+            3
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [],
+          [
+            1
+          ]
+        ]
+      ],
+      "tensor_coefficients": {
+        "(0, 0)": [
+          0,
+          1
+        ],
+        "(0, 1)": [
+          1
+        ],
+        "(1, 0)": [
+          1
+        ],
+        "(1, 1)": [
+          0,
+          3,
+          3
+        ]
+      },
+      "INTT_outputs": [
+        {
+          "(0, 0)": [
+            0,
+            1
+          ],
+          "(1, 1)": [
+            0,
+            3,
+            3
+          ]
+        },
+        {
+          "(0, 1)": [
+            1
+          ],
+          "(1, 0)": [
+            1
+          ]
+        }
+      ],
+      "output_T_degrees": [
+        2,
+        0
+      ],
+      "useful_slot": 1,
+      "useful_slot_degree": 0,
+      "whole_table_degree": 2,
+      "whole_table_lower_bound_L_times_n_minus_s_minus_mu": 1,
+      "sum_determinant_degrees": 3,
+      "determinant_degree_inequality": "2*2 >= 1+2",
+      "formal_marked_output_T_degrees": [
+        2,
+        0
+      ]
+    },
+    {
+      "p": 7,
+      "n": 2,
+      "N": 2,
+      "omega": 6,
+      "sampling_points": [
+        1
+      ],
+      "L": 1,
+      "s": 1,
+      "mu": 0,
+      "groups": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "factor_group_assignments": [
+        0,
+        1
+      ],
+      "P_1": [
+        [
+          [
+            1
+          ],
+          []
+        ],
+        [
+          [
+            0,
+            3,
+            5
+          ],
+          [
+            1,
+            6
+          ]
+        ]
+      ],
+      "P_2": [
+        [
+          [
+            1,
+            1,
+            5
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [],
+          [
+            1
+          ]
+        ]
+      ],
+      "tensor_coefficients": {
+        "(0, 0)": [
+          0,
+          1
+        ],
+        "(0, 1)": [
+          1
+        ],
+        "(1, 0)": [
+          1
+        ],
+        "(1, 1)": [
+          0,
+          3,
+          5
+        ]
+      },
+      "INTT_outputs": [
+        {
+          "(0, 0)": [
+            0,
+            1
+          ],
+          "(1, 1)": [
+            0,
+            3,
+            5
+          ]
+        },
+        {
+          "(0, 1)": [
+            1
+          ],
+          "(1, 0)": [
+            1
+          ]
+        }
+      ],
+      "output_T_degrees": [
+        2,
+        0
+      ],
+      "useful_slot": 1,
+      "useful_slot_degree": 0,
+      "whole_table_degree": 2,
+      "whole_table_lower_bound_L_times_n_minus_s_minus_mu": 1,
+      "sum_determinant_degrees": 3,
+      "determinant_degree_inequality": "2*2 >= 1+2",
+      "formal_marked_output_T_degrees": [
+        2,
+        0
+      ]
+    },
+    {
+      "p": 97,
+      "n": 2,
+      "N": 2,
+      "omega": 96,
+      "sampling_points": [
+        1
+      ],
+      "L": 1,
+      "s": 1,
+      "mu": 0,
+      "groups": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "factor_group_assignments": [
+        0,
+        1
+      ],
+      "P_1": [
+        [
+          [
+            1
+          ],
+          []
+        ],
+        [
+          [
+            0,
+            3,
+            95
+          ],
+          [
+            1,
+            96
+          ]
+        ]
+      ],
+      "P_2": [
+        [
+          [
+            1,
+            1,
+            95
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [],
+          [
+            1
+          ]
+        ]
+      ],
+      "tensor_coefficients": {
+        "(0, 0)": [
+          0,
+          1
+        ],
+        "(0, 1)": [
+          1
+        ],
+        "(1, 0)": [
+          1
+        ],
+        "(1, 1)": [
+          0,
+          3,
+          95
+        ]
+      },
+      "INTT_outputs": [
+        {
+          "(0, 0)": [
+            0,
+            1
+          ],
+          "(1, 1)": [
+            0,
+            3,
+            95
+          ]
+        },
+        {
+          "(0, 1)": [
+            1
+          ],
+          "(1, 0)": [
+            1
+          ]
+        }
+      ],
+      "output_T_degrees": [
+        2,
+        0
+      ],
+      "useful_slot": 1,
+      "useful_slot_degree": 0,
+      "whole_table_degree": 2,
+      "whole_table_lower_bound_L_times_n_minus_s_minus_mu": 1,
+      "sum_determinant_degrees": 3,
+      "determinant_degree_inequality": "2*2 >= 1+2",
+      "formal_marked_output_T_degrees": [
+        2,
+        0
+      ]
+    }
+  ]
+}

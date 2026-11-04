@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "source": "DoubleLogConjugation.lean",
+  "sha256": "40411aa8ba534f06696f8396652ce85be7008b4ac104ebdfdc2cf0a4cd57c914",
+  "exit_code": 0,
+  "stdout": "'DoubleLogConjugation.derivation_one' does not depend on any axioms\n'DoubleLogConjugation.double_log_second_order' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DoubleLogConjugation.double_log_finite_sum' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DoubleLogConjugation.double_log_reader_factor' depends on axioms: [propext, Quot.sound]\n",
+  "stderr": "",
+  "scope": "algebraic double-log conjugation for additive derivations",
+  "analytic_logarithm_assumed": false,
+  "full_chain_formalization": false,
+  "general_polynomial_closure": false,
+  "general_quasipolynomial_closure": false
+}

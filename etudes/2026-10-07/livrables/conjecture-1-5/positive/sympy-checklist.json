@@ -1,0 +1,23 @@
+{
+  "artifact_version": "n5-sympy-positive-v1",
+  "boundary": "B_dev-positive-symbolic",
+  "dimensions": [2, 3, 4, 5],
+  "symbolic_inputs": "Independent commuting symbols x_ij over Q; no sampled values and no changed z addresses",
+  "metric": "Exact assertion pass fraction. Every predeclared check has equal weight. Failures and infrastructure errors count as failed checks. This is not proof confidence.",
+  "families": [
+    {"name": "raising_square_zero", "instances": "one per j for each n", "count": 14},
+    {"name": "raising_pair_commutes", "instances": "one per unordered i,j pair for each n", "count": 20},
+    {"name": "tensor_raising_equals_subset_raising", "instances": "one per j for each n", "count": 14},
+    {"name": "tensor_product_entry_equals_generic_permanent", "instances": "one per n", "count": 4},
+    {"name": "transfer_nth_entry_equals_generic_permanent", "instances": "one per n", "count": 4},
+    {"name": "transfer_stabilizes_at_n", "instances": "M^(n+1)=M^n, one per n", "count": 4},
+    {"name": "nonterminal_nilpotence", "instances": "N^n=0, one per n", "count": 4},
+    {"name": "scalar_early_zero", "instances": "a_k=0 for k=0,...,n-1 for each n", "count": 14},
+    {"name": "scalar_initial_terminal_is_permanent", "instances": "a_n=P(x), one per n", "count": 4},
+    {"name": "scalar_tail_recurrence", "instances": "a_(k+n+1)=a_(k+n) for k=0,...,n for each n", "count": 18},
+    {"name": "marked_scalar_cost_accounting", "instances": "row chain, M^n, M^(n^n-1), one per builder per n", "count": 12}
+  ],
+  "total_checks": 112,
+  "general_claim_status": "UNVERIFIED by Lean in this leaf",
+  "prohibited_inference": "a_n=P_A is the target initialization, so the low-order scalar recurrence is not a polynomial extraction algorithm"
+}

@@ -1,0 +1,217 @@
+{
+  "exact_lift_instances": 15,
+  "jacobi_instances": 15,
+  "normal_order_checks": [
+    {
+      "n": 4,
+      "r": 0,
+      "distinct_partial_matchings": 1
+    },
+    {
+      "n": 4,
+      "r": 1,
+      "distinct_partial_matchings": 36
+    },
+    {
+      "n": 4,
+      "r": 2,
+      "distinct_partial_matchings": 60
+    },
+    {
+      "n": 4,
+      "r": 3,
+      "distinct_partial_matchings": 29
+    }
+  ],
+  "rank_checks": [
+    {
+      "n": 1,
+      "grid_rank": 0,
+      "row_column_affine_rank": 0
+    },
+    {
+      "n": 2,
+      "grid_rank": 2,
+      "row_column_affine_rank": 0
+    },
+    {
+      "n": 3,
+      "grid_rank": 6,
+      "row_column_affine_rank": 2
+    },
+    {
+      "n": 4,
+      "grid_rank": 12,
+      "row_column_affine_rank": 6
+    },
+    {
+      "n": 5,
+      "grid_rank": 20,
+      "row_column_affine_rank": 12
+    },
+    {
+      "n": 6,
+      "grid_rank": 30,
+      "row_column_affine_rank": 20
+    },
+    {
+      "n": 7,
+      "grid_rank": 42,
+      "row_column_affine_rank": 30
+    },
+    {
+      "n": 8,
+      "grid_rank": 56,
+      "row_column_affine_rank": 42
+    },
+    {
+      "n": 9,
+      "grid_rank": 72,
+      "row_column_affine_rank": 56
+    },
+    {
+      "n": 10,
+      "grid_rank": 90,
+      "row_column_affine_rank": 72
+    },
+    {
+      "n": 11,
+      "grid_rank": 110,
+      "row_column_affine_rank": 90
+    },
+    {
+      "n": 12,
+      "grid_rank": 132,
+      "row_column_affine_rank": 110
+    },
+    {
+      "n": 13,
+      "grid_rank": 156,
+      "row_column_affine_rank": 132
+    },
+    {
+      "n": 14,
+      "grid_rank": 182,
+      "row_column_affine_rank": 156
+    },
+    {
+      "n": 15,
+      "grid_rank": 210,
+      "row_column_affine_rank": 182
+    },
+    {
+      "n": 16,
+      "grid_rank": 240,
+      "row_column_affine_rank": 210
+    }
+  ],
+  "full_grid_n3_walsh": {
+    "support": 64,
+    "nonzero_absolute_values": [
+      64
+    ]
+  },
+  "affine_n4_walsh": {
+    "support": 64,
+    "nonzero_absolute_values": [
+      64
+    ]
+  },
+  "reverse_matching_edge_cover_weights": [
+    1,
+    0,
+    -2,
+    4,
+    -4,
+    0,
+    8,
+    -16,
+    16,
+    0,
+    -32,
+    64,
+    -64
+  ],
+  "plucker_coefficients_at_q_minus_one_plus_t": [
+    0,
+    -136,
+    280
+  ],
+  "polynomial_gauss_elimination_checks": 874,
+  "marked_n3": [
+    {
+      "permutation": [
+        0,
+        1,
+        2
+      ],
+      "exponent": 273,
+      "inversions": 0,
+      "determinant_coefficient": 1,
+      "first_lift_coefficient": 1,
+      "permanent_coefficient": 1
+    },
+    {
+      "permutation": [
+        0,
+        2,
+        1
+      ],
+      "exponent": 161,
+      "inversions": 1,
+      "determinant_coefficient": -1,
+      "first_lift_coefficient": 1,
+      "permanent_coefficient": 1
+    },
+    {
+      "permutation": [
+        1,
+        0,
+        2
+      ],
+      "exponent": 266,
+      "inversions": 1,
+      "determinant_coefficient": -1,
+      "first_lift_coefficient": 1,
+      "permanent_coefficient": 1
+    },
+    {
+      "permutation": [
+        1,
+        2,
+        0
+      ],
+      "exponent": 98,
+      "inversions": 2,
+      "determinant_coefficient": 1,
+      "first_lift_coefficient": -3,
+      "permanent_coefficient": 1
+    },
+    {
+      "permutation": [
+        2,
+        0,
+        1
+      ],
+      "exponent": 140,
+      "inversions": 2,
+      "determinant_coefficient": 1,
+      "first_lift_coefficient": -3,
+      "permanent_coefficient": 1
+    },
+    {
+      "permutation": [
+        2,
+        1,
+        0
+      ],
+      "exponent": 84,
+      "inversions": 3,
+      "determinant_coefficient": -1,
+      "first_lift_coefficient": 5,
+      "permanent_coefficient": 1
+    }
+  ],
+  "candidate_evaluator_run": false,
+  "uniform_polynomial_compiler_found": false
+}

@@ -1,0 +1,18 @@
+{
+  "root": "Conjecture_1_5_full",
+  "nodes": [
+    {"id": "Conjecture_1_5_full", "kind": "AND", "status": "OPEN", "children": ["unconditional_scalar_identity", "polynomial_scalar_resources", "operational_uniformity"]},
+    {"id": "unconditional_scalar_identity", "kind": "OR", "status": "OPEN", "children": ["n69_closed_state_constructor", "n70_global_network_constructor", "other_actual_constructor"]},
+    {"id": "polynomial_scalar_resources", "kind": "AND", "status": "OPEN", "children": ["polynomial_binary_gate_count", "polynomial_rational_literal_bits", "explicit_initializer_compilation"]},
+    {"id": "operational_uniformity", "kind": "AND", "status": "REQUIRED_OPEN", "children": ["finite_rational_input_and_DAG_encoding", "executable_constructor", "polynomial_bit_time_in_n_L"]},
+    {"id": "n69_closed_state_constructor", "kind": "AND", "status": "AWAITING_CONSTRUCTOR", "children": ["state_invariant", "DAG_initialization", "DAG_transitions", "target_output"]},
+    {"id": "n70_global_network_constructor", "kind": "AND", "status": "AWAITING_CONSTRUCTOR", "children": ["global_contraction_identity", "graded_crossing_compatibility", "DAG_contraction_compiler", "target_output"]},
+    {"id": "other_actual_constructor", "kind": "LEAF", "status": "OPEN"},
+    {"id": "EncodingBridge.marked_A_central_identity", "kind": "LEAF", "status": "PREVIOUSLY_VERIFIED", "role": "Algebraic target equality for n>=2; supplies neither a constructor nor scalar extraction gates"},
+    {"id": "ConditionalCriterion.conditional_target_coefficient", "kind": "LEAF", "status": "PREVIOUSLY_VERIFIED_CONDITIONAL", "role": "Requires hrepresentation and an actual initializer; does not close any unconditional constructor node"},
+    {"id": "ScalarDAG.AlgebraicCircuitComponent", "kind": "LEAF", "status": "STATEMENT_ONLY", "role": "Unconditional existential proposition; elaboration alone gives no theorem or root credit"}
+  ],
+  "root_statement_unchanged": true,
+  "root_score": 0,
+  "heldout_tests_run": false
+}

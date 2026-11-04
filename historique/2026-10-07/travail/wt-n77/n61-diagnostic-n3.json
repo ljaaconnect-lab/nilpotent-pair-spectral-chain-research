@@ -1,0 +1,69 @@
+{
+  "n": 3,
+  "naive_specializations": {
+    "n": 3,
+    "seed_gates": 150,
+    "inversion_pairs": 9,
+    "gates": 39933267,
+    "recurrence": "G_0=2n^4-n^3+2n^2-n; G_(h+1)=4G_h+7",
+    "scope": "exact count of this unsimplified construction, not a lower bound",
+    "materialized": false
+  },
+  "shared_row_specializations": {
+    "status": "complete",
+    "allocated_gates": 1076,
+    "reachable_gates": 1040,
+    "stages": [
+      {
+        "row_pair": [
+          0,
+          1
+        ],
+        "allocated_gates": 264,
+        "nodes": 279,
+        "specialization_cache_entries": 249
+      },
+      {
+        "row_pair": [
+          0,
+          2
+        ],
+        "allocated_gates": 575,
+        "nodes": 590,
+        "specialization_cache_entries": 1011
+      },
+      {
+        "row_pair": [
+          1,
+          2
+        ],
+        "allocated_gates": 1076,
+        "nodes": 1091,
+        "specialization_cache_entries": 2859
+      }
+    ],
+    "elapsed_seconds": 0.07952189999923576,
+    "specialization_cache_entries": 2859,
+    "actual_generic_identity": true,
+    "evaluation": {
+      "actual_scalar_gate_evaluations": 1040,
+      "maximum_node_terms": 6
+    },
+    "counts": {
+      "variable": 9,
+      "add": 713,
+      "constant": 4,
+      "mul": 327
+    }
+  },
+  "elapsed_seconds": 0.6156895000021905,
+  "source_hashes": {
+    "euler_identity.py": "2b346b46e559f6b1d39f422e2bb4878b228bc148552effd04c11dd5dc1be11d9",
+    "validate_euler_identity.py": "5ad3762d3c672ef5815a6a45ccf59944dfacc4f2e288a0c3f26321a5e4e4687d",
+    "euler_compiler.py": "baf3ad1ba13b39e6895f86f1319ee7c928e3ad37283ea48ba133331b91d30320",
+    "evaluate_euler.py": "cfa5e99acef39e607cfcbcd99b480364af3cf34f478986cf68eb684bf99d2153",
+    "candidate.py": "6f1143d634ebd7d98bce9fb5fd1ef7eb29dbb7868cd67ac29761c5d7b020a84c",
+    "n61-protocol.json": "f599b50a2a6e94fe6c2a2b2a5dd45b1b57cad74d4780e0a3f317373da4e16061"
+  },
+  "scope": "Separate diagnostics, no denominator change; cap is a resource constraint of this run"
+}

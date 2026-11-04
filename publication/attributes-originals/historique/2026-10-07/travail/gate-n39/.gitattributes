@@ -1,0 +1,9 @@
+# Preserve byte hashes of the frozen proof boundary across Windows checkouts.
+ImportProbe.lean text eol=lf
+RankOneSquareZero.lean text eol=lf
+rank-one-obligations.json text eol=lf
+rank-one-progress.json text eol=lf
+rank-one-report.json text eol=lf
+verify_rank_one.py text eol=lf
+write_rank_one_report.py text eol=lf
+RANK_ONE_BLUEPRINT.md text eol=lf

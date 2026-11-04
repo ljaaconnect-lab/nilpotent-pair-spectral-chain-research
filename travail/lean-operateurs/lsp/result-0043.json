@@ -1,0 +1,61 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fermeture-generale\\Insertion.lean",
+  "version": 2,
+  "completed": true,
+  "seconds": 0.437,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 27,
+          "line": 13
+        },
+        "start": {
+          "character": 8,
+          "line": 13
+        }
+      },
+      "message": "declaration uses `sorry`",
+      "range": {
+        "end": {
+          "character": 27,
+          "line": 13
+        },
+        "start": {
+          "character": 8,
+          "line": 13
+        }
+      },
+      "severity": 2,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 10,
+          "line": 27
+        },
+        "start": {
+          "character": 6,
+          "line": 27
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase cons\nα : Type u_1\na b x : α\nw : List α\nih : (insert b w).bind (insert a) = (insert a w).bind (insert b)\n⊢ {a :: b :: x :: w} + ({b :: a :: x :: w} + Multiset.map (List.cons b ∘ List.cons x) (insert a w)) +\n      (Multiset.map (fun w => a :: x :: w) (insert b w) + Multiset.map (List.cons x) ((insert a w).bind (insert b))) =\n    {b :: a :: x :: w} + ({a :: b :: x :: w} + Multiset.map (List.cons a ∘ List.cons x) (insert b w)) +\n      (Multiset.map (fun w => b :: x :: w) (insert a w) + Multiset.map (List.cons x) ((insert a w).bind (insert b)))",
+      "range": {
+        "end": {
+          "character": 10,
+          "line": 27
+        },
+        "start": {
+          "character": 6,
+          "line": 27
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    }
+  ]
+}

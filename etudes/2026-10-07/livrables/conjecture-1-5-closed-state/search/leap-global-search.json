@@ -1,0 +1,306 @@
+{
+  "method": "Local adapted LEAP AND-OR search graph; not a proof certificate",
+  "root": "G0",
+  "root_status": "open",
+  "root_statement": "Conjecture 1.5, original all-n/all-rational-A polynomial scalar circuit, admissible literals and uniform polynomial-time construction in n,L",
+  "exact_source": "annihilation.pdf p5, Conjecture 1.5; local extracted text lines 234ff",
+  "lean_environment": "Lean and Mathlib 4.34.1 pinned; all three environment variables required",
+  "goals": {
+    "G0": {
+      "status": "open",
+      "strategies": [
+        "S_gaussian",
+        "S_row_transfer",
+        "S_rational_poles",
+        "S_actual_suffix"
+      ]
+    },
+    "G_target_identity": {
+      "status": "proved_supporting",
+      "declaration": "CollisionEncodingBridge.marked_A_central_identity",
+      "evidence": "Exact namespace reconfirmed in unchanged delivered EncodingBridge.lean"
+    },
+    "G_joint_shuffle": {
+      "status": "open",
+      "node": "n69"
+    },
+    "G_row_state": {
+      "status": "open",
+      "node": "n70"
+    },
+    "G_initialization": {
+      "status": "open"
+    },
+    "G_scalar_cost": {
+      "status": "open"
+    },
+    "G_literal_bits": {
+      "status": "open"
+    },
+    "G_uniform_program": {
+      "status": "open",
+      "note": "Existence of an abstract circuit family is insufficient"
+    },
+    "G_lean_root": {
+      "status": "open",
+      "node": "n71",
+      "note": "Exact finite circuit proposition elaborated in n71; no proof. Full original goal also requires operational uniformity.",
+      "direct_Cn_semantic_bridge": "Paper identifies PA=CnDA; current Lean target is explicit markedPermanent. Literal Cn definition and equality must be formalized before claiming every original statement is Lean verified."
+    },
+    "G_pole_functional": {
+      "status": "open",
+      "node": "n72"
+    },
+    "G_actual_baseline": {
+      "status": "proved_supporting",
+      "node": "n73",
+      "root_dependency": false,
+      "note": "Prove an actual closed state family; exponential dimension does not close the polynomial-state obligation.",
+      "declarations": [
+        "ActualClosedSubsetTransfer.occupation_eq_iff_bijective",
+        "ActualClosedSubsetTransfer.expanded_linear_product",
+        "ActualClosedSubsetTransfer.sum_bijective_functions",
+        "ActualClosedSubsetTransfer.full_coefficient_permutation",
+        "ActualClosedSubsetTransfer.subsetExponent_apply",
+        "ActualClosedSubsetTransfer.subsetExponent_support",
+        "ActualClosedSubsetTransfer.subsetExponent_zero_iff",
+        "ActualClosedSubsetTransfer.subsetExponent_erase",
+        "ActualClosedSubsetTransfer.coefficient_step",
+        "ActualClosedSubsetTransfer.coefficient_invariant",
+        "ActualClosedSubsetTransfer.initial_state",
+        "ActualClosedSubsetTransfer.step_state",
+        "ActualClosedSubsetTransfer.rowProduct_eq",
+        "ActualClosedSubsetTransfer.terminal_permutation",
+        "ActualClosedSubsetTransfer.terminal_matrix",
+        "ActualClosedSubsetTransfer.marked_central",
+        "ActualClosedSubsetTransfer.marked_target",
+        "ActualClosedSubsetTransfer.state_dimension"
+      ],
+      "evidence": "n73 independent committed replay exit0",
+      "state_dimension": "2^n"
+    },
+    "G_actual_suffix": {
+      "status": "open",
+      "node": "n74"
+    },
+    "G_atomic_first_prefix": {
+      "status": "proved_supporting",
+      "node": "n75",
+      "required_leaves": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6"
+      ],
+      "root_dependency": false,
+      "note": "First-prefix fusion only. Global compact fusion remains open."
+    },
+    "A75_A1": {
+      "status": "proved_supporting",
+      "statement": "h=sum_j b_j; sum_(j not in J)b_j=h-sum_(j in J)b_j",
+      "proof_plan": "Partition the finite sum into J and its complement",
+      "declaration": "AtomicFirstPrefix.sum_complement",
+      "evidence": "independent commit replay exit0",
+      "root_dependency": false
+    },
+    "A75_A2": {
+      "status": "proved_supporting",
+      "statement": "One-column response on q_J is (-1)^card(J) if j not in J, zero otherwise",
+      "proof_plan": "The commuting square-zero basis rule, stated as an explicit disjoint-set coefficient",
+      "declaration": "AtomicFirstPrefix.single_response",
+      "evidence": "independent commit replay exit0",
+      "root_dependency": false
+    },
+    "A75_A3": {
+      "status": "proved_supporting",
+      "statement": "The weighted first-prefix response is (-1)^card(J)*(h-sum_J b_j)",
+      "proof_plan": "Linear finite sum of A2 followed by A1",
+      "declaration": "AtomicFirstPrefix.weighted_response",
+      "evidence": "independent commit replay exit0",
+      "root_dependency": false
+    },
+    "A75_A4": {
+      "status": "proved_supporting",
+      "statement": "det((-I+u*1^T)[J,J])=(-1)^card(J)*(1-sum_J u_j)",
+      "proof_plan": "Use actual pinned Mathlib rank-one determinant lemma and determinant of a negated matrix; include empty J",
+      "declaration": "AtomicFirstPrefix.minor_determinant",
+      "evidence": "independent commit replay exit0",
+      "root_dependency": false
+    },
+    "A75_A5": {
+      "status": "proved_supporting",
+      "statement": "If h*u_j=b_j for every j, h times A4 equals A3 for every J",
+      "proof_plan": "Distribute h across the finite sum and ring; local normalization hypothesis is explicit, not a root assumption",
+      "declaration": "AtomicFirstPrefix.normalized_minor_response",
+      "evidence": "independent commit replay exit0",
+      "root_dependency": false
+    },
+    "A75_A6": {
+      "status": "proved_supporting",
+      "statement": "Equality on all basis q_J extends to every finite coefficient vector f(q)",
+      "proof_plan": "Finite linearity; this semantic extension is not a free scalar contraction gate",
+      "declaration": "AtomicFirstPrefix.linear_extension",
+      "evidence": "independent commit replay exit0",
+      "root_dependency": false
+    },
+    "A76_B1": {
+      "status": "proved_supporting",
+      "id": "B1",
+      "statement": "(sum_H b)*(sum_H c)=sum_j_in_H sum_k_in_H b_j*c_k",
+      "method": "Finite distributivity",
+      "root_dependency": false,
+      "declaration": "AtomicSecondPrefix.B1_distribution",
+      "evidence": "independent commit replay exit0"
+    },
+    "A76_B2": {
+      "status": "proved_supporting",
+      "id": "B2",
+      "statement": "sum_j_in_H sum_k_in_H_erase_j b_j*c_k=(sum_H b)*(sum_H c)-sum_H b_j*c_j",
+      "method": "Separate k=j with sum_erase_add, then distribute",
+      "root_dependency": false,
+      "declaration": "AtomicSecondPrefix.B2_remove_diagonal",
+      "evidence": "independent commit replay exit0"
+    },
+    "A76_B3": {
+      "status": "proved_supporting",
+      "id": "B3",
+      "statement": "Signed response from the actual two-column square-zero insertion array equals (-1)^cardJ times B2 on H=univ\\J",
+      "method": "Finite disjoint-set coefficient rule, sign of two insertions",
+      "root_dependency": false,
+      "declaration": "AtomicSecondPrefix.B3_actual_response",
+      "evidence": "independent commit replay exit0"
+    },
+    "A76_B4": {
+      "status": "proved_supporting",
+      "id": "B4",
+      "statement": "The initialized data b,c,d_j=b_j*c_j,h_b,h_c,h_d recover B3 from three complement sums",
+      "method": "Finite partition three times and ring",
+      "root_dependency": false,
+      "declaration": "AtomicSecondPrefix.B4_initialized_query",
+      "evidence": "independent commit replay exit0"
+    },
+    "G_atomic_second_prefix": {
+      "status": "proved_supporting",
+      "node": "n76",
+      "required_leaves": [
+        "B1",
+        "B2",
+        "B3",
+        "B4"
+      ],
+      "root_dependency": false,
+      "note": "Exact fixed-prefix2 response, not global closure or a free future contraction"
+    },
+    "G_direct_raccord": {
+      "status": "verified_supporting",
+      "node": "n77",
+      "root_dependency": false,
+      "note": "Compile actual all-n baseline as a direct scalar reference; polynomial compression still required",
+      "commit": "ff868e702c83e8f23f81a626d9d9a3713fdc92d9",
+      "whole_polynomial_cases": "4/4 symbolic",
+      "state_dimension": "2^n",
+      "new_lean_theorems": 0
+    },
+    "G_direct_semantic_S1": {
+      "status": "planned_uncompiled",
+      "statement": "Radix base2^n and binary digits2^sigma(i) are in range"
+    },
+    "G_direct_semantic_S2": {
+      "status": "planned_uncompiled",
+      "statement": "Rewrite true binary address E as radix assignmentLabel"
+    },
+    "G_direct_semantic_S3": {
+      "status": "planned_uncompiled",
+      "statement": "Prove injectivity of E from radix labels and powers"
+    },
+    "G_direct_semantic_S4": {
+      "status": "planned_uncompiled",
+      "statement": "Define chi_n and prove its values on and off the address image"
+    },
+    "G_direct_semantic_S5": {
+      "status": "planned_uncompiled",
+      "statement": "Define literal diagonal Cn linear map and prove its coefficient action"
+    },
+    "G_direct_semantic_S6": {
+      "status": "planned_uncompiled",
+      "statement": "Expand actual marked determinant DA"
+    },
+    "G_direct_semantic_S7": {
+      "status": "planned_uncompiled",
+      "statement": "Correct one monomial using permutation_sign_square"
+    },
+    "G_direct_semantic_S8": {
+      "status": "planned_uncompiled",
+      "statement": "Extend by map_sum to CnDA=markedPermanent"
+    }
+  },
+  "strategies": {
+    "S_gaussian": {
+      "parent": "G0",
+      "required": [
+        "G_target_identity",
+        "G_joint_shuffle",
+        "G_initialization",
+        "G_scalar_cost",
+        "G_literal_bits",
+        "G_uniform_program",
+        "G_lean_root"
+      ]
+    },
+    "S_row_transfer": {
+      "parent": "G0",
+      "required": [
+        "G_target_identity",
+        "G_row_state",
+        "G_initialization",
+        "G_scalar_cost",
+        "G_literal_bits",
+        "G_uniform_program",
+        "G_lean_root"
+      ]
+    },
+    "S_rational_poles": {
+      "parent": "G0",
+      "required": [
+        "G_target_identity",
+        "G_pole_functional",
+        "G_initialization",
+        "G_scalar_cost",
+        "G_literal_bits",
+        "G_uniform_program",
+        "G_lean_root"
+      ]
+    },
+    "S_actual_suffix": {
+      "parent": "G0",
+      "required": [
+        "G_target_identity",
+        "G_actual_suffix",
+        "G_initialization",
+        "G_scalar_cost",
+        "G_literal_bits",
+        "G_uniform_program",
+        "G_lean_root"
+      ]
+    }
+  },
+  "acyclic": true,
+  "new_verified_root_obligations": 0,
+  "atomic_sequence": [
+    "A75_A1",
+    "A75_A2",
+    "A75_A3",
+    "A75_A4",
+    "A75_A5",
+    "A75_A6",
+    "A76_B1",
+    "A76_B2",
+    "A76_B3",
+    "A76_B4"
+  ],
+  "unresolved_constructive_bottleneck": "Initialized polynomial-size scalar updates for arbitrary prefix depth i<=n, connected to the whole corrected polynomial PA; admissible constants and uniform compilation required.",
+  "active_target": "Complete corrected polynomial PA=CnDA, scalar Q circuit; all stages polynomially charged",
+  "coefficient_extraction_strategy": "Equivalent historical formulation, not an additional requirement of the direct route"
+}

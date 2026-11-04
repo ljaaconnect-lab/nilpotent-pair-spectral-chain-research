@@ -1,0 +1,246 @@
+{
+  "_counter": 14,
+  "root": "n0",
+  "nodes": {
+    "n0": {
+      "id": "n0",
+      "parent": null,
+      "depth": 0,
+      "status": "root",
+      "hypothesis": "Resolve Conjecture 1.5; record finite exact evidence and formally verified obligations without equating scores with proof",
+      "insight": "[from n1] A small Hhat DAG is established on the development boundary; constructive extraction must be assessed separately\n[from n3] Direct Lean 4.34.1 is available; Mathlib import is missing. Use actual dependency diagnostics and verified core lemmas without weakening the original conjecture.\n[from n4] The positive frontier has an exact transfer baseline and stabilization invariant; polynomial compilation requires cheaply constructible compressed data\n[from n5] All tested positive identities preserve generic weights and marked coefficients. Kernel-verified helpers are reusable; the root polynomial gate bound still needs proof.",
+      "metadata": {
+        "dev_score": null,
+        "test_score": 0.0,
+        "result": "",
+        "branch_ref": "7d68b541d2bfd7c2e5a0193730c563a8f43dac1b"
+      },
+      "created_at": 1791369214,
+      "updated_at": 1791371735
+    },
+    "n1": {
+      "id": "n1",
+      "parent": "n0",
+      "depth": 1,
+      "status": "merged",
+      "hypothesis": "The O(n^4) scalar DAG reproduces Hhat exactly for n=2,3,4, but coefficient expansion and subset-state DP retain exponential costs",
+      "insight": "Pairing preserves exact addresses and cancels diagonal signatures; subset-state scalar compilation is a reusable constructive baseline\n[from n4] The positive frontier has an exact transfer baseline and stabilization invariant; polynomial compilation requires cheaply constructible compressed data\n[from n5] All tested positive identities preserve generic weights and marked coefficients. Kernel-verified helpers are reusable; the root polynomial gate bound still needs proof.",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "36/36 exact development assertions passed; Hhat scalar gates 48,198,568 at n=2,3,4; no extractor bound proved",
+        "branch_ref": "7f68a91c2930d347de5388fecea72753b2f973c3"
+      },
+      "created_at": 1791369215,
+      "updated_at": 1791371735
+    },
+    "n2": {
+      "id": "n2",
+      "parent": "n0",
+      "depth": 1,
+      "status": "executed",
+      "hypothesis": "Specialization z=1 and interpolation at square shifts recover the Boolean permanent; global homogeneous coefficient recurrences require exponential dimension",
+      "insight": "Target-only structured representations remain eligible; preserve original formal-polynomial, constant-length, and uniform-construction requirements\n[from n3] Direct Lean 4.34.1 is available; Mathlib import is missing. Use actual dependency diagnostics and verified core lemmas without weakening the original conjecture.",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": null,
+        "result": "9/9 exact interpolation development checks; previous structural audit preserved, further audit search stopped on user steering",
+        "branch_ref": "7627e1b392352c3f278bebe8790b7dd9766e978c"
+      },
+      "created_at": 1791369216,
+      "updated_at": 1791371147
+    },
+    "n3": {
+      "id": "n3",
+      "parent": "n2",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "An acyclic Lean blueprint preserves base-n injection, diagonal sign pairing, and the finite-template permanent implication; actual compiler diagnostics determine verification",
+      "insight": "The exact source preserves fixed-length labels, central equality and stabilization hypotheses; polynomial compilation remains open",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": null,
+        "result": "9 accepted declarations, 7 distinct helpers, exit0 and no sorryAx; Mathlib draft separately unverified; root unproved",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791370525,
+      "updated_at": 1791371950
+    },
+    "n4": {
+      "id": "n4",
+      "parent": "n1",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "A subset-transfer matrix with a terminal self-loop realizes the target coefficient as u^T M^K v; constructive compression variants can be measured for n=2,3,4,5",
+      "insight": "Terminal stabilization replaces exponent K by n; scalar initialization and state compression remain distinct constructive obligations\n[from n5] All tested positive identities preserve generic weights and marked coefficients. Kernel-verified helpers are reusable; the root polynomial gate bound still needs proof.",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "48/48 formal-z development equalities n=2..5; matrix/row/tensor variants constructed, no polynomial extractor bound",
+        "branch_ref": "9f9725b7c96944103a78b67097751b2fb1c04bde"
+      },
+      "created_at": 1791370950,
+      "updated_at": 1791371735
+    },
+    "n5": {
+      "id": "n5",
+      "parent": "n4",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "SymPy verifies commuting square-zero tensor raising operators and symbolic terminal stabilization for n=2,3,4,5 with explicit scalar compilation counts",
+      "insight": "The exact symbolic tensor model supports the positive recurrence, whose initial target scalar and exponential state representation remain compilation obligations",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": null,
+        "result": "112/112 frozen SymPy symbolic checks n=2..5; commuting nilpotent tensor factors and terminal stabilization confirmed in tested sizes",
+        "branch_ref": "6207ea8f28565e50766e4798df91e3c72476115b"
+      },
+      "created_at": 1791371355,
+      "updated_at": 1791371733
+    },
+    "n6": {
+      "id": "n6",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionCoreBridge.decode_head",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371950,
+      "updated_at": 1791371951
+    },
+    "n7": {
+      "id": "n7",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionCoreBridge.decode_tail",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371952,
+      "updated_at": 1791371953
+    },
+    "n8": {
+      "id": "n8",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionCoreBridge.encodeDigits_injective",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371953,
+      "updated_at": 1791371954
+    },
+    "n9": {
+      "id": "n9",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionCoreBridge.central_label_iff",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371954,
+      "updated_at": 1791371955
+    },
+    "n10": {
+      "id": "n10",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionCoreBridge.orbit_stabilizes",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371955,
+      "updated_at": 1791371956
+    },
+    "n11": {
+      "id": "n11",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionCoreBridge.n2_pair_factorization",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371956,
+      "updated_at": 1791371957
+    },
+    "n12": {
+      "id": "n12",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionCoreBridge.n2_central_convolution",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371958,
+      "updated_at": 1791371958
+    },
+    "n13": {
+      "id": "n13",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneratedCollisionN2.factorization",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371959,
+      "updated_at": 1791371960
+    },
+    "n14": {
+      "id": "n14",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneratedCollisionN2.central_convolution",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371960,
+      "updated_at": 1791371961
+    }
+  }
+}

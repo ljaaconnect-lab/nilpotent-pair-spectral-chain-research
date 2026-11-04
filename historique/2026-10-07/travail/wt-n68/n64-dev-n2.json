@@ -1,0 +1,224 @@
+{
+  "node": "n64",
+  "n": 2,
+  "matching_count": 7,
+  "passed": 28,
+  "total": 28,
+  "scores": {
+    "n61_equals_mobius": 7,
+    "local_pf_equals_mobius": 7,
+    "fixed_ports_pf_equals_mobius": 7,
+    "charged_trace_matches_both_pf": 7
+  },
+  "fixed_matrix_order": 10,
+  "unique_column_patterns": 4,
+  "actual_scalar_gate_evaluations_across_cached_checks": 2141,
+  "templates": {
+    "2": {
+      "d": 2,
+      "gates": 6,
+      "counts": {
+        "constant": 4,
+        "variable": 1,
+        "mul": 5,
+        "add": 1
+      },
+      "input_upper_entries": 1,
+      "topological_binary_scalar_graph": true,
+      "formal_semantics_status": "Finite exact checks only; generic Lean trace compiler theorem remains separate",
+      "serialized_path": "n64-trace-dag-d2-n2.json",
+      "serialized_sha256": "297292ff30aa7d64adcedcf3497b36166856b38bff10ff040402a303b48336a7"
+    },
+    "4": {
+      "d": 4,
+      "gates": 139,
+      "counts": {
+        "constant": 5,
+        "variable": 6,
+        "mul": 84,
+        "add": 55
+      },
+      "input_upper_entries": 6,
+      "topological_binary_scalar_graph": true,
+      "formal_semantics_status": "Finite exact checks only; generic Lean trace compiler theorem remains separate",
+      "serialized_path": "n64-trace-dag-d4-n2.json",
+      "serialized_sha256": "36ef8b121f272604a0b1b4269167a72265aff83c4b64891f0467fcc368782d87"
+    },
+    "6": {
+      "d": 6,
+      "gates": 853,
+      "counts": {
+        "constant": 6,
+        "variable": 15,
+        "mul": 475,
+        "add": 378
+      },
+      "input_upper_entries": 15,
+      "topological_binary_scalar_graph": true,
+      "formal_semantics_status": "Finite exact checks only; generic Lean trace compiler theorem remains separate",
+      "serialized_path": "n64-trace-dag-d6-n2.json",
+      "serialized_sha256": "eb77f6336c39b8aa17f5d51827659f92b05202ede414ddf33b93bcab93be4b6f"
+    }
+  },
+  "maximum_coefficient_bits": 2,
+  "bit_bound_n_plus_1": true,
+  "old_preprocessing": {
+    "states": 2,
+    "all_partial_matching_state_bound": 7,
+    "attempts": 1,
+    "compatible_transitions": 1,
+    "preprocessing_integer_adds": 1,
+    "preprocessing_integer_muls": 1,
+    "maximum_integer_coefficient_bit_length": 2,
+    "coefficient_l1_bound": 3,
+    "stages": [
+      {
+        "row_pair": [
+          0,
+          1
+        ],
+        "nonzero_matching_states": 2
+      }
+    ]
+  },
+  "records": [
+    {
+      "matching": [],
+      "pattern": [],
+      "coefficient": 1,
+      "n61": 1,
+      "local_pf_corrected": 1,
+      "fixed_pf": 1,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        0
+      ],
+      "pattern": [
+        0
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        1
+      ],
+      "pattern": [
+        0
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        2
+      ],
+      "pattern": [
+        0
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        3
+      ],
+      "pattern": [
+        0
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        0,
+        3
+      ],
+      "pattern": [
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        1,
+        2
+      ],
+      "pattern": [
+        1,
+        0
+      ],
+      "coefficient": -2,
+      "n61": -2,
+      "local_pf_corrected": -2,
+      "fixed_pf": -2,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    }
+  ],
+  "source_hashes": {
+    "pfaffian_coefficients.py": "1bd0c45b3273065b2718bcea6dbca5f64ede5e85353d7f145cc8dcbd6e3634c7",
+    "evaluate_pfaffian.py": "bf2e8577469c3c233140f9c4ac1be9dfb36d73664a3f09e1da2dfa5d9351e76c",
+    "euler_compiler.py": "9974e6b1feec828f656d56cd6537f4a3f70c10fee2b2c701eb9e2b7a38f9cf2d",
+    "candidate.py": "6f1143d634ebd7d98bce9fb5fd1ef7eb29dbb7868cd67ac29761c5d7b020a84c",
+    "n64-protocol.json": "df1339dc3b95dc35ecf29413bdd5a7603f0d6314ee0b73d1755c48bac7e5f8a0"
+  },
+  "elapsed_seconds": 0.08892400001059286,
+  "held_out_access": false,
+  "root_conjecture_verified": false,
+  "global_synchronized_contraction_verified": false,
+  "scope": "Finite exact local/fixed-principal identities and actual scalar compiler evaluations; no global sum algorithm"
+}

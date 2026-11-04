@@ -1,0 +1,50 @@
+{
+  "generator": "SymPy-to-Lean single-tactic bridge",
+  "sympy_version": "1.14.0",
+  "validated_n": 2,
+  "H_factorized": "(-t**2 + t)*(alpha*t**2 - beta*t)",
+  "H_expanded": "-alpha*t**4 + alpha*t**3 + beta*t**3 - beta*t**2",
+  "Hhat_expanded": "-alpha*t**4 + alpha*t**3 + beta*t**3 - beta*t**2 + t**6 + 1",
+  "K": 3,
+  "central": "alpha + beta",
+  "symbolic_checks_passed": 2,
+  "theorems": [
+    "CollisionBridge.n2_pair_factorization",
+    "CollisionBridge.n2_central_coeff"
+  ],
+  "generated_source_sha256": "945065098401ab59ce48fa07d4742b323af2ca99668bec981c59b8c91f793260",
+  "sources": {
+    "GeneratedBridge.lean": {
+      "sha256": "945065098401ab59ce48fa07d4742b323af2ca99668bec981c59b8c91f793260",
+      "theorems": [
+        "CollisionBridge.n2_pair_factorization",
+        "CollisionBridge.n2_central_coeff"
+      ],
+      "scope": "Mathlib draft, dependency unavailable"
+    },
+    "GeneratedCoreN2.lean": {
+      "sha256": "5c36f6762f305ab4d656050f4484bf914c4726dc4f24e335ff2630c69e3432d6",
+      "theorems": [
+        "GeneratedCollisionN2.factorization",
+        "GeneratedCollisionN2.central_convolution"
+      ],
+      "scope": "Generated n2 factorization and rational list-coefficient convolution"
+    },
+    "CoreBridge.lean": {
+      "sha256": "2fbe2125ab53233e0d21165dcf8ed765eb0bb986d5ddb0a87dfb84c5003b2100",
+      "theorems": [
+        "CollisionCoreBridge.decode_head",
+        "CollisionCoreBridge.decode_tail",
+        "CollisionCoreBridge.encodeDigits_injective",
+        "CollisionCoreBridge.central_label_iff",
+        "CollisionCoreBridge.orbit_stabilizes",
+        "CollisionCoreBridge.n2_pair_factorization",
+        "CollisionCoreBridge.n2_central_convolution"
+      ],
+      "scope": "Core algebraic helper lemmas, no root circuit-complexity assertion"
+    }
+  },
+  "lean_verified": false,
+  "root_conjecture_verified": false,
+  "scope": "Finite n=2 identity generation; no general proof or complexity bound."
+}

@@ -1,0 +1,150 @@
+{
+  "node_id": "n67",
+  "artifact_version": "n67-hadamard-pfaffian-v1",
+  "status": "local_gadget_verified",
+  "source": "HadamardPfaffian.lean",
+  "source_sha256": "344aa1d55e4a215fd11251d5546f2b56908998b15859f539730f99d23d32eae5",
+  "dev_score": 1.0,
+  "helper_score": "3/3",
+  "score_definition": "Frozen local helper obligations verified / three; no root-conjecture credit",
+  "root_conjecture_score": 0,
+  "root_conjecture_verified": false,
+  "fixed_development_obligations": [
+    "CollisionHadamardPfaffian.tensor_copy_even",
+    "CollisionHadamardPfaffian.gaussian_ones_even",
+    "CollisionHadamardPfaffian.hadamard_inverse"
+  ],
+  "closed_obligations": [
+    "CollisionHadamardPfaffian.tensor_copy_even",
+    "CollisionHadamardPfaffian.gaussian_ones_even",
+    "CollisionHadamardPfaffian.hadamard_inverse"
+  ],
+  "unclosed_obligations": [],
+  "accepted_declarations": 3,
+  "declarations": [
+    "CollisionHadamardPfaffian.tensor_copy_even",
+    "CollisionHadamardPfaffian.gaussian_ones_even",
+    "CollisionHadamardPfaffian.hadamard_inverse"
+  ],
+  "exact_declaration_statements": {
+    "tensor_copy_even": ":\n    \u2200 y : Fin 4 \u2192 Bool, tensorCopy4 y = 2 * EVEN4 y",
+    "gaussian_ones_even": ":\n    \u2200 y : Fin 4 \u2192 Bool, gaussian4 1 1 1 1 1 1 y = EVEN4 y",
+    "hadamard_inverse": ":\n    hInverse * hMatrix = 1 \u2227 hMatrix * hInverse = 1"
+  },
+  "audited_definitions": [
+    "CollisionHadamardPfaffian.gaussian4"
+  ],
+  "axiom_audit": {
+    "CollisionHadamardPfaffian.tensor_copy_even": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionHadamardPfaffian.gaussian_ones_even": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionHadamardPfaffian.hadamard_inverse": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionHadamardPfaffian.gaussian4": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "accepted_trust_base": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "compiler_invocations": 4,
+  "candidate_rounds": 4,
+  "candidate_compilation_budget": 5,
+  "dependency_builds": 0,
+  "probe_compilations": 0,
+  "frozen_replays": 0,
+  "final_compiler_round": 4,
+  "compiler_exit_code": 0,
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n67\\HadamardPfaffian.lean"
+  ],
+  "LEAN_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n67;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+  "LEAN_SRC_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\src\\lean\\lake",
+  "LEAN_SYSROOT": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+  "frozen_contract_sha256": "e3c2a52a77d7c4bd8fa5570f711b4204fd035da0e3effb0772395e72b08fd7bb",
+  "formal_contract_sha256": "8f2cabd220f91db01b6237b7884ff90d16a0a2e8a32becba36ed8e22848458a4",
+  "invocation_history": [
+    {
+      "round": 1,
+      "kind": "candidate",
+      "source": "HadamardPfaffian.lean",
+      "source_sha256": "4dfec4d53f94d4b9559d2bd6fc611a4c8ef0d8206b4077d099892775edfbc2fa",
+      "exit_code": 1
+    },
+    {
+      "round": 2,
+      "kind": "candidate",
+      "source": "HadamardPfaffian.lean",
+      "source_sha256": "64cb7bbb011c0dbb32be97b7a887b468a05a7a6074afc88e90dff3d4a3ffe71f",
+      "exit_code": 0
+    },
+    {
+      "round": 3,
+      "kind": "candidate",
+      "source": "HadamardPfaffian.lean",
+      "source_sha256": "00b21bf08964b0e8d326a629955dd9293a5dcc62b57e4b329c806ca1606a0238",
+      "exit_code": 0
+    },
+    {
+      "round": 4,
+      "kind": "candidate",
+      "source": "HadamardPfaffian.lean",
+      "source_sha256": "344aa1d55e4a215fd11251d5546f2b56908998b15859f539730f99d23d32eae5",
+      "exit_code": 0
+    }
+  ],
+  "errors": [],
+  "heldout_tests_run": false,
+  "scope": "Exact four-leg COPY Hadamard transform, independent explicit six-parameter Pf4 specialization, actual rational matrix inverse",
+  "global_gaussian_closure_assumed": false,
+  "scalar_polynomial_compiler_proved": false,
+  "mathlib_dependency_provenance": {
+    "modules": {
+      "Mathlib.Data.Matrix.Basic": {
+        "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\Data\\Matrix\\Basic.lean",
+        "source_sha256": "fd8cab9e5ab6568a12306feab85f74b81487d99b1b3fac6769e4cd06c1d7722c",
+        "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Data\\Matrix\\Basic.olean",
+        "compiled_sha256": "470e120b05e9734139f6f8beb600c9d4f6361ad5504dfe4d47883e92575b98ac"
+      },
+      "Mathlib.Algebra.Ring.Rat": {
+        "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\Algebra\\Ring\\Rat.lean",
+        "source_sha256": "79f6035d695e48393153602fb2bbd2c858621816a9bc3b0b82453b69ca7db6ea",
+        "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Algebra\\Ring\\Rat.olean",
+        "compiled_sha256": "b8c9f0ceda29696d45ff7ac22363649d10eb616da863839f9e788671dead1a37"
+      }
+    },
+    "compiler": {
+      "path": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+      "sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+      "version": "Lean 4.34.1"
+    },
+    "environment_source": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib-environment.json",
+    "environment_sha256": "966794f117d8240462ec155c6b3d1c3096d02c679eb5d05256df07eecfe2dd12",
+    "decide_kernel_implementation": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\src\\lean\\Lean\\Elab\\Tactic\\Decide.lean",
+      "source_sha256": "99e84ce67778157e77d7261aa25b64ed72da16e9d1f60031cf2aa26f5ea6ee68",
+      "method": "decide +kernel uses doKernel/mkAuxLemma; no native reduction or additional axiom"
+    },
+    "mathlib_cache_mutated": false,
+    "mathlib_git_revision": null,
+    "revision_note": "Read-only acquired Mathlib sources and compiled files identified by hashes; no separate Mathlib Git HEAD asserted"
+  },
+  "mathlib_dependency_provenance_sha256": "afc07136c006d4969ac9b41b74eaad3965a3af7aae2fd3f83dcfe056fbb83c84",
+  "compiler_warnings": [],
+  "development_constraint": "Round 1 ordinary decide failed to reduce the finite rational decision instance; round 2 uses kernel reduction, without changing the frozen proposition"
+}

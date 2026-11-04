@@ -1,0 +1,82 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\PartitionCertificate.lean",
+  "version": 5,
+  "seconds": 22.094,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 152
+        },
+        "start": {
+          "character": 0,
+          "line": 152
+        }
+      },
+      "message": "'OrientedOperators.PartitionCertificate.order4_certificate' does not depend on any axioms",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 152
+        },
+        "start": {
+          "character": 0,
+          "line": 152
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 153
+        },
+        "start": {
+          "character": 0,
+          "line": 153
+        }
+      },
+      "message": "'OrientedOperators.PartitionCertificate.order5_certificate' does not depend on any axioms",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 153
+        },
+        "start": {
+          "character": 0,
+          "line": 153
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 154
+        },
+        "start": {
+          "character": 0,
+          "line": 154
+        }
+      },
+      "message": "'OrientedOperators.PartitionCertificate.certificates_have_complete_support' does not depend on any axioms",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 154
+        },
+        "start": {
+          "character": 0,
+          "line": 154
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    }
+  ]
+}

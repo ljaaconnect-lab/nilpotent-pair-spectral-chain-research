@@ -1,0 +1,1626 @@
+{
+  "artifact_version": "n5-sympy-positive-v1",
+  "boundary": "B_dev-positive-symbolic",
+  "checklist_sha256": "e10a48b1cd35353f63ac7197a94638f6ba13f3c52b578ed40681853c5a36f2a4",
+  "script_sha256": "f632b00c0efc021042178f33eeb8d39c5d460f41dd1521a181ef1c5b5d7ee933",
+  "sympy_version": "1.14.0",
+  "passed": 112,
+  "total": 112,
+  "score": 1.0,
+  "checks": [
+    {
+      "n": 2,
+      "check": "raising_square_zero",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "raising_square_zero",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "raising_pair_commutes",
+      "instance": "0,1",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "tensor_raising_equals_subset_raising",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "tensor_raising_equals_subset_raising",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "tensor_product_entry_equals_generic_permanent",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "transfer_nth_entry_equals_generic_permanent",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "transfer_stabilizes_at_n",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "nonterminal_nilpotence",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "scalar_initial_terminal_is_permanent",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "scalar_early_zero",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "scalar_early_zero",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "scalar_tail_recurrence",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "scalar_tail_recurrence",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "scalar_tail_recurrence",
+      "instance": 2,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "marked_scalar_cost_accounting",
+      "instance": "row_chain",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "marked_scalar_cost_accounting",
+      "instance": "matrix_power_n",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 2,
+      "check": "marked_scalar_cost_accounting",
+      "instance": "matrix_power_K",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "raising_square_zero",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "raising_square_zero",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "raising_square_zero",
+      "instance": 2,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "raising_pair_commutes",
+      "instance": "0,1",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "raising_pair_commutes",
+      "instance": "0,2",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "raising_pair_commutes",
+      "instance": "1,2",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "tensor_raising_equals_subset_raising",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "tensor_raising_equals_subset_raising",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "tensor_raising_equals_subset_raising",
+      "instance": 2,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "tensor_product_entry_equals_generic_permanent",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "transfer_nth_entry_equals_generic_permanent",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "transfer_stabilizes_at_n",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "nonterminal_nilpotence",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "scalar_initial_terminal_is_permanent",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "scalar_early_zero",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "scalar_early_zero",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "scalar_early_zero",
+      "instance": 2,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "scalar_tail_recurrence",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "scalar_tail_recurrence",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "scalar_tail_recurrence",
+      "instance": 2,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "scalar_tail_recurrence",
+      "instance": 3,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "marked_scalar_cost_accounting",
+      "instance": "row_chain",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "marked_scalar_cost_accounting",
+      "instance": "matrix_power_n",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 3,
+      "check": "marked_scalar_cost_accounting",
+      "instance": "matrix_power_K",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "raising_square_zero",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "raising_square_zero",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "raising_square_zero",
+      "instance": 2,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "raising_square_zero",
+      "instance": 3,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "raising_pair_commutes",
+      "instance": "0,1",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "raising_pair_commutes",
+      "instance": "0,2",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "raising_pair_commutes",
+      "instance": "0,3",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "raising_pair_commutes",
+      "instance": "1,2",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "raising_pair_commutes",
+      "instance": "1,3",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "raising_pair_commutes",
+      "instance": "2,3",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "tensor_raising_equals_subset_raising",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "tensor_raising_equals_subset_raising",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "tensor_raising_equals_subset_raising",
+      "instance": 2,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "tensor_raising_equals_subset_raising",
+      "instance": 3,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "tensor_product_entry_equals_generic_permanent",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "transfer_nth_entry_equals_generic_permanent",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "transfer_stabilizes_at_n",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "nonterminal_nilpotence",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "scalar_initial_terminal_is_permanent",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "scalar_early_zero",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "scalar_early_zero",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "scalar_early_zero",
+      "instance": 2,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "scalar_early_zero",
+      "instance": 3,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "scalar_tail_recurrence",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "scalar_tail_recurrence",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "scalar_tail_recurrence",
+      "instance": 2,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "scalar_tail_recurrence",
+      "instance": 3,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "scalar_tail_recurrence",
+      "instance": 4,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "marked_scalar_cost_accounting",
+      "instance": "row_chain",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "marked_scalar_cost_accounting",
+      "instance": "matrix_power_n",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 4,
+      "check": "marked_scalar_cost_accounting",
+      "instance": "matrix_power_K",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_square_zero",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_square_zero",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_square_zero",
+      "instance": 2,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_square_zero",
+      "instance": 3,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_square_zero",
+      "instance": 4,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_pair_commutes",
+      "instance": "0,1",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_pair_commutes",
+      "instance": "0,2",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_pair_commutes",
+      "instance": "0,3",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_pair_commutes",
+      "instance": "0,4",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_pair_commutes",
+      "instance": "1,2",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_pair_commutes",
+      "instance": "1,3",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_pair_commutes",
+      "instance": "1,4",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_pair_commutes",
+      "instance": "2,3",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_pair_commutes",
+      "instance": "2,4",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "raising_pair_commutes",
+      "instance": "3,4",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "tensor_raising_equals_subset_raising",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "tensor_raising_equals_subset_raising",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "tensor_raising_equals_subset_raising",
+      "instance": 2,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "tensor_raising_equals_subset_raising",
+      "instance": 3,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "tensor_raising_equals_subset_raising",
+      "instance": 4,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "tensor_product_entry_equals_generic_permanent",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "transfer_nth_entry_equals_generic_permanent",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "transfer_stabilizes_at_n",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "nonterminal_nilpotence",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "scalar_initial_terminal_is_permanent",
+      "instance": null,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "scalar_early_zero",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "scalar_early_zero",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "scalar_early_zero",
+      "instance": 2,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "scalar_early_zero",
+      "instance": 3,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "scalar_early_zero",
+      "instance": 4,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "scalar_tail_recurrence",
+      "instance": 0,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "scalar_tail_recurrence",
+      "instance": 1,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "scalar_tail_recurrence",
+      "instance": 2,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "scalar_tail_recurrence",
+      "instance": 3,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "scalar_tail_recurrence",
+      "instance": 4,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "scalar_tail_recurrence",
+      "instance": 5,
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "marked_scalar_cost_accounting",
+      "instance": "row_chain",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "marked_scalar_cost_accounting",
+      "instance": "matrix_power_n",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    },
+    {
+      "n": 5,
+      "check": "marked_scalar_cost_accounting",
+      "instance": "matrix_power_K",
+      "passed": true,
+      "diagnostic": "exact symbolic equality"
+    }
+  ],
+  "cases": [
+    {
+      "n": 2,
+      "dimension": 4,
+      "K": 3,
+      "raising_seconds": 0.010126299996045418,
+      "tensor_seconds": 0.004146899998886511,
+      "transfer_seconds": 0.002632600000652019,
+      "total_seconds": 0.13244709999707993,
+      "transfer_nonzeros": 5,
+      "stable_power_nonzeros": 4,
+      "terminal_expression_terms": 2,
+      "positive_recurrence": "a_k=0 (k<n), a_k=P(x) (k>=n); a_(k+n+1)=a_(k+n)",
+      "initialization_constraint": "a_n=P(x) is the target and is not cheaply supplied by this recurrence",
+      "scalar_costs": [
+        {
+          "builder": "row_chain",
+          "accounting_pass": true,
+          "gates": 12,
+          "nodes": 15,
+          "stats": {
+            "dimension": 4,
+            "layers": [
+              {
+                "row": 0,
+                "states": 2,
+                "multiplications": 2,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 1,
+                "multiplications": 2,
+                "additions": 1
+              }
+            ],
+            "peak_active_states": 2,
+            "marker_and_entry_gates": 7,
+            "transition_gates": 5,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "marking": "p_ij=1+a_ij^2; z^(2^(i*n+j)); original scalar squaring DAG"
+        },
+        {
+          "builder": "matrix_power_n",
+          "accounting_pass": true,
+          "gates": 13,
+          "nodes": 16,
+          "stats": {
+            "dimension": 4,
+            "exponent": 2,
+            "base_support": 5,
+            "final_support": 4,
+            "marker_and_entry_gates": 7,
+            "matrix_product_gates": 6,
+            "matrix_products": 1,
+            "dense_exact_product_upper_bound": 119,
+            "dense_two_log_upper_bound": 231,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 5,
+                "right_support": 5,
+                "output_support": 4,
+                "multiplications": 5,
+                "additions": 1,
+                "gates": 6
+              }
+            ]
+          },
+          "marking": "p_ij=1+a_ij^2; z^(2^(i*n+j)); original scalar squaring DAG"
+        },
+        {
+          "builder": "matrix_power_K",
+          "accounting_pass": true,
+          "gates": 17,
+          "nodes": 20,
+          "stats": {
+            "dimension": 4,
+            "exponent": 3,
+            "base_support": 5,
+            "final_support": 4,
+            "marker_and_entry_gates": 7,
+            "matrix_product_gates": 10,
+            "matrix_products": 2,
+            "dense_exact_product_upper_bound": 231,
+            "dense_two_log_upper_bound": 231,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 5,
+                "right_support": 5,
+                "output_support": 4,
+                "multiplications": 5,
+                "additions": 1,
+                "gates": 6
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 4,
+                "right_support": 5,
+                "output_support": 4,
+                "multiplications": 4,
+                "additions": 0,
+                "gates": 4
+              }
+            ]
+          },
+          "marking": "p_ij=1+a_ij^2; z^(2^(i*n+j)); original scalar squaring DAG"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "dimension": 8,
+      "K": 26,
+      "raising_seconds": 0.015456100001756568,
+      "tensor_seconds": 0.014086499999393709,
+      "transfer_seconds": 0.009914099995512515,
+      "total_seconds": 0.04332019999856129,
+      "transfer_nonzeros": 13,
+      "stable_power_nonzeros": 8,
+      "terminal_expression_terms": 6,
+      "positive_recurrence": "a_k=0 (k<n), a_k=P(x) (k>=n); a_(k+n+1)=a_(k+n)",
+      "initialization_constraint": "a_n=P(x) is the target and is not cheaply supplied by this recurrence",
+      "scalar_costs": [
+        {
+          "builder": "row_chain",
+          "accounting_pass": true,
+          "gates": 34,
+          "nodes": 37,
+          "stats": {
+            "dimension": 8,
+            "layers": [
+              {
+                "row": 0,
+                "states": 3,
+                "multiplications": 3,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 3,
+                "multiplications": 6,
+                "additions": 3
+              },
+              {
+                "row": 2,
+                "states": 1,
+                "multiplications": 3,
+                "additions": 2
+              }
+            ],
+            "peak_active_states": 3,
+            "marker_and_entry_gates": 17,
+            "transition_gates": 17,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "marking": "p_ij=1+a_ij^2; z^(2^(i*n+j)); original scalar squaring DAG"
+        },
+        {
+          "builder": "matrix_power_n",
+          "accounting_pass": true,
+          "gates": 51,
+          "nodes": 54,
+          "stats": {
+            "dimension": 8,
+            "exponent": 3,
+            "base_support": 13,
+            "final_support": 8,
+            "marker_and_entry_gates": 17,
+            "matrix_product_gates": 34,
+            "matrix_products": 2,
+            "dense_exact_product_upper_bound": 1937,
+            "dense_two_log_upper_bound": 1937,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 13,
+                "right_support": 13,
+                "output_support": 10,
+                "multiplications": 16,
+                "additions": 6,
+                "gates": 22
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 10,
+                "right_support": 13,
+                "output_support": 8,
+                "multiplications": 10,
+                "additions": 2,
+                "gates": 12
+              }
+            ]
+          },
+          "marking": "p_ij=1+a_ij^2; z^(2^(i*n+j)); original scalar squaring DAG"
+        },
+        {
+          "builder": "matrix_power_K",
+          "accounting_pass": true,
+          "gates": 83,
+          "nodes": 86,
+          "stats": {
+            "dimension": 8,
+            "exponent": 26,
+            "base_support": 13,
+            "final_support": 8,
+            "marker_and_entry_gates": 17,
+            "matrix_product_gates": 66,
+            "matrix_products": 6,
+            "dense_exact_product_upper_bound": 5777,
+            "dense_two_log_upper_bound": 7697,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 13,
+                "right_support": 13,
+                "output_support": 10,
+                "multiplications": 16,
+                "additions": 6,
+                "gates": 22
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 10,
+                "right_support": 13,
+                "output_support": 8,
+                "multiplications": 10,
+                "additions": 2,
+                "gates": 12
+              },
+              {
+                "operation": "square",
+                "exponent": 6,
+                "left_support": 8,
+                "right_support": 8,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              },
+              {
+                "operation": "square",
+                "exponent": 12,
+                "left_support": 8,
+                "right_support": 8,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 13,
+                "left_support": 8,
+                "right_support": 13,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              },
+              {
+                "operation": "square",
+                "exponent": 26,
+                "left_support": 8,
+                "right_support": 8,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              }
+            ]
+          },
+          "marking": "p_ij=1+a_ij^2; z^(2^(i*n+j)); original scalar squaring DAG"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "dimension": 16,
+      "K": 255,
+      "raising_seconds": 0.03365349999512546,
+      "tensor_seconds": 0.030181499998434447,
+      "transfer_seconds": 0.03776610000204528,
+      "total_seconds": 0.11402519999683136,
+      "transfer_nonzeros": 33,
+      "stable_power_nonzeros": 16,
+      "terminal_expression_terms": 24,
+      "positive_recurrence": "a_k=0 (k<n), a_k=P(x) (k>=n); a_(k+n+1)=a_(k+n)",
+      "initialization_constraint": "a_n=P(x) is the target and is not cheaply supplied by this recurrence",
+      "scalar_costs": [
+        {
+          "builder": "row_chain",
+          "accounting_pass": true,
+          "gates": 80,
+          "nodes": 83,
+          "stats": {
+            "dimension": 16,
+            "layers": [
+              {
+                "row": 0,
+                "states": 4,
+                "multiplications": 4,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 6,
+                "multiplications": 12,
+                "additions": 6
+              },
+              {
+                "row": 2,
+                "states": 4,
+                "multiplications": 12,
+                "additions": 8
+              },
+              {
+                "row": 3,
+                "states": 1,
+                "multiplications": 4,
+                "additions": 3
+              }
+            ],
+            "peak_active_states": 6,
+            "marker_and_entry_gates": 31,
+            "transition_gates": 49,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "marking": "p_ij=1+a_ij^2; z^(2^(i*n+j)); original scalar squaring DAG"
+        },
+        {
+          "builder": "matrix_power_n",
+          "accounting_pass": true,
+          "gates": 150,
+          "nodes": 153,
+          "stats": {
+            "dimension": 16,
+            "exponent": 4,
+            "base_support": 33,
+            "final_support": 16,
+            "marker_and_entry_gates": 31,
+            "matrix_product_gates": 119,
+            "matrix_products": 2,
+            "dense_exact_product_upper_bound": 15903,
+            "dense_two_log_upper_bound": 31775,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 33,
+                "right_support": 33,
+                "output_support": 29,
+                "multiplications": 53,
+                "additions": 24,
+                "gates": 77
+              },
+              {
+                "operation": "square",
+                "exponent": 4,
+                "left_support": 29,
+                "right_support": 29,
+                "output_support": 16,
+                "multiplications": 29,
+                "additions": 13,
+                "gates": 42
+              }
+            ]
+          },
+          "marking": "p_ij=1+a_ij^2; z^(2^(i*n+j)); original scalar squaring DAG"
+        },
+        {
+          "builder": "matrix_power_K",
+          "accounting_pass": true,
+          "gates": 357,
+          "nodes": 360,
+          "stats": {
+            "dimension": 16,
+            "exponent": 255,
+            "base_support": 33,
+            "final_support": 16,
+            "marker_and_entry_gates": 31,
+            "matrix_product_gates": 326,
+            "matrix_products": 14,
+            "dense_exact_product_upper_bound": 111135,
+            "dense_two_log_upper_bound": 111135,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 33,
+                "right_support": 33,
+                "output_support": 29,
+                "multiplications": 53,
+                "additions": 24,
+                "gates": 77
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 29,
+                "right_support": 33,
+                "output_support": 19,
+                "multiplications": 35,
+                "additions": 16,
+                "gates": 51
+              },
+              {
+                "operation": "square",
+                "exponent": 6,
+                "left_support": 19,
+                "right_support": 19,
+                "output_support": 16,
+                "multiplications": 19,
+                "additions": 3,
+                "gates": 22
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 7,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 14,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 15,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 30,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 31,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 62,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 63,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 126,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 127,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 254,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 255,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              }
+            ]
+          },
+          "marking": "p_ij=1+a_ij^2; z^(2^(i*n+j)); original scalar squaring DAG"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "dimension": 32,
+      "K": 3124,
+      "raising_seconds": 0.0938010999961989,
+      "tensor_seconds": 0.16959530000167433,
+      "transfer_seconds": 0.2479358000055072,
+      "total_seconds": 0.5928044999964186,
+      "transfer_nonzeros": 81,
+      "stable_power_nonzeros": 32,
+      "terminal_expression_terms": 120,
+      "positive_recurrence": "a_k=0 (k<n), a_k=P(x) (k>=n); a_(k+n+1)=a_(k+n)",
+      "initialization_constraint": "a_n=P(x) is the target and is not cheaply supplied by this recurrence",
+      "scalar_costs": [
+        {
+          "builder": "row_chain",
+          "accounting_pass": true,
+          "gates": 178,
+          "nodes": 181,
+          "stats": {
+            "dimension": 32,
+            "layers": [
+              {
+                "row": 0,
+                "states": 5,
+                "multiplications": 5,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 10,
+                "multiplications": 20,
+                "additions": 10
+              },
+              {
+                "row": 2,
+                "states": 10,
+                "multiplications": 30,
+                "additions": 20
+              },
+              {
+                "row": 3,
+                "states": 5,
+                "multiplications": 20,
+                "additions": 15
+              },
+              {
+                "row": 4,
+                "states": 1,
+                "multiplications": 5,
+                "additions": 4
+              }
+            ],
+            "peak_active_states": 10,
+            "marker_and_entry_gates": 49,
+            "transition_gates": 129,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "marking": "p_ij=1+a_ij^2; z^(2^(i*n+j)); original scalar squaring DAG"
+        },
+        {
+          "builder": "matrix_power_n",
+          "accounting_pass": true,
+          "gates": 511,
+          "nodes": 514,
+          "stats": {
+            "dimension": 32,
+            "exponent": 5,
+            "base_support": 81,
+            "final_support": 32,
+            "marker_and_entry_gates": 49,
+            "matrix_product_gates": 462,
+            "matrix_products": 3,
+            "dense_exact_product_upper_bound": 193585,
+            "dense_two_log_upper_bound": 258097,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 81,
+                "right_support": 81,
+                "output_support": 86,
+                "multiplications": 166,
+                "additions": 80,
+                "gates": 246
+              },
+              {
+                "operation": "square",
+                "exponent": 4,
+                "left_support": 86,
+                "right_support": 86,
+                "output_support": 36,
+                "multiplications": 106,
+                "additions": 70,
+                "gates": 176
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 5,
+                "left_support": 36,
+                "right_support": 81,
+                "output_support": 32,
+                "multiplications": 36,
+                "additions": 4,
+                "gates": 40
+              }
+            ]
+          },
+          "marking": "p_ij=1+a_ij^2; z^(2^(i*n+j)); original scalar squaring DAG"
+        },
+        {
+          "builder": "matrix_power_K",
+          "accounting_pass": true,
+          "gates": 975,
+          "nodes": 978,
+          "stats": {
+            "dimension": 32,
+            "exponent": 3124,
+            "base_support": 81,
+            "final_support": 32,
+            "marker_and_entry_gates": 49,
+            "matrix_product_gates": 926,
+            "matrix_products": 15,
+            "dense_exact_product_upper_bound": 967729,
+            "dense_two_log_upper_bound": 1419313,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 81,
+                "right_support": 81,
+                "output_support": 86,
+                "multiplications": 166,
+                "additions": 80,
+                "gates": 246
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 86,
+                "right_support": 81,
+                "output_support": 56,
+                "multiplications": 136,
+                "additions": 80,
+                "gates": 216
+              },
+              {
+                "operation": "square",
+                "exponent": 6,
+                "left_support": 56,
+                "right_support": 56,
+                "output_support": 32,
+                "multiplications": 56,
+                "additions": 24,
+                "gates": 80
+              },
+              {
+                "operation": "square",
+                "exponent": 12,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 24,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 48,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 96,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 97,
+                "left_support": 32,
+                "right_support": 81,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 194,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 195,
+                "left_support": 32,
+                "right_support": 81,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 390,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 780,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 781,
+                "left_support": 32,
+                "right_support": 81,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 1562,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 3124,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              }
+            ]
+          },
+          "marking": "p_ij=1+a_ij^2; z^(2^(i*n+j)); original scalar squaring DAG"
+        }
+      ]
+    }
+  ],
+  "general_claim_status": "UNVERIFIED by Lean in this leaf",
+  "scope": "Positive exact finite symbolic verification; no original-target theorem claim."
+}

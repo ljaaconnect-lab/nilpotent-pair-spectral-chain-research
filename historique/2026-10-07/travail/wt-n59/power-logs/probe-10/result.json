@@ -1,0 +1,18 @@
+{
+  "tag": "probe-10",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+  ],
+  "kind": "probe",
+  "exit_code": null,
+  "source_sha256": "4724328226f007aecda106590cdd5d121cfd5ea9c7bcff5813b20cc6d3dd95cf",
+  "elapsed_seconds": 60.084270000457764,
+  "error_count": 0,
+  "axiom_audit": {},
+  "source_clean": true,
+  "main_obligations_passed": 0,
+  "score": null,
+  "root_conjecture_verified": false,
+  "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-10"
+}

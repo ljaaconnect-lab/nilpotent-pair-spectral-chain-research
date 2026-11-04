@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "source": "SchurJet.lean",
+  "sha256": "805a3cb858b99eb2a3fc9932e82d61f93b22d73bf14044875989d2412b715a40",
+  "source_changed_during_check": false,
+  "exit_code": 0,
+  "seconds": 13.594,
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "stdout": "'OrientedOperators.SchurJet.jet_eval' depends on axioms: [propext]\n'OrientedOperators.SchurJet.jet_scale' depends on axioms: [propext]\n'OrientedOperators.SchurJet.block_eliminate' depends on axioms: [propext]\n",
+  "stderr": "",
+  "theorems": [
+    "jet_eval",
+    "jet_scale",
+    "block_eliminate"
+  ],
+  "scope": "Algebraic jet identities in any commutative ring. The block theorem takes q^2=0 and r*P=0 as explicit hypotheses; the square-zero degree argument and the full-chain induction are written proofs, not formalized here.",
+  "full_chain_formalization": false,
+  "general_polynomial_closure": false
+}

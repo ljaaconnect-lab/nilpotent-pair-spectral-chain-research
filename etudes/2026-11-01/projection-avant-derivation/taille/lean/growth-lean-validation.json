@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "source": "ProjectionGrowth.lean",
+  "sha256": "4f16de8007d5c4347c19ce6b50964891123163fa3013f19d78811a71b6de4995",
+  "replay_sha256": "a59aef9bad45f8342618a7d4e8dd97bdbc7ddfa083a6d446da43b818424a0551",
+  "exit_code": 0,
+  "stdout": "'ProjectionGrowth.exponent_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ProjectionGrowth.exponential_beats_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ProjectionGrowth.no_uniform_polynomial_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Natural-number growth and conditional exclusion of a uniform polynomial bound",
+  "conditional_premise": "For every k>=2, 2^(2^(k-1)) <= C(2^k)",
+  "arithmetic_growth_formalized": true,
+  "compiler_reachability_formalized": false,
+  "general_scalar_circuit_impossibility": false,
+  "theorems": [
+    "exponent_gap",
+    "exponential_beats_polynomial",
+    "no_uniform_polynomial_bound"
+  ]
+}

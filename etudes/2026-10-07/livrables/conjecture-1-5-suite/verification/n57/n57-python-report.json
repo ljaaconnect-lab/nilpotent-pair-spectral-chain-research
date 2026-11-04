@@ -1,0 +1,179 @@
+{
+  "node": "n57",
+  "protocol_sha256": "d0134d042a536d432094dbc2fb133c6f44db9345187bb10d5decd16cd33da8d4",
+  "boundary": "B_dev-explicit-matrix-compiler",
+  "python_score": 1.0,
+  "passed": 16,
+  "denominator": 16,
+  "runs": [
+    {
+      "n": 2,
+      "case": "graph_topology_and_full_count",
+      "passed": true
+    },
+    {
+      "n": 2,
+      "case": "identity",
+      "passed": true,
+      "result_bit_length": 3,
+      "result_sha256_hex_encoding": "ecb4f350dce96413a5ceb0fbe1f0cedb6015346049ae3dac6e22f9c1775c86f3",
+      "elapsed_seconds": 0.0001889000050141476
+    },
+    {
+      "n": 2,
+      "case": "cyclic_permutation",
+      "passed": true,
+      "result_bit_length": 3,
+      "result_sha256_hex_encoding": "0bc3ce81affb617a7274c967911e88de8e94618562a402d8fcda640201f5f68d",
+      "elapsed_seconds": 0.00010260000271955505
+    },
+    {
+      "n": 2,
+      "case": "dense_integer",
+      "passed": true,
+      "result_bit_length": 10,
+      "result_sha256_hex_encoding": "ba37d48730ab0acdd4575a1b247e0224d6f5bd5e7e8e05c74587dc81dfe87a34",
+      "elapsed_seconds": 8.570000500185415e-05
+    },
+    {
+      "n": 3,
+      "case": "graph_topology_and_full_count",
+      "passed": true
+    },
+    {
+      "n": 3,
+      "case": "identity",
+      "passed": true,
+      "result_bit_length": 5,
+      "result_sha256_hex_encoding": "d7d42013b0bcaa7623059ef2028a7e82049d90021bbaf73cdcb8a60817156f0c",
+      "elapsed_seconds": 0.0007601000033901073
+    },
+    {
+      "n": 3,
+      "case": "cyclic_permutation",
+      "passed": true,
+      "result_bit_length": 5,
+      "result_sha256_hex_encoding": "bf9c4d8ecd7280186783365c73316cd064c58d6abdfe7ffbb79b6b99a21f56d0",
+      "elapsed_seconds": 0.0007291000001714565
+    },
+    {
+      "n": 3,
+      "case": "dense_integer",
+      "passed": true,
+      "result_bit_length": 90,
+      "result_sha256_hex_encoding": "aa579daeef7cab602877859f403545e5cdb3fedafdc581e222d70a52c69c348e",
+      "elapsed_seconds": 0.0010586999997030944
+    },
+    {
+      "n": 4,
+      "case": "graph_topology_and_full_count",
+      "passed": true
+    },
+    {
+      "n": 4,
+      "case": "identity",
+      "passed": true,
+      "result_bit_length": 6,
+      "result_sha256_hex_encoding": "8b2b96ab9594c6dcc5174a7db870ab3db807272a6757da87c17fd2c2d9709ddd",
+      "elapsed_seconds": 0.006421000005502719
+    },
+    {
+      "n": 4,
+      "case": "cyclic_permutation",
+      "passed": true,
+      "result_bit_length": 6,
+      "result_sha256_hex_encoding": "50d190489dcb2de310aeaaf59e72d05cb1931d3f1aecfa234e8661d712fd7e7e",
+      "elapsed_seconds": 0.006659500002569985
+    },
+    {
+      "n": 4,
+      "case": "dense_integer",
+      "passed": true,
+      "result_bit_length": 1052,
+      "result_sha256_hex_encoding": "367ce94c8eecd2481a9226d89212f71fbd85ff0921a05437140b595d7f9dd324",
+      "elapsed_seconds": 0.008004199997230899
+    },
+    {
+      "n": 5,
+      "case": "graph_topology_and_full_count",
+      "passed": true
+    },
+    {
+      "n": 5,
+      "case": "identity",
+      "passed": true,
+      "result_bit_length": 7,
+      "result_sha256_hex_encoding": "e7a1774b442836712063da64e35c9a6fde0c5648f7b1ce3f62be1b6b42139946",
+      "elapsed_seconds": 0.14047279999795137
+    },
+    {
+      "n": 5,
+      "case": "cyclic_permutation",
+      "passed": true,
+      "result_bit_length": 7,
+      "result_sha256_hex_encoding": "969d96a495d5539af1edcb60af0f617a4f90caa06f00b05df7347524a170c02d",
+      "elapsed_seconds": 0.10572819999651983
+    },
+    {
+      "n": 5,
+      "case": "dense_integer",
+      "passed": true,
+      "result_bit_length": 14838,
+      "result_sha256_hex_encoding": "51a6d107f51531f97019534f41aa3992a0194ad5f36d4552c9412b763f037080",
+      "elapsed_seconds": 0.42857699999876786
+    }
+  ],
+  "measured_counts": [
+    {
+      "n": 2,
+      "r": 2,
+      "K": 3,
+      "J": 2,
+      "additions": 11,
+      "multiplications": 22,
+      "scalar_gates": 33,
+      "S": "Explicit input construction hypothesis",
+      "conditional_upper_bound_excluding_S": 140,
+      "graph_generation_seconds": 0.0022459000028902665
+    },
+    {
+      "n": 3,
+      "r": 3,
+      "K": 26,
+      "J": 6,
+      "additions": 116,
+      "multiplications": 174,
+      "scalar_gates": 290,
+      "S": "Explicit input construction hypothesis",
+      "conditional_upper_bound_excluding_S": 999,
+      "graph_generation_seconds": 0.0423984000008204
+    },
+    {
+      "n": 4,
+      "r": 4,
+      "K": 255,
+      "J": 14,
+      "additions": 687,
+      "multiplications": 916,
+      "scalar_gates": 1603,
+      "S": "Explicit input construction hypothesis",
+      "conditional_upper_bound_excluding_S": 4144,
+      "graph_generation_seconds": 0.07111730000178795
+    },
+    {
+      "n": 5,
+      "r": 5,
+      "K": 3124,
+      "J": 15,
+      "additions": 1524,
+      "multiplications": 1905,
+      "scalar_gates": 3429,
+      "S": "Explicit input construction hypothesis",
+      "conditional_upper_bound_excluding_S": 12575,
+      "graph_generation_seconds": 0.14854409999679774
+    }
+  ],
+  "formal_proof_score": "Reported separately by verify_dense.py",
+  "root_representation_established": false,
+  "held_out_access": false
+}

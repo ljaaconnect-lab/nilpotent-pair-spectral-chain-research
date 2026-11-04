@@ -1,0 +1,121 @@
+{
+  "source": "D:\\Codex\\Projets\\annihilation-collision-orientee",
+  "scope": "Retained Git bundles; all Git object blobs and all reachable root-tree filenames; nested ZIP contents where present. Secrets are never emitted.",
+  "results": [
+    {
+      "bundle": "etudes\\2026-10-07\\livrables\\conjecture-1-5\\research.bundle",
+      "sha256": "b25f5d551240ba7a1c323e0ac5e9b857e6e2b5b76f9f017efa3d0d2a0035fd28",
+      "audit_git": "D:\\Codex\\Projets\\repository-publication-audit-2026-11-04\\bundle-00-b25f5d551240.git",
+      "fsck_ok": true,
+      "root_trees": 7,
+      "tracked_paths": 35,
+      "filename_findings": [],
+      "blobs": 37,
+      "blob_bytes": 312282,
+      "blob_findings": [],
+      "nested_zip_blobs": 0,
+      "nested_zip_entries": 0,
+      "complete": true
+    },
+    {
+      "bundle": "etudes\\2026-10-07\\livrables\\conjecture-1-5-continuation\\research.bundle",
+      "sha256": "efb1295ae2f951b7064028c6b242c74245980b6b63eca7a25296d61735b5107a",
+      "audit_git": "D:\\Codex\\Projets\\repository-publication-audit-2026-11-04\\bundle-01-efb1295ae2f9.git",
+      "fsck_ok": true,
+      "root_trees": 10,
+      "tracked_paths": 172,
+      "filename_findings": [],
+      "blobs": 164,
+      "blob_bytes": 4169171,
+      "blob_findings": [],
+      "nested_zip_blobs": 0,
+      "nested_zip_entries": 0,
+      "complete": true
+    },
+    {
+      "bundle": "etudes\\2026-10-07\\livrables\\conjecture-1-5-suite\\research.bundle",
+      "sha256": "43c723417e50550ddf8150a02a8496db83d63e2920e891062a25053092c86993",
+      "audit_git": "D:\\Codex\\Projets\\repository-publication-audit-2026-11-04\\bundle-02-43c723417e50.git",
+      "fsck_ok": true,
+      "root_trees": 24,
+      "tracked_paths": 558,
+      "filename_findings": [],
+      "blobs": 502,
+      "blob_bytes": 4127675,
+      "blob_findings": [],
+      "nested_zip_blobs": 0,
+      "nested_zip_entries": 0,
+      "complete": true
+    },
+    {
+      "bundle": "etudes\\2026-10-07\\livrables\\conjecture-1-5-closed-state\\search\\nodes.bundle",
+      "sha256": "95b08da2140008ab30bd431c57eccd8fa1e9608d97ac94eac7a79e57a12d8e66",
+      "audit_git": "D:\\Codex\\Projets\\repository-publication-audit-2026-11-04\\bundle-03-95b08da21400.git",
+      "fsck_ok": true,
+      "root_trees": 15,
+      "tracked_paths": 238,
+      "filename_findings": [],
+      "blobs": 228,
+      "blob_bytes": 5922935,
+      "blob_findings": [],
+      "nested_zip_blobs": 0,
+      "nested_zip_entries": 0,
+      "complete": true
+    },
+    {
+      "bundle": "etudes\\2026-10-24\\chaine-complete\\history.bundle",
+      "sha256": "3d43ad02cf2900b4e09e2977bddac746f4392cbab6c9860720d32fe0f65717fb",
+      "audit_git": "D:\\Codex\\Projets\\repository-publication-audit-2026-11-04\\bundle-04-3d43ad02cf29.git",
+      "fsck_ok": true,
+      "root_trees": 8,
+      "tracked_paths": 54,
+      "filename_findings": [],
+      "blobs": 58,
+      "blob_bytes": 300911,
+      "blob_findings": [],
+      "nested_zip_blobs": 0,
+      "nested_zip_entries": 0,
+      "complete": true
+    },
+    {
+      "bundle": "historique\\git\\chaine-complete-2026-10-24.bundle",
+      "sha256": "3d43ad02cf2900b4e09e2977bddac746f4392cbab6c9860720d32fe0f65717fb",
+      "duplicate_of": "etudes\\2026-10-24\\chaine-complete\\history.bundle"
+    },
+    {
+      "bundle": "historique\\git\\recherches-2026-10-07.bundle",
+      "sha256": "67090712580f64ff1f5ade22ce0d30eb782df62094b3272fa8a85b03861d3574",
+      "audit_git": "D:\\Codex\\Projets\\repository-publication-audit-2026-11-04\\bundle-06-67090712580f.git",
+      "fsck_ok": true,
+      "root_trees": 41,
+      "tracked_paths": 817,
+      "filename_findings": [],
+      "blobs": 754,
+      "blob_bytes": 8430404,
+      "blob_findings": [],
+      "nested_zip_blobs": 0,
+      "nested_zip_entries": 0,
+      "complete": true
+    },
+    {
+      "bundle": "historique\\git\\source-scalaire-2026-10-24.bundle",
+      "sha256": "0e9c38e39c73990a963b57e5224a73ad23caeb5b1bed4f7f357428154b4f49c1",
+      "audit_git": "D:\\Codex\\Projets\\repository-publication-audit-2026-11-04\\bundle-07-0e9c38e39c73.git",
+      "fsck_ok": true,
+      "root_trees": 7,
+      "tracked_paths": 27,
+      "filename_findings": [],
+      "blobs": 30,
+      "blob_bytes": 169752,
+      "blob_findings": [],
+      "nested_zip_blobs": 0,
+      "nested_zip_entries": 0,
+      "complete": true
+    },
+    {
+      "bundle": "historique\\2026-10-24\\travail\\chain-history.bundle",
+      "sha256": "3d43ad02cf2900b4e09e2977bddac746f4392cbab6c9860720d32fe0f65717fb",
+      "duplicate_of": "etudes\\2026-10-24\\chaine-complete\\history.bundle"
+    }
+  ]
+}

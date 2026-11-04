@@ -1,0 +1,25 @@
+{
+  "node": "n63",
+  "frozen_before_first_candidate_compilation": true,
+  "namespace": "CollisionMobiusBridge",
+  "domain": "alpha : Type*, [DecidableEq alpha], f : Finset alpha -> Int, S : Finset alpha; finiteness of S is intrinsic and the results apply in particular to every finite alpha",
+  "definition": "coefficient f S = sum T in S.powerset ((-1:Int)^(S.card-T.card) * f T)",
+  "shared_bound_hypothesis": "h_f : forall T:Finset alpha, T subset S -> abs(f T)<=1",
+  "obligations": {
+    "coefficient_def": "forall f S, coefficient f S = sum T in S.powerset ((-1:Int)^(S.card-T.card) * f T)",
+    "zeta_reconstruction": "forall f S, sum T in S.powerset (coefficient f T) = f S",
+    "coefficient_abs_bound": "forall f S (h_f:forall T, T subset S -> abs(f T)<=1), abs(coefficient f S) <= (2:Int)^S.card",
+    "coefficient_natAbs_bound": "forall f S n (h_f:forall T, T subset S -> abs(f T)<=1) (hcard:S.card<=n), Int.natAbs(coefficient f S) < (2:Nat)^(n+1)"
+  },
+  "supporting_obligations": [
+    "coefficient_insert: splitting a powerset at a fresh element gives the difference of shifted and unshifted coefficients",
+    "Finite-set induction generalizes over f, so it can be applied to the shifted function",
+    "Triangle inequality bounds each signed integer term by one and powerset cardinality is 2^S.card"
+  ],
+  "decomposition_depth_limit": 3,
+  "candidate_budget": 12,
+  "root_conjecture_verified": false,
+  "root_conjecture_score": 0,
+  "assumes_polynomial_representation": false,
+  "heldout_tests_run": false
+}

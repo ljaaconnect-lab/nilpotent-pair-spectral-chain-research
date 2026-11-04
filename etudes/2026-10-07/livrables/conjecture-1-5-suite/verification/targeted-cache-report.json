@@ -1,0 +1,25 @@
+{
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lake.exe",
+    "env",
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "--run",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\TargetedCache.lean",
+    "Mathlib.LinearAlgebra.Matrix.Determinant.Basic",
+    "Mathlib.LinearAlgebra.Vandermonde",
+    "Mathlib.Algebra.Polynomial.Coeff",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.LinearCombination"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 350.625,
+  "upstream_hash_functions_unchanged": true,
+  "modules": [
+    "Mathlib.LinearAlgebra.Matrix.Determinant.Basic",
+    "Mathlib.LinearAlgebra.Vandermonde",
+    "Mathlib.Algebra.Polynomial.Coeff",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Tactic.LinearCombination"
+  ],
+  "curl_override_version": "curl 8.17.0 (Windows) libcurl/8.17.0 OpenSSL/3.6.0 zlib/1.3.2 brotli/1.2.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.5 libssh2/1.11.1 nghttp2/1.68.0 ngtcp2/1.18.0 nghttp3/1.13.1"
+}

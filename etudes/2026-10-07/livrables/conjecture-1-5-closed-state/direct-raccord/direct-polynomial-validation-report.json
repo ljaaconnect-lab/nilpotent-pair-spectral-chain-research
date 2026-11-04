@@ -1,0 +1,33 @@
+{
+  "source_sha256": "83e28cb17be078819a54d308f84ebb08785a6c166b842f41acc7f0bd355f4c1a",
+  "cases": [
+    {
+      "n": 2,
+      "passed": true,
+      "gates": 12,
+      "complete_output_monomials": 2
+    },
+    {
+      "n": 3,
+      "passed": true,
+      "gates": 34,
+      "complete_output_monomials": 6
+    },
+    {
+      "n": 4,
+      "passed": true,
+      "gates": 80,
+      "complete_output_monomials": 24
+    },
+    {
+      "n": 5,
+      "passed": true,
+      "gates": 178,
+      "complete_output_monomials": 120
+    }
+  ],
+  "passed": 4,
+  "checks": 4,
+  "root_conjecture_verified": false,
+  "scope": "Full symbolic target validation for four explicit matrices; no all-n polynomial-size conclusion"
+}

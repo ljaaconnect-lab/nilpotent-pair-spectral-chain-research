@@ -1,0 +1,16 @@
+{
+  "node": "n66",
+  "frozen_supporting_checks": [
+    {"id":"formal_local_H4", "count":16},
+    {"id":"formal_local_inverse_H4", "count":16},
+    {"id":"COPY4_to_fixed_J4_minor", "count":16},
+    {"id":"formal_chiral_residual", "count":1},
+    {"id":"counted_local_layout", "n":[2,3,4,5], "count":4}
+  ],
+  "supporting_denominator":53,
+  "root_denominator":3,
+  "root_score":"number of closed original n66 obligations divided by three, never supporting pass fraction",
+  "lean_supporting_obligations":["copy4_hadamard","copy4_to_pfMinor4"],
+  "lean_complete_candidate_budget":20,
+  "scope":"No generic root-target scalar constructor exists in this leaf; supporting checks cannot close root."
+}

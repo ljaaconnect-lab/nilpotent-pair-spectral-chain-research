@@ -1,0 +1,117 @@
+{
+  "replay_report": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\replay-report.json",
+  "replay_report_sha256": "e8a5ce690738f9acda1072384666191243ec05875b7beb0aed0387cbb65b5408",
+  "dependencies": {
+    "CoreBridge.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\CoreBridge.olean",
+      "compiled_sha256": "a20626f41a27ea65567380b7a5334482006b6cd734cf18fb90f9d24c51f69c12",
+      "prior_replay_exit_code": 0
+    },
+    "DoubleOrientation.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\DoubleOrientation.lean",
+      "source_sha256": "d440f12b17a49b3041518f52d16bf78a75785756fb1d4389623f0ec5ecd9deea",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\DoubleOrientation.olean",
+      "compiled_sha256": "8c350f1c3809378d34bfec6adf0ecfbacf28646ac41ff48d5bb13a29eaf012c9",
+      "prior_replay_exit_code": 0
+    },
+    "GeneralPairing.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\GeneralPairing.lean",
+      "source_sha256": "b9e314b3c7cd356345c35b326e5abcfa05beefbeaab222ee199275b21b7c6319",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\GeneralPairing.olean",
+      "compiled_sha256": "37b29bf03f3d749bdba0bd57ca4c67e5b71cacf41750aa64bdf040128440ee9e",
+      "prior_replay_exit_code": 0
+    },
+    "GeneralPairingRing.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\GeneralPairingRing.lean",
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\GeneralPairingRing.olean",
+      "compiled_sha256": "3306d2e7e4aa0ff8b22a763d008e536ffd76020884d292c98c87519be6620909",
+      "prior_replay_exit_code": 0
+    },
+    "GeneratedCoreN2.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\GeneratedCoreN2.lean",
+      "source_sha256": "9f57078826bf15c45579d99eafa77f467ae1b61986bfa47885ea008c06ee9712",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\GeneratedCoreN2.olean",
+      "compiled_sha256": "0a793ecd52169642b1a83122a3a98f52c599506bd0a56890420dcc90633162d4",
+      "prior_replay_exit_code": 0
+    },
+    "PowerCompiler.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\PowerCompiler.lean",
+      "source_sha256": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\PowerCompiler.olean",
+      "compiled_sha256": "8af8c79424416700d97c35c1a7a1a4b9a3d7c1e3daaf12d8ce6bfbffadd760bb",
+      "prior_replay_exit_code": 0
+    },
+    "RankOneSquareZero.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\RankOneSquareZero.lean",
+      "source_sha256": "f5ccfcef9a771b75f6785a5ae0dcda0fcd03ef992bc9072a74d6d7a8f80416e9",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\RankOneSquareZero.olean",
+      "compiled_sha256": "8c1fa5d904f29a08dfe0ef173b623a036f3023320c2c108929f2d445f4b184c9",
+      "prior_replay_exit_code": 0
+    },
+    "ReverseVandermonde.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\ReverseVandermonde.lean",
+      "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\ReverseVandermonde.olean",
+      "compiled_sha256": "ac3b8583dc4a0990eae2179feacec294cff985429019f26e2c7404630186e813",
+      "prior_replay_exit_code": 0
+    },
+    "LabelBridge.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\LabelBridge.olean",
+      "compiled_sha256": "a362bbf2c9bb471f4f8b0bf8a8dda33868d46711505d206690dcbe74cc6fcb29",
+      "prior_replay_exit_code": 0
+    },
+    "MatrixScalarCompiler.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\MatrixScalarCompiler.olean",
+      "compiled_sha256": "3af2d83a084a074cb94c0fc09629f512f9917dcaaefad572827d4ca41a374708",
+      "prior_replay_exit_code": 0
+    },
+    "ConditionalCriterion.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\ConditionalCriterion.lean",
+      "source_sha256": "5b3e39f792e255b9d893800652f94d844dc84bf2ded8ba28409e7c64b47fb6ab",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\ConditionalCriterion.olean",
+      "compiled_sha256": "143aaac65e5ca89537e61e0dc1039e73ade70e73d6ae15b616fe9f8dbf4e7dfa",
+      "prior_replay_exit_code": 0
+    },
+    "DeterminantBridge.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\DeterminantBridge.olean",
+      "compiled_sha256": "f795de6c57644ca8cd5f20892678617cc78552f4f7338929e490dce49abbcf0c",
+      "prior_replay_exit_code": 0
+    },
+    "PolynomialBridge.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\PolynomialBridge.lean",
+      "source_sha256": "03b5de832df55bd5025983222423a404ca71fa2596c57f771c3c8db05b426b92",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\PolynomialBridge.olean",
+      "compiled_sha256": "c4bc8d59c1e1d37d8a887401e88bb8a8fae49c17284c156ab7dd0b40fa5a3165",
+      "prior_replay_exit_code": 0
+    },
+    "DirectProjector.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\DirectProjector.lean",
+      "source_sha256": "c989a261b39e5a8fa4b69bbef0940359e050942fc723edf7013d2d5ff145ed04",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\DirectProjector.olean",
+      "compiled_sha256": "5ec565d5374e3b5f4b64b9e54bb75b320d97d50e2fe6279256a421d9ceacc377",
+      "prior_replay_exit_code": 0
+    },
+    "EncodingBridge.lean": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-suite\\proofs\\EncodingBridge.lean",
+      "source_sha256": "95a612818527d83603efce3b4c68b906ca03d78b45f473adfff93fd9ca350b0a",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\delivered-proof-cache\\EncodingBridge.olean",
+      "compiled_sha256": "807ed97ab046b613f476bec782dd4225bac2b16dbf2df253f42c1d654586411d",
+      "prior_replay_exit_code": 0
+    }
+  },
+  "cache_mutated": false,
+  "compiler_path": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "compiler_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+  "environment_source": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib-environment.json",
+  "environment_sha256": "966794f117d8240462ec155c6b3d1c3096d02c679eb5d05256df07eecfe2dd12",
+  "note": "Prior coordinator replay certifies each delivered source hash with exit zero; existing compiled cache bytes are frozen here before n71 import"
+}

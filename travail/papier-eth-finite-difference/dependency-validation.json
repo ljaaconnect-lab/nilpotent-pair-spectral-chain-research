@@ -1,0 +1,15 @@
+{
+  "original_source": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\Algebra\\Group\\ForwardDiff.lean",
+  "source_sha256": "9823a33fddd322eba9bb427831f175e18efb812bccc97e845a7b7ae1b0421676",
+  "source_copy_identical": true,
+  "exit_code": 0,
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "-o",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\papier-eth-finite-difference\\ForwardDiffLocal.olean",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\papier-eth-finite-difference\\ForwardDiffLocal.lean"
+  ],
+  "stdout": "",
+  "stderr": ""
+}

@@ -1,0 +1,95 @@
+[FOUND INVARIANT]
+Identité centrale de polynômes : pour des étiquettes distinctes r≤K et des signes
+ε(r)∈{1,-1}, le coefficient K du produit
+(Σ_r ε(r)w(r)t^r)(Σ_r ε(r)t^(K-r)) est Σ_r w(r).
+Cette identité est vérifiée dans le vrai type Mathlib Polynomial R, sur CommRing R.
+Les étiquettes d'assignations en base n et leurs bornes sont également vérifiées.
+
+L'expansion des deux déterminants est vérifiée sur des matrices arbitraires.
+Le second déterminant de monomiales est exactement le produit de Vandermonde
+∏_{i<l} (t^(n^i)-t^(n^l)) dans l'orientation du document. Les signatures se
+neutralisent dans le coefficient central, sans identité de Vandermonde supposée.
+
+Double orientation, sur un anneau Ring R non nécessairement commutatif :
+les relations impaires explicites donnent q_i=x_i*y_i, q_i²=0 et q_i*q_j=q_j*q_i.
+Le produit ordonné de n paires vaut (-1)^(n(n-1)/2) fois le produit des x puis
+celui des y. DoubleOrientation.lean vérifie le facteur original, sans hypothèse
+CommRing sur les générateurs impairs ; son audit n'utilise que propext.
+
+Mise à jour : x²=0, AG=GA=I impliquent que G+xGUG inverse A-xU des deux côtés.
+Pour U=uvᵀ, B(G+xGUG)=BG+x(BGu)(vᵀG). Ces égalités sont vérifiées sur un anneau
+commutatif général, qui peut être un anneau auxiliaire non réduit.
+
+Nouvelle factorisation directe : sur les variables d'arêtes x_ij du déterminant
+multilinéaire, chaque facteur 1-2*E_ij*E_lm avec i<l,j>m renverse le signe d'une
+inversion, E_ij=x_ij*d/dx_ij. Le noyau local F=a+bx+cy+dxy vérifie
+F(1,1)-F(1,0)-F(0,1)+F(0,0)=d, et F-2xy*d=a+bx+cy-dxy.
+L'action diagonale et son regroupement sont validés par SymPy pour n=2..5.
+DirectProjector.lean vérifie les deux identités locales, l'involution et la
+commutation des phases, le produit réel des signatures et la correction de
+la somme des poids signés, pour tout n et tout CommRing. Il ne fournit pas
+un coût scalaire polynomial pour l'action sur les vecteurs de coefficients.
+Le partage des mineurs complémentaires a été compilé en vraies portes +/×,
+sans compter une dérivation comme porte. Son raffinement général en Lean
+et sa compression polynomiale ne sont pas établis par ces vérifications finies.
+
+[LEAN 4 TACTICS APPLIED]
+130 déclarations auxiliaires auditées ; voir proofs/ et verification/.
+La conjecture scalaire uniforme n'apparaît pas comme théorème accepté.
+Un fragment compilé de PowerCompiler.lean :
+
+theorem central_plan_gate_bound (n : Nat) (hn : 2 ≤ n) :
+    (binaryPlan (n ^ n - 1)).length ≤ 2 * n ^ 2 :=
+  Nat.le_trans (binary_plan_logarithmic _)
+    (Nat.mul_le_mul_left 2 (central_exponent_log_bound n hn))
+
+[GATE COUNT VERIFICATION]
+Portes binaires +/× construites pour n=2,3,4,5 :
+Hhat explicite : 48, 198, 568, 1314. Le DAG n=5 a désormais été évalué
+intégralement en Q[t,z] sur les deux cas rationnels positifs fixés auparavant :
+10/10 contrôles, 14 402 termes et 120 termes au coefficient central K=3124.
+Les 1314 portes +/× sont toutes évaluées, sans porte de coefficient cachée.
+Cette vérification finie n'est pas un extracteur de complexité polynomiale.
+Extracteur par sous-ensembles : 12, 34, 80, 178, soit 2n²+(n-1)2^n.
+Extracteur Gray marqué : 18, 54, 124, 260, soit 5n(n-1)+n2^n.
+Encodage d'occupation Gram : 16, 38, 71, 110 ; ce compte ne comprend pas
+l'extracteur du coefficient d'occupation, qui reste une obligation distincte.
+Extracteur marqué par jets demandés : 15, 47, 133, 373. Ces comptes finissent
+un vrai DAG scalaire, mais aucune borne polynomiale générale n'a été établie.
+Correction directe par projecteurs/cofacteurs, générique : 13,108,990,10503.
+Avec tous les marqueurs originaux : 20,125,1021,10552 ; 24/24 contrôles dev
+et 32/32 contrôles rationnels indépendants, avec z formel. Etats universels
+mesurés : 2,13,99,813 ; mineurs distincts : 2,11,54,227. Le prétraitement est
+explicite et mesuré ; ses coefficients ne contiennent pas le polynôme cible.
+La borne constructive de ce compilateur dépend de
+M_n=sum_k binom(n,k)^2*k! et D_n=sum_(k<n) binom(n,k)^2*S0(n-k),
+S0(m)=2m^4-m^3+2m^2-m. Elle ne fournit pas une borne Pi(n) polynomiale.
+
+Pour des entrées explicitement construites M,u,v de dimension r et de coût S,
+la compilation matricielle centrale a le budget conditionnel
+S+4r³n²+3r² pour n≥2,r≥1. Le plan partagé pour K a 2,6,14,15 produits
+matriciels aux quatre tailles. Les hypothèses r=poly(n), S=poly(n) et
+[t^K]Hhat=uᵀM^Kv doivent encore être démontrées pour cette famille.
+ConditionalCriterion.lean inclut effectivement le circuit d'initialisation et
+formalise le polynôme Pi_{c,d}(n)=n^c+4n^(3d+2)+3n^(2d), sous les hypothèses
+r≤n^d et S≤n^c. Les exposants c,d doivent être fixes pour toute la famille.
+Ce théorème conditionnel n'établit ni cette représentation ni sa construction
+uniforme avec les seules feuilles autorisées et les constantes de taille bornée.
+Une opération de coefficient, de quotient nilpotent ou de contraction tensorielle
+n'a jamais été comptée comme une porte scalaire gratuite.
+
+Le constructeur de circuit scalaire Lean est maintenant relié aux puissances
+matricielles Mathlib, avec son coût exact. Pour r=n, l'exporteur SSA Python
+construit 33,290,1603,3429 portes ; il réussit 16/16 contrôles de développement
+et 16/16 contrôles rationnels indépendants. Sa traduction depuis le constructeur
+Lean est validée par ces essais, sans preuve formelle du raffinement de code.
+
+CONTRAINTE DE LA PISTE DE DIVISION
+Dutta et al. (CCC 2021), théorèmes 4 et 6, donnent des bornes qui dépendent du
+degré du dénominateur ; le théorème de troncature impose aussi deg(g)≤d.
+Pour utiliser cette voie ici, il faut construire une représentation satisfaisant
+ces hypothèses et vérifier ses constantes et son uniformité. La petite taille
+d'un circuit pour t^K ne borne pas le degré du diviseur par poly(n).
+Source : https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.CCC.2021.25
+Cette observation est une analyse des hypothèses, pas une formalisation Lean
+du théorème externe ni une preuve d'impossibilité de la conjecture.

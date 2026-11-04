@@ -1,0 +1,35 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\WordFilter.lean",
+  "version": 2,
+  "seconds": 0.469,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 79
+        },
+        "start": {
+          "character": 2,
+          "line": 79
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\n⊢ wordWeight [a, b, c, d, e] literal5 =\n    if a ≠ b ∧ a ≠ c ∧ a ≠ d ∧ a ≠ e ∧ b ≠ c ∧ b ≠ d ∧ b ≠ e ∧ c ≠ d ∧ c ≠ e ∧ d ≠ e then 32 else 0",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 79
+        },
+        "start": {
+          "character": 2,
+          "line": 79
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+__pycache__/
+.arbor/
+*.pyc
+/CoreBridge.olean
+/GeneralPairingRing.olean
+/LabelBridge.olean
+/PolynomialBridge.olean
+/DeterminantBridge.olean

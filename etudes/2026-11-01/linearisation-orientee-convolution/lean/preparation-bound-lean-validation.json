@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "compiler_arguments": [
+    "-j1"
+  ],
+  "source": "LinearisedPreparationBound.lean",
+  "sha256": "4af72f0fdb653518a9b6b19a7d5bff02e426dcfc4030b9ae6581c146725f033e",
+  "replay_sha256": "8d5f2334d4de38576aa719e638b009872529fcad01bba897104136de3f1a2993",
+  "exit_code": 0,
+  "stdout": "'LinearisedPreparationBound.cubic_preparation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Arithmetic consequence of n>=1, N<=2*n and ell<=n",
+  "formula": "4*n^2-1 + 2*n*N*ell + 3*n*N-1 <= 18*n^3",
+  "single_frequency_preparation_only": true,
+  "gate_count_derivation_formalized": false,
+  "quotient_reader_cost_formalized": false,
+  "complete_scalar_chain_polynomial_bound": false
+}

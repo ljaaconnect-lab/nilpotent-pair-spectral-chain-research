@@ -1,0 +1,86 @@
+CHAÎNE ORIENTÉE ET SPECTRALE — RECHERCHE DU 24 OCTOBRE 2026
+
+STATUT : LA RÉSOLUTION POLYNOMIALE GÉNÉRALE N'EST PAS OBTENUE.
+
+Cette archive concerne la chaîne entière du papier confirmé par l'auteur,
+annihilation_raccord_spectral_demonstrations.pdf (63 pages). Les entrées
+sont les p_ij=1+a_ij², z et les constantes de champ autorisées. P_A n'est
+jamais une donnée fournie. Les essais peuvent réorganiser ensemble les
+orientations, la correction universelle, les phases et la lecture terminale.
+
+Le papier a été relu intégralement avant cette reprise. Son identité de
+sortie et son calcul polynomial dans l'algèbre agrandie restent le point de
+départ. L'objectif supplémentaire est de compiler toute cette chaîne en
+portes scalaires ordinaires, avec une borne polynomiale uniforme. Aucun
+résultat de cette archive n'est présenté comme une preuve de cette borne.
+
+RÉSULTATS CONSTRUCTIFS À LIRE
+
+1. gaussian/ : une matrice antisymétrique 2n×2n encode exactement la couche
+   de trois lignes. Les divisions variables sont éliminées par des jets
+   scalaires explicites. Une famille de noyaux pour k−2 lignes égales et
+   deux lignes arbitraires donne ensuite une polarisation de la chaîne
+   générique en 2^(n−3) composantes. Le lecteur de chaque composante utilise
+   quatre accumulateurs scalaires. La chaîne entière est exacte ; le nombre
+   de composantes reste exponentiel.
+
+2. normalization/ : correction de tous les ordres pour les cycles isolés,
+   les bouquets et les forêts d'incidence de cycles ; correction explicite
+   du degré six pour une matrice sans diagonale. Les phases et les marqueurs
+   sont conservés. Les prolongements par messages et déterminants ne sont
+   pas déclarés exacts pour les supports denses généraux.
+
+3. phases_spectral/ : constructions rationnelles complètes de petites
+   tailles, réduction spectrale de graphes hard-core à support bandé, et
+   correction différentielle exacte. Les bornes négatives de ces notes
+   portent seulement sur les modèles explicitement décrits, jamais sur
+   toutes les compilations scalaires conjointes autorisées par l'auteur.
+
+4. reference/ : circuit témoin exponentiel exact, avec la transformée
+   terminale simplifiée par orthogonalité. Sa validation ne constitue pas
+   une résolution du verrou. Le score fini d'un circuit ne prouve aucune
+   borne asymptotique.
+
+Les comptes de portes utilisent p comme feuilles. Partir des a_ij ajoute
+2n² portes pour fabriquer les p_ij. Tous les lecteurs et toutes les
+arithmétiques de coordonnées effectivement utilisés sont comptés.
+
+VÉRIFICATION ET REPRODUCTION
+
+Chaque dossier contient les sources à son commit exact, ses preuves et ses
+scripts. Le manifeste donne les références Git et les SHA256. Les scripts
+evaluate_dev.py et dag.py sont gelés au sens du contenu Git. La conversion
+LF/CRLF de Windows peut modifier le SHA256 des copies de travail ; elle
+n'a pas modifié le code des évaluateurs.
+
+Dans reference/, exécuter : python evaluate_dev.py
+Dans gaussian/, consulter les commandes de JOINT_GAUSSIAN.md et de
+REGULAR_COMPLETION.md. Son candidate.py est un compilateur exact
+exponentiel, non un candidat polynomial validé.
+Dans normalization/, consulter JOINT_NORMALIZATION.md et les notes Bass.
+Dans phases_spectral/, consulter les trois notes et leurs scripts verify_*.
+
+Les contrôles indépendants du coordinateur sont dans coordinator/.
+Des cas finis vérifient les implantations ; les assertions générales
+reposent sur les identités démontrées et leurs hypothèses précises.
+
+L'ÉTAPE QUI N'EST PAS PROUVÉE
+
+Une règle uniforme qui conserve un nombre polynomial de paramètres ET
+compile la lecture scalaire après un nombre arbitraire de fusions de
+lignes génériques. Les descriptions compactes d'opérateurs, les petits
+spectres et les identités dans une algèbre agrandie ne remplacent pas
+cette règle. Une autre représentation, adaptée à l'observation finale,
+reste autorisée ; aucun des échecs restreints de cette archive ne l'exclut.
+
+SOURCE PRINCIPALE
+
+Fichier original : C:\Users\REGIS\Downloads\annihilation_raccord_spectral_demonstrations.pdf
+SHA256 : ed1f05cd132305ec98ec4f195ae395123cc4ae68e1a137ac4a78898f4d5199f4
+Le PDF original n'est pas recopié dans l'archive.
+
+Organisation de la recherche : Arbor, Timothy Kassis et al. (2026),
+Scientific Agent Skills : https://doi.org/10.48550/arXiv.2609.00065
+La méthode organise les hypothèses et les vérifications ; elle ne certifie
+pas les conclusions mathématiques. Les références mathématiques primaires
+supplémentaires sont indiquées au voisinage de leur utilisation dans les notes.

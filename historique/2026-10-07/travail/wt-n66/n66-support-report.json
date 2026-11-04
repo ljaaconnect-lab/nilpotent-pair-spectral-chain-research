@@ -1,0 +1,367 @@
+{
+  "node": "n66",
+  "protocol_sha256": "8e60524976c79802c9828e6456d2cafee7576b7da064c2cd7f085cc5b4323f16",
+  "evaluator_sha256": "64a8bfb453112597d7bdfc0493bd8afd8e1297006c1058e8f1359dd6d8cfc59c",
+  "supporting_passes": 53,
+  "supporting_count": 53,
+  "supporting_pass_fraction": 1.0,
+  "cases": [
+    {
+      "obligation": "formal_local_H4",
+      "index": 0,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 1,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 2,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 3,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 4,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 5,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 6,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 7,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 8,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 9,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 10,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 11,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 12,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 13,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 14,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_H4",
+      "index": 15,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 0,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 1,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 2,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 3,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 4,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 5,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 6,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 7,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 8,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 9,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 10,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 11,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 12,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 13,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 14,
+      "pass": true
+    },
+    {
+      "obligation": "formal_local_inverse_H4",
+      "index": 15,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 0,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 1,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 2,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 3,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 4,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 5,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 6,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 7,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 8,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 9,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 10,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 11,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 12,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 13,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 14,
+      "pass": true
+    },
+    {
+      "obligation": "COPY4_to_fixed_J4_minor",
+      "index": 15,
+      "pass": true
+    },
+    {
+      "obligation": "formal_chiral_residual",
+      "pass": true
+    },
+    {
+      "obligation": "counted_local_layout",
+      "n": 2,
+      "pass": true
+    },
+    {
+      "obligation": "counted_local_layout",
+      "n": 3,
+      "pass": true
+    },
+    {
+      "obligation": "counted_local_layout",
+      "n": 4,
+      "pass": true
+    },
+    {
+      "obligation": "counted_local_layout",
+      "n": 5,
+      "pass": true
+    }
+  ],
+  "local_forward_gates": 96,
+  "local_inverse_additional_gates": 112,
+  "local_roundtrip_gates": 208,
+  "residual_gates": 18,
+  "layouts": [
+    {
+      "n": 2,
+      "edges": 4,
+      "local_tensor_legs": 4,
+      "local_gaussian_block_order": 4,
+      "total_local_positions": 16,
+      "local_forward_scalar_gates": 384,
+      "local_roundtrip_scalar_gates": 832,
+      "whole_family_legs": 8,
+      "whole_family_explicit_values": 256,
+      "whole_family_unshared_walsh_gates": 3072,
+      "whole_family_transform_scope": "cost of the direct explicit-vector route; no lower bound",
+      "root_target_compiled": false,
+      "generic_formal_entry_count": 4,
+      "generic_entries_used_by_local_copy": 0,
+      "entire_transformed_families_compiled": false
+    },
+    {
+      "n": 3,
+      "edges": 9,
+      "local_tensor_legs": 4,
+      "local_gaussian_block_order": 4,
+      "total_local_positions": 36,
+      "local_forward_scalar_gates": 864,
+      "local_roundtrip_scalar_gates": 1872,
+      "whole_family_legs": 18,
+      "whole_family_explicit_values": 262144,
+      "whole_family_unshared_walsh_gates": 7077888,
+      "whole_family_transform_scope": "cost of the direct explicit-vector route; no lower bound",
+      "root_target_compiled": false,
+      "generic_formal_entry_count": 9,
+      "generic_entries_used_by_local_copy": 0,
+      "entire_transformed_families_compiled": false
+    },
+    {
+      "n": 4,
+      "edges": 16,
+      "local_tensor_legs": 4,
+      "local_gaussian_block_order": 4,
+      "total_local_positions": 64,
+      "local_forward_scalar_gates": 1536,
+      "local_roundtrip_scalar_gates": 3328,
+      "whole_family_legs": 32,
+      "whole_family_explicit_values": 4294967296,
+      "whole_family_unshared_walsh_gates": 206158430208,
+      "whole_family_transform_scope": "cost of the direct explicit-vector route; no lower bound",
+      "root_target_compiled": false,
+      "generic_formal_entry_count": 16,
+      "generic_entries_used_by_local_copy": 0,
+      "entire_transformed_families_compiled": false
+    },
+    {
+      "n": 5,
+      "edges": 25,
+      "local_tensor_legs": 4,
+      "local_gaussian_block_order": 4,
+      "total_local_positions": 100,
+      "local_forward_scalar_gates": 2400,
+      "local_roundtrip_scalar_gates": 5200,
+      "whole_family_legs": 50,
+      "whole_family_explicit_values": 1125899906842624,
+      "whole_family_unshared_walsh_gates": 84442493013196800,
+      "whole_family_transform_scope": "cost of the direct explicit-vector route; no lower bound",
+      "root_target_compiled": false,
+      "generic_formal_entry_count": 25,
+      "generic_entries_used_by_local_copy": 0,
+      "entire_transformed_families_compiled": false
+    }
+  ],
+  "root_obligations": [
+    {
+      "id": "explicit_root_scalar_data_and_transition",
+      "status": "unclosed"
+    },
+    {
+      "id": "polynomial_root_gate_literal_initialization_certificate",
+      "status": "unclosed"
+    },
+    {
+      "id": "exact_root_target_identity",
+      "status": "unclosed"
+    }
+  ],
+  "root_closed_obligation_count": 0,
+  "root_obligation_count": 3,
+  "dev_score": 0.0,
+  "root_conjecture_verified": false,
+  "verification_scope": "finite exact symbolic supporting checks only; no root target evaluator exists"
+}

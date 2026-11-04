@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+.lake/
+*.olean
+*.ilean
+*.ir
+*.sig
+*.private
+*.server
+/reproducibility-results/
+/output/
+/tmp/
+/exports/
+.env
+.env.*

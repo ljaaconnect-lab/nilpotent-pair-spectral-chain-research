@@ -1,0 +1,185 @@
+{
+  "protocol": "extended-positive-heldout-v1",
+  "boundary_sha256": "f354ae56cf921e8fea3714f289a27ffa0683260730c1cb22754fd8c849267091",
+  "artifact_refs": {
+    "n15": "a3a6f044243d4006ba2c3a8a9d9577d13d9d806c",
+    "n16": "ba86cbd596588993b2061db0f033ec8e5b58fac4",
+    "n18": "1c9875ad83b903e5769bacc78df80ae7126a71cb",
+    "n19": "eb1a8e4648a1e883b125661038ffe95f4a424b55"
+  },
+  "passed": 48,
+  "total": 48,
+  "cases": [
+    {
+      "case": "n2-heldout-0",
+      "n": 2,
+      "checks": {
+        "n15_gray": true,
+        "n16_reciprocal_projected": true,
+        "n18_gram_coefficient": true,
+        "n19_eager": true,
+        "n19_demand": true,
+        "n19_bell": true
+      },
+      "gates": {
+        "n15_gray": 18,
+        "n16_native_before_charged_projection": 30,
+        "n18_encoding_before_extraction": 16,
+        "n19_eager": 17,
+        "n19_demand": 15,
+        "n19_bell": 13
+      },
+      "elapsed_seconds": 0.0
+    },
+    {
+      "case": "n2-heldout-1",
+      "n": 2,
+      "checks": {
+        "n15_gray": true,
+        "n16_reciprocal_projected": true,
+        "n18_gram_coefficient": true,
+        "n19_eager": true,
+        "n19_demand": true,
+        "n19_bell": true
+      },
+      "gates": {
+        "n15_gray": 18,
+        "n16_native_before_charged_projection": 30,
+        "n18_encoding_before_extraction": 16,
+        "n19_eager": 17,
+        "n19_demand": 15,
+        "n19_bell": 13
+      },
+      "elapsed_seconds": 0.01599999999598367
+    },
+    {
+      "case": "n3-heldout-0",
+      "n": 3,
+      "checks": {
+        "n15_gray": true,
+        "n16_reciprocal_projected": true,
+        "n18_gram_coefficient": true,
+        "n19_eager": true,
+        "n19_demand": true,
+        "n19_bell": true
+      },
+      "gates": {
+        "n15_gray": 54,
+        "n16_native_before_charged_projection": 129,
+        "n18_encoding_before_extraction": 38,
+        "n19_eager": 57,
+        "n19_demand": 47,
+        "n19_bell": 44
+      },
+      "elapsed_seconds": 0.031000000002677552
+    },
+    {
+      "case": "n3-heldout-1",
+      "n": 3,
+      "checks": {
+        "n15_gray": true,
+        "n16_reciprocal_projected": true,
+        "n18_gram_coefficient": true,
+        "n19_eager": true,
+        "n19_demand": true,
+        "n19_bell": true
+      },
+      "gates": {
+        "n15_gray": 54,
+        "n16_native_before_charged_projection": 129,
+        "n18_encoding_before_extraction": 38,
+        "n19_eager": 57,
+        "n19_demand": 47,
+        "n19_bell": 44
+      },
+      "elapsed_seconds": 0.01600000000325963
+    },
+    {
+      "case": "n4-heldout-0",
+      "n": 4,
+      "checks": {
+        "n15_gray": true,
+        "n16_reciprocal_projected": true,
+        "n18_gram_coefficient": true,
+        "n19_eager": true,
+        "n19_demand": true,
+        "n19_bell": true
+      },
+      "gates": {
+        "n15_gray": 124,
+        "n16_native_before_charged_projection": 404,
+        "n18_encoding_before_extraction": 71,
+        "n19_eager": 171,
+        "n19_demand": 133,
+        "n19_bell": 136
+      },
+      "elapsed_seconds": 0.13999999999941792
+    },
+    {
+      "case": "n4-heldout-1",
+      "n": 4,
+      "checks": {
+        "n15_gray": true,
+        "n16_reciprocal_projected": true,
+        "n18_gram_coefficient": true,
+        "n19_eager": true,
+        "n19_demand": true,
+        "n19_bell": true
+      },
+      "gates": {
+        "n15_gray": 124,
+        "n16_native_before_charged_projection": 404,
+        "n18_encoding_before_extraction": 71,
+        "n19_eager": 171,
+        "n19_demand": 133,
+        "n19_bell": 136
+      },
+      "elapsed_seconds": 0.1569999999992433
+    },
+    {
+      "case": "n5-positive-validation-0",
+      "n": 5,
+      "checks": {
+        "n15_gray": true,
+        "n16_reciprocal_projected": true,
+        "n18_gram_coefficient": true,
+        "n19_eager": true,
+        "n19_demand": true,
+        "n19_bell": true
+      },
+      "gates": {
+        "n15_gray": 260,
+        "n16_native_before_charged_projection": 1005,
+        "n18_encoding_before_extraction": 110,
+        "n19_eager": 503,
+        "n19_demand": 373,
+        "n19_bell": 417
+      },
+      "elapsed_seconds": 2.514999999999418
+    },
+    {
+      "case": "n5-positive-validation-1",
+      "n": 5,
+      "checks": {
+        "n15_gray": true,
+        "n16_reciprocal_projected": true,
+        "n18_gram_coefficient": true,
+        "n19_eager": true,
+        "n19_demand": true,
+        "n19_bell": true
+      },
+      "gates": {
+        "n15_gray": 260,
+        "n16_native_before_charged_projection": 1005,
+        "n18_encoding_before_extraction": 110,
+        "n19_eager": 503,
+        "n19_demand": 373,
+        "n19_bell": 417
+      },
+      "elapsed_seconds": 2.4689999999973224
+    }
+  ],
+  "root_conjecture_verified": false,
+  "scope": "Exact formal-z correctness of emitted scalar DAGs or charged quotient evaluation; finite checks do not establish polynomial extraction",
+  "score": 1.0
+}

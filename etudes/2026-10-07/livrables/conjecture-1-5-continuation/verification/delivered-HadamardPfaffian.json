@@ -1,0 +1,32 @@
+{
+  "root_conjecture_verified": false,
+  "source": {
+    "source": "HadamardPfaffian.lean",
+    "source_sha256": "344aa1d55e4a215fd11251d5546f2b56908998b15859f539730f99d23d32eae5",
+    "exit_code": 0,
+    "stdout": "'CollisionHadamardPfaffian.tensor_copy_even' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionHadamardPfaffian.gaussian_ones_even' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionHadamardPfaffian.hadamard_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionHadamardPfaffian.gaussian4' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "stderr": "",
+    "axiom_audit": {
+      "CollisionHadamardPfaffian.tensor_copy_even": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "CollisionHadamardPfaffian.gaussian_ones_even": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "CollisionHadamardPfaffian.hadamard_inverse": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "CollisionHadamardPfaffian.gaussian4": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  }
+}

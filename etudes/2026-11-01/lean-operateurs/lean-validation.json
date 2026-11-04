@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-01",
+  "status": "passed",
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "environment_source": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib-environment.json",
+  "independent_cli_replay": true,
+  "general_polynomial_solution": false,
+  "files": [
+    {
+      "source": "LocalNoncommRing.lean",
+      "sha256": "56993a0ec93af72ce3bbbfb2437c219b2700623f6ae5eb50dbac3df0731a09a1",
+      "source_changed_during_check": false,
+      "exit_code": 0,
+      "seconds": 28.937,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "source": "CollisionFilter.lean",
+      "sha256": "fb4925beb2e1a28c1de708bc2cca18552273294cef498b1297c6e59b459cde4c",
+      "source_changed_during_check": false,
+      "exit_code": 0,
+      "seconds": 43.484,
+      "stdout": "'OrientedOperators.equalityMatrix_det' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "WeylOperators.lean",
+      "sha256": "a84ddeaf8f649eacdaa0da0ca0119ce431c1abd6f2094478950f138d71a17cf3",
+      "source_changed_during_check": false,
+      "exit_code": 0,
+      "seconds": 17.297,
+      "stdout": "'OrientedOperators.creation_square' depends on axioms: [propext]\n",
+      "stderr": ""
+    },
+    {
+      "source": "PartitionCertificate.lean",
+      "sha256": "488d36a768e1a54eba22fb76eb9880ee67b5d8aa57002b601380a986944805f5",
+      "source_changed_during_check": false,
+      "exit_code": 0,
+      "seconds": 141.454,
+      "stdout": "'OrientedOperators.PartitionCertificate.order4_certificate' does not depend on any axioms\n'OrientedOperators.PartitionCertificate.order5_certificate' does not depend on any axioms\n'OrientedOperators.PartitionCertificate.certificates_have_complete_support' does not depend on any axioms\n'OrientedOperators.PartitionCertificate.lower_orders_certificate' does not depend on any axioms\n'OrientedOperators.PartitionCertificate.quintic_contraction_bound' does not depend on any axioms\n",
+      "stderr": ""
+    },
+    {
+      "source": "WordFilter.lean",
+      "sha256": "7a8e9b1003965a685b3d6a7fbd4844872b6e6a2a685251687638bff261097d43",
+      "source_changed_during_check": false,
+      "exit_code": 0,
+      "seconds": 61.921,
+      "stdout": "'OrientedOperators.PartitionCertificate.literal5_identity' does not depend on any axioms\n'OrientedOperators.PartitionCertificate.fifth_filter_on_arbitrary_columns' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'OrientedOperators.PartitionCertificate.normalForm_exact5' does not depend on any axioms\n'OrientedOperators.PartitionCertificate.quintic_word_certificate' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    }
+  ]
+}

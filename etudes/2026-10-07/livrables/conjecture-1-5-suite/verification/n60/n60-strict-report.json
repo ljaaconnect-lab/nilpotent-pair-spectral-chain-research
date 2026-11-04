@@ -1,0 +1,492 @@
+{
+  "node_id": "n60",
+  "artifact_version": "n60-full-encoding-v1",
+  "status": "encoding_identity_verified",
+  "dev_score": 1.0,
+  "source": "EncodingBridge.lean",
+  "source_sha256": "95a612818527d83603efce3b4c68b906ca03d78b45f473adfff93fd9ca350b0a",
+  "compiler_invocations": 15,
+  "candidate_rounds": 10,
+  "dependency_builds": 5,
+  "frozen_replays": 0,
+  "probe_compilations": 0,
+  "candidate_compilation_budget": 16,
+  "expected_declarations": 7,
+  "accepted_declarations": 7,
+  "declarations": [
+    "CollisionEncodingBridge.centralDegree_pos",
+    "CollisionEncodingBridge.padding_coefficient",
+    "CollisionEncodingBridge.marked_weight_eq",
+    "CollisionEncodingBridge.padded_determinant_coefficient",
+    "CollisionEncodingBridge.reverse_factor",
+    "CollisionEncodingBridge.hhat_central_coefficient",
+    "CollisionEncodingBridge.marked_A_central_identity"
+  ],
+  "exact_declaration_statements": {
+    "centralDegree_pos": "(n : Nat) (hn : 2 \u2264 n) : 0 < centralDegree n",
+    "padding_coefficient": "(K : Nat) (hK : 0 < K) (p : Polynomial R) :\n    (1 + Polynomial.X ^ (2 * K) + p).coeff K = p.coeff K",
+    "marked_weight_eq": "{n : Nat} (A : Matrix (Fin n) (Fin n) Rat)\n    (\u03c3 : Equiv.Perm (Fin n)) :\n    weight (markedWeights A) \u03c3 = Polynomial.C (\u220f i, amplitude A i (\u03c3 i)) *\n      Polynomial.X ^ (\u2211 i, address i (\u03c3 i))",
+    "padded_determinant_coefficient": "(n : Nat) (hn : 2 \u2264 n)\n    (b : Matrix (Fin n) (Fin n) R) :\n    (1 + Polynomial.X ^ (2 * centralDegree n) +\n      (forwardMatrix b (baseLabels n)).det *\n        (reverseMatrix (R := R) (baseLabels n) (baseCaps n)).det).coeff (centralDegree n) =\n      \u2211 \u03c3 : Equiv.Perm (Fin n), weight b \u03c3",
+    "reverse_factor": "(n : Nat) :\n    (reverseMatrix (R := R) (baseLabels n) (baseCaps n)).det = pairFactor n",
+    "hhat_central_coefficient": "(n : Nat) (hn : 2 \u2264 n)\n    (b : Matrix (Fin n) (Fin n) R) :\n    (Hhat n b).coeff (centralDegree n) =\n      \u2211 \u03c3 : Equiv.Perm (Fin n), weight b \u03c3",
+    "marked_A_central_identity": "(n : Nat) (hn : 2 \u2264 n)\n    (A : Matrix (Fin n) (Fin n) Rat) :\n    (markedHhat A).coeff (centralDegree n) = markedPermanent A"
+  },
+  "axiom_audit": {
+    "CollisionEncodingBridge.centralDegree_pos": [
+      "propext"
+    ],
+    "CollisionEncodingBridge.padding_coefficient": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionEncodingBridge.marked_weight_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionEncodingBridge.padded_determinant_coefficient": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionEncodingBridge.reverse_factor": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionEncodingBridge.hhat_central_coefficient": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionEncodingBridge.marked_A_central_identity": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "dependency_audits": {
+    "GeneralPairingRing.lean": {
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "round": 1,
+      "compiler_exit_code": 0,
+      "axioms": {
+        "GeneralCollisionPairingRing.sign_square": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.selectSum_nodup": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_label_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_row_select": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_row": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_pairing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.coefficient_append": [
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.coefficient_multiply": [
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_product_coefficient": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "CoreBridge.lean": {
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "round": 2,
+      "compiler_exit_code": 0,
+      "axioms": {
+        "CollisionCoreBridge.decode_head": [
+          "propext"
+        ],
+        "CollisionCoreBridge.decode_tail": [
+          "propext"
+        ],
+        "CollisionCoreBridge.encodeDigits_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionCoreBridge.central_label_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionCoreBridge.orbit_stabilizes": [
+          "propext"
+        ],
+        "CollisionCoreBridge.n2_pair_factorization": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionCoreBridge.n2_central_convolution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "LabelBridge.lean": {
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "round": 3,
+      "compiler_exit_code": 0,
+      "axioms": {
+        "CollisionLabelBridge.digit_step_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.encodeDigits_lt_pow": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.indexedLabelFrom_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.indexedLabel_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.indexedLabel_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.indexedLabel_le_max": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.assignmentLabel_le_max": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.assignmentLabel_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.occupation_all_ones_selector": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.assignmentLabel_sum_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.occupation_sum_selector": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.assignmentLabels_nodup": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.indexed_assignment_pairing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "DeterminantBridge.lean": {
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "round": 4,
+      "compiler_exit_code": 0,
+      "axioms": {
+        "CollisionDeterminantBridge.central_sum_pairing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.prod_monomials": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.permutation_sign_square": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.det_row_expansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.forward_determinant_expansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.rho_le_index": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.complement_label": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.reverse_determinant_expansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.central_determinant_pairing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.base_rho_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.base_rho_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.base_capacity_sum_add_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.base_n_determinant_pairing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "ReverseVandermonde.lean": {
+      "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+      "round": 11,
+      "compiler_exit_code": 0,
+      "axioms": {
+        "ReverseVandermonde.reverse_vandermonde": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ReverseVandermonde.reverse_matrix_as_projective": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ReverseVandermonde.power_entries": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ReverseVandermonde.reverse_vandermonde_polynomial": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ReverseVandermonde.complementary_exponent": [
+          "propext"
+        ],
+        "ReverseVandermonde.paper_complementary_det": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ReverseVandermonde.unit_monomial_pow": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ReverseVandermonde.paper_monomial_matrix_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ReverseVandermonde.paper_monomial_det": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    }
+  },
+  "dependency_provenance": {
+    "node": "n60",
+    "dependency": "ReverseVandermonde.lean",
+    "source_node": "n58",
+    "source_commit": "96fdd0ca11ad17b0824d213539cc6166df569de0",
+    "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean",
+    "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+    "committed_source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+    "matches_committed_content_modulo_line_endings": true,
+    "copied_bytes_exactly": true,
+    "source_hash_verified_before_copy": true,
+    "root_conjecture_verified": false
+  },
+  "dependency_provenance_sha256": "a0fe0487546ae897d6f1eedc2c9fd5ba4d8cda813d2fe8df8e0c0664ed9b9d9e",
+  "accepted_trust_base": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "final_compiler_round": 15,
+  "compiler_exit_code": 0,
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n60\\EncodingBridge.lean"
+  ],
+  "LEAN_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n60;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+  "LEAN_SRC_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\src\\lean\\lake",
+  "LEAN_SYSROOT": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+  "frozen_contract_sha256": "79e2038f3cc1dc26ec1cf79ef2d1e62e9577d0bb40def5a1ed30bf6577686721",
+  "fixed_development_obligations": [
+    "CollisionEncodingBridge.hhat_central_coefficient",
+    "CollisionEncodingBridge.marked_A_central_identity"
+  ],
+  "invocation_history": [
+    {
+      "round": 1,
+      "kind": "dependency_build",
+      "source": "GeneralPairingRing.lean",
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "exit_code": 0
+    },
+    {
+      "round": 2,
+      "kind": "dependency_build",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "exit_code": 0
+    },
+    {
+      "round": 3,
+      "kind": "dependency_build",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "exit_code": 0
+    },
+    {
+      "round": 4,
+      "kind": "dependency_build",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "exit_code": 0
+    },
+    {
+      "round": 5,
+      "kind": "candidate",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "112c774bc2c78965ba2c938a003bef510c32bb915210c65748610ad8a703a715",
+      "exit_code": 0
+    },
+    {
+      "round": 6,
+      "kind": "candidate",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "726f2f12ca9debfa4786f1b38319ad03e45f30ffa7578a78097ec763ef739203",
+      "exit_code": 1
+    },
+    {
+      "round": 7,
+      "kind": "candidate",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "d4460de95987b26f1fbe2b5c46590df65632a4a9facec81b72e0afe283cf16f0",
+      "exit_code": 0
+    },
+    {
+      "round": 8,
+      "kind": "candidate",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "deec22f91affebe00e011d7e1de8e496440232f19e0bb60d1cf7f35d79082019",
+      "exit_code": 0
+    },
+    {
+      "round": 9,
+      "kind": "candidate",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "8b0dcaa1cceceb42ff3625855723ae5884a8a90a5a798198e22ac14a135b1171",
+      "exit_code": 1
+    },
+    {
+      "round": 10,
+      "kind": "candidate",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "9876d5bc12571c2e8db9f258a6e282b8a0fca43fd2bfd068517d6bddef31e51e",
+      "exit_code": 0
+    },
+    {
+      "round": 11,
+      "kind": "dependency_build",
+      "source": "ReverseVandermonde.lean",
+      "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+      "exit_code": 0
+    },
+    {
+      "round": 12,
+      "kind": "candidate",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "4ee186d5d1841c5b1ab2da65a52537a9c052e74bdcc3c5862b7df099bc485883",
+      "exit_code": 1
+    },
+    {
+      "round": 13,
+      "kind": "candidate",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "d918baefc38a19102934ed5499cd9c7e586a3a2e868eb3a8893f875ebee87318",
+      "exit_code": 0
+    },
+    {
+      "round": 14,
+      "kind": "candidate",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "2ac3ced56d2ff9d05f5f309b240aed41fd0139f691ee959bec75672ead6ecf98",
+      "exit_code": 0
+    },
+    {
+      "round": 15,
+      "kind": "candidate",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "95a612818527d83603efce3b4c68b906ca03d78b45f473adfff93fd9ca350b0a",
+      "exit_code": 0
+    }
+  ],
+  "errors": [],
+  "root_conjecture_verified": false,
+  "heldout_tests_run": false,
+  "scope": "Generic padded Hhat Vandermonde encoding and exact rational marked-A central identity; no scalar extraction complexity theorem"
+}

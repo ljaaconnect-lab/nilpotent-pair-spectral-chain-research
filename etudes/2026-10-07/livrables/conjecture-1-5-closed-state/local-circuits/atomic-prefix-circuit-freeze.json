@@ -1,0 +1,26 @@
+{
+  "source_sha256": "1675bced1b163e5c77a6a674f06a330bea84e0333100b13b3aea91424f190ad3",
+  "n": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "A": [
+    "identity",
+    "Vandermonde",
+    "cycle"
+  ],
+  "z": [
+    -1,
+    0,
+    1
+  ],
+  "J": "All subsets, explicit finite queries",
+  "depth": [
+    1,
+    2
+  ],
+  "purpose": "Positive development validation of initialized local constructions",
+  "heldout_root_boundary_opened": false
+}

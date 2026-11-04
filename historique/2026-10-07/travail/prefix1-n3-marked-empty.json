@@ -1,0 +1,65 @@
+{
+  "n": 3,
+  "J": [],
+  "depth": 1,
+  "marked": true,
+  "nodes": [
+    {
+      "op": "variable",
+      "name": "z"
+    },
+    {
+      "op": "mul",
+      "left": 0,
+      "right": 0
+    },
+    {
+      "op": "mul",
+      "left": 1,
+      "right": 1
+    },
+    {
+      "op": "variable",
+      "name": "p_0_0"
+    },
+    {
+      "op": "mul",
+      "left": 3,
+      "right": 0
+    },
+    {
+      "op": "variable",
+      "name": "p_0_1"
+    },
+    {
+      "op": "mul",
+      "left": 5,
+      "right": 1
+    },
+    {
+      "op": "variable",
+      "name": "p_0_2"
+    },
+    {
+      "op": "mul",
+      "left": 7,
+      "right": 2
+    },
+    {
+      "op": "add",
+      "left": 4,
+      "right": 6
+    },
+    {
+      "op": "add",
+      "left": 9,
+      "right": 8
+    }
+  ],
+  "output": 10,
+  "initialization_gates": 7,
+  "query_gates": 0,
+  "gates": 7,
+  "scope": "One explicit subset query at fixed prefix depth; not a full extractor",
+  "root_conjecture_verified": false
+}

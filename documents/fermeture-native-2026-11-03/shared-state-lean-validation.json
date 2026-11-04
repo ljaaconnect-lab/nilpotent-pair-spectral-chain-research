@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "-o",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\fermeture-native\\build\\SharedStateClosure.olean",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\fermeture-native-2026-11-03\\SharedStateClosure.lean"
+  ],
+  "source_sha256": {
+    "documents/fermeture-native-2026-11-03/SharedStateClosure.lean": "3a8967002e677b413ed521ac6d2f2b0646a3b50ac553e30dd19a4b66f53b968e",
+    "documents/fermeture-native-2026-11-03/replay_shared_state.py": "ac65b62b49c531772a0ee3481e1c073cc5b6fd6b267ab16b6a030b967eae7548",
+    "etudes/2026-11-01/lean-operateurs/lean_check.py": "a5e21cfb624e5258009425f6c6eecaf0eb1b529d953bbb2607717dab44a439ad",
+    "travail/audit-compilation-generique/build/MatrixScalarCompiler.olean": "3af2d83a084a074cb94c0fc09629f512f9917dcaaefad572827d4ca41a374708",
+    "travail/audit-compilation-generique/build/PowerCompiler.olean": "8af8c79424416700d97c35c1a7a1a4b9a3d7c1e3daaf12d8ce6bfbffadd760bb",
+    "travail/audit-compilation-generique/sources/MatrixScalarCompiler.lean": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+    "travail/audit-compilation-generique/sources/PowerCompiler.lean": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353"
+  },
+  "source_changed_during_check": false,
+  "exit_code": 0,
+  "seconds": 14.782,
+  "stdout": "'SharedStateClosure.extend_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedStateClosure.old_wires_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedStateClosure.new_outputs_computed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedStateClosure.extend_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedStateClosure.circuit_eval_natural' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedStateClosure.shared_chain_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedStateClosure.shared_chain_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedStateClosure.shared_chain_correct' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "extend_eval",
+    "old_wires_preserved",
+    "new_outputs_computed",
+    "extend_gates",
+    "circuit_eval_natural",
+    "shared_chain_eval",
+    "shared_chain_gates",
+    "shared_chain_correct"
+  ],
+  "all_theorem_axioms_printed": true,
+  "source_has_no_placeholders_or_added_axioms": true,
+  "scope": "Constructive closure of shared arithmetic circuits under store extension, semantics of arbitrary typed block chains, and ring-homomorphic interpretation.",
+  "shared_extension_compiler_formalized": true,
+  "gate_count_derived_from_program": true,
+  "old_wire_bundle_preserved": true,
+  "new_block_sees_the_existing_bundle": true,
+  "exact_extension_count": "extend(c,op).gates = c.gates+op.gates",
+  "exact_chain_count": "sum of the individual appended block gate counts",
+  "quotient_homomorphism_is_semantic_not_a_gate": true,
+  "orientation_inputs_are_not_removed": true,
+  "initialization_of_auxiliary_parameters_proved_polynomial": false,
+  "complete_scalar_a_z_only_compiler_formalized": false,
+  "complete_scalar_chain_polynomial_bound_proved": false,
+  "import_cache": "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\build",
+  "olean": "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\fermeture-native\\build\\SharedStateClosure.olean",
+  "olean_sha256": "81546b72edaa4082395e7295ae4232519de17cfb5edec9dff4a0bb2cffe6979c"
+}

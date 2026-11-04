@@ -1,0 +1,68 @@
+{
+  "n": 2,
+  "model": "generic-B leaves; rational constants; binary add/mul",
+  "gates": 8,
+  "output": 12,
+  "nodes": [
+    [
+      "constant",
+      "1"
+    ],
+    [
+      "weight",
+      0
+    ],
+    [
+      "mul",
+      0,
+      1
+    ],
+    [
+      "mul",
+      0,
+      2
+    ],
+    [
+      "weight",
+      3
+    ],
+    [
+      "mul",
+      3,
+      4
+    ],
+    [
+      "weight",
+      2
+    ],
+    [
+      "weight",
+      1
+    ],
+    [
+      "mul",
+      6,
+      7
+    ],
+    [
+      "mul",
+      0,
+      8
+    ],
+    [
+      "mul",
+      0,
+      9
+    ],
+    [
+      "add",
+      5,
+      10
+    ],
+    [
+      "mul",
+      0,
+      11
+    ]
+  ]
+}

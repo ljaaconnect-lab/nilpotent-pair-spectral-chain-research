@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "Q": 97,
+  "rng_seed": 41,
+  "binomial_basis_profiles": 97,
+  "weighted_tail_instances": 30,
+  "whole_chain_raccords": 10,
+  "scope": {
+    "general_polynomial_closure": false,
+    "general_quasipolynomial_closure": false,
+    "scalar_gate_compiler": false,
+    "lean_verified": false,
+    "claim": "Exact terminal identities only; the prefix cost remains unbounded polynomially."
+  },
+  "source_sha256": {
+    "verify_terminal_fusion.py": "ef739f0880e6e6448049262341b57da11fc7894e2dbf6858bc74fa25e5c0758f",
+    "FUSION_TOUT_ORDRE.md": "42088754d87ebe789b1fd9f23d18f550a8de7cf6fb3a4879eab8f344f2ea0175"
+  }
+}

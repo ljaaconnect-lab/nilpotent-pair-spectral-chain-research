@@ -1,0 +1,905 @@
+=== PAGE 53 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 53
+further counting queries, which only changes the polynomial factor. Each query may be discarded
+before the next, preserving polynomial space.□
+Conditional counts also allow an exactly uniform preimage to be sampled, when the preimage set
+is nonempty, with the same bound in expected time up to polynomial factors [JVV86]. In particular,
+the corollary applies to constant-locality versions of Goldreich’s candidate one-way functions, which
+evaluate local predicates on overlapping subsets of input bits [Gol00]. For polynomially many output
+bits, it gives a2o(n)-time inversion algorithm for every output in the image, ruling out2Ω(n) inversion
+hardness for these families. This does not rule out one-wayness against polynomial-time algorithms.
+AppendixD.A sharper bound for exact counting
+We prove Theorem 1.1 by contracting Boolean tensor networks. The two running times reflect the
+number of wires in the networks. A formula withm⩽Dn clauses gives a network withOk,D(n)
+wires. For arbitrary formulas, we use the parity tests of Section 6. The degree bound of Lemma 5.2
+lets us index a monomial retained in the product of their polynomial lifts withOk(nlog logn )wires.
+We give both encodings before proving the contraction theorem they use.
+D.1.Boolean tensor contraction.A Boolean tensor network is a bipartite multigraphG in which
+each edge carries a single bit. Each vertexv has an ordered listδ(v)of incident edges and a tensor
+Tv assigning a ring element to each Boolean assignment to those edges. Parallel edges have distinct
+ports. Thecontractionof the network is
+Z=
+X
+x∈{0,1}E(G)
+Y
+v∈V(G)
+Tv(x|δ(v)).
+An isolated vertex contributes its scalar entry. We measure the size of the network by its number of
+edges.
+Theorem D.1(Boolean tensor contraction).Fix positive constants C, A, b. Let s⩾ 2be an integer,
+and let L be the total length of the graph and tensor descriptions of a bipartite tensor network with at
+most Cs edges and maximum degree at most⌈s9/10⌉. Suppose that the number of vertices is bounded
+by a fixed polynomial ins, and that the entries belong to
+BP0,ℓ = (Z/2P0Z)[V]/(V ℓ),1⩽P 0, ℓ⩽Cs.
+Suppose, uniformly for every vertex and Boolean choice of its ports, that its entry can be computed
+from the description in time(s + L)b2As9/10
+and space(s + L)b. Then the contraction can be computed
+deterministically in
+(s+L) O(1)2O(s/√logs)
+bit operations and( s + L)O(1) bits of space. Constants depend only on the fixed bounds in the
+hypotheses. In particular,ℓ= 1is permitted.
+The algorithm in Section D.4 replaces a single global Taylor expansion by recursion on the wires.
+At each call it deforms the wire identifications so that, at a chosen interpolation node, only ports in
+the same group interact. Near that node, interactions between groups expand in variables called
+modes. A mode of weightj has coefficient divisible by2j, so only monomials of total weight below
+the working precision can contribute. Tapering the Hermite multiplicities with the two-adic valuation
+of the node bounds that precision. With M wires and u retained valuation levels, the number
+of mode monomials is2O(M/√u), and each monomial factors into contractions with at mostM/8
+wires. At recursion depthd, M = O(s8−d)and u = Θ((logs )/2d). The exponents therefore sum
+geometrically toO(s/ √logs).
+
+=== PAGE 54 ===
+54 OPENAI
+D.2.Fixed clause density.
+Proof of the fixed-density bound in Theorem 1.1.Give each clause a vertex carrying its Boolean
+satisfaction table, with one port for each distinct variable in the clause. A tautology may be dropped,
+and an empty clause gives count zero. For a variable withd⩾ 1ports, require their bits to agree.
+For d = 1attach the unary tensor(1 , 1), and ford = 2attach a binary equality tensor. Ford⩾ 3
+take a tree withd external ports and trivalent equality tensors at its internal vertices. Such a tree
+has d− 2internal vertices, and each common value on its ports extends uniquely to all its internal
+edges.
+There are at mostkm clause ports. The graph hasOk(n + m)edges and vertices, and maximum
+degree at mostmax{k, 3}. Subdivide every edge once by a binary equality tensor. The old vertices
+and the new vertices form the two sides of a bipartite network. The two bits on a subdivided edge
+must be equal, so this preserves the contraction. Every satisfying assignment on the occurring
+variables contributes one and every other assignment contributes zero.
+With s = n + m, apply Theorem D.1 overZ/2n+1Z, taking P0 = n + 1and ℓ = 1. The local
+tables have bounded size for fixedk. The degree and precision bounds hold for all sufficiently large
+s, and bounded instances can be enumerated directly. Ifu declared variables are unused, multiply
+the contraction by2 u modulo2 n+1. Its least nonnegative residue is# F, since0 ⩽ #F⩽ 2n.
+This includes the empty formula, for which the empty network has contraction one. The time is
+sOk(1)2Ok(s/√logs) and the space is polynomial. Whenm⩽Dn , we haven⩽s⩽ (1 + D)n, giving
+exponentO k,D(n/√logn).□
+D.3.Arbitrary clause density.The sparsification and greedy row selection in Section 6 reduce
+this case to counting common zeros of sparse polynomial equations. We retain the parity lift of
+Section 5. Its degree bound lets us encode a monomial by a subset of test–variable incidences using
+O(nlog logn)Boolean wires.
+Lemma D.2(Counting sparse polynomial systems by contraction).Fix integers k, c⩾ 1. Let
+P1, . . . , Pa be polynomials overF2 on n⩾ 20declared Boolean variables. Supposea⩽cn and each
+Pi is listed as at most⌈log2 n⌉c monomials of degree at mostk. The number of common zeros is
+computable deterministically innOk,c(1)2Ok,c(nlog logn/ √logn) bit operations andnOk,c(1) bits of space.
+Proof. Put λ = ⌈log2 n⌉ and ν = ⌈log2 λ⌉. Within each monomial replace positive powers of a
+variable by its first power, and combine duplicate monomials modulo two. The scope of testi consists
+of the variables in its remaining monomials. It has size at mostkλc. Let N0 be the sum of the scope
+sizes, counting a pair(i, v)once if variable v belongs to testi. Thus N0 ⩽akλ c. Fix, in all possible
+ways, the variables belonging to more than
+D∗ = max{1,⌈N 0/n⌉}⌈
+√
+λ⌉
+scopes. There are at most n/
+√
+λ such variables. Their assignments partition the original count
+into at most2n/
+√
+λ branch counts. On each branch substitute the fixed bits and combine duplicate
+monomials again. The free scope Ii of test i still has size at most kλc, and each free variable
+appears in at mostD∗ = λOk,c(1) scopes. Free variables absent from every scope remain declared. A
+constant-one equation makes the branch count zero. We may discard constant-zero equations, and if
+none remain the answer for the branch is two to the power of its number of free variables. Belowa
+denotes the number of remaining equations andnthe original variable count.
+The polynomial on the incidences. Give each pair(i, v)with v∈I i its own indeterminate ziv.
+Write zi = (ziv)v∈Ii. Form eLi(zi)by summing the remaining monomials of the normalized branch
+polynomial with integer coefficients, usingziv forx v. We use the ring
+B= (Z/2 pZ)[V]/(V ℓ), p=ℓ=n+ 1.
+
+=== PAGE 55 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 55
+Take h(Y ) = Y (Y− 1)and the integer polynomials ej from Lemma 5.1. Reduce their coefficients
+modulo2 p, and form the factor
+Bi(zi, V) =
+ℓ−1X
+j=0
+ej(eLi(zi))h( eLi(zi))jV j.
+Let Bi be its multilinear representative in thezi, obtained in each coefficient ofV by replacing each
+positive power of an incidence indeterminate by its first power. It agrees withBi on every Boolean
+assignment to zi. Define F (z, V) = Q
+i Bi(zi, V)in B[z]. The incidence indeterminates for different
+tests are disjoint, soF is multilinear even before substituting the same Booleanxv for all copies of
+variablev.
+The coefficient ofV j in Bi has incidence degree at mostk(1 + 2j), since dege j ⩽ 1, degh = 2,
+and multilinearization only lowers monomial degrees. Multiplication inB retains only terms withP
+i ji ⩽ℓ−1. Consequently every incidence monomial inFhas degree at most
+K=k
+ 
+a+ 2(ℓ−1)
+ 
+=O k,c(n).(D.1)
+Let Sℓ sum the coefficients of1, V, . . . , Vℓ−1 in B. At ziv = xv, the multilinearized factorBi agrees
+with Bi for the normalized branch polynomial. The integereLi((xv)v∈Ii)has the same parity as the
+original Pi evaluated at x and the fixed bits. Applying Lemma 5.2 to these integers shows that the
+branch count is congruent modulo2p to
+Sℓ
+ X
+x
+F
+ 
+(ziv =x v)iv, V
+ 
+!
+,(D.2)
+where x runs over all free Boolean assignments. We apply the coefficient-sum map after multiplying
+the test factors in the truncated ring.
+Indexing the monomials. Partition the tests and the free variables separately intoJ = ⌈n1/4⌉ groups
+of sizes differing by at most one on each side. WriteTg for a test group andXh for a variable group.
+A group containsOc(n3/4)objects, so the number of its incidences is at mostn3/4λOk,c(1) on either
+side. LetN gh be the number of incidences fromTg toX h and letN= P
+g,h Ngh ⩽N 0.
+For an incidence monomial letdgh be the number of its selected incidences joining groupsg, h.
+Enumerate arrays of integers(dgh)with0⩽d gh ⩽N gh and P
+g,h dgh ⩽K. There are at most
+(K+ 1) J 2
+= 2Ok,c(√nlogn)
+arrays, which can be enumerated usingJ2 counters. For a fixed array there are
+Cgh =
+ Ngh
+dgh
+ 
+subsets of the specified size for this pair. Draw⌈log2 Cgh⌉ Boolean wires between the two group
+vertices to index them in lexicographic order. ForCgh = 1both endpoints use the unique subset
+(possibly the entire incidence set) with no wires. Any unused bit string gives tensor entry zero.
+To decode a valid index, take the incidences in order and count the possible completions with or
+without each incidence using binomial coefficients. These have polynomial bit length, so decoding
+uses polynomial time and space.
+The union of the subsets over all pairs specifies a squarefree monomial of degree at mostK in N
+indeterminates. Including all monomials of this degree bound gives the upper bound
+ N+K
+K
+ 
+by stars
+
+=== PAGE 56 ===
+56 OPENAI
+and bars. Thus the number of wiresMin the network for this array satisfies
+M⩽J 2 + log2
+Y
+g,h
+Cgh ⩽J 2 + log2
+ N+K
+K
+ 
+⩽J 2 +Klog 2
+  e(N+K)
+K
+ 
+=O k,c(nν).(D.3)
+Here K = Θk,c(n)and N⩽nλ Ok,c(1). Also ⌈log2 Cgh⌉⩽N gh, so the degree of each vertex is at most
+its number of incidences,n3/4λOk,c(1).
+Tensor entries and contraction. A valid assignment of wire bits determines a subsetSi ⊆I i at each
+test. Write zi,Si = Q
+v∈Si ziv. The entry at a test groupg is the coefficient of its indicated monomial
+in Q
+i∈Tg Bi(zi, V). Since thezi are disjoint, this is
+Y
+i∈Tg
+[zi,Si]Bi(zi, V)inB.
+For a variable grouph, putbv =|{i:v∈S i}|forv∈ X h. Its entry is
+X
+x∈{0,1}Xh
+Y
+v∈Xh
+xbv
+v = 2|{v∈Xh:bv=0}| (mod 2 p).
+Indeed a positive exponent requiresxv = 1and a zero exponent leavesxv free. This includes variables
+outside all test scopes.
+Each monomial ofF occurs in exactly one array and has exactly one valid index at each group
+pair. Its coefficient inF is the product of the test-group coefficients. After the incidences with the
+same v are set equal, its sum over Boolean assignments is the product of the variable-group entries.
+By (D.1), summing over these arrays exhausts all monomials. Consequently the element ofB inside
+Sℓ in (D.2) is the sum of the contractions of these bipartite networks.
+To evaluate one test-side coefficient, let1T be the Boolean vector onIi with support T⊆S i. At
+1T, the multilinear polynomial evaluates to the sum of its coefficients indexed by subsets ofT, and
+it agrees there withBi. Inverting this subset sum gives
+[zi,Si]Bi(zi, V) =
+X
+T⊆S i
+(−1)|Si|−|T| Bi(1T , V)inB.
+Each term costs polynomially many bit operations. EvaluateeLi(1T )from the listed monomials
+and use the polynomialsej of Lemma 5.1, which are constructible in polynomial time. Store theℓ
+coefficients of Bi(1T , V)modulo2 p. There are at most2|Si| ⩽ 2kλc
+subsets to process. Sum one test
+at a time and multiply the resulting coefficients inB over the group. This evaluates a test-group
+entry in2 λOk,c (1)
+bit operations and polynomial space. The variable-side entries and checks for
+invalid wire indices take polynomial time. The graph, degree array, and entry procedures have
+polynomial-size descriptions.
+Apply Theorem D.1 with size parameter s = nν, root precision p = n + 1, and truncation
+order ℓ = n + 1. The graph has2J vertices and Ok,c(s)wires by (D.3). For all sufficiently large
+n its maximum degree is at most⌈s9/10⌉, its precision and truncation order areO(s), and its
+entry-evaluation time is at most2Ok,c(s9/10). Each contraction then takesnOk,c(1)2Ok,c(s/√logs) bit
+operations and polynomial space. Heres/√logs = O(nν/
+√
+λ). The high-incidence branches and
+degree arrays multiply the running time by at most
+2 n/
+√
+λ+Ok,c(√nlogn) .
+Both terms in this exponent areOk,c(nν/
+√
+λ). Process the branches and arrays sequentially. On
+each branch, sum the contractions inB and apply Sℓ. Adding the branch residues modulo2n+1
+
+=== PAGE 57 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 57
+gives the original count, since it lies between0and2n. This proves the claimed bounds, using direct
+enumeration for bounded exceptional sizes.□
+Proof of the arbitrary-density bound in Theorem 1.1.Normalize the formula on its originaln de-
+clared variables as in Section 6.4. Empty clauses and formulas with no clauses have immediate answers.
+For n⩾ 20apply Lemma 6.3 with σ = 1/⌈
+√
+λ⌉, where λ = ⌈log2 n⌉. The tree hasnOk(1)2O(n/
+√
+λ)
+nodes and polynomial depth. Every leaf has occurrence boundB = Ok((σ−1 log(2/σ))k−1) = λOk(1)
+and at mostBnnonempty clauses.
+For a nontrivial leaf withmG clauses, use the initial parity checks of Lemma 6.1 and the greedy
+procedure of Lemma 6.2. Each initial row has support size at mostD0, and each additional row
+has list lengthP. Both bounds areλOk(1). By (6.1), every row gives a degree-at-most-k equation
+with at most2 k max{P, D0} monomials, and every queried system has at most6n equations. A
+single constant c = c(k)bounds both the ratio of equations to variables and the exponent ofλ in
+the monomial bound for all sufficiently largen. At each greedy step, use Lemma D.2 to compute
+N (A; hγ)for every candidate row hγ and append one attaining the minimum. The evaluator applies
+also to discarded candidates whose systems still accept nonsatisfying assignments. One final call
+givesN(A)for the selected matrix, which equals the leaf count by Lemma 6.2.
+Constructing the initial checks and enumerating candidates costs2λOk (1)
+bit operations apart from
+the evaluations. There are at most3n(2mG)P + 1 = 2λOk (1)
+evaluations per leaf. Since every fixed
+power of λ is o(nlog logn/ √logn ), these costs and the number of leaves are absorbed in the claimed
+time bound
+(n+m) Ok(1)2Ok(nlog logn/ √logn) .
+Here m counts the input clauses. Traverse the tree depth first and process one query at a time. The
+leaf solution sets are disjoint, so their exact counts add with an(n+1)-bit accumulator. Together with
+polynomial space per query and per tree path, this gives the asserted polynomial-space bound.□
+Asinglealgorithmattainsbothbounds. With λ = ⌈log2 n⌉and ν = ⌈log2 λ⌉, usetheclausenetwork
+when m⩽nν and the parity queries otherwise. In the first branchn⩽s = n + m = O(nlog logn ),
+so its exponent isOk(nlog logn/ √logn )even at growing density. For each fixedD and all sufficiently
+largen, every input withm⩽Dntakes that branch withs=O D(n).
+D.4.Proof of the contraction theorem.Throughout the proof of Theorem D.1,log denotes a
+base-two logarithm andlndenotes a natural logarithm.
+D.4.1.The coefficient ring and exact arithmetic.Write λ = ⌈log2 s⌉ and e = 4λ. Choose a monic
+polynomial f∈Z [U ]of degree e, with coefficients in {0, 1} below its leading coefficient, whose
+reduction modulo two is irreducible. This can be done deterministically in polynomial time ins by
+enumerating the2 e candidates and testing divisibility overF2 by every monic polynomial of positive
+degree at moste/2. Finite fields admit an irreducible polynomial of every positive degree [vzGG13].
+Put
+O=Z (2)[U]/(f),K=Q[U]/(f),A=O[V]/(V ℓ),A p =A/(2 p).
+Here Z(2) consists of rational numbers with odd denominator. Irreducibility modulo two implies
+irreducibility over Q, so K is a field. For a nonzero element ofK, let v2 be the minimum of the
+ordinary two-adic valuations of its coordinates in1, U, . . . , Ue−1. Reduction of O modulo two is the
+fieldF 2e. Factoring out the minimum coordinate valuation therefore shows that
+v2(xy) =v 2(x) +v 2(y) (x, y̸= 0).
+Every element ofO that is nonzero modulo two is a unit because the determinant of its multiplication
+matrix is invertible inZ(2), so the inverse matrix has entries in that ring.
+Arithmetic in Ap takes polynomial time and space ins, p, ℓ. We use the bases1 , U, . . . , Ue−1
+and1 , V, . . . , Vℓ−1, and represent each coordinate by its integer residue between zero and2p − 1.
+
+=== PAGE 58 ===
+58 OPENAI
+Inverting a scalar unit can be done by inversion modulo two followed by Newton lifting, or by its
+multiplication matrix, using exact polynomial and integer operations [vzGG13]. Divisibility and
+precision for elements ofAare always coordinatewise.
+The binary-coordinate lifts of the2e residue-field elements give interpolation points with pairwise
+unit differences. Lagrange interpolation at any required number of these points is therefore valid over
+Ap. We will use fewer thans4 points. A contraction whose initial entries belong toBP0,ℓ belongs to
+that subring after computation inAP0, because it is a polynomial in those entries.
+When the precision increases, we lift each tensor entry separately. For an entry originally specified
+modulo2 p, itscanonical liftis the element of A obtained from the integer representatives of all
+its coordinates. Canonical lifting need not preserve addition or multiplication. Each recursive call
+contracts its specified tensors modulo the precision of that call. To define its deformation, it first
+makes this entrywise choice of lifts. All subsequent evaluations in that call refer to these same
+lifts. More explicitly, each tensor description is tagged with its creation precisionpc (P0 for an
+original tensor). At every later precision, its entry is evaluated modulo2pc and those same integer
+representatives are used. Precisions strictly increase along a recursive path, so these representatives
+are also the canonical representatives at every later precision. In particular, a packet tensor retains
+its creation-time representatives throughout the recursion.
+D.4.2.Parameters and collision packing.All estimates below hold for sufficiently larges, with the
+threshold depending only on the fixed constants. A fixed finite range of smaller sizes is handled by
+direct summation. The parameter inequalities can be tested directly. Set
+H=
+  s
+⌊
+√
+λ⌋
+ 
+, r= 64, ε= 1
+128·1024 ,∆ =⌈s 9/10⌉.
+A call withM⩽H edges is a leaf and is evaluated directly. At an active call at depthd, with the
+root at depth zero, use
+u=u d =
+  ελ
+2d
+ 
+, a=a d = 2
+dX
+j=0
+uj, a −1 = 0, L= 2 a, D arr =r 2a.(D.4)
+We will arrange that every child has at mostM/8edges and maximum degree at most∆. These
+assertions imply, on every active path,
+H < M⩽Cs8 −d, d⩽ log2 λ
+6 +O C(1).
+Consequently
+u= Θ C(λ/2d), λ 4/5 ⩽u⩽M, a⩽4ελ, L, D arr ⩽s 1/1000 (D.5)
+for all sufficiently larges. In particular, at each active call
+M⩾2D 2
+arr∆, M⩾LD arr,2L⩽∆.(D.6)
+For example, the right side of the first inequality isO(s9/10+2/1000) =o(H). The other inequalities
+follow in the same way.
+Lemma D.3(Packing into packets).Under (D.6), label the vertices on each side of the network by
+elements of[ r]a. There is a deterministically constructible labeling and an embedding of the edges
+into packets ofLslots with the following properties.
+(1) There are at most3M/L packets. Each edge occupies the same slot at its row and column
+ends. Unused slots have no ports.
+(2) In every packet and every coordinate, the unordered pair of row and column symbols is fixed.
+When these symbols differ, biti of the slot number specifies their orientation in coordinatei,
+for0⩽i < a.
+
+=== PAGE 59 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 59
+(3) For every coordinate and every symbol, at most3M/r real ports on each side belong to vertices
+with that symbol.
+The construction uses polynomial time and space ins+L.
+Proof. For each pair of labels letXγ be the number of edges with that pair. Independent uniform
+vertex labels give
+E
+X
+γ
+(Xγ −M/D arr)2 ⩽2M∆.
+Indeed, expansion expresses this expectation as a sum over ordered pairs of edges of their label-
+agreement probability minus1/Darr. Pairs with disjoint endpoints contribute zero. At most2M ∆
+ordered pairs share an endpoint, including equal edges, and each contributes at most one. Conditional
+expectation gives a labeling with this bound. To implement it, try each of thera labels of the next
+vertex and compute the conditional expectation by enumerating pairs of edges. Each probability
+concerns at most four vertices, so this is an exact polynomial-time calculation. This is the usual
+conditional-expectation method [Rag88].
+Every load is at mostM/Darr +
+√
+2M∆. Pad all pair-label classes to a common numberHpad of
+slots, the maximum load rounded up to a multiple ofL. The assumptions imply
+Hpad ⩽M/D arr +
+√
+2M∆ +L⩽3M/D arr.
+Fix the unordered pair of symbols in each coordinate. Ifa′ coordinates have unequal symbols, their
+orientations give2 a′
+pair labels. Partition their padded slots into packets using2a−a′
+slots from
+each of these labels per packet. This is possible becauseHpad is divisible byL. Number a packet’s
+positions from0to L− 1. Its ith bit specifies the orientation when theith pair is unequal and the
+copy when the pair is equal. Use one orientation convention throughout each packet.
+There are HpadDarr/L⩽ 3M/L packets. In a fixed coordinate, a given symbol occurs in exactly
+1/r of all padded pair labels on either side. Its number of real ports is therefore at mostHpadDarr/r⩽
+3M/r. □
+D.4.3.A Cauchy deformation and integral local coordinates.Fix an active call, its packets, and its
+entrywise lifted tensors. Use
+S={−L,−L+ 1, . . . , L−1},C(T) =
+Y
+t∈S
+(T−t), α= 2 a+1.
+Within a packet, for its row slotxand column sloty, put
+Wxy(T) = C(T)
+C′(0)(T−(y−x)) .(D.7)
+The factor in the denominator cancels a numerator factor, sincey−x∈S . Thus this is a polynomial
+over Q of degree2 L− 1. Set entries between different packets to zero and restrict to the real ports.
+Under the original edge identification,W (0) = I, since the diagonal entries are one and each other
+entry has an uncancelled zero factor.
+Let A(Y )and B(X)be the products of the lifted row and column tensors, respectively, on
+independent port assignmentsY, X∈ {0,1}M. Writel 0(z) = 1−zandl 1(z) =z. Define
+F(T) =
+X
+X,Y∈{0,1} M
+A(Y)B(X)
+Y
+row portsx
+lYx((W(T)X) x).(D.8)
+Its coefficients lie inK[V ]/(V ℓ), its degree is at mostM (2L− 1), and F (0)is the contraction of the
+lifted tensors. In particular, reducingF(0)modulo the call’s precision gives the required answer.
+Lemma D.4.For every t∈S , the entries ofW (t + αz)belong to O[z], and F (t + αz)belongs to
+A[z]. Given the e coordinates ofζ modulo2 p, each entryWxy(t + αζ) mod 2p can be computed using
+polynomially many bit operations ins, p.
+
+=== PAGE 60 ===
+60 OPENAI
+Proof. The grid S is a complete residue system modulo2a+1. For t̸ = q in S, v2(t−q ) ⩽a , and the
+counts of nonzero differences at every valuation are independent oft. Hence v2(C′(t)) = v2(C′(0)). In
+C(t+αz)
+C′(0) =
+αz Q
+q∈S\{t} (t−q+αz)
+C′(0) ,
+each factor indexed byq̸ = t is coefficientwise divisible by2v2(t−q). After canceling these powers
+against the denominator, the displayed polynomial is divisible by2a+1. To obtain (D.7), omit
+just the factor indexed byy−x . If y−x = t, this removesαz and leaves an integral polynomial.
+Otherwise αz remains and the omitted factor has two-adic content2v2(t−y+x) with v2(t−y + x) ⩽a ,
+so the result is still divisible by two. Substitution in (D.8) proves the assertion forF.
+For the evaluation, first divide each factort−q + αz with q̸ = t by the known integer2v2(t−q).
+Both coefficients of the resulting linear polynomial are integers. Cancel the remaining explicit powers
+of two against the denominator as above, and invert its odd part modulo2p. We can now evaluate
+the product directly at the supplied residue ofζ, including ζ = 0. The input hasep bits, and the
+product hasO(L)factors. All coordinate operations take polynomial time ins, p.□
+D.4.4.Tapered Hermite recovery.The next lemma isolates the precision estimate. All power-series
+truncations in its statement are ordinary truncations inz.
+Lemma D.5(Tapered Hermite recovery).Let integers u, Msatisfy1 ⩽u⩽a and M⩾u , and put
+h=⌈3M/u⌉. Fort∈S\ {0}set
+i=v 2(t), q t =q(i) =hmax(0, u−i), D t =L/2 i.
+Suppose F∈ (K[V ]/(V ℓ))[T ]has degree at most M (2L− 1), F (0) ∈ A, and F (t + αz) ∈ A[z]for
+everyt∈S. Forp⩾1, its valueF(0)modulo2 p can be recovered from
+F(t+αz) (mod 2 pt), p t =p+ 8hD t + 8M(a+ 1), q t >0.
+Only the firstqt coefficients of each polynomial are needed. Recovery takes polynomial time and space
+inM, L, ℓ, eand the precisions.
+Proof. There are L odd points inS, so P
+t̸=0 qt ⩾Lhu⩾ 3M L > M(2L− 1). Also h⩽ 4M/u, and
+henceq t ⩽4M. For eachtof positive multiplicity put
+Et(T) =
+Y
+q∈S\{0,t}
+  T−q
+t−q
+ qq
+.
+Hermite interpolation gives
+F(0) =
+X
+t:qt>0
+Et(0)
+   F(t+αz)
+Et(t+αz)
+ 
+<qt
+!
+(−t/α).(D.9)
+For completeness, replace zero in the right side by an indeterminateT, and −t/α by( T−t )/α. Each
+summand has degree less thanP qt. At its own node it has the prescribed jet, and at every other
+node it vanishes to the required order. The difference fromF is therefore divisible byQ
+t̸=0(T−t )qt
+and has smaller degree, so is zero. This is the usual Chinese-remainder construction of Hermite
+interpolation [vzGG13, Section 5.6].
+Each factor ofEt(t + αz)is a power of1 +αz/(t−q ). It is integral and has constant term one. Its
+reciprocal truncated atqt is therefore integral, so forming the quotient in (D.9) loses no precision.
+
+=== PAGE 61 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 61
+Fixi=v 2(t)andD=D t. Directly from the product,
+v2(Et(0)) =
+X
+q̸=0,t
+qq
+ 
+v2(q)−v 2(t−q)
+ 
+=D
+a−iX
+j=1
+j
+2j
+ 
+q(i+j)−q(i)
+ 
+⩾−6Dh.(D.10)
+To justify the second equality, points of valuation less thani contribute zero. For1 ⩽j⩽a−i ,
+there are D/2j points with v2(q) = i + j, and the same number withv2(t−q ) = i + j. The latter
+have v2(q) = i, and these levels exhaust the points other thant with that valuation. These counts
+follow from the complete residue grid, whose nonzero integer differences have valuation at mosta.
+Finally,q(i+j)−q(i)⩾−hjand P
+j⩾1 j2/2j = 6.
+Evaluation of a polynomial of degree belowqt at −t/α loses at most4M (a + 1)further powers
+of two. Thus replacing each quotient coefficient by any lift of its residue modulo2pt changes its
+contribution in(D.9) by an element of2pA. Summing these errors loses no further precision. The
+reconstructed sum is integral, since it differs from the integral valueF(0)by an element of2pA.
+One can perform this last combination by rational arithmetic in the specified bases. The multipliers
+Et(0)(−t/α)j, j < qt, are products of polynomially many rational factors ofO(a)bits, counting
+multiplicity. Their numerator and denominator lengths are therefore polynomial inM, L, a. There
+are polynomially many such coefficients, so even a product of their denominators is an adequate
+polynomial-bit common denominator. After addition, cancel its powers of two and reduce the
+resulting integral coordinates modulo2p. This proves the algorithmic assertion.□
+At a call with input precisionp, apply this lemma with the parameters in(D.4). For every active
+t, obtain the entire polynomialF (t + αz)modulo2 pt by evaluation at M (2L− 1) + 1distinct
+binary-coordinate lifts of residue-field elements and Lagrange interpolation. Lemma D.4 permits this
+interpolation over Apt. The number of points is less thans4 by (D.5). The evaluation algorithm
+below passes precisionpt to its children.
+The input and child precisions satisfy
+p⩽sλ O(1)2ad−1, p t =O C(M Dt/u).(D.11)
+The first assertion holds at the root sinceP0 ⩽Cs . Along a path, the increments in precision are
+8hDt + 8M (a + 1), with h⩽ 4M/u, M⩽Cs , and Dt ⩽ 2ad. Summing them overO(logλ )depths
+proves the first assertion for every call, including leaves. For the second,qt > 0implies i < uand
+hence
+Dt ⩾2 ad−u = 2ad−1+u.
+Since M > Hand u⩾λ 4/5, this extra factor2u dominates every fixed power ofλ. Thus the first
+bound on p, as well as8M (a + 1), is OC(M Dt/u). The remaining increment8hDt has that bound
+directly. All precisions remain polynomial insbecausea d ⩽4ελ.
+The taper accounts for the factor1/u in this estimate. For comparison, assign the same multiplicity
+q∗ = Θ( M )to every level below u, and zero to the remaining levels. At the last retained level
+i=u−1, the identity (D.10) would give the loss
+−q∗Dt
+a−iX
+j=1
+j
+2j =−Θ(M Dt).
+Our multiplicities instead change by onlyh = Θ( M/u)per level, giving loss O(M Dt/u). The
+cumulative choice ofad provides the additional factor2u needed to absorb inherited precision and
+the evaluation loss. Thus the smaller bound holds at every retained level and every recursion depth.
+
+=== PAGE 62 ===
+62 OPENAI
+D.4.5.Modes for interactions between groups.Fix an activet and an interpolation valueζ∈ Ofor z.
+In this subsectionT = t + αζ and all calculations are modulo2pt. Put i = v2(t) < uand D = L/2i.
+Group vertices on both sides by their symbol in coordinatei. Entries ofW (T )whose two ports have
+the same group are called local and are kept unchanged.
+This choice of coordinate makesW (t)local. Indeed, Wxy(t) = 0unless y−x = t. Adding an
+integer of valuationi flips bit i, so a surviving pair has differentith bits. When the packet’s two
+symbols in that coordinate differ, this means that the row and column symbols agree. Equal pairs of
+symbols already lie in one group. Moving fromt to t + αζ introduces the crossing terms that we
+now expand.
+In a packet whose two symbols in coordinatei differ, a row positionx and a column positiony
+are in different groups exactly when theirith bits are equal. Partition columns into tiles
+y=y 0 + 2i+1j,0⩽y 0 <2 i+1.
+The column group is constant on a tile. For a row crossing to that tile,
+v2(t−y 0 +x)⩽i.
+Otherwise y0 would agree withx + 2i modulo2 i+1, contrary to equality of theirith bits. Addingαζ
+does not change this valuation. A geometric expansion consequently gives
+Wxy(T) =
+X
+b⩾0
+b+1<pt
+C(T)
+C′(0)(T−y 0 +x)
+  2i+1
+T−y 0 +x
+ b
+jb (mod 2 pt).(D.12)
+Indeed the first fraction has valuation at leasta + 1−i⩾ 1, and the ratio raised to thebth power has
+valuation at least one before taking that power. The geometric remainder is divisible by2pt. These
+expressions are computable by factoring the known powers of two and using only unit inverses.
+For each such packet, tile, andb introduce a mode variableZ of weightwZ = b + 1, to be replaced
+by
+LZ(X) =
+X
+real columnsyin the tile
+jbXy.
+As usual j0 = 1, including j = 0. Its source is the tile’s column group and its target is the other
+group in that packet’s coordinate pair. Formula(D.12) expresses each row form as its local part
+plus a linear combination of its targeted modes. The coefficient ofZ is divisible by2wZ. There are
+at most
+(3M/L)2i+1 = 6M/D(D.13)
+variables of any one weight.
+In the product of the affine factorslYx((W (T )X)x), every coefficient of a mode monomialZβ is
+divisible by2
+P
+Z wZ βZ. Consequently only the exponent tuples
+X
+Z
+wZβZ < pt (D.14)
+need be considered. The number of these tuples is
+exp
+ 
+O(
+p
+M pt/D)
+ 
+= exp
+ 
+OC(M/√u)
+ 
+.(D.15)
+Here is the complete counting estimate. For anyθ >0, the generating product and(D.13) bound
+the number by
+exp
+
+θpt + 6M
+D
+X
+j⩾1
+−ln(1−e −θj )
+
+ .
+
+=== PAGE 63 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 63
+Expanding the logarithm and summing the geometric series gives
+X
+j⩾1
+−ln(1−e −θj ) =
+X
+h⩾1
+1
+h(eθh −1) ⩽ 1
+θ
+X
+h⩾1
+1
+h2 .
+Take θ =
+p
+M/(Dp t) and use(D.11). All mode variables and their exponents have polynomial-size
+descriptions. Tuples satisfying (D.14) can be enumerated with polynomial delay and space by
+ordering the variables and successively choosing each exponent subject to the remaining budget.
+Every feasible partial choice has the all-zero continuation, so the number of visited partial choices is
+at most the number of complete tuples times the number of variables, up to an additive constant.
+D.4.6.The child networks and their descriptions.For one tupleβ in (D.14) construct a child network
+for each groupg∈ [r]. Place all current vertices in groupg, from both sides of the current network,
+on one side of the child. Retain their ports and their chosen lifted entries, now reduced modulo2pt.
+On the other side put one vertex for each packet, with an edge to every retained port of that packet.
+Its indices are precisely the row bitsYand column bitsXof groupgin the packet.
+To define this new packet tensor, form the product of the row factorslYx for group g in the packet,
+with their arguments expressed in local column bits and formal modes. Extract the coefficient with
+exponentsβ Z for all modes targeted atgin that packet. Multiply it by
+Y
+Zin this packet
+source(Z)=g
+LZ(X) βZ .
+Empty products equal one. If there are no target rows, the extracted coefficient is zero whenever
+a target exponent is positive. If the source tile ofZ has no real column, thenLZ(X) = 0and its
+power contributes one forβZ = 0and zero otherwise.
+Every mode has one target and one source. Coefficient extraction therefore factors over the
+packet-group row products, and the substitution for each mode depends only on bits in its source
+group. Distributing the product in(D.8), and then summing the independent bits within groups,
+proves the exact identity
+F(t+αζ) =
+X
+β: P wZ βZ <pt
+rY
+g=1
+Zg,β (mod 2 pt),(D.16)
+where Zg,β is the contraction of the child just defined. The omitted monomials vanish by their
+coefficient divisibility.
+By Lemma D.3, a child has at most6M/r = 3 M/32 < M/8edges. Old vertex degrees are
+unchanged, and a new packet vertex has at most2L⩽ ∆ports. Thus the invariants used in(D.5)
+hold inductively.
+All new tensors are given implicitly. To evaluate a packet tensor entry, expand its product of at
+most L affine row factors. Each factor has polynomially many terms ins, including its local term.
+Enumerating these choices, checking the desired exponents, and summing the resulting terms takes
+exp(O(Llogs))
+time and polynomial space. The factorsLZ(X)βZ are computed by ordinary repeated squaring in
+Apt. BecauseL⩽s 1/1000, this entry cost isexp(O(s9/10)).
+A description of a new tensor consists of its packet data, the tupleβ, the interpolation value,
+and the creation precision. These data and the local kernel suffice to compute its entry directly. A
+retained tensor is evaluated from its original description, or from its own creation-time description if
+it was created earlier in the recursion. Its residue at that precision is then canonically lifted to the
+current precision. The old descriptions are immutable and shared by reference. Thus no composition
+of entry routines builds up with the depth, and all entry routines continue to have the required time
+
+=== PAGE 64 ===
+64 OPENAI
+and space bounds. Only polynomially many vertices and polynomially much new description data
+are added along a path.
+D.4.7.Time and space bounds.
+Proof of Theorem D.1.Embed the original entries intoAP0 and perform the recursive algorithm
+above. At an active call, for every node of positive multiplicity and every required residue-distinct
+interpolation value, compute(D.16) by its child contractions. Interpolate F (t + αz)and apply
+Lemma D.5. At a leaf, sum directly over all Boolean edge assignments. Lemma D.4, the recursion
+identity, and the recovery lemma prove correctness by induction from the leaves.
+The number of interpolation nodes, values, and groups at a call is polynomial ins, independently
+ofL. By (D.15), the number of children of an active depth-dcall is at most
+sO(1) exp
+
+OC
+
+ s√
+λ
+ √
+2
+8
+!d
+
+
+ .
+Indeed M⩽Cs 8−d and ud = ΘC(λ/2d). Multiplying these bounds over theOC(logλ )depths, or
+bounding the number of nodes on each level in this way, gives at most
+exp
+ 
+OC(s/
+√
+λ) +O C(λlogλ)
+ 
+= exp(OC(s/
+√
+λ))
+calls in total. At a leaf, direct summation uses at most2H assignments and polynomially many
+entry evaluations per assignment. Its cost is bounded by a polynomial ins+Ltimes
+exp(OC(H) +O C,A(s9/10)) = exp(OC,A(s/
+√
+λ)).
+Local arithmetic, packing, descriptions, and recovery use polynomial time per generated term, apart
+from the already bounded entry computations. The description-dependent factor bounds the work
+per call. Since the branching bound is independent ofL, the total work retains a fixed polynomial
+factor ins+L. This proves the time bound.
+For space, traverse the recursion depth first, accumulating one sum overβ and one product
+over groups at a time. Store the polynomially many Taylor data needed for a call’s recovery, its
+current interpolation and mode indices, and its graph and new tensor descriptions. Their sizes
+are polynomial ins + L, including the precisions by(D.11). There are onlyOC(logλ )stack levels.
+The common-denominator calculation in Lemma D.5 also uses only polynomial-bit integers. Each
+call accumulates its contraction terms modulo its own fixed precision. Original entry routines use
+polynomial space by hypothesis, and the new routines have the same property. This proves the space
+bound. Finally extract the base coordinates inAP0, which give the answer inBP0,ℓ.□
+References
+[ABHS19] Amir Abboud, Karl Bringmann, Danny Hermelin, and Dvir Shabtay.SETH-Based Lower Bounds for
+Subset Sum and Bicriteria Path. 30th ACM–SIAM Symposium on Discrete Algorithms, 2019, 41–57. 5
+[AW14] Amir Abboud and Virginia Vassilevska Williams.Popular Conjectures Imply Strong Lower Bounds for
+Dynamic Problems. 55th IEEE Symposium on Foundations of Computer Science, 2014, 434–443. 5
+[AGP23] Josh Alman, Yunfeng Guan, and Ashwin Padaki.Smaller Low-Depth Circuits for Kronecker Powers. 34th
+ACM–SIAM Symposium on Discrete Algorithms, 2023, 4159–4187. 6
+[AW15] Josh Alman and Ryan Williams.Probabilistic Polynomials and Hamming Nearest Neighbors. 56th IEEE
+Symposium on Foundations of Computer Science, 2015, 136–150. 6
+[AW17] Josh Alman and Ryan Williams.Probabilistic Rank and Matrix Rigidity. 49th ACM Symposium on Theory
+of Computing, 2017, 641–652. 6
+[AR94] Noga Alon and Yuval Roichman.Random Cayley Graphs and Expanders. Random Structures & Algorithms
+5(2), 1994, 271–284. 7
+[BI16] Arturs Backurs and Piotr Indyk.Which Regular Expression Patterns Are Hard to Match?57th IEEE
+Symposium on Foundations of Computer Science, 2016, 457–466. 5
+
+=== PAGE 65 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 65
+[BI18] Arturs Backurs and Piotr Indyk.Edit Distance Cannot Be Computed in Strongly Subquadratic Time
+(unless SETH is false). SIAM Journal on Computing47(3), 2018, 1087–1097. Conference version in STOC
+2015. 5
+[Bar23] Boaz Barak.Introduction to Theoretical Computer Science. Online textbook, 2023. Chapter 15, Lem-
+mas 15.9–15.10. Archived 2023 edition (v0.95). 2, 3
+[Bar68] Erwin H. Bareiss.Sylvester’s Identity and Multistep Integer-Preserving Gaussian Elimination. Mathematics
+of Computation22(103), 1968, 565–578. 50
+[BI13] Chris Beck and Russell Impagliazzo.Strong ETH Holds for Regular Resolution. 45th ACM Symposium on
+Theory of Computing, 2013, 487–494. 4
+[BT94] Richard Beigel and Jun Tarui.On ACC. Computational Complexity4(4), 1994, 350–366. 36
+[BGKM23] Vishwas Bhargava, Sumanta Ghosh, Mrinal Kumar, and Chandra Kanta Mohapatra.Fast, Algebraic
+Multivariate Multipoint Evaluation in Small Characteristic and Applications. Journal of the ACM70(6),
+2023, 42:1–42:46. Conference version in STOC 2022. 6
+[Bjö16] Andreas Björklund.Below All Subsets for Some Permutational Counting Problems. 15th Scandinavian
+Symposium and Workshops on Algorithm Theory, LIPIcs53, 2016, 17:1–17:11. 5
+[BKW19] Andreas Björklund, Petteri Kaski, and Ryan Williams.Generalized Kakeya Sets for Polynomial Evaluation
+and Faster Computation of Fermionants. Algorithmica81, 2019, 4010–4028. Conference version in IPEC
+2017. 5
+[Bri14] Karl Bringmann.Why Walking the Dog Takes Time: Fréchet Distance Has No Strongly Subquadratic
+Algorithms Unless SETH Fails. 55th IEEE Symposium on Foundations of Computer Science, 2014, 661–670.
+5
+[BK15] Karl Bringmann and Marvin Künnemann.Quadratic Conditional Lower Bounds for String Problems and
+Dynamic Time Warping. 56th IEEE Symposium on Foundations of Computer Science, 2015, 79–97. 5
+[Cal09] Chris Calabro.The Exponential Complexity of Satisfiability Problems. Ph.D. dissertation, University of
+California, San Diego, 2009. Chapter 5. 6, 18
+[CIP06] Chris Calabro, Russell Impagliazzo, and Ramamohan Paturi.A Duality between Clause Width and Clause
+Density for SAT. 21st IEEE Conference on Computational Complexity, 2006, 252–260. 6, 18, 44
+[CGI+16] Marco L. Carmosino, Jiawei Gao, Russell Impagliazzo, Ivan Mihajlin, Ramamohan Paturi, and Stefan
+Schneider.Nondeterministic Extensions of the Strong Exponential Time Hypothesis and Consequences for
+Non-reducibility. 7th Innovations in Theoretical Computer Science Conference, 2016, 261–270. 4
+[CCK+20] Parinya Chalermsook, Marek Cygan, Guy Kortsarz, Bundit Laekhanukit, Pasin Manurangsi, Danupon
+Nanongkai, and Luca Trevisan.From Gap-Exponential Time Hypothesis to Fixed Parameter Tractable
+Inapproximability: Clique, Dominating Set, and More. SIAM Journal on Computing49(4), 2020, 772–810.
+Conference version in FOCS 2017. 4
+[CW21] Timothy M. Chan and R. Ryan Williams.Deterministic APSP, Orthogonal Vectors, and More: Quickly
+Derandomizing Razborov–Smolensky. ACM Transactions on Algorithms17(1), Article 2, 2021, 1–14.
+Authors’ manuscript, Theorems 1.6 and 2.5. 4, 36
+[CHKX06] Jianer Chen, Xiuzhen Huang, Iyad A. Kanj, and Ge Xia.Strong Computational Lower Bounds via
+Parameterized Complexity. Journal of Computer and System Sciences72(8), 2006, 1346–1367. 5
+[CLWYY25] Zongchen Chen, Aditya Lonkar, Chunyang Wang, Kuan Yang, and Yitong Yin.Counting Random
+k-SAT near the Satisfiability Threshold. 57th ACM Symposium on Theory of Computing, 2025, 867–878.
+Theorem 1.2 is numbered as in the authors’ full version. 4
+[Coo71] Stephen A. Cook.The Complexity of Theorem-Proving Procedures. 3rd ACM Symposium on Theory of
+Computing, 1971, 151–158. 1
+[Cur18] Radu Curticapean.Block Interpolation: A Framework for Tight Exponential-Time Counting Complexity.
+Information and Computation261, Part 2, 2018, 265–280. Conference version in ICALP 2015. 4
+[CDL+16] Marek Cygan, Holger Dell, Daniel Lokshtanov, Dániel Marx, Jesper Nederlof, Yoshio Okamoto, Ramamohan
+Paturi, Saket Saurabh, and Magnus Wahlström.On Problems as Hard as CNF-SAT. ACM Transactions
+on Algorithms12(3), Article 41, 2016, 1–24. 4, 5
+[DHM+14] Holger Dell, Thore Husfeldt, Dániel Marx, Nina Taslaman, and Martin Wahlén.Exponential Time
+Complexity of the Permanent and the Tutte Polynomial. ACM Transactions on Algorithms10(4), Article 21,
+2014, 1–32. 4, 6, 18, 44
+[Din16] Irit Dinur.Mildly Exponential Reduction from Gap 3SAT to Polynomial-Gap Label-Cover. Electronic
+Colloquium on Computational Complexity, Report TR16-128, 2016. 4
+[DL20] Zeev Dvir and Allen Liu.Fourier and Circulant Matrices are Not Rigid. Theory of Computing16(20),
+2020, 1–48. 6
+[vzGG13] Joachim von zur Gathen and Jürgen Gerhard.Modern Computer Algebra. 3rd edition, Cambridge University
+Press, 2013. 57, 58, 60
+
+=== PAGE 66 ===
+66 OPENAI
+[Gol00] Oded Goldreich.Candidate One-Way Functions Based on Expander Graphs. Electronic Colloquium on
+Computational Complexity, Report TR00-090, 2000. 53
+[Gol08] Oded Goldreich.P, NP, and NP-Completeness: The Basics of Computational Complexity. Author’s draft,
+June 14, 2008, Proposition 4.7. The Cambridge University Press edition appeared in 2010. 19
+[HKZZ19] Thomas Dueholm Hansen, Haim Kaplan, Or Zamir, and Uri Zwick.Fasterk-SAT Algorithms Using
+Biased-PPSZ. 51st ACM Symposium on Theory of Computing, 2019, 578–589. 3
+[Her14] Timon Hertli.3-SAT Faster and Simpler—Unique-SAT Bounds for PPSZ Hold in General. SIAM Journal
+on Computing43(2), 2014, 718–729. Conference version in FOCS 2011. 3
+[Hus11] Thore Husfeldt.Invitation to Algorithmic Uses of Inclusion–Exclusion. 38th International Colloquium on
+Automata, Languages, and Programming, Part II, Lecture Notes in Computer Science6756, 2011, 42–59.
+5
+[IMP12] Russell Impagliazzo, William Matthews, and Ramamohan Paturi.A Satisfiability Algorithm forAC 0. 23rd
+ACM–SIAM Symposium on Discrete Algorithms, 2012, 961–972. Publisher’s version. 4
+[IP01] Russell Impagliazzo and Ramamohan Paturi.On the Complexity ofk-SAT. Journal of Computer and
+System Sciences62(2), 2001, 367–375. 1, 4
+[IPZ01] Russell Impagliazzo, Ramamohan Paturi, and Francis Zane.Which Problems Have Strongly Exponential
+Complexity?Journal of Computer and System Sciences63(4), 2001, 512–530. 1, 5, 6, 18
+[JMV13] Hamid Jahanjou, Eric Miles, and Emanuele Viola.Local Reductions. Electronic Colloquium on Compu-
+tational Complexity, Report TR13-099, revision 2, 2013. Conference version in ICALP 2015, 749–760.
+51
+[JVV86] Mark R. Jerrum, Leslie G. Valiant, and Vijay V. Vazirani.Random Generation of Combinatorial Structures
+from a Uniform Distribution. Theoretical Computer Science43(2–3), 1986, 169–188. 2, 53
+[JC26] Tao Jiang and Shaowei Cai.A Better Analysis For PPSZ For 3-SAT. arXiv:2607.10697, 2026. 3
+[Koi06] Mikko Koivisto.Optimal 2-Constraint Satisfaction via Sum–Product Algorithms. Information Processing
+Letters98(1), 2006, 24–28. 5
+[KSY14] Swastik Kopparty, Shubhangi Saraf, and Sergey Yekhanin.High-Rate Codes with Sublinear-Time Decoding.
+Journal of the ACM61(5), 2014, 28:1–28:20. 6
+[KW16] Ioannis Koutis and Ryan Williams.Algebraic Fingerprints for Faster Algorithms. Communications of the
+ACM59(1), 2016, 98–105. 5
+[Kut26] Konstantin Kutzkov.Complementary Branching for #SAT: Bounded-Degree Bounds and Faster #3-SAT.
+35th International Joint Conference on Artificial Intelligence, 2026, 2282–2290. 4
+[Li21] Ray Li.Settling SETH vs. Approximate Sparse Directed Unweighted Diameter (up to (NU)NSETH). 53rd
+ACM Symposium on Theory of Computing, 2021, 1684–1696. 4
+[Liu18] Sixue Liu.Chain, Generalization of Covering Code, and Deterministic Algorithm fork-SAT. 45th In-
+ternational Colloquium on Automata, Languages, and Programming, LIPIcs107, 2018, 88:1–88:13.
+3
+[LMS18] Daniel Lokshtanov, Dániel Marx, and Saket Saurabh.Known Algorithms on Graphs of Bounded Treewidth
+Are Probably Optimal. ACM Transactions on Algorithms14(2), Article 13, 2018, 1–30. Conference version
+in SODA 2011. 5
+[MR17] Pasin Manurangsi and Prasad Raghavendra.A Birthday Repetition Theorem and Complexity of Approxi-
+mating Dense CSPs. 44th International Colloquium on Automata, Languages, and Programming, LIPIcs
+80, 2017, 78:1–78:15. 4
+[Mar10] Dániel Marx.Can You Beat Treewidth?Theory of Computing6, 2010, 85–112. 5
+[NN93] Joseph Naor and Moni Naor.Small-Bias Probability Spaces: Efficient Constructions and Applications.
+SIAM Journal on Computing22(4), 1993, 838–856. 7, 40
+[Ope26] OpenAI,The Unique Games Theorem, OpenAI Math Release preprint OAI:The-Unique-Games-Theorem-
+September-23-2026, 2026. 2
+[PPSZ05] Ramamohan Paturi, Pavel Pudlák, Michael E. Saks, and Francis Zane.An Improved Exponential-Time
+Algorithm fork-SAT. Journal of the ACM52(3), 2005, 337–364. Conference version in FOCS 1998. 3
+[Rag88] Prabhakar Raghavan.Probabilistic Construction of Deterministic Algorithms: Approximating Packing
+Integer Programs. Journal of Computer and System Sciences37(2), 1988, 130–143. 7, 42, 59
+[Rag08] Prasad Raghavendra.Optimal Algorithms and Inapproximability Results for Every CSP?40th ACM
+Symposium on Theory of Computing, 2008, 245–254. 2
+[RV13] Liam Roditty and Virginia Vassilevska Williams.Fast Approximation Algorithms for the Diameter and
+Radius of Sparse Graphs. 45th ACM Symposium on Theory of Computing, 2013, 515–524. 5
+[Sch24] Dominik Scheder.PPSZ is better than you think. TheoretiCS3, Article 5, 2024, 1–37. 3
+[Sch99] Uwe Schöning.A Probabilistic Algorithm fork-SAT and Constraint Satisfaction Problems. 40th IEEE
+Symposium on Foundations of Computer Science, 1999, 410–414. 3
+
+=== PAGE 67 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 67
+[SS09] Alexander D. Scott and Gregory B. Sorkin.Polynomial Constraint Satisfaction Problems, Graph Bisection,
+and the Ising Partition Function. ACM Transactions on Algorithms5(4), 2009, 45:1–45:27. 5
+[SKC94] Bart Selman, Henry A. Kautz, and Bram Cohen.Noise Strategies for Improving Local Search. 12th National
+Conference on Artificial Intelligence, 1994, 337–343. 3
+[SS96] Michael Sipser and Daniel A. Spielman.Expander Codes. IEEE Transactions on Information Theory42(6),
+1996, 1710–1722. 6, 40
+[Tan81] R. Michael Tanner.A Recursive Approach to Low Complexity Codes. IEEE Transactions on Information
+Theory27(5), 1981, 533–547. 6, 40
+[Tov84] Craig A. Tovey.A Simplified NP-Complete Satisfiability Problem. Discrete Applied Mathematics8(1),
+1984, 85–89. 18
+[Val77] Leslie G. Valiant.Graph-Theoretic Arguments in Low-Level Complexity. Mathematical Foundations of
+Computer Science 1977, Lecture Notes in Computer Science53, 1977, 162–176. 6
+[Val79] Leslie G. Valiant.The Complexity of Enumeration and Reliability Problems. SIAM Journal on Computing
+8(3), 1979, 410–421. 4
+[VW19] VirginiaVassilevskaWilliams.On Some Fine-Grained Questions in Algorithms and Complexity.Proceedings
+of the International Congress of Mathematicians (ICM 2018), World Scientific, 2019, 3447–3487. 5
+[VW21] Nikhil Vyas and Ryan Williams.On Super Strong ETH. Journal of Artificial Intelligence Research70,
+2021, 473–495. 4
+[Wah08] Magnus Wahlström.A Tighter Bound for Counting Max-Weight Solutions to 2SAT Instances. 3rd Interna-
+tional Workshop on Parameterized and Exact Computation, Lecture Notes in Computer Science5018,
+2008, 202–213. 4
+[Wil05] Ryan Williams.A New Algorithm for Optimal 2-Constraint Satisfaction and Its Implications. Theoretical
+Computer Science348(2–3), 2005, 357–365. 5
+[Wil13] Ryan Williams.Improving Exhaustive Search Implies Superpolynomial Lower Bounds. SIAM Journal on
+Computing42(3), 2013, 1218–1244. Conference version in STOC 2010. The numbering of Lemma 3.2 and
+Theorem 6.1 follows the author’s full version. 51
+[Wil14] Richard Ryan Williams.The Polynomial Method in Circuit Complexity Applied to Algorithm Design
+(Invited Talk). 34th International Conference on Foundation of Software Technology and Theoretical
+Computer Science, LIPIcs29, 2014, 47–60. 5
+[Wil16] Richard Ryan Williams.Strong ETH Breaks With Merlin and Arthur: Short Non-Interactive Proofs of
+Batch Evaluation. 31st Conference on Computational Complexity, LIPIcs50, 2016, 2:1–2:17. 4
+[WY07] David Woodruff and Sergey Yekhanin.A Geometric Approach to Information-Theoretic Private Information
+Retrieval. SIAM Journal on Computing37(4), 2007, 1046–1056. 6
+[Žák83] Stanislav Žák.A Turing Machine Time Hierarchy. Theoretical Computer Science26(3), 1983, 327–333. 51

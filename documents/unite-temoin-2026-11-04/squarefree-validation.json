@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-11-04T05:40:37.748833+00:00",
+  "source": "SquarefreeReadout.lean",
+  "source_sha256": "6ccf962303fa8b61a2b0756f38eec07b551136572af7d963b9ff166e7f4cf320",
+  "replay_sha256": "cd982853949c64470f32853a0e1c58858b1615936db5270e897f721c24ef01ce",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\unite-temoin-2026-11-04\\SquarefreeReadout.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 14.203,
+  "source_unchanged": true,
+  "no_placeholders_or_added_axioms": true,
+  "all_theorem_axioms_audited": true,
+  "theorems": [
+    "coeff_mul_square_eq_zero",
+    "coeff_sum_square_multiples_eq_zero",
+    "coeff_add_square_multiples",
+    "exponent_ne_zero",
+    "coeff_one_eq_zero"
+  ],
+  "stdout": "'SquarefreeReadout.coeff_mul_square_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquarefreeReadout.coeff_sum_square_multiples_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquarefreeReadout.coeff_add_square_multiples' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquarefreeReadout.exponent_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquarefreeReadout.coeff_one_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Formal squarefree coefficient extraction annihilates polynomial multiples of native square collision relations, for all variable sets and all commutative semirings.",
+  "complete_scalar_a_z_only_chain_proved": false
+}

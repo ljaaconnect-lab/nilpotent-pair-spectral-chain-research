@@ -1,0 +1,77 @@
+{
+  "n": 4,
+  "naive_specializations": {
+    "n": 4,
+    "seed_gates": 476,
+    "inversion_pairs": 36,
+    "gates": 2258865300972646960551251,
+    "recurrence": "G_0=2n^4-n^3+2n^2-n; G_(h+1)=4G_h+7",
+    "scope": "exact count of this unsimplified construction, not a lower bound",
+    "materialized": false
+  },
+  "shared_row_specializations": {
+    "status": "capped",
+    "constraint": "node cap 200000",
+    "allocated_gates": 199977,
+    "nodes": 200000,
+    "stages": [
+      {
+        "row_pair": [
+          0,
+          1
+        ],
+        "allocated_gates": 1797,
+        "nodes": 1820,
+        "specialization_cache_entries": 1831
+      },
+      {
+        "row_pair": [
+          0,
+          2
+        ],
+        "allocated_gates": 7735,
+        "nodes": 7758,
+        "specialization_cache_entries": 13655
+      },
+      {
+        "row_pair": [
+          0,
+          3
+        ],
+        "allocated_gates": 26149,
+        "nodes": 26172,
+        "specialization_cache_entries": 62897
+      },
+      {
+        "row_pair": [
+          1,
+          2
+        ],
+        "allocated_gates": 92464,
+        "nodes": 92487,
+        "specialization_cache_entries": 256892
+      },
+      {
+        "row_pair": [
+          1,
+          3
+        ],
+        "allocated_gates": 182780,
+        "nodes": 182803,
+        "specialization_cache_entries": 800734
+      }
+    ],
+    "elapsed_seconds": 8.7473530999996,
+    "specialization_cache_entries": 880453
+  },
+  "elapsed_seconds": 8.9057252999919,
+  "source_hashes": {
+    "euler_identity.py": "2b346b46e559f6b1d39f422e2bb4878b228bc148552effd04c11dd5dc1be11d9",
+    "validate_euler_identity.py": "5ad3762d3c672ef5815a6a45ccf59944dfacc4f2e288a0c3f26321a5e4e4687d",
+    "euler_compiler.py": "baf3ad1ba13b39e6895f86f1319ee7c928e3ad37283ea48ba133331b91d30320",
+    "evaluate_euler.py": "cfa5e99acef39e607cfcbcd99b480364af3cf34f478986cf68eb684bf99d2153",
+    "candidate.py": "6f1143d634ebd7d98bce9fb5fd1ef7eb29dbb7868cd67ac29761c5d7b020a84c",
+    "n61-protocol.json": "f599b50a2a6e94fe6c2a2b2a5dd45b1b57cad74d4780e0a3f317373da4e16061"
+  },
+  "scope": "Separate diagnostics, no denominator change; cap is a resource constraint of this run"
+}

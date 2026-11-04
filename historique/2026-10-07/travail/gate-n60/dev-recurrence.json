@@ -1,0 +1,2675 @@
+{
+  "protocol": "positive-recurrence-dev-v1",
+  "split": "dev",
+  "score": 1.0,
+  "passed": 48,
+  "total": 48,
+  "evaluator_sha256": "bff57a9e99156a5795ecda3ef346ae9103e127d35055db2a08a02d4edfa90456",
+  "candidate_sha256": "6f1143d634ebd7d98bce9fb5fd1ef7eb29dbb7868cd67ac29761c5d7b020a84c",
+  "artifact_sha256": "2e48dd14e3271d89323e03a1f22db9c0c8e9d9532a18149486fd9f75d7ef1a76",
+  "cases": [
+    {
+      "case": "n2-identity",
+      "n": 2,
+      "K": 3,
+      "reference_terms": 2,
+      "variants": {
+        "matrix_power": {
+          "formal_z_exact": true,
+          "gates": 17,
+          "terms": 2,
+          "seconds": 0.0006930000017746352,
+          "construction": {
+            "dimension": 4,
+            "exponent": 3,
+            "base_support": 5,
+            "final_support": 4,
+            "marker_and_entry_gates": 7,
+            "matrix_product_gates": 10,
+            "matrix_products": 2,
+            "dense_exact_product_upper_bound": 231,
+            "dense_two_log_upper_bound": 231,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 5,
+                "right_support": 5,
+                "output_support": 4,
+                "multiplications": 5,
+                "additions": 1,
+                "gates": 6
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 4,
+                "right_support": 5,
+                "output_support": 4,
+                "multiplications": 4,
+                "additions": 0,
+                "gates": 4
+              }
+            ]
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 17,
+            "max_node_terms": 2,
+            "max_live_terms": 6,
+            "nodes": 20
+          }
+        },
+        "row_chain": {
+          "formal_z_exact": true,
+          "gates": 12,
+          "terms": 2,
+          "seconds": 0.00045340000360738486,
+          "construction": {
+            "dimension": 4,
+            "layers": [
+              {
+                "row": 0,
+                "states": 2,
+                "multiplications": 2,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 1,
+                "multiplications": 2,
+                "additions": 1
+              }
+            ],
+            "peak_active_states": 2,
+            "marker_and_entry_gates": 7,
+            "transition_gates": 5,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 12,
+            "max_node_terms": 2,
+            "max_live_terms": 6,
+            "nodes": 15
+          }
+        },
+        "subset_dp": {
+          "formal_z_exact": true,
+          "gates": 12,
+          "terms": 2,
+          "seconds": 0.0003862000012304634,
+          "construction": {
+            "states": 4,
+            "transitions": 4,
+            "dp_gates": 5,
+            "marker_and_entry_gates": 7,
+            "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 12,
+            "max_node_terms": 2,
+            "max_live_terms": 6,
+            "nodes": 15
+          }
+        },
+        "tensor_factorization": {
+          "formal_z_exact": true,
+          "terms": 2,
+          "seconds": 0.00013780000153928995,
+          "construction": {
+            "ambient_tensor_dimension": 4,
+            "layers": [
+              {
+                "row": 0,
+                "tensor_coordinates": 2,
+                "formal_z_terms": 2
+              },
+              {
+                "row": 1,
+                "tensor_coordinates": 1,
+                "formal_z_terms": 2
+              }
+            ],
+            "scalar_gate_bound_if_compiled_by_subset_dp": 12,
+            "operator_factors": 4,
+            "polynomial_compression_established": false
+          }
+        }
+      }
+    },
+    {
+      "case": "n2-cyclic",
+      "n": 2,
+      "K": 3,
+      "reference_terms": 2,
+      "variants": {
+        "matrix_power": {
+          "formal_z_exact": true,
+          "gates": 17,
+          "terms": 2,
+          "seconds": 0.002951599999505561,
+          "construction": {
+            "dimension": 4,
+            "exponent": 3,
+            "base_support": 5,
+            "final_support": 4,
+            "marker_and_entry_gates": 7,
+            "matrix_product_gates": 10,
+            "matrix_products": 2,
+            "dense_exact_product_upper_bound": 231,
+            "dense_two_log_upper_bound": 231,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 5,
+                "right_support": 5,
+                "output_support": 4,
+                "multiplications": 5,
+                "additions": 1,
+                "gates": 6
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 4,
+                "right_support": 5,
+                "output_support": 4,
+                "multiplications": 4,
+                "additions": 0,
+                "gates": 4
+              }
+            ]
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 17,
+            "max_node_terms": 2,
+            "max_live_terms": 6,
+            "nodes": 20
+          }
+        },
+        "row_chain": {
+          "formal_z_exact": true,
+          "gates": 12,
+          "terms": 2,
+          "seconds": 0.0005697000015061349,
+          "construction": {
+            "dimension": 4,
+            "layers": [
+              {
+                "row": 0,
+                "states": 2,
+                "multiplications": 2,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 1,
+                "multiplications": 2,
+                "additions": 1
+              }
+            ],
+            "peak_active_states": 2,
+            "marker_and_entry_gates": 7,
+            "transition_gates": 5,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 12,
+            "max_node_terms": 2,
+            "max_live_terms": 6,
+            "nodes": 15
+          }
+        },
+        "subset_dp": {
+          "formal_z_exact": true,
+          "gates": 12,
+          "terms": 2,
+          "seconds": 0.0004825999931199476,
+          "construction": {
+            "states": 4,
+            "transitions": 4,
+            "dp_gates": 5,
+            "marker_and_entry_gates": 7,
+            "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 12,
+            "max_node_terms": 2,
+            "max_live_terms": 6,
+            "nodes": 15
+          }
+        },
+        "tensor_factorization": {
+          "formal_z_exact": true,
+          "terms": 2,
+          "seconds": 0.0001725999973132275,
+          "construction": {
+            "ambient_tensor_dimension": 4,
+            "layers": [
+              {
+                "row": 0,
+                "tensor_coordinates": 2,
+                "formal_z_terms": 2
+              },
+              {
+                "row": 1,
+                "tensor_coordinates": 1,
+                "formal_z_terms": 2
+              }
+            ],
+            "scalar_gate_bound_if_compiled_by_subset_dp": 12,
+            "operator_factors": 4,
+            "polynomial_compression_established": false
+          }
+        }
+      }
+    },
+    {
+      "case": "n2-vandermonde",
+      "n": 2,
+      "K": 3,
+      "reference_terms": 2,
+      "variants": {
+        "matrix_power": {
+          "formal_z_exact": true,
+          "gates": 17,
+          "terms": 2,
+          "seconds": 0.000534699996933341,
+          "construction": {
+            "dimension": 4,
+            "exponent": 3,
+            "base_support": 5,
+            "final_support": 4,
+            "marker_and_entry_gates": 7,
+            "matrix_product_gates": 10,
+            "matrix_products": 2,
+            "dense_exact_product_upper_bound": 231,
+            "dense_two_log_upper_bound": 231,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 5,
+                "right_support": 5,
+                "output_support": 4,
+                "multiplications": 5,
+                "additions": 1,
+                "gates": 6
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 4,
+                "right_support": 5,
+                "output_support": 4,
+                "multiplications": 4,
+                "additions": 0,
+                "gates": 4
+              }
+            ]
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 17,
+            "max_node_terms": 2,
+            "max_live_terms": 6,
+            "nodes": 21
+          }
+        },
+        "row_chain": {
+          "formal_z_exact": true,
+          "gates": 12,
+          "terms": 2,
+          "seconds": 0.00038830000266898423,
+          "construction": {
+            "dimension": 4,
+            "layers": [
+              {
+                "row": 0,
+                "states": 2,
+                "multiplications": 2,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 1,
+                "multiplications": 2,
+                "additions": 1
+              }
+            ],
+            "peak_active_states": 2,
+            "marker_and_entry_gates": 7,
+            "transition_gates": 5,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 12,
+            "max_node_terms": 2,
+            "max_live_terms": 5,
+            "nodes": 16
+          }
+        },
+        "subset_dp": {
+          "formal_z_exact": true,
+          "gates": 12,
+          "terms": 2,
+          "seconds": 0.00036049999471288174,
+          "construction": {
+            "states": 4,
+            "transitions": 4,
+            "dp_gates": 5,
+            "marker_and_entry_gates": 7,
+            "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 12,
+            "max_node_terms": 2,
+            "max_live_terms": 5,
+            "nodes": 16
+          }
+        },
+        "tensor_factorization": {
+          "formal_z_exact": true,
+          "terms": 2,
+          "seconds": 0.00010450000263517722,
+          "construction": {
+            "ambient_tensor_dimension": 4,
+            "layers": [
+              {
+                "row": 0,
+                "tensor_coordinates": 2,
+                "formal_z_terms": 2
+              },
+              {
+                "row": 1,
+                "tensor_coordinates": 1,
+                "formal_z_terms": 2
+              }
+            ],
+            "scalar_gate_bound_if_compiled_by_subset_dp": 12,
+            "operator_factors": 4,
+            "polynomial_compression_established": false
+          }
+        }
+      }
+    },
+    {
+      "case": "n3-identity",
+      "n": 3,
+      "K": 26,
+      "reference_terms": 6,
+      "variants": {
+        "matrix_power": {
+          "formal_z_exact": true,
+          "gates": 83,
+          "terms": 6,
+          "seconds": 0.0022231000039028004,
+          "construction": {
+            "dimension": 8,
+            "exponent": 26,
+            "base_support": 13,
+            "final_support": 8,
+            "marker_and_entry_gates": 17,
+            "matrix_product_gates": 66,
+            "matrix_products": 6,
+            "dense_exact_product_upper_bound": 5777,
+            "dense_two_log_upper_bound": 7697,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 13,
+                "right_support": 13,
+                "output_support": 10,
+                "multiplications": 16,
+                "additions": 6,
+                "gates": 22
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 10,
+                "right_support": 13,
+                "output_support": 8,
+                "multiplications": 10,
+                "additions": 2,
+                "gates": 12
+              },
+              {
+                "operation": "square",
+                "exponent": 6,
+                "left_support": 8,
+                "right_support": 8,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              },
+              {
+                "operation": "square",
+                "exponent": 12,
+                "left_support": 8,
+                "right_support": 8,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 13,
+                "left_support": 8,
+                "right_support": 13,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              },
+              {
+                "operation": "square",
+                "exponent": 26,
+                "left_support": 8,
+                "right_support": 8,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              }
+            ]
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 83,
+            "max_node_terms": 6,
+            "max_live_terms": 20,
+            "nodes": 86
+          }
+        },
+        "row_chain": {
+          "formal_z_exact": true,
+          "gates": 34,
+          "terms": 6,
+          "seconds": 0.0008908000017981976,
+          "construction": {
+            "dimension": 8,
+            "layers": [
+              {
+                "row": 0,
+                "states": 3,
+                "multiplications": 3,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 3,
+                "multiplications": 6,
+                "additions": 3
+              },
+              {
+                "row": 2,
+                "states": 1,
+                "multiplications": 3,
+                "additions": 2
+              }
+            ],
+            "peak_active_states": 3,
+            "marker_and_entry_gates": 17,
+            "transition_gates": 17,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 34,
+            "max_node_terms": 6,
+            "max_live_terms": 11,
+            "nodes": 37
+          }
+        },
+        "subset_dp": {
+          "formal_z_exact": true,
+          "gates": 34,
+          "terms": 6,
+          "seconds": 0.0009091999963857234,
+          "construction": {
+            "states": 8,
+            "transitions": 12,
+            "dp_gates": 17,
+            "marker_and_entry_gates": 17,
+            "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 34,
+            "max_node_terms": 6,
+            "max_live_terms": 12,
+            "nodes": 37
+          }
+        },
+        "tensor_factorization": {
+          "formal_z_exact": true,
+          "terms": 6,
+          "seconds": 0.0002854000049410388,
+          "construction": {
+            "ambient_tensor_dimension": 8,
+            "layers": [
+              {
+                "row": 0,
+                "tensor_coordinates": 3,
+                "formal_z_terms": 3
+              },
+              {
+                "row": 1,
+                "tensor_coordinates": 3,
+                "formal_z_terms": 6
+              },
+              {
+                "row": 2,
+                "tensor_coordinates": 1,
+                "formal_z_terms": 6
+              }
+            ],
+            "scalar_gate_bound_if_compiled_by_subset_dp": 34,
+            "operator_factors": 9,
+            "polynomial_compression_established": false
+          }
+        }
+      }
+    },
+    {
+      "case": "n3-cyclic",
+      "n": 3,
+      "K": 26,
+      "reference_terms": 6,
+      "variants": {
+        "matrix_power": {
+          "formal_z_exact": true,
+          "gates": 83,
+          "terms": 6,
+          "seconds": 0.00274100000387989,
+          "construction": {
+            "dimension": 8,
+            "exponent": 26,
+            "base_support": 13,
+            "final_support": 8,
+            "marker_and_entry_gates": 17,
+            "matrix_product_gates": 66,
+            "matrix_products": 6,
+            "dense_exact_product_upper_bound": 5777,
+            "dense_two_log_upper_bound": 7697,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 13,
+                "right_support": 13,
+                "output_support": 10,
+                "multiplications": 16,
+                "additions": 6,
+                "gates": 22
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 10,
+                "right_support": 13,
+                "output_support": 8,
+                "multiplications": 10,
+                "additions": 2,
+                "gates": 12
+              },
+              {
+                "operation": "square",
+                "exponent": 6,
+                "left_support": 8,
+                "right_support": 8,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              },
+              {
+                "operation": "square",
+                "exponent": 12,
+                "left_support": 8,
+                "right_support": 8,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 13,
+                "left_support": 8,
+                "right_support": 13,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              },
+              {
+                "operation": "square",
+                "exponent": 26,
+                "left_support": 8,
+                "right_support": 8,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              }
+            ]
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 83,
+            "max_node_terms": 6,
+            "max_live_terms": 20,
+            "nodes": 86
+          }
+        },
+        "row_chain": {
+          "formal_z_exact": true,
+          "gates": 34,
+          "terms": 6,
+          "seconds": 0.001141499997174833,
+          "construction": {
+            "dimension": 8,
+            "layers": [
+              {
+                "row": 0,
+                "states": 3,
+                "multiplications": 3,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 3,
+                "multiplications": 6,
+                "additions": 3
+              },
+              {
+                "row": 2,
+                "states": 1,
+                "multiplications": 3,
+                "additions": 2
+              }
+            ],
+            "peak_active_states": 3,
+            "marker_and_entry_gates": 17,
+            "transition_gates": 17,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 34,
+            "max_node_terms": 6,
+            "max_live_terms": 11,
+            "nodes": 37
+          }
+        },
+        "subset_dp": {
+          "formal_z_exact": true,
+          "gates": 34,
+          "terms": 6,
+          "seconds": 0.0009165000010398217,
+          "construction": {
+            "states": 8,
+            "transitions": 12,
+            "dp_gates": 17,
+            "marker_and_entry_gates": 17,
+            "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 34,
+            "max_node_terms": 6,
+            "max_live_terms": 12,
+            "nodes": 37
+          }
+        },
+        "tensor_factorization": {
+          "formal_z_exact": true,
+          "terms": 6,
+          "seconds": 0.00042410000605741516,
+          "construction": {
+            "ambient_tensor_dimension": 8,
+            "layers": [
+              {
+                "row": 0,
+                "tensor_coordinates": 3,
+                "formal_z_terms": 3
+              },
+              {
+                "row": 1,
+                "tensor_coordinates": 3,
+                "formal_z_terms": 6
+              },
+              {
+                "row": 2,
+                "tensor_coordinates": 1,
+                "formal_z_terms": 6
+              }
+            ],
+            "scalar_gate_bound_if_compiled_by_subset_dp": 34,
+            "operator_factors": 9,
+            "polynomial_compression_established": false
+          }
+        }
+      }
+    },
+    {
+      "case": "n3-vandermonde",
+      "n": 3,
+      "K": 26,
+      "reference_terms": 6,
+      "variants": {
+        "matrix_power": {
+          "formal_z_exact": true,
+          "gates": 83,
+          "terms": 6,
+          "seconds": 0.004121199999644887,
+          "construction": {
+            "dimension": 8,
+            "exponent": 26,
+            "base_support": 13,
+            "final_support": 8,
+            "marker_and_entry_gates": 17,
+            "matrix_product_gates": 66,
+            "matrix_products": 6,
+            "dense_exact_product_upper_bound": 5777,
+            "dense_two_log_upper_bound": 7697,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 13,
+                "right_support": 13,
+                "output_support": 10,
+                "multiplications": 16,
+                "additions": 6,
+                "gates": 22
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 10,
+                "right_support": 13,
+                "output_support": 8,
+                "multiplications": 10,
+                "additions": 2,
+                "gates": 12
+              },
+              {
+                "operation": "square",
+                "exponent": 6,
+                "left_support": 8,
+                "right_support": 8,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              },
+              {
+                "operation": "square",
+                "exponent": 12,
+                "left_support": 8,
+                "right_support": 8,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 13,
+                "left_support": 8,
+                "right_support": 13,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              },
+              {
+                "operation": "square",
+                "exponent": 26,
+                "left_support": 8,
+                "right_support": 8,
+                "output_support": 8,
+                "multiplications": 8,
+                "additions": 0,
+                "gates": 8
+              }
+            ]
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 83,
+            "max_node_terms": 6,
+            "max_live_terms": 20,
+            "nodes": 90
+          }
+        },
+        "row_chain": {
+          "formal_z_exact": true,
+          "gates": 34,
+          "terms": 6,
+          "seconds": 0.0010546000048634596,
+          "construction": {
+            "dimension": 8,
+            "layers": [
+              {
+                "row": 0,
+                "states": 3,
+                "multiplications": 3,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 3,
+                "multiplications": 6,
+                "additions": 3
+              },
+              {
+                "row": 2,
+                "states": 1,
+                "multiplications": 3,
+                "additions": 2
+              }
+            ],
+            "peak_active_states": 3,
+            "marker_and_entry_gates": 17,
+            "transition_gates": 17,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 34,
+            "max_node_terms": 6,
+            "max_live_terms": 11,
+            "nodes": 41
+          }
+        },
+        "subset_dp": {
+          "formal_z_exact": true,
+          "gates": 34,
+          "terms": 6,
+          "seconds": 0.001076100001228042,
+          "construction": {
+            "states": 8,
+            "transitions": 12,
+            "dp_gates": 17,
+            "marker_and_entry_gates": 17,
+            "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 34,
+            "max_node_terms": 6,
+            "max_live_terms": 12,
+            "nodes": 41
+          }
+        },
+        "tensor_factorization": {
+          "formal_z_exact": true,
+          "terms": 6,
+          "seconds": 0.0005347999976947904,
+          "construction": {
+            "ambient_tensor_dimension": 8,
+            "layers": [
+              {
+                "row": 0,
+                "tensor_coordinates": 3,
+                "formal_z_terms": 3
+              },
+              {
+                "row": 1,
+                "tensor_coordinates": 3,
+                "formal_z_terms": 6
+              },
+              {
+                "row": 2,
+                "tensor_coordinates": 1,
+                "formal_z_terms": 6
+              }
+            ],
+            "scalar_gate_bound_if_compiled_by_subset_dp": 34,
+            "operator_factors": 9,
+            "polynomial_compression_established": false
+          }
+        }
+      }
+    },
+    {
+      "case": "n4-identity",
+      "n": 4,
+      "K": 255,
+      "reference_terms": 24,
+      "variants": {
+        "matrix_power": {
+          "formal_z_exact": true,
+          "gates": 357,
+          "terms": 24,
+          "seconds": 0.01563000000169268,
+          "construction": {
+            "dimension": 16,
+            "exponent": 255,
+            "base_support": 33,
+            "final_support": 16,
+            "marker_and_entry_gates": 31,
+            "matrix_product_gates": 326,
+            "matrix_products": 14,
+            "dense_exact_product_upper_bound": 111135,
+            "dense_two_log_upper_bound": 111135,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 33,
+                "right_support": 33,
+                "output_support": 29,
+                "multiplications": 53,
+                "additions": 24,
+                "gates": 77
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 29,
+                "right_support": 33,
+                "output_support": 19,
+                "multiplications": 35,
+                "additions": 16,
+                "gates": 51
+              },
+              {
+                "operation": "square",
+                "exponent": 6,
+                "left_support": 19,
+                "right_support": 19,
+                "output_support": 16,
+                "multiplications": 19,
+                "additions": 3,
+                "gates": 22
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 7,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 14,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 15,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 30,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 31,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 62,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 63,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 126,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 127,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 254,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 255,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              }
+            ]
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 357,
+            "max_node_terms": 24,
+            "max_live_terms": 71,
+            "nodes": 360
+          }
+        },
+        "row_chain": {
+          "formal_z_exact": true,
+          "gates": 80,
+          "terms": 24,
+          "seconds": 0.002351399998588022,
+          "construction": {
+            "dimension": 16,
+            "layers": [
+              {
+                "row": 0,
+                "states": 4,
+                "multiplications": 4,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 6,
+                "multiplications": 12,
+                "additions": 6
+              },
+              {
+                "row": 2,
+                "states": 4,
+                "multiplications": 12,
+                "additions": 8
+              },
+              {
+                "row": 3,
+                "states": 1,
+                "multiplications": 4,
+                "additions": 3
+              }
+            ],
+            "peak_active_states": 6,
+            "marker_and_entry_gates": 31,
+            "transition_gates": 49,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 80,
+            "max_node_terms": 24,
+            "max_live_terms": 29,
+            "nodes": 83
+          }
+        },
+        "subset_dp": {
+          "formal_z_exact": true,
+          "gates": 80,
+          "terms": 24,
+          "seconds": 0.0023199999995995313,
+          "construction": {
+            "states": 16,
+            "transitions": 32,
+            "dp_gates": 49,
+            "marker_and_entry_gates": 31,
+            "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 80,
+            "max_node_terms": 24,
+            "max_live_terms": 32,
+            "nodes": 83
+          }
+        },
+        "tensor_factorization": {
+          "formal_z_exact": true,
+          "terms": 24,
+          "seconds": 0.0010342000023229048,
+          "construction": {
+            "ambient_tensor_dimension": 16,
+            "layers": [
+              {
+                "row": 0,
+                "tensor_coordinates": 4,
+                "formal_z_terms": 4
+              },
+              {
+                "row": 1,
+                "tensor_coordinates": 6,
+                "formal_z_terms": 12
+              },
+              {
+                "row": 2,
+                "tensor_coordinates": 4,
+                "formal_z_terms": 24
+              },
+              {
+                "row": 3,
+                "tensor_coordinates": 1,
+                "formal_z_terms": 24
+              }
+            ],
+            "scalar_gate_bound_if_compiled_by_subset_dp": 80,
+            "operator_factors": 16,
+            "polynomial_compression_established": false
+          }
+        }
+      }
+    },
+    {
+      "case": "n4-cyclic",
+      "n": 4,
+      "K": 255,
+      "reference_terms": 24,
+      "variants": {
+        "matrix_power": {
+          "formal_z_exact": true,
+          "gates": 357,
+          "terms": 24,
+          "seconds": 0.015895500000624452,
+          "construction": {
+            "dimension": 16,
+            "exponent": 255,
+            "base_support": 33,
+            "final_support": 16,
+            "marker_and_entry_gates": 31,
+            "matrix_product_gates": 326,
+            "matrix_products": 14,
+            "dense_exact_product_upper_bound": 111135,
+            "dense_two_log_upper_bound": 111135,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 33,
+                "right_support": 33,
+                "output_support": 29,
+                "multiplications": 53,
+                "additions": 24,
+                "gates": 77
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 29,
+                "right_support": 33,
+                "output_support": 19,
+                "multiplications": 35,
+                "additions": 16,
+                "gates": 51
+              },
+              {
+                "operation": "square",
+                "exponent": 6,
+                "left_support": 19,
+                "right_support": 19,
+                "output_support": 16,
+                "multiplications": 19,
+                "additions": 3,
+                "gates": 22
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 7,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 14,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 15,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 30,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 31,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 62,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 63,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 126,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 127,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 254,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 255,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              }
+            ]
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 357,
+            "max_node_terms": 24,
+            "max_live_terms": 71,
+            "nodes": 360
+          }
+        },
+        "row_chain": {
+          "formal_z_exact": true,
+          "gates": 80,
+          "terms": 24,
+          "seconds": 0.0022933000000193715,
+          "construction": {
+            "dimension": 16,
+            "layers": [
+              {
+                "row": 0,
+                "states": 4,
+                "multiplications": 4,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 6,
+                "multiplications": 12,
+                "additions": 6
+              },
+              {
+                "row": 2,
+                "states": 4,
+                "multiplications": 12,
+                "additions": 8
+              },
+              {
+                "row": 3,
+                "states": 1,
+                "multiplications": 4,
+                "additions": 3
+              }
+            ],
+            "peak_active_states": 6,
+            "marker_and_entry_gates": 31,
+            "transition_gates": 49,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 80,
+            "max_node_terms": 24,
+            "max_live_terms": 29,
+            "nodes": 83
+          }
+        },
+        "subset_dp": {
+          "formal_z_exact": true,
+          "gates": 80,
+          "terms": 24,
+          "seconds": 0.003766000001633074,
+          "construction": {
+            "states": 16,
+            "transitions": 32,
+            "dp_gates": 49,
+            "marker_and_entry_gates": 31,
+            "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 80,
+            "max_node_terms": 24,
+            "max_live_terms": 32,
+            "nodes": 83
+          }
+        },
+        "tensor_factorization": {
+          "formal_z_exact": true,
+          "terms": 24,
+          "seconds": 0.0009490000011282973,
+          "construction": {
+            "ambient_tensor_dimension": 16,
+            "layers": [
+              {
+                "row": 0,
+                "tensor_coordinates": 4,
+                "formal_z_terms": 4
+              },
+              {
+                "row": 1,
+                "tensor_coordinates": 6,
+                "formal_z_terms": 12
+              },
+              {
+                "row": 2,
+                "tensor_coordinates": 4,
+                "formal_z_terms": 24
+              },
+              {
+                "row": 3,
+                "tensor_coordinates": 1,
+                "formal_z_terms": 24
+              }
+            ],
+            "scalar_gate_bound_if_compiled_by_subset_dp": 80,
+            "operator_factors": 16,
+            "polynomial_compression_established": false
+          }
+        }
+      }
+    },
+    {
+      "case": "n4-vandermonde",
+      "n": 4,
+      "K": 255,
+      "reference_terms": 24,
+      "variants": {
+        "matrix_power": {
+          "formal_z_exact": true,
+          "gates": 357,
+          "terms": 24,
+          "seconds": 0.015182700000877958,
+          "construction": {
+            "dimension": 16,
+            "exponent": 255,
+            "base_support": 33,
+            "final_support": 16,
+            "marker_and_entry_gates": 31,
+            "matrix_product_gates": 326,
+            "matrix_products": 14,
+            "dense_exact_product_upper_bound": 111135,
+            "dense_two_log_upper_bound": 111135,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 33,
+                "right_support": 33,
+                "output_support": 29,
+                "multiplications": 53,
+                "additions": 24,
+                "gates": 77
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 29,
+                "right_support": 33,
+                "output_support": 19,
+                "multiplications": 35,
+                "additions": 16,
+                "gates": 51
+              },
+              {
+                "operation": "square",
+                "exponent": 6,
+                "left_support": 19,
+                "right_support": 19,
+                "output_support": 16,
+                "multiplications": 19,
+                "additions": 3,
+                "gates": 22
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 7,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 14,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 15,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 30,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 31,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 62,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 63,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 126,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 127,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "square",
+                "exponent": 254,
+                "left_support": 16,
+                "right_support": 16,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 255,
+                "left_support": 16,
+                "right_support": 33,
+                "output_support": 16,
+                "multiplications": 16,
+                "additions": 0,
+                "gates": 16
+              }
+            ]
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 357,
+            "max_node_terms": 24,
+            "max_live_terms": 71,
+            "nodes": 368
+          }
+        },
+        "row_chain": {
+          "formal_z_exact": true,
+          "gates": 80,
+          "terms": 24,
+          "seconds": 0.0030963000026531518,
+          "construction": {
+            "dimension": 16,
+            "layers": [
+              {
+                "row": 0,
+                "states": 4,
+                "multiplications": 4,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 6,
+                "multiplications": 12,
+                "additions": 6
+              },
+              {
+                "row": 2,
+                "states": 4,
+                "multiplications": 12,
+                "additions": 8
+              },
+              {
+                "row": 3,
+                "states": 1,
+                "multiplications": 4,
+                "additions": 3
+              }
+            ],
+            "peak_active_states": 6,
+            "marker_and_entry_gates": 31,
+            "transition_gates": 49,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 80,
+            "max_node_terms": 24,
+            "max_live_terms": 29,
+            "nodes": 91
+          }
+        },
+        "subset_dp": {
+          "formal_z_exact": true,
+          "gates": 80,
+          "terms": 24,
+          "seconds": 0.0028363000019453466,
+          "construction": {
+            "states": 16,
+            "transitions": 32,
+            "dp_gates": 49,
+            "marker_and_entry_gates": 31,
+            "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 80,
+            "max_node_terms": 24,
+            "max_live_terms": 32,
+            "nodes": 91
+          }
+        },
+        "tensor_factorization": {
+          "formal_z_exact": true,
+          "terms": 24,
+          "seconds": 0.0009987000012188219,
+          "construction": {
+            "ambient_tensor_dimension": 16,
+            "layers": [
+              {
+                "row": 0,
+                "tensor_coordinates": 4,
+                "formal_z_terms": 4
+              },
+              {
+                "row": 1,
+                "tensor_coordinates": 6,
+                "formal_z_terms": 12
+              },
+              {
+                "row": 2,
+                "tensor_coordinates": 4,
+                "formal_z_terms": 24
+              },
+              {
+                "row": 3,
+                "tensor_coordinates": 1,
+                "formal_z_terms": 24
+              }
+            ],
+            "scalar_gate_bound_if_compiled_by_subset_dp": 80,
+            "operator_factors": 16,
+            "polynomial_compression_established": false
+          }
+        }
+      }
+    },
+    {
+      "case": "n5-identity",
+      "n": 5,
+      "K": 3124,
+      "reference_terms": 120,
+      "variants": {
+        "matrix_power": {
+          "formal_z_exact": true,
+          "gates": 975,
+          "terms": 120,
+          "seconds": 0.06515349999972386,
+          "construction": {
+            "dimension": 32,
+            "exponent": 3124,
+            "base_support": 81,
+            "final_support": 32,
+            "marker_and_entry_gates": 49,
+            "matrix_product_gates": 926,
+            "matrix_products": 15,
+            "dense_exact_product_upper_bound": 967729,
+            "dense_two_log_upper_bound": 1419313,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 81,
+                "right_support": 81,
+                "output_support": 86,
+                "multiplications": 166,
+                "additions": 80,
+                "gates": 246
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 86,
+                "right_support": 81,
+                "output_support": 56,
+                "multiplications": 136,
+                "additions": 80,
+                "gates": 216
+              },
+              {
+                "operation": "square",
+                "exponent": 6,
+                "left_support": 56,
+                "right_support": 56,
+                "output_support": 32,
+                "multiplications": 56,
+                "additions": 24,
+                "gates": 80
+              },
+              {
+                "operation": "square",
+                "exponent": 12,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 24,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 48,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 96,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 97,
+                "left_support": 32,
+                "right_support": 81,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 194,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 195,
+                "left_support": 32,
+                "right_support": 81,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 390,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 780,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 781,
+                "left_support": 32,
+                "right_support": 81,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 1562,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 3124,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              }
+            ]
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 975,
+            "max_node_terms": 120,
+            "max_live_terms": 327,
+            "nodes": 978
+          }
+        },
+        "row_chain": {
+          "formal_z_exact": true,
+          "gates": 178,
+          "terms": 120,
+          "seconds": 0.00709100000676699,
+          "construction": {
+            "dimension": 32,
+            "layers": [
+              {
+                "row": 0,
+                "states": 5,
+                "multiplications": 5,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 10,
+                "multiplications": 20,
+                "additions": 10
+              },
+              {
+                "row": 2,
+                "states": 10,
+                "multiplications": 30,
+                "additions": 20
+              },
+              {
+                "row": 3,
+                "states": 5,
+                "multiplications": 20,
+                "additions": 15
+              },
+              {
+                "row": 4,
+                "states": 1,
+                "multiplications": 5,
+                "additions": 4
+              }
+            ],
+            "peak_active_states": 10,
+            "marker_and_entry_gates": 49,
+            "transition_gates": 129,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 178,
+            "max_node_terms": 120,
+            "max_live_terms": 126,
+            "nodes": 181
+          }
+        },
+        "subset_dp": {
+          "formal_z_exact": true,
+          "gates": 178,
+          "terms": 120,
+          "seconds": 0.008702200000698213,
+          "construction": {
+            "states": 32,
+            "transitions": 80,
+            "dp_gates": 129,
+            "marker_and_entry_gates": 49,
+            "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 178,
+            "max_node_terms": 120,
+            "max_live_terms": 129,
+            "nodes": 181
+          }
+        },
+        "tensor_factorization": {
+          "formal_z_exact": true,
+          "terms": 120,
+          "seconds": 0.0034943999999086373,
+          "construction": {
+            "ambient_tensor_dimension": 32,
+            "layers": [
+              {
+                "row": 0,
+                "tensor_coordinates": 5,
+                "formal_z_terms": 5
+              },
+              {
+                "row": 1,
+                "tensor_coordinates": 10,
+                "formal_z_terms": 20
+              },
+              {
+                "row": 2,
+                "tensor_coordinates": 10,
+                "formal_z_terms": 60
+              },
+              {
+                "row": 3,
+                "tensor_coordinates": 5,
+                "formal_z_terms": 120
+              },
+              {
+                "row": 4,
+                "tensor_coordinates": 1,
+                "formal_z_terms": 120
+              }
+            ],
+            "scalar_gate_bound_if_compiled_by_subset_dp": 178,
+            "operator_factors": 25,
+            "polynomial_compression_established": false
+          }
+        }
+      }
+    },
+    {
+      "case": "n5-cyclic",
+      "n": 5,
+      "K": 3124,
+      "reference_terms": 120,
+      "variants": {
+        "matrix_power": {
+          "formal_z_exact": true,
+          "gates": 975,
+          "terms": 120,
+          "seconds": 0.06733440000243718,
+          "construction": {
+            "dimension": 32,
+            "exponent": 3124,
+            "base_support": 81,
+            "final_support": 32,
+            "marker_and_entry_gates": 49,
+            "matrix_product_gates": 926,
+            "matrix_products": 15,
+            "dense_exact_product_upper_bound": 967729,
+            "dense_two_log_upper_bound": 1419313,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 81,
+                "right_support": 81,
+                "output_support": 86,
+                "multiplications": 166,
+                "additions": 80,
+                "gates": 246
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 86,
+                "right_support": 81,
+                "output_support": 56,
+                "multiplications": 136,
+                "additions": 80,
+                "gates": 216
+              },
+              {
+                "operation": "square",
+                "exponent": 6,
+                "left_support": 56,
+                "right_support": 56,
+                "output_support": 32,
+                "multiplications": 56,
+                "additions": 24,
+                "gates": 80
+              },
+              {
+                "operation": "square",
+                "exponent": 12,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 24,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 48,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 96,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 97,
+                "left_support": 32,
+                "right_support": 81,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 194,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 195,
+                "left_support": 32,
+                "right_support": 81,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 390,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 780,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 781,
+                "left_support": 32,
+                "right_support": 81,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 1562,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 3124,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              }
+            ]
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 975,
+            "max_node_terms": 120,
+            "max_live_terms": 327,
+            "nodes": 978
+          }
+        },
+        "row_chain": {
+          "formal_z_exact": true,
+          "gates": 178,
+          "terms": 120,
+          "seconds": 0.008906700000807177,
+          "construction": {
+            "dimension": 32,
+            "layers": [
+              {
+                "row": 0,
+                "states": 5,
+                "multiplications": 5,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 10,
+                "multiplications": 20,
+                "additions": 10
+              },
+              {
+                "row": 2,
+                "states": 10,
+                "multiplications": 30,
+                "additions": 20
+              },
+              {
+                "row": 3,
+                "states": 5,
+                "multiplications": 20,
+                "additions": 15
+              },
+              {
+                "row": 4,
+                "states": 1,
+                "multiplications": 5,
+                "additions": 4
+              }
+            ],
+            "peak_active_states": 10,
+            "marker_and_entry_gates": 49,
+            "transition_gates": 129,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 178,
+            "max_node_terms": 120,
+            "max_live_terms": 126,
+            "nodes": 181
+          }
+        },
+        "subset_dp": {
+          "formal_z_exact": true,
+          "gates": 178,
+          "terms": 120,
+          "seconds": 0.006986299995332956,
+          "construction": {
+            "states": 32,
+            "transitions": 80,
+            "dp_gates": 129,
+            "marker_and_entry_gates": 49,
+            "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 178,
+            "max_node_terms": 120,
+            "max_live_terms": 129,
+            "nodes": 181
+          }
+        },
+        "tensor_factorization": {
+          "formal_z_exact": true,
+          "terms": 120,
+          "seconds": 0.005809800000861287,
+          "construction": {
+            "ambient_tensor_dimension": 32,
+            "layers": [
+              {
+                "row": 0,
+                "tensor_coordinates": 5,
+                "formal_z_terms": 5
+              },
+              {
+                "row": 1,
+                "tensor_coordinates": 10,
+                "formal_z_terms": 20
+              },
+              {
+                "row": 2,
+                "tensor_coordinates": 10,
+                "formal_z_terms": 60
+              },
+              {
+                "row": 3,
+                "tensor_coordinates": 5,
+                "formal_z_terms": 120
+              },
+              {
+                "row": 4,
+                "tensor_coordinates": 1,
+                "formal_z_terms": 120
+              }
+            ],
+            "scalar_gate_bound_if_compiled_by_subset_dp": 178,
+            "operator_factors": 25,
+            "polynomial_compression_established": false
+          }
+        }
+      }
+    },
+    {
+      "case": "n5-vandermonde",
+      "n": 5,
+      "K": 3124,
+      "reference_terms": 120,
+      "variants": {
+        "matrix_power": {
+          "formal_z_exact": true,
+          "gates": 975,
+          "terms": 120,
+          "seconds": 0.06943090000277152,
+          "construction": {
+            "dimension": 32,
+            "exponent": 3124,
+            "base_support": 81,
+            "final_support": 32,
+            "marker_and_entry_gates": 49,
+            "matrix_product_gates": 926,
+            "matrix_products": 15,
+            "dense_exact_product_upper_bound": 967729,
+            "dense_two_log_upper_bound": 1419313,
+            "products": [
+              {
+                "operation": "square",
+                "exponent": 2,
+                "left_support": 81,
+                "right_support": 81,
+                "output_support": 86,
+                "multiplications": 166,
+                "additions": 80,
+                "gates": 246
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 3,
+                "left_support": 86,
+                "right_support": 81,
+                "output_support": 56,
+                "multiplications": 136,
+                "additions": 80,
+                "gates": 216
+              },
+              {
+                "operation": "square",
+                "exponent": 6,
+                "left_support": 56,
+                "right_support": 56,
+                "output_support": 32,
+                "multiplications": 56,
+                "additions": 24,
+                "gates": 80
+              },
+              {
+                "operation": "square",
+                "exponent": 12,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 24,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 48,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 96,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 97,
+                "left_support": 32,
+                "right_support": 81,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 194,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 195,
+                "left_support": 32,
+                "right_support": 81,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 390,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 780,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "multiply_base",
+                "exponent": 781,
+                "left_support": 32,
+                "right_support": 81,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 1562,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              },
+              {
+                "operation": "square",
+                "exponent": 3124,
+                "left_support": 32,
+                "right_support": 32,
+                "output_support": 32,
+                "multiplications": 32,
+                "additions": 0,
+                "gates": 32
+              }
+            ]
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 975,
+            "max_node_terms": 120,
+            "max_live_terms": 327,
+            "nodes": 992
+          }
+        },
+        "row_chain": {
+          "formal_z_exact": true,
+          "gates": 178,
+          "terms": 120,
+          "seconds": 0.010512299995752983,
+          "construction": {
+            "dimension": 32,
+            "layers": [
+              {
+                "row": 0,
+                "states": 5,
+                "multiplications": 5,
+                "additions": 0
+              },
+              {
+                "row": 1,
+                "states": 10,
+                "multiplications": 20,
+                "additions": 10
+              },
+              {
+                "row": 2,
+                "states": 10,
+                "multiplications": 30,
+                "additions": 20
+              },
+              {
+                "row": 3,
+                "states": 5,
+                "multiplications": 20,
+                "additions": 15
+              },
+              {
+                "row": 4,
+                "states": 1,
+                "multiplications": 5,
+                "additions": 4
+              }
+            ],
+            "peak_active_states": 10,
+            "marker_and_entry_gates": 49,
+            "transition_gates": 129,
+            "total_gate_formula": "2*n^2+(n-1)*2^n",
+            "tensor_description": "T_i=sum_j b_ij R_j; R_j=I tensor ... tensor [[0,1],[0,0]] tensor ... tensor I"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 178,
+            "max_node_terms": 120,
+            "max_live_terms": 126,
+            "nodes": 195
+          }
+        },
+        "subset_dp": {
+          "formal_z_exact": true,
+          "gates": 178,
+          "terms": 120,
+          "seconds": 0.008802700001979247,
+          "construction": {
+            "states": 32,
+            "transitions": 80,
+            "dp_gates": 129,
+            "marker_and_entry_gates": 49,
+            "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)"
+          },
+          "evaluation": {
+            "scalar_gate_evaluations": 178,
+            "max_node_terms": 120,
+            "max_live_terms": 129,
+            "nodes": 195
+          }
+        },
+        "tensor_factorization": {
+          "formal_z_exact": true,
+          "terms": 120,
+          "seconds": 0.004431800000020303,
+          "construction": {
+            "ambient_tensor_dimension": 32,
+            "layers": [
+              {
+                "row": 0,
+                "tensor_coordinates": 5,
+                "formal_z_terms": 5
+              },
+              {
+                "row": 1,
+                "tensor_coordinates": 10,
+                "formal_z_terms": 20
+              },
+              {
+                "row": 2,
+                "tensor_coordinates": 10,
+                "formal_z_terms": 60
+              },
+              {
+                "row": 3,
+                "tensor_coordinates": 5,
+                "formal_z_terms": 120
+              },
+              {
+                "row": 4,
+                "tensor_coordinates": 1,
+                "formal_z_terms": 120
+              }
+            ],
+            "scalar_gate_bound_if_compiled_by_subset_dp": 178,
+            "operator_factors": 25,
+            "polynomial_compression_established": false
+          }
+        }
+      }
+    }
+  ],
+  "scope": "Exact formal-z finite identities. No asymptotic polynomial bound or Lean proof.",
+  "positive_stabilization_diagnostics": [
+    {
+      "n": 2,
+      "K": 3,
+      "gates": 17,
+      "matrix_products": 2,
+      "dense_upper": 231,
+      "dense_two_log_upper": 231,
+      "stabilized_gates": 13,
+      "stabilized_exact": true,
+      "active_peak": 2
+    },
+    {
+      "n": 3,
+      "K": 26,
+      "gates": 83,
+      "matrix_products": 6,
+      "dense_upper": 5777,
+      "dense_two_log_upper": 7697,
+      "stabilized_gates": 51,
+      "stabilized_exact": true,
+      "active_peak": 3
+    },
+    {
+      "n": 4,
+      "K": 255,
+      "gates": 357,
+      "matrix_products": 14,
+      "dense_upper": 111135,
+      "dense_two_log_upper": 111135,
+      "stabilized_gates": 150,
+      "stabilized_exact": true,
+      "active_peak": 6
+    },
+    {
+      "n": 5,
+      "K": 3124,
+      "gates": 975,
+      "matrix_products": 15,
+      "dense_upper": 967729,
+      "dense_two_log_upper": 1419313,
+      "stabilized_gates": 511,
+      "stabilized_exact": true,
+      "active_peak": 10
+    }
+  ]
+}

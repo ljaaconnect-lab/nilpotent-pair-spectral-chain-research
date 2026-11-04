@@ -1,0 +1,215 @@
+{
+  "model": "Q[z], prescribed p_ij input leaves, binary add/mul",
+  "target": "complete PA(z)=Cn(DA(z)); direct subset reference",
+  "n": 2,
+  "nodes": [
+    {
+      "op": "constant",
+      "value": "1"
+    },
+    {
+      "op": "variable",
+      "name": "z"
+    },
+    {
+      "op": "variable",
+      "name": "p_0_0"
+    },
+    {
+      "op": "variable",
+      "name": "p_0_1"
+    },
+    {
+      "op": "variable",
+      "name": "p_1_0"
+    },
+    {
+      "op": "variable",
+      "name": "p_1_1"
+    },
+    {
+      "op": "mul",
+      "left": 1,
+      "right": 1,
+      "stage": "marker_powers"
+    },
+    {
+      "op": "mul",
+      "left": 6,
+      "right": 6,
+      "stage": "marker_powers"
+    },
+    {
+      "op": "mul",
+      "left": 7,
+      "right": 7,
+      "stage": "marker_powers"
+    },
+    {
+      "op": "mul",
+      "left": 2,
+      "right": 1,
+      "stage": "entry_weights"
+    },
+    {
+      "op": "mul",
+      "left": 3,
+      "right": 6,
+      "stage": "entry_weights"
+    },
+    {
+      "op": "mul",
+      "left": 4,
+      "right": 7,
+      "stage": "entry_weights"
+    },
+    {
+      "op": "mul",
+      "left": 5,
+      "right": 8,
+      "stage": "entry_weights"
+    },
+    {
+      "op": "mul",
+      "left": 9,
+      "right": 0,
+      "stage": "subset"
+    },
+    {
+      "op": "mul",
+      "left": 10,
+      "right": 0,
+      "stage": "subset"
+    },
+    {
+      "op": "mul",
+      "left": 11,
+      "right": 14,
+      "stage": "subset"
+    },
+    {
+      "op": "mul",
+      "left": 12,
+      "right": 13,
+      "stage": "subset"
+    },
+    {
+      "op": "add",
+      "left": 15,
+      "right": 16,
+      "stage": "subset"
+    }
+  ],
+  "output": 17,
+  "inputs": {
+    "z": 1,
+    "p": [
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ]
+    ]
+  },
+  "markers": [
+    1,
+    6,
+    7,
+    8
+  ],
+  "marked_entries": [
+    [
+      9,
+      10
+    ],
+    [
+      11,
+      12
+    ]
+  ],
+  "states": [
+    {
+      "mask": 0,
+      "cardinality": 0,
+      "row": null,
+      "output": 0,
+      "terms": [],
+      "sums": []
+    },
+    {
+      "mask": 1,
+      "cardinality": 1,
+      "row": 0,
+      "output": 13,
+      "terms": [
+        {
+          "column": 0,
+          "child": 0,
+          "node": 13
+        }
+      ],
+      "sums": []
+    },
+    {
+      "mask": 2,
+      "cardinality": 1,
+      "row": 0,
+      "output": 14,
+      "terms": [
+        {
+          "column": 1,
+          "child": 0,
+          "node": 14
+        }
+      ],
+      "sums": []
+    },
+    {
+      "mask": 3,
+      "cardinality": 2,
+      "row": 1,
+      "output": 17,
+      "terms": [
+        {
+          "column": 0,
+          "child": 2,
+          "node": 15
+        },
+        {
+          "column": 1,
+          "child": 1,
+          "node": 16
+        }
+      ],
+      "sums": [
+        17
+      ]
+    }
+  ],
+  "counts": {
+    "nodes": 18,
+    "states": 4,
+    "edges": 4,
+    "stages": {
+      "marker_powers": {
+        "add": 0,
+        "mul": 3,
+        "total": 3
+      },
+      "entry_weights": {
+        "add": 0,
+        "mul": 4,
+        "total": 4
+      },
+      "subset": {
+        "add": 1,
+        "mul": 4,
+        "total": 5
+      }
+    },
+    "arithmetic": 12
+  }
+}

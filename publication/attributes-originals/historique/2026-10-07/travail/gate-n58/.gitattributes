@@ -1,0 +1,25 @@
+# Preserve byte hashes of the frozen proof boundary across Windows checkouts.
+ImportProbe.lean text eol=lf
+RankOneSquareZero.lean text eol=lf
+rank-one-obligations.json text eol=lf
+rank-one-progress.json text eol=lf
+rank-one-report.json text eol=lf
+verify_rank_one.py text eol=lf
+write_rank_one_report.py text eol=lf
+RANK_ONE_BLUEPRINT.md text eol=lf
+DoubleOrientation.lean text eol=lf
+OrientationProbe.lean text eol=lf
+ORIENTATION_BLUEPRINT.md text eol=lf
+orientation-obligations.json text eol=lf
+orientation-progress.json text eol=lf
+orientation-report.json text eol=lf
+verify_orientation.py text eol=lf
+write_orientation_report.py text eol=lf
+ReverseVandermonde.lean text eol=lf
+ReverseProbe.lean text eol=lf
+REVERSE_VANDERMONDE_BLUEPRINT.md text eol=lf
+reverse-obligations.json text eol=lf
+reverse-progress.json text eol=lf
+reverse-report.json text eol=lf
+verify_reverse.py text eol=lf
+write_reverse_report.py text eol=lf

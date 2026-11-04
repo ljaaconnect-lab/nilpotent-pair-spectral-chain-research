@@ -1,0 +1,22 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\borne-partagee-2026-11-03\\OrientedFilterErasure.lean",
+  "sha256": "d8a78c00c7ef94ec8339a6ca4ffe2e082d9e0dd60c6333caf7737e2659716b54",
+  "source_changed_during_check": false,
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "exit_code": 0,
+  "seconds": 12.219,
+  "stdout": "'OrientedFilterErasure.collision_maps_to_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrientedFilterErasure.filter_preserves_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrientedFilterErasure.all_filters_preserve_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "status": "passed",
+  "date": "2026-11-03",
+  "theorems": [
+    "collision_maps_to_zero",
+    "filter_preserves_quotient",
+    "all_filters_preserve_quotient"
+  ],
+  "scope": "Quotient identity for any finite list of auxiliary collision filters, given the defining square-zero relations.",
+  "fourier_normalization_formalized": false,
+  "scalar_compiler_cost_formalized": false,
+  "complete_chain_polynomial_bound_proved": false,
+  "replay": "python -B etudes/2026-11-01/lean-operateurs/lean_check.py documents/borne-partagee-2026-11-03/OrientedFilterErasure.lean"
+}

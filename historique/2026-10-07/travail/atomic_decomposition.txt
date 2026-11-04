@@ -1,0 +1,85 @@
+Décomposition constructive de la conjecture 1.5
+
+Cible directe : circuit scalaire pour le polynôme complet PA(z)=Cn(DA(z)).
+Toutes les marques, données et mises à jour doivent se raccorder avec un coût
+polynomial total. L'extraction centrale est une reformulation équivalente
+du document, archivée ; elle n'est pas une obligation supplémentaire ici.
+
+La preuve ne sera pas complétée par l'ajout d'un axiome de compression.
+Un nombre arbitrairement grand de sous-problèmes ne garantit pas que leurs
+solutions soient évidentes. Les étapes suivantes sont choisies parce que
+chacune repose sur une opération algébrique élémentaire identifiable.
+Le statut définitif doit être lu dans les rapports du compilateur livrés.
+
+Notation : b,c sont les deux premières lignes explicites de B ; J est un
+sous-ensemble de colonnes ; H est son complément. Les q_j commutent et
+q_j^2=0 ; L(q_J)=(-1)^|J|. Le premier préfixe est -somme b_j q_j, et
+le deuxième est (somme b_j q_j)(somme c_j q_j).
+
+Séquence du premier préfixe (n75)
+
+A1. Partitionner la somme totale en J et son complément.
+    somme_H b_j = h_b - somme_J b_j.
+A2. Insérer une colonne dans le vrai tableau de coefficients carré-nul.
+    Si j appartient à J, la réponse est nulle ; sinon elle vaut (-1)^|J|.
+A3. Pondérer les réponses A2 et sommer.
+    R1(J)=(-1)^|J|*(h_b-somme_J b_j).
+A4. Calculer le mineur principal de la vraie matrice -I+u*1^T.
+    det(M[J,J])=(-1)^|J|*(1-somme_J u_j), J vide compris.
+A5. Sous l'hypothèse locale explicite h_b*u_j=b_j, multiplier A4 par h_b.
+    h_b*det(M[J,J])=R1(J). L'existence de u n'est pas postulée.
+A6. Prolonger l'égalité des réponses par linéarité à toute somme finie f.
+    Cela ne compile pas gratuitement la contraction avec les 2^n coefficients f_J.
+
+Séquence du deuxième préfixe (n76)
+
+B1. Développer (somme_H b_j)*(somme_H c_j) en une double somme.
+B2. Retirer la diagonale j=k.
+    somme_(j,k dans H,j!=k) b_j*c_k
+      =(somme_H b_j)*(somme_H c_j)-somme_H b_j*c_j.
+B3. Relier B2 à deux insertions réelles dans le tableau de coefficients.
+    R2(J)=(-1)^|J|*B2.
+B4. Initialiser d_j=b_j*c_j et h_b,h_c,h_d ; utiliser A1 trois fois.
+    R2(J)=(-1)^|J|*((h_b-somme_J b_j)*(h_c-somme_J c_j)
+                    -(h_d-somme_J d_j)).
+    Aucune division variable n'est utilisée.
+
+Circuit concret, construction uniforme pour profondeur fixée 1 ou 2
+
+Les données b,c,d et leurs trois sommes coûtent 4n-3 portes, pour n>=2.
+Une requête de profondeur2 avec J vide ajoute 3 portes ; pour J non vide,
+elle ajoute 3|J|+6+(|J| mod2) portes. Le signe est le littéral -1.
+La version marquée du deuxième préfixe ajoute 4n-1 portes : 2n-1
+carrés partagés de z et 2n produits avec les entrées prescrites p_ij.
+Le script atomic_prefix_circuit.py émet les vrais nœuds topologiques +/*.
+Ses 2160 vérifications exactes sont une validation finie de développement,
+distincte de la preuve quantifiée Lean et de la conjecture globale.
+
+Construction globale déjà prouvée (n73)
+
+F0(U)=1 si U=vide, 0 sinon.
+F(k+1)(U)=somme j dans U b(k,j)*Fk(U.erase j).
+L'invariant exact des coefficients et la sortie polynomiale marquée sont
+prouvés pour tous les paramètres indiqués dans le fichier Lean. La famille
+a 2^n coordonnées : elle ne satisfait pas encore Pi(n).
+La compilation directe n77 raccorde les entrées p_ij,z, la donnée F0,
+chaque mise à jour et la sortie PA, sans extraction centrale.
+
+Prochain problème de construction, maintenu ouvert
+
+Construire une représentation initialisée qui conserve la réponse utile
+après chaque nouvelle ligne, pour tout i<=n, avec au plus n^d données et
+portes pour un d fixé indépendant de n. Il faut fournir ses formules,
+leur invariant et leur borne ; une simple existence conditionnelle ne suffit pas.
+Une contraction avec un suffixe inconnu, une projection de coefficient ou
+une division variable ne peut pas être ajoutée comme une porte gratuite.
+
+Après une formule candidate explicite, les obligations élémentaires seront :
+  1. Calculer chaque donnée initiale depuis p_ij,z et les littéraux autorisés.
+  2. Vérifier séparément chaque entrée de la mise à jour.
+  3. Prouver que ces entrées préservent la réponse du vrai préfixe.
+  4. Relier la lecture terminale au polynôme complet PA=CnDA.
+  5. Additionner toutes les portes, borner les bits des littéraux, et vérifier
+     le temps polynomial de construction depuis (n,A).
+Ces obligations dépendent d'une formule encore à construire. Elles ne sont
+ni ajoutées aux axiomes Lean, ni enregistrées comme déjà résolues.

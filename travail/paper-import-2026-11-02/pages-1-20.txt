@@ -1,0 +1,1161 @@
+=== PAGE 1 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS FALSE
+OPENAI
+Abstract. We give a deterministic algorithm for exactly counting the satisfying assignments of
+an arbitrary k-CNF formula. For every fixedk⩾2 , on a formula withn variables and m clauses,
+our algorithm usespolyk(n, m)space and runs in time(n+m) Ok(1)2 n/(logn)
+1
+2 +o(1)
+. Our algorithm
+refutes the Exponential Time Hypothesis (ETH), which postulates that deciding3-SAT onn variables
+requires2 Ω(n) time in the worst case.
+Contents
+1. Introduction 1
+2. Technique overview 7
+3. A fast counting algorithm via shared linear summaries 21
+4. Constructing low-degree replacement forms 26
+5. Counting common zeros of sparse polynomial equations 35
+6. Reducing#k-SAT to counting common zeros 39
+Appendix A. Partitioning the satisfying assignments 44
+Appendix B. Exact arithmetic and space 47
+Appendix C. Additional Consequences of Refuting ETH 51
+Appendix D. A sharper bound for exact counting 53
+References 64
+1.Introduction
+For every fixedk⩾ 3, k-SAT is the canonical NP-complete problem [Coo71], and its exponential-
+time complexity underlies the Exponential Time Hypothesis (ETH) and the Strong Exponential
+Time Hypothesis (SETH) [IP01, IPZ01]. In this paper, we refute ETH by giving, for every fixed
+k⩾ 2, a deterministic algorithm that counts the satisfying assignments of ak-CNF in subexponential
+time and polynomial space.
+Write the inputk-CNF onndeclared variables withminput clauses as
+F(x 1, . . . , xn) =
+m^
+e=1
+ 
+(xie,1 ⊕b e,1)∨ · · · ∨(xie,k ⊕b e,k)
+ 
+,
+where ie,j ∈ {1, . . . , n}and be,j ∈ {0, 1} are the variable index and negation bit of thejth literal in
+clause e, and ⊕ denotes addition modulo two. Repeating a literal permits clauses with fewer thank
+literals. The indicesie,j and bits be,j are fixed byF; only x1, . . . , xn vary over assignments. Our aim
+is to compute the quantity
+#F=
+  {x∈ {0,1}n :F(x) = 1}
+  .(1.1)
+Testing# F >0also decides satisfiability. We keepk fixed as n grows. Throughout, log denotes the
+natural logarithm.
+Date: 17 October 2026, revised 25 October 2026.
+1
+
+=== PAGE 2 ===
+2 OPENAI
+Theorem 1.1.For each fixed k⩾ 2, there exists a deterministic algorithm that, given ak-CNF F
+onn⩾20declared variables withmclauses, computes#Fas defined in(1.1)in
+(n+m) Ok(1)2Ok(nlog logn/ √logn)
+bit operations and(n + m)Ok(1) bits of space. For each fixedD >0, its running time on inputs with
+m⩽Dnis
+(n+m) Ok,D (1)2Ok,D (n/√logn) .
+The rational interpolation argument in Section 6.4 gives the weaker exponentOk(ρ(n)), where
+ρ(n) = n(log logn) 2
+√logn = n
+(logn)
+1
+2 +o(1) .
+Appendix D proves both bounds in Theorem 1.1 by tensor contraction.
+When# F >0, the standard self-reduction finds a satisfying assignment by fixing one variable at
+a time and checking that the remaining count is positive. Choosing each bit according to the two
+conditional counts instead gives an exactly uniform random satisfying assignment, withpolyk(n, m)
+expected overhead [JVV86, Theorem 3.3(1)].
+The theorem also yields arbitrarily accurate subexponential-time approximation algorithms for
+Max-k-SAT. The Unique Games Theorem [Ope26, Section 8.1] implies NP-hardness bounds for
+Max-k-SAT that match, up to arbitrarily small error in the approximation ratio, the guarantees of
+the semidefinite-programming algorithm of [Rag08]. Write OPT(F )for the maximum number of
+clauses ofFsimultaneously satisfied by an assignment.
+Corollary 1.2.For every fixed k⩾ 2and ε >0, there exists a randomized algorithm that, given a
+k-CNF F on n⩾ 20variables with m clauses, finds an assignment satisfying at leastOPT(F ) −εm
+clauses with probability1−2 −Ω(n), in
+(n+m) Ok,ε(1)2Ok,ε(ρ(n))
+time and(n+m) Ok,ε(1) space.
+Proof. We may assumem >0. Let f (x)be the fraction of clauses satisfied byx, and let bf (x)be
+that fraction in a sample ofO(n/ε2)clauses chosen independently and uniformly with replacement.
+Hoeffding’s inequality and a union bound over all2n assignments give, with probability1− 2−Ω(n),
+| bf(x)−f(x)|⩽ε/2for everyx∈ {0,1} n.
+Thus, if bxmaximizes bf, then f (bx) ⩾max x f (x) −ε. Given an integer thresholdb, a Boolean circuit
+with at most two inputs per gate and sizeOk,ε(n)tests whether an assignment satisfies at leastb
+sampled clauses. The standard circuit-to-3-CNF reduction [Bar23, Lemmas 15.9–15.10] produces
+a formula withOk,ε(n)variables and clauses that is satisfiable exactly when this threshold can be
+attained. Theorem 1.1, binary search on the threshold, and self-reduction then find an exact sample
+optimizer within the stated bounds. Truncating rejection sampling afterO(n + log(n/ε2))trials
+per sample gives worst-casepoly(n, m, ε−1)sampling time and adds at most2−Ω(n) to the failure
+probability. □
+Note that runtime bounds of the form2 o(n) do not transfer under general polynomial-time
+reductions (2no(1)
+would be needed for this), so our result does not imply that general NP problems
+admit subexponential time algorithms. However we do obtain subexponential time algorithms for
+counting graph colorings and perfect matchings.
+Corollary 1.3.On simple graphs with v vertices and e edges, the number of independent sets and,
+for each fixedq⩾ 2, the number of properq-colorings can be computed deterministically in2o(v) time
+and polyq(v, e)space. The number of perfect matchings can be computed deterministically in2o(v+e)
+time andpoly(v, e)space.
+
+=== PAGE 3 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 3
+Proof.ForG= (V, E), introduce a Boolean variablex u for eachu∈V. Satisfying assignments of
+^
+{u,w}∈E
+(¬xu ∨ ¬xw)
+correspond bijectively to the independent sets{u∈V : xu = 1}. For proper q-colorings, use one
+Boolean variable per vertex and color, require exactly one color at each vertex, and forbid equal
+colors at adjacent vertices. This gives a counting-preservingq-CNF encoding withqv variables and
+Oq(v+e)clauses.
+For perfect matchings, use one Boolean variable per edge and a linear-size circuit checking that
+exactly one selected edge meets each vertex. The standard circuit-to-3-CNF reduction [Bar23,
+Lemmas 15.9–15.10] givesO(v + e)variables and clauses. The gate variables have unique values
+once the edge bits are fixed, so this encoding also preserves the count. Theorem 1.1 gives the stated
+time and space bounds.□
+The fixed-density case of Theorem 1.1 gives a circuit lower bound forENP, the class of languages
+decidable in deterministic time2O(n) with an NP oracle.
+Corollary 1.4.LetC L(n)be the minimum number of noninput gates in a circuit computingLon
+{0, 1}n, allowing arbitrary Boolean gates of fan-in at most two and unrestricted fan-out. There exist
+a languageL∈E NP and a constantc >0such that
+CL(n)> c n
+p
+lognfor infinitely manyn.(1.2)
+Appendix C.1 proves the corollary. Appendix C.2 gives algorithms for inversion and exact preimage
+counting of Boolean maps with constant output locality.
+1.1.Related work.We first discuss earlier SAT and counting algorithms and the complexity
+hypotheses contradicted by Theorem 1.1. We then compare our approach with earlier algebraic
+algorithms and identify the existing constructions used in our proof, whose roles are developed in
+the roadmap in Section 2.
+1.1.1.SAT algorithms and the exponential-time hypotheses.Schöning’s local-search algorithm and
+PPSZ are landmarks in the development of exponential-time algorithms fork-SAT [Sch99, PPSZ05].
+Schöning’s randomized algorithm starts from a random assignment and repeatedly flips a uniformly
+chosen variable in an unsatisfied clause. Its bounded-error decision time is
+(n+m) O(1)(2−2/k) n
+for each fixedk⩾ 3[ Sch99, Section 2]. In particular, this gives(n + m)O(1)(4/3)n time for3-SAT.
+The PPSZ algorithm [PPSZ05] uses a different mechanism: bounded resolution derives additional
+clauses, after which variables are assigned in a random order, taking forced values when available and
+guessing otherwise. Fork = 3, 4, its original analysis gave stronger bounds for uniquely satisfiable
+formulas than for general ones. The unique-SAT guarantees were later extended to general3-SAT
+and4-SAT; for3-SAT this gave a randomizedO(1.308n)bound [Her14]. Hansen, Kaplan, Zamir, and
+Zwick improved the PPSZ bound for every fixedk⩾ 3by biasing the algorithm’s guesses [HKZZ19].
+Scheder obtained an improvement for the same range ofk by sharpening the analysis of the original
+PPSZ algorithm [Sch24, Theorem 1.5]. For general3-SAT, a preprint by Jiang and Cai gives a
+randomized O∗(1.307031578n)bound [JC26, Corollary 1.2], whereO∗ suppresses factors polynomial
+in the input size. Liu’s deterministic algorithm combines branching with derandomized local search
+and solves3-SAT inO(1.32793 n)time [Liu18, Theorem 21].
+Randomized local search has also produced effective heuristics. The WalkSAT heuristic chooses an
+unsatisfied clause and flips one of its variables, combining random choices with greedy moves [SKC94].
+Experiments on formulas from circuit synthesis and diagnosis demonstrated the practical value of
+this approach [SKC94, pp. 340–342, Tables 4–5].
+
+=== PAGE 4 ===
+4 OPENAI
+Among uniformly random k-CNFs, instances at the satisfiability threshold were conjectured
+to be the hardest for deciding satisfiability [VW21, Section 1]; for fixedk⩾ 3and lower clause
+densities m/n⩽ 2k/kC, where C is a universal constant, polynomial-time almost-uniform sampling
+of satisfying assignments is known with high probability over the formula [CLWYY25, Theorem 1.2].
+For a uniformly random formula with polynomially many clauses, conditioned on satisfiability, Vyas
+and Williams [VW21, Theorem 3] give a PPZ-based algorithm that finds a solution in2n(1−Ω(logk/k))
+time with high probability over both the formula and the algorithm’s random choices.
+The Exponential Time Hypothesis (ETH) asserted that3-SAT requires2Ω(n) deterministic time
+in the worst case, and hence so doesk-SAT for every fixedk⩾ 3[ IP01, Theorem 1]. The Strong
+Exponential Time Hypothesis (SETH) made the sharper prediction thatk-SAT requires2 n(1−ok(1))
+time as k grows. Precisely, for everyε∈ (0, 1), there is a fixedk for which no deterministic algorithm
+solves k-SAT in2 (1−ε)n(n + m)O(1) time. The running-time bounds for Schöning’s algorithm and
+PPSZ helped motivate this prediction: their improvements over exhaustive search diminish ask
+grows [IP01, Open Problems, item 2].
+The Gap Exponential Time Hypothesis (Gap-ETH) strengthens ETH by postulating constants
+δ, γ >0for which noO(2γn)-time algorithm can distinguish a satisfiable3-CNF from one in which
+every assignment violates at least aδ fraction of the clauses, even whenm = O(n)[ Din16, MR17].
+The randomized version rules out an algorithm with the same running time that distinguishes
+the two cases with probability at least2/3on every promised input [CCK+20, Conjecture 2.5].
+It has been used to prove hardness of approximating Label Cover [Din16] and dense constraint
+satisfaction problems [MR17]. It also rules out nontrivial fixed-parameter approximations for Clique
+and Dominating Set. For Clique, the excluded ratios areo(OPT), where OPT is the maximum
+clique size [CCK+20, Corollaries 5.3 and 5.6].
+The Nondeterministic Strong Exponential Time Hypothesis (NSETH) asserts that, for everyε >0,
+some fixed k admits no nondeterministic2(1−ε)n(n + m)O(1)-time algorithm for deciding whether
+a k-CNF isunsatisfiable, or equivalently whether ak-DNF is a tautology [CGI+16]. NSETH has
+been used to establish barriers to deterministic fine-grained reductions from SAT to problems such
+as 3SUM and All-Pairs Shortest Paths [CGI+16], and to delineate SETH-based lower bounds for
+approximating directed graph diameter [Li21].
+Theorem 1.1 refutes ETH, SETH, Gap-ETH, and NSETH. Indeed, testing whether the exact count
+is positive or zero decides both satisfiability and unsatisfiability in deterministic2o(n)(n+m)Ok(1) time
+for every fixedk; deciding satisfiability also solves the Gap-ETH promise problem. The deterministic
+algorithm also refutes the bounded-error randomized versions of ETH [DHM+14, Section 1] and
+SETH [CDL+16, Definition 2.1], and of Gap-ETH. It does not conflict with unconditional exponential
+lower bounds for restricted proof systems such as regular resolution [BI13]. In 2016, Ryan Williams
+refuted the Merlin–Arthur version of SETH (MA-SETH) by giving a protocol that certifiesk-CNF
+unsatisfiability in2 n/2 poly(n, m)time [Wil16, Theorem 3.3].
+1.1.2.Exact counting and counting complexity.In Valiant’s framework,# SAT and#3-SAT are
+#P-complete under parsimonious reductions [Val79, Section 3, Facts 1–2]. For fixedk⩾ 3, previous
+exact-counting algorithms achieve polyk(n, m)2n−Ω(n/k) time, with a Las Vegas expected-time
+bound in [IMP12, Lemma 3.5] and a deterministic bound in [CW21, Theorem 1.6]. For#2-SAT,
+Wahlström’s algorithm counts satisfying assignments inO∗(1.2377n)time [Wah08]. For#3-SAT,
+Kutzkov uses complementary branching to count satisfying assignments inO∗(1.637n)time [Kut26].
+Both algorithms are deterministic.
+The counting Exponential Time Hypothesis (#ETH) asserted that exactly counting the satisfying
+assignments of a3-CNF requires2 Ω(n) deterministic time [DHM+14, Section 1]. Under# ETH,
+Curticapean [Cur18] rules out deterministic2o(v)-time algorithms for counting perfect matchings
+even in unweighted bipartite graphs withv vertices and O(v)edges. The perfect-matching algorithm
+
+=== PAGE 5 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 5
+in Corollary 1.3 applies in particular to these graphs. Our algorithm (Theorem 1.1) solves#3-SAT
+deterministically in2 o(n) poly(n, m)time and therefore refutes#ETH.
+1.1.3.Implications for fine-grained complexity.ETH and SETH became standard assumptions for
+parameterized and fine-grained complexity [IPZ01, VW19]. ETH-based reductions yielded lower
+bounds for the dependence on solution size in Clique [CHKX06], and on treewidth in constraint
+satisfaction and partitioned subgraph isomorphism [Mar10]. SETH supported sharp exponential
+bounds for Hitting Set and Set Splitting [CDL+16], and for Independent Set and Dominating Set
+parameterized by treewidth [LMS18]. It also gave bounds on possible speedups of pseudopolynomial
+algorithms for Subset Sum and Bicriteria Path [ABHS19].
+For problems inP, SETH was used to rule out polynomial-factor speedups over quadratic running
+times for edit distance [BI18], longest common subsequence and dynamic time warping [BK15],
+Fréchet distance [Bri14], and regular-expression matching [BI16]. Other applications concerned
+approximating graph diameter [RV13] and maintaining reachability counts or the size of the largest
+strongly connected component under graph updates [AW14]. Together these results made SETH a
+common basis for explaining the apparent optimality of algorithms across quite different problems.
+Our refutation of ETH and SETH removes one basis for the hardness claims above. Some
+of the same lower bounds follow from weaker hypotheses that may still hold. For example, the
+lower bounds for longest common subsequence and regular-expression matching follow from the
+Orthogonal Vectors Conjecture (OVC) [BK15, BI16]. OVC asserts that for every fixedε >0, no
+O(N 2−ε poly(d))-time algorithm can decide whether two sets ofN Boolean vectors of dimension
+d contain an orthogonal pair, one vector from each set. The reduction from SAT to Orthogonal
+Vectors shows that SETH implies OVC [Wil05, VW19]. The lower bounds for Fréchet distance,
+graph diameter approximation, and the treewidth dependence of Independent Set and Dominating
+Set also follow from the hypothesis that unrestricted CNF-SAT admits no2(1−δ)n poly(n, m)-time
+algorithm for any constantδ >0[ Bri14, RV13, LMS18]. Theorem 1.1 gives a running-time guarantee
+for each fixed clause widthk, while this hypothesis allows the width to grow withn.
+To obtain a faster algorithm for a target problem from our SAT algorithm, we need a reduction in
+the other direction, from that problem to fixed-width SAT, that controls the number of variables.
+Set Splitting with sets of size at mostk has such a reduction [CDL+16, Observation 3.6]: use one
+Boolean variable per element to specify its side of the split. For each set, one clause requires at least
+one of its variables to be true, and a second requires at least one to be false. The resultingk-CNF
+has one variable per universe element, so for fixedk Theorem 1.1 gives subexponential time in the
+universe size, up to a polynomial input-size factor.
+1.1.4.Prior work on algebraic algorithms for combinatorial problems.Our algorithm is algebraic,
+based on polynomial interpolation of carefully chosen auxiliary variables. Below we discuss prior work
+on using algebraic methods to design algorithm for combinatorial problems. For broader background,
+see the surveys of Koutis and Williams [KW16] on algebraic fingerprints, Williams [Wil14] on the
+polynomial method in algorithm design, and Husfeldt [Hus11] on algorithmic inclusion–exclusion.
+Williams’s split-and-list algorithm [Wil05] partitions the variables of a2-CSP into three groups,
+enumerates partial assignments, and combines them using fast matrix multiplication. Koivisto [Koi06]
+gives a direct sum–product formulation. The algorithm of Sections 3–6 likewise enumerates as-
+signments within groups. Fixing the shared measurements⃗ ymakes their contributions multiply
+independently. Scott and Sorkin [SS09, Section 6] extend split-and-list to polynomial-valued weights
+and arbitrary rings. Our summation routine similarly uses truncated polynomial rings to retain
+several coefficients in one computation.
+Björklund [Bjö16, Sections 2–3] uses inclusion–exclusion and polynomial interpolation to reduce
+permanent and directed Hamiltonian-cycle counting to a weighted sum over smaller instances. He
+adds the weights of identical instances in a table, then solves each distinct instance with nonzero
+total weight once. Björklund, Kaski, and Williams [BKW19] use low-degree curves and generalized
+
+=== PAGE 6 ===
+6 OPENAI
+Kakeya sets to recover polynomial values from evaluations on a small structured set, yielding faster
+algorithms for fermionants, including the permanent of integer matrices whose entries are bounded
+in absolute value by a fixed constant. Our polynomial replacements serve a similar purpose: they
+connect the desired count to structured evaluations from which it can be reconstructed. Here the
+useful structure is separation into groups after fixing a few shared measurements.
+Bhargava, Ghosh, Kumar, and Mohapatra [BGKM23, Sections 3.1–3.2] evaluate multivariate
+polynomials over finite fields along low-degree curves, using Hasse derivatives and Hermite interpola-
+tion when values alone do not suffice. For a univariate restrictiong, the order-j Hasse derivative at
+t is the coefficient ofzj in g(t + z). We use the same recovery principle: compute several Taylor
+coefficients at each point admitting fast summation, then recover the original count by Hermite
+interpolation.
+Woodruff and Yekhanin [WY07] use values and first derivatives along a line to recover a target
+value in private information retrieval. Kopparty, Saraf, and Yekhanin [KSY14] use higher-order
+Hasse derivatives for local correction of multiplicity codes, extending the line-based recovery of
+Reed–Muller codes. In our algorithm, the matrix construction supplies low-degree replacement forms
+that let us compute the Taylor coefficients at the interpolation points by fast summation after fixing
+a few shared measurements.
+1.1.5.Antecedents of the matrix construction.Our counting algorithm evaluates sums of products
+of polynomials over Boolean assignments. The polynomials share variables, so these sums do not
+factor into independent smaller sums. We introduce linear substitutions, depending polynomially on
+an interpolation parameter, that make such a factorization possible after fixing a few integer linear
+measurements. An auxiliary square rational matrixM0 underlies these substitutions: a bound on
+rank(I−M 0)limits the number of measurements, while restrictions on the nonzero entries ofM0
+keep the substitution degrees small. Section 2.7 explains this connection.
+Related interpolation methods have been used to obtain low-rank approximations to structured
+matrices. In [AW17, Section 3], a low-degree polynomial matches(−1)j on an interval of integer
+inner products j, using the interpolation lemma of [AW15, Lemma 3.1]. This gives low-rank
+matrices agreeing with Walsh–Hadamard matrices in most entries, a result in the study of matrix
+rigidity [Val77]. Related interpolation gives rigidity bounds for Kronecker powers in [AGP23,
+Theorem 6.1]. Dvir and Liu [DL20, Claim 2.20 and Lemmas 3.3–3.4] use a spectral approach: sparse
+changes to a function invariant under permutations of its coordinates make many Fourier coefficients
+vanish, reducing the rank of its group-circulant matrix.
+Our construction also interpolates( −1)j on a short interval, now to obtain a polynomial in
+commuting permutation matrices. The same polynomial gives both the rank bound forI−M 0
+and the restrictions on the nonzero entries ofM0. We prove these properties and their quantitative
+bounds directly in Section 4.
+1.1.6.Sparsification and parity tests.We use the counting-preserving version [DHM+14, Appendix A]
+of the sparsification lemma [IPZ01], with quantitative bounds from [CIP06, Section 6] and [Cal09,
+Lemma 5.14 and equation (5.4)]. This partitions the satisfying assignments among sparse formulas
+on the same Boolean variables. Appendix A records the disjoint branching argument and the bounds
+needed when its parameter varies with the input size.
+The initial parity tests are the constraints of a Tanner code [Tan81, Section II], applied to the
+binary vector recording which clauses an assignment violates. We use the edge-based expander-code
+construction of [SS96, Sections IV and VI]: each graph edge carries one bit, and each vertex requires
+its incident bits to belong to a fixed binary linear code. The local code’s minimum distance, together
+with graph expansion, forces every nonzero vector satisfying all these constraints to have large
+support. This construction and distance argument are standard. Lemma 6.1 supplies the parameter
+choices needed here, including the bounds on the number and support size of the tests, and constructs
+the graph and local code by deterministic exhaustive searches. The graph is the bipartite double
+
+=== PAGE 7 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 7
+cover of a Cayley multigraph. The shifts defining that multigraph nearly balance every nonconstant
+parity on the base group: this is the small-bias condition [NN93, AR94], stated explicitly in(6.2).
+Fixing unused edge bits to zero gives a code on exactlym coordinates. Additional parity tests
+exclude the remaining nonzero violation vectors. We choose these tests by the averaging principle
+underlying the method of conditional expectations [Rag88], using exact counts to evaluate each
+candidate. Section 6 gives the constructions and quantitative bounds needed here.
+Theorem 1.1 invites a renewed search for algorithms for problems whose known hardness results
+relied on ETH or SETH. The examples in Section 1.1.3 suggest both immediate consequences and
+problems for which new algorithmic ideas are needed.
+1.2.Notation.For an integer s⩾ 0, write[ s] = {1, . . . , s}, with[0] = ∅. For a condition E,
+the scalar 1{E} equals one if E holds and zero otherwise. We use natural logarithms, writing
+log2 when the base is two. For complexity bounds,poly(t1, . . . , ts)denotes a bound of the form
+(1+ t1 +· · ·+ts)O(1), with absolute implicit constants. Subscripts, as inpolyk,c(t1, . . . , ts), allow those
+constants to depend on the indicated fixed parameters. Integers are stored in signed binary notation,
+so an integerz uses O(log(|z| + 2))bits. Rational numbers are stored as an integer numerator and a
+positive integer denominator; stated bit-length bounds apply to each of them. Space is measured in
+bits. Arithmetic-operation counts are distinguished from bit-operation counts.
+For a finite setS, vectors inQS have coordinates indexed byS and are column vectors unless
+indicated otherwise. ForU⊆S , the indicator vector1U ∈ {0, 1}S has entries(1 U )v = 1{v∈U} for
+v∈S . We write ⃗0 for the zero vector. For v∈S , the row δv ∈Q 1×S selects coordinate v, so
+δvx = xv. A vector indexed byU⊆S is extended toS by putting zero in each coordinate ofS\U .
+We write ⃗X = ( X1, . . . , Xn)for the vector of formal variables and use arrows for polynomial
+coefficient vectors such as⃗Pf,v (T ). For a coefficient row⃗ p= (pi)i∈S and a vectorz = (zi)i∈S, we
+write their scalar pairing as⟨⃗ p, z⟩= P
+i∈S pizi. In particular, ⟨ ⃗Pf,v (T ), ⃗X⟩ is a scalar linear form in
+the variablesX i.
+For a polynomialP ( ⃗X, z)in the variables ⃗X and a variablez,[ zj]P denotes the coefficient of
+zj, viewed as a polynomial in⃗X, and deg ⃗X P denotes total degree in ⃗X. The degree of a row of
+polynomials is the largest degree of any entry. Unless otherwise specified, polynomial coefficients are
+rational and matrix kernels are taken overQ.
+2.Technique over view
+We first count satisfying assignments of a3-CNF in which each variable occurs in at most three
+clauses. The product of its clause polynomials has degree at most3n, so we can use interpolation
+to recover the exact count from sums over small groups of variables. Section 2.8 then uses disjoint
+sparsification and variable copying to count the satisfying assignments of an arbitraryk-CNF in
+(n + m)Ok(1)2o(n) time for every fixedk⩾ 2. Taking k = 3already refutes ETH. Section 2.9 explains
+how counting on the original variables gives the exponentOk(ρ(n))of Proposition 6.4.
+2.1.The bounded-occurrence setting.Let F have n declared Boolean variables. Each clause
+contains at most three literals, and each variable appears in at most three clauses, counting positive
+and negative occurrences together. Our task is to count the satisfying assignments ofFexactly.
+We remove tautological clauses and repeated literals within a clause. An empty clause gives count
+zero immediately. These operations preserve the occurrence bound. For each remaining clausee, let
+Ie ⊆ [n]be its variable set. For each variable that occurs in no clause, add a factor equal to one
+with scope {v}. Such a factor leaves the count unchanged and ensures that every variable has an
+assigned position in the construction. We call these constant-one termsdummy clauses. LetF index
+
+=== PAGE 8 ===
+8 OPENAI
+all clauses, including the dummy clauses. Then
+|Ie|⩽3,#{e∈ F:v∈I e}⩽3, n⩽M:=
+X
+e∈F
+|Ie|⩽3n.(2.1)
+All sums below still range over the originalnBoolean variables.
+2.2.Adirectpolynomialforthecount.Write Le,v(Xv) = Xv forapositiveliteraland Le,v(Xv) =
+1−X v for a negative literal. The satisfaction polynomial of clauseeis
+Φe((Xv)v∈Ie) = 1−
+Y
+v∈Ie
+(1−L e,v(Xv)).
+For example,x a ∨ ¬xb ∨x c gives
+Φe(Xa, Xb, Xc) = 1−(1−X a)Xb(1−X c).
+On Boolean inputs this polynomial is one when the clause is satisfied and zero otherwise. For a
+dummy clausee, putΦ e = 1. Therefore
+#F=
+X
+x∈{0,1}n
+Y
+e∈F
+Φe((xv)v∈Ie).(2.2)
+The product has total degree at mostM⩽3n. This linear degree bound is the useful consequence
+of the three-occurrence assumption.
+Equation (2.2) is an exact expression for the count, but evaluating its2n summands would be
+exhaustive search. To motivate the algorithm, suppose we were given a partition of the variables
+intorgroupsS 1, . . . , Sr satisfying both of the following conditions:
+(1) Each group contains at most2n/rvariables.
+(2) For every clause, all of its variables belong to a single group.
+This is a hypothetical, very restrictive assumption; we do not assume that the input formula admits
+such a partition.
+Under this assumption, we could count satisfying assignments in each group independently. Let
+Ng be the number of assignments to the variables inSg that satisfy all clauses in that group. Any
+such assignment can be combined with any satisfying assignments in the other groups, because no
+clause connects different groups. Every global satisfying assignment arises in exactly one such way.
+Consequently,
+#F=
+rY
+g=1
+Ng.
+Computing eachN g by exhaustive search within its group examines a total of at most
+rX
+g=1
+2|Sg| ⩽r2 2n/r
+local assignments, with polynomial work per assignment. For larger, this is much faster than
+enumerating all2 n global assignments.
+We will replace the clause inputs so that different groups interact only through a small collection
+of shared linear summaries. Once the values of those summaries are fixed, we can again sum over
+each group separately.
+
+=== PAGE 9 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 9
+2.3.A polynomial family with easier evaluation points.We introduce a parameterT. At
+T = 0, the replacements must restore the original clause inputs. At selected nonzero points
+T = 1, . . . , Q, they should let us separate the groups by fixing shared linear summaries. HereQ
+is the number of selected points, andR will bound the degree of the replacement coefficients. We
+choose both parameters later.
+Write ⃗X = (X1, . . . , Xn)for the vector of formal variables. For each occurrencev∈I e, use the
+polynomial coefficient vector ⃗Pe,v(T ) = ( pe,v,1(T ), . . . , pe,v,n(T ))to replace Xv in clause e by the
+scalar inner product
+⟨ ⃗Pe,v(T), ⃗X⟩=
+nX
+i=1
+pe,v,i(T)X i.
+We call this expression thereplacement linear formfor the occurrence of variablev in clause e. It
+replaces the inputXv in the clause polynomialΦe. We require
+⟨ ⃗Pe,v(0), ⃗X⟩=X v,deg ⃗Pe,v ⩽R.
+Different clauses may use different replacement linear forms for the same variable. Define
+H(T) =
+X
+x∈{0,1}n
+Y
+e∈F
+Φe
+ 
+(⟨ ⃗Pe,v(T), x⟩)v∈Ie
+ 
+∈Q[T].(2.3)
+At zero every replacement restores the original variable, while the degree of each clause polynomial
+grows by at most a factor ofR. Hence
+H(0) = #F,degH⩽M R⩽3nR.(2.4)
+We will recover H(0)from Taylor coefficients at t = 1 , . . . , Q. The degree bound means that
+O(1 + nR/Q)coefficients per point suffice, as Section 2.5 explains. Our goal is therefore to make
+R small relative toQ: many points with low-degree replacements require fewer coefficients at each
+point.
+At a nonzerot, the value⟨ ⃗Pe,v(t), x⟩of a replacement linear form need not lie in{0, 1}, even when
+xis Boolean. The transformed clause polynomials therefore need not act as satisfaction indicators.
+2.4.Separating the sum by fixing measurements.Fix t∈ [Q]. We are given the coefficient
+vectors ⃗Pe,v(t), whose entries are now constants. We explain what structure lets us computeH(t)
+quickly, and how to use it. Throughout this subsection, writeSg =S t,g andC g =C t,g.
+Definition 2.1(( r, τ, D)-design).For the given coefficient vectors ⃗Pe,v(t), an( r, τ, D)-design at t
+consists of groupsSg, clause assignmentsσe(t), and measurement matricesCg satisfying the following
+four conditions:
+(1) Small groups.Partition the variables into disjoint groups[n] = S1 ⊔ · · · ⊔Sr, with|Sg|⩽ 2n/r.
+(2) One assigned group per clause.Assign each clausee to one groupσe(t) ∈ [r]. Condition 4
+must hold with this same group for every replacement linear form of clausee.
+(3) Few bounded measurements.Each groupg has an integer matrixCg with columns indexed
+by Sg and cg rows. Each row specifies one linear measurement of the variables inSg. There
+are at most2τ nrows in total, and the sum of absolute values of the coefficients in each row
+is at mostD. For an assignmentx, write
+xg =x| Sg , y g =C gxg, ⃗ y= (y 1, . . . , yr).
+(4) Dependence on other groups only through measurements.Suppose clausee is assigned to
+group g = σe(t). Each replacement linear form of this clause may depend freely on the
+variables in Sg. Its dependence on any other groupSh must be a linear combination of
+
+=== PAGE 10 ===
+10 OPENAI
+that group’s measurementsyh. Precisely, for everyv∈I e, there must be coefficient vectors
+⃗λe,v,h ∈Q ch, forh̸=g, such that, for everyx∈Q n,
+⟨ ⃗Pe,v(t), x⟩=⟨ ⃗Pe,v(t)|Sg , xg⟩+
+X
+h̸=g
+⟨⃗λe,v,h, yh⟩.(2.5)
+Equivalently, ⃗Pe,v(t)|Sh lies in the row space ofCh for everyh̸=g.
+The matrices Ch are shared by all clauses. A clause’s assigned group need not contain its original
+variables. Once ⃗ yis fixed, however, the entire transformed clause polynomial depends only on the
+variables in its assigned group.
+The algorithm.Given an( r, τ, D)-design at t, first find the coefficient vectors⃗λe,v,h by solving
+the linear systems guaranteed by condition 4. For fixed⃗ y, let Xt,g(yg)be the assignments to the
+variables inS g whose measurements equalyg:
+Xt,g(yg) ={u∈ {0,1}Sg :C gu=y g}.
+For such an assignmentu, compute the contribution of groupg as follows. For each clausee assigned
+to g, first use(2.5) to compute the values of its replacement linear forms fromu and the fixed
+measurements. Next evaluate the clause polynomialΦe on these values. Finally, multiply the values
+obtained from all clauses assigned tog. Denote this product byAt,g(u; ⃗ y). No assignments to the
+other groups are needed for this calculation.
+Each measurement of a Boolean assignment is an integer in[−D, D]. Initialize Z = 0and perform
+the following steps:
+(1) Try every measurement tuple⃗ y∈ Y:= Qr
+g=1{−D, . . . , D}cg. For each tuple, perform steps 2
+and 3.
+(2) For each groupg, try every Boolean assignmentu to its variables. Keep it only ifCgu = yg.
+Add the corresponding productsAt,g(u;⃗ y)to obtain the group sum
+Bt,g(⃗ y) =
+X
+u∈Xt,g(yg)
+At,g(u;⃗ y).
+If no assignment satisfiesCgu=y g, setB t,g(⃗ y) = 0.
+(3) Multiply the group sums and add the resultQr
+g=1 Bt,g(⃗ y)toZ.
+After all measurement tuples have been processed, returnZ.
+To see why this returnsH(t), fix ⃗ yand choose one assignment from each setXt,g(yg). Since the
+groups contain disjoint sets of variables, these choices combine into one full assignment. Every full
+assignment with measurements⃗ yarises in exactly one such way. Its product of clause polynomials is
+the product of the group contributionsAt,g. Multiplying out the group sums and then summing
+over⃗ ytherefore gives
+H(t) =
+X
+⃗ y∈Y
+rY
+g=1
+
+ X
+u∈Xt,g(yg)
+At,g(u;⃗ y)
+
+ .(2.6)
+Every Boolean assignment has exactly one measurement tuple, so this sum counts each assignment’s
+contribution exactly once.
+There are at most(2D + 1)2τ nmeasurement tuples. For each tuple, the algorithm tries at mostP
+g 2|Sg| ⩽r2 2n/r assignments to individual groups. Consequently, the running time is
+(2D+ 1) 2τ n22n/r
+up to polynomial factors. The first factor bounds the number of measurement tuples; the second
+bounds the number of assignments within one group. The algorithm scans one group at a time and
+keeps only the current measurement tuple, the current assignment, and running sums and products;
+see Lemma 3.2.
+
+=== PAGE 11 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 11
+For the parameter choices in Section 2.6, we can construct replacement forms of degree at mostR
+that restore the original variables at zero and admit an(r, τ, D)-design at everyt∈ [Q]. Section 2.7
+gives the construction. We first explain how these properties let us recover the count efficiently.
+2.5.Recovering the count from Taylor coefficients.Our goal is to recoverH(0) = #F from
+information at the points t = 1 , . . . , Q. Since degH⩽ 3nR, the Q values H(t)alone may not
+determineH. We instead compute several Taylor coefficients at each point. Choose
+q=
+  3nR
+Q
+ 
+, J=q+ 1.
+Suppose we know the coefficients ofz0, . . . , zq in H(t + z)for every t∈ [Q]. These data determineH
+uniquely: if two polynomials of degree at most3nR have the same data, their difference is divisible
+by( T−t )J for every t∈ [Q], hence byQQ
+t=1(T−t )J. This product has degreeQJ >3nR, so the
+difference must be zero. Each Taylor coefficient gives a linear equation in the coefficients ofH.
+Solving this rational linear system recoversH, and its constant coefficient is the desired countH(0).
+It remains to compute these Taylor coefficients. Fixt∈ [Q]; we wantH(t + z)through degree q
+in z. The design controls the replacement forms att, but need not control their changes fromt to
+t + z. We first give those changes a separate input, so that fixing this input preserves the separation
+of groups.
+Keeping the shifted inputs separate.Write
+∆ ⃗Pe,v(z) = ⃗Pe,v(t+z)− ⃗Pe,v(t).
+Keep x as the Boolean assignment being summed over, and introduce a separate formal vector⃗X
+for the changes. Define
+Gx( ⃗X, z) =
+Y
+e∈F
+Φe
+ 
+(⟨ ⃗Pe,v(t), x⟩+⟨∆ ⃗Pe,v(z), ⃗X⟩) v∈Ie
+ 
+.(2.7)
+Here x indexes the polynomial, while⃗X and z are its formal variables. Setting⃗X = x restores each
+shifted input⟨ ⃗Pe,v(t+z), x⟩, so
+H(t+z) =
+X
+x∈{0,1}n
+Gx(x, z).
+On the other hand, fixing ⃗X =1 U for some U⊆ [n]makes every correction ⟨∆ ⃗Pe,v(z), 1U ⟩
+independent of x. All dependence onx then remains through⟨ ⃗Pe,v(t), x⟩, where the design applies.
+Our task is therefore to recover the sum with⃗X=xfrom sums with ⃗Xfixed.
+The degree bound makes this possible with few fixed substitutions. Every entry of∆⃗Pe,v(z)is
+divisible by z, so each occurrence of anXi in an expanded term contributes at least one factor ofz.
+Thus
+deg ⃗X ([zj]Gx( ⃗X, z))⩽j.
+Thus, after discarding powers ofz above q, every monomial involves at mostq distinct variables
+from ⃗X.
+Recovering the shifted sum by inclusion–exclusion.Work modulo zJ, so that only the
+coefficients through zq are retained. Replace every positive power ofXi in Gx by Xi. This preserves
+its values on Boolean inputs. The degree bound above gives, for Boolean⃗X,
+Gx( ⃗X, z)≡
+X
+E⊆[n]
+|E|⩽q
+aE(x, z)
+Y
+i∈E
+Xi (modz J ),
+
+=== PAGE 12 ===
+12 OPENAI
+where aE(x, z)is the coefficient of the indicated monomial after this replacement. Evaluating at1U,
+the vector with ones precisely inU, sums the coefficients indexed by subsets ofU. Inclusion–exclusion
+extracts each one:
+aE(x, z)≡
+X
+U⊆E
+(−1)|E|−|U| Gx(1U , z) (modz J ).
+When we set ⃗X = x, the monomialQ
+i∈E xi equals one exactly when all the bits inE are one. Its
+contribution to the sum overx is therefore P
+x:x i=1 (i∈E) aE(x, z), with x Boolean. Substituting the
+coefficient formula above reduces this to sums with the formal input fixed.
+Computing the restricted sums.ForU⊆E⊆[n]with|E|⩽q, define
+Zt,E,U (z) =
+X
+x∈{0,1}n
+xi=1 (i∈E)
+Gx(1U , z)inQ[z]/(z J ).(2.8)
+Here U fixes the formal input ⃗X =1 U, while E fixes bits of the summation variablex to one.
+Summing the monomial contributions gives
+H(t+z)≡
+X
+E⊆[n]
+|E|⩽q
+X
+U⊆E
+(−1)|E|−|U| Zt,E,U (z) (modz J ).(2.9)
+This recovers allJ = q + 1Taylor coefficients together. Lemma 3.3 states the general identity used
+here.
+Each sum Zt,E,U can be evaluated by the algorithm of Section 2.4. With⃗X =1 U fixed, each
+correction ⟨∆ ⃗Pe,v(z), 1U ⟩ is independent of x. All dependence on x comes through the forms
+⟨ ⃗Pe,v(t), x⟩, so fixing⃗ ystill separates the clause polynomials. The restrictionsxi = 1are local to
+each group. The separation identity uses only addition, multiplication, and distributivity, so it also
+applies to these truncated polynomial values. Each clause is evaluated after substituting⃗X =1 U,
+using only univariate polynomials inz of degree less thanJ and discarding higher powers after each
+multiplication. The multivariate expansion and its coefficientsaE(x, z)are used only to justify the
+identity; the algorithm never constructs them.
+Repeating this calculation at t = 1 , . . . , Qprovides all the Taylor coefficients needed for the
+interpolation above, and therefore recoversH(0) = #F.
+2.6.The three costs and the running time.Jumping ahead, Section 2.7 will construct re-
+placement forms that restore the original variables at zero, have degree at mostR, and admit an
+(r, τ, D)-design at everyt∈ [Q]. For sufficiently largen, the construction takes polynomial time and
+achieves the following parameter bounds:
+r= Θ
+  √logn
+(log logn) 2
+ 
+, Q= Θ
+  logn
+log logn
+ 
+,
+R= Θ(
+p
+logn), τ= Θ
+  1
+rlogn
+ 
+, D=r 2Q ⩽(2n) 1/128.
+(2.10)
+We first show how these bounds give a fast counting algorithm; the next subsection will justify that
+they can all be achieved simultaneously.
+Recall thatq = J− 1 = ⌊3nR/Q⌋. For each evaluation pointt, Section 2.5 computes one restricted
+sum for each pairU⊆E with |E|⩽q . There are
+ n
+j
+ 
+choices of anE of size j, and then2j choices
+of U. Each restricted sum enumerates measurement tuples and assignments within individual groups.
+
+=== PAGE 13 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 13
+Thus the three costs multiply to give, up to polynomial factors,
+min(q,n)X
+j=0
+2j
+ n
+j
+ 
+| {z }
+Taylor data
+·(2D+ 1) 2τ n
+| {z }
+measurements
+·2 2n/r
+| {z }
+one group
+.(2.11)
+To bound the first cost, note that1 ⩽q⩽n/ 2for sufficiently large n, since R/Q→ 0. Using n
+j
+ 
+⩽(en/j) j and the fact that(2en/j)j increases for1⩽j⩽n, we obtain
+qX
+j=0
+2j
+ n
+j
+ 
+⩽(q+ 1)
+  2en
+q
+ q
+.
+Since q = Θ(nR/Q), the logarithm of this cost isO(n(R/Q) log(2Q/R)). Taking logarithms of all
+three costs in (2.11) therefore gives
+O
+ 
+n
+  R
+Q log 2Q
+R +τlog(2D+ 1) + 1
+r
+  
+.
+Each term is small under (2.10):
+R
+Q log 2Q
+R =O
+  log logn√logn ·log logn
+ 
+,
+τlog(2D+ 1) =O
+  1
+rlogn ·logn
+ 
+=O(1/r),
+1
+r =O
+  (log logn) 2
+√logn
+ 
+.
+Thus the bounded-occurrence instance can be counted in
+nO(1)2O(n(log logn) 2/√logn) (2.12)
+bit operations and polynomial space. The finitely many smaller inputs are handled by exhaustive
+search.
+The number of pointsQ, the number of groupsr, and the truncation orderJ = O(1 + nR/Q)are
+polynomial in n. Hence the loops over points and groups, arithmetic on polynomials of degree less
+than J, and the final interpolation add only polynomially many operations per iteration of the three
+enumerations above.
+For the bit-complexity and space bounds, see Appendix B.4.
+2.7.Constructing the low-degree replacement linear forms.Consider one occurrence ofXv
+in a clause. AtT = 0its replacement must equal Xv. At eacht = 1, . . . , Q, the clause must be able
+to evaluate that same replacement using only its assigned group and a few shared measurements.
+Choosing a different linear form at each point and interpolating would generally cost degreeQ. To
+keep Taylor recovery cheap, we need degreeRmuch smaller thanQ.
+Suppose a term in the replacement uses a variable outside the clause’s assigned group only at
+t = 2. Multiplying the term by1−T /2leaves it unchanged at zero and removes it att = 2. At every
+other evaluation point the clause can read the variable from its own group. The same trick works for
+several such points: one factor per point, at a cost of one degree each. The challenge is therefore to
+write each input as a sum in which the shared measurements determine one part, and each remaining
+term uses a variable outside the assigned group at only a few points. We first construct such a
+decomposition on auxiliary coordinates that record the group choices, then substitute the variables
+of the formula.
+
+=== PAGE 14 ===
+14 OPENAI
+Step 1: Set up the auxiliary coordinates.
+At each evaluation point, an occurrence(e, v)has two group choices: the group containing variable
+v, and the group assigned to clausee. Across theQ points, these choices form a sequence ofQ pairs.
+We therefore use the coordinate set
+B= ([r]×[r]) Q, D=|B|=r 2Q.
+Write an index as
+u=
+ 
+(au(1), du(1)), . . . ,(au(Q), du(Q))
+ 
+.
+We will construct one replacement row for every such index, so it will be available whatever group
+choices we later make for the formula.
+Let ⃗ζ = (ζw)w∈B be formal placeholders for the original variables that we will insert in Step 4. At
+point t, coordinate ζw belongs to groupaw(t), whereas the replacement forζu is assigned to group
+du(t). Thus the coordinates that this replacement may use freely are
+St,du(t),S t,g :={w∈ B:a w(t) =g}.
+In particular, ζw belongs to the assigned group exactly whenaw(t) = du(t). The sets St,g partition
+B, withD/rcoordinates in each group.
+Our auxiliary goal is to construct coefficient rows⃗Pu(T)∈Q[T] D and one matrix
+C∈ {0,1,−1}c×D, c⩽ Dτ
+3r ,
+such that
+⟨ ⃗Pu(0), ⃗ζ⟩=ζ u,deg ⃗Pu ⩽R−1,
+and, at everyt∈ [Q], the replacement linear form⟨ ⃗Pu(t), ⃗ζ⟩ is a linear combination of the available
+data
+⃗ζ| St,du(t) andC ⃗ζ.(2.13)
+The same measurements C⃗ζ serve every row and every evaluation point. This is the auxiliary
+counterpart of the dependence condition in the design from Section 2.4.
+Step 2: Construct the constant matrix.
+We start from the identity
+ζu = ((ID −M 0)⃗ζ) u +
+X
+w∈B
+M0[u, w]ζw.
+We want the first term to be determined byC⃗ζ. In the sum, each nonzero coefficient should
+connect incompatible groups at only a few points, so that a low-degree polynomial can remove those
+dependencies. Define these points by
+Eu,w ={t∈[Q] :a w(t)̸=d u(t)}.
+The two requirements onM0 ∈Q D×D are
+M0⃗ξ= ⃗ξfor every ⃗ξ∈kerC,
+M0[u, w]̸= 0 =⇒ |E u,w|⩽R−1.
+(2.14)
+The first says thatID −M 0 vanishes on kerC. Equivalently, each of its rows lies in the row space of
+C, so( ID −M 0)⃗ζ is a linear function of the measurementsC⃗ζ. The second will bound the degrees
+of the polynomials used in Step 3.
+
+=== PAGE 15 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 15
+Restricting the support by keepingf low-degree.LetΠ s be the permutation matrix that swaps the
+two entries of pairs in every index, leaving all other pairs unchanged. These matrices commute and
+satisfyΠ 2
+s =I D. Put
+V0 =
+QY
+s=1
+Πs, W 0 = 1
+2
+QX
+s=1
+(ID −Π s), M 0 =V 0f(W 0),
+where we will choose a polynomialf of degree at mostR− 1. The complete swapV0 already respects
+every group: its nonzero entry in rowuis at the columnwsatisfying
+(aw(s), dw(s)) = (du(s), au(s))for everys.
+In particular,E u,w is empty.
+Multiplying by f (W0)can undo swaps, but the degree off limits how many. Expandingf (W0)
+gives products of at mostR− 1swaps. Repeated swaps cancel becauseΠ 2
+s = ID. Multiplying by V0
+therefore gives
+M0 =
+X
+S⊆[Q]
+|S|⩽R−1
+γS
+Y
+s /∈S
+Πs for someγ S ∈Q.(2.15)
+The permutation in the summand indexed byS swaps every pair outsideS. Its nonzero entries
+therefore satisfy aw(s) = du(s)for every s /∈S, so Eu,w ⊆S . Every summand is zero whenever
+|Eu,w|> R− 1, and hence so is their sum. This proves the second condition in(2.14) for any
+polynomialfof degree at mostR−1.
+Choosing f to fix most basis directions.We now choosef so that M0 fixes most basis directions.
+First consider one position, with coordinates indexed by[r] × [r]. Let ⃗ eab be the vector that is one
+at(a, b)and zero elsewhere. Swapping the pair has the orthogonal eigenbasis
+⃗ eaa (a∈[r]), ⃗ eab +⃗ eba (a < b),eigenvalue+ 1,
+⃗ eab −⃗ eba (a < b),eigenvalue−1.
+There are r(r + 1)/2vectors with eigenvalue+1and r(r− 1)/2with eigenvalue −1. All entries are
+in{0,1,−1}.
+For each positions∈[Q], choose one such vector ⃗ψs, and define ⃗ψ∈Q B coordinatewise by
+ψu =
+QY
+s=1
+ψs(au(s), du(s)).
+These D = (r2)Q choices give an orthogonal basis: inner products factor into the inner products at
+the Q positions. The swapΠ s acts on ⃗ψ by the eigenvalue of⃗ψs. If exactly j of the choices have
+eigenvalue−1, then
+W0 ⃗ψ=j ⃗ψ, V 0 ⃗ψ= (−1) j ⃗ψ, M 0 ⃗ψ= (−1) jf(j) ⃗ψ.
+Thus we makeM0 fix these vectors by settingf(j) = (−1)j.
+For a uniformly chosen basis vector, the numberjhas distribution
+W∼Bin(Q, p), p= r−1
+2r ,
+because at each position a fractionp of the r2 choices have eigenvalue−1. Most basis vectors
+therefore have j near Qp. Choose an intervalI of R consecutive integers nearQp, and interpolate
+f (j) = (−1)j for j∈ I. This givesdegf⩽R− 1and makes M0 fix every basis vector withj∈ I.
+Step 5 specifies the endpoints and checks that the interval lies in{0, . . . , Q}.
+Measuring the exceptional directions.Use the transposes of the remaining basis vectors as the rows
+of C. Their entries are in{0, 1,− 1}, and by orthogonality,kerC is spanned by the basis vectors
+fixed above. This proves the first condition in (2.14).
+
+=== PAGE 16 ===
+16 OPENAI
+We can now see how to chooseR. The standard deviation ofW is
+p
+Qp(1−p) = Θ(√Q). Taking
+R much larger than√Q puts most basis vectors inside the interval, so only a small fraction need
+to be measured. We can still takeR much smaller than Q, so that Taylor recovery needs only
+1 + ⌊3nR/Q⌋ = o(n)coefficients per point. For the choices in Step 5, the binomial tail bound gives
+c=DPr[W /∈ I]⩽2Dexp
+ 
+− R2
+8Q
+ 
+⩽ Dτ
+3r ,
+as required. Thus low degree gives restricted support, while interpolation makes the correction
+ID −M 0 depend on only these few measurements.
+Step 3: Define the auxiliary replacement rows.
+We now turn the decomposition ofζu from Step 2 into its replacement. Keep the term determined
+by measurements unchanged. For eachM0[u, w]̸= 0, multiply its coefficient in the other term by
+φu,w(T) =
+Y
+s∈Eu,w
+(1−T /s).
+This polynomial equals one at zero and vanishes at every point whereζw lies outside the assigned
+group. Define the coefficient row⃗Pu(T)by the identity
+⟨ ⃗Pu(T), ⃗ζ⟩= ((I D −M 0)⃗ζ) u +
+X
+w∈B
+M0[u,w]̸=0
+M0[u, w]φu,w(T)ζ w.(2.16)
+This directly gives all three required properties:
+•AtT= 0, every multiplier is one, so the two terms sum toζu.
+•Each multiplier has degree|E u,w|⩽R−1, sodeg ⃗Pu ⩽R−1.
+• At T = t, the first term is a linear function ofC⃗ζ. In the sum, a coefficient can survive only
+ifa w(t) =d u(t), so only coordinates inSt,du(t) remain.
+Thus the replacement uses exactly the kinds of data allowed in (2.13).
+Step 4: Substitute the original variables.
+The auxiliary rows are now constructed. To use them for the formula, choose schedules
+av ∈[r] Q (v∈[n]), d e ∈[r] Q (e∈ F).
+At pointt, put variablevin groupa v(t)and assign clauseeto groupd e(t):
+St,g ={v:a v(t) =g}, σ e(t) =d e(t).
+The occurrence(e, v)uses the auxiliary label
+u(e, v) =
+ 
+(av(s), de(s))
+ 
+s∈[Q] ∈ B.
+Let h be the largest number of occurrences receiving any one label. We need both small variable
+groups and smallh. For our three-occurrence, width-three formula, Lemma 4.5 chooses the schedules
+deterministically in polynomial time so that
+|St,g|⩽2n/r, h⩽2M/D,
+provided
+12D2 ⩽M,2Qr 2 ⩽n.(2.17)
+The idea is to derandomize a random choice of schedules. If allav and de are chosen independently
+and uniformly from[ r]Q, each label has expected multiplicity M/D, and each group St,g has
+expected size n/r. Under the assumptions in(2.17), the standard method of conditional expectations
+derandomizes this choice in polynomial time, ensuring that every label has multiplicity at most
+2M/D and every group has size at most2n/r. Step 5 verifies these assumptions for our parameter
+choices.
+
+=== PAGE 17 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 17
+Different occurrences can receive the same label while requiring different original variables at
+that coordinate. Use h copies of B, placing occurrences with the same label in different copies. Let
+j(e, v) ∈ [h]denote the copy used by( e, v); put Xv at its coordinate u(e, v)and zero in unused
+positions. Write ⃗ζ (j)( ⃗X)for the resulting filled vector in copyj. Every entry is zero or an original
+variable. Repeated appearances ofXv use the same value, so these copies introduce no new Boolean
+variables.
+Apply the auxiliary row to the copy containing the occurrence:
+⟨ ⃗Pe,v(T), ⃗X⟩=
+D
+⃗Pu(e,v)(T), ⃗ζ (j(e,v)) ( ⃗X)
+E
+.(2.18)
+At zero the right side reads the coordinate containingXv, and substituting variables preserves the
+degree boundR− 1. At pointt, its freely used coordinates contain only variablesv′ with av′(t) = de(t).
+These are precisely the variables in the clause’s assigned groupSt,de(t). All occurrences of clausee
+use this same assigned group.
+The remaining dependence is through thehc linear measurements C⃗ζ (j)( ⃗X), over theh copies.
+These may involve several original groups. Fixing a total such asx1 + x2 would still couple two
+groups containing x1 and x2. We therefore split each measurement into its contributions from
+individual groups. For each measurementℓ(⃗X), write
+ℓ( ⃗X) =
+rX
+g=1
+ℓ|St,g ( ⃗X| St,g ),
+and collect the coefficient rows of these restrictions intoCt,g. Every auxiliary measurement is now a
+sum of group measurements. For a clause assigned to groupg, the part fromSt,g is a local linear
+form, and every other part is a linear combination of the corresponding group’s measurements. This
+is the condition in (2.5).
+There arerhcrows in total. SincehD⩽2M⩽6n,
+rX
+g=1
+ct,g =rhc⩽rh Dτ
+3r ⩽2τ n.
+Each row ofC has D entries in {0, 1,− 1}. Substituting variables, combining repeated copies, and
+restricting to a group cannot increase the sum of absolute coefficients. Hence every row ofCt,g is
+integral with absolute coefficient sum at mostD. Together with the group-size bound, this proves
+that the replacement forms admit an(r, τ, D)-design at every point.
+Step 5: Verify the promised parameter bounds.
+The construction needs the two balancing inequalities(2.17) and the tail bound2e−R2/(8Q) ⩽τ /(3r).
+We now choose parameters of the orders stated in (2.10) and verify these requirements.
+Putλ=⌈log 2 n⌉andν=⌈log 2 λ⌉, and choose
+r=
+$ √
+λ
+ν2
+%
+, Q=
+  λ
+128ν
+ 
+, R= 4⌈
+√
+λ⌉,
+τ= 1
+rλ , D=r 2Q.
+(2.19)
+These have the orders stated in(2.10). For sufficiently largen, we haver⩾ 2, R⩾ 32, and6 R⩽Q ,
+sinceR/Q=O(ν/
+√
+λ)→0. We check the remaining requirements in turn:
+•Interpolation interval.Withp= (r−1)/(2r)as in Step 2, take
+A0 =
+ 
+Qp− R−1
+2
+ 
+,I={A 0, . . . , A0 +R−1}.
+
+=== PAGE 18 ===
+18 OPENAI
+Since Q/4 ⩽Qp⩽Q/ 2and6 R⩽Q , this interval lies in{0, . . . , Q}. Moreover, R⩾ 32
+ensures that it contains every integer withinR/4ofQp. The binomial tail bound therefore
+gives the estimatePr[W /∈ I]⩽2e−R2/(8Q) used in Step 2.
+•Polynomial dimension and balanced schedules.Sincelog 2 r⩽ν/2,
+log2 D= 2Qlog 2 r⩽λ/128, D⩽(2n) 1/128.
+For sufficiently largen, this gives
+12D2 ⩽12(2n) 1/64 ⩽n⩽M,2Qr 2 =O(λ 2)⩽n,
+as required for Step 4.
+•Few measurements.We haveR 2/(8Q)⩾256ν. Sinceλ⩽2 ν andr 2 ⩽λ,
+2e−R2/(8Q) ⩽2e −256ν ⩽ 1
+3λ2 ⩽ 1
+3r2λ = τ
+3r .
+Thus Step 2 supplies the auxiliary measurement bound used in Step 4.
+Finally, all construction dimensions are polynomially bounded inn. Lemma 4.6 gives polynomial
+construction time for the matrices and rows in Steps 2–3, and Lemma 4.5 does so for the schedules
+in Step 4. The transfer uses onlyhD⩽ 6n coordinate positions. We have therefore constructed, in
+polynomial time, replacement forms that restore every original input at zero, have degree at most
+R− 1 ⩽R , and admit the promised(r, τ, D)-designs at everyt∈ [Q]. This supplies the bounds used
+in Section 2.6; Lemma 4.8 records the parameter check for the more general setting of the full proof.
+2.8.A weaker algorithm for general#k-SAT.The algorithm above already gives a subexpo-
+nential algorithm for general#k-SAT: after disjoint sparsification, we reduce each instance directly
+to a3-CNF in which every variable occurs at most three times. Both steps preserve the count, as
+follows.
+Fix k⩾ 2. Weusethecounting-preservingversion[ DHM+14, AppendixA]ofsparsification[ IPZ01],
+with quantitative bounds from [CIP06, Section 6] and [Cal09, Lemma 5.14 and equation (5.4)].
+As recorded in Lemma 6.3, this expresses the input count as the sum of the counts of at most
+polyk(n, σ−1)2σn formulasG. EachGhas the samendeclared variables, with at most
+B=O k
+ 
+(σ−1 log(2/σ))k−1
+ 
+occurrences per variable, and hence at mostBn nonempty clauses. An empty clause gives count
+zero immediately.
+First turn G into a3-CNF without changing its count. Keep clauses of size at most three. For
+each longer clause, compute its disjunction with binary OR gates and require the final output to be
+one. For a gatez=u∨v, impose
+(¬u∨z)∧(¬v∨z)∧(u∨v∨ ¬z).
+Here u, vare input literals or earlier gate outputs, andz is fresh. These clauses enforce equality
+with the OR, so the gate values are uniquely determined by the original assignment. Consequently,
+a satisfying assignment ofG has exactly one extension to the new formula, and an assignment not
+satisfyingGhas none. This usesO(k)gates per clause.
+Next reduce the occurrences. If a variablex occurs s⩾ 2times in this3-CNF, replace its occur-
+rences by distinct copiesx1, . . . , xs, preserving their signs, and add Tovey’s implication cycle [Tov84,
+p. 86]:
+(¬x1 ∨x 2)∧ · · · ∧(¬xs−1 ∨x s)∧(¬x s ∨x 1).
+The cycle forces all copies to agree. Each copy appears in one clause inherited from the3-CNF
+and two cycle clauses, hence in exactly three clauses. Variables with at most one occurrence are
+kept unchanged, including unused declared variables. This standard variable-copy reduction [Gol08,
+
+=== PAGE 19 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 19
+Proposition 4.7] therefore also gives a bijection between satisfying assignments. The final formulabG
+has# bG= #Gand
+n⩽N:= #{variables of bG}=O k(Bn).
+All its clauses have size at most three, including the two-literal cycle clauses, and every variable
+occurs at most three times. Thus it is exactly an instance of the setting of this overview.
+Apply (2.12) to each bG and add the counts. Whenσ−1 is bounded by a fixed power oflogn, so is
+B, and the resulting time is
+(n+m) Ok(1)2Ok(σn+Bn(log logn) 2/√logn ).
+For example, choosingσwithin a constant factor of(logn) −1/(2k) yields
+(n+m) Ok(1)2Ok(n(log logn) k+1/(logn) 1/(2k)) = (n+m) Ok(1)2o(n)
+with polynomial space, processing the sparsification tree and the reduced instances one at a time.
+The parameterσmay be chosen rational.
+2.9.A faster algorithm for# k-SAT via counting solutions to sparse low-degree poly-
+nomial equations overF2.The running-time exponent in Section 2.8 isOk(σn + Bρ(n)), where
+ρ(n) = n(log logn)2/√logn. If sparsification gaveB = Ok(1)at σ = Θ(ρ(n)/n), we would already
+have a2 Ok(ρ(n))-time algorithm for general#k-SAT up to polynomial factors: copying would use
+only Ok(n)variables per leaf, and the number of leaves would fit within the same bound. At this
+choice ofσ, however, the guarantee is onlyB= (logn) Ok(1).
+We obtain the2Ok(ρ(n)) bound in two steps. First, the counting algorithm of this overview extends
+to systems ofO(n)polynomial equations over F2, each of degree at mostk with polylogarithmically
+many monomials (Theorem 2.2). Second, even if a leafG has Bn clauses, we can construct such a
+system on the originaln variables whose common zeros are exactly the satisfying assignments ofG.
+We illustrate the reduction first with a self-contained randomized construction, then explain the
+counting algorithm.
+A randomized reduction to sparse polynomial equations.Writeve(x) = 1if x violates clause
+e, and0otherwise. Aparity teston a set S of clauses is the polynomial equationP
+e∈S ve(x) = 0
+over F2: it accepts ifx violates an even number of clauses inS. Every satisfying assignment passes,
+so we need only catch every nonsatisfying one. IfG has mG ⩽n clauses, one test per clause suffices.
+Supposem G > n.
+A short test can easily miss a single violated clause, but all assignments that violate only that
+clause give identical answers. Thus there are onlymG singleton patterns to catch. Use8nindependent
+tests. For each, draw L = 2 B⌈log2(2mG)⌉ clauses uniformly with replacement. For each draw,
+independently add its violation bit to the parity sum with probability1/2; two included copies
+cancel. Since mG ⩽Bn , each clause is drawn at least logarithmically often in expectation overall.
+For a fixed set ofw⩾ 1violated clauses, let u = Lw/mG be the expected number of hits per test. If
+the sample hits the set, the coin on the first hit makes the parity odd with probability1/2, even
+with all other coins fixed. Thus the rejection probability is
+pw = 1
+2
+ 
+1−(1−w/m G)L 
+⩾ 1
+2 (1−e −u).
+We countsetsfor few violations andassignmentsfor many:
+• If u⩽ 1, then pw ⩾u/ 4. There are at mostmw
+G sets of sizew, so the chance that at least
+one escapes all tests is at mostmw
+Ge−8npw ⩽m w
+Ge−2nLw/mG ⩽ 16−w. Summing overw⩾ 1
+gives failure probability at most1/15.
+• If u >1, then pw > 1/4. A union bound over the2n assignments bounds the chance that
+any assignment in this case escapes by2n(3/4)8n <1/4.
+
+=== PAGE 20 ===
+20 OPENAI
+Thus with probability greater than2/3, the common zeros are exactly the satisfying assignments
+of G. Each ve is a product of at mostk factors of the formxj or1 + xj, so each test has degree
+at most k and at most2kL monomials, polylogarithmic inn. Section 6 constructs short tests with
+the same solution set deterministically. We first use parity checks from an expander code to ensure
+that any nonsatisfying assignment still passing must violate many clauses. A random short test
+then catches each such assignment with probability at least1/4. For each candidate test, we count
+the assignments that pass both that test and all tests chosen so far. We append a candidate that
+minimizes this count: every satisfying assignment passes every candidate, so this eliminates at least
+a quarter of the remaining nonsatisfying assignments.
+Counting the common zeros.Recall from Section 2.2 thatΦe(x)is1if x satisfies clause e and0
+otherwise. What should replace this factor when we test a whole setSi of clauses at once? First
+count how many clauses inthis testare violated, using ordinary integer addition:
+Li(x) =
+X
+e∈Si
+ve(x) =
+X
+e∈Si
+ 
+1−Φ e(x)
+ 
+.
+The test passes exactly whenLi(x)is even. Choose ℓ = n + 1, so that a count of at most2n is
+determined by its residue modulo2ℓ. The complemented Beigel–Tarui polynomialpℓ (Lemma 5.1) is
+1modulo2 ℓ on even integers and0on odd integers. For example, violating two clauses inSi still
+passes the test: pℓ(2) ≡ 1 ( mod 2ℓ). Writing mtest for the number of tests, our counting expression
+becomes
+X
+x
+Y
+e∈G
+Φe(x)
+| {z }
+one factor per clause
+− →
+X
+x
+mtestY
+i=1
+pℓ(Li(x))
+| {z }
+one factor per test
+.
+The left side is#G. The least nonnegative residue of the right side modulo2ℓ is the number of
+assignments passing every test. When the tests catch every nonsatisfying assignment, this is exactly
+#G. The same encoding works for any sparse polynomial equationPi(x) = 0over F2: take Li(x)to
+be the integer sum of its listed monomials. Again the equation holds exactly when this sum is even.
+To reuse the Taylor step, we need a product of input degreeO(n). Multiplying the mtest test
+factors directly gives only the boundO(kmtestℓ), potentially quadratic inn. The key is to truncate
+the productacross all tests together. Section 5.1 writespℓ(y)as a sum of termsej(y)h(y)j, where ej
+has degree at most one andh(y) = y(y− 1)is even at every integer. A product term containingℓ or
+more copies ofh is therefore zero modulo2ℓ on Boolean assignments, even if those copies come from
+different tests. We keep just the terms with fewer thanℓ copies in total, tracking that number as we
+multiply. Each retained term has at mostmtest linear factors andℓ− 1quadratic factors in the Li’s.
+SincedegL i ⩽k, its input degree is at mostk(mtest + 2(ℓ−1)) =O(n).
+For the replacement forms, what matters is which variables each factor reads. Where Section 2.3
+used one form for each variable in a clause, we now use one for each variable in a test, reusing
+it throughout that test. Each sparse equation reads only polylogarithmically many variables.
+Branching on the values of theO(n/√logn )most frequent variables leaves each remaining variable
+in only polylogarithmically many tests, as required by Section 4. On each branch, fixing the shared
+measurements again lets us sum one group at a time. Because the truncated product has input
+degree O(n), the degree-R replacements give degT H = O(nR): the same O(1 + nR/Q)Taylor
+coefficients per point recover the contributions atT = 0with0 , 1, . . . , ℓ−1copies of h. Their sum
+modulo2 ℓ, taken as the least nonnegative residue, is the exact branch count. Adding the branch
+counts gives the number of common zeros.
+Theorem 2.2(Counting common zeros of sparse polynomials).Fix integersk⩾ 2and c⩾ 1. Let
+P1, . . . , Pmtest be polynomials overF2 in n⩾ 20Boolean variables, with mtest ⩽cn . Each Pi is given

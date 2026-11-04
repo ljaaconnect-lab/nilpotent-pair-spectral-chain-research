@@ -1,0 +1,255 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "n": 1,
+      "Q": 3,
+      "N": 2,
+      "omega": 2,
+      "target": 0,
+      "added_core_gates": 1,
+      "shared_prefix_preserved": true,
+      "original_useful_gates": 12,
+      "lifted_useful_gates": 13,
+      "bound": 20,
+      "cubic_bound": 30,
+      "native_intt_constructions": 1,
+      "spectral_suffix_method": "Same native INTT topology with the shared core wire replaced",
+      "exact_oriented_output_preserved": false,
+      "top_coefficient_preserved": true,
+      "output_at_zero_auxiliary_target": 1,
+      "scalar_a_z_only_output_constructed": false,
+      "snapshots": [
+        {
+          "trial": 0,
+          "zero_auxiliary": true,
+          "old_target": 0,
+          "lifted_target": 1
+        },
+        {
+          "trial": 1,
+          "zero_auxiliary": true,
+          "old_target": 0,
+          "lifted_target": 1
+        },
+        {
+          "trial": 2,
+          "zero_auxiliary": false,
+          "old_target": 1,
+          "lifted_target": 2
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "Q": 5,
+      "N": 4,
+      "omega": 2,
+      "target": 1,
+      "added_core_gates": 1,
+      "shared_prefix_preserved": true,
+      "original_useful_gates": 73,
+      "lifted_useful_gates": 74,
+      "bound": 97,
+      "cubic_bound": 233,
+      "native_intt_constructions": 1,
+      "spectral_suffix_method": "Same native INTT topology with the shared core wire replaced",
+      "exact_oriented_output_preserved": false,
+      "top_coefficient_preserved": true,
+      "output_at_zero_auxiliary_target": 1,
+      "scalar_a_z_only_output_constructed": false,
+      "snapshots": [
+        {
+          "trial": 0,
+          "zero_auxiliary": true,
+          "old_target": 0,
+          "lifted_target": 1
+        },
+        {
+          "trial": 1,
+          "zero_auxiliary": true,
+          "old_target": 0,
+          "lifted_target": 1
+        },
+        {
+          "trial": 2,
+          "zero_auxiliary": false,
+          "old_target": 2,
+          "lifted_target": 3
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "Q": 5,
+      "N": 4,
+      "omega": 2,
+      "target": 3,
+      "added_core_gates": 1,
+      "shared_prefix_preserved": true,
+      "original_useful_gates": 121,
+      "lifted_useful_gates": 122,
+      "bound": 145,
+      "cubic_bound": 784,
+      "native_intt_constructions": 1,
+      "spectral_suffix_method": "Same native INTT topology with the shared core wire replaced",
+      "exact_oriented_output_preserved": false,
+      "top_coefficient_preserved": true,
+      "output_at_zero_auxiliary_target": 1,
+      "scalar_a_z_only_output_constructed": false,
+      "snapshots": [
+        {
+          "trial": 0,
+          "zero_auxiliary": true,
+          "old_target": 0,
+          "lifted_target": 1
+        },
+        {
+          "trial": 1,
+          "zero_auxiliary": true,
+          "old_target": 0,
+          "lifted_target": 1
+        },
+        {
+          "trial": 2,
+          "zero_auxiliary": false,
+          "old_target": 3,
+          "lifted_target": 4
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "Q": 17,
+      "N": 8,
+      "omega": 2,
+      "target": 6,
+      "added_core_gates": 1,
+      "shared_prefix_preserved": true,
+      "original_useful_gates": 330,
+      "lifted_useful_gates": 331,
+      "bound": 420,
+      "cubic_bound": 1857,
+      "native_intt_constructions": 1,
+      "spectral_suffix_method": "Same native INTT topology with the shared core wire replaced",
+      "exact_oriented_output_preserved": false,
+      "top_coefficient_preserved": true,
+      "output_at_zero_auxiliary_target": 1,
+      "scalar_a_z_only_output_constructed": false,
+      "snapshots": [
+        {
+          "trial": 0,
+          "zero_auxiliary": true,
+          "old_target": 0,
+          "lifted_target": 1
+        },
+        {
+          "trial": 1,
+          "zero_auxiliary": true,
+          "old_target": 0,
+          "lifted_target": 1
+        },
+        {
+          "trial": 2,
+          "zero_auxiliary": false,
+          "old_target": 0,
+          "lifted_target": 1
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "Q": 17,
+      "N": 16,
+      "omega": 3,
+      "target": 12,
+      "added_core_gates": 1,
+      "shared_prefix_preserved": true,
+      "original_useful_gates": 1494,
+      "lifted_useful_gates": 1495,
+      "bound": 1836,
+      "cubic_bound": 14849,
+      "native_intt_constructions": 1,
+      "spectral_suffix_method": "Same native INTT topology with the shared core wire replaced",
+      "exact_oriented_output_preserved": false,
+      "top_coefficient_preserved": true,
+      "output_at_zero_auxiliary_target": 1,
+      "scalar_a_z_only_output_constructed": false,
+      "snapshots": [
+        {
+          "trial": 0,
+          "zero_auxiliary": true,
+          "old_target": 0,
+          "lifted_target": 1
+        },
+        {
+          "trial": 1,
+          "zero_auxiliary": true,
+          "old_target": 0,
+          "lifted_target": 1
+        },
+        {
+          "trial": 2,
+          "zero_auxiliary": false,
+          "old_target": 7,
+          "lifted_target": 8
+        }
+      ]
+    },
+    {
+      "n": 16,
+      "Q": 97,
+      "N": 32,
+      "omega": 19,
+      "target": 24,
+      "added_core_gates": 1,
+      "shared_prefix_preserved": true,
+      "original_useful_gates": 6766,
+      "lifted_useful_gates": 6767,
+      "bound": 8092,
+      "cubic_bound": 118785,
+      "native_intt_constructions": 1,
+      "spectral_suffix_method": "Same native INTT topology with the shared core wire replaced",
+      "exact_oriented_output_preserved": false,
+      "top_coefficient_preserved": true,
+      "output_at_zero_auxiliary_target": 1,
+      "scalar_a_z_only_output_constructed": false,
+      "snapshots": [
+        {
+          "trial": 0,
+          "zero_auxiliary": true,
+          "old_target": 0,
+          "lifted_target": 1
+        },
+        {
+          "trial": 1,
+          "zero_auxiliary": true,
+          "old_target": 0,
+          "lifted_target": 1
+        },
+        {
+          "trial": 2,
+          "zero_auxiliary": false,
+          "old_target": 78,
+          "lifted_target": 79
+        }
+      ]
+    }
+  ],
+  "counterexample_to_scalar_reading": {
+    "n": 2,
+    "Q": 5,
+    "a": "all zero",
+    "z": 1,
+    "top_coefficient": 2,
+    "lifted_value_at_zero_aux": 1
+  },
+  "general_theorem_is_separate_from_finite_checks": true,
+  "complete_scalar_closure_proved": false,
+  "source_sha256": {
+    "documents/unite-temoin-2026-11-04/verify_unit_lift.py": "ecceb3deab2570264ed5f2f57709618e78978f9ebd29cbcb76590c721543775e",
+    "documents/unite-temoin-2026-11-04/compile_with_unit.py": "e84cbc4f20d5db3dbfc158ebbc80dcb9f0e0d1ea91f179af2e9e8d178d0b9e31",
+    "documents/composition-native-2026-11-03/compose_native_representatives.py": "2e68d57225c04caddace2d91946cf7c88273a702bbc7833e1f380a253e54d9f4",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06"
+  }
+}

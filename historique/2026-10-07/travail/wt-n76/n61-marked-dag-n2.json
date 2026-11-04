@@ -1,0 +1,143 @@
+{
+  "n": 2,
+  "artifact": "shared_cofactor_matchings",
+  "model": "Q[x] or Q[z], fan-in-two scalar add/mul only",
+  "gates": 20,
+  "counts": {
+    "variable": 1,
+    "mul": 13,
+    "constant": 6,
+    "add": 7
+  },
+  "output": 26,
+  "nodes": [
+    {
+      "op": "variable",
+      "name": "z"
+    },
+    {
+      "op": "mul",
+      "left": 0,
+      "right": 0
+    },
+    {
+      "op": "mul",
+      "left": 1,
+      "right": 1
+    },
+    {
+      "op": "mul",
+      "left": 2,
+      "right": 2
+    },
+    {
+      "op": "constant",
+      "value": "5/4"
+    },
+    {
+      "op": "mul",
+      "left": 4,
+      "right": 0
+    },
+    {
+      "op": "constant",
+      "value": "10/9"
+    },
+    {
+      "op": "mul",
+      "left": 6,
+      "right": 1
+    },
+    {
+      "op": "constant",
+      "value": "2"
+    },
+    {
+      "op": "mul",
+      "left": 8,
+      "right": 2
+    },
+    {
+      "op": "constant",
+      "value": "13/9"
+    },
+    {
+      "op": "mul",
+      "left": 10,
+      "right": 3
+    },
+    {
+      "op": "add",
+      "left": 5,
+      "right": 11
+    },
+    {
+      "op": "constant",
+      "value": "-1"
+    },
+    {
+      "op": "mul",
+      "left": 12,
+      "right": 13
+    },
+    {
+      "op": "add",
+      "left": 5,
+      "right": 14
+    },
+    {
+      "op": "add",
+      "left": 11,
+      "right": 14
+    },
+    {
+      "op": "mul",
+      "left": 5,
+      "right": 15
+    },
+    {
+      "op": "mul",
+      "left": 7,
+      "right": 9
+    },
+    {
+      "op": "add",
+      "left": 17,
+      "right": 18
+    },
+    {
+      "op": "mul",
+      "left": 11,
+      "right": 16
+    },
+    {
+      "op": "add",
+      "left": 18,
+      "right": 20
+    },
+    {
+      "op": "add",
+      "left": 19,
+      "right": 21
+    },
+    {
+      "op": "constant",
+      "value": "-1/2"
+    },
+    {
+      "op": "mul",
+      "left": 22,
+      "right": 23
+    },
+    {
+      "op": "mul",
+      "left": 18,
+      "right": 8
+    },
+    {
+      "op": "add",
+      "left": 24,
+      "right": 25
+    }
+  ]
+}

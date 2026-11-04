@@ -1,0 +1,11 @@
+{
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lake.exe",
+    "env",
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\MathlibSmoke.lean"
+  ],
+  "exit_code": 0,
+  "stdout": "Matrix.mul_assoc.{v, u_1, u_2, u_3, u_4} {l : Type u_1} {m : Type u_2} {n : Type u_3} {o : Type u_4} {\u03b1 : Type v}\n  [NonUnitalSemiring \u03b1] [Fintype m] [Fintype n] (L : Matrix l m \u03b1) (M : Matrix m n \u03b1) (N : Matrix n o \u03b1) :\n  L * M * N = L * (M * N)\nMatrix.det_vandermonde.{u_1} {R : Type u_1} [CommRing R] {n : \u2115} (v : Fin n \u2192 R) :\n  (Matrix.vandermonde v).det = \u220f i, \u220f j > i, (v j - v i)\nPolynomial.coeff_mul.{u} {R : Type u} [Semiring R] (p q : Polynomial R) (n : \u2115) :\n  (p * q).coeff n = \u2211 x \u2208 Finset.antidiagonal n, p.coeff x.1 * q.coeff x.2\n",
+  "stderr": ""
+}

@@ -1,0 +1,43 @@
+{
+  "node": "n76",
+  "artifact_goal": "AtomicSecondPrefix.lean",
+  "leaves": [
+    {
+      "id": "B1",
+      "statement": "(sum_H b)*(sum_H c)=sum_j_in_H sum_k_in_H b_j*c_k",
+      "method": "Finite distributivity"
+    },
+    {
+      "id": "B2",
+      "statement": "sum_j_in_H sum_k_in_H_erase_j b_j*c_k=(sum_H b)*(sum_H c)-sum_H b_j*c_j",
+      "method": "Separate k=j with sum_erase_add, then distribute"
+    },
+    {
+      "id": "B3",
+      "statement": "Signed response from the actual two-column square-zero insertion array equals (-1)^cardJ times B2 on H=univ\\J",
+      "method": "Finite disjoint-set coefficient rule, sign of two insertions"
+    },
+    {
+      "id": "B4",
+      "statement": "The initialized data b,c,d_j=b_j*c_j,h_b,h_c,h_d recover B3 from three complement sums",
+      "method": "Finite partition three times and ring"
+    }
+  ],
+  "formal_invocation_cap": 3,
+  "formal_invocations_before_authorization": 0,
+  "compile_start": "Coordinator authorization after the n75 dependency build finishes; shared window cap20 unchanged",
+  "initialization_cost": "n multiplications + 3*max(n-1,0) additions; row leaves already explicit",
+  "query_cost": "O(n) arithmetic gates for one explicit subset J; using literal -1 for subtractions",
+  "root_score": 0,
+  "root_conjecture_verified": false,
+  "forbidden": [
+    "No free contraction with arbitrary future f",
+    "No unknown prefix partition function as input",
+    "No variable division",
+    "No global closure assertion",
+    "No counterexample/lower-bound campaign",
+    "No sorry/custom axioms/native_decide",
+    "No writes to .arbor or outputs"
+  ],
+  "test_boundary": "Fresh coordinator exact-commit replay if all accepted declarations are compiler verified"
+}

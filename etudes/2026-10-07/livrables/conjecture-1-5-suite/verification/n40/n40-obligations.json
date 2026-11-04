@@ -1,0 +1,15 @@
+{
+  "node": "n40",
+  "artifact_version": "n40-shared-binary-power-v1",
+  "boundary": "B_dev-formal-power-compiler",
+  "frozen_obligations": [
+    {"name": "binary_plan_correct", "statement": "For every explicit monoid M, initial a and k:Nat, the binary square/multiply-base plan interprets to M.power a k"},
+    {"name": "binary_plan_logarithmic", "statement": "For every k:Nat, the generated plan has at most 2*Nat.log2 k multiplication instructions, each a single shared multiplication node"},
+    {"name": "central_exponent_log_bound", "statement": "For n>=2, Nat.log2(n^n-1)<=n^2"}
+  ],
+  "metric": "Complete kernel-verified main obligations without sorryAx divided by 3; supporting declarations must be audited. Probes and incomplete skeletons never count as solved.",
+  "complete_candidate_round_budget": 16,
+  "probes_counted_separately": true,
+  "initial_data": "a is an explicit arbitrary monoid element; no P_A/coefficient value is supplied",
+  "scope": "Powering/compiler ingredient only, conditional dense matrix scalar-cost bound; no root circuit or cheap representation claim"
+}

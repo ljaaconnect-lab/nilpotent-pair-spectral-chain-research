@@ -1,0 +1,10 @@
+Candidate source v1 was frozen before the first compiler validation.
+First n2 compiler validation returned 5/6: generic Poly structural equality
+was false, while cofactor local identity and marked evaluation were true.
+The probe showed actual domain QQ, oracle domain ZZ, expressions both
+x0*x3+x1*x2, and (actual-oracle).is_zero=True. This is a domain-normalization
+gap in the evaluator, not evidence against any identity or a target theorem.
+Prior validation and process log are preserved as *-v1.json.
+Evaluator revision v2 checks the exact zero difference instead of structural
+domain-sensitive equality in its three generic comparisons. The compiler,
+frozen protocol, fixed 24-check denominator, and three variants are unchanged.

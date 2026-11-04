@@ -1,0 +1,34 @@
+[FOUND INVARIANT]
+Statut de l'identité originale de Hhat : vérifiée par Lean et rejouée indépendamment.
+Le coefficient recherché est le polynôme permanent marqué, avec les amplitudes
+1+a_ij² et les adresses 2^(i*n+j). Les signes des deux déterminants se compensent.
+Une récurrence sur un anneau auxiliaire avec une extraction restante ne constitue
+pas encore une récurrence scalaire compilée de taille polynomiale.
+Le nouveau compilateur de projecteurs/cofacteurs donne bien un DAG scalaire
+final, contrôlé indépendamment 32/32 sur huit nouveaux cas rationnels ; sa
+borne constructive conserve une famille de matchings et de mineurs non bornée
+polynomialement ici. Le pont DirectProjector vérifie les identités de phases,
+sans transformer une action sur un vecteur de coefficients en porte gratuite.
+
+[LEAN 4 TACTICS APPLIED]
+Les sources livrées correspondent au registre arbor/verified-bases.json.
+Le critère conditionnel exact est ConditionalCriterion.conditional_target_coefficient.
+Il reçoit hrepresentation comme hypothèse explicite. Aucune preuve de l'existence
+de cette représentation pour tous n et toutes matrices A n'a été produite.
+
+L'obligation de recherche restante est de construire, pour toute la famille,
+des exposants fixes c,d, une dimension 1≤r≤n^d et un circuit d'initialisation C
+tel que C.gates≤n^c et C calcule M,u,v à partir des feuilles autorisées,
+avec [t^(n^n-1)]Hhat = uᵀ M^(n^n-1) v.
+Il faut en outre une construction uniforme de C en temps polynomial en n,L,
+et des constantes rationnelles dont les longueurs binaires soient polynomiales.
+Le choix r=1 et M=1,u=P_A,v=1 conserve l'obligation de construire P_A dans C ;
+il ne la décharge pas. Les auxiliaires nilpotents doivent être compilés en scalaires.
+
+[GATE COUNT VERIFICATION]
+Une fois ces obligations déchargées, le compilateur vérifié donne
+Pi_{c,d}(n)=n^c+4n^(3d+2)+3n^(2d), pour n≥2.
+Les scores 1.0 des feuilles mesurent les contrats locaux vérifiés. Le score
+de la conjecture racine reste 0.0 : aucun extracteur scalaire polynomial
+uniforme général n'a été obtenu. Les données n=2,3,4,5 ne prouvent pas une
+borne asymptotique. Aucun contre-exemple ni résultat d'impossibilité n'est revendiqué.

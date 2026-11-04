@@ -1,0 +1,18 @@
+{
+  "node": "n76",
+  "candidate_version": 1,
+  "compiler_invocations_before_freeze": 0,
+  "leaves_unchanged": [
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+  ],
+  "files": {
+    "AtomicSecondPrefix.lean": "c9fb587a16258873517bb2f32ad11824f2f6af5c89e97313aeb75634fedd1e5b",
+    "run_atomic.py": "63b001a1ffc2b4fb1f936a511bd2dd7556d94638248c7e426e715881af80c6ed",
+    "n76-contract.json": "115f351e4e920d8baf8f477b33f7f2539b09b0c3d72c437d9f42775252fd8b8c",
+    "n76-dependency-provenance.json": "5ccaf00798501869c90adbdb2cf373b4fdfec444f9960916a55c3410f4ed0cf7",
+    "n76-protocol.json": "c464ef7802adcade57484ff896c4f8ad92d4d928cc66e46ec6e9eee09a8501af"
+  }
+}

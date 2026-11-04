@@ -1,0 +1,18 @@
+{
+  "dev_score": 1.0,
+  "result": {
+    "artifact_version": "n3-hilbert-core-v2",
+    "status": "partial_helpers_verified",
+    "root_conjecture_verified": false,
+    "core_declarations_accepted": 7,
+    "generated_declarations_accepted": 2,
+    "compiler_exit_code": 0,
+    "strict_axiom_audit": "passed; standard trust base only, no sorryAx",
+    "Mathlib_draft_status": "unverified_missing_dependency",
+    "Mathlib_draft_score": null,
+    "complete_compiler_rounds": 16,
+    "heldout_tests_run": false
+  },
+  "insight": "Recursive bounded-digit fixed-length injectivity, central-label cancellation, generic orbit stabilization, and exact n2 factorization/convolution have genuine kernel proofs. The constructive A/B/C blueprint preserves all original gate, literal, domain and uniformity requirements; polynomial scalar extraction is still the root obligation.",
+  "branch_ref": "arbor/n3"
+}

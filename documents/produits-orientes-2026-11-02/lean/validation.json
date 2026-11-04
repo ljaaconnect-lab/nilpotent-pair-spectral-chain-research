@@ -1,0 +1,18 @@
+{
+  "scope": "Exact coordinate-pairing recovery through a supplied linear encoding: injectivity and finite-dimensional rank bounds only. No oriented-quotient construction or lower bound for arbitrary scalar circuits is formalized.",
+  "source": "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\produits-orientes-2026-11-02\\lean\\PairingCompression.lean",
+  "source_sha256": "be8c6b15a83e9ce6127cd8f1f5cb2a4430df6db73f649003115a21c53fec51b1",
+  "source_changed_during_check": false,
+  "replay_sha256": "ee2a03a701646920c13a48652921d8ab55403f44c8d3a84091ecee9e5d726519",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "-o",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\produits-orientes-pairing\\PairingCompression.olean",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\produits-orientes-2026-11-02\\lean\\PairingCompression.lean"
+  ],
+  "exit_code": 0,
+  "seconds": 16.359,
+  "stdout": "'PairingCompression.encoding_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PairingCompression.card_le_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PairingCompression.choose_le_finrank' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": ""
+}

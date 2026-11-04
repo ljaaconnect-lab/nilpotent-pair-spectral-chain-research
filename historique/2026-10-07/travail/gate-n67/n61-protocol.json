@@ -1,0 +1,22 @@
+{
+  "node": "n61",
+  "artifact_version": "n61-euler-cofactor-v1",
+  "boundary": "B_dev-euler-sign-correction",
+  "frozen_before_first_test": true,
+  "n_values": [2,3,4,5],
+  "time_limit_per_validation_seconds": 120,
+  "variants_maximum": 3,
+  "variants": [
+    {"name": "naive_specializations", "definition": "For multilinear f, T_ef f=-f+2*f[e=0]+2*f[f=0]-2*f[e=f=0]; copy all arithmetic gates. Each inversion pair costs recurrence G_next=4*G+7. Materialize n=2 only; derive exact construction counts for n=2..5."},
+    {"name": "shared_row_specializations", "definition": "Group one row pair as 1-2*sum_(j>m)E_ij E_lm on determinant-supported monomials. Compile each projector by zero specializations, memoize(node,zero-mask), intersect masks with node support, hash-cons scalar gates and apply only known constant zero/one simplifications.", "node_cap": 200000, "construction_seconds_cap": 45},
+    {"name": "shared_cofactor_matchings", "definition": "Expand the grouped projectors into integer-weighted compatible partial-matching projectors. Compile each selected matching as its edge product times an explicitly compiled complementary determinant with the Laplace sign. Share equal complementary minors and edge products. Constants are universal integers with separately reported preprocessing work and bit lengths; no target coefficient is an input."}
+  ],
+  "metric": "Six exact positive assertions per n, denominator 24: Euler diagonal identity; grouped-row identity; partial-matching cofactor identity; final cofactor scalar DAG generic evaluation; final marked formal-z evaluation; serialized topology/count/input audit. Naive/shared-specialization diagnostics remain separate.",
+  "seed_determinant": "Unchanged candidate.py determinant recurrence; every binary add/mul is counted. Seed count 2*n^4-n^3+2*n^2-n before sharing.",
+  "marking": "Original b_ij=(1+a_ij^2) z^(2^(i*n+j)); rational A_ij=(i+1)/(j+2). z never numerically specialized. Generic x_ij identities supplement the marked checks.",
+  "oracle": "Independent signed/unsigned permutation expansion; SymPy exact polynomial validation, never a free circuit operation.",
+  "final_candidate_intent": "shared_cofactor_matchings, provided all frozen assertions pass; final source must be hashed before root-only B_test",
+  "scope": "Positive constructive identity and actual scalar gate accounting. No polynomial bound or root theorem is presumed.",
+  "held_out_access": false,
+  "arbor_state_writes": false
+}

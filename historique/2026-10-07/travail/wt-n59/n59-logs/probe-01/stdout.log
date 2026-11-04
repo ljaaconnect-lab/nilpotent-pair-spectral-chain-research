@@ -1,0 +1,3 @@
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n59\ConditionalCriterion.lean:30:4: error(lean.dependsOnNoncomputable): failed to compile definition, consider marking it as 'noncomputable' because it depends on 'Polynomial.instAdd', which is 'noncomputable'
+'ConditionalCriterion.compose_input_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ConditionalCriterion.Pi_eval' depends on axioms: [propext, Classical.choice, Quot.sound]

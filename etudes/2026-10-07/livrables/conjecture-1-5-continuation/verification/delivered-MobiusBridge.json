@@ -1,0 +1,42 @@
+{
+  "root_conjecture_verified": false,
+  "source": {
+    "source": "MobiusBridge.lean",
+    "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+    "exit_code": 0,
+    "stdout": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-continuation\\proofs\\MobiusBridge.lean:15:0: warning: automatically included section variable(s) unused in theorem `CollisionMobiusBridge.coefficient_def`:\n  [DecidableEq \u03b1]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq \u03b1] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\n'CollisionMobiusBridge.coefficient_def' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionMobiusBridge.coefficient_insert' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionMobiusBridge.zeta_reconstruction' depends on axioms: [propext, Classical.choice, Quot.sound]\nC:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\outputs\\conjecture-1-5-continuation\\proofs\\MobiusBridge.lean:48:0: warning: automatically included section variable(s) unused in theorem `CollisionMobiusBridge.coefficient_abs_bound`:\n  [DecidableEq \u03b1]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [DecidableEq \u03b1] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\n'CollisionMobiusBridge.coefficient_abs_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionMobiusBridge.coefficient_natAbs_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionMobiusBridge.sign_coefficient_natAbs_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+    "stderr": "",
+    "axiom_audit": {
+      "CollisionMobiusBridge.coefficient_def": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "CollisionMobiusBridge.coefficient_insert": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "CollisionMobiusBridge.zeta_reconstruction": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "CollisionMobiusBridge.coefficient_abs_bound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "CollisionMobiusBridge.coefficient_natAbs_bound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "CollisionMobiusBridge.sign_coefficient_natAbs_bound": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  }
+}

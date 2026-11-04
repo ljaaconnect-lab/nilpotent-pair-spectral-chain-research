@@ -1,0 +1,107 @@
+{
+  "protocol": "matrix-power-heldout-v1",
+  "boundary_sha256": "d426e3a067512d1dd76f67a42b3a12fa373c09dae2919b589f5ec371f8e6b378",
+  "commit": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+  "root_conjecture_verified": false,
+  "scope": "Correctness of conditional power compiler, not existence of a target representation",
+  "checks": [
+    {
+      "case": "n2-heldout-0",
+      "r": 2,
+      "K": 3,
+      "family": "dense rational",
+      "exact_rational_agreement": true,
+      "topological_and_gate_count": true,
+      "scalar_gates": 33,
+      "matrix_multiplications": 2,
+      "output_bit_length": 12,
+      "output_sha256": "e8f4989864b559153ffedb1ec10be8ed8d761909c6c3fe820442afb45a31a476"
+    },
+    {
+      "case": "n2-heldout-1",
+      "r": 2,
+      "K": 3,
+      "family": "dense rational",
+      "exact_rational_agreement": true,
+      "topological_and_gate_count": true,
+      "scalar_gates": 33,
+      "matrix_multiplications": 2,
+      "output_bit_length": 10,
+      "output_sha256": "fc4cd7b6f128024f2d274e8fa9c3d475d15bcb5f6ec77fb154b8290d17c2c2ab"
+    },
+    {
+      "case": "n3-heldout-0",
+      "r": 3,
+      "K": 26,
+      "family": "dense rational",
+      "exact_rational_agreement": true,
+      "topological_and_gate_count": true,
+      "scalar_gates": 290,
+      "matrix_multiplications": 6,
+      "output_bit_length": 160,
+      "output_sha256": "a050a9286f95c69fa5d3131fb02d45d5aa80f9e1c83ea4650b104b7e49538421"
+    },
+    {
+      "case": "n3-heldout-1",
+      "r": 3,
+      "K": 26,
+      "family": "dense rational",
+      "exact_rational_agreement": true,
+      "topological_and_gate_count": true,
+      "scalar_gates": 290,
+      "matrix_multiplications": 6,
+      "output_bit_length": 114,
+      "output_sha256": "89bfb2661f889f973cc17af6be115973ea7c37de2804c9989996cadc7e93e088"
+    },
+    {
+      "case": "n4-heldout-0",
+      "r": 4,
+      "K": 255,
+      "family": "dense rational",
+      "exact_rational_agreement": true,
+      "topological_and_gate_count": true,
+      "scalar_gates": 1603,
+      "matrix_multiplications": 14,
+      "output_bit_length": 1376,
+      "output_sha256": "b3219bd1dc4d6a8d976f3cacd7b842f2083e5f27d785ef391c199965d7653038"
+    },
+    {
+      "case": "n4-heldout-1",
+      "r": 4,
+      "K": 255,
+      "family": "dense rational",
+      "exact_rational_agreement": true,
+      "topological_and_gate_count": true,
+      "scalar_gates": 1603,
+      "matrix_multiplications": 14,
+      "output_bit_length": 1891,
+      "output_sha256": "c91afa830c9f581e16dfe9bbe802f16835e8d1ebecab1931b880abe5305002f3"
+    },
+    {
+      "case": "n5-positive-validation-0",
+      "r": 5,
+      "K": 3124,
+      "family": "unitriangular rational",
+      "exact_rational_agreement": true,
+      "topological_and_gate_count": true,
+      "scalar_gates": 3429,
+      "matrix_multiplications": 15,
+      "output_bit_length": 41,
+      "output_sha256": "64abfdfc2c2989eb322979b524c0cad9dfd3a11f5621af032bf2daba80ef458d"
+    },
+    {
+      "case": "n5-positive-validation-1",
+      "r": 5,
+      "K": 3124,
+      "family": "unitriangular rational",
+      "exact_rational_agreement": true,
+      "topological_and_gate_count": true,
+      "scalar_gates": 3429,
+      "matrix_multiplications": 15,
+      "output_bit_length": 34,
+      "output_sha256": "6136959b5526d380e15ccf70619bf6626c3a673ea210df2651757bb7fdc8f17d"
+    }
+  ],
+  "passed": 16,
+  "total": 16
+}

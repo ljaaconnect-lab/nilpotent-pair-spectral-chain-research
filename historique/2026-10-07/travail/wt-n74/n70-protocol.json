@@ -1,0 +1,28 @@
+{
+  "node": "n70",
+  "hypothesis": "Synchronizing whole row blocks in the reduced two-family kernel admits a polynomial-dimensional closed scalar transfer initialized from generic entries, without a degree-four Wick closure assumption.",
+  "root_statement_unchanged": true,
+  "root_obligations": [
+    "Explicit scalar construction and target identity for every n and rational A",
+    "Polynomial total gate and rational-literal bit costs",
+    "Uniform circuit construction in polynomial time in n and L, plus full Lean dependency chain"
+  ],
+  "root_metric": "Complete root obligations discharged / three; no partial helper or elaborated definition counted as root proof",
+  "candidate_limit": 3,
+  "formal_compiler_allocation": 0,
+  "dev_boundary": "Frozen positive construction checks n=2,3,4,5 only after an explicit executable candidate is isolated",
+  "test_boundary": "Coordinator-only unused projection-frontier boundary; not accessible to executors",
+  "forbidden": [
+    "Counterexample campaigns",
+    "Lower-bound experiments",
+    "Free projection or coefficient gates",
+    "Dropping graded shuffles",
+    "Unknown target coefficients as input leaves",
+    "Assuming Gaussian closure or derivative-context stability",
+    "Changing the fixed hypothesis",
+    "Calling an elaborated proposition a proved theorem",
+    "Omitting uniform construction from the full root"
+  ],
+  "root_conjecture_verified": false,
+  "authorization": "User objects to stopping before a closed state family exists; resume substantive global construction search."
+}

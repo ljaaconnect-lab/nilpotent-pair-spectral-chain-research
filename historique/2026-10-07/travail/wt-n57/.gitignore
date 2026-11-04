@@ -1,0 +1,4 @@
+__pycache__/
+.arbor/
+*.pyc
+proof-build/

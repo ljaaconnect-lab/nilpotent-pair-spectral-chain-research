@@ -1,0 +1,68 @@
+[
+  {
+    "nom": "annihilation.pdf",
+    "chemin": "sources/papiers/annihilation.pdf",
+    "reference_confirmee": false,
+    "sha256": "b4b425cf5b74e273e0a884f7d311d7ad24092de0f2dc666a9486a4428e6be654"
+  },
+  {
+    "nom": "annihilation_collisions_demontre.pdf",
+    "chemin": "sources/papiers/annihilation_collisions_demontre.pdf",
+    "reference_confirmee": false,
+    "sha256": "fc1bbb3c4943d21311a50ef3a93829309c94c64701f01f1f71ae5cda2612faf1"
+  },
+  {
+    "nom": "annihilation_collisions_demontre_avec_annexeAAs.pdf",
+    "chemin": "sources/papiers/annihilation_collisions_demontre_avec_annexeAAs.pdf",
+    "reference_confirmee": false,
+    "sha256": "ec794e4941259cfc2351c1b4bfcd6c90f747afa6c900f472e85b06408dbda186"
+  },
+  {
+    "nom": "annihilation_collisions_demontre_avec_annexes.pdf",
+    "chemin": "sources/papiers/annihilation_collisions_demontre_avec_annexes.pdf",
+    "reference_confirmee": false,
+    "sha256": "ec794e4941259cfc2351c1b4bfcd6c90f747afa6c900f472e85b06408dbda186"
+  },
+  {
+    "nom": "annihilation_raccord_spectral_demonstrations.pdf",
+    "chemin": "sources/papiers/annihilation_raccord_spectral_demonstrations.pdf",
+    "reference_confirmee": true,
+    "sha256": "ed1f05cd132305ec98ec4f195ae395123cc4ae68e1a137ac4a78898f4d5199f4"
+  },
+  {
+    "nom": "tsigbe_annihilation_collisions_papier_revise.pdf",
+    "chemin": "sources/papiers/tsigbe_annihilation_collisions_papier_revise.pdf",
+    "reference_confirmee": false,
+    "sha256": "888b67f924d1b8e60f697165574b6e41a37a08bfcf8c0e81fe6e9e27a9c5228c"
+  },
+  {
+    "nom": "tsigbe_annihilation_collisions_papier_revise_raccord.pdf",
+    "chemin": "sources/papiers/tsigbe_annihilation_collisions_papier_revise_raccord.pdf",
+    "reference_confirmee": false,
+    "sha256": "336850b90d14900b06c62930a778c27d9aa19fd26cea695701b14e1c5c637b27"
+  },
+  {
+    "nom": "tsigbe_annihilation_collisions_papier_revise_raccord_algorithm.pdf",
+    "chemin": "sources/papiers/tsigbe_annihilation_collisions_papier_revise_raccord_algorithm.pdf",
+    "reference_confirmee": false,
+    "sha256": "0af4a30896bab3bada61212298c9218a0adfd9428da750f51eb861bf4742263f"
+  },
+  {
+    "nom": "tsigbe_annihilation_collisions_phase_closed.pdf",
+    "chemin": "sources/papiers/tsigbe_annihilation_collisions_phase_closed.pdf",
+    "reference_confirmee": false,
+    "sha256": "67b9548fb74133e55d8db652eb85a02b1380f5085531fac5bbc03910a6813267"
+  },
+  {
+    "nom": "tsigbe_annihilation_collisions_scalar_intt.pdf",
+    "chemin": "sources/papiers/tsigbe_annihilation_collisions_scalar_intt.pdf",
+    "reference_confirmee": false,
+    "sha256": "7566a05d3e1b9116e89a8091a96ea58d81ca98e2e9d908ec39a3f11fce912070"
+  },
+  {
+    "nom": "tsigbe_annihilation_collisions_tau_explicit_rbound.pdf",
+    "chemin": "sources/papiers/tsigbe_annihilation_collisions_tau_explicit_rbound.pdf",
+    "reference_confirmee": false,
+    "sha256": "ebf384541613b43aa9e7595e5bc25f2fb7050f882432720a9638378d91fbeac1"
+  }
+]

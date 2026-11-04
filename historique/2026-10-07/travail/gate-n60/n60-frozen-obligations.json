@@ -1,0 +1,31 @@
+{
+  "node_id": "n60",
+  "version": "n60-encoding-contract-v1",
+  "coefficient_ring": "R : Type, [CommRing R]",
+  "dimension_hypothesis": "n : Nat, hn : 2 <= n",
+  "definitions": {
+    "K": "centralDegree n = n^n - 1",
+    "pairFactor": "product over i:Fin n and l in Finset.Ioi i of (Polynomial.X^(n^i.val) - Polynomial.X^(n^l.val))",
+    "Hhat": "1 + Polynomial.X^(2 * centralDegree n) + (CollisionDeterminantBridge.forwardMatrix b (CollisionDeterminantBridge.baseLabels n)).det * pairFactor n",
+    "address": "address i j = 2^(i.val * n + j.val)",
+    "amplitude": "amplitude A i j = 1 + (A i j)^2 : Rat",
+    "markedWeights": "b_ij = Polynomial.C (amplitude A i j) * Polynomial.X^(address i j) : Polynomial Rat",
+    "markedPermanent": "sum over permutations sigma of Polynomial.C (product_i amplitude A i (sigma i)) * Polynomial.X^(sum_i address i (sigma i))",
+    "markedHhat": "Hhat n (markedWeights A) : Polynomial (Polynomial Rat)"
+  },
+  "fixed_development_obligations": {
+    "hhat_central_coefficient": "forall n hn b, (Hhat n b).coeff (centralDegree n) = sum_sigma CollisionDeterminantBridge.weight b sigma",
+    "marked_A_central_identity": "forall n hn A:Matrix (Fin n) (Fin n) Rat, (markedHhat A).coeff (centralDegree n) = markedPermanent A"
+  },
+  "required_supporting_obligations": [
+    "Derive 0 < centralDegree n from 2 <= n",
+    "Prove that the coefficients at K of 1 and X^(2*K) vanish when K>0",
+    "Import the exact frozen complementary-determinant/Vandermonde dependency only after its commit/hash is supplied",
+    "Rewrite the products of the marked rational weights to their amplitudes and addresses"
+  ],
+  "root_conjecture_verified": false,
+  "coefficient_extraction_gate_assumed": false,
+  "candidate_compilation_budget": 16,
+  "dependencies_and_probes_counted_separately": true,
+  "heldout_tests_run": false
+}

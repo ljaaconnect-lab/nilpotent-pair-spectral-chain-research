@@ -1,0 +1,33 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fermeture-generale\\Insertion.lean",
+  "version": 9,
+  "completed": true,
+  "seconds": 0.438,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 12,
+          "line": 27
+        },
+        "start": {
+          "character": 6,
+          "line": 27
+        }
+      },
+      "message": "Tactic `rfl` failed: equality lhs\n  Multiset.map (fun w => a :: x :: w) (insert b w) +\n    (Multiset.map (fun x_1 => b :: x :: x_1) (insert a w) +\n      (Multiset.map (fun x_1 => x :: x_1) ((insert a w).bind (insert b)) + ({a :: b :: x :: w} + {b :: a :: x :: w})))\nis not definitionally equal to rhs\n  Multiset.map (List.cons x) ((insert a w).bind (insert b)) +\n    (Multiset.map (fun w => a :: x :: w) (insert b w) +\n      (Multiset.map (fun x_1 => b :: x :: x_1) (insert a w) + ({a :: b :: x :: w} + {b :: a :: x :: w})))\n\ncase cons\nα : Type u_1\na b x : α\nw : List α\nih : (insert b w).bind (insert a) = (insert a w).bind (insert b)\n⊢ Multiset.map (fun w => a :: x :: w) (insert b w) +\n      (Multiset.map (fun x_1 => b :: x :: x_1) (insert a w) +\n        (Multiset.map (fun x_1 => x :: x_1) ((insert a w).bind (insert b)) +\n          ({a :: b :: x :: w} + {b :: a :: x :: w}))) =\n    Multiset.map (List.cons x) ((insert a w).bind (insert b)) +\n      (Multiset.map (fun w => a :: x :: w) (insert b w) +\n        (Multiset.map (fun x_1 => b :: x :: x_1) (insert a w) + ({a :: b :: x :: w} + {b :: a :: x :: w})))",
+      "range": {
+        "end": {
+          "character": 12,
+          "line": 27
+        },
+        "start": {
+          "character": 6,
+          "line": 27
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    }
+  ]
+}

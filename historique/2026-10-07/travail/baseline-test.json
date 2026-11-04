@@ -1,0 +1,77 @@
+{
+  "protocol": "simulation-v1",
+  "split": "test",
+  "score": 0.0,
+  "passed": 0,
+  "total": 24,
+  "evaluator_sha256": "246f3ffb947cbb4fc54916dc1b89de900a1b94c5a861eeeb6f78e3df7f7406d9",
+  "cases": [
+    {
+      "case": "n2-heldout-0",
+      "n": 2,
+      "checks": {
+        "central_exact": false,
+        "full_exact": false,
+        "index_exact": false,
+        "gate_bound": false
+      },
+      "error": "Baseline: no coefficient simulator yet"
+    },
+    {
+      "case": "n2-heldout-1",
+      "n": 2,
+      "checks": {
+        "central_exact": false,
+        "full_exact": false,
+        "index_exact": false,
+        "gate_bound": false
+      },
+      "error": "Baseline: no coefficient simulator yet"
+    },
+    {
+      "case": "n3-heldout-0",
+      "n": 3,
+      "checks": {
+        "central_exact": false,
+        "full_exact": false,
+        "index_exact": false,
+        "gate_bound": false
+      },
+      "error": "Baseline: no coefficient simulator yet"
+    },
+    {
+      "case": "n3-heldout-1",
+      "n": 3,
+      "checks": {
+        "central_exact": false,
+        "full_exact": false,
+        "index_exact": false,
+        "gate_bound": false
+      },
+      "error": "Baseline: no coefficient simulator yet"
+    },
+    {
+      "case": "n4-heldout-0",
+      "n": 4,
+      "checks": {
+        "central_exact": false,
+        "full_exact": false,
+        "index_exact": false,
+        "gate_bound": false
+      },
+      "error": "Baseline: no coefficient simulator yet"
+    },
+    {
+      "case": "n4-heldout-1",
+      "n": 4,
+      "checks": {
+        "central_exact": false,
+        "full_exact": false,
+        "index_exact": false,
+        "gate_bound": false
+      },
+      "error": "Baseline: no coefficient simulator yet"
+    }
+  ],
+  "scope": "Finite exact checks; no proof of asymptotic circuit complexity."
+}

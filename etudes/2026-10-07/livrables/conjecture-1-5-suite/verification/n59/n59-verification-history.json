@@ -1,0 +1,284 @@
+{
+  "probes": 1,
+  "candidates": 1,
+  "dependencies": 2,
+  "runs": [
+    {
+      "tag": "dependency-01",
+      "kind": "dependency",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n59\\PowerCompiler.lean",
+        "-o",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n59\\proof-build\\PowerCompiler.olean"
+      ],
+      "environment_keys": [
+        "LEAN_PATH",
+        "LEAN_SRC_PATH",
+        "LEAN_SYSROOT"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.030124999997497,
+      "source_sha256": "c66d703e08237358eb992905106e01cb040d27314d42053030821f335450c863",
+      "error_count": 0,
+      "source_clean": true,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_logarithmic": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_plan_gate_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "passed": 0,
+      "denominator": 2,
+      "dev_score": null,
+      "root_conjecture_verified": false
+    },
+    {
+      "tag": "dependency-02",
+      "kind": "dependency",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n59\\MatrixScalarCompiler.lean",
+        "-o",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n59\\proof-build\\MatrixScalarCompiler.olean"
+      ],
+      "environment_keys": [
+        "LEAN_PATH",
+        "LEAN_SRC_PATH",
+        "LEAN_SYSROOT"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 21.451402300001064,
+      "source_sha256": "6c2ad98a6eca9590430dcc973cec57daaa1d1e28c9009366fdb50df96fd5a69b",
+      "error_count": 0,
+      "source_clean": true,
+      "axiom_audit": {
+        "DenseScalar.matrix_power_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.sumCircuit_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.sumCircuit_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.dotCircuit_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.dotCircuit_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.denseProduct_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.denseProduct_matrix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.denseProduct_raw_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.dense_product_gate_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.instructionCircuit_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.instructionCircuit_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.sequenceCircuit_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.sequenceCircuit_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.matrixPowerCircuit_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.matrixPowerCircuit_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.matrixVecCircuit_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.matrixVecCircuit_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.contractionCircuit_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.contractionCircuit_raw_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.contractionCircuit_gate_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.scalar_compiler_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.scalarCircuit_raw_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.scalarCircuit_gate_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.conditional_scalar_budget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "passed": 0,
+      "denominator": 2,
+      "dev_score": null,
+      "root_conjecture_verified": false
+    },
+    {
+      "tag": "probe-01",
+      "kind": "probe",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n59\\ConditionalCriterion.lean"
+      ],
+      "environment_keys": [
+        "LEAN_PATH",
+        "LEAN_SRC_PATH",
+        "LEAN_SYSROOT"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 19.437006899999687,
+      "source_sha256": "beefa1f1dcea7e219e8c9d4c0997306bf8e4ee566869dc0fe79d1f9580c359c8",
+      "error_count": 1,
+      "source_clean": true,
+      "axiom_audit": {
+        "ConditionalCriterion.compose_input_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConditionalCriterion.Pi_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "passed": 0,
+      "denominator": 2,
+      "dev_score": null,
+      "root_conjecture_verified": false
+    },
+    {
+      "tag": "candidate-01",
+      "kind": "candidate",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n59\\ConditionalCriterion.lean"
+      ],
+      "environment_keys": [
+        "LEAN_PATH",
+        "LEAN_SRC_PATH",
+        "LEAN_SYSROOT"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 20.121078999996826,
+      "source_sha256": "0d3de6f6475371f1226de953c7c707ff7b5abf31557715be195bdb125fab8189",
+      "error_count": 0,
+      "source_clean": true,
+      "axiom_audit": {
+        "ConditionalCriterion.compose_input_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConditionalCriterion.Pi_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConditionalCriterion.polynomial_composed_budget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConditionalCriterion.conditional_target_coefficient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "passed": 2,
+      "denominator": 2,
+      "dev_score": 1.0,
+      "root_conjecture_verified": false
+    }
+  ]
+}

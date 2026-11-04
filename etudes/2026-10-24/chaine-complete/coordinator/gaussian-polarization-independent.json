@@ -1,0 +1,13 @@
+{
+  "commit": "42631b841de8d79b3db4abe0b2a16738c0a2fc8e",
+  "detached_worktree": "work/wt-polarization-review",
+  "numeric_full_table_checks": 56,
+  "formal_full_table_checks": 8,
+  "gate_counts": {"1": 1, "2": 10, "3": 54, "4": 150, "5": 351, "6": 776, "7": 1689, "8": 3670},
+  "score": 3670,
+  "score_direction": "min",
+  "general_polynomial_proof": false,
+  "candidate_sha256": "9294edcad086611a8276e8b6d71cf773df575ac695460d1593853df4918bd08d",
+  "evaluator_sha256": "d5e522463357456a8dae97460b24f375748bf9f5beadb731e073ee72adb39fc3",
+  "note": "Frozen evaluator in a fresh worktree; independent field and data protocol fixed before candidate development. Gate score is worse than the exponential reference and is not a polynomial-size claim."
+}

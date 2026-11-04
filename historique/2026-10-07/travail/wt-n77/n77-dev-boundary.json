@@ -1,0 +1,31 @@
+{
+  "node": "n77",
+  "artifact_version": "n77-direct-corrected-scalar-dag-v1",
+  "authority": "n77-protocol.json",
+  "frozen_before_first_evaluation": true,
+  "local_obligations": [
+    "Complete initialized scalar DAG with only prescribed p,z,literal leaves and backward binary add/mul references",
+    "Actual all-stage gate counts and shared subset children agree with the complete n1..5 recipe",
+    "Every marker/input/literal has admissible provenance, no target leaf, and prescribed parameter bit accounting",
+    "Complete terminal output agrees exactly with independent permutation expansion on every frozen positive case"
+  ],
+  "local_metric": "Number of fully passing local obligations divided by four",
+  "root_metric": "0: the complete circuit still has 2^n states and exponential gates",
+  "serialized_n": [1, 2, 3, 4, 5],
+  "evaluation_n": [2, 3, 4, 5],
+  "families": {
+    "identity": "A_i_j=1 when i=j, else 0",
+    "Vandermonde": "A_i_j=(i+1)^j for zero-based i,j",
+    "cycle": "A_i_j=1 when j=(i+1) mod n, else 0"
+  },
+  "z_values": [-1, 0, 1],
+  "positive_cases": 36,
+  "reference": "Independent sum over permutations, products of (1+A_i_sigma(i)^2), and z raised to sum of original edge labels",
+  "numeric_type": "fractions.Fraction exclusively",
+  "source_freeze": "n77-source-freeze.json; normalized UTF8 LF without BOM hashes checked before construction and evaluation",
+  "candidate_repairs": "If required, retain original logs/freezes and freeze a new source version without changing this boundary",
+  "formal_invocations": 0,
+  "held_out_access": false,
+  "root_conjecture_verified": false,
+  "central_coefficient_route": "archived; neither objective nor a circuit operation here"
+}

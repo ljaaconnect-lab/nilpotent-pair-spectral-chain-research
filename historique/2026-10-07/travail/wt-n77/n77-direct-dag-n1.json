@@ -1,0 +1,95 @@
+{
+  "model": "Q[z], prescribed p_ij input leaves, binary add/mul",
+  "target": "complete PA(z)=Cn(DA(z)); direct subset reference",
+  "n": 1,
+  "nodes": [
+    {
+      "op": "constant",
+      "value": "1"
+    },
+    {
+      "op": "variable",
+      "name": "z"
+    },
+    {
+      "op": "variable",
+      "name": "p_0_0"
+    },
+    {
+      "op": "mul",
+      "left": 2,
+      "right": 1,
+      "stage": "entry_weights"
+    },
+    {
+      "op": "mul",
+      "left": 3,
+      "right": 0,
+      "stage": "subset"
+    }
+  ],
+  "output": 4,
+  "inputs": {
+    "z": 1,
+    "p": [
+      [
+        2
+      ]
+    ]
+  },
+  "markers": [
+    1
+  ],
+  "marked_entries": [
+    [
+      3
+    ]
+  ],
+  "states": [
+    {
+      "mask": 0,
+      "cardinality": 0,
+      "row": null,
+      "output": 0,
+      "terms": [],
+      "sums": []
+    },
+    {
+      "mask": 1,
+      "cardinality": 1,
+      "row": 0,
+      "output": 4,
+      "terms": [
+        {
+          "column": 0,
+          "child": 0,
+          "node": 4
+        }
+      ],
+      "sums": []
+    }
+  ],
+  "counts": {
+    "nodes": 5,
+    "states": 2,
+    "edges": 1,
+    "stages": {
+      "marker_powers": {
+        "add": 0,
+        "mul": 0,
+        "total": 0
+      },
+      "entry_weights": {
+        "add": 0,
+        "mul": 1,
+        "total": 1
+      },
+      "subset": {
+        "add": 0,
+        "mul": 1,
+        "total": 1
+      }
+    },
+    "arithmetic": 2
+  }
+}

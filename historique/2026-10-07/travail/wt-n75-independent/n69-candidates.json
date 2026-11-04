@@ -1,0 +1,40 @@
+{
+  "node": "n69",
+  "artifact_version": "n69-joint-interfaces-v1",
+  "fixed_hypothesis_preserved": true,
+  "candidate_limit": 3,
+  "analytical_candidates": [
+    {
+      "id": "n69-c1-joint-carry-transport",
+      "constructive_target": "Lift the exact combined input/cap phase to a coherent polynomial Gaussian insertion after contextual incidence reduction",
+      "explicit_data": "Joint phase Gamma with two input prefix parities, output suffix parity and selected-cap degree phase",
+      "actual_partial_compiler": "73*n^2 binary gates to evaluate ONE Boolean phase component",
+      "status": "ineligible: no coherent Gaussian lift or scalar contraction of that whole family",
+      "root_extractor": false
+    },
+    {
+      "id": "n69-c2-lowrank-Wick-intertwining",
+      "constructive_target": "Use fixed order-(2*n+2) H and a deformed product to evaluate the simultaneous synchronized contraction",
+      "explicit_data": "g(x)=W_H[g_a*g_b*product_e(1+x_e*(1+alpha_i*beta_j))]; P(B)=W_H[g_a*g_b*det(-b_ij*alpha_i*beta_j)]",
+      "actual_partial_compiler": "The fixed normalization Pf(H) is lowered by trace_circuit; W_H remains an explicitly uncompiled functional",
+      "status": "ineligible: no polynomial scalar representation closed under Wick-deformed multiplication",
+      "root_extractor": false
+    },
+    {
+      "id": "n69-c3-row-prefix-covariance-and-jets",
+      "constructive_target": "Close row-prefix scalar/covariance transport using polynomially many context-stable moment sectors",
+      "explicit_data": "P_(i+1)=-(sum_j b_ij*q_j)*P_i, J_i(S)=L_A(delta_S*P_i), with all initialization and signs explicit",
+      "actual_reference_compiler": "Full2^n-state reference emits scalar+/* only, cost n*(7*n-2)*2^(n-1), plus2*n^2-1 for shared original markers",
+      "status": "ineligible: full reference is exponential and polynomial moment-sector compression is not established",
+      "root_extractor": false
+    }
+  ],
+  "eligible_candidates": 0,
+  "dev_score": null,
+  "candidate_identity_evaluations": 0,
+  "counterexample_searches": 0,
+  "lower_bound_experiments": 0,
+  "formal_compiler_allocation": 0,
+  "heldout_access": false,
+  "remaining_constructive_theorem": "An explicitly initialized polynomial family intertwined with all joint phases and row-prefix multiplications, including a charged scalar terminal functional"
+}

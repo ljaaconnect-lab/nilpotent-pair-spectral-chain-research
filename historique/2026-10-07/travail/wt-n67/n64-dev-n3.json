@@ -1,0 +1,795 @@
+{
+  "node": "n64",
+  "n": 3,
+  "matching_count": 34,
+  "passed": 136,
+  "total": 136,
+  "scores": {
+    "n61_equals_mobius": 34,
+    "local_pf_equals_mobius": 34,
+    "fixed_ports_pf_equals_mobius": 34,
+    "charged_trace_matches_both_pf": 34
+  },
+  "fixed_matrix_order": 20,
+  "unique_column_patterns": 10,
+  "actual_scalar_gate_evaluations_across_cached_checks": 20915,
+  "templates": {
+    "2": {
+      "d": 2,
+      "gates": 6,
+      "counts": {
+        "constant": 4,
+        "variable": 1,
+        "mul": 5,
+        "add": 1
+      },
+      "input_upper_entries": 1,
+      "topological_binary_scalar_graph": true,
+      "formal_semantics_status": "Finite exact checks only; generic Lean trace compiler theorem remains separate",
+      "serialized_path": "n64-trace-dag-d2-n3.json",
+      "serialized_sha256": "297292ff30aa7d64adcedcf3497b36166856b38bff10ff040402a303b48336a7"
+    },
+    "4": {
+      "d": 4,
+      "gates": 139,
+      "counts": {
+        "constant": 5,
+        "variable": 6,
+        "mul": 84,
+        "add": 55
+      },
+      "input_upper_entries": 6,
+      "topological_binary_scalar_graph": true,
+      "formal_semantics_status": "Finite exact checks only; generic Lean trace compiler theorem remains separate",
+      "serialized_path": "n64-trace-dag-d4-n3.json",
+      "serialized_sha256": "36ef8b121f272604a0b1b4269167a72265aff83c4b64891f0467fcc368782d87"
+    },
+    "6": {
+      "d": 6,
+      "gates": 853,
+      "counts": {
+        "constant": 6,
+        "variable": 15,
+        "mul": 475,
+        "add": 378
+      },
+      "input_upper_entries": 15,
+      "topological_binary_scalar_graph": true,
+      "formal_semantics_status": "Finite exact checks only; generic Lean trace compiler theorem remains separate",
+      "serialized_path": "n64-trace-dag-d6-n3.json",
+      "serialized_sha256": "eb77f6336c39b8aa17f5d51827659f92b05202ede414ddf33b93bcab93be4b6f"
+    },
+    "8": {
+      "d": 8,
+      "gates": 2990,
+      "counts": {
+        "constant": 7,
+        "variable": 28,
+        "mul": 1612,
+        "add": 1378
+      },
+      "input_upper_entries": 28,
+      "topological_binary_scalar_graph": true,
+      "formal_semantics_status": "Finite exact checks only; generic Lean trace compiler theorem remains separate",
+      "serialized_path": "n64-trace-dag-d8-n3.json",
+      "serialized_sha256": "d13f125533729348729a469f2b12d2ca6487aabe2e61ea54c773318713ed3ad6"
+    }
+  },
+  "maximum_coefficient_bits": 3,
+  "bit_bound_n_plus_1": true,
+  "old_preprocessing": {
+    "states": 13,
+    "all_partial_matching_state_bound": 34,
+    "attempts": 42,
+    "compatible_transitions": 15,
+    "preprocessing_integer_adds": 15,
+    "preprocessing_integer_muls": 14,
+    "maximum_integer_coefficient_bit_length": 3,
+    "coefficient_l1_bound": 343,
+    "stages": [
+      {
+        "row_pair": [
+          0,
+          1
+        ],
+        "nonzero_matching_states": 4
+      },
+      {
+        "row_pair": [
+          0,
+          2
+        ],
+        "nonzero_matching_states": 9
+      },
+      {
+        "row_pair": [
+          1,
+          2
+        ],
+        "nonzero_matching_states": 13
+      }
+    ]
+  },
+  "records": [
+    {
+      "matching": [],
+      "pattern": [],
+      "coefficient": 1,
+      "n61": 1,
+      "local_pf_corrected": 1,
+      "fixed_pf": 1,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        0
+      ],
+      "pattern": [
+        0
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        1
+      ],
+      "pattern": [
+        0
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        2
+      ],
+      "pattern": [
+        0
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        3
+      ],
+      "pattern": [
+        0
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        4
+      ],
+      "pattern": [
+        0
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        5
+      ],
+      "pattern": [
+        0
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        6
+      ],
+      "pattern": [
+        0
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        7
+      ],
+      "pattern": [
+        0
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        8
+      ],
+      "pattern": [
+        0
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        0,
+        4
+      ],
+      "pattern": [
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        1,
+        3
+      ],
+      "pattern": [
+        1,
+        0
+      ],
+      "coefficient": -2,
+      "n61": -2,
+      "local_pf_corrected": -2,
+      "fixed_pf": -2,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        0,
+        5
+      ],
+      "pattern": [
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        2,
+        3
+      ],
+      "pattern": [
+        1,
+        0
+      ],
+      "coefficient": -2,
+      "n61": -2,
+      "local_pf_corrected": -2,
+      "fixed_pf": -2,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        1,
+        5
+      ],
+      "pattern": [
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        2,
+        4
+      ],
+      "pattern": [
+        1,
+        0
+      ],
+      "coefficient": -2,
+      "n61": -2,
+      "local_pf_corrected": -2,
+      "fixed_pf": -2,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        0,
+        7
+      ],
+      "pattern": [
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        1,
+        6
+      ],
+      "pattern": [
+        1,
+        0
+      ],
+      "coefficient": -2,
+      "n61": -2,
+      "local_pf_corrected": -2,
+      "fixed_pf": -2,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        0,
+        8
+      ],
+      "pattern": [
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        2,
+        6
+      ],
+      "pattern": [
+        1,
+        0
+      ],
+      "coefficient": -2,
+      "n61": -2,
+      "local_pf_corrected": -2,
+      "fixed_pf": -2,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        1,
+        8
+      ],
+      "pattern": [
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        2,
+        7
+      ],
+      "pattern": [
+        1,
+        0
+      ],
+      "coefficient": -2,
+      "n61": -2,
+      "local_pf_corrected": -2,
+      "fixed_pf": -2,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        3,
+        7
+      ],
+      "pattern": [
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        4,
+        6
+      ],
+      "pattern": [
+        1,
+        0
+      ],
+      "coefficient": -2,
+      "n61": -2,
+      "local_pf_corrected": -2,
+      "fixed_pf": -2,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        3,
+        8
+      ],
+      "pattern": [
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        5,
+        6
+      ],
+      "pattern": [
+        1,
+        0
+      ],
+      "coefficient": -2,
+      "n61": -2,
+      "local_pf_corrected": -2,
+      "fixed_pf": -2,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        4,
+        8
+      ],
+      "pattern": [
+        0,
+        1
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        5,
+        7
+      ],
+      "pattern": [
+        1,
+        0
+      ],
+      "coefficient": -2,
+      "n61": -2,
+      "local_pf_corrected": -2,
+      "fixed_pf": -2,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        0,
+        4,
+        8
+      ],
+      "pattern": [
+        0,
+        1,
+        2
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        0,
+        5,
+        7
+      ],
+      "pattern": [
+        0,
+        2,
+        1
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        1,
+        3,
+        8
+      ],
+      "pattern": [
+        1,
+        0,
+        2
+      ],
+      "coefficient": 0,
+      "n61": 0,
+      "local_pf_corrected": 0,
+      "fixed_pf": 0,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        1,
+        5,
+        6
+      ],
+      "pattern": [
+        1,
+        2,
+        0
+      ],
+      "coefficient": 4,
+      "n61": 4,
+      "local_pf_corrected": 4,
+      "fixed_pf": 4,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        2,
+        3,
+        7
+      ],
+      "pattern": [
+        2,
+        0,
+        1
+      ],
+      "coefficient": 4,
+      "n61": 4,
+      "local_pf_corrected": 4,
+      "fixed_pf": 4,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    },
+    {
+      "matching": [
+        2,
+        4,
+        6
+      ],
+      "pattern": [
+        2,
+        1,
+        0
+      ],
+      "coefficient": 4,
+      "n61": 4,
+      "local_pf_corrected": 4,
+      "fixed_pf": 4,
+      "checks": {
+        "n61_equals_mobius": true,
+        "local_pf_equals_mobius": true,
+        "fixed_ports_pf_equals_mobius": true,
+        "charged_trace_matches_both_pf": true
+      }
+    }
+  ],
+  "source_hashes": {
+    "pfaffian_coefficients.py": "1bd0c45b3273065b2718bcea6dbca5f64ede5e85353d7f145cc8dcbd6e3634c7",
+    "evaluate_pfaffian.py": "bf2e8577469c3c233140f9c4ac1be9dfb36d73664a3f09e1da2dfa5d9351e76c",
+    "euler_compiler.py": "9974e6b1feec828f656d56cd6537f4a3f70c10fee2b2c701eb9e2b7a38f9cf2d",
+    "candidate.py": "6f1143d634ebd7d98bce9fb5fd1ef7eb29dbb7868cd67ac29761c5d7b020a84c",
+    "n64-protocol.json": "df1339dc3b95dc35ecf29413bdd5a7603f0d6314ee0b73d1755c48bac7e5f8a0"
+  },
+  "elapsed_seconds": 0.2332992000010563,
+  "held_out_access": false,
+  "root_conjecture_verified": false,
+  "global_synchronized_contraction_verified": false,
+  "scope": "Finite exact local/fixed-principal identities and actual scalar compiler evaluations; no global sum algorithm"
+}

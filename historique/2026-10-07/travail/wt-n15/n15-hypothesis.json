@@ -1,0 +1,26 @@
+{
+  "node": "n15",
+  "artifact_version": "n15-gray-half-character-v1",
+  "hypothesis": "A half-character diagonal factorization preserves the marked permanent, and Gray-code sharing gives a genuine scalar DAG of exactly 5*n*(n-1)+n*2^n gates",
+  "operator_dimension": "2^(n-1)",
+  "intended_asymptotic_bound": "O(n*2^n) scalar gates; no polynomial claim",
+  "initial_data": "D_i[delta,delta]=sum_j delta_j*b_ij; u_delta=product_j(delta_j)/2^(n-1); v_delta=1; delta_0=1; b_ij=(1+a_ij^2)*z^(2^(i*n+j))",
+  "coefficient_oracle_as_input": false,
+  "general_proof_status": "UNVERIFIED unless a separate Lean kernel check succeeds",
+  "boundary": "B_dev-n15-positive",
+  "dimensions": [2, 3, 4, 5],
+  "checks_per_dimension": [
+    "generic_diagonal_contraction_equals_permutation_oracle",
+    "generic_gray_contraction_equals_permutation_oracle",
+    "every_gray_row_factor_matches_direct_diagonal_entry",
+    "half_character_assignment_selection_identity",
+    "original_marked_scalar_dag_equals_independent_oracle",
+    "exact_gate_formula_and_component_accounting",
+    "cheap_target_independent_scalar_leaf_data"
+  ],
+  "total_checks": 28,
+  "metric": "Exact equally weighted positive identity/count assertion pass fraction; infrastructure failures count as failed assertions; not proof confidence",
+  "rational_test_input": "A_ij=((i+2)*(j+1)-i)/(i+j+2), zero-based indices; formal z remains unspecialized",
+  "required_hilbert_lemma": "For n>=2 and s:Fin n -> Fin n, 2^(1-n)*sum_(delta in {+-1}^n,delta_0=1) (product_j delta_j)*(product_i delta_(s(i))) equals 1 if s is bijective and 0 otherwise",
+  "root_gap": "The explicit representation remains exponential. A polynomial contraction or further cheap factor compression has not been supplied."
+}

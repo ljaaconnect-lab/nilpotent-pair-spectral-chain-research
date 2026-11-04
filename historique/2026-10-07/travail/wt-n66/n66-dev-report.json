@@ -1,0 +1,30 @@
+{
+  "node":"n66",
+  "dev_score":0.0,
+  "root_score_numerator":0,
+  "root_score_denominator":3,
+  "root_obligations":[
+    {"id":"explicit_root_scalar_data_and_transition","status":"unclosed"},
+    {"id":"polynomial_root_gate_literal_initialization_certificate","status":"unclosed"},
+    {"id":"exact_root_target_identity","status":"unclosed"}
+  ],
+  "supporting_report":"n66-support-report.json",
+  "supporting_exact_symbolic_passes":53,
+  "supporting_exact_symbolic_count":53,
+  "supporting_exact_symbolic_pass_fraction":1.0,
+  "candidate_scope":"Local Hadamard/J4 gadget and scalar chiral-residual transition only; no complete root constructor.",
+  "lean_candidate_compiles":0,
+  "lean_accepted_declarations":[],
+  "lean_axiom_audit":"No compiled n66 declarations to audit; LocalGadget.lean is an unverified supporting draft. Independent formal bridge assigned to n67.",
+  "no_sorry_or_new_axioms_in_draft":true,
+  "root_conjecture_verified":false,
+  "generic_formal_B_root_cases_evaluated":0,
+  "held_out_access":false,
+  "counterexample_campaigns":false,
+  "lower_bound_experiments":false,
+  "blueprint":"N66_BLUEPRINT.md",
+  "insights":"N66_INSIGHTS.md",
+  "source_freeze":"n66-source-freeze.json",
+  "result":"Positive local constructions pass the frozen supporting checks; the global Gaussian/contextual synchronization interface and its polynomial scalar contraction remain open.",
+  "insight":"Basis-transforming COPY4 solves the local signature but requires a coherent compact transform of both surrounding families. Chiral closure has an explicit UV residual; Ward identities must keep derivatives of all future synchronization factors. A safe initial rational chart is not a safe complete extractor."
+}

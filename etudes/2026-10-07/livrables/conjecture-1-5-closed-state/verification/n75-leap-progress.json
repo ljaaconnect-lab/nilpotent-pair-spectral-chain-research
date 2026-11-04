@@ -1,0 +1,94 @@
+{
+  "node": "n75",
+  "root": {
+    "kind": "AND",
+    "dependencies": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6"
+    ],
+    "status": "helper_closed",
+    "conjecture_status": "OPEN"
+  },
+  "nodes": [
+    {
+      "id": "A1",
+      "kind": "AND",
+      "status": "closed",
+      "context": "all n : Nat, all R : Type with CommRing R, all vectors b,u : Fin n -> R, all J : Finset (Fin n), all f : Finset (Fin n) -> R",
+      "local_hypothesis": null,
+      "target": "(sum j in J.compl, b j) = total b - sum j in J, b j",
+      "dependencies": [],
+      "declaration": "AtomicFirstPrefix.sum_complement",
+      "artifact_source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf"
+    },
+    {
+      "id": "A2",
+      "kind": "AND",
+      "status": "closed",
+      "context": "all n : Nat, all R : Type with CommRing R, all vectors b,u : Fin n -> R, all J : Finset (Fin n), all f : Finset (Fin n) -> R",
+      "local_hypothesis": null,
+      "target": "singleResponse j J = if j notin J then phase J else 0",
+      "dependencies": [],
+      "declaration": "AtomicFirstPrefix.single_response",
+      "artifact_source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf"
+    },
+    {
+      "id": "A3",
+      "kind": "AND",
+      "status": "closed",
+      "context": "all n : Nat, all R : Type with CommRing R, all vectors b,u : Fin n -> R, all J : Finset (Fin n), all f : Finset (Fin n) -> R",
+      "local_hypothesis": null,
+      "target": "weightedResponse b J = phase J * (total b - sum j in J, b j)",
+      "dependencies": [
+        "A1",
+        "A2"
+      ],
+      "declaration": "AtomicFirstPrefix.weighted_response",
+      "artifact_source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf"
+    },
+    {
+      "id": "A4",
+      "kind": "AND",
+      "status": "closed",
+      "context": "all n : Nat, all R : Type with CommRing R, all vectors b,u : Fin n -> R, all J : Finset (Fin n), all f : Finset (Fin n) -> R",
+      "local_hypothesis": null,
+      "target": "(principalMinor u J).det = phase J * (1 - sum j in J, u j)",
+      "dependencies": [],
+      "declaration": "AtomicFirstPrefix.minor_determinant",
+      "artifact_source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf"
+    },
+    {
+      "id": "A5",
+      "kind": "AND",
+      "status": "closed",
+      "context": "all n : Nat, all R : Type with CommRing R, all vectors b,u : Fin n -> R, all J : Finset (Fin n), all f : Finset (Fin n) -> R",
+      "local_hypothesis": "forall j, total b * u j = b j",
+      "target": "total b * (principalMinor u J).det = weightedResponse b J",
+      "dependencies": [
+        "A3",
+        "A4"
+      ],
+      "declaration": "AtomicFirstPrefix.normalized_minor_response",
+      "artifact_source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf"
+    },
+    {
+      "id": "A6",
+      "kind": "AND",
+      "status": "closed",
+      "context": "all n : Nat, all R : Type with CommRing R, all vectors b,u : Fin n -> R, all J : Finset (Fin n), all f : Finset (Fin n) -> R",
+      "local_hypothesis": "forall j, total b * u j = b j",
+      "target": "total b * (sum J : Finset (Fin n), f J * (principalMinor u J).det) = familyResponse b f",
+      "dependencies": [
+        "A5"
+      ],
+      "declaration": "AtomicFirstPrefix.linear_extension",
+      "artifact_source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf"
+    }
+  ],
+  "cycle_free": true,
+  "root_conjecture_verified": false
+}

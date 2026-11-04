@@ -1,0 +1,14 @@
+[
+  {
+    "node": "n18",
+    "parent": "n15",
+    "worktree": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n18",
+    "base": "a3a6f044243d4006ba2c3a8a9d9577d13d9d806c"
+  },
+  {
+    "node": "n19",
+    "parent": "n16",
+    "worktree": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n19",
+    "base": "ba86cbd596588993b2061db0f033ec8e5b58fac4"
+  }
+]

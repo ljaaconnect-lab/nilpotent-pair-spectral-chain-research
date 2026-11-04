@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite this research archive and the exact commit or dated tag used."
+type: dataset
+title: "Nilpotent-Pair Spectral Chain: Research Archive"
+authors:
+  - family-names: "TSIGBE"
+    given-names: "Comlan Alain"
+version: "2026.11.04"
+date-released: 2026-11-04
+url: "https://github.com/ljaaconnect-lab/nilpotent-pair-spectral-chain-research"
+repository-code: "https://github.com/ljaaconnect-lab/nilpotent-pair-spectral-chain-research"
+abstract: >-
+  Research attempts, Lean proofs, mathematical notes, computational experiments
+  and validation reports for the nilpotent-pair spectral chain. The current
+  manuscript is excluded. General polynomial scalar closure remains open.
+keywords:
+  - "nilpotent pairs"
+  - "spectral fusion"
+  - "arithmetic circuits"
+  - "Lean"
+  - "research archive"

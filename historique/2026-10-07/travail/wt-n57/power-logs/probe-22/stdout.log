@@ -1,0 +1,13 @@
+'SharedBinaryPower.run_append' depends on axioms: [propext, Quot.sound]
+'SharedBinaryPower.power_add' does not depend on any axioms
+'SharedBinaryPower.positive_plan_correct' depends on axioms: [propext, Quot.sound]
+'SharedBinaryPower.binary_plan_correct' depends on axioms: [propext, Quot.sound]
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerCompiler.lean:92:6: error: unsolved goals
+case neg
+k : Nat
+ih : ∀ (m : Nat), m < k → (binaryPlan m).length ≤ 2 * m.log2
+hsmall : ¬k ≤ 1
+hrec : (binaryPlan (k / 2)).length ≤ 2 * (k / 2).log2
+⊢ (binaryPlan k).length ≤ 2 * k.log2
+'SharedBinaryPower.binary_plan_logarithmic' depends on axioms: [propext, sorryAx, Quot.sound]
+'SharedBinaryPower.central_exponent_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

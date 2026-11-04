@@ -1,0 +1,185 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\PartitionCertificate.lean",
+  "version": 7,
+  "seconds": 74.453,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 168
+        },
+        "start": {
+          "character": 2,
+          "line": 168
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\n⊢ (List.map\n        ((fun x =>\n            if\n                ((List.zip x.fst [a, b, c, d, e]).all fun a_1 =>\n                    (List.zip x.fst [a, b, c, d, e]).all fun b =>\n                      if a_1.fst = b.fst then decide (a_1.snd = b.snd) else true) =\n                  true then\n              x.snd\n            else 0) ∘\n          fun w =>\n          (w,\n            32 *\n              (List.map\n                  (fun j =>\n                    (-1) ^ ((List.filter (fun x => x == j) w).length - 1) *\n                      ↑(factorial ((List.filter (fun x => x == j) w).length - 1)))\n                  (List.range (List.foldl (fun m j => max m (j + 1)) 0 w))).prod))\n        (List.flatMap\n          (fun w => List.map (fun j => w ++ [j]) (List.range (List.foldl (fun m j => max m (j + 1)) 0 w + 1)))\n          (List.flatMap\n            (fun w => List.map (fun j => w ++ [j]) (List.range (List.foldl (fun m j => max m (j + 1)) 0 w + 1)))\n            (List.flatMap\n              (fun w => List.map (fun j => w ++ [j]) (List.range (List.foldl (fun m j => max m (j + 1)) 0 w + 1)))\n              (List.map (fun j => [0, j]) (List.range 2)))))).sum =\n    if ¬a = b ∧ ¬a = c ∧ ¬a = d ∧ ¬a = e ∧ ¬b = c ∧ ¬b = d ∧ ¬b = e ∧ ¬c = d ∧ ¬c = e ∧ ¬d = e then 32 else 0",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 168
+        },
+        "start": {
+          "character": 2,
+          "line": 168
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 13,
+          "line": 167
+        },
+        "start": {
+          "character": 4,
+          "line": 167
+        }
+      },
+      "message": "This simp argument is unused:\n  factorial\n\nHint: Omit it from the simp argument list.\n  [apply] simp [wordWeight, compatible, exact, partitions, arity, mobius, blockSize, List.sum_cons, List.sum_nil]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+      "range": {
+        "end": {
+          "character": 13,
+          "line": 167
+        },
+        "start": {
+          "character": 4,
+          "line": 167
+        }
+      },
+      "severity": 2,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 28,
+          "line": 167
+        },
+        "start": {
+          "character": 15,
+          "line": 167
+        }
+      },
+      "message": "This simp argument is unused:\n  List.sum_cons\n\nHint: Omit it from the simp argument list.\n  [apply] simp [wordWeight, compatible, exact, partitions, arity, mobius, blockSize, factorial, List.sum_nil]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+      "range": {
+        "end": {
+          "character": 28,
+          "line": 167
+        },
+        "start": {
+          "character": 15,
+          "line": 167
+        }
+      },
+      "severity": 2,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 42,
+          "line": 167
+        },
+        "start": {
+          "character": 30,
+          "line": 167
+        }
+      },
+      "message": "This simp argument is unused:\n  List.sum_nil\n\nHint: Omit it from the simp argument list.\n  [apply] simp [wordWeight, compatible, exact, partitions, arity, mobius, blockSize, factorial, List.sum_cons]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`",
+      "range": {
+        "end": {
+          "character": 42,
+          "line": 167
+        },
+        "start": {
+          "character": 30,
+          "line": 167
+        }
+      },
+      "severity": 2,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 170
+        },
+        "start": {
+          "character": 0,
+          "line": 170
+        }
+      },
+      "message": "'OrientedOperators.PartitionCertificate.order4_certificate' does not depend on any axioms",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 170
+        },
+        "start": {
+          "character": 0,
+          "line": 170
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 171
+        },
+        "start": {
+          "character": 0,
+          "line": 171
+        }
+      },
+      "message": "'OrientedOperators.PartitionCertificate.order5_certificate' does not depend on any axioms",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 171
+        },
+        "start": {
+          "character": 0,
+          "line": 171
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 172
+        },
+        "start": {
+          "character": 0,
+          "line": 172
+        }
+      },
+      "message": "'OrientedOperators.PartitionCertificate.certificates_have_complete_support' does not depend on any axioms",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 172
+        },
+        "start": {
+          "character": 0,
+          "line": 172
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    }
+  ]
+}

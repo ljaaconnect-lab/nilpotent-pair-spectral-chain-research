@@ -1,0 +1,89 @@
+{
+  "date": "2026-11-01",
+  "status": "passed",
+  "kernel_assignments": 3413,
+  "streamed_tables": 216,
+  "dag_tables": 48,
+  "formal_tables": 16,
+  "adversarial_tables": 17,
+  "counts_from_a": [
+    {
+      "n": 1,
+      "N": 2,
+      "channels": 1,
+      "gates": 17
+    },
+    {
+      "n": 2,
+      "N": 4,
+      "channels": 2,
+      "gates": 119
+    },
+    {
+      "n": 3,
+      "N": 4,
+      "channels": 4,
+      "gates": 279
+    },
+    {
+      "n": 4,
+      "N": 8,
+      "channels": 8,
+      "gates": 1111
+    },
+    {
+      "n": 5,
+      "N": 8,
+      "channels": 16,
+      "gates": 2219
+    },
+    {
+      "n": 6,
+      "N": 8,
+      "channels": 32,
+      "gates": 4455
+    },
+    {
+      "n": 7,
+      "N": 8,
+      "channels": 64,
+      "gates": 9131
+    },
+    {
+      "n": 8,
+      "N": 16,
+      "channels": 128,
+      "gates": 38031
+    },
+    {
+      "n": 9,
+      "N": 16,
+      "channels": 256,
+      "gates": 81139
+    },
+    {
+      "n": 10,
+      "N": 16,
+      "channels": 512,
+      "gates": 174559
+    },
+    {
+      "n": 11,
+      "N": 16,
+      "channels": 1024,
+      "gates": 376659
+    },
+    {
+      "n": 12,
+      "N": 16,
+      "channels": 2048,
+      "gates": 812367
+    }
+  ],
+  "elapsed_seconds": 2.422,
+  "claim": "Exact complete-chain scalar construction; exponential gate count; polynomial numerical working memory.",
+  "code_sha256": {
+    "chaine_z.py": "cb0b8d756e945fc228e677c82b60e817d11498a67e829b3a46ea44a5ac1a9fbb",
+    "verifier.py": "b30fb16487c75d2a8a6fa37a3dfd3fd6baaf53710a4f58f15c5c0703ec353911"
+  }
+}

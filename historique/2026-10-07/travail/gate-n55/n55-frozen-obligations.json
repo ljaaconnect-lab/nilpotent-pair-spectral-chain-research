@@ -1,0 +1,31 @@
+{
+  "node_id": "n55",
+  "version": "n55-determinant-pairing-contract-v1",
+  "coefficient_ring": "R : Type, [CommRing R]",
+  "indices": "Fin n, permutations Equiv.Perm (Fin n)",
+  "definitions": {
+    "rho": "rho r sigma = sum_i r i (sigma i)",
+    "K": "centralIndex c = sum_i c i",
+    "weight": "weight b sigma = product_i b i (sigma i)",
+    "epsilon": "signCoeff sigma = ((Equiv.Perm.sign sigma : Int) : R)",
+    "forward": "forwardMatrix b r i j = Polynomial.monomial (r i j) (b i j)",
+    "reverse": "reverseMatrix r c i j = Polynomial.monomial (c i - r i j) 1"
+  },
+  "fixed_development_obligations": {
+    "forward_determinant_expansion": "(forwardMatrix b r).det = sum_sigma Polynomial.monomial (rho r sigma) (signCoeff sigma * weight b sigma)",
+    "reverse_determinant_expansion": "(hcap : forall i j, r i j <= c i) -> (reverseMatrix r c).det = sum_sigma Polynomial.monomial (centralIndex c - rho r sigma) (signCoeff sigma)",
+    "permutation_sign_square": "forall sigma, signCoeff sigma * signCoeff sigma = 1",
+    "central_determinant_pairing": "(hcap : forall i j, r i j <= c i) -> (hinj : Function.Injective (rho r)) -> ((forwardMatrix b r).det * (reverseMatrix r c).det).coeff (centralIndex c) = sum_sigma weight b sigma"
+  },
+  "allowable_supporting_obligations": [
+    "Finite-sum diagonal coefficient pairing with explicit injectivity, label bounds and sign-square assumptions",
+    "Monomial products and row-indexed Leibniz expansion via det_transpose and det_apply'",
+    "rho bounds and finite sum of natural-number complementary labels",
+    "Base-n label injection via the previously verified n38 indexed label theorem, when feasible"
+  ],
+  "root_conjecture_verified": false,
+  "circuit_size_bound_assumed": false,
+  "candidate_compilation_budget": 24,
+  "dependencies_counted_separately": true,
+  "heldout_tests_run": false
+}

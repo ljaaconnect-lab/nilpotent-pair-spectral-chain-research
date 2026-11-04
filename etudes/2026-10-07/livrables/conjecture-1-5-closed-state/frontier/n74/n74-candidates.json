@@ -1,0 +1,28 @@
+{
+  "node": "n74",
+  "artifact_version": "n74-atomic-suffix-blueprint-v1",
+  "fixed_protocol": "n74-protocol.json",
+  "candidate_limit": 2,
+  "candidates": [
+    {
+      "id": "context-specific-projective-schur",
+      "initialization": "m0=1,M0=-I; h0=sum first-row entries; h0*M1=-h0*I+b0*1^T",
+      "actual_context_only": "Lambda_i formed from precisely the remaining rows of current B",
+      "transition_obligation": "tau*y^T*K_i(M)*x+Tr(K_i(M)*M*diag(b)*M)=0 for rank-one Delta=x*y^T",
+      "first_missing_data": "Actual-suffix adjugate response K_i(M), or a constructive identity choosing Delta without reading it",
+      "eligible_complete_candidate": false
+    },
+    {
+      "id": "charged-adjugate-actual-suffix-response",
+      "initialization_available": "Explicit adjugate entries at M1=-I+u*1^T; eta formulas for suffix lengths zero, one and two",
+      "construction_target": "K_i(M)=Lambda_i+1(adj(I+diag(t)*M)*diag(t)) with all actual row directions",
+      "first_missing_data": "Uniform polynomial scalar initialization of eta_j and eta_jk for the general actual suffix length n-2",
+      "eligible_complete_candidate": false
+    }
+  ],
+  "method_change": "Stop direct global search; isolate five exact AND obligations for the next atomic formal window",
+  "and_obligations": ["Initialization", "Column insertion", "Actual suffix reading", "Fusion", "Normalization and terminal output"],
+  "experiments_planned": [],
+  "formal_invocations_allocated": 0,
+  "root_conjecture_verified": false
+}

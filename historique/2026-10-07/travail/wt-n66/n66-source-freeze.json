@@ -1,0 +1,11 @@
+{
+  "node": "n66",
+  "phase": "frozen-before-supporting-tests",
+  "files": {
+    "n66-protocol.json": "8e60524976c79802c9828e6456d2cafee7576b7da064c2cd7f085cc5b4323f16",
+    "n66-support-protocol.json": "7f468091e25a71a1b38cda0e944d9048f502e28fc847516dd87f7d42fd040dd7",
+    "local_basis.py": "dc31b820eca84e4a04ad2117e0db96b8a3cea955e0ff52629adf214d42fd7178",
+    "evaluate_local_basis.py": "64a8bfb453112597d7bdfc0493bd8afd8e1297006c1058e8f1359dd6d8cfc59c",
+    "LocalGadget.lean": "83528dd3a338bfdaac7a862a4cdded0e7fc7e48e4ea8fc22133f586e381ead13"
+  }
+}

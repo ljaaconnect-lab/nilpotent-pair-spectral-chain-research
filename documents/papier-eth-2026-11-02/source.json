@@ -1,0 +1,13 @@
+{
+  "title": "The Exponential Time Hypothesis is False",
+  "authors": "OpenAI",
+  "date": "2026-10-25",
+  "pages": 67,
+  "supplied_by_user": "C:/Users/REGIS/Downloads/paper.pdf",
+  "project_copy": "sources/papiers/openai_eth_false_2026-10-25.pdf",
+  "sha256": "5b1612dc2eebb2cad5b4cbe62d1fed2982f01ab1908c26f70010a651487e8123",
+  "official_source": "https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+  "lean_scope": "https://github.com/openai/math/blob/main/lean/docs/378.md",
+  "full_paper_lean_replayed": false,
+  "general_polynomial_chain_bound_established": false
+}

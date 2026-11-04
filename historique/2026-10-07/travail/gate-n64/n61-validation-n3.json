@@ -1,0 +1,136 @@
+{
+  "n": 3,
+  "variant": "shared_cofactor_matchings",
+  "checks": {
+    "euler_diagonal_identity": true,
+    "grouped_row_identity": true,
+    "partial_matching_cofactor_identity": true,
+    "final_cofactor_scalar_DAG_generic_evaluation": true,
+    "final_marked_formal_z_evaluation": true,
+    "serialized_topology_count_input_audit": true
+  },
+  "passed": 6,
+  "total": 6,
+  "generic_gates": 108,
+  "marked_gates": 125,
+  "generic_counts": {
+    "variable": 9,
+    "add": 48,
+    "constant": 7,
+    "mul": 60
+  },
+  "marked_counts": {
+    "variable": 1,
+    "mul": 77,
+    "constant": 13,
+    "add": 48
+  },
+  "construction": {
+    "states": 13,
+    "all_partial_matching_state_bound": 34,
+    "attempts": 42,
+    "compatible_transitions": 15,
+    "preprocessing_integer_adds": 15,
+    "preprocessing_integer_muls": 14,
+    "maximum_integer_coefficient_bit_length": 3,
+    "coefficient_l1_bound": 343,
+    "stages": [
+      {
+        "row_pair": [
+          0,
+          1
+        ],
+        "nonzero_matching_states": 4
+      },
+      {
+        "row_pair": [
+          0,
+          2
+        ],
+        "nonzero_matching_states": 9
+      },
+      {
+        "row_pair": [
+          1,
+          2
+        ],
+        "nonzero_matching_states": 13
+      }
+    ],
+    "distinct_complementary_minors": 11,
+    "minor_cache_bound": 20,
+    "edge_product_cache_entries": 18,
+    "allocated_gates_before_liveness": 138,
+    "reachable_gates": 108,
+    "gate_counts": {
+      "variable": 9,
+      "add": 48,
+      "constant": 7,
+      "mul": 60
+    },
+    "construction_seconds": 0.005775199999334291,
+    "cost_scope": "Each determinant and edge product uses scalar gates; universal integer preprocessing is separately counted."
+  },
+  "cofactor_identity": {
+    "verified_local_cofactors": 13,
+    "scope": "Finite exact local identities, independent of scalar compiler evaluation"
+  },
+  "generic_evaluation": {
+    "actual_scalar_gate_evaluations": 108,
+    "maximum_node_terms": 6
+  },
+  "marked_evaluation": {
+    "scalar_gate_evaluations": 125,
+    "max_node_terms": 6,
+    "max_live_terms": 49,
+    "nodes": 139
+  },
+  "generic_audit": {
+    "gates_from_nodes": 108,
+    "variables": [
+      "x0",
+      "x1",
+      "x2",
+      "x3",
+      "x4",
+      "x5",
+      "x6",
+      "x7",
+      "x8"
+    ],
+    "maximum_constant_numerator_bits": 3,
+    "maximum_constant_denominator_bits": 2,
+    "no_unknown_target_leaf": true,
+    "allowed_constants": "determinant rational recurrence constants, universal integer projector coefficients, prescribed p=1+a^2"
+  },
+  "marked_audit": {
+    "gates_from_nodes": 125,
+    "variables": [
+      "z"
+    ],
+    "maximum_constant_numerator_bits": 5,
+    "maximum_constant_denominator_bits": 5,
+    "no_unknown_target_leaf": true,
+    "allowed_constants": "determinant rational recurrence constants, universal integer projector coefficients, prescribed p=1+a^2"
+  },
+  "elapsed_seconds": 0.27199380000820383,
+  "source_hashes": {
+    "euler_identity.py": "2b346b46e559f6b1d39f422e2bb4878b228bc148552effd04c11dd5dc1be11d9",
+    "validate_euler_identity.py": "5ad3762d3c672ef5815a6a45ccf59944dfacc4f2e288a0c3f26321a5e4e4687d",
+    "euler_compiler.py": "baf3ad1ba13b39e6895f86f1319ee7c928e3ad37283ea48ba133331b91d30320",
+    "evaluate_euler.py": "cfa5e99acef39e607cfcbcd99b480364af3cf34f478986cf68eb684bf99d2153",
+    "candidate.py": "6f1143d634ebd7d98bce9fb5fd1ef7eb29dbb7868cd67ac29761c5d7b020a84c",
+    "n61-protocol.json": "f599b50a2a6e94fe6c2a2b2a5dd45b1b57cad74d4780e0a3f317373da4e16061"
+  },
+  "artifacts": {
+    "generic": {
+      "path": "n61-generic-dag-n3.json",
+      "sha256": "1cc34a8b67754f85447ecbc8e7eb03a60565a65fa5adbbfbd7e3fa567450920b"
+    },
+    "marked": {
+      "path": "n61-marked-dag-n3.json",
+      "sha256": "10349ac6436449357f940e7cc82c39073dd007ea36a4780208b48269f5c2d91b"
+    }
+  },
+  "scope": "Exact finite validation; not a polynomial bound or kernel theorem"
+}

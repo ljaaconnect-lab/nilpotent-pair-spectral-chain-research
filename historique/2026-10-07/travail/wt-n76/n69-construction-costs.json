@@ -1,0 +1,143 @@
+{
+  "node": "n69",
+  "artifact_version": "n69-joint-interfaces-v1",
+  "dev_score": null,
+  "eligible_complete_polynomial_candidates": 0,
+  "root_obligations_discharged": 0,
+  "root_obligations_total": 3,
+  "construction_measurements": [
+    {
+      "n": 2,
+      "source": "actual DAG construction, without numerical interpretation",
+      "joint_phase": {
+        "gates": 292,
+        "nodes": 325,
+        "output": 304,
+        "artifact": "n69-joint_phase-n2.json",
+        "state_dimension": null
+      },
+      "fixed_H_pf": {
+        "gates": 853,
+        "nodes": 874,
+        "output": 873,
+        "artifact": "n69-fixed_H_pf-n2.json",
+        "state_dimension": null
+      },
+      "rowjet_generic_reference": {
+        "gates": 48,
+        "nodes": 55,
+        "output": 35,
+        "artifact": "n69-rowjet_generic_reference-n2.json",
+        "state_dimension": 4
+      },
+      "rowjet_marked_reference": {
+        "gates": 55,
+        "nodes": 63,
+        "output": 43,
+        "artifact": "n69-rowjet_marked_reference-n2.json",
+        "state_dimension": 4
+      }
+    },
+    {
+      "n": 3,
+      "source": "actual DAG construction, without numerical interpretation",
+      "joint_phase": {
+        "gates": 657,
+        "nodes": 725,
+        "output": 704,
+        "artifact": "n69-joint_phase-n3.json",
+        "state_dimension": null
+      },
+      "fixed_H_pf": {
+        "gates": 2990,
+        "nodes": 3025,
+        "output": 3024,
+        "artifact": "n69-fixed_H_pf-n3.json",
+        "state_dimension": null
+      },
+      "rowjet_generic_reference": {
+        "gates": 228,
+        "nodes": 240,
+        "output": 171,
+        "artifact": "n69-rowjet_generic_reference-n3.json",
+        "state_dimension": 8
+      },
+      "rowjet_marked_reference": {
+        "gates": 245,
+        "nodes": 258,
+        "output": 189,
+        "artifact": "n69-rowjet_marked_reference-n3.json",
+        "state_dimension": 8
+      }
+    },
+    {
+      "n": 4,
+      "source": "actual DAG construction, without numerical interpretation",
+      "joint_phase": {
+        "gates": 1168,
+        "nodes": 1285,
+        "output": 1264,
+        "artifact": "n69-joint_phase-n4.json",
+        "state_dimension": null
+      },
+      "fixed_H_pf": {
+        "gates": 7772,
+        "nodes": 7825,
+        "output": 7824,
+        "artifact": "n69-fixed_H_pf-n4.json",
+        "state_dimension": null
+      },
+      "rowjet_generic_reference": {
+        "gates": 832,
+        "nodes": 851,
+        "output": 653,
+        "artifact": "n69-rowjet_generic_reference-n4.json",
+        "state_dimension": 16
+      },
+      "rowjet_marked_reference": {
+        "gates": 863,
+        "nodes": 883,
+        "output": 685,
+        "artifact": "n69-rowjet_marked_reference-n4.json",
+        "state_dimension": 16
+      }
+    },
+    {
+      "n": 5,
+      "source": "actual DAG construction, without numerical interpretation",
+      "joint_phase": {
+        "gates": 1825,
+        "nodes": 2005,
+        "output": 1984,
+        "artifact": "n69-joint_phase-n5.json",
+        "state_dimension": null
+      },
+      "fixed_H_pf": {
+        "gates": 16809,
+        "nodes": 16884,
+        "output": 16883,
+        "artifact": "n69-fixed_H_pf-n5.json",
+        "state_dimension": null
+      },
+      "rowjet_generic_reference": {
+        "gates": 2640,
+        "nodes": 2668,
+        "output": 2153,
+        "artifact": "n69-rowjet_generic_reference-n5.json",
+        "state_dimension": 32
+      },
+      "rowjet_marked_reference": {
+        "gates": 2689,
+        "nodes": 2718,
+        "output": 2203,
+        "artifact": "n69-rowjet_marked_reference-n5.json",
+        "state_dimension": 32
+      }
+    }
+  ],
+  "mathematical_identity_checks": 0,
+  "B_input_evaluations": 0,
+  "heldout_access": false,
+  "Lean_compiles": 0,
+  "warning": "Counts charge explicit partial or exponential circuits only; none is a polynomial root extractor"
+}

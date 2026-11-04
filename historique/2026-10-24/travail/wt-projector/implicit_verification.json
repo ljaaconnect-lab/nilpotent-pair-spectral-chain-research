@@ -1,0 +1,142 @@
+{
+  "random_checks": [
+    {
+      "n": 1,
+      "observed": 1,
+      "permanent": 1,
+      "difference": 0
+    },
+    {
+      "n": 1,
+      "observed": 2,
+      "permanent": 2,
+      "difference": 0
+    },
+    {
+      "n": 1,
+      "observed": 2,
+      "permanent": 2,
+      "difference": 0
+    },
+    {
+      "n": 2,
+      "observed": 15,
+      "permanent": 15,
+      "difference": 0
+    },
+    {
+      "n": 2,
+      "observed": 20,
+      "permanent": 20,
+      "difference": 0
+    },
+    {
+      "n": 2,
+      "observed": 9,
+      "permanent": 9,
+      "difference": 0
+    },
+    {
+      "n": 3,
+      "observed": 157,
+      "permanent": 157,
+      "difference": 0
+    },
+    {
+      "n": 3,
+      "observed": 220,
+      "permanent": 220,
+      "difference": 0
+    },
+    {
+      "n": 3,
+      "observed": 187,
+      "permanent": 187,
+      "difference": 0
+    },
+    {
+      "n": 4,
+      "observed": 3650,
+      "permanent": 5520,
+      "difference": -1870
+    },
+    {
+      "n": 4,
+      "observed": 2053,
+      "permanent": 2508,
+      "difference": -455
+    },
+    {
+      "n": 4,
+      "observed": 716,
+      "permanent": 888,
+      "difference": -172
+    },
+    {
+      "n": 5,
+      "observed": -2668,
+      "permanent": 14431,
+      "difference": -17099
+    },
+    {
+      "n": 5,
+      "observed": 0,
+      "permanent": 39672,
+      "difference": -39672
+    },
+    {
+      "n": 5,
+      "observed": 13153,
+      "permanent": 37453,
+      "difference": -24300
+    }
+  ],
+  "all_ones_closed": [
+    {
+      "n": 1,
+      "coefficient": 1,
+      "permanent": 1
+    },
+    {
+      "n": 2,
+      "coefficient": 2,
+      "permanent": 2
+    },
+    {
+      "n": 3,
+      "coefficient": 6,
+      "permanent": 6
+    },
+    {
+      "n": 4,
+      "coefficient": 18,
+      "permanent": 24
+    },
+    {
+      "n": 5,
+      "coefficient": -10,
+      "permanent": 120
+    },
+    {
+      "n": 6,
+      "coefficient": -1270,
+      "permanent": 720
+    },
+    {
+      "n": 7,
+      "coefficient": -18088,
+      "permanent": 5040
+    },
+    {
+      "n": 8,
+      "coefficient": -27454,
+      "permanent": 40320
+    }
+  ],
+  "degree_six_after_corrections": {
+    "coefficient": 260,
+    "permanent": 720
+  },
+  "candidate_target_identity": false,
+  "global_polynomial_proof": false
+}

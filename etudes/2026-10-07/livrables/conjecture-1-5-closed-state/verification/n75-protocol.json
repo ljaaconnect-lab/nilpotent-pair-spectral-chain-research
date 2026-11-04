@@ -1,0 +1,57 @@
+{
+  "node": "n75",
+  "hypothesis_fixed": true,
+  "artifact_goal": "AtomicFirstPrefix.lean",
+  "leaves": [
+    {
+      "id": "A1",
+      "statement": "h=sum_j b_j; sum_(j not in J)b_j=h-sum_(j in J)b_j",
+      "proof_plan": "Partition the finite sum into J and its complement"
+    },
+    {
+      "id": "A2",
+      "statement": "One-column response on q_J is (-1)^card(J) if j not in J, zero otherwise",
+      "proof_plan": "The commuting square-zero basis rule, stated as an explicit disjoint-set coefficient"
+    },
+    {
+      "id": "A3",
+      "statement": "The weighted first-prefix response is (-1)^card(J)*(h-sum_J b_j)",
+      "proof_plan": "Linear finite sum of A2 followed by A1"
+    },
+    {
+      "id": "A4",
+      "statement": "det((-I+u*1^T)[J,J])=(-1)^card(J)*(1-sum_J u_j)",
+      "proof_plan": "Use actual pinned Mathlib rank-one determinant lemma and determinant of a negated matrix; include empty J"
+    },
+    {
+      "id": "A5",
+      "statement": "If h*u_j=b_j for every j, h times A4 equals A3 for every J",
+      "proof_plan": "Distribute h across the finite sum and ring; local normalization hypothesis is explicit, not a root assumption"
+    },
+    {
+      "id": "A6",
+      "statement": "Equality on all basis q_J extends to every finite coefficient vector f(q)",
+      "proof_plan": "Finite linearity; this semantic extension is not a free scalar contraction gate"
+    }
+  ],
+  "resolution_mode": "Sequential elementary sublemmas, hardest matrix identity retrieved before inventing helpers",
+  "formal_invocation_cap": 8,
+  "shared_formal_window_cap": 20,
+  "already_used_shared_invocations": 7,
+  "counting": "Every candidate/probe/retry/dependency build counts; preserve global counts without reset",
+  "required": "Six actual exact statements, compiler exit0, standard-axiom audit, no placeholder",
+  "local_assumptions": "Rank-one normalization h*u=b is a local algebraic hypothesis only; existence and scalar compilation for arbitrary inputs must be discharged separately before a root claim",
+  "resource_boundary": "Data (h,b) and single-query response have explicit +/* construction; all-f functional extension is semantic and has no claimed free evaluation",
+  "root_score": 0,
+  "root_conjecture_verified": false,
+  "forbidden": [
+    "No assertion that second-prefix/global fusion is obvious",
+    "No axiom asserting Delta construction",
+    "No sorry/custom axiom/native_decide",
+    "No unknown target as initialized data",
+    "No variable division leaf",
+    "No counterexample/lower-bound generation",
+    "No B_test/.arbor/outputs access"
+  ],
+  "test_boundary": "Coordinator-only fresh exact-source replay after full local proof is frozen"
+}

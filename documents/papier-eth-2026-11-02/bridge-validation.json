@@ -1,0 +1,270 @@
+{
+  "scope": "Finite local exact checks for an oriented/spectral bridge; no implementation or validation of the paper's main algorithm.",
+  "source_file": "validate_bridge.py",
+  "source_sha256": "f32ef3530f17ec558bd9148daebb2593965f512dfeaafbcdac2fe9c46dfc61b6",
+  "oriented_spectral": {
+    "input_matrices": 16,
+    "base_boolean_identities": 16,
+    "permutation_cross_checks": 16,
+    "spectral_configurations": 64,
+    "frequency_identities": 264,
+    "intt_output_coordinates": 264,
+    "universal_sign_checks": 16,
+    "n_values": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "field_modulus": 97,
+    "matrix_profiles": [
+      "zero",
+      "one",
+      "affine",
+      "zero_diagonal_weights"
+    ],
+    "ntt_lengths": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "largest_verified_output_exponent": 33825,
+    "z_is_formal": true,
+    "z_exponents_reduced_mod_Q_minus_1": false,
+    "all_checks_passed": true
+  },
+  "finite_difference_reader": {
+    "formula": "H(0)=sum(t=1..L) (-1)^(t-1) binom(L,t) H(t)",
+    "required_hypothesis": "formal degree(H) < L",
+    "primes": [
+      2,
+      3,
+      5,
+      7,
+      97
+    ],
+    "L_values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "valid_degree_cases": 570,
+    "valid_cases_with_p_at_most_L": 382,
+    "degree_equal_L_cases": 60,
+    "degree_equal_L_failures": 25,
+    "degree_equal_L_accidental_equalities": 35,
+    "counterexamples": [
+      {
+        "p": 2,
+        "L": 1,
+        "reader_minus_H0": 1
+      },
+      {
+        "p": 3,
+        "L": 1,
+        "reader_minus_H0": 1
+      },
+      {
+        "p": 3,
+        "L": 2,
+        "reader_minus_H0": 1
+      },
+      {
+        "p": 5,
+        "L": 1,
+        "reader_minus_H0": 1
+      },
+      {
+        "p": 5,
+        "L": 2,
+        "reader_minus_H0": 3
+      },
+      {
+        "p": 5,
+        "L": 3,
+        "reader_minus_H0": 1
+      },
+      {
+        "p": 5,
+        "L": 4,
+        "reader_minus_H0": 1
+      },
+      {
+        "p": 7,
+        "L": 1,
+        "reader_minus_H0": 1
+      },
+      {
+        "p": 7,
+        "L": 2,
+        "reader_minus_H0": 5
+      },
+      {
+        "p": 7,
+        "L": 3,
+        "reader_minus_H0": 6
+      },
+      {
+        "p": 7,
+        "L": 4,
+        "reader_minus_H0": 4
+      },
+      {
+        "p": 7,
+        "L": 5,
+        "reader_minus_H0": 1
+      },
+      {
+        "p": 7,
+        "L": 6,
+        "reader_minus_H0": 1
+      },
+      {
+        "p": 97,
+        "L": 1,
+        "reader_minus_H0": 1
+      },
+      {
+        "p": 97,
+        "L": 2,
+        "reader_minus_H0": 95
+      },
+      {
+        "p": 97,
+        "L": 3,
+        "reader_minus_H0": 6
+      },
+      {
+        "p": 97,
+        "L": 4,
+        "reader_minus_H0": 73
+      },
+      {
+        "p": 97,
+        "L": 5,
+        "reader_minus_H0": 23
+      },
+      {
+        "p": 97,
+        "L": 6,
+        "reader_minus_H0": 56
+      },
+      {
+        "p": 97,
+        "L": 7,
+        "reader_minus_H0": 93
+      },
+      {
+        "p": 97,
+        "L": 8,
+        "reader_minus_H0": 32
+      },
+      {
+        "p": 97,
+        "L": 9,
+        "reader_minus_H0": 3
+      },
+      {
+        "p": 97,
+        "L": 10,
+        "reader_minus_H0": 67
+      },
+      {
+        "p": 97,
+        "L": 11,
+        "reader_minus_H0": 39
+      },
+      {
+        "p": 97,
+        "L": 12,
+        "reader_minus_H0": 17
+      }
+    ],
+    "boundary_note": "For H=T^L and p<=L, L! vanishes modulo p; these cases do not disprove the formula. Cases p>L exhibit the missing degree hypothesis.",
+    "no_inversion_of_node_differences_required": true,
+    "all_checks_passed": true
+  },
+  "local_gadget": {
+    "formula": "T(a,b,c)=(1-a)(1-b)(1-c)+(a+b-2ab)c",
+    "accepted_bit_strings": [
+      "000",
+      "011",
+      "101"
+    ],
+    "truth_table_cases": 8,
+    "truth_table": [
+      {
+        "a": 0,
+        "b": 0,
+        "c": 0,
+        "T": 1
+      },
+      {
+        "a": 0,
+        "b": 0,
+        "c": 1,
+        "T": 0
+      },
+      {
+        "a": 0,
+        "b": 1,
+        "c": 0,
+        "T": 0
+      },
+      {
+        "a": 0,
+        "b": 1,
+        "c": 1,
+        "T": 1
+      },
+      {
+        "a": 1,
+        "b": 0,
+        "c": 0,
+        "T": 0
+      },
+      {
+        "a": 1,
+        "b": 0,
+        "c": 1,
+        "T": 1
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "c": 0,
+        "T": 0
+      },
+      {
+        "a": 1,
+        "b": 1,
+        "c": 1,
+        "T": 0
+      }
+    ],
+    "weight_formula": "1+(B_ij-1)x_ij",
+    "weight_cases": 8,
+    "all_checks_passed": true
+  },
+  "flags": {
+    "local_identities_checked": true,
+    "test_oracles_enumerate_boolean_assignments_subsets_and_permutations": true,
+    "paper_algorithm_implemented": false,
+    "paper_main_theorem_verified": false,
+    "lean_verification_performed_by_this_script": false,
+    "polynomial_general_scalar_compilation_established": false,
+    "complete_chain_polynomial_bound_established": false,
+    "new_polynomial_source_for_reader_values_constructed": false,
+    "formal_z_exponents_preserved": true
+  }
+}

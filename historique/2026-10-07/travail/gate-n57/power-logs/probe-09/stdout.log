@@ -1,0 +1,9 @@
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerCompiler.lean:45:29: warning: This simp argument is unused:
+  Nat.add_succ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp_all [power, M.mul_one, M.assoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'SharedBinaryPower.power_add' depends on axioms: [propext]
+'SharedBinaryPower.central_exponent_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

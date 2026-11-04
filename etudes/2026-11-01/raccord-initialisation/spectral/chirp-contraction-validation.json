@@ -1,0 +1,284 @@
+{
+  "status": "passed",
+  "source": "verify_chirp_contraction.py",
+  "sha256": "0514a52a0123dae9b809eb38e0db97083e4f25a4beb9ff74a5bc7d82b127950b",
+  "contract": "Every data-dependent operation uses counted ordinary +/* gates. Prime Q and admissible roots eta,zeta,omega are supplied parameters; their deterministic polynomial-time generation is not established. Once supplied, exact power-of-two orders are checkable and powers/inverses are computable with polynomial work. The brute-force primitive_root helper only prepares the small test fields. The joint contraction uses K^n points; no polynomial closure is claimed.",
+  "moments_as_inputs": false,
+  "C_values_materialized": false,
+  "terminal_amplitude_as_input": false,
+  "general_polynomial_closure": false,
+  "complete_tables": [
+    {
+      "n": 1,
+      "Q": 17,
+      "K": 2,
+      "M": 1,
+      "N": 2,
+      "points": 2,
+      "scalar_gates": 26,
+      "blocks": {
+        "prepare_B": 3,
+        "chirp_table": 8,
+        "joint_contraction": 7,
+        "common_phase_and_intt": 8
+      },
+      "case": 0,
+      "passed": true
+    },
+    {
+      "n": 1,
+      "Q": 17,
+      "K": 2,
+      "M": 1,
+      "N": 2,
+      "points": 2,
+      "scalar_gates": 26,
+      "blocks": {
+        "prepare_B": 3,
+        "chirp_table": 8,
+        "joint_contraction": 7,
+        "common_phase_and_intt": 8
+      },
+      "case": 1,
+      "passed": true
+    },
+    {
+      "n": 2,
+      "Q": 17,
+      "K": 4,
+      "M": 2,
+      "N": 4,
+      "points": 16,
+      "scalar_gates": 310,
+      "blocks": {
+        "prepare_B": 15,
+        "chirp_table": 64,
+        "joint_contraction": 207,
+        "common_phase_and_intt": 24
+      },
+      "case": 0,
+      "passed": true
+    },
+    {
+      "n": 2,
+      "Q": 17,
+      "K": 4,
+      "M": 2,
+      "N": 4,
+      "points": 16,
+      "scalar_gates": 310,
+      "blocks": {
+        "prepare_B": 15,
+        "chirp_table": 64,
+        "joint_contraction": 207,
+        "common_phase_and_intt": 24
+      },
+      "case": 1,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "Q": 17,
+      "K": 4,
+      "M": 4,
+      "N": 4,
+      "points": 64,
+      "scalar_gates": 2170,
+      "blocks": {
+        "prepare_B": 35,
+        "chirp_table": 128,
+        "joint_contraction": 1983,
+        "common_phase_and_intt": 24
+      },
+      "case": 0,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "Q": 17,
+      "K": 4,
+      "M": 4,
+      "N": 4,
+      "points": 64,
+      "scalar_gates": 2170,
+      "blocks": {
+        "prepare_B": 35,
+        "chirp_table": 128,
+        "joint_contraction": 1983,
+        "common_phase_and_intt": 24
+      },
+      "case": 1,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "Q": 17,
+      "K": 8,
+      "M": 8,
+      "N": 8,
+      "points": 4096,
+      "scalar_gates": 267390,
+      "blocks": {
+        "prepare_B": 63,
+        "chirp_table": 1024,
+        "joint_contraction": 266239,
+        "common_phase_and_intt": 64
+      },
+      "case": 0,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "Q": 17,
+      "K": 8,
+      "M": 8,
+      "N": 8,
+      "points": 4096,
+      "scalar_gates": 267390,
+      "blocks": {
+        "prepare_B": 63,
+        "chirp_table": 1024,
+        "joint_contraction": 266239,
+        "common_phase_and_intt": 64
+      },
+      "case": 1,
+      "passed": true
+    },
+    {
+      "n": 1,
+      "Q": 97,
+      "K": 2,
+      "M": 1,
+      "N": 2,
+      "points": 2,
+      "scalar_gates": 26,
+      "blocks": {
+        "prepare_B": 3,
+        "chirp_table": 8,
+        "joint_contraction": 7,
+        "common_phase_and_intt": 8
+      },
+      "case": 0,
+      "passed": true
+    },
+    {
+      "n": 1,
+      "Q": 97,
+      "K": 2,
+      "M": 1,
+      "N": 2,
+      "points": 2,
+      "scalar_gates": 26,
+      "blocks": {
+        "prepare_B": 3,
+        "chirp_table": 8,
+        "joint_contraction": 7,
+        "common_phase_and_intt": 8
+      },
+      "case": 1,
+      "passed": true
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "K": 4,
+      "M": 2,
+      "N": 4,
+      "points": 16,
+      "scalar_gates": 310,
+      "blocks": {
+        "prepare_B": 15,
+        "chirp_table": 64,
+        "joint_contraction": 207,
+        "common_phase_and_intt": 24
+      },
+      "case": 0,
+      "passed": true
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "K": 4,
+      "M": 2,
+      "N": 4,
+      "points": 16,
+      "scalar_gates": 310,
+      "blocks": {
+        "prepare_B": 15,
+        "chirp_table": 64,
+        "joint_contraction": 207,
+        "common_phase_and_intt": 24
+      },
+      "case": 1,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "K": 4,
+      "M": 4,
+      "N": 4,
+      "points": 64,
+      "scalar_gates": 2170,
+      "blocks": {
+        "prepare_B": 35,
+        "chirp_table": 128,
+        "joint_contraction": 1983,
+        "common_phase_and_intt": 24
+      },
+      "case": 0,
+      "passed": true
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "K": 4,
+      "M": 4,
+      "N": 4,
+      "points": 64,
+      "scalar_gates": 2170,
+      "blocks": {
+        "prepare_B": 35,
+        "chirp_table": 128,
+        "joint_contraction": 1983,
+        "common_phase_and_intt": 24
+      },
+      "case": 1,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "K": 8,
+      "M": 8,
+      "N": 8,
+      "points": 4096,
+      "scalar_gates": 267390,
+      "blocks": {
+        "prepare_B": 63,
+        "chirp_table": 1024,
+        "joint_contraction": 266239,
+        "common_phase_and_intt": 64
+      },
+      "case": 0,
+      "passed": true
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "K": 8,
+      "M": 8,
+      "N": 8,
+      "points": 4096,
+      "scalar_gates": 267390,
+      "blocks": {
+        "prepare_B": 63,
+        "chirp_table": 1024,
+        "joint_contraction": 266239,
+        "common_phase_and_intt": 64
+      },
+      "case": 1,
+      "passed": true
+    }
+  ]
+}

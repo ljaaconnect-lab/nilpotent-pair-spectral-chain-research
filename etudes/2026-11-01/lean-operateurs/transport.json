@@ -1,0 +1,15 @@
+{
+  "basis": [
+    "insert_P_0",
+    "insert_P_1",
+    "insert_P_2",
+    "insert_P_3",
+    "insert_P_4",
+    "duplicate_position_0",
+    "duplicate_position_1",
+    "duplicate_position_2",
+    "duplicate_position_3"
+  ],
+  "rank": 9,
+  "augmented_rank": 10
+}

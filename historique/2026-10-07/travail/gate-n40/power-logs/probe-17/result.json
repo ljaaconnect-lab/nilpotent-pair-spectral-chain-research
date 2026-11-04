@@ -1,0 +1,34 @@
+{
+  "tag": "probe-17",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+  ],
+  "kind": "probe",
+  "exit_code": 1,
+  "source_sha256": "ff12a63804853318ba01891950b0b4b8b888cc60752c92f2f18055cd4543715c",
+  "elapsed_seconds": 17.001093864440918,
+  "error_count": 1,
+  "axiom_audit": {
+    "SharedBinaryPower.run_append": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SharedBinaryPower.positive_plan_correct": [
+      "propext",
+      "sorryAx",
+      "Quot.sound"
+    ],
+    "SharedBinaryPower.central_exponent_log_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharedBinaryPower.power_add": []
+  },
+  "source_clean": false,
+  "main_obligations_passed": 0,
+  "score": null,
+  "root_conjecture_verified": false,
+  "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-17"
+}

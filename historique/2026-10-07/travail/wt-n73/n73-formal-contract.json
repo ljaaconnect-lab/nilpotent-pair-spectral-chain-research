@@ -1,0 +1,30 @@
+{
+  "node": "n73",
+  "frozen_before_first_compiler_invocation": true,
+  "source": "ActualClosedSubsetTransfer.lean",
+  "domain": "R with CommRing R, every n:Nat, every explicit row data b:Nat -> Fin n -> R",
+  "definitions": {
+    "state0": "state b 0 U = if U=empty then 1 else 0",
+    "state_step": "state b (k+1) U = sum j in U, b k j * state b k (U.erase j)",
+    "rowProduct": "rowProduct b 0=1; rowProduct b (k+1)=linearForm(b k)*rowProduct b k",
+    "subsetExponent": "sum j in U Finsupp.single j 1",
+    "linearForm": "sum j:Fin n C(c j)*X j",
+    "matrixRows": "if k<n then B (Fin.mk k h) j else 0, for arbitrary B:Matrix (Fin n) (Fin n) R"
+  },
+  "required": {
+    "initial_state": "forall b,U, state b 0 U=if U=empty then 1 else 0",
+    "step_state": "forall b,k,U, state b (k+1) U=sum j in U,b k j*state b k(U.erase j)",
+    "coefficient_invariant": "forall b,k,U, state b k U=(rowProduct b k).coeff(subsetExponent U)",
+    "terminal_permutation": "forall b, state b n univ=sum sigma:Perm(Fin n), product i:Fin n,b i.val(sigma i)",
+    "terminal_matrix": "forall B, state(matrixRows B)n univ=sum sigma:Perm(Fin n), product i:Fin n,B i(sigma i)",
+    "marked_central": "forall n>=2,A rational matrix, state(matrixRows(markedWeights A))n univ=(markedHhat A).coeff(centralDegree n)",
+    "state_dimension": "Fintype.card(Finset(Fin n))=2^n"
+  },
+  "score_denominator": 4,
+  "score_groups": [["initial_state"], ["step_state"], ["coefficient_invariant"], ["terminal_permutation", "terminal_matrix", "marked_central", "state_dimension"]],
+  "all_kind_invocation_cap": 8,
+  "state_space": "All 2^n column subsets; exponential, no polynomial-size claim",
+  "root_credit": 0,
+  "root_conjecture_verified": false,
+  "heldout_tests_run": false
+}

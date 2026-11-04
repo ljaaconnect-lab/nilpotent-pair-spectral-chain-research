@@ -1,0 +1,8 @@
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerCompiler.lean:13:2: error: unsolved goals
+n : Nat
+hn : 2 ≤ n
+hsmall : n ≤ 2 ^ n
+hbig : n ^ n ≤ 2 ^ (n * n)
+hnonzero : n ^ n - 1 ≠ 0
+⊢ (n ^ n - 1).log2 ≤ n ^ 2
+'SharedBinaryPower.central_exponent_log_bound' depends on axioms: [propext, sorryAx, Quot.sound]

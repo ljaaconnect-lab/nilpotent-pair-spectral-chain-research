@@ -1,0 +1,7 @@
+
+/HadamardPfaffian.lean -text
+/compile_n67.py -text
+/verify_n67.py -text
+/n67-* -text
+/n67-compiler-rounds/** -text
+/freeze_n67.py -text

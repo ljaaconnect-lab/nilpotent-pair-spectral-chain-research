@@ -1,0 +1,12 @@
+'SharedBinaryPower.power_add' does not depend on any axioms
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerCompiler.lean:54:2: error: unsolved goals
+case ind
+α : Type u
+M : MonoidData α
+a : α
+n✝ : Nat
+a✝ : ∀ (m : Nat), m < n✝ → 0 < m → run M a a (binaryPlan m) = power M a m
+hk : 0 < n✝
+⊢ run M a a (binaryPlan n✝) = power M a n✝
+'SharedBinaryPower.positive_plan_correct' depends on axioms: [propext, sorryAx, Quot.sound]
+'SharedBinaryPower.central_exponent_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

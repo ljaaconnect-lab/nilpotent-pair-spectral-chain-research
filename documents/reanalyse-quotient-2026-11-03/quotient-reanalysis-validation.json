@@ -1,0 +1,448 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "documents/reanalyse-quotient-2026-11-03/verify_quotient_reanalysis.py": "dcfd65a8ec0f3d3ec691c52b8dc84333b377774ad54a0b06db23a6bb449a15c8",
+    "documents/composition-native-2026-11-03/compose_native_representatives.py": "2e68d57225c04caddace2d91946cf7c88273a702bbc7833e1f380a253e54d9f4",
+    "documents/composition-native-2026-11-03/verify_native_composition.py": "52894580b8b933aa0b7ba936ee3a50667e452fea542c31fc4c56368cc6fbb3ed",
+    "etudes/2026-11-01/linearisation-orientee-convolution/linearised_inputs.py": "5c4c61aaacd4aa143f146bdaa64f20ae7fdbfeeac41b207eef87c4c9c7b24ada",
+    "etudes/2026-11-01/linearisation-orientee-convolution/verify_linearised_inputs.py": "b75e7c8c00123b5d1794562f869d95f16afe719373e3ca0d4baa84417645eb04",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06"
+  },
+  "cases": [
+    {
+      "n": 1,
+      "Q": 97,
+      "N": 2,
+      "omega": 96,
+      "labels": [
+        -1
+      ],
+      "padding_equations_checked": 1,
+      "inverse_fourier_equations_checked": 2,
+      "convolution_relations_checked": 2,
+      "socle_power_equals_factorial_top": true,
+      "socle_times_every_x_is_zero": true,
+      "factorial_invertible_from_admissibility": true,
+      "n2_normalizer_scalar_gates": null,
+      "n2_normalized_full_true_INTT_gates": null,
+      "n2_normalized_output_inputs": null,
+      "n2_fused_normalizer_scalar_gates": null,
+      "n2_fused_normalized_true_INTT_gates": null,
+      "n2_fused_normalized_output_inputs": null,
+      "n2_same_DAG_partition": null,
+      "counts": {
+        "instances": 4,
+        "frequency_equalities_in_full_quotient": 8,
+        "output_equalities_in_full_quotient": 8,
+        "formal_z_instances": 1,
+        "n2_scalar_normalizer_instances": 0
+      }
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        -3,
+        0
+      ],
+      "padding_equations_checked": 2,
+      "inverse_fourier_equations_checked": 4,
+      "convolution_relations_checked": 4,
+      "socle_power_equals_factorial_top": true,
+      "socle_times_every_x_is_zero": true,
+      "factorial_invertible_from_admissibility": true,
+      "n2_normalizer_scalar_gates": 30,
+      "n2_normalized_full_true_INTT_gates": 50,
+      "n2_normalized_output_inputs": [
+        "a_0_0",
+        "a_0_1",
+        "a_1_0",
+        "a_1_1",
+        "z"
+      ],
+      "n2_fused_normalizer_scalar_gates": 18,
+      "n2_fused_normalized_true_INTT_gates": 38,
+      "n2_fused_normalized_output_inputs": [
+        "a_0_0",
+        "a_0_1",
+        "a_1_0",
+        "a_1_1",
+        "z"
+      ],
+      "n2_same_DAG_partition": {
+        "new_core_gates": 3,
+        "useful_preparation_gates": 15,
+        "remaining_useful_gates_J": 23,
+        "complete_scalar_output_gates": 38
+      },
+      "counts": {
+        "instances": 4,
+        "frequency_equalities_in_full_quotient": 16,
+        "output_equalities_in_full_quotient": 16,
+        "formal_z_instances": 1,
+        "n2_scalar_normalizer_instances": 4
+      }
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        -5,
+        -2,
+        4
+      ],
+      "padding_equations_checked": 1,
+      "inverse_fourier_equations_checked": 4,
+      "convolution_relations_checked": 4,
+      "socle_power_equals_factorial_top": true,
+      "socle_times_every_x_is_zero": true,
+      "factorial_invertible_from_admissibility": true,
+      "n2_normalizer_scalar_gates": null,
+      "n2_normalized_full_true_INTT_gates": null,
+      "n2_normalized_output_inputs": null,
+      "n2_fused_normalizer_scalar_gates": null,
+      "n2_fused_normalized_true_INTT_gates": null,
+      "n2_fused_normalized_output_inputs": null,
+      "n2_same_DAG_partition": null,
+      "counts": {
+        "instances": 4,
+        "frequency_equalities_in_full_quotient": 16,
+        "output_equalities_in_full_quotient": 16,
+        "formal_z_instances": 1,
+        "n2_scalar_normalizer_instances": 0
+      }
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        -7,
+        -4,
+        2,
+        10
+      ],
+      "padding_equations_checked": 4,
+      "inverse_fourier_equations_checked": 8,
+      "convolution_relations_checked": 8,
+      "socle_power_equals_factorial_top": true,
+      "socle_times_every_x_is_zero": true,
+      "factorial_invertible_from_admissibility": true,
+      "n2_normalizer_scalar_gates": null,
+      "n2_normalized_full_true_INTT_gates": null,
+      "n2_normalized_output_inputs": null,
+      "n2_fused_normalizer_scalar_gates": null,
+      "n2_fused_normalized_true_INTT_gates": null,
+      "n2_fused_normalized_output_inputs": null,
+      "n2_same_DAG_partition": null,
+      "counts": {
+        "instances": 4,
+        "frequency_equalities_in_full_quotient": 32,
+        "output_equalities_in_full_quotient": 32,
+        "formal_z_instances": 0,
+        "n2_scalar_normalizer_instances": 0
+      }
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        -9,
+        -6,
+        0,
+        8,
+        18
+      ],
+      "padding_equations_checked": 3,
+      "inverse_fourier_equations_checked": 8,
+      "convolution_relations_checked": 8,
+      "socle_power_equals_factorial_top": true,
+      "socle_times_every_x_is_zero": true,
+      "factorial_invertible_from_admissibility": true,
+      "n2_normalizer_scalar_gates": null,
+      "n2_normalized_full_true_INTT_gates": null,
+      "n2_normalized_output_inputs": null,
+      "n2_fused_normalizer_scalar_gates": null,
+      "n2_fused_normalized_true_INTT_gates": null,
+      "n2_fused_normalized_output_inputs": null,
+      "n2_same_DAG_partition": null,
+      "counts": {
+        "instances": 4,
+        "frequency_equalities_in_full_quotient": 32,
+        "output_equalities_in_full_quotient": 32,
+        "formal_z_instances": 0,
+        "n2_scalar_normalizer_instances": 0
+      }
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        -11,
+        -8,
+        -2,
+        6,
+        16,
+        28
+      ],
+      "padding_equations_checked": 2,
+      "inverse_fourier_equations_checked": 8,
+      "convolution_relations_checked": 8,
+      "socle_power_equals_factorial_top": true,
+      "socle_times_every_x_is_zero": true,
+      "factorial_invertible_from_admissibility": true,
+      "n2_normalizer_scalar_gates": null,
+      "n2_normalized_full_true_INTT_gates": null,
+      "n2_normalized_output_inputs": null,
+      "n2_fused_normalizer_scalar_gates": null,
+      "n2_fused_normalized_true_INTT_gates": null,
+      "n2_fused_normalized_output_inputs": null,
+      "n2_same_DAG_partition": null,
+      "counts": {
+        "instances": 4,
+        "frequency_equalities_in_full_quotient": 32,
+        "output_equalities_in_full_quotient": 32,
+        "formal_z_instances": 0,
+        "n2_scalar_normalizer_instances": 0
+      }
+    },
+    {
+      "n": 7,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        -13,
+        -10,
+        -4,
+        4,
+        14,
+        26,
+        40
+      ],
+      "padding_equations_checked": 1,
+      "inverse_fourier_equations_checked": 8,
+      "convolution_relations_checked": 8,
+      "socle_power_equals_factorial_top": true,
+      "socle_times_every_x_is_zero": true,
+      "factorial_invertible_from_admissibility": true,
+      "n2_normalizer_scalar_gates": null,
+      "n2_normalized_full_true_INTT_gates": null,
+      "n2_normalized_output_inputs": null,
+      "n2_fused_normalizer_scalar_gates": null,
+      "n2_fused_normalized_true_INTT_gates": null,
+      "n2_fused_normalized_output_inputs": null,
+      "n2_same_DAG_partition": null,
+      "counts": {
+        "instances": 4,
+        "frequency_equalities_in_full_quotient": 32,
+        "output_equalities_in_full_quotient": 32,
+        "formal_z_instances": 0,
+        "n2_scalar_normalizer_instances": 0
+      }
+    },
+    {
+      "n": 8,
+      "Q": 97,
+      "N": 16,
+      "omega": 8,
+      "labels": [
+        -15,
+        -12,
+        -6,
+        2,
+        12,
+        24,
+        38,
+        54
+      ],
+      "padding_equations_checked": 8,
+      "inverse_fourier_equations_checked": 16,
+      "convolution_relations_checked": 16,
+      "socle_power_equals_factorial_top": true,
+      "socle_times_every_x_is_zero": true,
+      "factorial_invertible_from_admissibility": true,
+      "n2_normalizer_scalar_gates": null,
+      "n2_normalized_full_true_INTT_gates": null,
+      "n2_normalized_output_inputs": null,
+      "n2_fused_normalizer_scalar_gates": null,
+      "n2_fused_normalized_true_INTT_gates": null,
+      "n2_fused_normalized_output_inputs": null,
+      "n2_same_DAG_partition": null,
+      "counts": {
+        "instances": 4,
+        "frequency_equalities_in_full_quotient": 64,
+        "output_equalities_in_full_quotient": 64,
+        "formal_z_instances": 0,
+        "n2_scalar_normalizer_instances": 0
+      }
+    },
+    {
+      "n": 2,
+      "Q": 5,
+      "N": 4,
+      "omega": 2,
+      "labels": [
+        -3,
+        0
+      ],
+      "padding_equations_checked": 2,
+      "inverse_fourier_equations_checked": 4,
+      "convolution_relations_checked": 4,
+      "socle_power_equals_factorial_top": true,
+      "socle_times_every_x_is_zero": true,
+      "factorial_invertible_from_admissibility": true,
+      "n2_normalizer_scalar_gates": 30,
+      "n2_normalized_full_true_INTT_gates": 50,
+      "n2_normalized_output_inputs": [
+        "a_0_0",
+        "a_0_1",
+        "a_1_0",
+        "a_1_1",
+        "z"
+      ],
+      "n2_fused_normalizer_scalar_gates": 18,
+      "n2_fused_normalized_true_INTT_gates": 38,
+      "n2_fused_normalized_output_inputs": [
+        "a_0_0",
+        "a_0_1",
+        "a_1_0",
+        "a_1_1",
+        "z"
+      ],
+      "n2_same_DAG_partition": {
+        "new_core_gates": 3,
+        "useful_preparation_gates": 15,
+        "remaining_useful_gates_J": 23,
+        "complete_scalar_output_gates": 38
+      },
+      "counts": {
+        "instances": 4,
+        "frequency_equalities_in_full_quotient": 16,
+        "output_equalities_in_full_quotient": 16,
+        "formal_z_instances": 1,
+        "n2_scalar_normalizer_instances": 4
+      }
+    },
+    {
+      "n": 3,
+      "Q": 5,
+      "N": 4,
+      "omega": 2,
+      "labels": [
+        -5,
+        -2,
+        4
+      ],
+      "padding_equations_checked": 1,
+      "inverse_fourier_equations_checked": 4,
+      "convolution_relations_checked": 4,
+      "socle_power_equals_factorial_top": true,
+      "socle_times_every_x_is_zero": true,
+      "factorial_invertible_from_admissibility": true,
+      "n2_normalizer_scalar_gates": null,
+      "n2_normalized_full_true_INTT_gates": null,
+      "n2_normalized_output_inputs": null,
+      "n2_fused_normalizer_scalar_gates": null,
+      "n2_fused_normalized_true_INTT_gates": null,
+      "n2_fused_normalized_output_inputs": null,
+      "n2_same_DAG_partition": null,
+      "counts": {
+        "instances": 4,
+        "frequency_equalities_in_full_quotient": 16,
+        "output_equalities_in_full_quotient": 16,
+        "formal_z_instances": 1,
+        "n2_scalar_normalizer_instances": 0
+      }
+    },
+    {
+      "n": 7,
+      "Q": 17,
+      "N": 8,
+      "omega": 2,
+      "labels": [
+        -13,
+        -10,
+        -4,
+        4,
+        14,
+        26,
+        40
+      ],
+      "padding_equations_checked": 1,
+      "inverse_fourier_equations_checked": 8,
+      "convolution_relations_checked": 8,
+      "socle_power_equals_factorial_top": true,
+      "socle_times_every_x_is_zero": true,
+      "factorial_invertible_from_admissibility": true,
+      "n2_normalizer_scalar_gates": null,
+      "n2_normalized_full_true_INTT_gates": null,
+      "n2_normalized_output_inputs": null,
+      "n2_fused_normalizer_scalar_gates": null,
+      "n2_fused_normalized_true_INTT_gates": null,
+      "n2_fused_normalized_output_inputs": null,
+      "n2_same_DAG_partition": null,
+      "counts": {
+        "instances": 4,
+        "frequency_equalities_in_full_quotient": 32,
+        "output_equalities_in_full_quotient": 32,
+        "formal_z_instances": 0,
+        "n2_scalar_normalizer_instances": 0
+      }
+    },
+    {
+      "n": 8,
+      "Q": 17,
+      "N": 16,
+      "omega": 3,
+      "labels": [
+        -15,
+        -12,
+        -6,
+        2,
+        12,
+        24,
+        38,
+        54
+      ],
+      "padding_equations_checked": 8,
+      "inverse_fourier_equations_checked": 16,
+      "convolution_relations_checked": 16,
+      "socle_power_equals_factorial_top": true,
+      "socle_times_every_x_is_zero": true,
+      "factorial_invertible_from_admissibility": true,
+      "n2_normalizer_scalar_gates": null,
+      "n2_normalized_full_true_INTT_gates": null,
+      "n2_normalized_output_inputs": null,
+      "n2_fused_normalizer_scalar_gates": null,
+      "n2_fused_normalized_true_INTT_gates": null,
+      "n2_fused_normalized_output_inputs": null,
+      "n2_same_DAG_partition": null,
+      "counts": {
+        "instances": 4,
+        "frequency_equalities_in_full_quotient": 64,
+        "output_equalities_in_full_quotient": 64,
+        "formal_z_instances": 0,
+        "n2_scalar_normalizer_instances": 0
+      }
+    }
+  ],
+  "total_instances": 48,
+  "full_quotient_frequency_equalities": 360,
+  "formal_z_instances": 5,
+  "normalization_n2_is_actual_scalar_circuit_on_existing_C": true,
+  "normalization_n2_fused_with_preparation_uses_three_new_core_gates": true,
+  "reference_nilpotent_dictionaries_are_not_compiler_inputs": true,
+  "general_scalar_normalizer_constructed": false,
+  "general_polynomial_bound_established": false,
+  "scope": "Positive quotient identities and a two-row convolution normalizer only. Small-case verification does not prove a general gate bound."
+}

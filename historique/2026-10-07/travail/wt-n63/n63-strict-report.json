@@ -1,0 +1,218 @@
+{
+  "node_id": "n63",
+  "artifact_version": "n63-mobius-helpers-v1",
+  "status": "mobius_helpers_verified",
+  "source": "MobiusBridge.lean",
+  "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+  "dev_score": 1.0,
+  "score_definition": "Verified frozen helper obligations / four; independent of root conjecture score",
+  "root_conjecture_score": 0,
+  "root_conjecture_verified": false,
+  "fixed_development_obligations": [
+    "CollisionMobiusBridge.coefficient_def",
+    "CollisionMobiusBridge.zeta_reconstruction",
+    "CollisionMobiusBridge.coefficient_abs_bound",
+    "CollisionMobiusBridge.coefficient_natAbs_bound"
+  ],
+  "closed_obligations": [
+    "CollisionMobiusBridge.coefficient_def",
+    "CollisionMobiusBridge.zeta_reconstruction",
+    "CollisionMobiusBridge.coefficient_abs_bound",
+    "CollisionMobiusBridge.coefficient_natAbs_bound"
+  ],
+  "unclosed_obligations": [],
+  "accepted_declarations": 6,
+  "declarations": [
+    "CollisionMobiusBridge.coefficient_def",
+    "CollisionMobiusBridge.coefficient_insert",
+    "CollisionMobiusBridge.zeta_reconstruction",
+    "CollisionMobiusBridge.coefficient_abs_bound",
+    "CollisionMobiusBridge.coefficient_natAbs_bound",
+    "CollisionMobiusBridge.sign_coefficient_natAbs_bound"
+  ],
+  "exact_declaration_statements": {
+    "coefficient_def": "(f : Finset \u03b1 \u2192 Int) (S : Finset \u03b1) :\n    coefficient f S = \u2211 T \u2208 S.powerset, (-1 : Int) ^ (S.card - T.card) * f T",
+    "coefficient_insert": "(f : Finset \u03b1 \u2192 Int) (S : Finset \u03b1) (a : \u03b1) (ha : a \u2209 S) :\n    coefficient f (insert a S) =\n      coefficient (fun T => f (insert a T)) S - coefficient f S",
+    "zeta_reconstruction": "(f : Finset \u03b1 \u2192 Int) (S : Finset \u03b1) :\n    (\u2211 T \u2208 S.powerset, coefficient f T) = f S",
+    "coefficient_abs_bound": "(f : Finset \u03b1 \u2192 Int) (S : Finset \u03b1)\n    (h_f : \u2200 T : Finset \u03b1, T \u2286 S \u2192 |f T| \u2264 1) :\n    |coefficient f S| \u2264 (2 : Int) ^ S.card",
+    "coefficient_natAbs_bound": "(f : Finset \u03b1 \u2192 Int) (S : Finset \u03b1) (n : Nat)\n    (h_f : \u2200 T : Finset \u03b1, T \u2286 S \u2192 |f T| \u2264 1) (hcard : S.card \u2264 n) :\n    (coefficient f S).natAbs < (2 : Nat) ^ (n + 1)",
+    "sign_coefficient_natAbs_bound": "(q : Finset \u03b1 \u2192 Nat) (S : Finset \u03b1) (n : Nat)\n    (hcard : S.card \u2264 n) :\n    (coefficient (fun T => (-1 : Int) ^ (q T)) S).natAbs < (2 : Nat) ^ (n + 1)"
+  },
+  "axiom_audit": {
+    "CollisionMobiusBridge.coefficient_def": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionMobiusBridge.coefficient_insert": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionMobiusBridge.zeta_reconstruction": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionMobiusBridge.coefficient_abs_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionMobiusBridge.coefficient_natAbs_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionMobiusBridge.sign_coefficient_natAbs_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "accepted_trust_base": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "compiler_invocations": 11,
+  "candidate_rounds": 11,
+  "candidate_compilation_budget": 12,
+  "dependency_builds": 0,
+  "probe_compilations": 0,
+  "frozen_replays": 0,
+  "final_compiler_round": 11,
+  "compiler_exit_code": 0,
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n63\\MobiusBridge.lean"
+  ],
+  "LEAN_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n63;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+  "LEAN_SRC_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\src\\lean\\lake",
+  "LEAN_SYSROOT": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+  "frozen_contract_sha256": "e3d4951613bd017de17ea24e61c3473983bc34d063888ff55c5b1df788c86d89",
+  "formal_contract_sha256": "d01978ce9ffbd745da4189fee9a261d44f7384b434b8c2a516e77a46cf2c9d7a",
+  "bonus_contract_sha256": "855378346dd16dfa1bc49ec747850ce2214e7497ae7559d143255fb4ee78c028",
+  "bonus_declarations": [
+    "CollisionMobiusBridge.sign_coefficient_natAbs_bound"
+  ],
+  "original_protocol_sha256": "1529a7130cb6613c2c58dd6c7c2718c43c066c6065105e16137f60ed65b0d4ce",
+  "invocation_history": [
+    {
+      "round": 1,
+      "kind": "candidate",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "f4215f2ddee6c7768a1d4769bea8d239099e8fe798a24dfae4f46ffe28432e72",
+      "exit_code": 1
+    },
+    {
+      "round": 2,
+      "kind": "candidate",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "110a9298114e8f24e367e67d700af8f62fa3eb875a4ad67a7dca34db55f4dba5",
+      "exit_code": 1
+    },
+    {
+      "round": 3,
+      "kind": "candidate",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "0d6d5ebddcdbdf3ae337df23787bc260427adc527fa1efd4ebcde0a8a04fe216",
+      "exit_code": 0
+    },
+    {
+      "round": 4,
+      "kind": "candidate",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "8f5083a0f968949facc9a95479785b1333fe53fc2ae619ae2fa1e9ee929fe4b5",
+      "exit_code": 1
+    },
+    {
+      "round": 5,
+      "kind": "candidate",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "7332f57210b36fb57d92203ff7a149e7922be98a3940e6467b2aff0c80a7e3d2",
+      "exit_code": 1
+    },
+    {
+      "round": 6,
+      "kind": "candidate",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "de2f28aa8645cf36ca37540e9da667364f5caf49e28fa77511564f6a7bb47960",
+      "exit_code": 0
+    },
+    {
+      "round": 7,
+      "kind": "candidate",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "a0bd64a8de3055a08808aa7cf82eda9882052b4aae0d566634fa8a451c49cebe",
+      "exit_code": 1
+    },
+    {
+      "round": 8,
+      "kind": "candidate",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "5d9056ba13964cd7ddea4c189406f78ed2013b0822b2c890cd89af635e6324fd",
+      "exit_code": 0
+    },
+    {
+      "round": 9,
+      "kind": "candidate",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "53dedd42f35810a48de6bcb8127776814436ac7ff3022c71cbf1fdedc9318a5d",
+      "exit_code": 0
+    },
+    {
+      "round": 10,
+      "kind": "candidate",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "15d0335539c999bd599a993ebf0ffcdc7aea16611fd2ef6055d5f7128c7ae295",
+      "exit_code": 0
+    },
+    {
+      "round": 11,
+      "kind": "candidate",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+      "exit_code": 0
+    }
+  ],
+  "errors": [],
+  "heldout_tests_run": false,
+  "scope": "Finite-set Mobius reconstruction and integer coefficient bounds; no assumed polynomial representation or scalar circuit theorem",
+  "mathlib_dependency_provenance": {
+    "node": "n63",
+    "toolchain_declaration": "leanprover/lean4:v4.34.1",
+    "read_only_cache": true,
+    "modules": {
+      "Mathlib.Algebra.BigOperators.Group.Finset.Powerset": {
+        "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\Algebra\\BigOperators\\Group\\Finset\\Powerset.lean",
+        "source_sha256": "83ef256b00eaabc046b2d245e2adc8c1576f7ab1aa25321266acbd7fdf864470",
+        "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Algebra\\BigOperators\\Group\\Finset\\Powerset.olean",
+        "compiled_sha256": "68d1397bf26fb9afe3ad6c76cca5fc7d70bbb8027fcd89b862f9160e2aa3537a"
+      },
+      "Mathlib.Algebra.Order.BigOperators.Group.Finset": {
+        "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\Algebra\\Order\\BigOperators\\Group\\Finset.lean",
+        "source_sha256": "17c2e6e0d7b41171e8d023f58f583230da93ae4e8576be56ac8cbb07dd00f478",
+        "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Algebra\\Order\\BigOperators\\Group\\Finset.olean",
+        "compiled_sha256": "2a0b6e659009651c2d1aa5fe860539707d2c1732f403845147cf4073d056673c"
+      },
+      "Mathlib.Algebra.Order.Ring.Abs": {
+        "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\Algebra\\Order\\Ring\\Abs.lean",
+        "source_sha256": "2d76883de1b832557bb342945af172261f17b536cce4194ae4fabf4234619d40",
+        "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Algebra\\Order\\Ring\\Abs.olean",
+        "compiled_sha256": "1612e1b11b01ca6b22b55c8cebd8108845adcd78f4b04a93df4f153df3cbeea3"
+      },
+      "Mathlib.Data.Nat.Choose.Sum": {
+        "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\Data\\Nat\\Choose\\Sum.lean",
+        "source_sha256": "cbca67f03a1951b004626f42c3ae4b0bac6f44cd3222020aae2ae052fe37033a",
+        "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Data\\Nat\\Choose\\Sum.olean",
+        "compiled_sha256": "1d67987f7e57ce3f8a251dd085b29b5d6cd7cb222a9f47d82009d9ea0eec4769"
+      }
+    }
+  },
+  "mathlib_dependency_provenance_sha256": "7a9b74ac8e2b81a072eb90e0f81a79ad0a189d45222746b09b9866304b6643bb",
+  "compiler_warnings": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n63\\MobiusBridge.lean:15:0: warning: automatically included section variable(s) unused in theorem `CollisionMobiusBridge.coefficient_def`:",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n63\\MobiusBridge.lean:48:0: warning: automatically included section variable(s) unused in theorem `CollisionMobiusBridge.coefficient_abs_bound`:"
+  ]
+}

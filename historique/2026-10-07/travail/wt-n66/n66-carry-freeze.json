@@ -1,0 +1,10 @@
+{
+  "node": "n66",
+  "artifact_version": "carry-supplement-v1",
+  "phase": "frozen-before-support-tests",
+  "files": {
+    "carry_basis.py": "0fff5cad76fd7e67223bc81a3b9b7ee9423333e340a4b78db1a78756c8dd4c49",
+    "evaluate_carry_basis.py": "5e38d109a154f1f4b819babb5c09d8ff2b16afebf5ca34136ab0d4e493c87df6",
+    "n66-carry-protocol.json": "ada4e15d9bb61ef35b7f9367317b7ac8dfcab7707463848ab3173a5cae191807"
+  }
+}

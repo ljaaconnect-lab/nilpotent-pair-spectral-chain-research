@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-11-04T05:41:39.800022+00:00",
+  "source": "UnitLift.lean",
+  "source_sha256": "26818e2abcfee524c1b93eeb6c55a631ea8669d1ac995daefdf68514b11e6020",
+  "replay_sha256": "20804903a763a8d1a60949c7022f2b6b7b5db33dad3313351bc5518642217473",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\unite-temoin-2026-11-04\\UnitLift.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 12.875,
+  "source_unchanged": true,
+  "no_placeholders_or_added_axioms": true,
+  "all_theorem_axioms_audited": true,
+  "theorems": [
+    "unit_preserves_top",
+    "unit_augmentation",
+    "equivalent_representatives_same_augmentation",
+    "equivalent_representative_still_zero",
+    "unit_augmentation_not_answer",
+    "unit_budget",
+    "fused_unit_target",
+    "spectral_unit_readout_preserved",
+    "spectral_unit_readout_formula",
+    "spectral_unit_readout_routed"
+  ],
+  "stdout": "'UnitLift.unit_preserves_top' does not depend on any axioms\n'UnitLift.unit_augmentation' depends on axioms: [propext]\n'UnitLift.equivalent_representatives_same_augmentation' depends on axioms: [propext, Quot.sound]\n'UnitLift.equivalent_representative_still_zero' depends on axioms: [propext, Quot.sound]\n'UnitLift.unit_augmentation_not_answer' depends on axioms: [propext]\n'UnitLift.unit_budget' depends on axioms: [propext]\n'UnitLift.fused_unit_target' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UnitLift.spectral_unit_readout_preserved' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UnitLift.spectral_unit_readout_formula' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UnitLift.spectral_unit_readout_routed' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Unit insertion, augmentation under quotient equality, and preservation and routing of an arbitrary linear coefficient reader through the spectral readout. Native reader construction and Fourier substitution are justified in the written notes.",
+  "spectral_kernel_identity_is_explicit_hypothesis": true,
+  "full_native_Fourier_substitution_formalized": false,
+  "python_compiler_formalized": false,
+  "complete_scalar_a_z_only_chain_proved": false
+}

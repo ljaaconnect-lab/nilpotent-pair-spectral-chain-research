@@ -1,0 +1,9 @@
+/ActualClosedSubsetTransfer.lean -text
+/compile_n73.py -text
+/verify_n73.py -text
+/n73-* -text
+/n73-compiler-rounds/** -text
+/freeze_n73.py -text
+
+# Publication: retain every archived file byte on all platforms.
+* -text

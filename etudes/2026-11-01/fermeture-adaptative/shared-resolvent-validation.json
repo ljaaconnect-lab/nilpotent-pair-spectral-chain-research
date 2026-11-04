@@ -1,0 +1,7100 @@
+{
+  "status": "pass",
+  "schema_version": 1,
+  "verifier": "verify_shared_resolvent.py",
+  "source_sha256": "81de902f78ba20d68d1896acc64ef141ced9c92233d3c8cfb67b872eb090e956",
+  "random_seed": 792,
+  "test_cases": 30,
+  "base_matrices": 10,
+  "scope": {
+    "algebra": "F_Q[eps_0,...,eps_(k-1)]/(eps_i^2)",
+    "matrix_entries": "Generic residues B_ij; the identities also hold after original-amplitude or Fourier-phase substitutions.",
+    "residual": "B_SS + B_SK (I - E_K B_KK)^(-1) E_K B_KS",
+    "reader": "J_K = product_i (1 + eps_i pivot_i) = det(I - E_K B_KK)^(-1)",
+    "terminal": "[product_i eps_i] J_K L(residual), where L is the remaining terminal chain readout",
+    "not_a_scalar_polynomial_compiler": true,
+    "no_general_scalar_closure_claimed": true
+  },
+  "verification_cost": {
+    "representation": "Explicit square-zero monomial dictionaries, up to 2^k scalar coefficients per entry.",
+    "jet_multiply_bound": "At most 4^k examined coefficient pairs per call; overlapping masks are discarded.",
+    "determinant_oracle": "Enumerates k! permutations; used only for finite independent verification.",
+    "terminal_oracle": "Enumerates n! or (n-k)! assignments; used only for finite independent verification.",
+    "observed_maximum_jet_support": 32,
+    "field_negation_cost_convention": "One multiplication by the constant -1 if translated into ordinary scalar gates.",
+    "exact_work_counters": {
+      "coefficient_pairs_examined": 43536,
+      "determinant_permutations": 398,
+      "field_additions": 41799,
+      "field_multiplications": 29131,
+      "field_negations": 651,
+      "jet_add_calls": 7568,
+      "jet_multiply_calls": 17710,
+      "jet_negation_calls": 404,
+      "matrix_multiply_calls": 130,
+      "pairs_killed_by_square_zero": 14405,
+      "terminal_permutations": 2142
+    },
+    "observed_scalar_add_mul_negation_work": 71581,
+    "counter_scope": "Verifier computations including independent oracles; not a bound for a general compiler."
+  },
+  "inputs": [
+    {
+      "prime": 17,
+      "n": 2,
+      "B": [
+        [
+          16,
+          13
+        ],
+        [
+          16,
+          3
+        ]
+      ]
+    },
+    {
+      "prime": 17,
+      "n": 3,
+      "B": [
+        [
+          13,
+          16,
+          4
+        ],
+        [
+          2,
+          2,
+          10
+        ],
+        [
+          6,
+          3,
+          6
+        ]
+      ]
+    },
+    {
+      "prime": 17,
+      "n": 4,
+      "B": [
+        [
+          10,
+          15,
+          10,
+          1
+        ],
+        [
+          16,
+          7,
+          15,
+          16
+        ],
+        [
+          3,
+          9,
+          14,
+          11
+        ],
+        [
+          10,
+          9,
+          11,
+          9
+        ]
+      ]
+    },
+    {
+      "prime": 17,
+      "n": 5,
+      "B": [
+        [
+          14,
+          16,
+          5,
+          0,
+          6
+        ],
+        [
+          14,
+          6,
+          6,
+          12,
+          9
+        ],
+        [
+          9,
+          5,
+          15,
+          3,
+          2
+        ],
+        [
+          12,
+          14,
+          5,
+          6,
+          11
+        ],
+        [
+          8,
+          12,
+          5,
+          5,
+          14
+        ]
+      ]
+    },
+    {
+      "prime": 17,
+      "n": 6,
+      "B": [
+        [
+          4,
+          7,
+          13,
+          12,
+          5,
+          2
+        ],
+        [
+          6,
+          1,
+          13,
+          15,
+          3,
+          4
+        ],
+        [
+          16,
+          8,
+          12,
+          10,
+          10,
+          2
+        ],
+        [
+          3,
+          6,
+          2,
+          15,
+          6,
+          10
+        ],
+        [
+          9,
+          13,
+          7,
+          14,
+          12,
+          16
+        ],
+        [
+          5,
+          5,
+          3,
+          3,
+          2,
+          9
+        ]
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 2,
+      "B": [
+        [
+          94,
+          94
+        ],
+        [
+          20,
+          22
+        ]
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 3,
+      "B": [
+        [
+          86,
+          53,
+          44
+        ],
+        [
+          94,
+          26,
+          29
+        ],
+        [
+          43,
+          38,
+          73
+        ]
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 4,
+      "B": [
+        [
+          87,
+          78,
+          85,
+          92
+        ],
+        [
+          18,
+          65,
+          7,
+          94
+        ],
+        [
+          77,
+          9,
+          95,
+          40
+        ],
+        [
+          80,
+          35,
+          51,
+          60
+        ]
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 5,
+      "B": [
+        [
+          29,
+          56,
+          59,
+          46,
+          49
+        ],
+        [
+          92,
+          77,
+          14,
+          94,
+          53
+        ],
+        [
+          11,
+          0,
+          75,
+          44,
+          35
+        ],
+        [
+          46,
+          94,
+          14,
+          1,
+          6
+        ],
+        [
+          28,
+          20,
+          84,
+          91,
+          43
+        ]
+      ]
+    },
+    {
+      "prime": 97,
+      "n": 6,
+      "B": [
+        [
+          1,
+          37,
+          67,
+          63,
+          71,
+          21
+        ],
+        [
+          10,
+          52,
+          54,
+          12,
+          49,
+          32
+        ],
+        [
+          20,
+          16,
+          9,
+          59,
+          0,
+          68
+        ],
+        [
+          59,
+          83,
+          50,
+          11,
+          28,
+          79
+        ],
+        [
+          5,
+          46,
+          28,
+          24,
+          45,
+          55
+        ],
+        [
+          79,
+          7,
+          48,
+          8,
+          49,
+          14
+        ]
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "prime": 17,
+      "n": 2,
+      "eliminated": 1,
+      "residual": [
+        [
+          [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          16
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "terminal_readout": 1,
+      "terminal_reference": 1,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 22,
+        "determinant_permutations": 1,
+        "field_additions": 32,
+        "field_multiplications": 19,
+        "field_negations": 1,
+        "jet_add_calls": 10,
+        "jet_multiply_calls": 11,
+        "jet_negation_calls": 1,
+        "matrix_multiply_calls": 3,
+        "pairs_killed_by_square_zero": 3,
+        "terminal_permutations": 1
+      }
+    },
+    {
+      "prime": 17,
+      "n": 3,
+      "eliminated": 1,
+      "residual": [
+        [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              15
+            ]
+          ],
+          [
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              8
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              11
+            ]
+          ],
+          [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              7
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "terminal_readout": 2,
+      "terminal_reference": 2,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 44,
+        "determinant_permutations": 1,
+        "field_additions": 63,
+        "field_multiplications": 37,
+        "field_negations": 1,
+        "jet_add_calls": 21,
+        "jet_multiply_calls": 24,
+        "jet_negation_calls": 1,
+        "matrix_multiply_calls": 3,
+        "pairs_killed_by_square_zero": 7,
+        "terminal_permutations": 2
+      }
+    },
+    {
+      "prime": 17,
+      "n": 3,
+      "eliminated": 2,
+      "residual": [
+        [
+          [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              2,
+              13
+            ],
+            [
+              3,
+              15
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          3,
+          11
+        ]
+      ],
+      "terminal_readout": 2,
+      "terminal_reference": 2,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 88,
+        "determinant_permutations": 2,
+        "field_additions": 114,
+        "field_multiplications": 64,
+        "field_negations": 5,
+        "jet_add_calls": 40,
+        "jet_multiply_calls": 33,
+        "jet_negation_calls": 5,
+        "matrix_multiply_calls": 4,
+        "pairs_killed_by_square_zero": 24,
+        "terminal_permutations": 1
+      }
+    },
+    {
+      "prime": 17,
+      "n": 4,
+      "eliminated": 1,
+      "residual": [
+        [
+          [
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              15
+            ],
+            [
+              1,
+              7
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ],
+            [
+              1,
+              16
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              11
+            ]
+          ],
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              13
+            ]
+          ],
+          [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              14
+            ]
+          ],
+          [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              15
+            ]
+          ],
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              10
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          7
+        ]
+      ],
+      "terminal_readout": 4,
+      "terminal_reference": 4,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 114,
+        "determinant_permutations": 1,
+        "field_additions": 143,
+        "field_multiplications": 92,
+        "field_negations": 1,
+        "jet_add_calls": 41,
+        "jet_multiply_calls": 54,
+        "jet_negation_calls": 1,
+        "matrix_multiply_calls": 3,
+        "pairs_killed_by_square_zero": 22,
+        "terminal_permutations": 6
+      }
+    },
+    {
+      "prime": 17,
+      "n": 4,
+      "eliminated": 2,
+      "residual": [
+        [
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              13
+            ],
+            [
+              2,
+              16
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              14
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              15
+            ],
+            [
+              2,
+              16
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              11
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          10
+        ]
+      ],
+      "terminal_readout": 4,
+      "terminal_reference": 4,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 172,
+        "determinant_permutations": 2,
+        "field_additions": 213,
+        "field_multiplications": 122,
+        "field_negations": 5,
+        "jet_add_calls": 57,
+        "jet_multiply_calls": 52,
+        "jet_negation_calls": 5,
+        "matrix_multiply_calls": 4,
+        "pairs_killed_by_square_zero": 50,
+        "terminal_permutations": 2
+      }
+    },
+    {
+      "prime": 17,
+      "n": 4,
+      "eliminated": 3,
+      "residual": [
+        [
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              11
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              11
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              7,
+              10
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          14
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "terminal_readout": 4,
+      "terminal_reference": 4,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 344,
+        "determinant_permutations": 6,
+        "field_additions": 395,
+        "field_multiplications": 216,
+        "field_negations": 15,
+        "jet_add_calls": 139,
+        "jet_multiply_calls": 118,
+        "jet_negation_calls": 12,
+        "matrix_multiply_calls": 5,
+        "pairs_killed_by_square_zero": 128,
+        "terminal_permutations": 1
+      }
+    },
+    {
+      "prime": 17,
+      "n": 5,
+      "eliminated": 1,
+      "residual": [
+        [
+          [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              12
+            ]
+          ],
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              16
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              8
+            ]
+          ],
+          [
+            [
+              0,
+              15
+            ],
+            [
+              1,
+              11
+            ]
+          ],
+          [
+            [
+              0,
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          [
+            [
+              0,
+              6
+            ]
+          ],
+          [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          [
+            [
+              0,
+              5
+            ]
+          ],
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              14
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          14
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "terminal_readout": 15,
+      "terminal_reference": 15,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 349,
+        "determinant_permutations": 1,
+        "field_additions": 385,
+        "field_multiplications": 288,
+        "field_negations": 1,
+        "jet_add_calls": 81,
+        "jet_multiply_calls": 154,
+        "jet_negation_calls": 1,
+        "matrix_multiply_calls": 3,
+        "pairs_killed_by_square_zero": 61,
+        "terminal_permutations": 24
+      }
+    },
+    {
+      "prime": 17,
+      "n": 5,
+      "eliminated": 2,
+      "residual": [
+        [
+          [
+            [
+              0,
+              15
+            ],
+            [
+              1,
+              11
+            ],
+            [
+              2,
+              13
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          [
+            [
+              0,
+              3
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              3,
+              11
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              11
+            ],
+            [
+              3,
+              16
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              9
+            ],
+            [
+              2,
+              16
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          [
+            [
+              0,
+              6
+            ],
+            [
+              2,
+              15
+            ],
+            [
+              3,
+              9
+            ]
+          ],
+          [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              14
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              10
+            ]
+          ],
+          [
+            [
+              0,
+              5
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          13
+        ]
+      ],
+      "terminal_readout": 15,
+      "terminal_reference": 15,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 388,
+        "determinant_permutations": 2,
+        "field_additions": 414,
+        "field_multiplications": 261,
+        "field_negations": 5,
+        "jet_add_calls": 85,
+        "jet_multiply_calls": 90,
+        "jet_negation_calls": 5,
+        "matrix_multiply_calls": 4,
+        "pairs_killed_by_square_zero": 127,
+        "terminal_permutations": 6
+      }
+    },
+    {
+      "prime": 17,
+      "n": 5,
+      "eliminated": 3,
+      "residual": [
+        [
+          [
+            [
+              0,
+              6
+            ],
+            [
+              2,
+              15
+            ],
+            [
+              3,
+              9
+            ],
+            [
+              4,
+              15
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              4
+            ]
+          ],
+          [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              14
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              5,
+              16
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              7,
+              3
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              5
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              15
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              6
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              6,
+              12
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          13
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          12
+        ]
+      ],
+      "terminal_readout": 15,
+      "terminal_reference": 15,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 598,
+        "determinant_permutations": 6,
+        "field_additions": 652,
+        "field_multiplications": 368,
+        "field_negations": 15,
+        "jet_add_calls": 164,
+        "jet_multiply_calls": 145,
+        "jet_negation_calls": 12,
+        "matrix_multiply_calls": 5,
+        "pairs_killed_by_square_zero": 230,
+        "terminal_permutations": 2
+      }
+    },
+    {
+      "prime": 17,
+      "n": 5,
+      "eliminated": 4,
+      "residual": [
+        [
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              5,
+              10
+            ],
+            [
+              6,
+              12
+            ],
+            [
+              7,
+              8
+            ],
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              3
+            ],
+            [
+              10,
+              4
+            ],
+            [
+              11,
+              15
+            ],
+            [
+              12,
+              11
+            ],
+            [
+              13,
+              15
+            ],
+            [
+              14,
+              6
+            ],
+            [
+              15,
+              1
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          14
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          13
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          12,
+          3
+        ],
+        [
+          13,
+          16
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          15,
+          11
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          9
+        ]
+      ],
+      "terminal_readout": 15,
+      "terminal_reference": 15,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 1308,
+        "determinant_permutations": 24,
+        "field_additions": 1246,
+        "field_multiplications": 695,
+        "field_negations": 39,
+        "jet_add_calls": 384,
+        "jet_multiply_calls": 379,
+        "jet_negation_calls": 28,
+        "matrix_multiply_calls": 6,
+        "pairs_killed_by_square_zero": 613,
+        "terminal_permutations": 1
+      }
+    },
+    {
+      "prime": 17,
+      "n": 6,
+      "eliminated": 1,
+      "residual": [
+        [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              8
+            ]
+          ],
+          [
+            [
+              0,
+              13
+            ],
+            [
+              1,
+              10
+            ]
+          ],
+          [
+            [
+              0,
+              15
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              13
+            ]
+          ],
+          [
+            [
+              0,
+              4
+            ],
+            [
+              1,
+              12
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              8
+            ],
+            [
+              1,
+              10
+            ]
+          ],
+          [
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          [
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          [
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              12
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              15
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          [
+            [
+              0,
+              15
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              15
+            ]
+          ],
+          [
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              6
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              13
+            ],
+            [
+              1,
+              12
+            ]
+          ],
+          [
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              15
+            ]
+          ],
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              6
+            ]
+          ],
+          [
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              11
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              14
+            ]
+          ],
+          [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              9
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              8
+            ]
+          ],
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              10
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      "terminal_readout": 16,
+      "terminal_reference": 16,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 2236,
+        "determinant_permutations": 1,
+        "field_additions": 2079,
+        "field_multiplications": 1753,
+        "field_negations": 1,
+        "jet_add_calls": 205,
+        "jet_multiply_calls": 686,
+        "jet_negation_calls": 1,
+        "matrix_multiply_calls": 3,
+        "pairs_killed_by_square_zero": 483,
+        "terminal_permutations": 120
+      }
+    },
+    {
+      "prime": 17,
+      "n": 6,
+      "eliminated": 2,
+      "residual": [
+        [
+          [
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              6
+            ]
+          ],
+          [
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              12
+            ]
+          ],
+          [
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              12
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              15
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              15
+            ],
+            [
+              2,
+              15
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              10
+            ],
+            [
+              3,
+              10
+            ]
+          ],
+          [
+            [
+              0,
+              15
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              15
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              5
+            ]
+          ],
+          [
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              15
+            ],
+            [
+              2,
+              16
+            ],
+            [
+              3,
+              14
+            ]
+          ],
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              11
+            ]
+          ],
+          [
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              11
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              14
+            ],
+            [
+              3,
+              12
+            ]
+          ],
+          [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              9
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              2,
+              15
+            ]
+          ],
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              13
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          12
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          3,
+          13
+        ]
+      ],
+      "terminal_readout": 16,
+      "terminal_reference": 16,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 1426,
+        "determinant_permutations": 2,
+        "field_additions": 1215,
+        "field_multiplications": 916,
+        "field_negations": 5,
+        "jet_add_calls": 135,
+        "jet_multiply_calls": 200,
+        "jet_negation_calls": 5,
+        "matrix_multiply_calls": 4,
+        "pairs_killed_by_square_zero": 510,
+        "terminal_permutations": 24
+      }
+    },
+    {
+      "prime": 17,
+      "n": 6,
+      "eliminated": 3,
+      "residual": [
+        [
+          [
+            [
+              0,
+              15
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              16
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              9
+            ],
+            [
+              7,
+              9
+            ]
+          ],
+          [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              15
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              12
+            ],
+            [
+              7,
+              13
+            ]
+          ],
+          [
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              16
+            ],
+            [
+              7,
+              7
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              11
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              15
+            ],
+            [
+              6,
+              14
+            ],
+            [
+              7,
+              13
+            ]
+          ],
+          [
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              11
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              13
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              15
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              14
+            ],
+            [
+              5,
+              16
+            ],
+            [
+              6,
+              1
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              3
+            ],
+            [
+              1,
+              9
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              13
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              6,
+              7
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              2,
+              15
+            ],
+            [
+              4,
+              13
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              6
+            ]
+          ],
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              13
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              2
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          9
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          3
+        ]
+      ],
+      "terminal_readout": 16,
+      "terminal_reference": 16,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 1480,
+        "determinant_permutations": 6,
+        "field_additions": 1307,
+        "field_multiplications": 833,
+        "field_negations": 15,
+        "jet_add_calls": 202,
+        "jet_multiply_calls": 193,
+        "jet_negation_calls": 12,
+        "matrix_multiply_calls": 5,
+        "pairs_killed_by_square_zero": 647,
+        "terminal_permutations": 6
+      }
+    },
+    {
+      "prime": 17,
+      "n": 6,
+      "eliminated": 4,
+      "residual": [
+        [
+          [
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              11
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              13
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              15
+            ],
+            [
+              8,
+              16
+            ],
+            [
+              9,
+              8
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              11,
+              7
+            ],
+            [
+              12,
+              3
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              14,
+              6
+            ],
+            [
+              15,
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              16
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              14
+            ],
+            [
+              5,
+              16
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              8,
+              4
+            ],
+            [
+              9,
+              8
+            ],
+            [
+              10,
+              8
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              12,
+              8
+            ],
+            [
+              13,
+              15
+            ],
+            [
+              14,
+              2
+            ],
+            [
+              15,
+              16
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              2,
+              15
+            ],
+            [
+              4,
+              13
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              8
+            ],
+            [
+              7,
+              6
+            ],
+            [
+              8,
+              1
+            ],
+            [
+              9,
+              14
+            ],
+            [
+              10,
+              11
+            ],
+            [
+              11,
+              16
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              13,
+              14
+            ],
+            [
+              14,
+              10
+            ],
+            [
+              15,
+              2
+            ]
+          ],
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              13
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              13
+            ],
+            [
+              9,
+              6
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              12,
+              6
+            ],
+            [
+              13,
+              16
+            ],
+            [
+              14,
+              16
+            ],
+            [
+              15,
+              3
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          15,
+          6
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          15
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          4
+        ]
+      ],
+      "terminal_readout": 16,
+      "terminal_reference": 16,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 2483,
+        "determinant_permutations": 24,
+        "field_additions": 2214,
+        "field_multiplications": 1290,
+        "field_negations": 46,
+        "jet_add_calls": 419,
+        "jet_multiply_calls": 416,
+        "jet_negation_calls": 28,
+        "matrix_multiply_calls": 6,
+        "pairs_killed_by_square_zero": 1193,
+        "terminal_permutations": 2
+      }
+    },
+    {
+      "prime": 17,
+      "n": 6,
+      "eliminated": 5,
+      "residual": [
+        [
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              13
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              8,
+              13
+            ],
+            [
+              9,
+              6
+            ],
+            [
+              10,
+              6
+            ],
+            [
+              11,
+              5
+            ],
+            [
+              12,
+              6
+            ],
+            [
+              13,
+              16
+            ],
+            [
+              14,
+              16
+            ],
+            [
+              15,
+              3
+            ],
+            [
+              16,
+              15
+            ],
+            [
+              17,
+              11
+            ],
+            [
+              18,
+              4
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              20,
+              15
+            ],
+            [
+              21,
+              15
+            ],
+            [
+              22,
+              13
+            ],
+            [
+              23,
+              1
+            ],
+            [
+              24,
+              7
+            ],
+            [
+              25,
+              1
+            ],
+            [
+              26,
+              15
+            ],
+            [
+              27,
+              14
+            ],
+            [
+              28,
+              12
+            ],
+            [
+              29,
+              14
+            ],
+            [
+              30,
+              16
+            ],
+            [
+              31,
+              13
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          9
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          11,
+          14
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          19,
+          6
+        ],
+        [
+          20,
+          10
+        ],
+        [
+          21,
+          12
+        ],
+        [
+          22,
+          14
+        ],
+        [
+          23,
+          11
+        ],
+        [
+          24,
+          9
+        ],
+        [
+          25,
+          12
+        ],
+        [
+          26,
+          2
+        ],
+        [
+          27,
+          12
+        ],
+        [
+          28,
+          7
+        ],
+        [
+          29,
+          15
+        ],
+        [
+          30,
+          13
+        ],
+        [
+          31,
+          1
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          13
+        ],
+        [
+          2,
+          16
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          7
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          15
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          16,
+          5
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          18,
+          7
+        ],
+        [
+          19,
+          10
+        ],
+        [
+          20,
+          6
+        ],
+        [
+          21,
+          7
+        ],
+        [
+          22,
+          5
+        ],
+        [
+          23,
+          12
+        ],
+        [
+          24,
+          11
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          26,
+          11
+        ],
+        [
+          27,
+          3
+        ],
+        [
+          28,
+          16
+        ],
+        [
+          29,
+          14
+        ],
+        [
+          30,
+          13
+        ]
+      ],
+      "terminal_readout": 16,
+      "terminal_reference": 16,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 5998,
+        "determinant_permutations": 120,
+        "field_additions": 5190,
+        "field_multiplications": 3088,
+        "field_negations": 185,
+        "jet_add_calls": 929,
+        "jet_multiply_calls": 1262,
+        "jet_negation_calls": 85,
+        "matrix_multiply_calls": 7,
+        "pairs_killed_by_square_zero": 2910,
+        "terminal_permutations": 1
+      }
+    },
+    {
+      "prime": 97,
+      "n": 2,
+      "eliminated": 1,
+      "residual": [
+        [
+          [
+            [
+              0,
+              22
+            ],
+            [
+              1,
+              37
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          94
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "terminal_readout": 68,
+      "terminal_reference": 68,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 22,
+        "determinant_permutations": 1,
+        "field_additions": 32,
+        "field_multiplications": 19,
+        "field_negations": 1,
+        "jet_add_calls": 10,
+        "jet_multiply_calls": 11,
+        "jet_negation_calls": 1,
+        "matrix_multiply_calls": 3,
+        "pairs_killed_by_square_zero": 3,
+        "terminal_permutations": 1
+      }
+    },
+    {
+      "prime": 97,
+      "n": 3,
+      "eliminated": 1,
+      "residual": [
+        [
+          [
+            [
+              0,
+              26
+            ],
+            [
+              1,
+              35
+            ]
+          ],
+          [
+            [
+              0,
+              29
+            ],
+            [
+              1,
+              62
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              38
+            ],
+            [
+              1,
+              48
+            ]
+          ],
+          [
+            [
+              0,
+              73
+            ],
+            [
+              1,
+              49
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          86
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          11
+        ]
+      ],
+      "terminal_readout": 88,
+      "terminal_reference": 88,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 46,
+        "determinant_permutations": 1,
+        "field_additions": 64,
+        "field_multiplications": 38,
+        "field_negations": 1,
+        "jet_add_calls": 21,
+        "jet_multiply_calls": 24,
+        "jet_negation_calls": 1,
+        "matrix_multiply_calls": 3,
+        "pairs_killed_by_square_zero": 8,
+        "terminal_permutations": 2
+      }
+    },
+    {
+      "prime": 97,
+      "n": 3,
+      "eliminated": 2,
+      "residual": [
+        [
+          [
+            [
+              0,
+              73
+            ],
+            [
+              1,
+              49
+            ],
+            [
+              2,
+              35
+            ],
+            [
+              3,
+              62
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          86
+        ],
+        [
+          2,
+          26
+        ],
+        [
+          3,
+          40
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          2,
+          71
+        ],
+        [
+          3,
+          67
+        ]
+      ],
+      "terminal_readout": 88,
+      "terminal_reference": 88,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 88,
+        "determinant_permutations": 2,
+        "field_additions": 114,
+        "field_multiplications": 64,
+        "field_negations": 5,
+        "jet_add_calls": 40,
+        "jet_multiply_calls": 33,
+        "jet_negation_calls": 5,
+        "matrix_multiply_calls": 4,
+        "pairs_killed_by_square_zero": 24,
+        "terminal_permutations": 1
+      }
+    },
+    {
+      "prime": 97,
+      "n": 4,
+      "eliminated": 1,
+      "residual": [
+        [
+          [
+            [
+              0,
+              65
+            ],
+            [
+              1,
+              46
+            ]
+          ],
+          [
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              75
+            ]
+          ],
+          [
+            [
+              0,
+              94
+            ],
+            [
+              1,
+              7
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              89
+            ]
+          ],
+          [
+            [
+              0,
+              95
+            ],
+            [
+              1,
+              46
+            ]
+          ],
+          [
+            [
+              0,
+              40
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              35
+            ],
+            [
+              1,
+              32
+            ]
+          ],
+          [
+            [
+              0,
+              51
+            ],
+            [
+              1,
+              10
+            ]
+          ],
+          [
+            [
+              0,
+              60
+            ],
+            [
+              1,
+              85
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          87
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          10
+        ]
+      ],
+      "terminal_readout": 57,
+      "terminal_reference": 57,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 116,
+        "determinant_permutations": 1,
+        "field_additions": 144,
+        "field_multiplications": 93,
+        "field_negations": 1,
+        "jet_add_calls": 41,
+        "jet_multiply_calls": 54,
+        "jet_negation_calls": 1,
+        "matrix_multiply_calls": 3,
+        "pairs_killed_by_square_zero": 23,
+        "terminal_permutations": 6
+      }
+    },
+    {
+      "prime": 97,
+      "n": 4,
+      "eliminated": 2,
+      "residual": [
+        [
+          [
+            [
+              0,
+              95
+            ],
+            [
+              1,
+              46
+            ],
+            [
+              2,
+              63
+            ],
+            [
+              3,
+              37
+            ]
+          ],
+          [
+            [
+              0,
+              40
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              70
+            ],
+            [
+              3,
+              87
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              51
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              51
+            ],
+            [
+              3,
+              36
+            ]
+          ],
+          [
+            [
+              0,
+              60
+            ],
+            [
+              1,
+              85
+            ],
+            [
+              2,
+              89
+            ],
+            [
+              3,
+              52
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          87
+        ],
+        [
+          2,
+          65
+        ],
+        [
+          3,
+          75
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          32
+        ],
+        [
+          3,
+          80
+        ]
+      ],
+      "terminal_readout": 57,
+      "terminal_reference": 57,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 176,
+        "determinant_permutations": 2,
+        "field_additions": 214,
+        "field_multiplications": 123,
+        "field_negations": 5,
+        "jet_add_calls": 57,
+        "jet_multiply_calls": 52,
+        "jet_negation_calls": 5,
+        "matrix_multiply_calls": 4,
+        "pairs_killed_by_square_zero": 53,
+        "terminal_permutations": 2
+      }
+    },
+    {
+      "prime": 97,
+      "n": 4,
+      "eliminated": 3,
+      "residual": [
+        [
+          [
+            [
+              0,
+              60
+            ],
+            [
+              1,
+              85
+            ],
+            [
+              2,
+              89
+            ],
+            [
+              3,
+              52
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              68
+            ],
+            [
+              6,
+              81
+            ],
+            [
+              7,
+              37
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          87
+        ],
+        [
+          2,
+          65
+        ],
+        [
+          3,
+          75
+        ],
+        [
+          4,
+          95
+        ],
+        [
+          5,
+          66
+        ],
+        [
+          6,
+          30
+        ],
+        [
+          7,
+          16
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          32
+        ],
+        [
+          3,
+          80
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          71
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          58
+        ]
+      ],
+      "terminal_readout": 57,
+      "terminal_reference": 57,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 368,
+        "determinant_permutations": 6,
+        "field_additions": 403,
+        "field_multiplications": 223,
+        "field_negations": 15,
+        "jet_add_calls": 139,
+        "jet_multiply_calls": 118,
+        "jet_negation_calls": 12,
+        "matrix_multiply_calls": 5,
+        "pairs_killed_by_square_zero": 145,
+        "terminal_permutations": 1
+      }
+    },
+    {
+      "prime": 97,
+      "n": 5,
+      "eliminated": 1,
+      "residual": [
+        [
+          [
+            [
+              0,
+              77
+            ],
+            [
+              1,
+              11
+            ]
+          ],
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              93
+            ]
+          ],
+          [
+            [
+              0,
+              94
+            ],
+            [
+              1,
+              61
+            ]
+          ],
+          [
+            [
+              0,
+              53
+            ],
+            [
+              1,
+              46
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              1,
+              34
+            ]
+          ],
+          [
+            [
+              0,
+              75
+            ],
+            [
+              1,
+              67
+            ]
+          ],
+          [
+            [
+              0,
+              44
+            ],
+            [
+              1,
+              21
+            ]
+          ],
+          [
+            [
+              0,
+              35
+            ],
+            [
+              1,
+              54
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              94
+            ],
+            [
+              1,
+              54
+            ]
+          ],
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              95
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              79
+            ]
+          ],
+          [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              23
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              20
+            ],
+            [
+              1,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              84
+            ],
+            [
+              1,
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              91
+            ],
+            [
+              1,
+              27
+            ]
+          ],
+          [
+            [
+              0,
+              43
+            ],
+            [
+              1,
+              14
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          29
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          68
+        ]
+      ],
+      "terminal_readout": 20,
+      "terminal_reference": 20,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 386,
+        "determinant_permutations": 1,
+        "field_additions": 399,
+        "field_multiplications": 296,
+        "field_negations": 1,
+        "jet_add_calls": 81,
+        "jet_multiply_calls": 154,
+        "jet_negation_calls": 1,
+        "matrix_multiply_calls": 3,
+        "pairs_killed_by_square_zero": 90,
+        "terminal_permutations": 24
+      }
+    },
+    {
+      "prime": 97,
+      "n": 5,
+      "eliminated": 2,
+      "residual": [
+        [
+          [
+            [
+              0,
+              75
+            ],
+            [
+              1,
+              67
+            ],
+            [
+              3,
+              88
+            ]
+          ],
+          [
+            [
+              0,
+              44
+            ],
+            [
+              1,
+              21
+            ],
+            [
+              3,
+              92
+            ]
+          ],
+          [
+            [
+              0,
+              35
+            ],
+            [
+              1,
+              54
+            ],
+            [
+              3,
+              56
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              95
+            ],
+            [
+              2,
+              55
+            ],
+            [
+              3,
+              89
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              79
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              3,
+              43
+            ]
+          ],
+          [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              23
+            ],
+            [
+              2,
+              35
+            ],
+            [
+              3,
+              8
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              84
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              86
+            ],
+            [
+              3,
+              47
+            ]
+          ],
+          [
+            [
+              0,
+              91
+            ],
+            [
+              1,
+              27
+            ],
+            [
+              2,
+              37
+            ],
+            [
+              3,
+              8
+            ]
+          ],
+          [
+            [
+              0,
+              43
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              90
+            ],
+            [
+              3,
+              22
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          29
+        ],
+        [
+          2,
+          77
+        ],
+        [
+          3,
+          13
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          68
+        ],
+        [
+          2,
+          20
+        ],
+        [
+          3,
+          88
+        ]
+      ],
+      "terminal_readout": 20,
+      "terminal_reference": 20,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 379,
+        "determinant_permutations": 2,
+        "field_additions": 391,
+        "field_multiplications": 246,
+        "field_negations": 5,
+        "jet_add_calls": 85,
+        "jet_multiply_calls": 90,
+        "jet_negation_calls": 5,
+        "matrix_multiply_calls": 4,
+        "pairs_killed_by_square_zero": 133,
+        "terminal_permutations": 6
+      }
+    },
+    {
+      "prime": 97,
+      "n": 5,
+      "eliminated": 3,
+      "residual": [
+        [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              79
+            ],
+            [
+              2,
+              9
+            ],
+            [
+              3,
+              43
+            ],
+            [
+              4,
+              34
+            ],
+            [
+              5,
+              12
+            ],
+            [
+              6,
+              92
+            ],
+            [
+              7,
+              54
+            ]
+          ],
+          [
+            [
+              0,
+              6
+            ],
+            [
+              1,
+              23
+            ],
+            [
+              2,
+              35
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              7
+            ],
+            [
+              6,
+              82
+            ],
+            [
+              7,
+              79
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              91
+            ],
+            [
+              1,
+              27
+            ],
+            [
+              2,
+              37
+            ],
+            [
+              3,
+              8
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              5,
+              53
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              7,
+              59
+            ]
+          ],
+          [
+            [
+              0,
+              43
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              90
+            ],
+            [
+              3,
+              22
+            ],
+            [
+              4,
+              30
+            ],
+            [
+              5,
+              82
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              7,
+              32
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          29
+        ],
+        [
+          2,
+          77
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          4,
+          75
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          6,
+          52
+        ],
+        [
+          7,
+          14
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          68
+        ],
+        [
+          2,
+          20
+        ],
+        [
+          3,
+          88
+        ],
+        [
+          4,
+          22
+        ],
+        [
+          5,
+          71
+        ],
+        [
+          6,
+          52
+        ],
+        [
+          7,
+          23
+        ]
+      ],
+      "terminal_readout": 20,
+      "terminal_reference": 20,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 602,
+        "determinant_permutations": 6,
+        "field_additions": 605,
+        "field_multiplications": 353,
+        "field_negations": 12,
+        "jet_add_calls": 164,
+        "jet_multiply_calls": 145,
+        "jet_negation_calls": 12,
+        "matrix_multiply_calls": 5,
+        "pairs_killed_by_square_zero": 249,
+        "terminal_permutations": 2
+      }
+    },
+    {
+      "prime": 97,
+      "n": 5,
+      "eliminated": 4,
+      "residual": [
+        [
+          [
+            [
+              0,
+              43
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              2,
+              90
+            ],
+            [
+              3,
+              22
+            ],
+            [
+              4,
+              30
+            ],
+            [
+              5,
+              82
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              7,
+              32
+            ],
+            [
+              8,
+              61
+            ],
+            [
+              9,
+              24
+            ],
+            [
+              10,
+              12
+            ],
+            [
+              11,
+              50
+            ],
+            [
+              12,
+              30
+            ],
+            [
+              13,
+              59
+            ],
+            [
+              14,
+              49
+            ],
+            [
+              15,
+              83
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          29
+        ],
+        [
+          2,
+          77
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          4,
+          75
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          6,
+          52
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          9,
+          11
+        ],
+        [
+          10,
+          86
+        ],
+        [
+          11,
+          95
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          47
+        ],
+        [
+          14,
+          42
+        ],
+        [
+          15,
+          88
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          68
+        ],
+        [
+          2,
+          20
+        ],
+        [
+          3,
+          88
+        ],
+        [
+          4,
+          22
+        ],
+        [
+          5,
+          71
+        ],
+        [
+          6,
+          52
+        ],
+        [
+          7,
+          23
+        ],
+        [
+          8,
+          96
+        ],
+        [
+          9,
+          47
+        ],
+        [
+          10,
+          68
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          12,
+          41
+        ],
+        [
+          13,
+          38
+        ],
+        [
+          14,
+          45
+        ],
+        [
+          15,
+          68
+        ]
+      ],
+      "terminal_readout": 20,
+      "terminal_reference": 20,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 1422,
+        "determinant_permutations": 24,
+        "field_additions": 1309,
+        "field_multiplications": 747,
+        "field_negations": 39,
+        "jet_add_calls": 384,
+        "jet_multiply_calls": 379,
+        "jet_negation_calls": 28,
+        "matrix_multiply_calls": 6,
+        "pairs_killed_by_square_zero": 675,
+        "terminal_permutations": 1
+      }
+    },
+    {
+      "prime": 97,
+      "n": 6,
+      "eliminated": 1,
+      "residual": [
+        [
+          [
+            [
+              0,
+              52
+            ],
+            [
+              1,
+              79
+            ]
+          ],
+          [
+            [
+              0,
+              54
+            ],
+            [
+              1,
+              88
+            ]
+          ],
+          [
+            [
+              0,
+              12
+            ],
+            [
+              1,
+              48
+            ]
+          ],
+          [
+            [
+              0,
+              49
+            ],
+            [
+              1,
+              31
+            ]
+          ],
+          [
+            [
+              0,
+              32
+            ],
+            [
+              1,
+              16
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              16
+            ],
+            [
+              1,
+              61
+            ]
+          ],
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              79
+            ]
+          ],
+          [
+            [
+              0,
+              59
+            ],
+            [
+              1,
+              96
+            ]
+          ],
+          [
+            [
+              1,
+              62
+            ]
+          ],
+          [
+            [
+              0,
+              68
+            ],
+            [
+              1,
+              32
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              83
+            ],
+            [
+              1,
+              49
+            ]
+          ],
+          [
+            [
+              0,
+              50
+            ],
+            [
+              1,
+              73
+            ]
+          ],
+          [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              31
+            ]
+          ],
+          [
+            [
+              0,
+              28
+            ],
+            [
+              1,
+              18
+            ]
+          ],
+          [
+            [
+              0,
+              79
+            ],
+            [
+              1,
+              75
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              46
+            ],
+            [
+              1,
+              88
+            ]
+          ],
+          [
+            [
+              0,
+              28
+            ],
+            [
+              1,
+              44
+            ]
+          ],
+          [
+            [
+              0,
+              24
+            ],
+            [
+              1,
+              24
+            ]
+          ],
+          [
+            [
+              0,
+              45
+            ],
+            [
+              1,
+              64
+            ]
+          ],
+          [
+            [
+              0,
+              55
+            ],
+            [
+              1,
+              8
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              13
+            ]
+          ],
+          [
+            [
+              0,
+              48
+            ],
+            [
+              1,
+              55
+            ]
+          ],
+          [
+            [
+              0,
+              8
+            ],
+            [
+              1,
+              30
+            ]
+          ],
+          [
+            [
+              0,
+              49
+            ],
+            [
+              1,
+              80
+            ]
+          ],
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              10
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          96
+        ]
+      ],
+      "terminal_readout": 3,
+      "terminal_reference": 3,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 2086,
+        "determinant_permutations": 1,
+        "field_additions": 1886,
+        "field_multiplications": 1582,
+        "field_negations": 1,
+        "jet_add_calls": 205,
+        "jet_multiply_calls": 686,
+        "jet_negation_calls": 1,
+        "matrix_multiply_calls": 3,
+        "pairs_killed_by_square_zero": 504,
+        "terminal_permutations": 120
+      }
+    },
+    {
+      "prime": 97,
+      "n": 6,
+      "eliminated": 2,
+      "residual": [
+        [
+          [
+            [
+              0,
+              9
+            ],
+            [
+              1,
+              79
+            ],
+            [
+              2,
+              88
+            ],
+            [
+              3,
+              46
+            ]
+          ],
+          [
+            [
+              0,
+              59
+            ],
+            [
+              1,
+              96
+            ],
+            [
+              2,
+              95
+            ],
+            [
+              3,
+              45
+            ]
+          ],
+          [
+            [
+              1,
+              62
+            ],
+            [
+              2,
+              8
+            ],
+            [
+              3,
+              90
+            ]
+          ],
+          [
+            [
+              0,
+              68
+            ],
+            [
+              1,
+              32
+            ],
+            [
+              2,
+              27
+            ],
+            [
+              3,
+              74
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              50
+            ],
+            [
+              1,
+              73
+            ],
+            [
+              2,
+              20
+            ],
+            [
+              3,
+              56
+            ]
+          ],
+          [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              31
+            ],
+            [
+              2,
+              26
+            ],
+            [
+              3,
+              13
+            ]
+          ],
+          [
+            [
+              0,
+              28
+            ],
+            [
+              1,
+              18
+            ],
+            [
+              2,
+              90
+            ],
+            [
+              3,
+              27
+            ]
+          ],
+          [
+            [
+              0,
+              79
+            ],
+            [
+              1,
+              75
+            ],
+            [
+              2,
+              37
+            ],
+            [
+              3,
+              83
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              28
+            ],
+            [
+              1,
+              44
+            ],
+            [
+              2,
+              59
+            ],
+            [
+              3,
+              70
+            ]
+          ],
+          [
+            [
+              0,
+              24
+            ],
+            [
+              1,
+              24
+            ],
+            [
+              2,
+              67
+            ],
+            [
+              3,
+              63
+            ]
+          ],
+          [
+            [
+              0,
+              45
+            ],
+            [
+              1,
+              64
+            ],
+            [
+              2,
+              23
+            ],
+            [
+              3,
+              15
+            ]
+          ],
+          [
+            [
+              0,
+              55
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              3,
+              60
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              48
+            ],
+            [
+              1,
+              55
+            ],
+            [
+              2,
+              87
+            ],
+            [
+              3,
+              57
+            ]
+          ],
+          [
+            [
+              0,
+              8
+            ],
+            [
+              1,
+              30
+            ],
+            [
+              2,
+              84
+            ],
+            [
+              3,
+              7
+            ]
+          ],
+          [
+            [
+              0,
+              49
+            ],
+            [
+              1,
+              80
+            ],
+            [
+              2,
+              52
+            ],
+            [
+              3,
+              78
+            ]
+          ],
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              30
+            ],
+            [
+              3,
+              43
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          52
+        ],
+        [
+          3,
+          34
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          96
+        ],
+        [
+          2,
+          45
+        ],
+        [
+          3,
+          70
+        ]
+      ],
+      "terminal_readout": 3,
+      "terminal_reference": 3,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 1494,
+        "determinant_permutations": 2,
+        "field_additions": 1191,
+        "field_multiplications": 891,
+        "field_negations": 5,
+        "jet_add_calls": 135,
+        "jet_multiply_calls": 200,
+        "jet_negation_calls": 5,
+        "matrix_multiply_calls": 4,
+        "pairs_killed_by_square_zero": 603,
+        "terminal_permutations": 24
+      }
+    },
+    {
+      "prime": 97,
+      "n": 6,
+      "eliminated": 3,
+      "residual": [
+        [
+          [
+            [
+              0,
+              11
+            ],
+            [
+              1,
+              31
+            ],
+            [
+              2,
+              26
+            ],
+            [
+              3,
+              13
+            ],
+            [
+              4,
+              40
+            ],
+            [
+              5,
+              86
+            ],
+            [
+              6,
+              13
+            ],
+            [
+              7,
+              53
+            ]
+          ],
+          [
+            [
+              0,
+              28
+            ],
+            [
+              1,
+              18
+            ],
+            [
+              2,
+              90
+            ],
+            [
+              3,
+              27
+            ],
+            [
+              5,
+              93
+            ],
+            [
+              6,
+              12
+            ],
+            [
+              7,
+              19
+            ]
+          ],
+          [
+            [
+              0,
+              79
+            ],
+            [
+              1,
+              75
+            ],
+            [
+              2,
+              37
+            ],
+            [
+              3,
+              83
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              65
+            ],
+            [
+              6,
+              91
+            ],
+            [
+              7,
+              31
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              24
+            ],
+            [
+              1,
+              24
+            ],
+            [
+              2,
+              67
+            ],
+            [
+              3,
+              63
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              46
+            ],
+            [
+              6,
+              30
+            ],
+            [
+              7,
+              5
+            ]
+          ],
+          [
+            [
+              0,
+              45
+            ],
+            [
+              1,
+              64
+            ],
+            [
+              2,
+              23
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              5,
+              87
+            ],
+            [
+              6,
+              30
+            ],
+            [
+              7,
+              31
+            ]
+          ],
+          [
+            [
+              0,
+              55
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              3,
+              60
+            ],
+            [
+              4,
+              61
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              6,
+              15
+            ],
+            [
+              7,
+              14
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              8
+            ],
+            [
+              1,
+              30
+            ],
+            [
+              2,
+              84
+            ],
+            [
+              3,
+              7
+            ],
+            [
+              4,
+              19
+            ],
+            [
+              5,
+              93
+            ],
+            [
+              6,
+              90
+            ],
+            [
+              7,
+              88
+            ]
+          ],
+          [
+            [
+              0,
+              49
+            ],
+            [
+              1,
+              80
+            ],
+            [
+              2,
+              52
+            ],
+            [
+              3,
+              78
+            ],
+            [
+              5,
+              66
+            ],
+            [
+              6,
+              93
+            ],
+            [
+              7,
+              66
+            ]
+          ],
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              30
+            ],
+            [
+              3,
+              43
+            ],
+            [
+              4,
+              63
+            ],
+            [
+              5,
+              38
+            ],
+            [
+              6,
+              34
+            ],
+            [
+              7,
+              57
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          52
+        ],
+        [
+          3,
+          34
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          88
+        ],
+        [
+          6,
+          71
+        ],
+        [
+          7,
+          86
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          96
+        ],
+        [
+          2,
+          45
+        ],
+        [
+          3,
+          70
+        ],
+        [
+          4,
+          88
+        ],
+        [
+          5,
+          27
+        ],
+        [
+          6,
+          89
+        ],
+        [
+          7,
+          28
+        ]
+      ],
+      "terminal_readout": 3,
+      "terminal_reference": 3,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 1514,
+        "determinant_permutations": 6,
+        "field_additions": 1276,
+        "field_multiplications": 812,
+        "field_negations": 15,
+        "jet_add_calls": 202,
+        "jet_multiply_calls": 193,
+        "jet_negation_calls": 12,
+        "matrix_multiply_calls": 5,
+        "pairs_killed_by_square_zero": 702,
+        "terminal_permutations": 6
+      }
+    },
+    {
+      "prime": 97,
+      "n": 6,
+      "eliminated": 4,
+      "residual": [
+        [
+          [
+            [
+              0,
+              45
+            ],
+            [
+              1,
+              64
+            ],
+            [
+              2,
+              23
+            ],
+            [
+              3,
+              15
+            ],
+            [
+              5,
+              87
+            ],
+            [
+              6,
+              30
+            ],
+            [
+              7,
+              31
+            ],
+            [
+              8,
+              90
+            ],
+            [
+              9,
+              37
+            ],
+            [
+              10,
+              59
+            ],
+            [
+              11,
+              55
+            ],
+            [
+              12,
+              84
+            ],
+            [
+              13,
+              82
+            ],
+            [
+              14,
+              40
+            ],
+            [
+              15,
+              42
+            ]
+          ],
+          [
+            [
+              0,
+              55
+            ],
+            [
+              1,
+              8
+            ],
+            [
+              2,
+              17
+            ],
+            [
+              3,
+              60
+            ],
+            [
+              4,
+              61
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              6,
+              15
+            ],
+            [
+              7,
+              14
+            ],
+            [
+              8,
+              53
+            ],
+            [
+              9,
+              10
+            ],
+            [
+              10,
+              70
+            ],
+            [
+              11,
+              78
+            ],
+            [
+              12,
+              66
+            ],
+            [
+              13,
+              10
+            ],
+            [
+              14,
+              53
+            ],
+            [
+              15,
+              69
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              49
+            ],
+            [
+              1,
+              80
+            ],
+            [
+              2,
+              52
+            ],
+            [
+              3,
+              78
+            ],
+            [
+              5,
+              66
+            ],
+            [
+              6,
+              93
+            ],
+            [
+              7,
+              66
+            ],
+            [
+              8,
+              30
+            ],
+            [
+              9,
+              14
+            ],
+            [
+              10,
+              65
+            ],
+            [
+              11,
+              65
+            ],
+            [
+              12,
+              47
+            ],
+            [
+              13,
+              4
+            ],
+            [
+              14,
+              58
+            ],
+            [
+              15,
+              48
+            ]
+          ],
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              30
+            ],
+            [
+              3,
+              43
+            ],
+            [
+              4,
+              63
+            ],
+            [
+              5,
+              38
+            ],
+            [
+              6,
+              34
+            ],
+            [
+              7,
+              57
+            ],
+            [
+              8,
+              50
+            ],
+            [
+              9,
+              60
+            ],
+            [
+              10,
+              45
+            ],
+            [
+              11,
+              91
+            ],
+            [
+              12,
+              86
+            ],
+            [
+              13,
+              33
+            ],
+            [
+              14,
+              37
+            ],
+            [
+              15,
+              33
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          52
+        ],
+        [
+          3,
+          34
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          88
+        ],
+        [
+          6,
+          71
+        ],
+        [
+          7,
+          86
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          42
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          11,
+          85
+        ],
+        [
+          12,
+          42
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          15,
+          4
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          96
+        ],
+        [
+          2,
+          45
+        ],
+        [
+          3,
+          70
+        ],
+        [
+          4,
+          88
+        ],
+        [
+          5,
+          27
+        ],
+        [
+          6,
+          89
+        ],
+        [
+          7,
+          28
+        ],
+        [
+          8,
+          86
+        ],
+        [
+          9,
+          77
+        ],
+        [
+          10,
+          61
+        ],
+        [
+          11,
+          79
+        ],
+        [
+          12,
+          59
+        ],
+        [
+          13,
+          33
+        ],
+        [
+          14,
+          61
+        ],
+        [
+          15,
+          17
+        ]
+      ],
+      "terminal_readout": 3,
+      "terminal_reference": 3,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 2491,
+        "determinant_permutations": 24,
+        "field_additions": 2202,
+        "field_multiplications": 1279,
+        "field_negations": 46,
+        "jet_add_calls": 419,
+        "jet_multiply_calls": 416,
+        "jet_negation_calls": 28,
+        "matrix_multiply_calls": 6,
+        "pairs_killed_by_square_zero": 1212,
+        "terminal_permutations": 2
+      }
+    },
+    {
+      "prime": 97,
+      "n": 6,
+      "eliminated": 5,
+      "residual": [
+        [
+          [
+            [
+              0,
+              14
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              30
+            ],
+            [
+              3,
+              43
+            ],
+            [
+              4,
+              63
+            ],
+            [
+              5,
+              38
+            ],
+            [
+              6,
+              34
+            ],
+            [
+              7,
+              57
+            ],
+            [
+              8,
+              50
+            ],
+            [
+              9,
+              60
+            ],
+            [
+              10,
+              45
+            ],
+            [
+              11,
+              91
+            ],
+            [
+              12,
+              86
+            ],
+            [
+              13,
+              33
+            ],
+            [
+              14,
+              37
+            ],
+            [
+              15,
+              33
+            ],
+            [
+              16,
+              76
+            ],
+            [
+              17,
+              39
+            ],
+            [
+              18,
+              7
+            ],
+            [
+              19,
+              82
+            ],
+            [
+              20,
+              79
+            ],
+            [
+              21,
+              75
+            ],
+            [
+              22,
+              1
+            ],
+            [
+              23,
+              43
+            ],
+            [
+              24,
+              76
+            ],
+            [
+              25,
+              17
+            ],
+            [
+              26,
+              86
+            ],
+            [
+              27,
+              33
+            ],
+            [
+              28,
+              83
+            ],
+            [
+              29,
+              94
+            ],
+            [
+              30,
+              59
+            ],
+            [
+              31,
+              76
+            ]
+          ]
+        ]
+      ],
+      "reader": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          52
+        ],
+        [
+          3,
+          34
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          88
+        ],
+        [
+          6,
+          71
+        ],
+        [
+          7,
+          86
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          42
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          11,
+          85
+        ],
+        [
+          12,
+          42
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          16,
+          45
+        ],
+        [
+          17,
+          12
+        ],
+        [
+          18,
+          35
+        ],
+        [
+          19,
+          46
+        ],
+        [
+          20,
+          17
+        ],
+        [
+          21,
+          64
+        ],
+        [
+          22,
+          37
+        ],
+        [
+          23,
+          26
+        ],
+        [
+          24,
+          3
+        ],
+        [
+          25,
+          5
+        ],
+        [
+          26,
+          86
+        ],
+        [
+          27,
+          20
+        ],
+        [
+          28,
+          68
+        ],
+        [
+          29,
+          32
+        ],
+        [
+          30,
+          1
+        ],
+        [
+          31,
+          15
+        ]
+      ],
+      "det_I_minus_EB": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          96
+        ],
+        [
+          2,
+          45
+        ],
+        [
+          3,
+          70
+        ],
+        [
+          4,
+          88
+        ],
+        [
+          5,
+          27
+        ],
+        [
+          6,
+          89
+        ],
+        [
+          7,
+          28
+        ],
+        [
+          8,
+          86
+        ],
+        [
+          9,
+          77
+        ],
+        [
+          10,
+          61
+        ],
+        [
+          11,
+          79
+        ],
+        [
+          12,
+          59
+        ],
+        [
+          13,
+          33
+        ],
+        [
+          14,
+          61
+        ],
+        [
+          15,
+          17
+        ],
+        [
+          16,
+          52
+        ],
+        [
+          17,
+          78
+        ],
+        [
+          18,
+          86
+        ],
+        [
+          19,
+          89
+        ],
+        [
+          20,
+          17
+        ],
+        [
+          21,
+          50
+        ],
+        [
+          22,
+          52
+        ],
+        [
+          23,
+          88
+        ],
+        [
+          24,
+          17
+        ],
+        [
+          25,
+          8
+        ],
+        [
+          26,
+          92
+        ],
+        [
+          27,
+          46
+        ],
+        [
+          28,
+          11
+        ],
+        [
+          29,
+          3
+        ],
+        [
+          30,
+          61
+        ],
+        [
+          31,
+          95
+        ]
+      ],
+      "terminal_readout": 3,
+      "terminal_reference": 3,
+      "residual_identity_passed": true,
+      "reader_inverse_identity_passed": true,
+      "composed_terminal_readout_passed": true,
+      "verifier_work_this_stage": {
+        "coefficient_pairs_examined": 5892,
+        "determinant_permutations": 120,
+        "field_additions": 4927,
+        "field_multiplications": 2919,
+        "field_negations": 159,
+        "jet_add_calls": 929,
+        "jet_multiply_calls": 1262,
+        "jet_negation_calls": 85,
+        "matrix_multiply_calls": 7,
+        "pairs_killed_by_square_zero": 2973,
+        "terminal_permutations": 1
+      }
+    }
+  ],
+  "case_data_sha256": "106288cc7ae88663d55f122dcc3eee759aaa0748851a6281707dce333f1742da"
+}

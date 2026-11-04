@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "source_sha256": {
+    "documents/fermeture-native-2026-11-03/TerminalTaggedClosure.lean": "629fb2f327960bd626d6b5847ebe6841094685e857e9576166273cc99bfbd09a",
+    "documents/fermeture-native-2026-11-03/replay_tagged_closure.py": "c9f78d572fed20d89c6c50826eb1a3e28a9d17b950170281ca6bf13bf9b7c0df",
+    "documents/fermeture-native-2026-11-03/AuxiliaryErasure.lean": "61f744b1965e479226532e05a2c5c9f27a0a944ee4919134edaf01f505f93536",
+    "travail/fermeture-native/build/AuxiliaryErasure.olean": "3a2d56048aacb81fc205281d58ee789a13b26e1a7dd3ba42c856f53f5e49df00",
+    "etudes/2026-11-01/lean-operateurs/lean_check.py": "a5e21cfb624e5258009425f6c6eecaf0eb1b529d953bbb2607717dab44a439ad"
+  },
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "-o",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\fermeture-native\\build\\TerminalTaggedClosure.olean",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\fermeture-native-2026-11-03\\TerminalTaggedClosure.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 15.187,
+  "stdout": "'TerminalTaggedClosure.tag_add' depends on axioms: [propext]\n'TerminalTaggedClosure.tag_scalar_mul' depends on axioms: [propext]\n'TerminalTaggedClosure.tag_linear_readout' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TerminalTaggedClosure.tagged_scalar_closure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TerminalTaggedClosure.native_tagged_readout' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "tag_add",
+    "tag_scalar_mul",
+    "tag_linear_readout",
+    "tagged_scalar_closure",
+    "native_tagged_readout"
+  ],
+  "no_placeholders_or_added_axioms": true,
+  "all_axioms_printed": true,
+  "sources_and_dependencies_unchanged": true,
+  "scope": "Terminal label closure under sums, scalar multiplication and finite linear readout; an explicit scalar circuit follows from a bounded coefficient circuit with a faithful tagged normalization certificate.",
+  "normalization_certificate_is_an_explicit_hypothesis": true,
+  "coefficient_circuit_is_explicitly_supplied": true,
+  "reader_witness": "AuxiliaryErasure.eraseAux c",
+  "coordinate_extraction_from_native_representative_constructed": false,
+  "complete_native_scalar_closure_proved": false
+}

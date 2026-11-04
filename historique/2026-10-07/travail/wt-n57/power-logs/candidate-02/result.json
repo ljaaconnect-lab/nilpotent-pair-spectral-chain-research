@@ -1,0 +1,41 @@
+{
+  "tag": "candidate-02",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+  ],
+  "kind": "candidate",
+  "exit_code": 0,
+  "source_sha256": "d961bf168c24645a6646f93c94e10fe3c4a527f6ddce1f8eb3d9dc2196347eb2",
+  "elapsed_seconds": 12.553012609481812,
+  "error_count": 0,
+  "axiom_audit": {
+    "SharedBinaryPower.run_append": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SharedBinaryPower.positive_plan_correct": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SharedBinaryPower.binary_plan_correct": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SharedBinaryPower.binary_plan_logarithmic": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SharedBinaryPower.central_exponent_log_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharedBinaryPower.power_add": []
+  },
+  "source_clean": true,
+  "main_obligations_passed": 3,
+  "score": 1.0,
+  "root_conjecture_verified": false,
+  "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\candidate-02"
+}

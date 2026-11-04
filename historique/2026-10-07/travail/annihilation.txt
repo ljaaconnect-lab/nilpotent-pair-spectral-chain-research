@@ -1,0 +1,2211 @@
+                           Collision-oriented annihilation
+                                      TSIGBE Comlan Alain
+
+                                          October 1, 2026
+
+
+                                               Abstract
+                           n×n
+        Let A = (aij ) ∈ Q      . I attach to every cell (i, j) the binary address wij = 2(i−1)n+j−1
+    and form the marked matrix BA (z)ij = pij z wij with pij = 1 + a2ij > 0. I prove that the
+    marked determinant DA (z) = det BA (z) annihilates exactly the column-collision
+                                                                               P               assign-
+    ments, and keeps each permutation σ at its own address E(σ) = i wi,σ(i) , so that no
+    two permutations ever share a monomial. The expanded polynomial has n! monomials
+                      2
+    and degree 2Θ(n ) , yet it is computed exactly by an arithmetic circuit with fewer than 3n4
+    gates (n ≥ 2), without ever listing its monomials. A rectangular extension is obtained
+    by a Vandermonde complement. If every column P            carries an integer dj , every surviving
+    permutation has the same total frequency D∗ =                j dj ; a number-theoretic transform
+    (NTT), a Hadamard product and an inverse transform therefore project the filtered output
+    exactly onto the slot D∗ mod N , and I show that this projection is itself computed by
+    circuits of polynomial size. The signs carried by the monomials can be gathered into a
+    single universal sign (−1)n(n−1)/2 by doubling the orientation: each column carries a pair
+    qj = xj yj of exterior generators. The resulting product is computed by an explicit circuit
+    of 4n2 + n − 2 gates over the enlarged algebra; this is an algebra-valued count, and the
+    scalar compilation I give has exponential size. One step of the resulting pipeline is not
+    proved here: the correction of the signs carried by the coefficients of DA . I formulate
+    it as a precise conjecture about the signed polynomial DA alone, prove that every other
+    stage is polynomial, and prove that, conditionally on the conjecture, the whole pipeline
+    is polynomial. Finally, I give an exact scalar encoding of the corrected polynomial as the
+    central coefficient, at index nn − 1, of an explicit polynomial in two variables computed by
+    a circuit of O(n4 ) gates. This reduces the conjecture, exactly, to the computation of that
+    central coefficient, which is the remaining step.
+
+
+Contents
+1 Introduction                                                                                           2
+
+2 Overview of the argument                                                                               6
+
+3 Conventions and notation                                                                               8
+
+4 Binary addresses                                                                                       8
+
+5 The exterior-algebra filter                                                                            10
+
+6 Degree, valuation and sizes of expanded forms                                                          11
+
+
+
+                                                    1
+7 The determinantal circuit                                                                       12
+
+8 Coefficient extraction at a prescribed address                                                  15
+
+9 The rectangular extension                                                                       15
+
+10 Isochrony and the spectral projection                                                          17
+
+11 Polynomial circuits for the spectral layer                                                     18
+
+12 The sign corrector                                                                             20
+
+13 Double orientation and a uniform sign                                                          21
+
+14 A scalar encoding of PA as a central coefficient                                               28
+
+15 The conditional polynomial pipeline                                                            33
+
+16 Scope, limits and what is not claimed                                                          34
+
+A Summary of the identities                                                                       35
+
+
+1    Introduction
+The determinant of an n × n matrix is a signed sum over the n! permutations, and it is
+evaluated in polynomial time by elimination or by the characteristic-polynomial recurrences of
+Faddeev–LeVerrier, Csanky and Berkowitz [3, 5, 6, 4]. In that classical picture the individual
+terms of the sum are never visible: only their sum is. The purpose of this paper is to make the
+terms individually addressable while keeping the polynomial-time evaluation. To every cell (i, j)
+of the matrix I attach a power z wij of a formal variable z, where the exponent wij = 2(i−1)n+j−1
+is a binary address of the cell, and I study the polynomial
+                         DA (z) = det pij z wij i,j∈[n] ,    pij = 1 + a2ij .
+                                               
+
+Because the addresses occupy pairwise disjoint bits, the exponent of the monomial attached
+to a permutation determines that permutation. Consequently the polynomial DA (z) is a
+signed polynomial with n! monomials in which each monomial records one permutation, and the
+determinant is at the same time a filter: in the exterior algebra, every assignment of rows to
+columns that uses a column twice is annihilated.
+    The main results of the paper are the following. Throughout, [m] = {1, . . . , m}, Sn is the
+symmetric group, sgn is the signature, and for a map s : [n] → [n] I write
+                                                  n
+                                                  X
+                                         E(s) =         wi,s(i) .
+                                                  i=1
+
+The total binary length of (the numerators and denominators of) the entries of A is denoted L.
+Theorem 1.1 (Exact filtering and compact compilation). Let n ≥ 1 and A ∈ Qn×n . Put
+pij = 1 + a2ij , wij = 2(i−1)n+j−1 , BA (z)ij = pij z wij and DA (z) = det BA (z). Then the following
+hold.
+
+                                                  2
+                                Q          
+                  P               n            E(σ) .
+ (i) DA (z) =        σ∈Sn sgn(σ)     p
+                                  i=1 i,σ(i) z
+
+ (ii) For all maps s, t : [n] → [n], E(s) = E(t) ⇒ s = t.
+
+(iii) supp DA = {E(σ) : σ ∈ Sn }, this set has exactly n! elements, and [z E(s) ]DA = 0 for every
+      s : [n] → [n] which is not a permutation.
+
+(iv) degz DA = E(id) = n−1
+                            P       r(n+1) and ord D = E(w ) =
+                                                                   Pn     i(n−1) , where w (i) =
+                              r=0 2               z A         0      i=1 2                 0
+                                  2                  2
+      n + 1 − i. In particular 2n −1 ≤ degz DA < 2n .
+
+ (v) There is an arithmetic circuit CA over Q computing DA with
+
+                                                G(n) ≤ 2n4 − n3 + 4n2 − 1
+
+     gates; in particular G(n) < 3n4 for n ≥ 2.
+
+(vi) For n ≥ 2, CA has a binary encoding of length bits(CA ) = O L + n4 log n .
+                                                                             
+
+No list of the n! monomials of (i) is constructed.
+
+   The second theorem explains why the surviving terms can be gathered by a spectral
+projection. Let K be a field, N ≥ 1, and ω ∈ K × of exact multiplicative order N . Let Λ be
+the exterior algebra over K[z] on generators x1 , . . . , xn , and Ω = x1 · · · xn .
+
+Theorem 1.2 (Isochrony and        spectral extraction). Let B = (Bij ) ∈ K[z]n×n be any matrix,
+let d1 , . . . , dn ∈ Z and D∗ = j dj . Put Mij = Bij xj and
+                                P
+
+
+                    X                               N
+                                                    X −1
+     Pi [k] =                   Mij ,   Ai [f ] =          Pi [k] ω f k ,   Ψ0 [f ] = 1,   Ψi [f ] = Ψi−1 [f ] Ai [f ],
+                j: dj ≡k (N )                       k=0
+
+                                               N −1
+                                             1 X
+                                   T [k] =       Ψn [f ] ω −f k              (k ∈ Z/N Z).
+                                             N
+                                                f =0
+                                   ∗ for every σ ∈ S                         f D∗ det(B) Ω for every f , and
+                P
+Then Dσ :=        i dσ(i) = D                              n , Ψn [f ] = ω
+
+                                   T [k] = 1{k≡D∗ (N )} det(B) Ω                 for all k.
+
+In particular T [D∗ mod N ] = det(B) Ω. Applied to B = BA (with K = Q(ζN ), or with K = FQ
+for a prime Q with N | Q − 1 and Q-integral entries), the output is DA Ω, resp. its reduction
+modulo Q.
+
+   The transform layer of Theorem 1.2 is written in the exterior algebra, whose intermediate
+elements Ψi [f ] have exponentially many coordinates (Proposition 11.1). The following result
+shows that this does not obstruct polynomial circuits, because the quantity I extract lies in the
+top exterior degree.
+
+Theorem 1.3 (Polynomial circuits for the spectral layer). Assume that char K = 0 or char K >
+n, and let B = B̄A be the matrix BA with entries read in K. For every k ∈ Z/N Z, T [k] = ck Ω
+
+
+
+                                                                 3
+with ck ∈ K[z], where ck = 0 if k ̸≡ D∗ (mod N ), and cD∗ mod N = D̄A . The polynomial
+cD∗ mod N is computed by an arithmetic circuit over K with at most
+
+                                    N (2n4 − n3 + 3n2 + 2) + n2
+
+gates, obtained by evaluating the N frequency slots and applying the inverse transform; it is also
+computed, after collapsing the N determinants into one, by a circuit with at most G(n) gates.
+   What                                                                            E(σ) in D
+       Q remains is the following. By Theorem 1.1 (i), the coefficient of z                   A is
+sgn(σ) i piσ(i) , hence carries the sign of the permutation. The sign is a function of the address
+alone (Proposition 12.3). For e ∈ N put
+                                  (
+                                    sgn(σ) if e = E(σ) for some σ ∈ Sn ,
+                        χn (e) =
+                                    0        otherwise,
+
+and let Cn : Q[z] → Q[z] be the Q-linear operator defined onPmonomials by Cn (z e ) = χn (e) z e . I
+call Cn the sign corrector. By Proposition 12.2, Cn (DA ) = e [z e ]DA z e is the coefficientwise
+absolute value of DA .
+    The correction can be realized algebraically, and with a single universal sign, by doubling
+the orientation. Write
+                                             X Y    n        
+                             PA = Cn (DA ) =           pi,σ(i) z E(σ) .
+                                                 σ∈Sn      i=1
+
+Let Λ  e = ΛQ[z] (x1 , . . . , xn , y1 , . . . , yn ) be the exterior algebra on 2n generators, let Ωe =
+x1 · · · xn y1 · · · yn , and attach to column j the pair qj = xj yj instead of xj . Put γn = (−1)n(n−1)/2
+
+and
+                                                        Yn X n             
+                                            FA (z) =            pij z wij qj .
+                                               i=1   j=1
+
+Theorem 1.4 (Uniform sign by double orientation). (a) qj is central, qj2 = 0, qi qj = qj qi ,
+                              e for every σ ∈ Sn .
+   and qσ(1) · · · qσ(n) = γn Ω
+
+ (b) FA = γn PA Ω.                  e A = γn PA has n! monomials, all carrying the same sign
+                   e In particular [Ω]F
+                                 e
+     γn , and for every e ∈ N, [z ]DA = χn (e) γn [z e ][Ω]F
+                                                         e A.
+
+ (c) Let K, N , ω, dj , D∗ be as in Theorem 1.2, and let Te[k] be the spectral layer of Defini-
+     tion 13.10, built on the pairs qj . Then Te[k] = 1{k≡D∗ (N )} γn PA Ω.
+                                                                         e
+
+ (d) FA is computed by an explicit circuit over Λ e with exactly Gext (n) = 4n2 + n − 2 gates, the
+                                                             e = γn FA is obtained with at most
+      pij being leaves (Section 13, Definition 13.6), and PA Ω
+      one further gate, namely one multiplication by −1 if n ≡ 2, 3 (mod 4) and none if n ≡ 0, 1
+      (mod 4). These are gates of the enlarged algebra, not gates of a scalar circuit over Q[z].
+    For n = 2, FA = − p11 p22 z 9 + p12 p21 z 6 Ω.
+                                               
+                                                 e Theorem 1.4 gathers all the signs into the
+constant γn , but it does not make the resulting top coefficient cheap to compute: the count in
+(d) is a count of gates of the enlarged algebra, the partial products of FA have exponentially
+many coordinates, the natural scalar compilation has at most (n − 1)2n + 2n2 gates, and the
+determinantal identity of Theorem 1.1 does not apply to them (Propositions 13.13 and 13.14).
+The sign correction therefore remains the open step, and I formulate it as follows.
+
+                                                     4
+Conjecture 1.5 (Polynomial sign correction). There is a polynomial Π ∈ N[X] such that, for
+every n ≥ 1 and every A ∈ Qn×n , the polynomial Cn (DA ) ∈ Q[z] is computed by an arithmetic
+circuit over Q with at most Π(n) gates, all of whose constants are entries pij of BA or rational
+numbers of binary length at most Π(n). Moreover such a circuit can be constructed from (n, A) in
+                                                                                  e A = γn PA
+time polynomial in n and L. Equivalently (Corollary 13.15), the top coefficient [Ω]F
+is computed by such a circuit, with Π(n) replaced by Π(n) + 1. It is also equivalent to the
+polynomial-size computation of the central coefficient [tK ]H
+                                                            b A of Theorem 1.7 (Corollary 14.10).
+
+    The conjecture concerns the signed polynomial DA and the diagonal operator Cn acting
+on its monomials, or equivalently the top coefficient of the doubly oriented product FA , and
+nothing else. I do not prove it. What I prove is that all other stages are polynomial, and that
+the conjecture is the only missing ingredient.
+
+Theorem 1.6 (Polynomial pipeline under the sign-correction hypothesis). Assume Conjec-
+ture 1.5. Let K ⊇ Q be a field of characteristic 0 containing a primitive N -th root of unity ω,
+let Cn act K-linearly on K[z], and let T + [k] = (Cn ⊗ idΛ )(T [k]) be the corrected spectral layer.
+Then, for every n, every A ∈ Qn×n and every k ∈ Z/N Z:
+                         P         Q          E(σ)
+  (a) PA = Cn (DA ) = σ∈Sn          i pi,σ(i) z     , a polynomial with n! monomials and strictly
+      positive coefficients, is computed by a circuit with at most Π(n) gates;
+
+ (b) T + [k] = 1{k≡D∗ (N )} PA Ω, and each coordinate is computed by a circuit with at most Π(n)
+     gates, so that all N slots together need at most N Π(n) gates;
+
+ (c) every other stage of the pipeline (marking, filtering, spectral projection, coefficient extraction
+     at a prescribed address) is polynomial without any hypothesis, by Theorems 1.1 and 1.3
+     and Proposition 8.1;
+
+ (d) the doubly oriented layer satisfies Te[k] = 1{k≡D∗ (N )} γn PA Ω
+                                                                    e (Theorem 1.4 (c)), and each
+     coordinate is computed by a circuit with at most Π(n) + 1 gates.
+                                                                                                (r)
+If moreover Conjecture 12.4 holds, then (a) holds for the rectangular polynomials DA of
+Section 9, 1 ≤ r ≤ n.
+
+   The conjecture can be reduced, exactly, to the computation of a single coefficient. Let
+                              i−1
+n ≥ 2, K = nn − 1, ui = t n       and
+                                   n
+    HA (t, z) = det pij z wij uij−1 i,j=1
+                                          Y
+                                            (ui − uℓ ), b A (t, z) = 1 + t2K + HA (t, z).
+                                                        H
+                                        1≤i<ℓ≤n
+
+Theorem 1.7 (Scalar encoding of PA as a central coefficient). Let n ≥ 2 and A ∈ Qn×n .
+
+ (a) [tK ]HA = PA . Every exponent of t in HA lies in {1, . . . , 2K − 1}, so that degt H
+                                                                                        b A = 2K,
+           1                  K  b A = PA . Each surviving term carries its amplitude Q pi,σ(i)
+     K = 2 degt H b A and [t ]H
+                                                                                            i
+     and its address z E(σ) , with the sign +1. For n = 1, PA = p11 z = [t0 ]HA .
+
+ (b) Hb A is computed by a scalar circuit over Q in the variables z, t with at most 2n4 − n3 +
+     7n2 + 4n log2 n ≤ 4n4 gates, and a binary encoding of length O(L + n4 log n).
+
+
+
+
+                                                  5
+ (c) Any non-negative integer labels rij separating the permutations, used in place of (j − 1)ni−1
+     in the pairing of Proposition 14.2, force a central index K ≥ n! − 1. Extraction of [tK ]
+     from a circuit of size s by truncation costs at most s(K + 1)2 gates, which for H  b A is not
+     polynomial in n.
+
+ (d) Conjecture 1.5 holds if and only if [tK ]H
+                                              b A has a scalar circuit of polynomial size.
+
+    Theorem 1.7 completes the construction of the encoding: H      b A is explicit, scalar, free of any
+exterior generator, polynomial in size, and contains no amplitude squared. What remains is
+the computation of its central coefficient, which by item (d) is exactly the remaining step to
+close Conjecture 1.5. Item (d) is an equivalence and not a proof of the conjecture.
+    The organization of the paper follows the expository template of Wang and Zahl [1]: the
+results are stated in this introduction, Section 2 explains the strategy on a complete toy example
+and lists which section proves which statement, and Sections 4–15 contain the proofs, each
+section opening with the precise statement it establishes. Section 16 states the scope and the
+limits of the results.
+
+
+2    Overview of the argument
+The proofs are organized in nine steps. Step 1 is combinatorial, Steps 2 to 5 are algebraic,
+Steps 6 and 7 concern the spectral layer, and Steps 8 and 9 concern the sign correction and the
+conjecture.
+    Step 1: binary addresses (Section 4). The bit positions 0, 1, . . . , n2 − 1 are cut into n
+consecutive blocks I1 , . . . , In of length n, and the cell (i, j) is given the j-th bit of block Ii . For
+an assignment s : [n] → [n] the exponent E(s) has exactly one bit in each block, so that s can be
+read off from the binary expansion of E(s). This gives the injectivity E(s) = E(t) ⇒ s = t, the
+characterization of the set of addresses, and the comparison rule: E is ordered lexicographically
+by (sn , . . . , s1 ). The extremal permutations are the identity and the reversal.
+    Step 2: the exterior-algebra filter (SectionQ5). P    In the exterior    algebra Λ on x1 , . . . , xn one
+has x2j = 0 and xj xi = −xi xj . The product i                                   over all nn assignments.
+                                                                       
+                                                            j B ij x j   expands
+The assignments with a repeated column carry a factor x2j after reordering and vanish; the n!
+permutations carry sgn(σ)Ω. Hence the product equals det(B)Ω. With B = BA this yields
+items (i)–(iii) of Theorem 1.1.
+    Step 3: sizes of the expanded forms (Section 6). The degree and the valuation of DA are
+obtained from the lexicographic rule of Step 1. The dense vector of coefficients has length
+     2
+> 2n −1 , the sparse list of exponents        has at least n!(n2 − n + 1) bits, and the intermediate
+                                   n        n
+                                       
+exterior layers have up to ⌊n/2⌋ ≥ 2 /(n + 1) coordinates. This is why a circuit, and not an
+expansion, is needed.
+                                                                                                  r
+    Step 4: the determinantal circuit (Section 7). The markers z wij are all powers z 2 and are
+produced by n2 − 1 successive squarings. The determinant is then computed by the Faddeev–
+LeVerrier recurrence with an explicit gate count. A gate counts once regardless of the number
+of monomials of the polynomial it computes.
+    Step 5: extraction and the rectangular extension (Sections 8 and 9). The coefficient of DA
+at a prescribed address e is obtained in polynomial time by decoding e. Replacing the last
+                                                               (r)
+n − r rows by Vandermonde rows yields polynomials DA on injections [r] ,→ [n], with explicit
+nonzero coefficients.
+
+
+                                                     6
+                                                   P 10). If column j carries an integer dj , then
+    Step 6: isochrony and spectral collapse (Section
+every permutation     has  the same   total D ∗ =
+                   P                                 j dj . The NTT groups assignments by their
+frequency Ds = i dsi modulo N ; after the filter of Step 2 only permutations remain, all in
+the class D∗ , so the output sits in a single slot.
+    Step 7: polynomial circuits for the spectral layer (Section 11). The top-degree component
+                    ∗
+Ψn [f ] equals ω f D det(B)Ω; hence the transform layer can be computed by N determinants,
+without materializing the exponentially large intermediate elements Ψi [f ].
+    Step 8: the sign corrector and the double orientation (Sections 12, 13 and 15). The signs of
+the coefficients of DA are the signatures of the decoded permutations. I define the diagonal
+corrector Cn , prove
+                  P thate it is computable monomial by monomial in polynomial time, that
+it maps DA to e |ce |z , and that it is not compatible with products. I then show that the
+correction is realized algebraically by doubling the orientation: replacing each xj by the even
+element qj = xj yj keeps qj2 = 0, makes the generators commute, and gathers all the signs into
+the single constant γn = (−1)n(n−1)/2 ; an explicit circuit of 4n2 + n − 2 gates over the enlarged
+algebra computes the product, with at most one further gate for the global sign. The price is
+that this count is algebra-valued: the determinantal identity of Step 4 is no longer available
+and the natural scalar compilation is exponential. The circuit complexity of the resulting top
+coefficient, equivalently of Cn (DA ), is Conjecture 1.5; under this conjecture I prove Theorem 1.6.
+    Step 9: the central-coefficient encoding (Section 14). I pair two determinants, with labels
+rij that separate the permutations; the two signatures then cancel on the coefficient of one
+degree in the new variable t. With the base-n labels rij = (j − 1)ni−1 the second determinant
+is a Vandermonde product, the central index is K = nn − 1, and PA = [tK ]H         b A for an explicit
+polynomial H                              4
+              b A with a circuit of O(n ) gates. The conjecture is thereby reduced, exactly, to
+the polynomial-size computation of this central coefficient.
+   The following complete computation for n = 2 contains the two mechanisms of the paper,
+and I come back to it throughout. The addresses are w11 = 1, w12 = 2, w21 = 4, w22 = 8, hence
+
+                            p11 z p12 z 2
+                                           
+                BA (z) =                      , DA (z) = p11 p22 z 9 − p12 p21 z 6 .
+                            p21 z 4 p22 z 8
+
+The four assignments (s1 , s2 ) have exponents E(1, 1) = w11 + w21 = 5, E(1, 2) = w11 + w22 = 9,
+E(2, 1) = w12 + w21 = 6, E(2, 2) = w12 + w22 = 10. Thus supp DA = {6, 9} and the collision
+addresses 5, 10 are absent. In Λ, with L1 = p11 zx1 + p12 z 2 x2 and L2 = p21 z 4 x1 + p22 z 8 x2 ,
+
+       L1 L2 = p11 p21 z 5 x21 + p11 p22 z 9 x1 x2 + p12 p21 z 6 x2 x1 + p12 p22 z 10 x22 = DA (z) x1 x2 ,
+
+since x21 = x22 = 0 and x2 x1 = −x1 x2 . Now take K = Q, N = 2, ω = −1 (exact order 2), and
+(d1 , d2 ) = (0, 1), so D∗ = 1. Write Mij = Bij xj . Then Ai [f ] = Mi1 + (−1)f Mi2 , and
+
+           Ψ2 [0] = (M11 + M12 )(M21 + M22 ),       Ψ2 [1] = (M11 − M12 )(M21 − M22 ),
+
+        T [0] = 21 Ψ2 [0] + Ψ2 [1] = M11 M21 + M12 M22 = p11 p21 z 5 x21 + p12 p22 z 10 x22 = 0,
+                                  
+
+                  T [1] = 21 Ψ2 [0] − Ψ2 [1] = M11 M22 + M12 M21 = DA (z) x1 x2 .
+                                            
+
+The collisions (1, 1) and (2, 2) have frequencies 2d1 = 0 and 2d2 = 2, both in class 0; the
+permutations (1, 2) and (2, 1) have frequency d1 + d2 = 1. Without the exterior relations T [0]
+would not vanish; with them, slot 0 is empty and slot 1 holds DA Ω. The remaining object of the
+
+
+                                                       7
+paper is the sign in DA = p11 p22 z 9 − p12 p21 z 6 : the corrector C2 turns it into p11 p22 z 9 + p12 p21 z 6 ,
+and the double orientation produces the same polynomial with the uniform sign γ2 = −1.
+    The correspondence between statements and proofs is as follows. Theorem 1.1 (i)–(iii) follows
+from Corollary 4.2 and Proposition 5.5; (iv) from Proposition 4.4 and Proposition 6.1; (v) and
+(vi) from Propositions 7.3, 7.4 and 7.6. Theorem 1.2 is proved in Section 10, Theorem 1.3
+in Section 11, Theorem 1.4 in Section 13, Theorem 1.7 in Section 14, and Theorem 1.6 in
+Section 15.
+
+
+3      Conventions and notation
+     N = {0, 1, 2, . . . } and [m] = {1, . . . , m}. An assignment is a map s : [n] → [n]; it is a
+      collision assignment if it is not injective. The set of assignments has nn elements and Sn
+      is the set of bijective ones.
+
+     For σ ∈ Sn , inv(σ) = #{(a, b) : a < b, σ(a) > σ(b)} and sgn(σ) = (−1)inv(σ) . I use
+      the standard fact that if σ(a) > σ(a + 1) for some a, then τ = σ ◦ (a a+1) satisfies
+      inv(τ ) = inv(σ) − 1, and that σ ̸= id has such an index a.
+
+     A = (aij ) ∈ Qn×n , L is the total binary length of the numerators and denominators of the
+      aij , pij = 1+a2ij and wij = 2(i−1)n+j−1 . If aij = u/v in lowest terms then pij = (u2 +v 2 )/v 2 ,
+      whose numerator and denominator have together at most 2(len(u) + len(v)) + 2 bits; hence
+      the total length of the pij is at most 2L + O(n2 ).
+
+     For a polynomial f ∈ K[z], supp f is the set of exponents of its nonzero monomials, degz f
+      its degree, ordz f its valuation and [z e ]f the coefficient of z e .
+
+     An arithmetic circuit over a field K is a finite directed acyclic graph whose sources (leaves)
+      are labelled by the variable z or by elements of K, and whose other nodes (gates) have
+      fan-in two and are labelled + or ×. Each node computes a polynomial of K[z] in the
+      obvious way. The size is the number of gates. A multiplication by a constant, a subtraction
+      and a negation each cost one gate. A gate is a pointer to two earlier nodes; it does not
+      store the monomial expansion of the polynomial it computes (see [7, 8] for the standard
+      framework).
+
+     All rings are commutative with unit, except the exterior algebras of Section 5, which are
+      graded-commutative.
+
+
+4      Binary addresses
+This section proves Theorem 1.1 (ii) and the structural facts about E that all later sections use.
+For i ∈ [n] let
+
+        Ii = {(i − 1)n, (i − 1)n + 1, . . . , in − 1},         βi (j) = (i − 1)n + j − 1     (j ∈ [n]),
+
+so that wij = 2βi (j) .
+
+Lemma 4.1 (Block decomposition). (a) The sets I1 , . . . , In are pairwise disjoint and their
+   union is {0, 1, . . . , n2 − 1}.
+
+                                                       8
+ (b) For each i, j 7→ βi (j) is a bijection from [n] onto Ii .
+                                            Pn       βi (si ) , and the binary expansion of E(s) has
+ (c) For every assignment s, E(s) =            i=1 2
+     exactly one digit 1 in each block Ii , at position βi (si ), and no other digit 1. In particular
+                    2
+     0 < E(s) < 2n .
+
+Proof. (a) Ii consists of the n consecutive integers from (i − 1)n to in − 1, so I1 , . . . , In tile
+{0, . . . , n2 − 1} in order. (b) j 7→ (i − 1)n  P + j − 1P   is strictly increasing from [n] to Ii and
+|Ii | = n = |[n]|. (c) By definition E(s) = i wi,si = i 2βi (si ) . By (b), βi (si ) ∈ Ii , and by (a)
+the n exponents β1 (s1 ), . . . , βn (sn ) are pairwise distinct. A sum of pairwise distinct powers of
+2 has, by uniqueness of the binary expansion, digit 1 exactly at those exponents. All exponents
+                                       2
+are at most n2 − 1, so E(s) < 2n .
+
+Corollary 4.2 (Injectivity and image). (a) E(s) = E(t) ⇒ s = t for all assignments s, t.
+                                                                         2
+ (b) An integer e ∈ N is of the form E(s) if and only if e < 2n and its binary expansion
+     has exactly one digit 1 in each block Ii ; the assignment is then unique, s = dec(e), and
+     si = 1 + pi − (i − 1)n where pi is the position of the digit 1 in Ii .
+
+ (c) e ∈ E(Sn ) if and only if e is in the image of E and dec(e) is bijective. In particular, if
+     s∈/ Sn and σ ∈ Sn then E(s) ̸= E(σ).
+
+Proof. (a) If E(s) = E(t), the binary expansions coincide, hence for each i the unique digit 1
+in Ii gives βi (si ) = βi (ti ), so si = ti since βi is injective. (b) The necessity is Lemma 4.1 (c).
+                        2
+Conversely, if e < 2n has exactly one digit 1 in each block, at positions pi ∈ Ii , put si = 1 +
+pi − (i − 1)n ∈ [n]; then βi (si ) = pi and E(s) = e. Uniqueness is (a). (c) follows from (a) and
+(b).
+
+    The next lemma compares two addresses.
+
+Lemma 4.3 (Order of addresses). Let s ̸= t be assignments and let i0 = max{i : si ̸= ti }.
+Then E(s) < E(t) if and only if si0 < ti0 .
+
+Proof. Write E(s) = H + 2βi0 (si0 ) + Λs and E(t) = H + 2βi0 (ti0 ) + Λt , where H = i>i0 2βi (si )
+                                                                                      P
+
+is common (the indices above i0 agree), and Λs = i<i0 2βi (si ) , Λt likewise. All exponents
+                                                             P
+
+in Λs , Λt are at most (i0 − 1)n − 1 so Λs , Λt < 2(i0 −1)n ≤ 2βi0 (j) for every j ∈ [n]. Suppose
+si0 < ti0 , and put b = βi0 (si0 ), so that βi0 (ti0 ) ≥ b + 1. Then
+
+            E(s) = H + 2b + Λs < H + 2b + 2b = H + 2b+1 ≤ H + 2βi0 (ti0 ) ≤ E(t).
+
+The case si0 > ti0 is symmetric, and since E(s) ̸= E(t) the equivalence follows.
+
+    Let id be the identity permutation and w0 (i) = n + 1 − i the reversal.
+
+Proposition 4.4 (Extremal permutations). For every σ ∈ Sn , E(σ) ≤ E(id) and E(σ) ≥
+E(w0 ), with equality only for σ = id, resp. σ = w0 . Moreover
+                            n−1                                          n
+                            X                 2n(n+1) − 1                X
+                  E(id) =         2r(n+1) =               ,   E(w0 ) =         2i(n−1) .
+                                               2n+1 − 1
+                            r=0                                          i=1
+
+
+
+
+                                                     9
+Proof. Maximum. Let σ maximize E on Sn . I show by induction on m ∈ [n] that σ(n − l +
+1) = n − l + 1 for l = 1, . . . , m. Suppose this holds for l < m (nothing is assumed for m = 1).
+Then the values n, n − 1, . . . , n − m + 2 sit at positions n, . . . , n − m + 2, so the values available
+for positions 1, . . . , n − m + 1 are exactly 1, . . . , n − m + 1, and σ(n − m + 1) ≤ n − m + 1. If
+σ(n − m + 1) < n − m + 1, let τ be obtained from σ by exchanging the value σ(n − m + 1) with
+the value n − m + 1 (the latter sits at some position k < n − m + 1). Then τ and σ agree at
+all positions above n − m + 1, and τ (n − m + 1) = n − m + 1 > σ(n − m + 1); by Lemma 4.3,
+E(τ ) > E(σ), contradicting maximality. Hence σ(n − m + 1) = n − m + 1. After m = n steps,
+σ = id, which is therefore the unique maximizer.
+    Minimum. The same argument with inequalities reversed forces σ(n) = 1, then σ(n − 1) = 2,
+and so on, i.e. σ(i) =P    n + 1 − i; w0 is theP
+                                               unique minimizer.
+    Values. E(id) = ni=1 2(i−1)n+i−1 = n−1       r=0 2
+                                                          r(n+1) , a geometric sum of ratio 2n+1 with n
+
+terms. For w0 , βi (n + 1 − i) = (i − 1)n + n − i = in − i = i(n − 1).
+
+
+5    The exterior-algebra filter
+Let R be a commutative ring with unit and let Λ = ΛR (x1 , . . . , xn ) be the R-algebra generated
+by x1 , . . . , xn subject to the relations
+                           x2i = 0 (i ∈ [n]),      xi xj + xj xi = 0 (i ̸= j).                        (1)
+I use the following standard facts [2]: Λ is a free R-module with basis the products xI = xi1 · · · xik
+(I = {i1 < · · · < ik } ⊆ [n], with x∅ = 1); it is graded by k; its top component Λn = R Ω is free
+of rank one on Ω = x1 · · · xn ; and elements of R are central. In all applications R = K[z] for a
+field K.
+Lemma 5.1 (Anticommutation). For all i, j ∈ [n], xi xj = −xj xi .
+Proof. For i ̸= j this is (1). For i = j both sides are 0 since x2i = 0.
+Lemma 5.2 (A collision annihilates). If s : [n] → [n] is not injective, then xs1 xs2 · · · xsn = 0
+in Λ.
+Proof. Since s is not injective, there are positions a < b with sa = sb =: j. The letters between
+positions a and b may be arbitrary. Move the letter xsb = xj leftwards past the b − a − 1 letters
+between the two occurrences, by as many adjacent transpositions; each multiplies the word
+by −1 by Lemma 5.1. The word becomes ± a word in which xsa xj = x2j = 0 appear adjacent,
+hence the word is 0.
+Lemma 5.3 (A permutation gives its signature). For every σ ∈ Sn , xσ(1) · · · xσ(n) = sgn(σ) Ω.
+Proof. Induction on inv(σ). If inv(σ) = 0 then σ = id and the word is Ω. If inv(σ) > 0 choose
+a with σ(a) > σ(a + 1) and τ = σ ◦ (a a+1), so inv(τ ) = inv(σ) − 1. The word of σ is obtained
+from that of τ by exchanging two adjacent letters, hence equals − the word of τ by Lemma 5.1.
+By induction it equals − sgn(τ )Ω = sgn(σ)Ω.
+Proposition 5.4 (Top-degree coefficient). For every commutative ring R and every M ∈ Rn×n ,
+in ΛR one has, for the ordered product over i = 1, . . . , n,
+                                Yn X n        
+                                         Mij xj = det(M ) Ω.
+                                    i=1   j=1
+
+
+                                                   10
+Proof. Distributing the product, and using that the Mij ∈ R are central,
+                         n X
+                         Y                          X          n
+                                                               Y         
+                                       Mij xj =                      Mi,si xs1 · · · xsn .
+                         i=1   j                   s:[n]→[n]   i=1
+
+
+                                                          P or a permutation.
+Split the sum according to whether s is a collision assignment       Q        By Lemma 5.2
+the former terms vanish. By Lemma 5.3 the latter give σ∈Sn sgn(σ) i Mi,σ(i) Ω = det(M )Ω
+(Leibniz formula).
+                                                                           P
+P Apply      this to R = K[z] (K = Q here) and M = BA (z). Put Li =
+         wij x .
+                                                                              j BA (z)ij xj =
+    p
+  j ij z      j
+
+                                           n
+                                           Y
+Proposition 5.5 (Filter identity).               Li = DA (z) Ω, and before the relations (1) are imposed
+                                           i=1
+the nn terms of the expansion sit at the nn pairwise distinct addresses z E(s) , of which nn − n!
+belong to collision assignments and are annihilated.
+
+Proof.
+P QThe identity  E(s) is Proposition 5.4Qwith          M = BA (z). The expansion of the product is
+                                                     wi,si
+  s    i pi,s i  z    x s 1 · · · xs n , because i z       = z E(s) . By Corollary 4.2 (a) the exponents
+                                               n
+E(s) are pairwise distinct over all n assignments. The number of collision assignments is
+nn − n!.
+
+Proof of Theorem 1.1 (i)–(iii). (i). Leibniz gives
+                    X             Y                        X       Y         P
+             DA =        sgn(σ)          pi,σ(i) z wi,σ(i) =  sgn(σ)   pi,σ(i) z i wi,σ(i) ,
+                     σ             i                           σ               i
+    P
+and i wi,σ(i) = E(σ).
+    (ii) is Corollary 4.2 (a).
+    (iii). By (ii), the map σ 7→ E(σ) is injective on Sn , so in the sum of (i) distinct permutations
+give distinct   monomials and no two terms combine. The coefficient of z E(σ) is therefore
+sgn(σ) i pi,σ(i) , which is nonzero because each pij = 1 + a2ij ≥ 1 > 0. Hence supp DA = {E(σ) :
+        Q
+                                       / Sn , then E(s) ̸= E(σ) for all σ ∈ Sn by Corollary 4.2 (c),
+σ ∈ Sn }, a set with n! elements. If s ∈
+so z E(s) does not occur in DA .
+
+Remark 5.6 (Keeping the amplitudes). The positivity pij > 0 is used only to guarantee that
+no coefficient vanishes. For an arbitrary matrix QB ∈ K n×n with entries bij z wij , the expansion
+of (i) holds unchanged, and supp det = {E(σ) : i bi,σ(i) ≠ 0}, because distinct permutations
+still have distinct exponents. Thus one may take pij = aij and keep the amplitudes, and a
+permutation using a cell with aij = 0 is simply absent fromQthe support. The same holds
+modulo a prime Q: the reduction of DA has support {E(σ) : i p̄i,σ(i) ̸= 0 in FQ }, which may
+be strictly smaller than {E(σ)} if some p̄ij = 0.
+
+
+6    Degree, valuation and sizes of expanded forms
+This section proves Theorem 1.1 (iv) and quantifies why an expanded representation of DA is
+out of reach.
+
+
+                                                        11
+Proposition 6.1 (Degree and valuation). For every A ∈ Qn×n , DA ̸= 0,
+                                      n−1
+                                      X                                           n
+                                                                                  X
+              degz DA = E(id) =             2r(n+1) ,        ordz DA = E(w0 ) =         2i(n−1) ,
+                                      r=0                                         i=1
+
+                                      > 0, the lowest coefficient is (−1)n(n−1)/2
+                             Q                                                              Q
+the leading coefficient is    i pii                                                            i pi,n+1−i , and
+  2                    2
+2n −1 ≤ degz DA < 2n .
+
+Proof. By Theorem 1.1 (iii) the support is E(Sn ) with nonzero coefficients, so DA ̸= 0 and its
+degree and valuation are the maximumQand minimum of EQon Sn , given by Proposition 4.4. The
+corresponding coefficients are sgn(id) i pii and sgn(w0 ) i pi,n+1−i , and inv(w0 ) = n(n − 1)/2
+                                                                    2
+since every pair a < b is inverted. Finally E(id) ≥ 2(n−1)(n+1) = 2n −1 since the term r = n − 1
+                            2
+is present, and E(id) < 2n by Lemma 4.1 (c).
+
+    This proves Theorem 1.1 (iv). It follows that
+
+                                             log2 (degz DA + 1)
+                                      lim                       = 1,
+                                      n→∞             n2
+                                                                   2
+so a dense coefficient vector of DA has length at least 2n −1 + 1.
+
+Proposition 6.2 (Sparse representation). Any list of the exponents of the n! monomials of
+DA , each written in binary without compression, needs
+
+    Ssparse (n) ≥ n! (n2 − n + 1) bits,            log2 Ssparse (n) ≥ n log2 n − (log2 e) n + log2 e,
+
+hence lim inf n→∞ log2 Ssparse (n)/(n log2 n) ≥ 1.
+
+Proof. Each E(σ) has a digit 1 in the block In , at position ≥ (n − 1)n = n2 − n, hence
+           2
+E(σ) ≥ 2n −n and its binary expansion has at least n2 − n + 1 digits; there are n! exponents, all
+                                                              Rk
+distinct. For the estimate on n!: ln is increasing, so ln k ≥ k−1 ln x dx for k ≥ 2, and summing,
+        Rn
+ln n! ≥ 1 ln x dx = n ln n − n + 1, i.e. n! ≥ e (n/e)n . Taking log2 and using n2 − n + 1 ≥ 1
+gives the stated bound.
+
+Proposition 6.3 (Exterior layers). Λk (V ) has rank nk , and ⌊n/2⌋   n
+                                                                          ≥ 2n /(n + 1).
+                                                                       
+
+Proof. The rank is the number    of increasing sequences i1 < · · · < ik in [n]. Since 2n =
+P  n    n                   n
+                             
+   k=0 k ≤ (n + 1) maxk k and the maximum is attained at k = ⌊n/2⌋, the bound follows.
+                                √                     n
+                                                                p
+     By Stirling’s formula, n! ∼ 2πn (n/e)n and ⌊n/2⌋      ∼ 2n 2/(πn), which refines the two
+                                                         
+
+bounds above. The upshot is that neither the dense form, nor the sparse form, nor the exterior
+layers can be materialized in polynomial space; the circuit of the next section materializes none
+of them.
+
+
+7    The determinantal circuit
+This section proves Theorem 1.1 (v) and (vi). The Faddeev–LeVerrier, Csanky and Berkowitz
+methods are classical [3, 5, 6, 4]; I include complete proofs because the gate count is explicit
+and the identity det = (−1)n cn is used with a specific sign normalization.
+
+                                                        12
+                                                                                                           r
+Lemma 7.1 (Markers by successive squaring). Let Z0 = z and Zr+1 = Zr × Zr . Then Zr = z 2 ,
+and the n2 − 1 gates Z1 , . . . , Zn2 −1 provide every marker z wij = Zβi (j) , βi (j) ∈ {0, . . . , n2 − 1}.
+The n2 entries BA (z)ij = pij · Zβi (j) cost n2 further gates.
+                     r        r+1
+Proof. Zr+1 = (z 2 )2 = z 2      by induction. By Lemma 4.1, βi (j) ranges over {0, . . . , n2 − 1}
+               β (j)                                                  2
+and z wij = z 2 i = Zβi (j) ; Z0 = z is a leaf. No exponent of size 2n −1 is ever written in unary:
+the chain has length n2 − 1.
+
+                                                                     P(for example K[z] with
+   Let R be a commutative ring in which 1, 2, . . . , n are invertible
+char K = 0 or > n), and let M ∈ Rn×n . Put h(t) = det(I − tM ) = nk=0 hk tk with h0 = 1.
+Lemma 7.2 (Newton-type identity). For 1 ≤ k ≤ n, k hk = − k−1                   k−j ).
+                                                                 P
+                                                                    j=0 hj tr(M
+
+Proof. In R[[t]], N (t) := I − tM is invertible with inverse m≥0 tm M m , since
+                                                            P
+
+                                              X
+                                    (I − tM )     tm M m = I.
+                                                  m≥0
+
+Jacobi’s formula
+                                    d
+                                       det N = det N · tr(N −1 N ′ )
+                                    dt
+                                                                        d
+                                                                          det N = i det N [i] , where
+                                                                                   P
+holds over any commutative ring. Indeed, the product rule gives dt
+N [i] is N with its i-th row replaced by the derivative Ni′ . Expanding along that row,
+                                    X                           X
+                        det N [i] =    Nij′ cof ij (N ) = det N   Nij′ (N −1 )ji .
+                                      j                            j
+
+Summing over i gives det N tr(N ′ N −1 ) = det N tr(N −1 N ′ ). Here N ′ = −M , so
+                                                  X          X                 
+          h′ (t) = −h(t) tr (I − tM )−1 M = −          hj tj         tr(M m+1 ) tm .
+                                            
+
+                                                            j≥0         m≥0
+                                                                        Pk−1
+The coefficient of tk−1 on the left is k hk ; on the right it is −           j=0 hj tr(M
+                                                                                           k−j ), where m =
+
+k − 1 − j and M m+1 = M k−j .
+
+    Define the recurrence
+                                                    tr(Tk )
+       H0 = I,       Tk = M Hk−1 ,         ck = −           ,     Hk = Tk + ck I        (1 ≤ k ≤ n).      (2)
+                                                       k
+                                                                                   Pk           k−j , and for
+Proposition 7.3 (Faddeev–LeVerrier invariant). For 0 ≤ k ≤ n, Hk =                   j=0 hj M
+1 ≤ k ≤ n, ck = hk . Moreover hn = (−1)n det M , hence
+                                                          (−1)n+1
+                                 det M = (−1)n cn =               tr(Tn ).
+                                                             n
+                                                                              Pk−1
+Proof. Induction on k. For k = 0, H0 = I = h0 M 0 . Suppose Hk−1 =             j=0 hj M
+                                                                                        k−1−j .
+
+Then Tk = M Hk−1 = k−1             k−j and, by linearity of the trace and Lemma 7.2, tr(T ) =
+                       P
+                         j=0 hj M                                                        k
+Pk−1          k−j
+                                                                               Pk
+  j=0 hj tr(M     ) = −k hk . Hence ck = − tr(T
+                                            P k )/k = hk Q and Hk = Tk + hk I = j=0 hj M k−j .
+For the last claim, expand det(I − tM ) = π∈Sn sgn(π) i (δiπ(i) − tMiπ(i) ). Each factor has
+degreeP≤ 1 in t,Q so the coefficient of tn comes only from choosing −tMiπ(i) in every factor:
+hn = π sgn(π) i (−Miπ(i) ) = det(−M ) = (−1)n det M .
+
+                                                     13
+Proposition 7.4 (Exact gate count). Let M ∈ Rn×n be given by n2 nodes. The circuit (2),
+with the last scaling replaced by multiplication by the constant (−1)n+1 /n so as to output det M
+directly, has at most 2n4 − n3 + 2n2 gates. Consequently the circuit CA consisting of the markers
+of Lemma 7.1, the entries pij Zβi (j) and this recurrence has
+
+                G(n) ≤ (n2 − 1) + n2 + (2n4 − n3 + 2n2 ) = 2n4 − n3 + 4n2 − 1
+
+gates, and G(n) < 3n4 for n ≥ 2.
+
+Proof. A naive product of two n × n matrices computes n2 entries, each with n multiplications
+and n − 1 additions, i.e. 2n − 1 gates, for a total of n2 (2n − 1) = 2n3 − n2 gates. At iteration k:
+Tk = M Hk−1 costs 2n3 − n2 ; tr(Tk ) costs n − 1 additions; multiplication by the constant −1/k
+costs 1; Hk = Tk + ck I changes only the n diagonal entries and costs n. Hence ≤ 2n3 − n2 + 2n
+gates per iteration. The last iteration does not compute Hn , and uses the constant (−1)n+1 /n
+instead of −1/n, which saves the factor (−1)n at no cost. Over n iterations the total is at most
+n(2n3 − n2 + 2n) = 2n4 − n3 + 2n2 . Adding the markers (n2 − 1 gates, Lemma 7.1) and the
+entries (n2 gates) gives the bound. Finally
+
+                3n4 − (2n4 − n3 + 4n2 − 1) = n4 + n3 − 4n2 + 1 > 0        (n ≥ 2),
+
+since it equals 16 + 8 − 16 + 1 = 9 at n = 2 and is increasing for n ≥ 2 (its derivative
+4n3 + 3n2 − 8n is positive).
+
+    By Proposition 7.3 with R = Q[z] and M = BA (z), CA computes DA . This proves
+Theorem 1.1 (v). Moreover the limit G(n)/n4 → 2 shows that the constant 2 is the one of the
+naive matrix product chosen here; a faster matrix product would lower the exponent but is not
+needed.
+
+Proposition 7.5 (Syntactic compactness). Let Cr be the circuit consisting of the first r
+gates of CA in topological order. Then |V (Cr+1 )| = |V (Cr )| + 1 and, for every r ≤ G(n),
+|V (Cr )| = O(n4 ), independently of | supp poly(v)| for any node v. The final node computes a
+polynomial with exactly n! monomials, yet |V (CA )| < 3n4 + n2 + n + 2.
+
+Proof. Each step adds exactly one gate. For a product gate v = u × w, the polynomial is
+poly(u)poly(w), which may have up to | supp poly(u)| · | supp poly(w)| monomials, but the gate
+is stored as the triple (×, id(u), id(w)); no convolution of monomial lists is performed. The
+number of leaves is at most 1 + n2 + n + 1 (z, the pij , the constants (−1)n+1 /n and −1/k,
+1 ≤ k ≤ n − 1, and the constant 1).
+
+Proposition 7.6 (Binary encoding). For n ≥ 2, the circuit CA has a binary encoding of length
+bits(CA ) = O(L + n4 log n).
+
+Proof. The circuit has fewer than 3n4 gates and at most n2 + n + 2 leaves, so at most
+3n4 + n2 + n + 2 ≤ 4n4 nodes for n ≥ 2 (as n2 + n + 2 ≤ n4 for n ≥ 2). A node identifier
+needs at most ⌈log2 (4n4 )⌉ ≤ 2 + 4⌈log2 n⌉ bits. Each gate is encoded by one bit for its
+type and two identifiers, for O(n4 log n) bits in total. The constants pij have total length
+≤          2                                         n+1
+P2L + O(n ) (Section 3); the constants 1/k and (−1)2 /n have length      O(log k) each and total
+                                                                 4 log n) = O(L+n4 log n).
+  k≤n O(log  k) = O(n log n). Summing  gives O(L+n   +n  log n+n
+
+
+
+                                                14
+  This proves Theorem 1.1 (vi) and completes the proof of Theorem 1.1. Comparing orders of
+magnitude,
+                                       log2 bits(CA ) = O(log L + log n),
+                   log2 Ssparse (n) = Θ(n log n),                 log2 (degz DA + 1) = Θ(n2 ),
+so CA is a syntactically compact representation of a polynomial whose natural expanded
+representations are exponentially larger.
+
+
+8      Coefficient extraction at a prescribed address
+Proposition 8.1 (Polynomial-time extraction). Given A ∈ Qn×n of total length L and an
+integer e ≥0 in binary with |e| digits, the coefficient [z e ]DA can be computed in O |e|+n2 log n+
+n(L + n2 )2 bit operations, and is 0 unless e ∈ E(Sn ). In particular      the extraction is polynomial
+                                                          e
+                                                                    Q
+in L + n + |e|, and in the same time one obtains [z ]DA = i pi,σ(i) when e = E(σ).
+Proof. The algorithm has five steps.
+                                                2
+    1. If |e| > n2 , return 0: then e ≥ 2n > E(s) for all s, so e is not an address (Lemma 4.1 (c)).
+       Cost O(|e|).
+    2. Otherwise pad e to n2 bits and, for each block Ii , count the digits 1; if some block does
+       not contain exactly one, return 0 (Corollary 4.2 (b)). Cost O(n2 ).
+    3. Decode si = 1 + pi − (i − 1)n for each i (pi the position of the unique digit 1 in Ii ); then
+       E(s) = e (Corollary 4.2 (b)).
+    4. Test injectivity of s by comparing all pairs: O(n2 log n) bit operations, the entries being
+       ≤ n. If s has a repeated value, return 0 (Corollary 4.2 (c)).
+    5. Otherwise Q s = σ ∈ Sn ; compute inv(σ) by comparing all pairs in O(n2 log n) opera-
+       tions, and i pi,σ(i) by n − 1 schoolbook multiplications of rationals stored as numera-
+       tor/denominator pairs, not necessarily reduced. The bit lengths add under multiplication,
+       so the operands never exceed i,j len(pij ) ≤ 2L+O(n2 ) bits, and the cost is O n(L+n2 )2 .
+                                     P                                                         
+
+       Return (−1)inv(σ) i pi,σ(i) .
+                         Q
+
+Correctness: by QTheorem 1.1 (iii) and Corollary 4.2, [z e ]DA = 0 unless e = E(σ), and then
+[z e ]DA = sgn(σ) i pi,σ(i) , which is what steps 2–5 return.
+
+
+9      The rectangular extension
+                                                                                         (r)
+Fix 1 ≤ r ≤ n. Consider the n × n matrix M (r) whose first r rows are Mij = pij z wij (1 ≤ i ≤ r)
+and whose last n − r rows are the constant Vandermonde rows
+                                        (r)
+                                     Mr+h,j = j h−1              (1 ≤ h ≤ n − r).
+        (r)                                                                                       (n)
+Put DA (z) = det M (r) . For r = n there are no Vandermonde rows and DA = DA . Let
+Inj(n, r) be the set of injections s : [r] → [n] and, for s ∈ Inj(n, r),
+                           r
+                           X
+                Er (s) =         wi,s(i) ,    S = s([r]),        T = [n] \ S = {t1 < · · · < tn−r },
+                           i=1
+
+
+                                                            15
+                    πs = (s(1), . . . , s(r), t1 , . . . , tn−r ) ∈ Sn ,            ε(s) = sgn(πs ).
+Lemma 9.1 (Vandermonde).   For m ≥ 0 and elements t1 , . . . , tm of a commutative ring,
+     h−1          Q
+det tℓ   1≤h,ℓ≤m
+                 = 1≤u<v≤m (tv − tu ), the empty determinant and the empty product being
+1.
+Proof. For m ≤ 1 both sides are 1. For m ≥ 2 proceed by induction. For h = m, m − 1, . . . , 2
+in this order, replace row h by (row h) − t1 ·(row h − 1); this does not change the determinant.
+The new entry in row h ≥ 2, column ℓ is th−1        ℓ   − t1 th−2
+                                                              ℓ   = th−2
+                                                                     ℓ   (tℓ − t1 ), and column 1 becomes
+                 T
+(1, 0, . . . , 0) . Expanding along column 1 leaves the (m − 1) × (m − 1) determinant with entries
+th−2
+ ℓ    (tℓ − t1 ), 2 ≤ h, ℓ ≤ m.QFactor (tℓ − tQ  1 ) out of column ℓ and apply the induction hypothesis
+to t2 , . . . , tm : the result is ℓ≥2 (tℓ − t1 ) 2≤u<v (tv − tu ).
+
+Lemma 9.2 (Injectivity on partial assignments). For s, s′ ∈ Inj(n, r), Er (s) = Er (s′ ) ⇒ s = s′ .
+Proof. Er (s) = i≤r 2βi (si ) with βi (si ) ∈ Ii pairwise distinct; its binary expansion has its digits
+                  P
+1 exactly at these positions, one in each of the blocks I1 , . . . , Ir . Equality of the expansions
+gives βi (si ) = βi (s′i ) for i ≤ r.
+
+Proposition 9.3 (Coefficients of the rectangular polynomial).
+                                                     r
+                                                    Y                               
+                     (r)
+                                     X                                    Y
+                    DA (z) =                    ε(s)   pi,s(i)                  (v − u) z Er (s) ,
+                                   s∈Inj(n,r)        i=1                  u<v
+                                                                        u,v∈T (s)
+
+the exponents Er (s) are pairwise distinct, every coefficient is nonzero, and therefore
+
+                          (r)                                                          (r)      n!
+                 supp DA = {Er (s) : s ∈ Inj(n, r)},                     # supp DA =                  .
+                                                                                             (n − r)!
+
+The sign of the coefficient at z Er (s) is ε(s). For r = n this is Theorem 1.1 (i).
+                                                     (r)   P           Q              wiπ(i) Qn−r
+Proof. Leibniz expansion over π ∈ Sn gives DA =               π sgn(π)   i≤r piπ(i) z         h=1 π(r +
+   h−1
+h) . Group the permutations by the injection s = π|[r] . For fixed s, the permutations π with
+π|[r] = s are exactly those with π(r + h) = tρ(h) for a unique ρ ∈ Sn−r ; that is, π = πs ◦ ρ̃ where
+ρ̃ ∈ Sn fixes 1, . . . , r and maps r + h 7→ r + ρ(h). Indeed πs (ρ̃(r + h)) = πs (r + ρ(h)) = tρ(h) .
+Thus sgn(π) = ε(s) sgn(ρ) and the contribution of s is
+                                    Y                 X        n−r
+                                                                 Y
+                                                                      h−1
+                                ε(s)   pi,s(i) z Er (s)   sgn(ρ)     tρ(h) .
+                                      i≤r                  ρ∈Sn−r              h=1
+
+                                                                h−1
+                                                                    
+The inner sum is the Leibniz expansion of det tℓ      h,ℓ
+                                                           (the h-th row, ℓ = ρ(h)), which equals
+Q
+  u<v (tv − tu ) by Lemma 9.1. By Lemma 9.2, different injections give different exponents, so
+there is no cancellation between groups. Each coefficient is nonzero: pij > 0, ε(s) = ±1, and
+the t’s are distinct integers, so every factor v − u with u < v in T is a positive integer; the
+empty product (r ∈ {n − 1, n}) is 1. The number of injections [r] → [n] is n!/(n − r)!.
+                                 (r)                   (r)
+Proposition 9.4 (Degree of DA and circuit). degz DA = ri=1 2(i−1)n+(n−r+i)−1 , attained at
+                                                              P
+                                     (r)
+s(i) = n − r + i. The polynomial DA is computed by an arithmetic      circuit over Q with at most
+   4    3       2                                        4
+                                                                
+2n − n + 4n − 1 gates and of binary length O L + n log n , for every n ≥ 2 and 1 ≤ r ≤ n.
+
+                                                           16
+Proof. By Lemma 4.3 applied to the blocks Ir , . . . , I1 in turn, the maximum of Er on injections
+is attained by s(r) = n, then s(r − 1) = n − 1, and so on, exactly as in Proposition 4.4; this
+gives s(i) = n − r + i and βi (s(i)) = (i − 1)n + (n − r + i) − 1. For the circuit, take the circuit of
+Section 7 for the matrix M (r) : the markers for rows 1, . . . , r are among Z1 , . . . , Zn2 −1 , the first
+r rows cost rn ≤ n2 gates, the last n − r rows are integer constants (leaves), and Proposition 7.3
+applies with R = Q[z]. The gate count is bounded as in Proposition 7.4. The constants
+j h−1 ≤ nn−1 have O(n log n) bits each and there are at most n2 of them, i.e. O(n3 log n) bits,
+which is absorbed in O(n4 log n).
+
+
+10     Isochrony and the spectral projection
+This section proves Theorem 1.2. Let K, N , ω, B, dj , D∗ , Λ, Ω, Mij , Pi [k], Ai [f ], Ψi [f ], T [k]
+be as in the statement. Since ω has exact order N , char K ∤ N (if a prime ℓ = char K divided N ,
+then (ω N/ℓ − 1)ℓ = ω N − 1 = 0 would force ω N/ℓ = 1, contradicting exact order), so N −1 ∈ K.
+The exponent of ω is only relevant modulo N , and ω −1 exists, so negative dj and negative
+frequencies cause no difficulty.
+                                                                                            Pn
+Lemma
+Pn        10.1   (Isochrony). For every σ  ∈ Sn and   all integers d1 , . . . , d n , D σ =  i=1 dσ(i) =
+       d  = D ∗.
+   j=1  j
+
+Proof. Since σ is a bijection of [n], {σ(1), . . . , σ(n)} = [n], and the sum of the dj does not
+depend on the order of summation.
+                                                                     N −1
+                                                                   1 X fm
+Lemma 10.2 (Orthogonality). For every m ∈ Z,                          ω = 1{m≡0 (N )} .
+                                                                   N
+                                                                     f =0
+
+Proof. If N | m then ω m = 1 and the sum is N . If N ∤ m then ω m ̸= 1 because ω has exact order
+          P −1 m f      (ω m )N −1
+N , and N                                    m N        N m
+           f =0 (ω ) = ω m −1 = 0 since (ω ) = (ω ) = 1. (For N = 1 the statement is
+trivial.)
+
+Remark 10.3. For K = FQ with Q prime and N | Q − 1, an element ω of exact order N exists
+because F×Q is cyclic of order Q − 1. For K = Q(ζN ) or C one takes ω = ζN . In the first case,
+for A ∈ Q n×n  whose entries have denominators prime to Q, the pij lie in Z(Q) , and reduction
+modulo Q is a ring homomorphism Z(Q) [z] → FQ [z] commuting with determinants; the output
+is then the reduction D̄A of DA , whose support may be smaller than that of DA (Remark 5.6).
+
+Proposition    10.4 (Frequency expansion before annihilation). For each f ∈ {0, . . . , N − 1},
+Ai [f ] = nj=1 Mij ω f dj , and
+         P
+
+                                 X                                                   n
+                                                                                     X
+                   Ψn [f ] =               ω f Ds M1,s1 M2,s2 · · · Mn,sn ,   Ds =         dsi ,        (3)
+                               s:[n]→[n]                                             i=1
+                                   X
+                    T [k] =                    M1,s1 · · · Mn,sn      (k ∈ Z/N Z).                      (4)
+                               s: Ds ≡k (N )
+
+                               P −1 f k P
+Proof. By definition, Ai [f ] = N                   Mij = j Mij ω f dj , since ω f k = ω f dj when-
+                                                           P
+                                k=0 ω      j: dj ≡k
+ever dj ≡ k (mod N ). Next, Ψn [f ] = ni=1 Ai [f ] (ordered), and distributing the product, using
+                                     Q
+
+
+                                                          17
+that the scalars ω f dj ∈ K are central, gives (3). Substituting (3) in the definition of T [k],
+                                                    N −1
+                        X                         1 X f (Ds −k)   X
+              T [k] =       M1,s1 · · · Mn,sn ·          ω      =   M1,s1 · · · Mn,sn
+                        s
+                                                  N
+                                                       f =0       s: Ds ≡k
+
+by Lemma 10.2 with m = Ds − k.
+
+Proof of Theorem 1.2. Lemma 10.1 is the first claim. Since the Bij ∈ K[z] are central,
+                                             Y       
+                         M1,s1 · · · Mn,sn =     Bi,si xs1 · · · xsn .
+                                                              i
+
+In (3): the terms with s not injective vanish by Lemma 5.2, and for s = σ ∈ Sn , Dσ = D∗ by
+Lemma 10.1 and xσ(1) · · · xσ(n) = sgn(σ)Ω by Lemma 5.3. Therefore
+                                   ∗                              ∗
+                                     X        Y
+                   Ψn [f ] = ω f D     sgn(σ)    Bi,σ(i) Ω = ω f D det(B) Ω.
+                                       σ∈Sn               i
+
+Then, by the definition of T [k] and Lemma 10.2 with m = D∗ − k,
+                                                N −1
+                                          1 X f (D∗ −k)
+                   T [k] = det(B) Ω ·        ω          = 1{k≡D∗ (N )} det(B) Ω.
+                                          N
+                                                f =0
+
+The last statements follow by taking B = BA , resp. its reduction (Remark 10.3).
+
+Remark 10.5 (Two gradings). The proof shows that two independent mechanisms are at work.
+The grading by frequency ω f Ds is blind to the addresses: it sorts assignments by Ds modulo N .
+The exterior relations act on the letters xj and kill collisions regardless of their frequency class.
+Before annihilation, (4) shows that slot k contains every assignment whose frequency is ≡ k,
+including collisions; after annihilation only permutations remain, all in the class D∗ . Theorem 1.2
+                                                                                         ∗
+holds for an arbitrary matrix B, not only           for BA : the identity Ψn [f ] = ω f D det(B)Ω is the
+                                                          ∗
+factorization det B diag(ω f d1 , . . . , ω f dn ) = ω f D det B in disguise. The role of the addresses
+                                                  
+
+is to make the surviving polynomial det BA a signed polynomial with n! separately recoverable
+monomials.
+
+
+11     Polynomial circuits for the spectral layer
+The elements handled by the transform layer live in the exterior algebra, whose intermediate
+layers are exponentially large. I first make this precise.
+Proposition 11.1 (Intermediate layers are exponentially large). Let K have characteristic 0,
+B = BA read in K[z], f ∈ {0, . . . , N − 1} and 0 ≤ i ≤ n. Then
+                                              (f )         (f )
+                               X
+                  Ψi [f ] =             det B[i],I xI ,   Bab = Bab ω f db ,
+                                 I⊆[n], |I|=i
+
+         (f )
+where B[i],I is the submatrix with rows 1, . . . , i and columns in I. All ni coefficients are nonzero
+                                                                             
+
+polynomials when B = BA . In particular the monomial-basis representation of Ψ⌊n/2⌋ [f ] has at
+least 2n /(n + 1) nonzero coordinates.
+
+                                                         18
+Proof. By Proposition 10.4,
+                              i X                      X  Y (f ) 
+                                                 (f )
+                              Y
+                  Ψi [f ] =                     Bab xb =      Ba,t(a) xt(1) · · · xt(i) .
+                              a=1         b                     t:[i]→[n]      a
+
+
+Non-injective t contribute 0 (Lemma 5.2, whose proof applies verbatim to words of length
+i). An injective t has image I = {ι(1) < · · · < ι(i)} and t = ι ◦ ρ for a unique ρ ∈ Si ,
+and xt(1) · · · xt(i) = sgn(ρ)xI by the argument of Lemma 5.3. The coefficient of xI is thus
+P                Q (f )                 (f )
+   ρ∈Si sgn(ρ)      a Ba,ι(ρ(a)) = det(B[i],I ). For B = BA the minor equals
+                                   P            X               Y                      P
+                              ωf       b∈I db          sgn(ρ)           pa,ι(ρ(a)) z       a wa,ι(ρ(a))   ;
+                                                ρ∈Si             a
+                                                                     Q
+by Lemma 9.2 distinct ρ give distinct exponents,Pand the coefficients p > 0 are nonzero, so
+the minor is a nonzero polynomial (the scalar ω f db is a unit). Proposition 6.3 gives the last
+claim.
+
+   Hence a circuit that evaluates the transform layer by computing the layers Ψi [f ] coordinate
+by coordinate cannot be polynomial. This is the reason for the determinantal route below.
+
+Proof of Theorem 1.3. By Theorem 1.2, T [k] = 1{k≡D∗ } D̄A Ω, so ck = 0 for k ̸≡ D∗ and
+                                                      ∗
+cD∗ mod N = D̄A . For the circuit, use Ψn [f ] = ω f D det(B)Ω, that is Ψn [f ] = det(B (f ) ) Ω by
+Proposition 5.4 applied to B (f ) , and therefore
+                    N −1
+                  1 X −f k                                       (f )        (f )                (f )
+                           det B (f ) ,                     Bij = γij z wij ,                  γij = p̄ij ω f dj ∈ K.
+                                     
+           ck =          ω
+                  N
+                    f =0
+
+The circuit is built as follows. Compute once the n2 − 1 markers Zr (Lemma 7.1). For each
+                             (f )
+f , form the n2 entries γij · Zβi (j) (n2 gates) and apply the recurrence (2), which is legitimate
+since 1, . . . , n are invertible in K when char K = 0 or > n; by Proposition 7.4 it computes
+det B (f ) with at most 2n4 − n3 + 2n2 gates. Multiply by the constant ω −f k (1 gate), add the
+N results (N − 1 gates) and multiply by N −1 (1 gate). The total is
+
+     (n2 − 1) + N n2 + 2n4 − n3 + 2n2 + 1 + (N − 1) + 1 ≤ N (2n4 − n3 + 3n2 + 2) + n2 .
+                                             
+
+                                                                  ∗
+For the collapsed circuit: since det B (f ) = ω f D D̄A , for k ≡ D∗ one has
+                                                           N −1
+                                                   1 X f (D∗ −k)
+                                        ck = D̄A ·    ω          = D̄A ,
+                                                   N
+                                                           f =0
+
+and the circuit CA of Section 7, read over K, has at most G(n) gates.
+
+Remark 11.2 (Characteristic ≤ n). The hypothesis char K = 0 or > n is used only through the
+divisions by k ≤ n in (2); Theorem 1.2 itself needs only char K ∤ N . For small characteristic
+one replaces (2) by a division-free determinant circuit such as Berkowitz’s [6], which also has
+O(n4 ) gates; I do not use this variant.
+
+
+                                                                 19
+Remark 11.3 (Cost of the transform on its own). For N = 2m a radix-2 NTT of length N uses
+O(N log N ) operations of the coefficient ring [10, 11, 9], hence O(nN log N ) for n rows plus
+O(nN ) Hadamard products and O(N log N ) for the inverse transform. The bound O(nN log N )
+is the count                                                                              i
+        n
+          of ring operations; in the exterior algebra a single operation on elements of Λ costs
+up to i · n coefficient operations (Proposition 11.1), so this count is not a polynomial bound
+on circuit size. The size bound of Theorem 1.3 is obtained by restricting to the top component.
+
+
+12     The sign corrector
+        (r)
+Write DA for the polynomial of Section 9, 1 ≤ r ≤ n, and recall Inj(n, r), Er , ε. By Lemma 9.2,
+for each e ∈ N there is at most one s ∈ Inj(n, r) with Er (s) = e.
+
+Definition 12.1 (Sign character and sign corrector). For 1 ≤ r ≤ n define χn,r : N → {−1, 0, 1}
+by                             (
+                                ε(s) if e = Er (s) for some s ∈ Inj(n, r),
+                    χn,r (e) =
+                                0     otherwise,
+and let Cn,r : K[z] → K[z] be the K-linear map with Cn,r (z e ) = χn,r (e) z e for all e ∈ N. For
+r = n one has χn,n (E(σ)) = sgn(σ), and I write χn = χn,n , Cn = Cn,n , as in the introduction.
+
+Proposition 12.2 (Action on the signed polynomial). For every A ∈ Qn×n and 1 ≤ r ≤ n,
+                                       r
+                                      Y                                   
+                (r)                                                                              (r)
+                           X                                 Y                           X
+          Cn,r DA =                         pi,s(i)                   (v − u) z Er (s) =   [z e ]DA z e ,
+                         s∈Inj(n,r)   i=1                    u<v                         e
+                                                           u,v∈T (s)
+
+a polynomial  Q n!/(n −E(σ)
+          P with             r)! monomials, all of whose coefficients are positive. For r = n,
+                                        e
+                                 = e |[z ]DA |z e .
+                                   P
+Cn (DA ) = σ     i pi,σ(i) z
+
+                              (r)
+Proof. By Proposition 9.3, DA = s ε(s)κ(s)z Er (s) with κ(s) = i pi,s(i) u<v∈T (s) (v−u) > 0,
+                                   P                                   Q       Q
+
+the exponents being pairwise distinct. By linearity and Definition 12.1, Cn,r (z Er (s) ) = ε(s)z Er (s) ,
+                                                                       (r)
+and ε(s)2 = 1, giving the first equality. Since κ(s) > 0, |[z Er (s) ]DA | = κ(s), giving the second;
+monomials off the support do not occur.
+
+Proposition 12.3 (Pointwise computability and structure of Cn,r ). (a) For every integer
+    e ≥ 0, the value χn,r (e) can be computed from the binary expansion of e in O(|e| + n2 log n)
+    bit operations.
+
+ (b) Cn,r is diagonal in the monomial basis, and
+                                         2
+                                        Cn,r (z e ) = 1{e∈Er (Inj(n,r))} z e ;
+
+                    2 is the identity on supp D .              (r)
+     in particular Cn,r                        A
+                                                                 2
+ (c) Cn,r is not multiplicative: C2,2 (f 2 ) ̸= C2,2 f                for f = DA with n = 2.
+
+
+
+
+                                                            20
+Proof. (a) As in Proposition 8.1: if |e| > n2 output 0; check that the first r blocks contain
+exactly one digit 1 each and the blocks Ir+1 , . . . , In none; decode s, check injectivity, and output
+ε(s), computed from πs by counting inversions in O(n2 log n) operations. (b) is immediate from
+the definition since χn,r ∈ {−1, 0, 1} and χ2n,r = 1{·∈Er (Inj)} . (c) For n = 2, DA = p11 p22 z 9 −
+p12 p21 z 6 , so C2 DA = p11 p22 z 9 +p12 p21 z 6 and (C2 DA )2 contains the monomial z 15 with coefficient
+2p11 p22 p12 p21 ̸= 0. On the other hand DA          2 is supported in {12, 15, 18}, none of which is an
+
+address (the addresses are 6, 9), so C2 (DA ) = 0. 2
+
+
+    Proposition 12.3 (a) and Proposition 8.1 show that the pointwise sign correction is uncondi-
+tional: for any prescribed address, the corrected coefficient |[z e ]DA | is obtained in polynomial
+                                                                                                (r)
+time. What is open is whether the diagonal operator Cn,r , acting on the whole polynomial DA ,
+can be realized by a circuit of polynomial size, without expanding the n!/(n − r)! monomials.
+By Proposition 12.3 (c) the operator does not commute with products, so no argument based
+on a ring homomorphism (substitution, evaluation) applies to it.
+Conjecture 12.4 (Rectangular form of Conjecture 1.5). There is a polynomial Π ∈ N[X] such
+                                                                                  (r) 
+that for every n ≥ 1, every 1 ≤ r ≤ n and every A ∈ Qn×n , the polynomial Cn,r DA ∈ Q[z] is
+computed by an arithmetic circuit over Q with at most Π(n) gates, whose constants are entries
+pij or rationals of binary length at most Π(n), constructible in time polynomial in n and L.
+    Conjecture 1.5 is the case r = n of Conjecture 12.4. Both statements concern exclusively the
+                       (r)
+signed polynomials DA and the diagonal operators Cn,r defined above; no other object enters
+them. The restriction on the constants excludes the trivial realization in which the n!/(n − r)!
+coefficients are hidden in a single huge constant.
+
+
+13      Double orientation and a uniform sign
+This section proves Theorem 1.4. The idea is to replace, for each column j, the odd generator
+xj by the even element qj = xj yj built from two odd generators. Even elements commute, so
+the sign produced by reordering the columns disappears, while nilpotency qj2 = 0 is retained;
+the only sign left is a constant independent of the permutation. The entries BA (z)ij = pij z wij
+are not modified: neither a coefficient nor an address is squared or doubled, only the orientation
+factor attached to the column is.
+    Let R be a commutative ring with unit and let Λ               e R = ΛR (x1 , . . . , xn , y1 , . . . , yn ) be the
+R-algebra generated by x1 , . . . , xn , y1 , . . . , yn subject to
+x2i = yi2 = 0 (i ∈ [n]),         xi xj = −xj xi , yi yj = −yj yi (i ̸= j),   xi yj = −yj xi (i, j ∈ [n]).
+                                                                                                      (5)
+Writing ua = xa and un+a = ya for a ∈ [n], these are exactly the relations (1) for the 2n
+generators u1 , . . . , u2n . The standard facts recalled in Section 5 therefore apply: Λe R is free over
+R with basis the increasing products uI , I ⊆ [2n]; its top component is R Ω        e with
+                                      e = u1 · · · u2n = x1 · · · xn y1 · · · yn ;
+                                      Ω
+and Lemma 5.1 holds for every pair of generators, equal or not: ua ub = −ub ua . Elements of R
+                                                           e R , and also for y1 , . . . , yn ; hence there are
+are central. The relations (1) hold for x1 , . . . , xn in Λ
+R-algebra homomorphisms
+                     ιx , ιy : ΛR (x1 , . . . , xn ) → Λ
+                                                       e R,        ιx (xj ) = xj ,   ιy (xj ) = yj .
+
+                                                              21
+Define
+
+                            qj = xj yj (j ∈ [n]),        γn = (−1)n(n−1)/2 ,
+                                                                     
+                    qS = qj1 · · · qjk   S = {j1 < · · · < jk } ⊆ [n] ,    q∅ = 1.
+
+Lemma 13.1 (The constant γn ). γn = +1 if n ≡ 0 or 1 (mod 4), and γn = −1 if n ≡ 2 or
+3 (mod 4). Moreover γn2 = 1, γn−1 = γn and γn+1 = (−1)n γn . The first values are γ1 = 1,
+γ2 = −1, γ3 = −1, γ4 = 1.
+                                                                   n
+                                                                     
+Proof. Write n = 4m   + r with r ∈ {0, 1, 2, 3} and examine        2 = n(n − 1)/2 in the four
+       If r = 0: n2 = 2m(4m − 1), even. If r = 1: n2 = (4m + 1)2m, even. If r = 2:
+                                                               
+cases.
+ n                                                                        n
+  
+ 2 = (2m + 1)(4m + 1), a product of two odd numbers, odd. If r = 3: 2  = (4m          + 3)(2m + 1),
+                                                                       n+1         n
+odd. This gives the first claim; γn = ±1 gives γn2 = 1. Finally
+                                                                                     
+                                                                        2    −     2   = n, whence
+            n                                                      n
+                                                                    
+γn+1 = (−1) γn . The values for n = 1, . . . , 4 are read off from 2 = 0, 1, 3, 6.
+
+Lemma 13.2 (Regrouping). For every m ≥ 0 and every sequence a1 , . . . , am ∈ [n], repetitions
+allowed,
+                    m
+                                     m
+                      xak yak = (−1)( 2 ) xa1 · · · xam ya1 · · · yam .
+                   Y                                                
+
+                          k=1
+
+Proof. Induction on m. For m = 0 both sides are 1. Assume the identity for m, and multiply
+                                                                  m
+it on the right by xam+1 yam+1 . The right-hand side becomes (−1)( 2 ) Xm Ym xam+1 yam+1 , with
+Xm = xa1 · · · xam and Ym = ya1 · · · yam . Move xam+1 to the left across the m generators
+of Ym . By (5), each exchange of xam+1 with some yak costs a factor −1, including when
+ak = am+1 . The cost is (−1)m and yields Xm xam+1 Ym yam+1 = Xm+1 Ym+1 . The total sign is
+      m             m+1
+(−1)( 2 )+m = (−1)( 2 ) .
+                                         e R , for all i, j ∈ [n] and all S ⊆ [n]:
+Lemma 13.3 (Properties of the pairs). In Λ
+
+ (a) qj is central: qj ξ = ξqj for every ξ ∈ Λ
+                                             e R;
+
+ (b) qi qj = qj qi (including i = j);
+
+ (c) qj2 = 0;
+                                                                                 |S|
+ (d) qS does not depend on the order in which the factors are written, qS = (−1)( 2 ) xS yS =
+          |S|
+     (−1)( 2 ) u      where n + S = {n + j : j ∈ S}, and the elements q , S ⊆ [n], are
+                S∪(n+S)                                                              S
+     R-linearly independent.
+
+Proof. (a) It suffices to show that qj commutes with each generator u, since the generators
+and R generate Λ  e R and R is central. Three cases. Case 1: u ∈ {xk , yk } with k =      ̸ j. Then
+u anticommutes with both xj and yj , so u xj yj = −xj u yj = xj yj u: two exchanges, sign
+(−1)2 = 1. Case 2: u = xj . Then xj xj yj = 0 since x2j = 0, and xj yj xj = −xj xj yj = 0; the two
+products are equal. Case 3: u = yj . Then yj xj yj = −xj yj yj = 0 and xj yj yj = 0, again equal.
+   (b) follows from (a). (c) qj2 = xj yj xj yj = −xj xj yj yj = 0, using yj xj = −xj yj and x2j = 0.
+   (d) By (b), qS does not depend on the order of its factors. With a1 < · · · < ak the
+                                                 k
+elements of S, Lemma 13.2 gives qS = (−1)(2) xa1 · · · xak ya1 · · · yak . The indices of the x’s are
+a1 < · · · < ak ≤ n and those of the y’s are n + a1 < · · · < n + ak in the numbering un+a = ya ,
+
+                                                    22
+so this product is the basis element uS∪(n+S) up to the displayed sign. Distinct S give distinct
+index sets S ∪ (n + S), since S = (S ∪ (n + S)) ∩ [n]. Distinct basis elements of a free module
+are linearly independent.
+
+Lemma 13.4 (A collision annihilates the pairs). If s : [n] → [n] is not injective, then
+qs1 qs2 · · · qsn = 0.
+
+Proof. Since s is not injective, there are positions a ̸= b with sa = sb =: j. This covers every
+kind of collision: a column used twice, several times, or several columns each used more than
+                              Q The q’s are central, so the n factors may be reordered arbitrarily
+once; one pair (a, b) is enough.
+                            2
+and the product equals qj c̸=a,b qsc , which is 0 by Lemma 13.3 (c).
+
+Lemma 13.5 (Product of the pairs along a permutation). For every σ ∈ Sn , qσ(1) · · · qσ(n) =
+   e In particular q1 · · · qn = γn Ω.
+γn Ω.                               e
+
+Proof. Step 1. By Lemma 13.2 with m = n and ak = σ(k),
+                                     n
+            qσ(1) · · · qσ(n) = (−1)( 2 ) X Y,          X = xσ(1) · · · xσ(n) ,   Y = yσ(1) · · · yσ(n) .
+
+Step 2. Applying the homomorphisms ιx and ιy to Lemma 5.3, X = ιx (xσ(1) · · · xσ(n) ) =
+sgn(σ) x1 · · · xn and Y = ιy (xσ(1) · · · xσ(n) ) = sgn(σ) y1 · · · yn .
+                                               n
+    Step 3. Hence qσ(1) · · · qσ(n) = (−1)( 2 ) sgn(σ)2 x1 · · · xn y1 · · · yn = γn Ω,
+                                                                                     e because sgn(σ)2 = 1.
+    Consistency check. By Lemma 13.3 (b), qσ(1) · · · qσ(n) is a rearrangement of the commuting
+factors q1 , . . . , qn (as σ is a bijection), hence equals q1 · · · qn , which is the case σ = id of Steps
+1–3; this explains why the result cannot depend on σ.
+
+Proof of Theorem 1.4, items (a) and (b). Item (a) is Lemmas 13.3 and 13.5. For (b), take
+R = Q[z].
+    Step 1: expansion. Each factor j pij z wij qj is a sum of n terms. The scalars pij z wij and
+                                    P
+the qj are central, so distributing the product over the n factors gives a sum over the nn
+assignments:
+
+                     X         n
+                              Y           P                        XY      
+          FA =                       pi,si z i wi,si qs1 · · · qsn =     pi,si z E(s) qs1 · · · qsn .
+                  s:[n]→[n]    i=1                                     s      i
+
+Step 2: collisions. The nn − n! non-injective assignments contribute 0 by Lemma 13.4.
+   Step 3: permutations. Every injective     s : [n] → [n] is a bijection, i.e. a permutation σ. By
+                                                 E(σ) γ Ω.
+                                  Q
+Lemma 13.5, its contribution is     i pi,σ(i) z        n
+                                                         e Summing over Sn ,
+                                         h X Y                       i
+                              FA = γn                    pi,σ(i) z E(σ) Ωe = γn PA Ω,
+                                                                                   e
+                                           σ∈Sn     i
+
+the bracket being PA = Cn (DA ) by Proposition 12.2.
+   Step 4: top component. Each factor of FA lies in the degree-2 component, so FA lies in the
+degree-2n component Q[z]Ω,        e A = γn PA is well defined since Ω
+                          e and [Ω]F                                  e is a basis of that free
+module of rank one.
+   Step 5: monomials. By Q Theorem 1.1 (ii),(iii), the n! exponents E(σ) are pairwise distinct
+and each coefficient κσ = i pi,σ(i) is > 0. Hence [Ω]F e A has exactly n! monomials, each
+
+
+                                                          23
+with coefficient γn κσ , of sign γn . This holds for every n ≥ 1; for n = 1, γ1 = 1 and
+FA = p11 z x1 y1 = PA Ω.e
+    Step 6: coefficientwise relation. Let e ∈ N. If e = E(σ) with σ ∈ Sn , then [z e ]DA = sgn(σ)κσ ,
+                           e A = γn κσ , so χn (e)γn [z e ][Ω]F
+χn (e) = sgn(σ) and [z e ][Ω]F                              e A = sgn(σ)γ 2 κσ = [z e ]DA . If e is
+                                                                             n
+                                e
+not of the form E(σ), then [z ]DA = 0 by Theorem 1.1 (iii) and χn (e) = 0.
+
+   The case n = 2 is as follows. With q12 = q22 = 0, q2 q1 = q1 q2 and q1 q2 = x1 y1 x2 y2 =
+−x1 x2 y1 y2 = −Ω,
+                e
+
+                      FA = p11 zq1 + p12 z 2 q2 p21 z 4 q1 + p22 z 8 q2
+                                                                       
+
+                           = p11 p22 z 9 + p12 p21 z 6 q1 q2
+                                                      
+
+                           = − p11 p22 z 9 + p12 p21 z 6 Ω.
+                                                        
+                                                          e
+
+The terms in q12 and q22 , at the collision addresses 5 and 10, have vanished; both surviving
+monomials have the same sign γ2 = −1.
+    I now describe the circuit that computes FA and count its gates. Its gates live in the
+enlarged algebra, and this must be distinguished from the scalar circuits of Section 7.
+
+Definition 13.6 (Circuit over the enlarged algebra). A circuit over Λ     e Q[z] is a finite directed
+acyclic graph whose leaves are labelled by z, by rational constants, or by generators xj , yj , and
+whose other nodes, the gates, have fan-in two and are labelled + or ×; the two children of a ×
+                        e Q[z] is not commutative. Each node computes an element of Λ
+gate are ordered, since Λ                                                                  e Q[z] , and
+the size is the number of gates. A circuit whose nodes all compute elements of Q[z] and whose
+leaves are z and constants is a scalar circuit in the sense of Section 3; for such circuits the two
+notions of size coincide. The count of gates of a circuit over Λe Q[z] does not bound the number
+of scalar gates needed to simulate it.
+                eA takes z, xj , yj and the pij (as constants) as leaves, and has four blocks.
+    The circuit C
+
+   Block A, markers. Z0 = z and Zr+1 = Zr × Zr for 0 ≤ r < n2 − 1.
+
+   Block B, oriented entries. qj = xj × yj (j ∈ [n]), Bij = pij × Zβi (j) and Mij = Bij × qj .
+
+   Block C, row sums. For each i: Ui,1 = Mi1 , Ui,j = Ui,j−1 + Mij for 2 ≤ j ≤ n, and
+    Li = Ui,n .
+
+   Block D, product of the rows. Ψ1 = L1 and Ψi = Ψi−1 × Li for 2 ≤ i ≤ n. The output is
+    Ψn .
+
+                                    eA .
+No coefficient extraction occurs in C
+
+Proposition 13.7 (Correctness of the circuit). For every n ≥ 1 and A ∈ Qn×n , P        the nodes of
+eA compute: Zr = z 2r and Zβ (j) = z wij ; Mij = pij z wij xj yj = pij z wij qj ; Li =
+C                                                                                                wij q ;
+                                   i                                                     j pij z      j
+Ψi = L1 · · · Li ; and the output is Ψn = FA .
+                               0                  r                  r        r+1
+Proof. Block A. Z0 = z = z 2 , and if Zr = z 2 then Zr+1 = (z 2 )2 = z 2 . The recursion runs
+for 0 ≤ r < n2 − 1 and so defines Z1 , . . . , Zn2 −1 . By Lemma 4.1, βi (j) = (i − 1)n + j − 1 ranges
+                                                                               β (j)
+over {0, . . . , n2 − 1}, so every index βi (j) is available, and Zβi (j) = z 2 i = z wij . For n = 1 the
+recursion is empty and Z0 = z = z w11 .
+
+                                                      24
+    Block B. Bij = pij z wij and Mij = Bij qj , where the scalar Bij is central, so Mij = pij z wij xj yj .
+The scalar pij appears once and the marker        wij once.
+                                         P z
+    Block C. By induction on j, Ui,j = j ′ ≤j Mij ′ ; for j = n this is Li . For n = 1 the block is
+empty and L1 = M11 .
+    Block D. By induction on i, Ψi = L1 · · · Li (the left child is Ψi−1 and the    Qn right child Li ,
+matching the order of the product). For n = 1, Ψ1 = L1 . For i = n, Ψn = i=1 Li = FA by
+definition of FA .
+                                                                           eA has exactly
+Proposition 13.8 (Exact gate count over the enlarged algebra). The circuit C
+                                         Gext (n) = 4n2 + n − 2
+gates, independently of A, with the entries pij counted as leaves.
+Proof. Count block by block:
+                   Gates                                                                Number
+                   markers Z1 , . . . , Zn2 −1                                           n2 − 1
+                   pairs qj = xj × yj                                                      n
+                   entries Bij = pij × Zβi (j)                                             n2
+                   oriented entries Mij = Bij × qj                                         n2
+                   row sums (n − 1 additions in each of the n rows)                     n(n − 1)
+                   product of the rows                                                   n−1
+The total is (n2 − 1) + n + n2 + n2 + n(n − 1) + (n − 1) = 4n2 + n − 2. For n = 1, 2, 3 this gives
+3, 16, 37 gates respectively; for n = 1 the three gates are q1 , B11 and M11 .
+Remark 13.9 (Computing the amplitudes). If the pij = 1 + a2ij are not available as leaves but
+must be computed from the aij , each costs two further gates (a square and an addition of the
+constant 1), and the total becomes 4n2 + n − 2 + 2n2 = 6n2 + n − 2.
+Proof of Theorem 1.4 (d). By Propositions 13.7 and 13.8, C eA computes FA with 4n2 + n − 2
+gates. Let Rn (F ) = γn F . Since γn2 = 1 (Lemma 13.1) and FA = γn PA Ω
+                                                                      e (item (b)),
+
+                                Rn (FA ) = γn FA = γn2 PA Ω
+                                                          e = PA Ω.
+                                                                 e
+
+By Lemma 13.1, there are two cases. If n ≡ 0, 1 (mod 4) then γn = 1 and Rn is the identity: no
+gate is added. If n ≡ 2, 3 (mod 4) then γn = −1 and Rn is one multiplication by the constant
+−1: one gate is added. In both cases no exponentiation, expansion into monomials or coefficient
+extraction is performed.
+   I now treat the spectral layer built on the pairs. Let K, N , ω, d1 , . . . , dn , D∗ be as in
+Theorem 1.2.
+Definition 13.10 (Doubled spectral layer). For B ∈ K[z]n×n put M fij = Bij qj ∈ Λ     e K[z] and
+                                                N
+                                                X −1              X
+                                    A
+                                    ei [f ] =          ωf k                   fij ,
+                                                                              M
+                                                k=0           j: dj ≡k (N )
+                                e 0 [f ] = 1,
+                                Ψ                      e i [f ] = Ψ
+                                                       Ψ                     ei [f ],
+                                                                  e i−1 [f ] A
+                                                       N −1
+                                              1        X
+                                                              e n [f ] ω −f k .
+                                      Te[k] =                 Ψ
+                                              N
+                                                       f =0
+
+
+                                                         25
+Proposition 13.11 (Doubled spectral extraction). Let B = BA read in K[z], with K of
+characteristic 0 containing Q, or K = FQ as in Remark 10.3, in which case PA is replaced by
+its reduction modulo Q. Then for every N ≥ 1, every d1 , . . . , dn ∈ Z (possibly negative), every
+f and every k,
+                    e n [f ] = ω f D∗ γn PA Ω,
+                    Ψ                       e         Te[k] = 1{k≡D∗ (N )} γn PA Ω.
+                                                                                 e
+
+Proof. Step 1. Since ω f k = ω f dj whenever dj ≡ k (mod N ), A     ei [f ] = P M
+                                                                               j
+                                                                                 fij ω f dj .
+    Step 2. The scalars ω f dj and Bij and the elements qj are central, so distributing the product
+gives                         X            Y                                X
+                 e n [f ] =
+                 Ψ                  ω f Ds    Bi,si qs1 · · · qsn ,     Ds =     dsi .
+                           s:[n]→[n]            i                                       i
+
+Step 3. Non-injective s contribute 0 by Lemma 13.4.
+    Step 4. For s = σ ∈ Sn , Dσ = D∗ by Lemma 10.1 and qσ(1) · · · qσ(n) = γn Ω e by Lemma 13.5.
+                    f D ∗    P  Q         
+Hence Ψe n [f ] = ω       γn  σ  i Bi,σ(i) Ω, and for B = BA the bracket is PA .
+                                            e
+    Step 5. By Lemma 10.2 with m = D∗ − k, Te[k] = γn PA Ω  e · 1 P ω f (D∗ −k) = 1{k≡D∗ } γn PA Ω.
+                                                                                                 e
+                                                                N   f
+If N = 1 then ω = 1 and the single slot contains everything; the formula holds with k ≡ D∗
+always true.
+
+Remark 13.12 (The two filters). Theorem 1.2 and Proposition 13.11 treat the same assignments,
+the same addresses E(σ) and the same spectral slot D∗ mod N . The exterior algebra on the
+xj produces DA Ω, where the monomial at the address e carries the sign χn (e); the doubled
+                       e where every monomial carries the same sign γn . By Theorem 1.4 (b),
+algebra produces γn PA Ω,
+the only difference between the two outputs, monomial by monomial, is the factor χn (e)γn .
+   The uniform sign has a price, which the following propositions quantify. The determinantal
+identity of Section 7 is no longer available, and the natural scalar compilation of C       eA is
+exponential.
+
+Proposition 13.13 (The cost moves). Let 1 ≤ k ≤ n and FA,k = ka=1                    waj q , the
+                                                                    Q       P               
+                                                                             j paj z      j
+                                                              eA .
+partial product over the first k rows; this is the node Ψk of C
+
+ (a) FA,k =
+              P
+                S⊆[n], |S|=k Fk,S (z) qS with
+
+                                                X             k
+                                                             Y            
+                           Fk,S (z) =                              pa,τ (a) z Ek (τ ) ̸= 0,
+                                        τ :[k]→S bijective   a=1
+
+
+     where Ek (τ ) = a≤k wa,τ (a) . Hence FA,k has exactly              n
+                     P                                                    
+                                                                        k     nonzero coordinates in the basis
+                   n
+                        ≥ 2n /(n + 1) for k = ⌊n/2⌋.
+                      
+     (qS ), and ⌊n/2⌋
+
+ (b) If R ̸= 0 is a ring in which 2 is not a zero divisor and n ≥ 2, there is no R-algebra
+                                          e R with xj 7→ qj for all j.
+     homomorphism ΛR (x1 , . . . , xn ) → Λ
+
+ (c) For n = 2 and A arbitrary, PA − DA = 2p12 p21 z 6 ̸= 0 and PA + DA = 2p11 p22 z 9 ̸= 0,
+     so DA ̸= ±PA . In particular the top coefficient of FA is not the determinant det BA
+     (Proposition 5.4), and the circuit of Section 7 does not compute it.
+
+
+                                                     26
+Proof. (a) Distributing, FA,k = t:[k]→[n]
+                                    P          Q            E (t)
+                                                  a pa,t(a) z
+                                                              k    qt(1) · · · qt(k) . If t is not injective the
+term vanishes, by the argument of Lemma 13.4 (applied to a word of length k). If t is injective
+with image S, the q’s commute, so qt(1) · · · qt(k) = qS with no sign; grouping by S gives the
+formula, τ = t being a bijection [k] → S. Each Fk,S is a sum of k! monomials with strictly
+positive coefficients and, by Lemma 9.2, pairwise distinct exponents; hence Fk,S ̸= 0. The qS
+are linearly independent by Lemma 13.3 (d), so the coordinates are exactly the Fk,S . The count
+is the number of k-subsets of [n]; the bound is Proposition 6.3.
+     (b) Such a homomorphism φ would satisfy 0 = φ(x1 x2 + x2 x1 ) = q1 q2 + q2 q1 = 2q1 q2 . Now
+q1 q2 = −u{1,2,n+1,n+2} (Lemma 13.3 (d) with S = {1, 2}) is, up to sign, a basis element of a free
+module, so 2q1 q2 = 0 forces 2 · 1 = 0 in R. Since 2 is not a zero divisor, 2 · 1 = 0 gives 1 = 0,
+contradicting R ̸= 0.
+     (c) For n = 2, DA = p11 p22 z 9 − p12 p21 z 6 and PA = p11 p22 z 9 + p12 p21 z 6 with all pij > 0;
+the    difference and the sum are as stated. Proposition 5.4 identifies the top coefficient of
+         j Bij xj ) with det B, whereas Theorem 1.4 (b) identifies that of FA with γn PA .
+Q P
+   i (
+
+Proposition 13.14 (Scalar compilation of the doubled circuit). Let F0,∅ = 1. For 1 ≤ i ≤ n
+and U ⊆ [n] with |U | = i,          X
+                             Fi,U =     pij z wij Fi−1,U \{j} ,
+                                               j∈U
+
+and PA = Fn,[n] . Consequently PA is computed by a scalar arithmetic circuit over Q with at
+most
+                                      (n − 1) 2n + 2n2
+gates, whose constants are the pij and the constant 1.
+                                                                                Ei (τ ) . Split the bijections
+                                               P                Q
+Proof. By Proposition 13.13 (a), Fi,U =           τ :[i]→U bij.  a≤i pa,τ (a) z
+according to j = τ (i) ∈ U : the remaining part is a bijection [i − 1] → U \ {j} and contributes
+Fi−1,U \{j} , while the factor for row i is pij z wij . This is the recurrence. For i = n, Proposi-
+tion 13.13 (a) gives FA = Fn,[n] q[n] = Fn,[n] γn Ω    e (Lemma 13.5), while Theorem 1.4 (b) gives
+FA = γn PA Ω.  e Since Ω  e is a basis of a free module of rank one and γn = ±1 is invertible,
+Fn,[n] = PA .
+     For the circuit, compute the markers (n2 − 1 gates, Lemma 7.1) and the n2 entries mij =
+pij z wij (n2 gates). For each pair (i, U ) with |U | =i, the recurrence needs i multiplications and
+i − 1 additions, that is 2i − 1 gates. There are ni such sets U . The total over i = 1, . . . , n is
+                      n          
+                      X          n
+                        (2i − 1)    = 2 · n2n−1 − (2n − 1) = (n − 1)2n + 1,
+                                 i
+                       i=1
+
+             n
+using i i i = n2n−1 and i≥1 ni = 2n − 1. Adding (n2 − 1) + n2 gives at most (n − 1)2n +
+       P                  P      
+
+1 + 2n2 − 1 = (n − 1)2n + 2n2 gates.
+
+    By Proposition 13.13 (a), any evaluation of C    eA that materializes the coordinates of its nodes
+is exponential, exactly as for the layers Ψi [f ] of Proposition 11.1; Proposition 13.14 gives the cor-
+responding upper bound (n − 1)2n + 2n2 for the scalar compilation. By Proposition 13.13 (b),(c),
+the determinantal route does not apply. This does not prove that no compact scalar circuit
+for PA exists: it shows that the algebra-valued count 4n2 + n − 2 of Proposition 13.8 and the
+scalar size asked for in Conjecture 1.5 are different quantities.
+
+                                                      27
+Corollary 13.15 (Equivalent form of the sign-correction conjecture). Let Π ∈ N[X]. For n ≥ 1
+and A ∈ Qn×n , the polynomial PA = Cn (DA ) is computed by a scalar arithmetic circuit over Q
+with at most Π(n) gates, constants being entries pij or rationals of length at most Π(n), if and
+only if the polynomial e      e A is computed by such a circuit with at most Π(n) + 1 gates,
+                        cA = [Ω]F
+the constants being the same together with ±1. Consequently Conjecture 1.5 holds if and only if
+the same statement holds with Cn (DA ) replaced by [Ω]F
+                                                     e A (for a possibly different polynomial
+Π).
+Proof. By Theorem 1.4 (b), e  cA = γn PA and PA = γn e  cA , with γn ∈ {±1}. Multiplying the
+output of a circuit by the constant γn costs at most one gate (none if γn = 1), and the constant
+±1 has length 1. Uniform constructibility transfers in the same way.
+
+Remark 13.16 (Status). The double orientation shows that the correction of the signs of DA
+can be realized algebraically by a single universal sign γn , with an explicit circuit of 4n2 + n − 2
+gates over the enlarged algebra and at most one further gate for the global correction, at no
+cost in addresses, amplitudes or spectral slot. It does not resolve the sign-correction problem:
+the gate count is algebra-valued, the natural scalar compilation has exponential size, and the
+question of a compact scalar circuit for the top coefficient of FA is Conjecture 1.5.
+
+
+14      A scalar encoding of PA as a central coefficient
+This section proves Theorem 1.7. The double orientation of Section 13 lives in an enlarged
+algebra. Here I give an encoding that is entirely scalar: PA is obtained as a single coefficient
+of an explicit polynomial in two variables z and t, and that polynomial has a scalar circuit of
+O(n4 ) gates. The mechanism is to pair two determinants whose signs cancel exactly on the
+coefficient of one degree in t, after attaching to each cell an auxiliary label that separates the
+permutations. The labels are carried by the new variable t; they do not replace the addresses
+z E(σ) .
+    Circuit model. In this section a scalar circuit is a circuit over Q in the two variables z and
+t, as in Section 3: the leaves are z, t and rational constants, the gates are + and × of fan-in
+two, a subtraction or a multiplication by a constant costs one gate, and the size is the number
+of gates. A coefficient of a polynomial in z, t with respect to t is a polynomial in z.
+Lemma 14.1 (Coefficient of the central label in a product of two determinants). Let n ≥ 1,
+let R be a commutative ring, and let bij ∈ R and rij ∈ N for i, j ∈ [n]. Put
+                                              n
+                                              X                            n
+                                                                           X
+                 ci = max rij ,       K=             ci ,        ρ(σ) =          ri,σ(i)   (σ ∈ Sn ),
+                      j∈[n]
+                                               i=1                         i=1
+
+and
+                        H = det bij trij i,j∈[n] · det tci −rij i,j∈[n] ∈ R[t].
+                                                              
+
+Then:
+ (a) all exponents ci − rij are non-negative integers, and
+
+                                   X                              n
+                                                                 Y            
+                          H=                sgn(σ) sgn(τ )              bi,σ(i) t K+ρ(σ)−ρ(τ ) ;
+                                  σ,τ ∈Sn                         i=1
+
+
+                                                            28
+ (b) 0 ≤ ρ(σ) ≤ K for every σ ∈ Sn , so every exponent of t in H lies in {0, 1, . . . , 2K};
+                  X                           n
+                                              Y
+       K
+ (c) [t ]H =                 sgn(σ) sgn(τ )         bi,σ(i) ;
+                 σ,τ ∈Sn                      i=1
+                ρ(σ)=ρ(τ )
+
+                                                          n
+                                                        X Y
+ (d) if ρ is injective on Sn , then [tK ]H =                             bi,σ(i) .
+                                                        σ∈Sn i=1
+
+Proof. (a) By P       definition Qof ci , ci − rij ≥ 0.      Q rThe Leibniz       expansion of the first de-
+terminant P    is                               ρ(σ)                        ρ(σ)
+                         σ sgn(σ)      b       t     , since  it        = t      . That of the second is
+                                                                 i,σ(i)
+P                   (ci −ri,τ (i) )  Pi i,σ(i)     K−ρ(τ )
+   τ sgn(τ ) t                      = τ sgn(τ ) t       P. Multiplying the two expansions gives the formula.
+                  i
+
+    (b) Each ri,σ(i) ∈ [0, ci ], so 0 ≤ ρ(σ) ≤ i ci = K. Hence K + ρ(σ) − ρ(τ ) ∈ [0, 2K].
+    (c) By (a), the term indexed by (σ, τ ) has t-exponent K if and only if ρ(σ) = ρ(τ ).
+    (d) If ρ is injective on Sn , the condition ρ(σ) = ρ(τ ) means σ = τ , and then sgn(σ) sgn(τ ) =
+sgn(σ)2 = 1. Only the diagonal pairs remain in (c).
+
+     Lemma 14.1 (c) also shows that the injectivity of ρ cannot be dropped: without it, pairs
+(σ, τ ) with σ ̸= τ and ρ(σ) = ρ(τ ) contribute with the sign Q
+                                                              sgn(σ) sgn(τ ), Q
+                                                                              which may    be −1.
+                                                 w
+                                                                                         E(σ)
+P Specialize       to R = Q[z] and bij = pij z . Then           i bi,σ(i) =    i pi,σ(i) z     and
+                                                  ij
+     Q
+   σ    i bi,σ(i) = PA .
+
+Proposition 14.2 (Pairing for arbitrary separating labels). Let n ≥ 1, A ∈ Qn×n and let
+rij ∈ N be such that
+                       ρ(σ) = ρ(τ ) =⇒ σ = τ        (σ, τ ∈ Sn ).                   (6)
+Let ci , K be as in Lemma 14.1 and
+
+                         HA (t, z) = det pij z wij trij det tci −rij ∈ Q[t, z].
+                                                                   
+
+
+Then [tK ]HA (t, z) = PA (z): every surviving term carries its amplitude i pi,σ(i) and its address
+                                                                             Q
+
+z E(σ) , with the sign +1.
+
+Proof. Lemma 14.1 (d) with bij = pij z wij .
+
+Remark 14.3 (Using the addresses as labels). Take rij = wij . Then ci = wi,n = 2in−1 , and (6)
+is the injectivity E(σ) = E(τ ) ⇒ σ = τ of Corollary 4.2. Since pij z wij twij = pij (zt)wij , the first
+determinant is DA (zt), and
+                                                                                     n
+                                                    2in−1 −wij                                       2
+                                                                                     X
+                                                                                           2in−1 ≥ 2n −1 .
+                                                                     
+                 HA (t, z) = DA (zt) det t                               ,      K=
+                                                                                     i=1
+
+                                                                     2
+This works, but the central index is of order 2n . The base-n labels below bring it down to
+nn − 1.
+
+Lemma 14.4 (Base-n labels). Let n ≥ 2 and rij = (j − 1)ni−1 . Then:
+
+ (a) ρ(σ) = ni=1 (σ(i) − 1)ni−1 , and ρ is injective on all assignments s : [n] → [n], hence on
+           P
+     Sn ;
+
+
+                                                                29
+ (b) ci = (n − 1)ni−1 and K = nn − 1;
+
+ (c) ρ(σ) ≤ K − 1 for every σ ∈ Sn .
+
+For n = 1, r11 = 0, c1 = 0 and K = 0 = nn − 1.
+
+Proof. (a) The integer i (si − 1)ni−1 has base-n digits s1 − 1, . . . , sn − 1, each in {0, . . . , n − 1}.
+                       P
+
+                                                 Pn determines
+By uniqueness of the base-n expansion, the integer                        every digit, hence s. (b)
+                                                                             n −1
+maxj (j − 1)n i−1           i−1
+                  = (n − 1)n , and K = (n − 1) i=1 n     i−1 = (n − 1) nn−1       = nn − 1. (c) Since
+n ≥ 2 and σ is a bijection, σ is not the constant map n; pick i0 with σ(i0 ) ≤ n − 1. Then
+ρ(σ) ≤ K − ni0 −1 ≤ K − 1.
+                 i−1
+    Put ui = t n       for i ∈ [n]. Then trij = uij−1 and tci −rij = uin−j .
+
+Lemma 14.5 (The second determinant         a Vandermonde product). For elements u1 , . . . , un
+                                         isQ
+of a commutative ring, det uin−j i,j∈[n] = 1≤i<ℓ≤n (ui − uℓ ).
+                                
+
+
+Proof. Let V = (un−j  i  )i,j , with rows indexed by the variable i and columns by the exponent
+n − j. Its transpose V T has rows indexed by j, with exponent n − j. Reversing the order
+                                                                      h−1
+Q these n rows, j 7→ h = n + 1 − j, gives the matrix W = (ui )h,i , whose
+of
+                                                                                   n
+                                                                                      determinant is
+   i<ℓ (uℓ − ui )  by Lemma     9.1. Reversing   n rows is a permutation   with    2 inversions, hence
+                  n                    n                                n Q
+                 (  )    T           (   )                             (  )                   Q
+det W = (−1) 2 det V = (−1)                                                   i<ℓ (uℓ −ui ) =  i<ℓ (ui −
+                                       2 det V . Therefore det V = (−1) 2
+                                 n
+                                   
+uℓ ), since the product has 2 factors.
+
+    Now define, for n ≥ 2 and A ∈ Qn×n ,
+                                                                                    i−1
+                   HA (t, z) = det pij z wij uij−1
+                                                           Y
+                                                                             ui = t n
+                                                     
+                                                               (ui − uℓ ),                ,            (7)
+                                                         1≤i<ℓ≤n
+
+                           b A (t, z) = 1 + t2K + HA (t, z),
+                           H                                         K = nn − 1.                       (8)
+
+Proof of Theorem 1.7 (a). Case n ≥ 2. By Lemma 14.4 the labels rij = (j − 1)ni−1 satisfy (6),
+with ci = (n−1)ni−1 and K = nn −1. By Lemma 14.5, det(tci −rij ) = det(un−j
+                                                                                   Q
+                                                                            i  ) = i<ℓ (ui −uℓ ),
+and trij = uj−1 i   . So the polynomial HA of (7) is the polynomial of Proposition 14.2, and
+  K
+[t ]HA = PA .
+    Exponents. By Lemma 14.1 (a), the exponents of t in HA are K + ρ(σ) − ρ(τ ). By
+Lemma 14.4 (c), ρ(σ) ≤ K − 1, and ρ(τ ) ≥ 0, hence the exponents are ≤ 2K − 1. Also
+ρ(σ) ≥ 0 and ρ(τ ) ≤ K − 1, hence the exponents are ≥ 1. So every exponent of t in HA lies in
+{1, . . . , 2K − 1}.
+    Centering. Since K = nn − 1 ≥ 3 > 0, the exponents 0 and 2K differ from K, and HA has
+no monomial at t0 or t2K . Hence H     b A has t-degree exactly 2K with leading coefficient 1 and
+constant term 1, and [t ]HK  b A = [t ]HA = PA , with K = 1 degt H
+                                     K                             bA.
+                                                             2
+                                          0
+    Case n = 1. Here HA = det(p11 z t ) · 1 = p11 z = PA (the empty Vandermonde product is
+1) and K = 0, so [t0 ]HA = PA holds; the centering (8) is used only for n ≥ 2.
+
+
+
+
+                                                         30
+   The case n = 2. Write α = p11 p22 z 9 and β = p12 p21 z 6 , so that u1 = t, u2 = t2 and K = 3.
+Then
+                 p11 z p12 z 2 t
+                                  
+           det                       = α t2 − β t,
+                p21 z 4 p22 z 8 t2
+                            HA (t, z) = (αt2 − βt)(t − t2 ) = −βt2 + (α + β)t3 − αt4 ,
+                                 b A = 1 − βt2 + (α + β)t3 − αt4 + t6 .
+                                 H
+
+The degree is 6, the central index is 3, and [t3 ]H  b A = p11 p22 z 9 + p12 p21 z 6 = PA . All exponents
+of t in HA lie in {2, 3, 4} ⊆ {1, . . . , 5}. For n = 3 one has K = 26, and for n = 4, K = 255; I
+checked the identity [tK ]HA = PA and the exponent range [1, 2K − 1] by direct expansion, with
+exact rational arithmetic and randomly chosen integer matrices, for n = 2, 3, 4, 5. These checks
+are consistency checks, not part of the proof.
+    I now count the gates. I use the exponentiation by repeated squaring in the following form.
+
+Lemma 14.6 (Powers by squaring). For any node v and any integer m ≥ 1, the power v m is
+computed by at most 2⌊log2 m⌋ gates added to the circuit.
+
+Proof. Write m in binary with ℓ = ⌊log2 m⌋ + 1 digits. Scan the digits from the most significant
+one: start with v, and for each of the ℓ − 1 following digits square the current value, and multiply
+it by v if the digit is 1. This uses ℓ − 1 = ⌊log2 m⌋ squarings and at most ℓ − 1 multiplications
+by v. For m = 1 no gate is needed.
+
+Proposition 14.7 (Size of the circuit for H b A ). For n ≥ 2 the polynomials HA and H
+                                                                                    b A are
+computed by scalar circuits over Q in the variables z, t with at most
+
+                                 2n4 − n3 + 7n2 + 4n log2 n ≤ 4n4
+
+gates, whose constants are the pij , the constants 1, 0, ±1 and the rationals −1/k (1 ≤ k ≤ n − 1)
+and (−1)n+1 /n of the recurrence of Proposition 7.4. The binary encoding of the circuit has
+length O(L + n4 log n).
+
+Proof. The circuit has the following blocks.
+                Gates                                                    Number
+                markers Z1 , . . . , Zn2 −1                               n2 − 1
+                entries bij = pij · Zβi (j)                                 n2
+                u1 = t, then ui+1 = uin for i < n                    ≤ 2(n − 1) log2 n
+                powers uki , 2 ≤ k ≤ n − 1 (uki = uk−1  i   × ui )       n(n − 2)
+                                       j−1
+                entries gij = bij · ui      (j ≥ 2; gi1 = bi1 )          n(n − 1)
+                determinant of (gij ) (Section 7)                    ≤ 2n4 − n3 + 2n2
+                differences uQi − uℓ (i < ℓ) and their product         n(n − 1) − 1
+                HA = det × (ui − uℓ )                                        1
+                t2K                                                   ≤ 2 + 2n log2 n
+                Hb A = (1 + t2K ) + HA                                       2
+The markers and the bij are as in Lemma 7.1. The powers ui+1 = uni use Lemma 14.6 with
+m = n, at most 2⌊log2 n⌋ gates each. The determinant is computed over the commutative ring
+Q[t, z], in which 1, . . . , n are invertible, by Proposition 7.4, whose count does not depend on
+
+                                                   31
+the ring. The Vandermonde factor has n2 differences and n2 − 1 multiplications to form their
+                                                             
+
+product. For t2K , Lemma 14.6 gives at most 2⌊log2 (2K)⌋ ≤ 2 log2 (2nn ) = 2 + 2n log2 n gates,
+since 2K < 2nn ; the powers of t are thus never formed by 2K successive multiplications.
+    Summing, the coefficient of n2 is 1+1+1+1+2+1 = 7, the linear terms are −2n−n−n = −4n,
+the constants are −1 − 1 + 1 + 2 + 2 = 3, and the logarithmic terms are at most 2(n − 1) log2 n +
+2n log2 n ≤ 4n log2 n. Since −4n + 3 < 0, the total is at most 2n4 − n3 + 7n2 + 4n log2 n. For
+the bound by 4n4 : at n = 2 the left side is 32 − 8 + 28 + 8 = 60 ≤ 64; for n ≥ 3, log2 n ≤ n − 1
+gives 4n4 − (2n4 − n3 + 7n2 + 4n log2 n) ≥ 2n4 + n3 − 11n2 + 4n > 0.
+    Encoding: there are at most 4n4 gates and at most n2 + n + 4 leaves, so node identifiers
+have O(log n) bits and the structure uses O(n4 log n) bits; the constants pij have total length
+≤ 2L + O(n2 ) and the others O(n log n), as in Proposition 7.6.
+
+Proof of Theorem 1.7 (b). Proposition 14.7.
+
+    The size of the encoding is thus polynomial. What is not polynomial, by the generic method,
+is the extraction of its central coefficient.
+
+Proposition 14.8 (Cost of coefficient extraction by truncation). Let f ∈ Q[t, z] be computed
+by a scalar circuit of size s, and let K ≥ 0. Then the coefficient [tK ]f ∈ Q[z] is computed by a
+circuit in the variable z alone, of size at most s (K + 1)2 .
+
+Proof. Associate to every node v of the circuit the vector (v0 , . . . , vK ) of the coefficients of
+t0 , . . . , tK of the polynomial it computes. The leaf t gives (0, 1, 0, . . . , 0), a constant c gives
+(c, 0, . . . , 0), the leaf z gives (z, 0, . . . , 0), all computed without gates. A + gatePis simulated by
+K + 1 additions. A × gate is simulated by the truncated convolution wk = ka=0 ua vk−a for
+0 ≤ k ≤ K, which uses K
+                                P                                       PK                                 2
+                                  k=0 (k + 1) multiplications and         k=0 k additions, that is (K + 1)
+gates. Each gate of the original circuit is replaced by at most (K + 1)2 gates, and the component
+K of the output node is [tK ]f .
+            b A one has s ≤ 4n4 and K + 1 = nn , so the truncation method gives at most
+    For f = H
+  4  2n
+4n n gates, which is not polynomial in n. This is an upper bound for one method, not a
+lower bound on the complexity of the coefficient.
+
+Proposition 14.9 (Range of separating labels). Let rij ∈ N satisfy (6). Then K ≥ n! − 1. In
+particular no choice of non-negative integer labels with this property brings the central index K
+down to a polynomial in n, and the index nn − 1 of Lemma 14.4 is within a factor of nn /n! ≤ en
+of this lower bound.
+
+Proof. By Lemma 14.1 (b), ρ(σ) ∈ {0, . . . , K} for each of the n! permutations, and by (6) these
+n! values are pairwise distinct. Hence n! ≤ K + 1. For the comparison, nn /n! ≤ en follows from
+en = k≥0 nk /k! ≥ nn /n!.
+      P
+
+    This statement concerns the labels required by the pairing mechanism of Proposition 14.2;
+it does not bound the size of other circuits for PA , and another encoding could use cancellations
+that do not separate the permutations one by one.
+
+Corollary 14.10 (The conjecture is equivalent to the computation of the central coefficient).
+Let Π ∈ N[X]. For n ≥ 2 and A ∈ Qn×n , the polynomial PA is computed by a scalar circuit
+over Q in z with at most Π(n) gates, the constants being entries pij or rationals of length at
+
+
+                                                    32
+most Π(n), if and only if the central coefficient [tK ]H
+                                                       b A is. Consequently Conjecture 1.5 holds if
+                                      K             n
+                                        b A , K = n − 1, of the polynomial of Theorem 1.7, which
+and only if the central coefficient [t ]H
+                          4
+has a circuit of size O(n ), has a circuit of polynomial size (for a possibly different Π).
+
+Proof. By Theorem 1.7 (a), [tK ]H
+                                b A = PA for n ≥ 2; the two statements are the same statement
+about the same polynomial.
+
+    Hence the construction of Hb A is complete and polynomial, and the only step missing to
+                                                                       n
+close Conjecture 1.5 is the computation of the central coefficient [t n −1 ]H
+                                                                            b A by a scalar circuit
+of polynomial size. Corollary 14.10 is an exact reformulation; it does not prove the conjecture.
+Remark 14.11 (What would suffice). Two properties would suffice to close the step; neither is
+established here.
+    (i) An encoding with a polynomial index. Suppose that JA ∈ Q[t, z] is computed by a scalar
+circuit of size s(n) = poly(n), with [tk(n) ]JA = PA and k(n) = poly(n). Then Proposition 14.8
+gives a circuit for PA of size s(n)(k(n) + 1)2 = poly(n). By Proposition 14.9, such an encoding
+cannot come from the pairing mechanism of Proposition 14.2.
+    (ii) A recurrence for the coefficients. Suppose that there exist r = poly(n), vectors u, v ∈
+                                                                                  b A = uT M k v
+Q[z]r and a matrix M ∈ Q[z]r×r , given by a circuit with s0 gates, such that [tk ]H
+for k = K. Computing M K by repeated squaring takes at most 2⌊log2 K⌋ products of r × r
+matrices, each with 2r3 − r2 gates, and the final product by uT and v takes at most 2r2
+gates; the total is at most s0 + 2⌊log2 K⌋(2r3 − r2 ) + 2r2 , which is polynomial in n since
+log2 K < n log2 n. I have not established such a recurrence for HbA.
+Remark 14.12 (Relation to the literature). The identity of Proposition 14.2 is of Hadamard-
+product type: two polynomials with small circuits are multiplied, and the coefficients carrying
+the same label are paired [12, 13]. The question of extracting a coefficient of a polynomial of
+exponential degree given by a small circuit is the one studied for division and truncation of
+                                                                                            bA,
+circuits [14]. I have not verified that the hypotheses of those results hold for the family H
+and I draw no conclusion from them here.
+
+
+15     The conditional polynomial pipeline
+This section proves Theorem 1.6. Let K ⊇ Q be a field of characteristic 0 containing a primitive
+N -th root of unity ω (e.g. K = Q(ζN )), extend Cn K-linearly to K[z] (Definition 12.1), and
+let Cn ⊗ idΛ act on Λ = ΛK[z] by acting on the coefficient of Ω in the top component, i.e.
+(Cn ⊗ id)(g Ω) = Cn (g) Ω for g ∈ K[z].
+                                                                  P Q               E(σ)
+Proof of Theorem 1.6. (a). By Proposition 12.2, PA = Cn (DA ) = σ         i pi,σ(i) z     , with n!
+monomials, distinct by Theorem 1.1 (ii), and strictly positive coefficients since pij > 0. The
+circuit bound Π(n) is Conjecture 1.5.
+    (b). By Theorem 1.2 with B = BA ∈ Q[z]n×n ⊆ K[z]n×n , T [k] = 1{k≡D∗ } DA Ω in ΛK[z] ,
+where DA ∈ Q[z] ⊆ K[z]. Since Cn is K-linear and preserves Q[z], T + [k] = (Cn ⊗ id)(T [k]) =
+1{k≡D∗ } Cn (DA ) Ω = 1{k≡D∗ } PA Ω. For k ≡ D∗ the coordinate is PA , computed by the circuit
+of (a), read over K ⊇ Q (a circuit over Q is a circuit over K with the same constants); for
+k ̸≡ D∗ it is 0. Over the N slots the total is at most N Π(n) gates.
+    (c). The markers and the filter are polynomial by Theorem 1.1 (v),(vi); the spectral
+projection by Theorem 1.3, with at most N (2n4 − n3 + 3n2 + 2) + n2 gates, or G(n) < 3n4 after
+
+
+                                                33
+collapsing the N determinants; and the extraction of the coefficient at a prescribed address by
+Proposition 8.1. None of these uses Conjecture 1.5.
+                                                      e For k ≡ D∗ the coordinate is γn PA ,
+    (d). By Proposition 13.11, Te[k] = 1{k≡D∗ } γn PA Ω.
+obtained from the circuit of (a) by one multiplication by the constant γn = ±1, hence with at
+most Π(n) + 1 gates; for k ̸≡ D∗ it is 0.
+    Rectangular case. If Conjecture 12.4 holds, the same argument as in (a), with Proposi-
+                                                                 (r)
+tion 12.2, gives a circuit with at most Π(n) gates for e |[z e ]DA |z e for all 1 ≤ r ≤ n.
+                                                      P
+
+     In terms of the sequence of stages, the pipeline is therefore
+
+     A 7−→ BA                        marking: O(n2 ) gates,
+  BA 7−→ DA                          filtering: G(n) < 3n4 gates,
+  DA 7−→ T [D∗ mod N ] = DA Ω        spectral projection: at most G(n) gates after collapsing,
+  DA 7−→ PA                          sign correction: Π(n) gates under Conjecture 1.5,
+
+and every stage except the last is unconditionally polynomial.
+
+
+16      Scope, limits and what is not claimed
+(1) Universality of the rational filter. For pij = 1 + a2ij , Theorem 1.1 holds for every finitely
+    encoded A ∈ Qn×n , dense or sparse, structured or not. The value pij ≥ 1 is used only to
+    exclude vanishing coefficients; Remark 5.6 explains how to keep the amplitudes aij .
+
+(2) Circuit versus expansion. A circuit of O(n4 ) gates is not a list of n! monomials; the latter
+    needs at least n!(n2 − n + 1) bits for the addresses alone (Proposition 6.2). The compactness
+    of Theorem 1.1 (v) is a statement about circuits, not about any expanded form.
+
+(3) Numerical evaluation. Specializing z to a number can destroy the separation of the
+    addresses; for instance z = 1 sends DA to det(pij ), and the individuality of the monomials
+    is lost. The variable z must stay formal, or be evaluated in a setting where individual
+    monomials are no longer required.
+
+(4) Reductions modulo a prime. Over FQ the support of D̄A may shrink if some p̄ij = 0
+    (Remark 5.6); Theorem 1.2 holds for D̄A regardless.
+
+(5) The spectral layer. Theorem 1.2 is exact in the exterior algebra. Its circuit version
+    (Theorem 1.3) is polynomial in n and N ; the naive layer-by-layer evaluation is not (Propo-
+    sition 11.1). The size bound is polynomial in n only if N is polynomial in n.
+
+(6) Status of the sign correction. Conjecture 1.5 is not proved. Nothing stated as a theorem
+    in this paper depends on it except Theorem 1.6, which is explicitly conditional, and no
+    polynomial-size circuit for the corrected polynomial PA is claimed unconditionally. The
+    double orientation of Section 13 gathers all the signs into the single constant γn , but it does
+    not give a compact circuit for the resulting top coefficient: it reformulates the conjecture
+    rather than resolving it. The gate count 4n2 + n − 2 of the doubled circuit is a count of
+    gates of the enlarged exterior algebra and must not be confused with the size of a scalar
+    circuit over Q[z]; the scalar compilation of Proposition 13.14 has size (n − 1)2n + 2n2 . The
+
+
+                                                34
+    central-coefficient encoding of Section 14 reduces the conjecture, exactly, to the polynomial-
+    size computation of one coefficient of index nn − 1 of a polynomial having a circuit of
+    O(n4 ) gates; it is an equivalent reformulation, and the truncation method costs s(K + 1)2
+    gates, which is not polynomial.
+
+
+Acknowledgments
+I thank the authors of the classical works cited below for the tools used here: exterior alge-
+bra, determinants, Faddeev–LeVerrier, arithmetic circuits and FFT/NTT. GPT-5.6 Sol High
+(OpenAI) assisted in the exploratory phase: reformulation of leads, elementary symbolic checks,
+organization of proofs and bibliographic search. The statements, the choice of formulations and
+the final mathematical responsibility for the manuscript are mine.
+
+
+A     Summary of the identities
+                               X
+                    E(s) =             2(i−1)n+si −1 ,         E(s) = E(t) ⇐⇒ s = t,
+                                   i
+                                              X           Y        
+                               DA (z) =             sgn(σ)   pi,σ(i) z E(σ) ,
+                                             σ∈Sn                 i
+
+                                                           2n(n+1) − 1
+                                           degz DA =                   ,
+                                                            2n+1 − 1
+             G(n) ≤ 2n4 − n3 + 4n2 − 1 < 3n4 ,                  bits(CA ) = O(L + n4 log n),
+                                                                                     ∗
+                  Dσ = D∗ (σ ∈ Sn ),                 det BA diag(ω f dj ) = ω f D DA ,
+                                                                            
+
+                                                                                   ∗
+                            X                                   Y
+                  Ai [f ] =   Mij ω f dj ,            Ψn [f ] =     Ai [f ] = ω f D DA Ω,
+                               j                                       i
+
+                           1 X                 X Y
+                 T [k] =       Ψn [f ]ω −f k =     Mi,si = 1{k≡D∗ } DA Ω,
+                           N
+                                f                        s: Ds ≡k i
+                                                                           X
+                        Cn (z e ) = χn (e)z e ,          Cn (DA ) =             [z e ]DA z e ,
+                                                                           e
+
+                qj = xj yj ,           qj2 = 0,      qi qj = qj qi ,           γn = (−1)n(n−1)/2 ,
+
+                               qσ(1) · · · qσ(n) = γn Ω,
+                                                      e               FA = γn PA Ω,
+                                                                                 e
+
+                    Gext (n) = 4n2 + n − 2,                    Rn (FA ) = γn FA = PA Ω,
+                                                                                     e
+
+                        scalar compilation of CeA : ≤ (n − 1)2n + 2n2 ,
+                                                                      i−1
+                      HA = det pij z wij uj−1
+                                              Y
+                                          i     (ui − uℓ ),    ui = tn ,
+                                                         i<ℓ
+
+                  K = nn − 1,               b A = 1 + t2K + HA ,
+                                            H                                    [tK ]H
+                                                                                      b A = PA ,
+
+                                                          35
+             b A ≤ 2n4 − n3 + 7n2 + 4n log2 n,
+     size of H                                       K ≥ n! − 1 for any separating labels.
+
+The circuit size of Cn (DA ) is at most Π(n) if Conjecture 1.5 holds.
+
+
+References
+ [1] H. Wang and J. Zahl, Volume estimates for unions of convex sets, and the Kakeya set
+     conjecture in three dimensions, arXiv:2502.17655, 2025.
+
+ [2] W. Greub, Multilinear Algebra, 2nd ed., Springer, 1978. https://doi.org/10.1007/
+     978-1-4613-9425-9
+
+ [3] D. K. Faddeev and V. N. Faddeeva, Computational Methods of Linear Algebra, W. H. Free-
+     man, 1963.
+
+ [4] F. Johansson, On a fast and nearly division-free algorithm for the characteristic polynomial,
+     arXiv:2011.12573, 2020.
+
+ [5] L. Csanky, Fast parallel matrix inversion algorithms, SIAM J. Comput. 5(4) (1976),
+     618–623. https://doi.org/10.1137/0205040
+
+ [6] S. J. Berkowitz, On computing the determinant in small parallel time using a small number
+     of processors, Inform. Process. Lett. 18(3) (1984), 147–150. https://doi.org/10.1016/
+     0020-0190(84)90018-8
+
+ [7] P. Bürgisser, M. Clausen and M. A. Shokrollahi, Algebraic Complexity Theory, Springer,
+     1997. https://doi.org/10.1007/978-3-662-03338-8
+
+ [8] P. Bürgisser, Completeness and Reduction in Algebraic Complexity Theory, Springer, 2000.
+     https://doi.org/10.1007/978-3-662-04179-6
+
+ [9] J. von zur Gathen and J. Gerhard, Modern Computer Algebra, 3rd ed., Cambridge
+     University Press, 2013. https://doi.org/10.1017/CBO9781139856065
+
+[10] J. W. Cooley and J. W. Tukey, An algorithm for the machine calculation of complex
+     Fourier series, Math. Comp. 19(90) (1965), 297–301. https://doi.org/10.2307/2003354
+
+[11] H. J. Nussbaumer, Fast Fourier Transform and Convolution Algorithms, Springer, 1982.
+     https://doi.org/10.1007/978-3-642-81897-4
+
+[12] V. Arvind, P. Joglekar and S. Srinivasan, Arithmetic circuits and the Hadamard product
+     of polynomials, FSTTCS 2009.
+
+[13] V. Arvind, A. Chatterjee, R. Datta and P. Mukhopadhyay, Fast exact algorithms using
+     Hadamard product of polynomials, FSTTCS 2019.
+
+[14] P. Dutta, G. Jindal, A. Pandey and A. Sinhababu, Arithmetic circuit complexity of division
+     and truncation, CCC 2021.
+
+
+
+
+                                               36
+

@@ -1,0 +1,9 @@
+
+/MobiusBridge.lean -text
+/compile_n63.py -text
+/verify_n63.py -text
+/n63-* -text
+/n63-compiler-rounds/** -text
+
+# Publication: retain every archived file byte on all platforms.
+* -text

@@ -1,0 +1,227 @@
+{
+  "node": "n57",
+  "artifact_version": "n57-dense-scalar-compiler-v1",
+  "dev_score": 1.0,
+  "formal_passed": 4,
+  "formal_denominator": 4,
+  "python_score": 1.0,
+  "python_passed": 16,
+  "python_denominator": 16,
+  "compiler_exit_code": 0,
+  "compiler_errors": 0,
+  "final_candidate": "candidate-02",
+  "source_sha256": "6c2ad98a6eca9590430dcc973cec57daaa1d1e28c9009366fdb50df96fd5a69b",
+  "protocol_sha256": "d0134d042a536d432094dbc2fb133c6f44db9345187bb10d5decd16cd33da8d4",
+  "axiom_audit": {
+    "DenseScalar.matrix_power_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.sumCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.sumCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.dotCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.dotCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.denseProduct_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.denseProduct_matrix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.denseProduct_raw_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.dense_product_gate_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.instructionCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.instructionCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.sequenceCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.sequenceCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.matrixPowerCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.matrixPowerCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.matrixVecCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.matrixVecCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.contractionCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.contractionCircuit_raw_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.contractionCircuit_gate_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.scalar_compiler_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.scalarCircuit_raw_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.scalarCircuit_gate_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.conditional_scalar_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "audited_new_declarations": 24,
+  "candidate_rounds": 2,
+  "candidate_budget": 20,
+  "probes": 4,
+  "dependency_compiles": 1,
+  "mathlib_environment_keys_used": [
+    "LEAN_PATH",
+    "LEAN_SRC_PATH",
+    "LEAN_SYSROOT"
+  ],
+  "measured_python_scalar_counts": [
+    {
+      "n": 2,
+      "r": 2,
+      "K": 3,
+      "J": 2,
+      "additions": 11,
+      "multiplications": 22,
+      "scalar_gates": 33,
+      "S": "Explicit input construction hypothesis",
+      "conditional_upper_bound_excluding_S": 140,
+      "graph_generation_seconds": 0.0022459000028902665
+    },
+    {
+      "n": 3,
+      "r": 3,
+      "K": 26,
+      "J": 6,
+      "additions": 116,
+      "multiplications": 174,
+      "scalar_gates": 290,
+      "S": "Explicit input construction hypothesis",
+      "conditional_upper_bound_excluding_S": 999,
+      "graph_generation_seconds": 0.0423984000008204
+    },
+    {
+      "n": 4,
+      "r": 4,
+      "K": 255,
+      "J": 14,
+      "additions": 687,
+      "multiplications": 916,
+      "scalar_gates": 1603,
+      "S": "Explicit input construction hypothesis",
+      "conditional_upper_bound_excluding_S": 4144,
+      "graph_generation_seconds": 0.07111730000178795
+    },
+    {
+      "n": 5,
+      "r": 5,
+      "K": 3124,
+      "J": 15,
+      "additions": 1524,
+      "multiplications": 1905,
+      "scalar_gates": 3429,
+      "S": "Explicit input construction hypothesis",
+      "conditional_upper_bound_excluding_S": 12575,
+      "graph_generation_seconds": 0.14854409999679774
+    }
+  ],
+  "formally_derived_counts": {
+    "dense_product": "2*r^3-r^2, for r>=1",
+    "contraction": "2*r^2+r-1, for r>=1",
+    "total": "length(binaryPlan(k))*(2*r^3-r^2)+(2*r^2+r-1), for r>=1",
+    "conditional_budget": "S+4*r^3*n^2+3*r^2, for r>=1,n>=2,k=n^n-1"
+  },
+  "scalar_dag_files": [
+    {
+      "file": "scalar-dags\\n2-r2.json",
+      "sha256": "4a601e38b7482da8a3438faf809fd160c42a5a91e218750adfade1291a726317"
+    },
+    {
+      "file": "scalar-dags\\n3-r3.json",
+      "sha256": "acbcba0ccd14587436c2ff961004f1e9f2e9fc9ecc3da1d37a7ffb62e85e970a"
+    },
+    {
+      "file": "scalar-dags\\n4-r4.json",
+      "sha256": "c8c7b42c6f201fa36ae581b029fdfec42dc3336a9131f308a043d6b586c165b0"
+    },
+    {
+      "file": "scalar-dags\\n5-r5.json",
+      "sha256": "04a63f3d5d5e4adbbc86537224cede21096fc5044edc93de023451bb040d10c0"
+    }
+  ],
+  "semantic_scope": "Universal Lean theorem for the constructed compositional scalar DAG; exact positive agreement of Python serialized SSA implementation against an independent oracle is finite evidence.",
+  "ssa_lowering_formally_verified": false,
+  "explicit_initial_data": "Every M,u,v scalar is supplied as a leaf; their construction cost S is a separate explicit hypothesis.",
+  "root_representation_established": false,
+  "held_out_access": false,
+  "cache_mutations": false
+}

@@ -1,0 +1,249 @@
+{
+  "date": "2026-10-24",
+  "status": "General polynomial scalar source remains unconstructed",
+  "exact_arithmetic": true,
+  "formal_proof_status": "Written arguments; no new Lean certification",
+  "verification_kind": "Finite development checks, not an asymptotic proof or held-out benchmark",
+  "root_polynomial": {
+    "disjoint_union_checks": 1092,
+    "single_subset_codes_injective_through_n": 6,
+    "legal_counterexample": {
+      "A1": [
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "A2": [
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "B1_at_z1": [
+        [
+          1,
+          10,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      "B2_at_z1": [
+        [
+          5,
+          2,
+          5
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      "identical_prefix_summary": "12 X - 24",
+      "PA1_at_z1": 46,
+      "PA2_at_z1": 38
+    },
+    "depth2_counterexample": {
+      "B1_at_z1": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          17,
+          5,
+          5
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "B2_at_z1": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          5,
+          5,
+          17,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "identical_prefix_summary": "84 X^2 - 420 X + 506",
+      "PA1_at_z1": 276,
+      "PA2_at_z1": 260
+    }
+  },
+  "sign_evaluations": {
+    "numeric_legal_matrices": 84,
+    "whole_marked_polynomials": 16,
+    "pointwise_block_fusion_checks": 10752,
+    "homogeneous_monomial_checks": 2353,
+    "seed": 20261024,
+    "sample_count": "2^(n-1)",
+    "polynomial_algorithm": false
+  },
+  "B27_fixed_sampling": {
+    "records": [
+      {
+        "n": 1,
+        "permutation_count": 1,
+        "all_T_below_factorial_rejected_for_A0": true,
+        "minimum_injective_modulus_up_to_10000": 1,
+        "legal_permutation_input_coefficient_rank": 1
+      },
+      {
+        "n": 2,
+        "permutation_count": 2,
+        "all_T_below_factorial_rejected_for_A0": true,
+        "minimum_injective_modulus_up_to_10000": 2,
+        "legal_permutation_input_coefficient_rank": 2
+      },
+      {
+        "n": 3,
+        "permutation_count": 6,
+        "all_T_below_factorial_rejected_for_A0": true,
+        "minimum_injective_modulus_up_to_10000": 10,
+        "legal_permutation_input_coefficient_rank": 6
+      },
+      {
+        "n": 4,
+        "permutation_count": 24,
+        "all_T_below_factorial_rejected_for_A0": true,
+        "minimum_injective_modulus_up_to_10000": 82,
+        "legal_permutation_input_coefficient_rank": 24
+      },
+      {
+        "n": 5,
+        "permutation_count": 120,
+        "all_T_below_factorial_rejected_for_A0": true,
+        "minimum_injective_modulus_up_to_10000": 601
+      },
+      {
+        "n": 6,
+        "permutation_count": 720,
+        "all_T_below_factorial_rejected_for_A0": true
+      }
+    ],
+    "n3_A0_T5_counterexample": [
+      {
+        "exponent": 84,
+        "correct": 1,
+        "T5_output": 1
+      },
+      {
+        "exponent": 98,
+        "correct": 1,
+        "T5_output": 2
+      },
+      {
+        "exponent": 140,
+        "correct": 1,
+        "T5_output": 1
+      },
+      {
+        "exponent": 161,
+        "correct": 1,
+        "T5_output": 2
+      },
+      {
+        "exponent": 266,
+        "correct": 1,
+        "T5_output": 2
+      },
+      {
+        "exponent": 273,
+        "correct": 1,
+        "T5_output": 2
+      }
+    ],
+    "theorem_scope": "Fixed scalar sample nodes independent of A and z; linear reconstruction independent of A.",
+    "sample_lower_bound": "n!",
+    "general_circuit_lower_bound": false
+  },
+  "paper_bridge": {
+    "B26_monomial_checks": 2353,
+    "B18_exact_example_spectrum": [
+      6,
+      9,
+      7,
+      4
+    ],
+    "B18_exact_example_output": [
+      0,
+      0,
+      0,
+      6
+    ],
+    "spectral_overhead_preserved": "2 N log2(N) + 3 N - 3 for N a power of two >=2"
+  },
+  "source_pdf": {
+    "name": "annihilation_raccord_spectral_demonstrations.pdf",
+    "sha256": "ed1f05cd132305ec98ec4f195ae395123cc4ae68e1a137ac4a78898f4d5199f4"
+  },
+  "verifier_sha256": "c46aa30142a66e8c6a5eb21b99669c7434fc65331cb0124ad1630d138e64288e"
+}

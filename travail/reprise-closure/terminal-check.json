@@ -1,0 +1,9 @@
+{
+  "source": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fusion-ntt\\TerminalDifference.lean",
+  "sha256": "521cbba61f09a26359c2805774f5283457a7d5a19fe57c4c15867c8f958e6290",
+  "source_changed": false,
+  "exit_code": 1,
+  "seconds": 62.532,
+  "stdout": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fusion-ntt\\TerminalDifference.lean:18:20: error: unsolved goals\ncase cons\nR : Type u_1\ninst✝ : Semiring R\np : R[X]\nps : List R[X]\nih : (∀ p ∈ ps, p.coeff 0 = 0) → ∀ k < ps.length, ps.prod.coeff k = 0\nhz : ∀ p_1 ∈ p :: ps, p_1.coeff 0 = 0\nk : ℕ\nhk : k < (p :: ps).length\n⊢ (p :: ps).prod.coeff k = 0\n",
+  "stderr": ""
+}

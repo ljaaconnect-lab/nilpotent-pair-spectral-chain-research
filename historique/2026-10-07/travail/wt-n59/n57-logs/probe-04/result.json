@@ -1,0 +1,103 @@
+{
+  "tag": "probe-04",
+  "kind": "probe",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n57\\MatrixScalarCompiler.lean"
+  ],
+  "environment_keys": [
+    "LEAN_PATH",
+    "LEAN_SRC_PATH",
+    "LEAN_SYSROOT"
+  ],
+  "environment_file": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib-environment.json",
+  "source_sha256": "ad2ac63037d6a3e038b87391eb8cf29d0c7cbed82fb260c08b6f35e163e59610",
+  "exit_code": 1,
+  "elapsed_seconds": 23.045744899995043,
+  "error_count": 2,
+  "source_clean": true,
+  "axiom_audit": {
+    "DenseScalar.matrix_power_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.sumCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.sumCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.dotCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.dotCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.denseProduct_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.denseProduct_matrix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.denseProduct_raw_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.dense_product_gate_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.instructionCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.instructionCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.sequenceCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.sequenceCircuit_gates": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.matrixPowerCircuit_eval": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.matrixPowerCircuit_gates": [
+      "propext",
+      "sorryAx",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "passed": 0,
+  "denominator": 4,
+  "dev_score": null,
+  "root_representation_established": false
+}

@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\induction-native-2026-11-03\\SharedCostInduction.lean"
+  ],
+  "source": "SharedCostInduction.lean",
+  "source_sha256": "4a697eaa53d71cf620fad2dcf766ea41dbad3f6816435538d8e8125ab27a6009",
+  "replay_sha256": "668e9d60e4d8c35774d3747576799db0ae0213544f0678a38b8bfe7db0c644e7",
+  "environment_helper": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\lean_check.py",
+  "environment_helper_sha256": "a5e21cfb624e5258009425f6c6eecaf0eb1b529d953bbb2607717dab44a439ad",
+  "source_changed_during_check": false,
+  "exit_code": 0,
+  "seconds": 17.375,
+  "stdout": "'SharedCostInduction.accumulated_cost' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedCostInduction.uniform_increment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedCostInduction.bounded_increment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedCostInduction.polynomial_two_term_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedCostInduction.polynomial_monomial_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedCostInduction.polynomial_family_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "accumulated_cost",
+    "uniform_increment_bound",
+    "bounded_increment_bound",
+    "polynomial_two_term_bound",
+    "polynomial_monomial_bound",
+    "polynomial_family_bound"
+  ],
+  "all_theorem_axioms_printed": true,
+  "source_has_no_placeholders_or_added_axioms": true,
+  "scope": "Finite induction and polynomial consequences of supplied shared scalar increment bounds.",
+  "state_semantics": "S(i) counts the same accumulated circuit; increments count only newly added scalar gates.",
+  "bounds": {
+    "finite_accumulation": "S(m) <= S(0) + sum_{i<m} increment(i)",
+    "uniform_increment": "S(m) <= S(0) + m*K*n^c",
+    "two_term_polynomial": "S(m) <= K0*n^a + A*K*n^(b+c)",
+    "single_monomial": "S(m) <= (K0+A*K)*n^max(a,b+c)",
+    "family_constants": "K0,A,K,a,b,c are quantified before n and are independent of n"
+  },
+  "hypotheses": [
+    "For each i<m: S(i+1) <= S(i) + increment(i)",
+    "Uniform variant: increment(i) <= K*n^c",
+    "S(0) <= K0*n^a and m <= A*n^b",
+    "n >= 1 for the single-monomial and family bounds",
+    "Every increment concerns new scalar gates on compatible interfaces of the same shared circuit"
+  ],
+  "scalar_interface_compatibility_is_external": true,
+  "native_increment_bound_proved": false,
+  "native_compiler_formalized": false,
+  "oriented_product_scalarization_proved": false,
+  "complete_native_scalar_chain_polynomial_bound_proved": false
+}

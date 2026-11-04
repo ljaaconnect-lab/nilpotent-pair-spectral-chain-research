@@ -1,0 +1,316 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\WordFilter.lean",
+  "version": 8,
+  "completed": true,
+  "seconds": 24.312,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase neg\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : c = b\nhac : a = b\nhad : ¬b = d\nhae : ¬b = e\n⊢ (if d = e ∧ e = d then -64 else 0) +\n      (64 +\n        ((if d = e ∧ e = d then 32 else 0) +\n          (-32 +\n            ((if d = e ∧ e = d then 32 else 0) +\n              (-32 + ((if d = e ∧ e = d then 32 else 0) + (-32 + ((if d = e ∧ e = d then -32 else 0) + 32)))))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase neg\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : d = b\nhac : ¬b = c\nhad : a = b\nhae : ¬b = e\n⊢ (if c = e ∧ e = c then -64 else 0) +\n      (64 +\n        ((if c = e ∧ e = c then 32 else 0) +\n          (-32 +\n            ((if c = e ∧ e = c then 32 else 0) +\n              (-32 + ((if c = e ∧ e = c then 32 else 0) + (-32 + ((if c = e ∧ e = c then -32 else 0) + 32)))))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase pos\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : e = b\nhac : ¬b = c\nhad : ¬b = d\nhae : a = b\n⊢ (if c = d ∧ d = c then -64 else 0) +\n      ((if c = d ∧ d = c then 32 else 0) +\n        (64 +\n          (-32 +\n            ((if c = d ∧ d = c then 32 else 0) +\n              ((if c = d ∧ d = c then 32 else 0) + ((if c = d ∧ d = c then -32 else 0) + -32)))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase neg\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : a = b\nhac : ¬b = c\nhad : ¬b = d\nhae : ¬b = e\n⊢ (if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then -64 else 0) +\n      ((if c = d ∧ d = c then 32 else 0) +\n        ((if c = e ∧ e = c then 32 else 0) +\n          ((if d = e ∧ e = d then 32 else 0) +\n            (-32 +\n              ((if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then 64 else 0) +\n                ((if c = d ∧ d = c then -32 else 0) +\n                  ((if c = e ∧ e = c then -32 else 0) + ((if d = e ∧ e = d then -32 else 0) + 32)))))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase neg\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : ¬c = b\nhac : d = c\nhad : a = c\nhae : ¬c = e\n⊢ (if b = e ∧ e = b then -64 else 0) +\n      (64 +\n        ((if b = e ∧ e = b then 32 else 0) +\n          (-32 +\n            ((if b = e ∧ e = b then 32 else 0) +\n              (-32 + ((if b = e ∧ e = b then 32 else 0) + (-32 + ((if b = e ∧ e = b then -32 else 0) + 32)))))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase pos\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : ¬c = b\nhac : e = c\nhad : ¬c = d\nhae : a = c\n⊢ (if b = d ∧ d = b then -64 else 0) +\n      ((if b = d ∧ d = b then 32 else 0) +\n        (64 +\n          (-32 +\n            ((if b = d ∧ d = b then 32 else 0) +\n              ((if b = d ∧ d = b then 32 else 0) + ((if b = d ∧ d = b then -32 else 0) + -32)))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase neg\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : ¬c = b\nhac : a = c\nhad : ¬c = d\nhae : ¬c = e\n⊢ (if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -64 else 0) +\n      ((if b = d ∧ d = b then 32 else 0) +\n        ((if b = e ∧ e = b then 32 else 0) +\n          ((if d = e ∧ e = d then 32 else 0) +\n            (-32 +\n              ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then 64 else 0) +\n                ((if b = d ∧ d = b then -32 else 0) +\n                  ((if b = e ∧ e = b then -32 else 0) + ((if d = e ∧ e = d then -32 else 0) + 32)))))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase pos\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : ¬d = b\nhac : ¬d = c\nhad : e = d\nhae : a = d\n⊢ (if b = c ∧ c = b then -64 else 0) +\n      ((if b = c ∧ c = b then 32 else 0) +\n        ((if b = c ∧ c = b then 32 else 0) + ((if b = c ∧ c = b then 32 else 0) + if b = c ∧ c = b then -32 else 0))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase neg\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : ¬d = b\nhac : ¬d = c\nhad : a = d\nhae : ¬d = e\n⊢ (if (b = c ∧ b = e) ∧ (c = b ∧ c = e) ∧ e = b ∧ e = c then -64 else 0) +\n      ((if b = c ∧ c = b then 32 else 0) +\n        ((if (b = c ∧ b = e) ∧ (c = b ∧ c = e) ∧ e = b ∧ e = c then 64 else 0) +\n          ((if b = c ∧ c = b then -32 else 0) +\n            ((if b = e ∧ e = b then 32 else 0) +\n              ((if c = e ∧ e = c then 32 else 0) +\n                (-32 + ((if b = e ∧ e = b then -32 else 0) + ((if c = e ∧ e = c then -32 else 0) + 32)))))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase pos\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : ¬e = b\nhac : ¬e = c\nhad : ¬e = d\nhae : a = e\n⊢ (if (b = c ∧ b = d) ∧ (c = b ∧ c = d) ∧ d = b ∧ d = c then -64 else 0) +\n      ((if (b = c ∧ b = d) ∧ (c = b ∧ c = d) ∧ d = b ∧ d = c then 64 else 0) +\n        ((if b = c ∧ c = b then 32 else 0) +\n          ((if b = c ∧ c = b then -32 else 0) +\n            ((if b = d ∧ d = b then 32 else 0) +\n              ((if b = d ∧ d = b then -32 else 0) +\n                ((if c = d ∧ d = c then 32 else 0) + if c = d ∧ d = c then -32 else 0)))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase neg\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : ¬a = b\nhac : ¬a = c\nhad : ¬a = d\nhae : ¬a = e\n⊢ (if (b = c ∧ b = d ∧ b = e) ∧ (c = b ∧ c = d ∧ c = e) ∧ (d = b ∧ d = c ∧ d = e) ∧ e = b ∧ e = c ∧ e = d then -192\n      else 0) +\n      ((if (b = c ∧ b = d) ∧ (c = b ∧ c = d) ∧ d = b ∧ d = c then 64 else 0) +\n        ((if (b = c ∧ b = e) ∧ (c = b ∧ c = e) ∧ e = b ∧ e = c then 64 else 0) +\n          ((if b = c ∧ c = b ∧ d = e ∧ e = d then 32 else 0) +\n            ((if b = c ∧ c = b then -32 else 0) +\n              ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then 64 else 0) +\n                ((if b = d ∧ c = e ∧ d = b ∧ e = c then 32 else 0) +\n                  ((if b = d ∧ d = b then -32 else 0) +\n                    ((if b = e ∧ c = d ∧ d = c ∧ e = b then 32 else 0) +\n                      ((if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then 64 else 0) +\n                        ((if c = d ∧ d = c then -32 else 0) +\n                          ((if b = e ∧ e = b then -32 else 0) +\n                            ((if c = e ∧ e = c then -32 else 0) +\n                              ((if d = e ∧ e = d then -32 else 0) + 32))))))))))))) =\n    if ¬b = c ∧ ¬b = d ∧ ¬b = e ∧ ¬c = d ∧ ¬c = e ∧ ¬d = e then 32 else 0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 87
+        },
+        "start": {
+          "character": 12,
+          "line": 87
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    }
+  ]
+}

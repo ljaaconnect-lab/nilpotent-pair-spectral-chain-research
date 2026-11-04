@@ -1,0 +1,7 @@
+&: 
+Line |
+   2 |  … son; $taskLeanLog = 'work\lean-environment.log'; try { & lean --versi …
+     |                                                             ~~~~
+     | Le terme « lean » n’est pas reconnu comme nom d’applet de commande, d’une fonction, d’un fichier de script ou d’un programme exécutable.
+Vérifiez l’orthographe du nom ou, si un chemin d’accès a été inclus, vérifiez que le chemin d’accès est correct et réessayez.
+

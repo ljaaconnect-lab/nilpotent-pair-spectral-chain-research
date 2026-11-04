@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\raccord-normalisation-2026-11-03\\NativeNormalizationContract.lean"
+  ],
+  "source": "NativeNormalizationContract.lean",
+  "source_sha256": "b6fa1073e442889d0aa8a771bd35bf5b25319d495d387f560d4304742e2231f4",
+  "replay_sha256": "78b7b4fa572800157efdc70ed7e6508af0c4f0cb53273423dc98e32f9142ac5f",
+  "environment_helper_sha256": "a5e21cfb624e5258009425f6c6eecaf0eb1b529d953bbb2607717dab44a439ad",
+  "local_imports": {
+    "travail\\fermeture-native\\build\\TerminalTaggedClosure.olean": "5c159311e86b0d84ecce3ded15b69410781ab6c5db87c4817c95f6fdaf664321",
+    "travail\\fermeture-native\\build\\AuxiliaryErasure.olean": "3a2d56048aacb81fc205281d58ee789a13b26e1a7dd3ba42c856f53f5e49df00",
+    "travail\\audit-compilation-generique\\build\\MatrixScalarCompiler.olean": "3af2d83a084a074cb94c0fc09629f512f9917dcaaefad572827d4ca41a374708"
+  },
+  "source_changed_during_check": false,
+  "exit_code": 0,
+  "seconds": 20.219,
+  "stdout": "'NativeNormalizationContract.linear_row_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativeNormalizationContract.oriented_product_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativeNormalizationContract.spectral_output_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativeNormalizationContract.tagged_spectral_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativeNormalizationContract.representative_normalized_forces_zero' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'NativeNormalizationContract.circuit_normalized_forces_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativeNormalizationContract.q5_witness_arithmetic' depends on axioms: [propext, Quot.sound]\n'NativeNormalizationContract.tag_two_left_inverse' depends on axioms: [propext, Quot.sound]\n'NativeNormalizationContract.tag_two_ne_zero' depends on axioms: [propext, Quot.sound]\n'NativeNormalizationContract.nonzero_native_rejects_normalized' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "linear_row_zero",
+    "oriented_product_zero",
+    "spectral_output_zero",
+    "tagged_spectral_zero",
+    "representative_normalized_forces_zero",
+    "circuit_normalized_forces_zero",
+    "q5_witness_arithmetic",
+    "tag_two_left_inverse",
+    "tag_two_ne_zero",
+    "nonzero_native_rejects_normalized"
+  ],
+  "all_theorem_axioms_printed": true,
+  "source_has_no_placeholders_or_added_axioms": true,
+  "scope": "The retained homogeneous representatives vanish at x=0. The existing normalized contract on those output wires therefore forces zero native outputs. A nonzero native output contradicts that contract. Q=5,N=4,a=0,z=1 witness arithmetic is checked, and tag(2) is nonzero whenever its target label is nonzero.",
+  "nonzero_terminal_label_assumed_in_lean": true,
+  "quotient_basis_construction_formalized_here": false,
+  "general_polynomial_closure_proved": false,
+  "impossibility_of_other_scalar_compilers_claimed": false,
+  "lean_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)"
+}

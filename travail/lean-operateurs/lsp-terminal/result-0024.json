@@ -1,0 +1,33 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fusion-ntt\\TerminalDifference.lean",
+  "version": 24,
+  "completed": true,
+  "seconds": 1.359,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 31,
+          "line": 29
+        },
+        "start": {
+          "character": 8,
+          "line": 29
+        }
+      },
+      "message": "declaration uses `sorry`",
+      "range": {
+        "end": {
+          "character": 31,
+          "line": 29
+        },
+        "start": {
+          "character": 8,
+          "line": 29
+        }
+      },
+      "severity": 2,
+      "source": "Lean 4"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "node": "n77",
+  "artifact_goal": "direct_corrected_circuit.py",
+  "new_lean_invocations_allowed": 0,
+  "semantics": "Existing independently verified n73 state recurrence and marked_target theorem",
+  "target": "Complete PA(z)=Cn(DA(z)), as defined in Conjecture1.5",
+  "circuit_scope": "All n>=1, p_ij and z leaves, +/* only, explicit initialized states",
+  "recipe": "F(empty)=1; for nonempty U of size k use row k-1 and sum j in U b_(k-1,j)*F(U.erase j); output full-set state",
+  "gates_recipe": "Shared marks2*n*n-1 plus generic recurrence(n-1)*2^n+1, total(n-1)*2^n+2*n*n",
+  "forbidden": [
+    "No central t coefficient extraction",
+    "No free Cn gate",
+    "No unknown coefficient as input",
+    "No divisions or auxiliary-ring gates",
+    "No counterexample/lower-bound generation",
+    "No root polynomial claim from this reference",
+    "No Lean invocations",
+    "No writes to .arbor/outputs"
+  ],
+  "development_positive_checks": {
+    "n": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "A": [
+      "identity",
+      "Vandermonde",
+      "cycle"
+    ],
+    "z": [
+      -1,
+      0,
+      1
+    ]
+  },
+  "test_boundary": "Coordinator reruns source-frozen DAG evaluation separately; no new root extractor heldout boundary",
+  "root_score": 0,
+  "root_conjecture_verified": false
+}

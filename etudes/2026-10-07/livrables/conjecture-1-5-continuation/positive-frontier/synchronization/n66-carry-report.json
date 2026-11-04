@@ -1,0 +1,301 @@
+{
+  "node": "n66",
+  "artifact_version": "carry-supplement-v1",
+  "root_dev_score": 0.0,
+  "root_obligation_denominator": 3,
+  "root_obligations_closed": 0,
+  "root_conjecture_proved": false,
+  "support_passes": 40,
+  "support_denominator": 40,
+  "support_score": 1.0,
+  "support_results": [
+    {
+      "identity": "local_T_gaussian_and_scalar",
+      "pass": true
+    },
+    {
+      "identity": "native_coherent_gaussian_and_scalar",
+      "N": 0,
+      "pass": true
+    },
+    {
+      "identity": "native_coherent_gaussian_and_scalar",
+      "N": 1,
+      "pass": true
+    },
+    {
+      "identity": "native_coherent_gaussian_and_scalar",
+      "N": 2,
+      "pass": true
+    },
+    {
+      "identity": "native_coherent_gaussian_and_scalar",
+      "N": 3,
+      "pass": true
+    },
+    {
+      "identity": "native_coherent_gaussian_and_scalar",
+      "N": 4,
+      "pass": true
+    },
+    {
+      "identity": "native_coherent_gaussian_and_scalar",
+      "N": 5,
+      "pass": true
+    },
+    {
+      "identity": "actual_grouped_shuffle",
+      "N": 0,
+      "pass": true
+    },
+    {
+      "identity": "actual_grouped_shuffle",
+      "N": 1,
+      "pass": true
+    },
+    {
+      "identity": "actual_grouped_shuffle",
+      "N": 2,
+      "pass": true
+    },
+    {
+      "identity": "actual_grouped_shuffle",
+      "N": 3,
+      "pass": true
+    },
+    {
+      "identity": "actual_grouped_shuffle",
+      "N": 4,
+      "pass": true
+    },
+    {
+      "identity": "actual_grouped_shuffle",
+      "N": 5,
+      "pass": true
+    },
+    {
+      "identity": "grouped_coherent_gaussian",
+      "N": 0,
+      "pass": true
+    },
+    {
+      "identity": "grouped_coherent_gaussian",
+      "N": 1,
+      "pass": true
+    },
+    {
+      "identity": "grouped_coherent_gaussian",
+      "N": 2,
+      "pass": true
+    },
+    {
+      "identity": "grouped_coherent_gaussian",
+      "N": 3,
+      "pass": true
+    },
+    {
+      "identity": "grouped_coherent_gaussian",
+      "N": 4,
+      "pass": true
+    },
+    {
+      "identity": "grouped_coherent_gaussian",
+      "N": 5,
+      "pass": true
+    },
+    {
+      "identity": "abstract_Walsh_orthogonality",
+      "N": 0,
+      "pass": true
+    },
+    {
+      "identity": "abstract_Walsh_orthogonality",
+      "N": 1,
+      "pass": true
+    },
+    {
+      "identity": "abstract_Walsh_orthogonality",
+      "N": 2,
+      "pass": true
+    },
+    {
+      "identity": "abstract_Walsh_orthogonality",
+      "N": 3,
+      "pass": true
+    },
+    {
+      "identity": "abstract_Walsh_orthogonality",
+      "N": 4,
+      "pass": true
+    },
+    {
+      "identity": "abstract_Walsh_orthogonality",
+      "N": 5,
+      "pass": true
+    },
+    {
+      "identity": "abstract_paired_copy_transform",
+      "m": 0,
+      "pass": true
+    },
+    {
+      "identity": "abstract_paired_copy_transform",
+      "m": 1,
+      "pass": true
+    },
+    {
+      "identity": "abstract_paired_copy_transform",
+      "m": 2,
+      "pass": true
+    },
+    {
+      "identity": "abstract_paired_copy_transform",
+      "m": 3,
+      "pass": true
+    },
+    {
+      "identity": "abstract_paired_copy_transform",
+      "m": 4,
+      "pass": true
+    },
+    {
+      "identity": "actual_cap_shuffle",
+      "m": 0,
+      "pass": true
+    },
+    {
+      "identity": "actual_cap_shuffle",
+      "m": 1,
+      "pass": true
+    },
+    {
+      "identity": "actual_cap_shuffle",
+      "m": 2,
+      "pass": true
+    },
+    {
+      "identity": "actual_cap_shuffle",
+      "m": 3,
+      "pass": true
+    },
+    {
+      "identity": "actual_cap_shuffle",
+      "m": 4,
+      "pass": true
+    },
+    {
+      "identity": "four_factor_parity_cap_identity",
+      "m": 0,
+      "pass": true
+    },
+    {
+      "identity": "four_factor_parity_cap_identity",
+      "m": 1,
+      "pass": true
+    },
+    {
+      "identity": "four_factor_parity_cap_identity",
+      "m": 2,
+      "pass": true
+    },
+    {
+      "identity": "four_factor_parity_cap_identity",
+      "m": 3,
+      "pass": true
+    },
+    {
+      "identity": "four_factor_parity_cap_identity",
+      "m": 4,
+      "pass": true
+    }
+  ],
+  "local_scalar_gates": 23,
+  "local_scalar_output": 31,
+  "measurements": [
+    {
+      "n": 2,
+      "ports_N": 8,
+      "coherent_skew_matrix_order": 17,
+      "skew_upper_entries": 136,
+      "local_chain_nodes": 8,
+      "internal_carry_edges": 7,
+      "scalar_component_nodes": 173,
+      "scalar_component_binary_gates": 151,
+      "scalar_output": 172,
+      "constant_literals": [
+        "-1",
+        "-2",
+        "0",
+        "1",
+        "2"
+      ],
+      "scope": "one Boolean tensor component; no B-dependent target contraction",
+      "root_target_compiled": false
+    },
+    {
+      "n": 3,
+      "ports_N": 18,
+      "coherent_skew_matrix_order": 37,
+      "skew_upper_entries": 666,
+      "local_chain_nodes": 18,
+      "internal_carry_edges": 17,
+      "scalar_component_nodes": 373,
+      "scalar_component_binary_gates": 331,
+      "scalar_output": 372,
+      "constant_literals": [
+        "-1",
+        "-2",
+        "0",
+        "1",
+        "2"
+      ],
+      "scope": "one Boolean tensor component; no B-dependent target contraction",
+      "root_target_compiled": false
+    },
+    {
+      "n": 4,
+      "ports_N": 32,
+      "coherent_skew_matrix_order": 65,
+      "skew_upper_entries": 2080,
+      "local_chain_nodes": 32,
+      "internal_carry_edges": 31,
+      "scalar_component_nodes": 653,
+      "scalar_component_binary_gates": 583,
+      "scalar_output": 652,
+      "constant_literals": [
+        "-1",
+        "-2",
+        "0",
+        "1",
+        "2"
+      ],
+      "scope": "one Boolean tensor component; no B-dependent target contraction",
+      "root_target_compiled": false
+    },
+    {
+      "n": 5,
+      "ports_N": 50,
+      "coherent_skew_matrix_order": 101,
+      "skew_upper_entries": 5050,
+      "local_chain_nodes": 50,
+      "internal_carry_edges": 49,
+      "scalar_component_nodes": 1013,
+      "scalar_component_binary_gates": 907,
+      "scalar_output": 1012,
+      "constant_literals": [
+        "-1",
+        "-2",
+        "0",
+        "1",
+        "2"
+      ],
+      "scope": "one Boolean tensor component; no B-dependent target contraction",
+      "root_target_compiled": false
+    }
+  ],
+  "lean_candidate_compiles": 0,
+  "lean_verified_supplement_theorems": [],
+  "base_freeze_unchanged": true,
+  "heldout_access": false,
+  "global_status": "unclosed: coherent graded routing does not equal the abstract ordinary basis transform"
+}

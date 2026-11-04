@@ -1,0 +1,106 @@
+{
+  "node": "n71",
+  "artifact_version": "n71-finite-scalar-DAG-v1",
+  "status": "scalar_interface_elaborated_root_open",
+  "source": "ScalarDAG.lean",
+  "source_sha256": "9f05b9ce092e13dbd9828f696c619d8f4858fccb6821e7b2dcf1ffd1f9c8c9f8",
+  "compiled_artifact_sha256": "87e98ee42a322db3c03a81dd10e0761c3d24258024296f704797ec30e30abde1",
+  "interface_elaborated": true,
+  "elaborated_definitions": [
+    "CollisionScalarDAG.rationalBits",
+    "CollisionScalarDAG.Leaf.eval",
+    "CollisionScalarDAG.Node.eval",
+    "CollisionScalarDAG.Program.eval",
+    "CollisionScalarDAG.Program.gates",
+    "CollisionScalarDAG.Program.literalBound",
+    "CollisionScalarDAG.Realizes",
+    "CollisionScalarDAG.AlgebraicCircuitComponent"
+  ],
+  "open_Lean_goal": "CollisionScalarDAG.AlgebraicCircuitComponent",
+  "exact_open_goal": "exists Pi:Polynomial Nat, forall n:Nat, 1 <= n -> forall A:Matrix (Fin n) (Fin n) Rat, exists c:Circuit n, c.gates <= Pi.eval n and c.literalBound (Pi.eval n) and c.eval A = CollisionEncodingBridge.markedPermanent A",
+  "algebraic_circuit_component_proved": false,
+  "uniformity_status": "REQUIRED_OPEN",
+  "root_conjecture_verified": false,
+  "root_score": 0,
+  "dev_score": 0,
+  "root_metric": "Complete original root obligations / three; syntax elaboration receives no proof credit",
+  "root_obligations_closed": [],
+  "root_obligations_open": [
+    "Unconditional finite scalar constructor with target identity for every n,A",
+    "Polynomial gate and rational literal bounds for that constructor",
+    "Executable finite constructor and polynomial bit-time proof in n,L"
+  ],
+  "accepted_root_theorems": [],
+  "other_source_theorems": [],
+  "axiom_audit": {
+    "CollisionScalarDAG.rationalBits": [],
+    "CollisionScalarDAG.Leaf.eval": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionScalarDAG.Node.eval": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionScalarDAG.Program.eval": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionScalarDAG.Program.gates": [],
+    "CollisionScalarDAG.Program.literalBound": [
+      "propext"
+    ],
+    "CollisionScalarDAG.Realizes": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionScalarDAG.AlgebraicCircuitComponent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "accepted_trust_base": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "compiler_invocations": 2,
+  "all_kind_invocation_budget": 8,
+  "candidate_invocations": 2,
+  "dependency_builds": 0,
+  "probe_compilations": 0,
+  "compiler_exit_code": 0,
+  "final_compiler_round": 2,
+  "invocation_history": [
+    {
+      "round": 1,
+      "kind": "candidate",
+      "source_sha256": "9f05b9ce092e13dbd9828f696c619d8f4858fccb6821e7b2dcf1ffd1f9c8c9f8",
+      "exit_code": 124,
+      "elapsed_seconds": 180.45299999999406
+    },
+    {
+      "round": 2,
+      "kind": "candidate",
+      "source_sha256": "9f05b9ce092e13dbd9828f696c619d8f4858fccb6821e7b2dcf1ffd1f9c8c9f8",
+      "exit_code": 0,
+      "elapsed_seconds": 90.7960000000021
+    }
+  ],
+  "infrastructure_incidents": [
+    "Invocation 1 exceeded its 180-second runner deadline with no Lean output; timeout is synthetic exit 124, not a mathematical diagnostic"
+  ],
+  "frozen_protocol_sha256": "60b9a08c1f37e180a02756e6ac4d6bc57b9d2e09f4616528fd37f3aaa9440255",
+  "formal_contract_sha256": "1d92095303733f6a38283f482de8e8300ed65931a3fb5d5e93a60500da6e7cb9",
+  "AND_OR_graph_sha256": "6b532326381a64e7e772342a3fd7bbe10a42c06c935b8e5c704f3a86b327c1b8",
+  "blueprint_sha256": "7c7493e13700b678d7f010aae37368283ba5721e7fcc27dc28da6c405c1857c7",
+  "dependency_provenance_sha256": "1ce322de088b7143b43dc85966e28c35718badfa4a539c9d4cea4cda22d0bd32",
+  "cache_mutated": false,
+  "heldout_tests_run": false,
+  "errors": []
+}

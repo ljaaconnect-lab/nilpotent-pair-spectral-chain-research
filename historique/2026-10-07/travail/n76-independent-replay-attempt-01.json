@@ -1,0 +1,22 @@
+{
+  "node": "n76",
+  "commit": "5147e434b140a860d90329ec059403c2a24afc56",
+  "kind": "independent committed atomic replay",
+  "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+  "raw_source_equal": true,
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-o",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n76\\AtomicSecondPrefix.olean",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n76\\AtomicSecondPrefix.lean"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "input file 'c:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n76\\AtomicSecondPrefix.lean' must be contained in root directory (C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n76-independent\\)\n",
+  "audits": {},
+  "accepted_declarations": 0,
+  "atomic_lemmas_verified": false,
+  "elapsed_seconds": 0.29699999999138527,
+  "root_conjecture_verified": false,
+  "compiled_sha256": null
+}

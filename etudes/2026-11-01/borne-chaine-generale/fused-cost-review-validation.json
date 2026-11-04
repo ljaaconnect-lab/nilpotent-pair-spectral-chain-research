@@ -1,0 +1,108 @@
+{
+  "status": "pass",
+  "scope": {
+    "mode": "direct",
+    "general_polynomial_closure": false,
+    "finite_gate_count_and_sharing_audit": true,
+    "jets_or_logarithms_executed": false,
+    "historical_sources_modified": false,
+    "lean_proof": false
+  },
+  "gate_model": "Scalar binary + and *; multiplication by a constant counts",
+  "additional_gate_bound": "4*n^2 - 3*n + 2, for n >= 3",
+  "bound_without_reusing_row_sums": "5*n^2 - 4*n + 2",
+  "source": {
+    "path": "etudes/2026-11-01/borne-chaine-generale/verify_fused_cost_review.py",
+    "sha256": "29ce987dc7c982ea93616faee4c93f15a9e17114ceec7f704664f359031e8523"
+  },
+  "dependencies": [
+    {
+      "path": "etudes/2026-11-01/fusion-double-log/fused_circuit.py",
+      "sha256": "42fc48847aef4f8b19490f0e2ee3055818e9ee3d114e13371855eb23a2be0515"
+    },
+    {
+      "path": "etudes/2026-11-01/logarithmes-chaine/log_circuit.py",
+      "sha256": "bded6cb85a07e04151e2bf4c181d73559bdcfadfc443ef72eb6bac4a433cba98"
+    },
+    {
+      "path": "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/shared_operator_dag.py",
+      "sha256": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06"
+    }
+  ],
+  "guarded_coordinate_helpers": [
+    "jet_add",
+    "jet_exp",
+    "jet_inverse_unit",
+    "jet_log_one_plus",
+    "jet_mul",
+    "jet_scale"
+  ],
+  "cases": [
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "labels": [
+        0,
+        1,
+        2
+      ],
+      "prefix_gates_including_B_preparation": 43,
+      "full_gates": 72,
+      "added_gates": 29,
+      "additional_gate_bound": 29,
+      "row_sum_roots_reachable_before_correction": 3
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 8,
+      "labels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "prefix_gates_including_B_preparation": 316,
+      "full_gates": 362,
+      "added_gates": 46,
+      "additional_gate_bound": 54,
+      "row_sum_roots_reachable_before_correction": 4
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "labels": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "prefix_gates_including_B_preparation": 2776,
+      "full_gates": 2858,
+      "added_gates": 82,
+      "additional_gate_bound": 87,
+      "row_sum_roots_reachable_before_correction": 5
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "N": 8,
+      "labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "prefix_gates_including_B_preparation": 20278,
+      "full_gates": 20394,
+      "added_gates": 116,
+      "additional_gate_bound": 128,
+      "row_sum_roots_reachable_before_correction": 6
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "status": "passed",
+  "scalar_transport_fusion_cases": 256,
+  "primes": [
+    2,
+    3,
+    17,
+    998244353
+  ],
+  "seed": 2026110105,
+  "records": [
+    {
+      "n": 1,
+      "dimension": 2,
+      "generators": 1,
+      "state_scalars": 3,
+      "gates_per_transport": 4,
+      "three_transports_and_parameter_sum": 13
+    },
+    {
+      "n": 2,
+      "dimension": 3,
+      "generators": 2,
+      "state_scalars": 9,
+      "gates_per_transport": 24,
+      "three_transports_and_parameter_sum": 74
+    },
+    {
+      "n": 3,
+      "dimension": 4,
+      "generators": 3,
+      "state_scalars": 22,
+      "gates_per_transport": 80,
+      "three_transports_and_parameter_sum": 243
+    },
+    {
+      "n": 4,
+      "dimension": 5,
+      "generators": 4,
+      "state_scalars": 45,
+      "gates_per_transport": 200,
+      "three_transports_and_parameter_sum": 604
+    },
+    {
+      "n": 5,
+      "dimension": 6,
+      "generators": 5,
+      "state_scalars": 81,
+      "gates_per_transport": 420,
+      "three_transports_and_parameter_sum": 1265
+    },
+    {
+      "n": 6,
+      "dimension": 7,
+      "generators": 6,
+      "state_scalars": 133,
+      "gates_per_transport": 784,
+      "three_transports_and_parameter_sum": 2358
+    },
+    {
+      "n": 7,
+      "dimension": 8,
+      "generators": 7,
+      "state_scalars": 204,
+      "gates_per_transport": 1344,
+      "three_transports_and_parameter_sum": 4039
+    },
+    {
+      "n": 8,
+      "dimension": 9,
+      "generators": 8,
+      "state_scalars": 297,
+      "gates_per_transport": 2160,
+      "three_transports_and_parameter_sum": 6488
+    }
+  ],
+  "mixed_coefficient_compiler": false,
+  "general_polynomial_solution": false,
+  "marked_spectral_example": {
+    "n": 3,
+    "a_entries": 0,
+    "N": 4,
+    "Q": 17,
+    "omega": 4,
+    "labels": [
+      0,
+      1,
+      2
+    ],
+    "target_slot": 3,
+    "z_formal": true,
+    "correct_exponents": [
+      84,
+      98,
+      140,
+      161,
+      266,
+      273
+    ],
+    "extra_exponent_after_y_equals_one": 146
+  },
+  "source_sha256": {
+    "transport.py": "8ed557b177384185519400229678c8065e62fd845581fc0b325ed5b18b551811",
+    "verify_transport.py": "aca8b5a6127634c6845c29c28f495f63deb902b5cb6f2a5664d6790057bd0e9c"
+  },
+  "scalar_dag_sha256": "73959d4040fa2cdf642c653bbedd68e3be60fb5853c9ce081202f5620c50a08d"
+}

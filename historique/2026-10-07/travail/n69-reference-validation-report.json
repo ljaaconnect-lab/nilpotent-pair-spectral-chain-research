@@ -1,0 +1,372 @@
+{
+  "scope": "Exponentially sized row-jet scalar reference; development only",
+  "freeze_sha256": "dfa4448c7f65bb4ad38649662d5e21ab01946aa8b2008dd0e9ffec286c433b90",
+  "cases": 36,
+  "positive_checks_passed": 108,
+  "positive_checks_total": 108,
+  "results": [
+    {
+      "n": 2,
+      "family": "identity",
+      "z": -1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 48,
+      "marked_gates": 55
+    },
+    {
+      "n": 2,
+      "family": "identity",
+      "z": 0,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 48,
+      "marked_gates": 55
+    },
+    {
+      "n": 2,
+      "family": "identity",
+      "z": 1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 48,
+      "marked_gates": 55
+    },
+    {
+      "n": 2,
+      "family": "vandermonde",
+      "z": -1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 48,
+      "marked_gates": 55
+    },
+    {
+      "n": 2,
+      "family": "vandermonde",
+      "z": 0,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 48,
+      "marked_gates": 55
+    },
+    {
+      "n": 2,
+      "family": "vandermonde",
+      "z": 1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 48,
+      "marked_gates": 55
+    },
+    {
+      "n": 2,
+      "family": "cyclic",
+      "z": -1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 48,
+      "marked_gates": 55
+    },
+    {
+      "n": 2,
+      "family": "cyclic",
+      "z": 0,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 48,
+      "marked_gates": 55
+    },
+    {
+      "n": 2,
+      "family": "cyclic",
+      "z": 1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 48,
+      "marked_gates": 55
+    },
+    {
+      "n": 3,
+      "family": "identity",
+      "z": -1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 228,
+      "marked_gates": 245
+    },
+    {
+      "n": 3,
+      "family": "identity",
+      "z": 0,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 228,
+      "marked_gates": 245
+    },
+    {
+      "n": 3,
+      "family": "identity",
+      "z": 1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 228,
+      "marked_gates": 245
+    },
+    {
+      "n": 3,
+      "family": "vandermonde",
+      "z": -1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 228,
+      "marked_gates": 245
+    },
+    {
+      "n": 3,
+      "family": "vandermonde",
+      "z": 0,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 228,
+      "marked_gates": 245
+    },
+    {
+      "n": 3,
+      "family": "vandermonde",
+      "z": 1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 228,
+      "marked_gates": 245
+    },
+    {
+      "n": 3,
+      "family": "cyclic",
+      "z": -1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 228,
+      "marked_gates": 245
+    },
+    {
+      "n": 3,
+      "family": "cyclic",
+      "z": 0,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 228,
+      "marked_gates": 245
+    },
+    {
+      "n": 3,
+      "family": "cyclic",
+      "z": 1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 228,
+      "marked_gates": 245
+    },
+    {
+      "n": 4,
+      "family": "identity",
+      "z": -1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 832,
+      "marked_gates": 863
+    },
+    {
+      "n": 4,
+      "family": "identity",
+      "z": 0,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 832,
+      "marked_gates": 863
+    },
+    {
+      "n": 4,
+      "family": "identity",
+      "z": 1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 832,
+      "marked_gates": 863
+    },
+    {
+      "n": 4,
+      "family": "vandermonde",
+      "z": -1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 832,
+      "marked_gates": 863
+    },
+    {
+      "n": 4,
+      "family": "vandermonde",
+      "z": 0,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 832,
+      "marked_gates": 863
+    },
+    {
+      "n": 4,
+      "family": "vandermonde",
+      "z": 1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 832,
+      "marked_gates": 863
+    },
+    {
+      "n": 4,
+      "family": "cyclic",
+      "z": -1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 832,
+      "marked_gates": 863
+    },
+    {
+      "n": 4,
+      "family": "cyclic",
+      "z": 0,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 832,
+      "marked_gates": 863
+    },
+    {
+      "n": 4,
+      "family": "cyclic",
+      "z": 1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 832,
+      "marked_gates": 863
+    },
+    {
+      "n": 5,
+      "family": "identity",
+      "z": -1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 2640,
+      "marked_gates": 2689
+    },
+    {
+      "n": 5,
+      "family": "identity",
+      "z": 0,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 2640,
+      "marked_gates": 2689
+    },
+    {
+      "n": 5,
+      "family": "identity",
+      "z": 1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 2640,
+      "marked_gates": 2689
+    },
+    {
+      "n": 5,
+      "family": "vandermonde",
+      "z": -1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 2640,
+      "marked_gates": 2689
+    },
+    {
+      "n": 5,
+      "family": "vandermonde",
+      "z": 0,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 2640,
+      "marked_gates": 2689
+    },
+    {
+      "n": 5,
+      "family": "vandermonde",
+      "z": 1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 2640,
+      "marked_gates": 2689
+    },
+    {
+      "n": 5,
+      "family": "cyclic",
+      "z": -1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 2640,
+      "marked_gates": 2689
+    },
+    {
+      "n": 5,
+      "family": "cyclic",
+      "z": 0,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 2640,
+      "marked_gates": 2689
+    },
+    {
+      "n": 5,
+      "family": "cyclic",
+      "z": 1,
+      "generic_ok": true,
+      "marked_ok": true,
+      "outputs_agree": true,
+      "generic_gates": 2640,
+      "marked_gates": 2689
+    }
+  ],
+  "all_gate_counts_checked": true,
+  "root_conjecture_verified": false,
+  "B_test_opened": false
+}

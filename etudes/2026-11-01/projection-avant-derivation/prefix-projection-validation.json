@@ -1,0 +1,114 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "etudes/2026-11-01/projection-avant-derivation/prefix_projection.py": "cde8be6f4e150ed2d7df5ce5aa7f6b990cadd094f442e8de8b9ac828515290ea",
+    "etudes/2026-11-01/projection-avant-derivation/verify_prefix_projection.py": "fd3f33d0a5fdb4d1b751a00920d975e7294d2119367b49e535f052e89b09e4ef",
+    "etudes/2026-11-01/projection-avant-derivation/direct_projection.py": "61da9626c023ca87db059a63f2845adbfb0a2f3db4d1762804b04cb18891ab19",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/verify_shared_operator_dag.py": "26b8ccc63937921a894d3e272ceaadd4445f19e862f62a3be536bb539d8037e9"
+  },
+  "cases": [
+    {
+      "n": 3,
+      "projection_gates": 49,
+      "prefix_gates": 83,
+      "extra_gates": 34,
+      "extra_gates_bound": 35,
+      "alpha": 1,
+      "beta": 1,
+      "factors": [],
+      "B_preparation_shared": true,
+      "status": "passed",
+      "numeric_tables": 4,
+      "formal_z_tables": 2
+    },
+    {
+      "n": 4,
+      "projection_gates": 110,
+      "prefix_gates": 175,
+      "extra_gates": 65,
+      "extra_gates_bound": 66,
+      "alpha": 1,
+      "beta": 10,
+      "factors": [
+        1,
+        2
+      ],
+      "B_preparation_shared": true,
+      "status": "passed",
+      "numeric_tables": 4,
+      "formal_z_tables": 0
+    },
+    {
+      "n": 5,
+      "projection_gates": 223,
+      "prefix_gates": 330,
+      "extra_gates": 107,
+      "extra_gates_bound": 107,
+      "alpha": 5,
+      "beta": 29,
+      "factors": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "B_preparation_shared": true,
+      "status": "passed",
+      "numeric_tables": 4,
+      "formal_z_tables": 0
+    },
+    {
+      "n": 6,
+      "projection_gates": 472,
+      "prefix_gates": 630,
+      "extra_gates": 158,
+      "extra_gates_bound": 158,
+      "alpha": 36,
+      "beta": 67,
+      "factors": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "B_preparation_shared": true,
+      "status": "passed",
+      "numeric_tables": 4,
+      "formal_z_tables": 0
+    },
+    {
+      "n": 7,
+      "projection_gates": 1013,
+      "prefix_gates": 1232,
+      "extra_gates": 219,
+      "extra_gates_bound": 219,
+      "alpha": 28,
+      "beta": 55,
+      "factors": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "B_preparation_shared": true,
+      "status": "passed",
+      "numeric_tables": 0,
+      "formal_z_tables": 0
+    }
+  ],
+  "numeric_tables": 16,
+  "formal_z_tables": 2,
+  "contract": "Recompiled c(L)G_B(1) from a,z; quadratic tail overhead above projected output.",
+  "polynomial_overhead": "5*n*n-4*n+2",
+  "general_polynomial_prefix_bound": false,
+  "general_polynomial_chain_bound": false
+}

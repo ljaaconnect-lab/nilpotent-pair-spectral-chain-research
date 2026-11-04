@@ -1,0 +1,29 @@
+[
+  {
+    "n": 5,
+    "group": "xor",
+    "size": 4,
+    "status": "INFEASIBLE",
+    "time_seconds": 0.4869991,
+    "conflicts": 260,
+    "branches": 4995
+  },
+  {
+    "n": 5,
+    "group": "xor",
+    "size": 8,
+    "status": "UNKNOWN",
+    "time_seconds": 15.041351100000002,
+    "conflicts": 35692,
+    "branches": 153422
+  },
+  {
+    "n": 5,
+    "group": "xor",
+    "size": 16,
+    "status": "UNKNOWN",
+    "time_seconds": 15.0715433,
+    "conflicts": 22225,
+    "branches": 114064
+  }
+]

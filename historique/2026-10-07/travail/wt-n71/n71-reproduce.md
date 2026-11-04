@@ -1,0 +1,11 @@
+# n71 faithful scalar-circuit interface
+
+The accepted `ScalarDAG.lean` defines a finite topological program with typed prior-node references, exact Q[z] evaluation, gate counting and rational-literal bit bounds. `n71-formal-contract.json` fixes its allowed leaves, binary operators and unconditional quantifiers. The uniform constructor remains explicitly REQUIRED in the full AND-OR graph and blueprint.
+
+Run `python verify_n71.py` to audit the exact-source compiler evidence and inherited dependency provenance without compiling. Run `python compile_n71.py` only for a separately budgeted compiler invocation. The runner has an exclusive lock, applies all three prepared environment entries, prefixes the local checkout and inherited read-only proof cache to LEAN_PATH, saves exact source bytes, emits a local olean, and waits for final Lean termination. Its budget counts all compiler invocations, including retries, dependencies and probes.
+
+Two invocations were used: the initial runner deadline stopped the compiler after 180 seconds with no diagnostic; the sequential retry with a 600-second deadline returned exit zero. The failure is preserved as an infrastructure incident. No old helper was rebuilt or replayed, no baseline theorem was added, and no hidden probe was run. The cached delivered sources match the coordinator replay hashes, and source and compiled dependency bytes were frozen before import.
+
+The eight audited definitions and elaborated `AlgebraicCircuitComponent : Prop` give no existential witness. There is no new theorem proving the original root. Root score is zero, with all three original obligations still open: an unconditional constructor and exact output identity; polynomial arithmetic and literal resources for that constructor; and an executable uniform constructor with polynomial bit-time proof in n,L. Existing conditional representation and budget results are reused only after their actual initializer and representation premises are supplied.
+
+This artifact is ready for the substantive constructors being investigated in n69/n70. An abstract function with an arbitrarily declared cost is excluded as a uniformity proof. Shared Arbor state, delivered outputs, proof cache and held-out test boundary were not modified.

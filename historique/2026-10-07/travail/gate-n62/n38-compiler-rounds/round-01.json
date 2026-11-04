@@ -1,0 +1,18 @@
+{
+  "node": "n38",
+  "round": 1,
+  "kind": "dependency_build",
+  "source": "CoreBridge.lean",
+  "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-o",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n38\\CoreBridge.olean",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n38\\CoreBridge.lean"
+  ],
+  "LEAN_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n38",
+  "exit_code": 0,
+  "stdout": "'CollisionCoreBridge.decode_head' depends on axioms: [propext]\n'CollisionCoreBridge.decode_tail' depends on axioms: [propext]\n'CollisionCoreBridge.encodeDigits_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionCoreBridge.central_label_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionCoreBridge.orbit_stabilizes' depends on axioms: [propext]\n'CollisionCoreBridge.n2_pair_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionCoreBridge.n2_central_convolution' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "root_conjecture_verified": false
+}

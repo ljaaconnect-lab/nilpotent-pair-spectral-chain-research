@@ -1,0 +1,488 @@
+{
+  "node_id": "n62",
+  "artifact_version": "n62-direct-projector-v1",
+  "status": "direct_projector_verified",
+  "dev_score": 1.0,
+  "source": "DirectProjector.lean",
+  "source_sha256": "c989a261b39e5a8fa4b69bbef0940359e050942fc723edf7013d2d5ff145ed04",
+  "compiler_invocations": 13,
+  "candidate_rounds": 9,
+  "dependency_builds": 4,
+  "frozen_replays": 0,
+  "probe_compilations": 0,
+  "candidate_compilation_budget": 12,
+  "expected_declarations": 7,
+  "accepted_declarations": 7,
+  "declarations": [
+    "CollisionDirectProjector.inversion_phase_eq_signCoeff",
+    "CollisionDirectProjector.local_mixed_cofactor",
+    "CollisionDirectProjector.local_xy_correction",
+    "CollisionDirectProjector.phase_involution",
+    "CollisionDirectProjector.phase_commute",
+    "CollisionDirectProjector.corrected_signed_weight",
+    "CollisionDirectProjector.corrected_signed_sum"
+  ],
+  "exact_declaration_statements": {
+    "inversion_phase_eq_signCoeff": "{n : Nat} (\u03c3 : Equiv.Perm (Fin n)) :\n    (inversionPhase \u03c3 : R) = signCoeff \u03c3",
+    "local_mixed_cofactor": "(a b c d : R) : mixedCofactor a b c d = d",
+    "local_xy_correction": "(a b c d x y : R) :\n    localCorrection a b c d x y = a + b * x + c * y - d * x * y",
+    "phase_involution": "{S : Type} (p : S \u2192 Prop) [DecidablePred p] (P : S \u2192 R) :\n    phase p (phase p P) = P",
+    "phase_commute": "{S : Type} (p q : S \u2192 Prop) [DecidablePred p] [DecidablePred q]\n    (P : S \u2192 R) : phase p (phase q P) = phase q (phase p P)",
+    "corrected_signed_weight": "{n : Nat} (b : Matrix (Fin n) (Fin n) R)\n    (\u03c3 : Equiv.Perm (Fin n)) :\n    (inversionPhase \u03c3 : R) * (signCoeff \u03c3 * weight b \u03c3) = weight b \u03c3",
+    "corrected_signed_sum": "{n : Nat} (b : Matrix (Fin n) (Fin n) R) :\n    (\u2211 \u03c3 : Equiv.Perm (Fin n),\n      (inversionPhase \u03c3 : R) * (signCoeff \u03c3 * weight b \u03c3)) =\n      \u2211 \u03c3 : Equiv.Perm (Fin n), weight b \u03c3"
+  },
+  "axiom_audit": {
+    "CollisionDirectProjector.inversion_phase_eq_signCoeff": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionDirectProjector.local_mixed_cofactor": [
+      "propext"
+    ],
+    "CollisionDirectProjector.local_xy_correction": [
+      "propext"
+    ],
+    "CollisionDirectProjector.phase_involution": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionDirectProjector.phase_commute": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionDirectProjector.corrected_signed_weight": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionDirectProjector.corrected_signed_sum": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "dependency_audits": {
+    "GeneralPairingRing.lean": {
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "round": 1,
+      "compiler_exit_code": 0,
+      "axioms": {
+        "GeneralCollisionPairingRing.sign_square": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.selectSum_nodup": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_label_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_row_select": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_row": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_pairing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.coefficient_append": [
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.coefficient_multiply": [
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_product_coefficient": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "CoreBridge.lean": {
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "round": 2,
+      "compiler_exit_code": 0,
+      "axioms": {
+        "CollisionCoreBridge.decode_head": [
+          "propext"
+        ],
+        "CollisionCoreBridge.decode_tail": [
+          "propext"
+        ],
+        "CollisionCoreBridge.encodeDigits_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionCoreBridge.central_label_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionCoreBridge.orbit_stabilizes": [
+          "propext"
+        ],
+        "CollisionCoreBridge.n2_pair_factorization": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionCoreBridge.n2_central_convolution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "LabelBridge.lean": {
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "round": 3,
+      "compiler_exit_code": 0,
+      "axioms": {
+        "CollisionLabelBridge.digit_step_bound": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.encodeDigits_lt_pow": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.indexedLabelFrom_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.indexedLabel_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.indexedLabel_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.indexedLabel_le_max": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.assignmentLabel_le_max": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.assignmentLabel_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.occupation_all_ones_selector": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.assignmentLabel_sum_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.occupation_sum_selector": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.assignmentLabels_nodup": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionLabelBridge.indexed_assignment_pairing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "DeterminantBridge.lean": {
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "round": 4,
+      "compiler_exit_code": 0,
+      "axioms": {
+        "CollisionDeterminantBridge.central_sum_pairing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.prod_monomials": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.permutation_sign_square": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.det_row_expansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.forward_determinant_expansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.rho_le_index": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.complement_label": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.reverse_determinant_expansion": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.central_determinant_pairing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.base_rho_eq": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.base_rho_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.base_capacity_sum_add_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionDeterminantBridge.base_n_determinant_pairing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    }
+  },
+  "journal_incident": {
+    "node": "n62",
+    "incident": "premature dependent candidate and concurrent journal number collision",
+    "dependency_session": 66477,
+    "dependency_exit_code": 0,
+    "candidate_session": 38712,
+    "candidate_exit_code": 1,
+    "candidate_error": "unknown module prefix 'DeterminantBridge'",
+    "original_shared_round": 4,
+    "recovered_unique_rounds": [
+      4,
+      5
+    ],
+    "original_metadata_preserved": "n62-compiler-rounds/journal-collision-original.json",
+    "snapshot_preserved": "n62-compiler-rounds/journal-collision-overwritten-snapshot.lean",
+    "constraints_unchanged": true,
+    "candidate_failure_counted": true,
+    "repair": "Exclusive process lock, immutable source-byte digest, sequential completion checks."
+  },
+  "journal_incident_sha256": "f5a57448bec48fe0c34feaec9d7b60305035ec5bc29bd01d601305fd9fdc70b0",
+  "mathlib_signature_provenance": {
+    "node": "n62",
+    "module": "Mathlib.GroupTheory.Perm.Fin",
+    "theorem": "Equiv.Perm.sign_eq_prod_prod_Ioi",
+    "mathlib_commit": null,
+    "source_sha256": "8dd395d98c0a15a149e25a600117c086f30ae8cfa7cf30c008ad0d3453f23657",
+    "compiled_module_sha256": "3a36120beffe72bc5d0be64bec4ed01c169e26422fe77c7c765f56f03f5701ca",
+    "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\GroupTheory\\Perm\\Fin.lean",
+    "compiled_module_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\GroupTheory\\Perm\\Fin.olean",
+    "lean_version": "4.34.1",
+    "read_only_dependency": true,
+    "axiom_audit_obligation": "CollisionDirectProjector.inversion_phase_eq_signCoeff",
+    "has_separate_mathlib_git_repository": false,
+    "git_provenance_note": "Sources are prepared in an extracted cache; enclosing research-repository HEAD is not a Mathlib revision.",
+    "toolchain_declaration": "leanprover/lean4:v4.34.1"
+  },
+  "mathlib_signature_provenance_sha256": "5efc1a0129b96ad2e5f6641077e43d55f81dbe81cf614b094c183e045438fc80",
+  "local_sympy_support_sha256": "2e4dac3515e1292b58677306b8c09df40a51681fde0ace7278d0ccc81daba371",
+  "local_sympy_checks": {
+    "cofactor": true,
+    "local_sign_flip": true,
+    "local_involution": true
+  },
+  "sympy_counts_as_kernel_proof": false,
+  "accepted_trust_base": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "final_compiler_round": 13,
+  "compiler_exit_code": 0,
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n62\\DirectProjector.lean"
+  ],
+  "LEAN_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n62;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+  "LEAN_SRC_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\src\\lean\\lake",
+  "LEAN_SYSROOT": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+  "frozen_contract_sha256": "9047cb460de390a05f9cfb025819ea8fa5b4010642d86e9046efc8394d054081",
+  "formal_contract_sha256": "8f8955f997d05502e4189fbc41c6fa44bc1e190d0003561adc39377c13ace62e",
+  "fixed_development_obligations": [
+    "CollisionDirectProjector.local_mixed_cofactor",
+    "CollisionDirectProjector.local_xy_correction",
+    "CollisionDirectProjector.phase_involution",
+    "CollisionDirectProjector.phase_commute",
+    "CollisionDirectProjector.inversion_phase_eq_signCoeff",
+    "CollisionDirectProjector.corrected_signed_weight",
+    "CollisionDirectProjector.corrected_signed_sum"
+  ],
+  "invocation_history": [
+    {
+      "round": 1,
+      "kind": "dependency_build",
+      "source": "GeneralPairingRing.lean",
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "exit_code": 0,
+      "journal_recovery": null
+    },
+    {
+      "round": 2,
+      "kind": "dependency_build",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "exit_code": 0,
+      "journal_recovery": null
+    },
+    {
+      "round": 3,
+      "kind": "dependency_build",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "exit_code": 0,
+      "journal_recovery": null
+    },
+    {
+      "round": 4,
+      "kind": "dependency_build",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "exit_code": 0,
+      "journal_recovery": {
+        "reason": "The overlapping candidate overwrote the shared snapshot before dependency completion.",
+        "original_metadata": "n62-compiler-rounds/journal-collision-original.json",
+        "source_recovered_from": "unchanged inherited DeterminantBridge.lean, matching n55 frozen SHA256",
+        "actual_exit_code_source": "completed write_stdin session 66477, exit 0"
+      }
+    },
+    {
+      "round": 5,
+      "kind": "candidate",
+      "source": "DirectProjector.lean",
+      "source_sha256": "3d7c4a17ec5a89004edddf945ceecfb498eadffd754ef6bda85c671ad1ba70cc",
+      "exit_code": 1,
+      "journal_recovery": {
+        "original_runner_round": 4,
+        "assigned_unique_round": 5,
+        "reason": "The candidate was launched before the dependency build finished, then its on-disk report was overwritten by that dependency.",
+        "actual_exit_code_source": "completed write_stdin session 38712, exit 1",
+        "stdout_capture": "Complete diagnostic transcribed from tool output using its exact listed search paths.",
+        "actual_compilation_counted_against_candidate_budget": true
+      }
+    },
+    {
+      "round": 6,
+      "kind": "candidate",
+      "source": "DirectProjector.lean",
+      "source_sha256": "3d7c4a17ec5a89004edddf945ceecfb498eadffd754ef6bda85c671ad1ba70cc",
+      "exit_code": 1,
+      "journal_recovery": null
+    },
+    {
+      "round": 7,
+      "kind": "candidate",
+      "source": "DirectProjector.lean",
+      "source_sha256": "8483e7cee160167065e62f656a0b43315b35276b4bb627ffd0774d0a0011621f",
+      "exit_code": 0,
+      "journal_recovery": null
+    },
+    {
+      "round": 8,
+      "kind": "candidate",
+      "source": "DirectProjector.lean",
+      "source_sha256": "ce5c3d906b109efca54c39218edbc421c99400719c7d902763fc3bca150ee619",
+      "exit_code": 0,
+      "journal_recovery": null
+    },
+    {
+      "round": 9,
+      "kind": "candidate",
+      "source": "DirectProjector.lean",
+      "source_sha256": "b61712c63bf18c0a6802573746608ba429f5b73532ff291018b2e604b68c2ff0",
+      "exit_code": 0,
+      "journal_recovery": null
+    },
+    {
+      "round": 10,
+      "kind": "candidate",
+      "source": "DirectProjector.lean",
+      "source_sha256": "3d2ce428f2ca2d92a672070d9a9cc621027e43d068f4f0924f7b3de0338d29c3",
+      "exit_code": 0,
+      "journal_recovery": null
+    },
+    {
+      "round": 11,
+      "kind": "candidate",
+      "source": "DirectProjector.lean",
+      "source_sha256": "0d4551c34b18df45e29d433366febb1ed8092a995fcd1646f6d93438d7a6a083",
+      "exit_code": 0,
+      "journal_recovery": null
+    },
+    {
+      "round": 12,
+      "kind": "candidate",
+      "source": "DirectProjector.lean",
+      "source_sha256": "1e012914fc06dddc69f218cdc8f22003a9e08e297b2a143f311c64bfec16fe9e",
+      "exit_code": 0,
+      "journal_recovery": null
+    },
+    {
+      "round": 13,
+      "kind": "candidate",
+      "source": "DirectProjector.lean",
+      "source_sha256": "c989a261b39e5a8fa4b69bbef0940359e050942fc723edf7013d2d5ff145ed04",
+      "exit_code": 0,
+      "journal_recovery": null
+    }
+  ],
+  "errors": [],
+  "root_conjecture_verified": false,
+  "heldout_tests_run": false,
+  "scope": "Seven local projector and genuine permutation inversion-phase identities over arbitrary CommRing; no scalar compilation complexity theorem"
+}

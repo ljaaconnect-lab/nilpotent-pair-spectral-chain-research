@@ -1,0 +1,300 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06",
+    "verify_shared_operator_dag.py": "26b8ccc63937921a894d3e272ceaadd4445f19e862f62a3be536bb539d8037e9"
+  },
+  "contract": "Existing G_B and factors I-L/r only. Compile-time shared symbolic differentiation; every reachable runtime gate is ordinary scalar + or *. Inputs are a,z and supplied admissible field parameters. No moment or terminal amplitude oracle. No general polynomial-size bound established.",
+  "general_polynomial_closure": false,
+  "cases": [
+    {
+      "n": 1,
+      "Q": 97,
+      "N": 2,
+      "status": "passed",
+      "tables": 8,
+      "formal_z_tables": 2,
+      "stages": [
+        {
+          "factor": 0,
+          "active_scalar_gates": 4,
+          "allocated_nodes": 9
+        }
+      ],
+      "complete_chain_scalar_gates": 8,
+      "allocated_nodes": 16,
+      "derivative_cache_entries": 0,
+      "seconds": 0.0
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "N": 4,
+      "status": "passed",
+      "tables": 8,
+      "formal_z_tables": 2,
+      "stages": [
+        {
+          "factor": 0,
+          "active_scalar_gates": 22,
+          "allocated_nodes": 31
+        },
+        {
+          "factor": 1,
+          "active_scalar_gates": 34,
+          "allocated_nodes": 51
+        }
+      ],
+      "complete_chain_scalar_gates": 65,
+      "allocated_nodes": 100,
+      "derivative_cache_entries": 26,
+      "seconds": 0.0
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "status": "passed",
+      "tables": 8,
+      "formal_z_tables": 2,
+      "stages": [
+        {
+          "factor": 0,
+          "active_scalar_gates": 52,
+          "allocated_nodes": 67
+        },
+        {
+          "factor": 1,
+          "active_scalar_gates": 90,
+          "allocated_nodes": 116
+        },
+        {
+          "factor": 2,
+          "active_scalar_gates": 131,
+          "allocated_nodes": 222
+        },
+        {
+          "factor": 3,
+          "active_scalar_gates": 178,
+          "allocated_nodes": 324
+        }
+      ],
+      "complete_chain_scalar_gates": 434,
+      "allocated_nodes": 696,
+      "derivative_cache_entries": 353,
+      "seconds": 0.031000000002677552
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 8,
+      "status": "passed",
+      "tables": 8,
+      "formal_z_tables": 2,
+      "stages": [
+        {
+          "factor": 0,
+          "active_scalar_gates": 94,
+          "allocated_nodes": 117
+        },
+        {
+          "factor": 1,
+          "active_scalar_gates": 172,
+          "allocated_nodes": 209
+        },
+        {
+          "factor": 2,
+          "active_scalar_gates": 364,
+          "allocated_nodes": 547
+        },
+        {
+          "factor": 3,
+          "active_scalar_gates": 528,
+          "allocated_nodes": 940
+        },
+        {
+          "factor": 4,
+          "active_scalar_gates": 692,
+          "allocated_nodes": 1333
+        },
+        {
+          "factor": 5,
+          "active_scalar_gates": 856,
+          "allocated_nodes": 1726
+        },
+        {
+          "factor": 6,
+          "active_scalar_gates": 1020,
+          "allocated_nodes": 2119
+        }
+      ],
+      "complete_chain_scalar_gates": 4441,
+      "allocated_nodes": 6169,
+      "derivative_cache_entries": 2972,
+      "seconds": 0.3119999999908032
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "status": "passed",
+      "tables": 8,
+      "formal_z_tables": 0,
+      "stages": [
+        {
+          "factor": 0,
+          "active_scalar_gates": 148,
+          "allocated_nodes": 181
+        },
+        {
+          "factor": 1,
+          "active_scalar_gates": 280,
+          "allocated_nodes": 330
+        },
+        {
+          "factor": 2,
+          "active_scalar_gates": 1007,
+          "allocated_nodes": 1349
+        },
+        {
+          "factor": 3,
+          "active_scalar_gates": 2089,
+          "allocated_nodes": 4072
+        },
+        {
+          "factor": 4,
+          "active_scalar_gates": 3021,
+          "allocated_nodes": 6025
+        },
+        {
+          "factor": 5,
+          "active_scalar_gates": 3953,
+          "allocated_nodes": 7978
+        },
+        {
+          "factor": 6,
+          "active_scalar_gates": 4885,
+          "allocated_nodes": 9931
+        },
+        {
+          "factor": 7,
+          "active_scalar_gates": 5817,
+          "allocated_nodes": 11884
+        },
+        {
+          "factor": 8,
+          "active_scalar_gates": 6749,
+          "allocated_nodes": 13837
+        },
+        {
+          "factor": 9,
+          "active_scalar_gates": 7681,
+          "allocated_nodes": 15790
+        },
+        {
+          "factor": 10,
+          "active_scalar_gates": 8613,
+          "allocated_nodes": 17743
+        }
+      ],
+      "complete_chain_scalar_gates": 35131,
+      "allocated_nodes": 48749,
+      "derivative_cache_entries": 26123,
+      "seconds": 2.125
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "N": 8,
+      "status": "passed",
+      "tables": 8,
+      "formal_z_tables": 0,
+      "stages": [
+        {
+          "factor": 0,
+          "active_scalar_gates": 214,
+          "allocated_nodes": 259
+        },
+        {
+          "factor": 1,
+          "active_scalar_gates": 414,
+          "allocated_nodes": 479
+        },
+        {
+          "factor": 2,
+          "active_scalar_gates": 1871,
+          "allocated_nodes": 2334
+        },
+        {
+          "factor": 3,
+          "active_scalar_gates": 8566,
+          "allocated_nodes": 13056
+        },
+        {
+          "factor": 4,
+          "active_scalar_gates": 13232,
+          "allocated_nodes": 26429
+        },
+        {
+          "factor": 5,
+          "active_scalar_gates": 17718,
+          "allocated_nodes": 37072
+        },
+        {
+          "factor": 6,
+          "active_scalar_gates": 22204,
+          "allocated_nodes": 47715
+        },
+        {
+          "factor": 7,
+          "active_scalar_gates": 26690,
+          "allocated_nodes": 58358
+        },
+        {
+          "factor": 8,
+          "active_scalar_gates": 31176,
+          "allocated_nodes": 69001
+        },
+        {
+          "factor": 9,
+          "active_scalar_gates": 35662,
+          "allocated_nodes": 79644
+        },
+        {
+          "factor": 10,
+          "active_scalar_gates": 40148,
+          "allocated_nodes": 90287
+        },
+        {
+          "factor": 11,
+          "active_scalar_gates": 44634,
+          "allocated_nodes": 100930
+        },
+        {
+          "factor": 12,
+          "active_scalar_gates": 49120,
+          "allocated_nodes": 111573
+        },
+        {
+          "factor": 13,
+          "active_scalar_gates": 53606,
+          "allocated_nodes": 122216
+        },
+        {
+          "factor": 14,
+          "active_scalar_gates": 58092,
+          "allocated_nodes": 132859
+        },
+        {
+          "factor": 15,
+          "active_scalar_gates": 62578,
+          "allocated_nodes": 143502
+        }
+      ],
+      "complete_chain_scalar_gates": 242471,
+      "allocated_nodes": 354118,
+      "derivative_cache_entries": 216210,
+      "seconds": 12.828000000008615
+    }
+  ]
+}

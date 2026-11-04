@@ -1,0 +1,584 @@
+{
+  "small_certificates": [
+    {
+      "n": 1,
+      "group_order": 1,
+      "occupied_scores": 1,
+      "signed_histogram": {
+        "0": 1
+      },
+      "l1": 1,
+      "l2_squared": 1
+    },
+    {
+      "n": 2,
+      "group_order": 2,
+      "occupied_scores": 2,
+      "signed_histogram": {
+        "0": -1,
+        "1": 1
+      },
+      "l1": 2,
+      "l2_squared": 2
+    },
+    {
+      "n": 3,
+      "group_order": 3,
+      "occupied_scores": 2,
+      "signed_histogram": {
+        "1": 3,
+        "2": -3
+      },
+      "l1": 6,
+      "l2_squared": 18
+    },
+    {
+      "n": 4,
+      "group_order": 4,
+      "occupied_scores": 4,
+      "signed_histogram": {
+        "0": 12,
+        "1": -4,
+        "2": -4,
+        "3": -4
+      },
+      "l1": 24,
+      "l2_squared": 192
+    }
+  ],
+  "large_cyclic_certificates": [
+    {
+      "n": 1,
+      "group_order": 1,
+      "occupied_scores": 1,
+      "l1": 1,
+      "l2_squared": 1
+    },
+    {
+      "n": 2,
+      "group_order": 2,
+      "occupied_scores": 2,
+      "l1": 2,
+      "l2_squared": 2
+    },
+    {
+      "n": 3,
+      "group_order": 9,
+      "occupied_scores": 6,
+      "l1": 6,
+      "l2_squared": 6
+    },
+    {
+      "n": 4,
+      "group_order": 64,
+      "occupied_scores": 24,
+      "l1": 24,
+      "l2_squared": 24
+    },
+    {
+      "n": 5,
+      "group_order": 625,
+      "occupied_scores": 120,
+      "l1": 120,
+      "l2_squared": 120
+    },
+    {
+      "n": 6,
+      "group_order": 7776,
+      "occupied_scores": 720,
+      "l1": 720,
+      "l2_squared": 720
+    }
+  ],
+  "full_chain_checks": [
+    {
+      "n": 1,
+      "method": "coordinates",
+      "numeric_tables": 32,
+      "formal_tables": 4,
+      "gates_by_labels": [
+        {
+          "labels": [
+            0
+          ],
+          "gates": 4
+        },
+        {
+          "labels": [
+            0
+          ],
+          "gates": 4
+        },
+        {
+          "labels": [
+            -1
+          ],
+          "gates": 4
+        },
+        {
+          "labels": [
+            -2
+          ],
+          "gates": 4
+        }
+      ],
+      "max_literal_bits": 1
+    },
+    {
+      "n": 1,
+      "method": "specialized",
+      "numeric_tables": 32,
+      "formal_tables": 4,
+      "gates_by_labels": [
+        {
+          "labels": [
+            0
+          ],
+          "gates": 1
+        },
+        {
+          "labels": [
+            0
+          ],
+          "gates": 1
+        },
+        {
+          "labels": [
+            -1
+          ],
+          "gates": 1
+        },
+        {
+          "labels": [
+            -2
+          ],
+          "gates": 1
+        }
+      ],
+      "max_literal_bits": 1
+    },
+    {
+      "n": 2,
+      "method": "coordinates",
+      "numeric_tables": 32,
+      "formal_tables": 4,
+      "gates_by_labels": [
+        {
+          "labels": [
+            0,
+            0
+          ],
+          "gates": 37
+        },
+        {
+          "labels": [
+            0,
+            1
+          ],
+          "gates": 39
+        },
+        {
+          "labels": [
+            -1,
+            -3
+          ],
+          "gates": 38
+        },
+        {
+          "labels": [
+            5,
+            7
+          ],
+          "gates": 38
+        }
+      ],
+      "max_literal_bits": 2
+    },
+    {
+      "n": 2,
+      "method": "specialized",
+      "numeric_tables": 32,
+      "formal_tables": 4,
+      "gates_by_labels": [
+        {
+          "labels": [
+            0,
+            0
+          ],
+          "gates": 31
+        },
+        {
+          "labels": [
+            0,
+            1
+          ],
+          "gates": 39
+        },
+        {
+          "labels": [
+            -1,
+            -3
+          ],
+          "gates": 38
+        },
+        {
+          "labels": [
+            5,
+            7
+          ],
+          "gates": 38
+        }
+      ],
+      "max_literal_bits": 2
+    },
+    {
+      "n": 3,
+      "method": "coordinates",
+      "numeric_tables": 32,
+      "formal_tables": 4,
+      "gates_by_labels": [
+        {
+          "labels": [
+            0,
+            0,
+            0
+          ],
+          "gates": 233
+        },
+        {
+          "labels": [
+            0,
+            1,
+            2
+          ],
+          "gates": 375
+        },
+        {
+          "labels": [
+            -1,
+            -3,
+            -5
+          ],
+          "gates": 327
+        },
+        {
+          "labels": [
+            -5,
+            4,
+            6
+          ],
+          "gates": 360
+        }
+      ],
+      "max_literal_bits": 2
+    },
+    {
+      "n": 3,
+      "method": "specialized",
+      "numeric_tables": 32,
+      "formal_tables": 4,
+      "gates_by_labels": [
+        {
+          "labels": [
+            0,
+            0,
+            0
+          ],
+          "gates": 284
+        },
+        {
+          "labels": [
+            0,
+            1,
+            2
+          ],
+          "gates": 647
+        },
+        {
+          "labels": [
+            -1,
+            -3,
+            -5
+          ],
+          "gates": 476
+        },
+        {
+          "labels": [
+            -5,
+            4,
+            6
+          ],
+          "gates": 647
+        }
+      ],
+      "max_literal_bits": 2
+    },
+    {
+      "n": 4,
+      "method": "coordinates",
+      "numeric_tables": 32,
+      "formal_tables": 4,
+      "gates_by_labels": [
+        {
+          "labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "gates": 1197
+        },
+        {
+          "labels": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "gates": 3435
+        },
+        {
+          "labels": [
+            -1,
+            -3,
+            -5,
+            -7
+          ],
+          "gates": 2651
+        },
+        {
+          "labels": [
+            -10,
+            -15,
+            -16,
+            -6
+          ],
+          "gates": 3659
+        }
+      ],
+      "max_literal_bits": 3
+    },
+    {
+      "n": 4,
+      "method": "specialized",
+      "numeric_tables": 32,
+      "formal_tables": 4,
+      "gates_by_labels": [
+        {
+          "labels": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "gates": 1576
+        },
+        {
+          "labels": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "gates": 6505
+        },
+        {
+          "labels": [
+            -1,
+            -3,
+            -5,
+            -7
+          ],
+          "gates": 4717
+        },
+        {
+          "labels": [
+            -10,
+            -15,
+            -16,
+            -6
+          ],
+          "gates": 6505
+        }
+      ],
+      "max_literal_bits": 3
+    }
+  ],
+  "proven_group_lower_bounds": [
+    {
+      "n": 1,
+      "exact_bound": "1",
+      "ceiling": 1
+    },
+    {
+      "n": 2,
+      "exact_bound": "1",
+      "ceiling": 1
+    },
+    {
+      "n": 3,
+      "exact_bound": "4/3",
+      "ceiling": 2
+    },
+    {
+      "n": 4,
+      "exact_bound": "9/4",
+      "ceiling": 3
+    },
+    {
+      "n": 5,
+      "exact_bound": "576/125",
+      "ceiling": 5
+    },
+    {
+      "n": 6,
+      "exact_bound": "100/9",
+      "ceiling": 12
+    },
+    {
+      "n": 7,
+      "exact_bound": "518400/16807",
+      "ceiling": 31
+    },
+    {
+      "n": 8,
+      "exact_bound": "99225/1024",
+      "ceiling": 97
+    },
+    {
+      "n": 9,
+      "exact_bound": "20070400/59049",
+      "ceiling": 340
+    },
+    {
+      "n": 10,
+      "exact_bound": "20575296/15625",
+      "ceiling": 1317
+    },
+    {
+      "n": 11,
+      "exact_bound": "13168189440000/2357947691",
+      "ceiling": 5585
+    },
+    {
+      "n": 12,
+      "exact_bound": "3705625/144",
+      "ceiling": 25734
+    },
+    {
+      "n": 13,
+      "exact_bound": "229442532802560000/1792160394037",
+      "ceiling": 128026
+    },
+    {
+      "n": 14,
+      "exact_bound": "193198880160000/282475249",
+      "ceiling": 683950
+    },
+    {
+      "n": 15,
+      "exact_bound": "205932143312896/52734375",
+      "ceiling": 3905084
+    },
+    {
+      "n": 16,
+      "exact_bound": "407698691540765625/17179869184",
+      "ceiling": 23731188
+    },
+    {
+      "n": 17,
+      "exact_bound": "437763136697395052544000000/2862423051509815793",
+      "ceiling": 152934465
+    },
+    {
+      "n": 18,
+      "exact_bound": "3632470057216000000/3486784401",
+      "ceiling": 1041782239
+    },
+    {
+      "n": 19,
+      "exact_bound": "40990389067797283140009984000000/5480386857784802185939",
+      "ceiling": 7479469996
+    },
+    {
+      "n": 20,
+      "exact_bound": "220500386558097887241/3906250000",
+      "ceiling": 56448098959
+    }
+  ],
+  "naive_F8_extension_collisions": [
+    {
+      "n": 5,
+      "field_polynomial_binary": 11,
+      "first": [
+        0,
+        1,
+        3,
+        4,
+        2
+      ],
+      "second": [
+        0,
+        2,
+        1,
+        3,
+        4
+      ],
+      "first_sign": 1,
+      "second_sign": -1,
+      "shared_score": 3
+    },
+    {
+      "n": 6,
+      "field_polynomial_binary": 11,
+      "first": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        3
+      ],
+      "second": [
+        0,
+        2,
+        1,
+        3,
+        4,
+        5
+      ],
+      "first_sign": 1,
+      "second_sign": -1,
+      "shared_score": 4
+    },
+    {
+      "n": 8,
+      "field_polynomial_binary": 11,
+      "first": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        5,
+        7
+      ],
+      "second": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        3,
+        6,
+        7
+      ],
+      "first_sign": -1,
+      "second_sign": 1,
+      "shared_score": 5
+    }
+  ],
+  "frozen_development_evaluator_run": false,
+  "dev_score": null
+}

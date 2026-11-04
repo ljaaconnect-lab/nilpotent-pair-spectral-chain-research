@@ -1,0 +1,14 @@
+{
+  "source": "direct_corrected_circuit.py",
+  "source_sha256": "83e28cb17be078819a54d308f84ebb08785a6c166b842f41acc7f0bd355f4c1a",
+  "n": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "A": "A_ij=(i+2)/(j+3)",
+  "validation": "Complete exact polynomial in formal z",
+  "new_lean_invocations": 0,
+  "root_heldout_boundary_opened": false
+}

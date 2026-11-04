@@ -1,0 +1,161 @@
+{
+  "n": 2,
+  "J": [
+    0,
+    1
+  ],
+  "depth": 2,
+  "marked": true,
+  "nodes": [
+    {
+      "op": "variable",
+      "name": "z"
+    },
+    {
+      "op": "mul",
+      "left": 0,
+      "right": 0
+    },
+    {
+      "op": "mul",
+      "left": 1,
+      "right": 1
+    },
+    {
+      "op": "mul",
+      "left": 2,
+      "right": 2
+    },
+    {
+      "op": "variable",
+      "name": "p_0_0"
+    },
+    {
+      "op": "mul",
+      "left": 4,
+      "right": 0
+    },
+    {
+      "op": "variable",
+      "name": "p_0_1"
+    },
+    {
+      "op": "mul",
+      "left": 6,
+      "right": 1
+    },
+    {
+      "op": "variable",
+      "name": "p_1_0"
+    },
+    {
+      "op": "mul",
+      "left": 8,
+      "right": 2
+    },
+    {
+      "op": "variable",
+      "name": "p_1_1"
+    },
+    {
+      "op": "mul",
+      "left": 10,
+      "right": 3
+    },
+    {
+      "op": "mul",
+      "left": 5,
+      "right": 9
+    },
+    {
+      "op": "mul",
+      "left": 7,
+      "right": 11
+    },
+    {
+      "op": "add",
+      "left": 5,
+      "right": 7
+    },
+    {
+      "op": "add",
+      "left": 9,
+      "right": 11
+    },
+    {
+      "op": "add",
+      "left": 12,
+      "right": 13
+    },
+    {
+      "op": "add",
+      "left": 5,
+      "right": 7
+    },
+    {
+      "op": "constant",
+      "value": "-1"
+    },
+    {
+      "op": "mul",
+      "left": 18,
+      "right": 17
+    },
+    {
+      "op": "add",
+      "left": 14,
+      "right": 19
+    },
+    {
+      "op": "add",
+      "left": 9,
+      "right": 11
+    },
+    {
+      "op": "mul",
+      "left": 18,
+      "right": 21
+    },
+    {
+      "op": "add",
+      "left": 15,
+      "right": 22
+    },
+    {
+      "op": "add",
+      "left": 12,
+      "right": 13
+    },
+    {
+      "op": "mul",
+      "left": 18,
+      "right": 24
+    },
+    {
+      "op": "add",
+      "left": 16,
+      "right": 25
+    },
+    {
+      "op": "mul",
+      "left": 20,
+      "right": 23
+    },
+    {
+      "op": "mul",
+      "left": 18,
+      "right": 26
+    },
+    {
+      "op": "add",
+      "left": 27,
+      "right": 28
+    }
+  ],
+  "output": 29,
+  "initialization_gates": 12,
+  "query_gates": 12,
+  "gates": 24,
+  "scope": "One explicit subset query at fixed prefix depth; not a full extractor",
+  "root_conjecture_verified": false
+}

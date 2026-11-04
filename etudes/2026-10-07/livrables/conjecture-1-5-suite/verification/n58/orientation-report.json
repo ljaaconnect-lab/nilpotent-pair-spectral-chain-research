@@ -1,0 +1,61 @@
+{
+  "node": "n56",
+  "dev_score": 1.0,
+  "metric": "accepted_frozen_obligations / 6",
+  "compiler_exit_code": 0,
+  "lean_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "complete_rounds": 13,
+  "complete_round_budget": 20,
+  "import_name_probes": 1,
+  "tactic_probes": 0,
+  "domain": "Arbitrary noncommutative Ring R, arbitrary index type I, finite List I",
+  "explicit_odd_relations": {
+    "square_x": "forall i, x_i*x_i=0",
+    "square_y": "forall i, y_i*y_i=0",
+    "anti_x": "forall i j, x_i*x_j=-(x_j*x_i)",
+    "anti_y": "forall i j, y_i*y_j=-(y_j*y_i)",
+    "anti_cross": "forall i j, y_i*x_j=-(x_j*y_i)"
+  },
+  "accepted": [
+    "DoubleOrientation.sign_central",
+    "DoubleOrientation.cross_list",
+    "DoubleOrientation.triangular_step",
+    "DoubleOrientation.pair_square_zero",
+    "DoubleOrientation.pairs_commute",
+    "DoubleOrientation.orientation_factorization"
+  ],
+  "additional_verified": [
+    "DoubleOrientation.cross_middle"
+  ],
+  "axiom_audit": {
+    "DoubleOrientation.sign_central": [
+      "propext"
+    ],
+    "DoubleOrientation.cross_middle": [
+      "propext"
+    ],
+    "DoubleOrientation.pair_square_zero": [
+      "propext"
+    ],
+    "DoubleOrientation.pairs_commute": [
+      "propext"
+    ],
+    "DoubleOrientation.triangular_step": [
+      "propext"
+    ],
+    "DoubleOrientation.cross_list": [
+      "propext"
+    ],
+    "DoubleOrientation.orientation_factorization": [
+      "propext"
+    ]
+  },
+  "unapproved_axioms": {},
+  "source_sha256": "d440f12b17a49b3041518f52d16bf78a75785756fb1d4389623f0ec5ecd9deea",
+  "protocol_sha256": "8f9abd59423076fcd3fc39f377be7aec07d167e9e3315234c4a3e014940f2dd6",
+  "root_conjecture_verified": false,
+  "held_out_accessed": false,
+  "counterexample_generation": false,
+  "result": "Paired square-zero, paired commutation, and the complete triangular-sign double-orientation factorization verified.",
+  "remaining_constructive_obligation": "Compile the required exterior-algebra contraction/top coordinate to a polynomial-size scalar circuit without treating projection as free."
+}

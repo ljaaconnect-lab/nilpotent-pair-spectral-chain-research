@@ -1,0 +1,5 @@
+'SharedBinaryPower.run_append' depends on axioms: [propext, Quot.sound]
+'SharedBinaryPower.power_add' does not depend on any axioms
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerCompiler.lean:58:8: warning: declaration uses `sorry`
+'SharedBinaryPower.positive_plan_correct' depends on axioms: [propext, sorryAx, Quot.sound]
+'SharedBinaryPower.central_exponent_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

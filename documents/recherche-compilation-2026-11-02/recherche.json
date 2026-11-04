@@ -1,0 +1,256 @@
+{
+  "date": "2026-11-02",
+  "provider": "Exa",
+  "task": "Littérature: compilation scalaire des produits orientés",
+  "scope": {
+    "unconditional_polynomial_bound_found": false,
+    "impossibility_of_general_scalar_circuits_claimed": false,
+    "new_lean_certificate": false
+  },
+  "root": {
+    "successful_calls": 5,
+    "returned_notices": 36,
+    "unique_search_urls": [
+      "https://ar5iv.labs.arxiv.org/html/2005.05143",
+      "https://ar5iv.labs.arxiv.org/html/1807.06194",
+      "https://ar5iv.labs.arxiv.org/html/1812.02612",
+      "https://arxiv.org/abs/1103.0203",
+      "https://doi.org/10.1090/s0025-5718-99-01144-8",
+      "https://arxiv.org/pdf/2511.14316",
+      "https://leokayser.github.io/assets/pdf/papers/The_Waring_problem_for_polynomials.pdf",
+      "https://mathexp.eu/bostan/publications/BoSc05.pdf",
+      "https://www.unilim.fr/pages_perso/jacques-arthur.weil/CF/bostan_limoges06.pdf",
+      "https://mathexp.eu/bostan/publications/BoLeSc03.pdf",
+      "https://cs.uwaterloo.ca/~eschost/publications/BoSaSc08b-r1.pdf",
+      "https://mathexp.eu/bostan/publications/BoSc04.pdf",
+      "https://defeo.lu/talks/toulouse-T-18-06-09.pdf",
+      "https://fredrikj.net/fdoc/html/algorithms/polynomials/middle-product.html",
+      "http://kaltofen.math.ncsu.edu/bibliography/91/KaSi91.pdf",
+      "https://mathexp.eu/chyzak/Publications/BostanChyzakLecerfSalvySchost-2007-DEA.pdf",
+      "https://www.math.ias.edu/~avi/PUBLICATIONS/ChenKaWi2011.pdf",
+      "https://proceedings.neurips.cc/paper_files/paper/2019/file/770f8e448d07586afbf77bb59f698587-Paper.pdf",
+      "https://doi.org/10.1515/156939205774464936",
+      "https://people.csail.mit.edu/virgi/6.890/lecture18.pdf",
+      "https://members.loria.fr/RSchott/staceyTOCmay10.pdf",
+      "https://arxiv.org/html/2610.33891v1",
+      "https://ar5iv.labs.arxiv.org/html/1509.08843",
+      "https://dl.acm.org/doi/pdf/10.1145/1086837.1086847",
+      "https://ar5iv.labs.arxiv.org/html/2004.03341",
+      "https://eprint.iacr.org/2023/1637.pdf",
+      "https://vrbik.info/pdfs/casc09.pdf",
+      "https://arxiv.org/html/1911.01479",
+      "https://arxiv.org/html/2604.22006",
+      "https://arxiv.org/html/2404.10839v2",
+      "https://doi.org/10.1007/978-3-031-82697-9_10",
+      "https://drops.dagstuhl.de/storage/00lipics/lipics-vol374-icalp2026/LIPIcs.ICALP.2026.36/LIPIcs.ICALP.2026.36.pdf",
+      "http://cjtcs.cs.uchicago.edu/articles/2025/1/cj25-01.pdf",
+      "https://dl.acm.org/doi/10.1145/3734215",
+      "https://arxiv.org/html/2509.11322v1"
+    ],
+    "searches": [
+      {
+        "index": 0,
+        "query": "category:research paper exact computation apolar bilinear pairing homogeneous polynomials arithmetic circuits Waring decomposition coefficient extraction",
+        "numResults": 7,
+        "results": [
+          {
+            "title": "[2005.05143] An Algorithmic Method of Partial Derivatives",
+            "url": "https://ar5iv.labs.arxiv.org/html/2005.05143"
+          },
+          {
+            "title": "[1807.06194] Waring Rank, Parameterized and Exact Algorithms",
+            "url": "https://ar5iv.labs.arxiv.org/html/1807.06194"
+          },
+          {
+            "title": "[1812.02612] Waring, tangential and cactus decompositions",
+            "url": "https://ar5iv.labs.arxiv.org/html/1812.02612"
+          },
+          {
+            "title": "Eigenvectors of tensors and algorithms for Waring ...",
+            "url": "https://arxiv.org/abs/1103.0203"
+          },
+          {
+            "title": "The apolar bilinear form in geometric modeling",
+            "url": "https://doi.org/10.1090/s0025-5718-99-01144-8"
+          },
+          {
+            "title": "N/A",
+            "url": "https://arxiv.org/pdf/2511.14316"
+          },
+          {
+            "title": "Institute of Algebraic Geometry",
+            "url": "https://leokayser.github.io/assets/pdf/papers/The_Waring_problem_for_polynomials.pdf"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "query": "category:research paper transposition principle arithmetic circuits linear maps scalar product polynomial cost Bostan Lecerf Schost",
+        "numResults": 7,
+        "results": [
+          {
+            "title": "doi:10.1016/j.jco.2004.09.009",
+            "url": "https://mathexp.eu/bostan/publications/BoSc05.pdf"
+          },
+          {
+            "title": "Improving the complexities of evaluation and interpolation: Tellegen’s p rinciple a t w ork",
+            "url": "https://www.unilim.fr/pages_perso/jacques-arthur.weil/CF/bostan_limoges06.pdf"
+          },
+          {
+            "title": "Tellegen’s Principle into Practice",
+            "url": "https://mathexp.eu/bostan/publications/BoLeSc03.pdf"
+          },
+          {
+            "title": "Fast Conversion Algorithms for Orthogonal Polynomials",
+            "url": "https://cs.uwaterloo.ca/~eschost/publications/BoSaSc08b-r1.pdf"
+          },
+          {
+            "title": "doi:10.1016/j.tcs.2004.09.002",
+            "url": "https://mathexp.eu/bostan/publications/BoSc04.pdf"
+          },
+          {
+            "title": "Transposition Principle and Applications",
+            "url": "https://defeo.lu/talks/toulouse-T-18-06-09.pdf"
+          },
+          {
+            "title": "Middle products and the transposition principle — FLINT",
+            "url": "https://fredrikj.net/fdoc/html/algorithms/polynomials/middle-product.html"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "query": "category:research paper efficient computation differential operators arithmetic circuits bounded order higher order partial derivatives coefficient extraction",
+        "numResults": 7,
+        "results": [
+          {
+            "title": "Size Efficient Parallel Algebraic Circuits for Partial Derivatives*",
+            "url": "http://kaltofen.math.ncsu.edu/bibliography/91/KaSi91.pdf"
+          },
+          {
+            "title": "Differential Equations for Algebraic Functions",
+            "url": "https://mathexp.eu/chyzak/Publications/BostanChyzakLecerfSalvySchost-2007-DEA.pdf"
+          },
+          {
+            "title": "[2005.05143] An Algorithmic Method of Partial Derivatives",
+            "url": "https://ar5iv.labs.arxiv.org/html/2005.05143"
+          },
+          {
+            "title": "TeX output 2011.09.06:1430",
+            "url": "https://www.math.ias.edu/~avi/PUBLICATIONS/ChenKaWi2011.pdf"
+          },
+          {
+            "title": "Neural Networks with Cheap Differential Operators",
+            "url": "https://proceedings.neurips.cc/paper_files/paper/2019/file/770f8e448d07586afbf77bb59f698587-Paper.pdf"
+          },
+          {
+            "title": "On the complexity of calculation of differentials and gradients",
+            "url": "https://doi.org/10.1515/156939205774464936"
+          },
+          {
+            "title": "∂xn} ≤ { gs} { 1} − { zn+s} ≤ − −",
+            "url": "https://people.csail.mit.edu/virgi/6.890/lecture18.pdf"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "query": "category:research paper succinct polynomial quotient algebra scalar readout multiplication exact algorithm commutative nilpotent zeon algebra",
+        "numResults": 7,
+        "results": [
+          {
+            "title": "On the Complexity of Cycle Enumeration using Zeons",
+            "url": "https://members.loria.fr/RSchott/staceyTOCmay10.pdf"
+          },
+          {
+            "title": "Weakly Unitary Zeon Matrices",
+            "url": "https://arxiv.org/html/2610.33891v1"
+          },
+          {
+            "title": "[1509.08843] Algorithms for commutative algebras over the rational numbers",
+            "url": "https://ar5iv.labs.arxiv.org/html/1509.08843"
+          },
+          {
+            "title": "Sparse Polynomial Arithmetic",
+            "url": "https://dl.acm.org/doi/pdf/10.1145/1086837.1086847"
+          },
+          {
+            "title": "[2004.03341] Resultants over principal Artinian rings",
+            "url": "https://ar5iv.labs.arxiv.org/html/2004.03341"
+          },
+          {
+            "title": "∈ R[x]/⟨",
+            "url": "https://eprint.iacr.org/2023/1637.pdf"
+          },
+          {
+            "title": "Lazy and Forgetful Polynomial Arithmetic and Applications",
+            "url": "https://vrbik.info/pdfs/casc09.pdf"
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "query": "recent papers 2024-2026",
+        "numResults": 8,
+        "results": [
+          {
+            "title": "CC-Circuits and the Expressive Power of Nilpotent Algebras",
+            "url": "https://arxiv.org/html/1911.01479"
+          },
+          {
+            "title": "Polynomial Lower Bounds for Arithmetic Circuits over Non-Commutative Rings",
+            "url": "https://arxiv.org/html/2604.22006"
+          },
+          {
+            "title": "Constant-Depth Arithmetic Circuits for Linear Algebra Problems",
+            "url": "https://arxiv.org/html/2404.10839v2"
+          },
+          {
+            "title": "Exact Characterizations of Non-commutative Algebraic Complexity Without Homogeneity",
+            "url": "https://doi.org/10.1007/978-3-031-82697-9_10"
+          },
+          {
+            "title": "Kronecker Scaling of Tensors with Applications to Arithmetic ...",
+            "url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol374-icalp2026/LIPIcs.ICALP.2026.36/LIPIcs.ICALP.2026.36.pdf"
+          },
+          {
+            "title": "On Lifting Lower Bounds for",
+            "url": "http://cjtcs.cs.uchicago.edu/articles/2025/1/cj25-01.pdf"
+          },
+          {
+            "title": "Superpolynomial Lower Bounds Against Low-Depth Algebraic Circuits | Journal of the ACM",
+            "url": "https://dl.acm.org/doi/10.1145/3734215"
+          },
+          {
+            "title": "Lower Bounds for Planar Arithmetic Circuits",
+            "url": "https://arxiv.org/html/2509.11322v1"
+          }
+        ]
+      }
+    ]
+  },
+  "other_branches": {
+    "circuits": {
+      "successful_search_calls": 5,
+      "returned_notices": 50,
+      "failed_schema_calls": 4,
+      "notes": "circuits.md"
+    },
+    "algebres": {
+      "successful_search_calls": 5,
+      "returned_notices": 25,
+      "failed_schema_calls": 1,
+      "notes": "algebres.md"
+    },
+    "tenseurs": {
+      "successful_search_calls": 10,
+      "requested_and_returned_result_slots": 62,
+      "notes": "tenseurs.md"
+    }
+  },
+  "totals": {
+    "successful_search_calls": 25,
+    "result_slots_on_successful_calls": 173,
+    "notes": "Les notices incluent des doublons et des résultats écartés. Ce n'est pas un compte de 173 articles lus intégralement."
+  }
+}

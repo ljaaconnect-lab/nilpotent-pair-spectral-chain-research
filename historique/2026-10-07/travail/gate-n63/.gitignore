@@ -1,0 +1,6 @@
+__pycache__/
+.arbor/
+*.pyc
+
+/MobiusBridge.olean
+/.n63-compile-lock

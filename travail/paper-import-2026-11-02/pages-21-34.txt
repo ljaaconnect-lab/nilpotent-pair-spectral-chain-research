@@ -1,0 +1,910 @@
+=== PAGE 21 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 21
+as a list of at most(logn )c monomials of degree at mostk. The exact number of common zeros in
+{0, 1}n can be computed deterministically in2Ok,c(n(log logn) 2/√logn) bit operations andnOk,c(1) space.
+Sections 3 and 4 supply the counting routine and the replacement forms; Section 5 uses them to
+prove the theorem directly for polynomial equations.
+For the final system constructed forG, the number of common zeros is#G. Section 6 uses only
+2(logn) Ok (1)
+calls to the counter per leaf, which preserves the running-time exponent in Theorem 2.2.
+Finally, choosing σ of order( log logn)2/√logn in Section 6.4 keeps B polylogarithmic and the
+number of leaves within2Ok(n(log logn) 2/√logn). Their satisfying assignments are disjoint, so adding
+their counts gives the bound in Proposition 6.4.
+3.A f ast counting algorithm via shared linear summaries
+Sections 3–5 prove Theorem 2.2. We begin with the sum from Section 2.2: for each Boolean
+assignment, multiply the factors, then add the products over all assignments. Here the factors can
+be any rational polynomials. We show how to compute the sum when the replacement forms and
+measurements are given. Section 4 constructs them using only the variables read by each factor.
+Section 5 supplies one factor per sparse polynomial equation.
+3.1.Polynomial factors and the value to recover.LetF index the factors, and letIf ⊆ [n]be
+the variables read byΦf. With rational coefficients our target is
+Z=
+X
+x∈{0,1}n
+Y
+f∈F
+Φf ((xv)v∈If ).(3.1)
+For clause satisfaction indicators,Z is the number of satisfying assignments. The proof also works
+with coefficients in any commutativeQ-algebra A: sums and products then take place inA, and
+interpolation uses only rational scalars. Readers may takeA=Qthroughout this section.
+Different factors may use different replacements for the same variable. Give each incidence(f, v)
+its own indeterminateYf,v and suppose
+deg{Yf,v }
+
+ Y
+f∈F
+Φf ((Yf,v )v∈If )
+
+ ⩽d.(3.2)
+This is the degree of the whole product computed overA. Choose replacement rows ⃗Pf,v (T )of
+degree at mostRwith ⃗Pf,v (0) =δ v, and form
+H(T) =
+X
+x∈{0,1}n
+Y
+f∈F
+Φf
+ 
+(⟨ ⃗Pf,v (T), x⟩)v∈If
+ 
+∈ A[T].(3.3)
+The replacements restore the inputs at zero and multiply the degree by at mostR. Thus H(0) = Z
+and degT H⩽d H := dR. Our application will have d = O(n), as in the bounded-occurrence
+example.
+3.2.The required rows, partitions, and measurements.We use the same design as in
+Section 2.4, with a group assignment for each factor in place of each clause. The final condition
+below records the coefficient bound needed for exact arithmetic. Hereeξ denotes extension by zero
+from a group to allncoordinates.
+Definition 3.1.For the factor scopes(If )f∈F, let r⩾ 2, D⩾ 1, and1 ⩽R < Qbe integers, and
+let0< τ⩽1/2. We require the following data and properties.
+(1) For eacht∈ [Q], a partition[n] = St,1 ⊔ · · · ⊔St,r, allowing empty parts, with|St,g|⩽ 2n/r.
+(2) For every factorf∈ F, a sequenceσf ∈ [r]Q. The valueσf (t)assigns factor f to a group at
+pointt.
+
+=== PAGE 22 ===
+22 OPENAI
+(3) For everyt∈ [Q]and g∈ [r], an integer matrixCt,g ∈Z [ct,g]×St,g, where ct,g is a nonnegative
+integer. Each row has sum of absolute values at mostD, and
+rX
+g=1
+ct,g ⩽2τ n.
+For an assignmentx, the entries ofCt,g(x|St,g )are the measurements on groupg.
+(4) For everyf∈ Fand v∈I f, a row ⃗Pf,v (T ) ∈Q [T ]1×n with ⃗Pf,v (0) = δv and deg ⃗Pf,v ⩽R .
+For everyt∈[Q],g∈[r]\ {σ f (t)}, andξ∈Q St,g, require
+Ct,gξ= ⃗0 =⇒ ⟨ ⃗Pf,v (t), eξ⟩= 0,
+where eξ∈Q n is the extension ofξby zero.
+(5) With dden = (R− 1)!Q!, every coefficient ofdden ⃗Pf,v is an integer withO(QlogQ + logD )
+bits, with an absolute implied constant.
+To interpret the kernel condition, fixt, f, and v∈I f, and putg = σf (t). Write xh = x|St,h. If
+x, x′ ∈Q n agree outside St,h for some h̸ = g and satisfy Ct,hxh = Ct,hx′
+h, then x′
+h −x h ∈kerC t,h.
+The condition gives
+⟨ ⃗Pf,v (t), x′⟩=⟨ ⃗Pf,v (t), x⟩.
+Applying this one group at a time shows that the tuple(⟨ ⃗Pf,v (t), x⟩)v∈If is determined byxg and
+(Ct,hxh)h̸=g. Fixing all the measurement vectors therefore makes the entire factor a function ofxg.
+This applies to every polynomial factorΦf, including factors with coefficients inA.
+Each measurement of a Boolean vector lies in[−D, D] ∩Z . We bound the sum of absolute
+values of the matrix entries because the construction can place the same Boolean coordinate in
+several auxiliary positions. After those positions are identified, entries ofCt,g need not belong to
+{0, 1,− 1}. A rank bound alone would not control the number of possible measurements: the single
+row(1,2,4, . . . ,2n−1)distinguishes all2 n Boolean vectors.
+3.3.Separating the sum by fixing measurements.Fixing the measurements makes every factor
+depend on only its assigned group. The following lemma states the resulting calculation over a
+commutative ring, so it applies equally to rational-valued factors and to factors inA. The restrictions
+xi = 1will be needed for Taylor coefficients and are local to individual groups.
+Lemma 3.2.Let[ n] = S1 ⊔ · · · ⊔Sr be a partition, allowing empty parts. For eachg∈ [r], let Cg be
+an integer matrix withcg rows and columns indexed bySg. Suppose each row has sum of absolute
+values at most an integerD⩾ 0, and writec = P
+g cg. Let A be a commutative ring with identity,
+and letA g :Q n → Asatisfy
+Ag(x+ξ) =A g(x) (x∈Q n, ξ∈kerC h, h̸=g),
+whereξis extended by zero outsideS h. For anyE⊆[n], the sum
+ZE =
+X
+x∈{0,1}n
+xi=1 (i∈E)
+rY
+g=1
+Ag(x)
+can be evaluated by examining at most
+2(2D+ 1) c
+rX
+g=1
+2|Sg|
+Boolean vectors, with at most oneAg evaluation, poly(n, r, c,log(D + 2))additional bit operations,
+and O(1)ring operations per vector. Apart from the evaluators’ own storage andO(1)ring elements,
+the procedure usespoly(n, r, c,log(D+ 2))bits of space.
+
+=== PAGE 23 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 23
+Proof.Fory g ∈Z cg, define
+Xg(yg) ={u∈ {0,1}Sg :C gu=y g},Y=
+rY
+g=1
+{−D, . . . , D}cg .
+Every tuple of measurements of a Boolean assignment belongs toY, and |Y| = (2D + 1)c. We first
+identify the contribution of a fixed measurement tuple⃗ y= (y1, . . . , yr). If every Xg(yg)is nonempty,
+let¯xg ∈ Xg(yg)be a representative for eachg, and put
+Xg,E (yg) ={u∈ Xg(yg) :u i = 1for alli∈E∩S g}.
+If xh ∈ Xh(yh)for every h, then xh −¯xh ∈kerC h. Applying the invariance hypothesis successively
+forh̸=ggives
+Ag
+  rX
+h=1
+xh
+ 
+=A g
+ 
+xg +
+X
+h̸=g
+¯xh
+ 
+.
+The assignments with measurement tuple⃗ yand fixed bits indexed byEformQ
+g Xg,E (yg). Define
+Σg(⃗ y) =
+X
+xg∈Xg,E (yg)
+Ag
+ 
+xg +
+X
+h̸=g
+¯xh
+ 
+.(3.4)
+Distributivity shows that these assignments contributeQ
+g Σg(⃗ y)to ZE. If Xg,E (yg)is empty, then
+Σg(⃗ y) = 0. The representatives ¯xg themselves need not satisfy the fixed-bit conditions indexed byE.
+Every Boolean assignment has a unique measurement tuple, so
+ZE =
+X
+⃗ y∈Y
+rY
+g=1
+Σg(⃗ y),
+where the product is taken to be zero if anyXg(yg)is empty.
+The algorithm evaluates this identity one measurement tuple at a time, starting withZ = 0A. For
+each ⃗ y∈ Y, a first scan of each{0, 1}Sg finds a representative¯xg ∈ Xg(yg); if any such set is empty,
+the algorithm skips this tuple. Otherwise it initializesp = 1 A. To computeΣ g(⃗ y), it initializes
+s= 0 A and scansu∈ {0,1}Sg again. Whenever
+Cgu=y g, u i = 1 (i∈E∩S g),
+the algorithm performs the update
+s←s+A g
+ 
+u+
+X
+h̸=g
+¯xh
+ 
+.
+At the end of this scan,s = Σg(⃗ y), and the algorithm setsp←ps . After all groups, it setsZ←Z + p.
+After all tuples⃗ yhave been processed,Z=ZE.
+For each⃗ y, the scan finding the representatives and the scan computing theΣg(⃗ y)each examine
+at most P
+g 2|Sg| Boolean vectors. This gives the stated bound. Checking a vector’s measurements
+and fixed bits usespoly(n, r, c,log(D + 2))bit operations: each matrix row has sum of absolute
+values at mostD, so its partial sums haveO(log(D + 2))bits. There is at most one factor evaluation
+per vector. The retained state is⃗ y,( ¯x1, . . . ,¯xr), g, u, s, p, and Z. The tuple⃗ ycontains c integers in
+[−D, D], the representatives containnbits in total, ands, p, Z∈ A.□
+To evaluate(3.3) at a fixedt, group the transformed factors byσf (t)and apply the lemma inA
+with E = ∅. Definition 3.1 gives its invariance hypothesis, so the sum isH(t). As in the overview,
+the two exponential costs are the measurement choices and the Boolean assignments in one group.
+
+=== PAGE 24 ===
+24 OPENAI
+3.4.Taylor coefficients from fixed Boolean substitutions.The Q values H(1), . . . , H(Q)need
+not determineH. Set
+q=
+  dH
+Q
+ 
+, J=q+ 1.(3.5)
+SinceQJ > dH, it suffices to compute
+Ht(z) =
+J−1X
+j=0
+([zj]H(t+z))z j (t∈[Q]).(3.6)
+Hermite interpolation recoversH, and henceZ = H(0), from theseQJ coefficients in A. Indeed,
+the rational Hermite matrix for polynomials of degree less thanQJ is invertible overQ. Its inverse
+acts on elements ofAby rational linear combinations.
+Fixt. The replacement forms att+zneed not respect the design att. Write
+∆ ⃗Pf,v (z) = ⃗Pf,v (t+z)− ⃗Pf,v (t).
+Every entry is divisible byz. For fixedx∈Q n, introduce independent indeterminates⃗X and replace
+each input by
+⟨ ⃗Pf,v (t), x⟩+⟨∆ ⃗Pf,v (z), ⃗X⟩.(3.7)
+Let
+Gx( ⃗X, z) =
+Y
+f∈F
+Φf
+ 
+(⟨ ⃗Pf,v (t), x⟩+⟨∆ ⃗Pf,v (z), ⃗X⟩) v∈If
+ 
+.(3.8)
+Setting ⃗X = x gives P
+x Gx(x, z) = H(t + z). Holding ⃗X fixed instead makes every correction
+independent of x, so the design att still separates the factors. Moreover, each occurrence of⃗X
+carries a factor ofz, giving
+deg ⃗X ([zj]Gx( ⃗X, z))⩽j.(3.9)
+The next identity recovers the substitution⃗X = x from fixed Boolean substitutions and restrictions
+on the assignments being summed.
+Lemma 3.3.Let q⩾ 0be an integer and let A be a commutative ring with identity. For each
+x∈ {0,1}n, letp x(X1, . . . , Xn)be a polynomial overAof degree at mostq. Then
+X
+x∈{0,1}n
+px(x) =
+X
+E⊆[n]
+|E|⩽q
+X
+U⊆E
+(−1)|E|−|U| X
+x∈{0,1}n
+xi=1 (i∈E)
+px(1U ).(3.10)
+Here1 U is the indicator vector ofU.
+Proof. For fixedx, we replace every positive power ofXi by Xi. This leaves Boolean evaluations
+unchanged and does not increase the degree. By Möbius inversion on subsets, the resulting multilinear
+polynomial has the expansion
+epx( ⃗X) =
+X
+E⊆[n]
+cx,E
+Y
+i∈E
+Xi, c x,E =
+X
+U⊆E
+(−1)|E|−|U| px(1U ).
+The degree bound givescx,E = 0whenever |E|> q. Setting ⃗X = x and summing overx now gives
+the claimed identity: the monomialQ
+i∈E xi selects exactly the assignments withxi = 1for every
+i∈E. □
+Apply Lemma 3.3 to[zj]Gx over A for each j < J. All coefficients can use the same pairsU⊆E ,
+|E|⩽q, so compute them together in
+R=A[z]/(z J ).
+
+=== PAGE 25 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 25
+For a fixed pair(E, U), letΦ f,U (x; z)be factor f in (3.8) after setting ⃗X =1 U. Group these factors
+by their assignments:
+Ag,U (x;z) =
+Y
+f:σ f (t)=g
+Φf,U (x;z).(3.11)
+Their product isGx(1U , z). For h̸ = g, changing x by a vector inkerC t,h changes neither the original
+inputs of these factors nor their fixed corrections. Lemma 3.2 therefore computes the restricted sum
+withx i = 1fori∈Eby examining at most
+2r(2D+ 1) 2τ n22n/r (3.12)
+Boolean vectors. Combining all the pairs gives
+H(t+z)≡
+X
+E⊆[n]
+|E|⩽q
+X
+U⊆E
+(−1)|E|−|U| X
+x∈{0,1}n
+xi=1 (i∈E)
+Gx(1U , z) (modz J ).(3.13)
+The group products and sums are formed inR. The result isHt(z); repeating at allt supplies the
+interpolation data. The algorithm never stores a polynomial in alln indeterminates: it sets ⃗X =1 U
+first and stores only theJcoefficients inA.
+3.5.The three exponential costs.For each t∈ [Q], the number of pairsU⊆E⊆ [n]with
+|E|⩽qis
+Cq =
+min(q,n)X
+s=0
+2s
+ n
+s
+ 
+.(3.14)
+In particular,C 0 = 1andC q = 3n forq⩾n. For every0< η⩽1,
+ηqCq ⩽
+nX
+s=0
+ n
+s
+ 
+(2η)s = (1 + 2η)n,(3.15)
+becauseη q ⩽η s for every retained indexs⩽q.
+Proposition 3.4(Common counting routine).Let A be a commutativeQ-algebra. Suppose the
+product of the factors in(3.1), computed over A, satisfies the degree bound(3.2), and that the
+replacement rows, partitions, and measurements satisfy Definition 3.1. Withq, Jas in (3.5), the
+routine computesZby examining at most
+2Qr Cq(2D+ 1) 2τ n22n/r
+Boolean vectors. For each vector it evaluates at most|F |factors in A[z]/(zJ ). The additional
+operations per vector and the final interpolation take polynomially many operations inA and over Q,
+in the parametersn,|F |, D, Q, R, J, rand the total scope length. Apart from the factor evaluators’
+own storage, the routine retains only polynomially many algebra elements, rational numbers and
+index bits.
+Proof. There are Q points, Cq pairs per point, and at most(3.12) Boolean vectors per pair. Forming
+each group product uses at most|F |factor evaluations. Addition and multiplication modulozJ
+cost O(J 2)operations on coefficients in A. The preceding Taylor identity and interpolation prove
+correctness. Process the points, pairs, measurement tuples, and local assignments sequentially,
+retaining their current indices and accumulators. Together with theQJ interpolation coefficients,
+this gives the stated storage bound. Bit complexity additionally depends on the cost of evaluating
+the factors and on coefficient sizes; these are verified for the sparse polynomial application in
+Section 5.4. □
+
+=== PAGE 26 ===
+26 OPENAI
+Whend=O(n), we haved H =O(nR)andq=O(nR/Q). Takingη=R/Qin (3.15) gives
+logC q ⩽qlog(Q/R) +nlog(1 + 2R/Q) =O
+ 
+n R
+Q log 2Q
+R
+ 
+.
+Consequently, if factor evaluation and coefficient arithmetic have polynomial bit cost, the running
+time is a polynomial factor times
+2O
+ 
+n
+h
+R
+Q log 2Q
+R +τlog(2D+1)+ 1
+r
+i 
+.(3.16)
+These are exactly the three costs from the overview. The parameter choice in Lemma 4.8 makes
+their sum O((log logn)2/√logn )when factor scopes and their maximum incidence are bounded by
+a fixed power oflogn. The routine also applies whend is larger; then one keeps the actual value
+q=⌊dR/Q⌋in the bound of Proposition 3.4.
+We have so far assumed that the design is supplied. The next section constructs it from the factor
+scopes. The remaining two sections use the resulting routine first to count the zeros of a supplied
+polynomial system and then to choose such a system for a formula.
+4.Constructing low-degree replacement forms
+The counting routine needs one replacement form for each pair(f, v)where factor f reads variable
+v. For the application in Section 5,f is a polynomial equation and its scope is the union of the
+variable sets of its monomials. This section uses only those scopes. We construct the rows⃗Pf,v (T )and
+measurement matrices Ct,g in Definition 3.1, together with the partitionsSt,g and factor assignments
+σf. The main difficulty is to keepdeg ⃗Pf,v ⩽R with R much smaller thanQ. The degree bound for
+H grows linearly withR, so a smallR/Q reduces the number of Taylor coefficients needed at each
+point. Choosing the rows independently atT = 0, 1, . . . , Qand interpolating would generally give
+degreeQ. We instead construct their values at all these points together.
+The construction first gives polynomial rows on a complete array of auxiliary coordinates. We
+then place each factor–variable pair in a copy of that array. Several positions can contain the same
+Boolean variable xv; their values are always equal, and they do not become independent variables in
+the counting sum.
+4.1.The auxiliary coordinates.We first specify the larger coordinate setB on which the auxiliary
+rows ⃗Pu(T )will act, together with the incidence bounds needed to place the actual pairs(f, v)into
+copies of it. Let(If )f∈F be the factor scopes, withIf ⊆[n], and write
+A={(f, v) :f∈ F, v∈I f }, M=|A|,
+|If |⩽w(f∈ F),#{f:v∈I f }⩽b(v∈[n]). (4.1)
+Thus w bounds the number of variables in a factor’s scope, andb bounds the number of factors
+containing one variable. The scope boundw need not bound the degree of the factor polynomial. A
+factor with empty scope is constant and needs no auxiliary position; assign such a factor to group
+one at every point. If necessary, adjoin a distinct constant-one factor with scope{v} for everyv∈ [n].
+This changes neither the product nor the count, and increases the maximum incidence by at most
+one. Withbdenoting the bound after this addition, we assume
+n⩾1, b, w⩾1, n⩽M⩽bn.
+Throughout this section,r⩾2and1⩽R < Qare integers and0< τ⩽1/2.
+At each pointt∈ [Q], the variablexv will belong to one group, while a factor containingv may
+be assigned to another. We will choose
+av ∈[r] Q (v∈[n]), d f ∈[r] Q (f∈ F),
+
+=== PAGE 27 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 27
+where av(t)specifies the group containing xv and df (t)specifies the group assigned to factorf. The
+position for( f, v)will have label( av, df ). In particular, all positions containingxv will have the
+same first sequenceav.
+Before choosinga v andd f, take the complete set of possible labels:
+B= ([r] Q)2, u= (a u, du), D=|B|=r 2Q.(4.2)
+An auxiliary vectorζ∈Q B has one rational coordinateζu for each pairu. The label u stays fixed as
+ζvaries. Fort∈[Q]andg∈[r], define
+SB
+t,g ={u∈ B:a u(t) =g}.(4.3)
+For fixedt, these sets partitionBintorsets of sizeD/r.
+For each u∈ B, we seek a polynomial row ⃗Pu(T ) ∈Q [T ]1×B of degree at most R− 1with
+⃗Pu(0) =δ u. AtT=t, the value⟨ ⃗Pu(t), ζ⟩should be determined by
+ζ| SB
+t,du(t)
+andC Bζ,
+whereC B is one integer matrix, independent ofu, t, with entries in{0,1,−1}and few rows. Later,
+using uf,v = (av, df )will make every input of factorf use the groupdf (t). The choices ofav, df
+and the placement into copies are deferred to Sections 4.4 and 4.5, respectively.
+4.2.The matrices M0 and CB.To construct the rows ⃗Pu(T ), we seek a matrixM0 ∈Q B×B that
+fixeskerC B and satisfies
+M0[u, y]̸= 0 =⇒
+  {s∈[Q] :a y(s)̸=d u(s)}
+   ⩽R−1.(4.4)
+The identity
+ζu = ((I−M 0)ζ) u +
+X
+y∈B
+M0[u, y]ζy (4.5)
+explains both requirements. IfM0 fixes kerC B, the first term is determined byCBζ; we will leave
+it independent of T. In the sum, multiply each nonzeroM0[u, y]by a polynomial that is one at
+zero and vanishes at everyt with ay(t) ̸= du(t). The bound(4.4) permits degree at mostR− 1. At
+T=t, the sum will then use only the coordinatesy∈S B
+t,du(t).
+For s∈ [Q], let ϑs : B → Bexchange the entries au(s)and du(s), leaving every other entry
+unchanged. Define its permutation matrixΠs by
+(Πsζ) u =ζ ϑs(u).
+The exchanged pairϑs(u)belongs to B because this set contains every pair of sequences in[r]Q. The
+matricesΠ s commute and satisfyΠ2
+s =I. Their product
+V0 =
+QY
+s=1
+Πs
+exchanges the complete sequencesau and du. Thus V0[u, y] ̸= 0implies ay(s) = du(s)for every s; it
+satisfies (4.4) with no mismatches. We will modifyV0 so that the resulting matrix also fixes the
+kernel of a short list of integer measurements.
+Define
+W0 = 1
+2
+QX
+s=1
+(I−Π s).(4.6)
+On a common eigenvectorψ of theΠ s, let j be the number of indicess for whichΠ sψ = −ψ. Then
+W0ψ=jψ, V 0ψ= (−1) jψ, V 0p(W0)ψ= (−1) jp(j)ψ
+
+=== PAGE 28 ===
+28 OPENAI
+for every polynomialp. Therefore V0p(W0)fixes ψ whenever p(j) = (−1)j. We will construct an
+explicit common eigenbasis in which the proportion of vectors with a givenj is Pr[W = j]for
+W∼Bin(Q,(r−1)/(2r)).
+For an intervalI = {A0, . . . , A0 +R− 1} ⊆ {0, . . . , Q}, we can enforce the equalitiesfI(j) = (−1)j
+forj∈ Iwith a polynomial of degree at mostR−1. We use the explicit interpolation formula
+fI(z) = (−1)A0
+R−1X
+j=0
+(−2)j
+ z−A 0
+j
+ 
+, M 0 =V 0fI(W0),(4.7)
+where  z−A 0
+j
+ 
+= 1
+j!
+j−1Y
+a=0
+(z−A 0 −a)
+and the empty product is one. For0⩽q < R, the binomial theorem givesfI(A0 + q) = (−1)A0(1 −
+2)q = (−1)A0+q.
+Lemma 4.1.ForB,IandM 0 as above, there is a matrixCB ∈ {0,1,−1}[cB]×B such that
+cB ⩽DPr[W /∈ I], W∼Bin
+ 
+Q, r−1
+2r
+ 
+,
+andM 0ξ=ξfor everyξ∈kerC B.
+Proof. For( α, δ) ∈ [r]2, let eαδ be the indicator function of that ordered pair. Exchanging its two
+entries has the orthogonal eigenbasis
+eαα (α∈[r]), e αδ +e δα, e αδ −e δα (1⩽α < δ⩽r).
+The first two types have eigenvalue+1, and the third has eigenvalue−1. There are r(r + 1)/2
+vectors with eigenvalue+1andr(r−1)/2with eigenvalue−1.
+For eachs∈[Q], choose one of these functionsψ s : [r]2 → {0,1,−1}, and define
+ψ(u) =
+QY
+s=1
+ψs(au(s), du(s)) (u∈ B).
+The D = r2Q choices give nonzero orthogonal vectors: their inner products factor into the inner
+products of the functionsψs. They form a basis ofQB with entries in{0, 1,− 1}. If exactly j of
+the chosen ψs have eigenvalue−1, then W0ψ = jψ and V0ψ = (−1)jψ. Hence M0 fixes ψ whenever
+j∈ I.
+To makekerC B a space fixed byM0, we define the rows ofCB to be the transposes of the basis
+vectors with j /∈ I. A fraction( r− 1)/(2r)of the choices at each position have eigenvalue−1,
+independently across positions. The fraction of theD basis vectors retained as rows is therefore
+Pr[W /∈ I], proving the row bound. IfCBξ = ⃗0, then ξ is orthogonal to every retained basis vector.
+It is a linear combination of the basis vectors withj∈ I, all of whichM0 fixes.□
+For a boundϵ >0, the condition
+Pr
+ 
+Bin
+ 
+Q, r−1
+2r
+ 
+/∈ I
+ 
+⩽ϵ(4.8)
+thus gives cB ⩽ϵD . After placing the factor inputs, we will useϵ = τ /(rb). We next prove the other
+requirement onM 0.
+Lemma 4.2.For allu, y∈ B, ifM0[u, y]̸= 0, then
+  {s∈[Q] :a y(s)̸=d u(s)}
+   ⩽R−1.
+
+=== PAGE 29 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 29
+Proof. Expand fI(W0)in the commuting matricesΠ s. Since degf I ⩽R− 1andΠ 2
+s = I, each
+resulting monomial is a scalar multiple ofQ
+s∈J Πs for someJ⊆ [Q]with |J|⩽R− 1. Multiplication
+byV 0 gives
+V0
+Y
+s∈J
+Πs =
+Y
+s /∈J
+Πs.
+A nonzero( u, y)entry of this permutation matrix requiresay(s) = du(s)for every s /∈J. There are
+at most R− 1other positions. If more than R− 1positions disagree, every summand has zero(u, y)
+entry, soM0[u, y] = 0as well.□
+4.3.The polynomial rows.We now use M0 to construct the auxiliary rows ⃗Pu(T )sought in
+Section 4.1. Lemma 4.1 makes(I−M 0)ζ a function ofCBζ. Lemma 4.2 bounds the number of
+points at which a nonzero termM0[u, y]ζy uses a coordinate outsideSB
+t,du(t). We now multiply that
+term by a polynomial vanishing at those points and equal to one at zero.
+ForM 0[u, y]̸= 0, define
+Eu,y ={s∈[Q] :a y(s)̸=d u(s)}, φ u,y(T) =
+Y
+s∈Eu,y
+ 
+1− T
+s
+ 
+.(4.9)
+The empty product is one. Then degφ u,y ⩽R− 1, φu,y(0) = 1, and φu,y(t) = 0whenever
+ay(t)̸=d u(t). Define
+⃗Pu(T) =δ u(I−M 0) +
+X
+y∈B
+M0[u,y]̸=0
+M0[u, y]φu,y(T)δ y.(4.10)
+This row acts as a linear form inζ, with coefficients that are polynomials in the single parameterT.
+Lemma 4.3.The rows in (4.10) have degree at mostR− 1and satisfy ⃗Pu(0) = δu for every u∈ B.
+For t∈ [Q]and g∈ [r], let CB
+t,g be the restriction ofCB to the columnsSB
+t,g. For everyu, t, gwith
+g̸=d u(t)and everyξ∈Q SB
+t,g, its extension eξby zero toBsatisfies
+CB
+t,gξ= ⃗0 =⇒ ⟨ ⃗Pu(t), eξ⟩= 0.
+More generally,⟨ ⃗Pu(t), ζ⟩is determined byζ|SB
+t,du(t)
+andC Bζ.
+Proof.The degree bound follows from that ofφu,y. At zero,
+⃗Pu(0) =δ u(I−M 0) +δ uM0 =δ u.
+Applying (4.10) toζgives
+⟨ ⃗Pu(T), ζ⟩= ((I−M 0)ζ) u +
+X
+y∈B
+M0[u,y]̸=0
+M0[u, y]φu,y(T)ζ y.(4.11)
+At T = t, all summands withay(t) ̸= du(t)vanish. If eξ is supported onSB
+t,g with g̸ = du(t), each
+remaining summand is zero oneξ. The hypothesis CB
+t,gξ = ⃗0 also gives CB eξ = ⃗0, so( I−M 0)eξ = ⃗0 by
+Lemma 4.1. This proves the implication.
+For the final assertion, two vectors with the same measurements underCB differ by an element of
+its kernel. Thus(I−M 0)ζ is determined byCBζ. The remaining terms in(4.11) at T = t use only
+ζ| SB
+t,du(t)
+. □
+Fixtand writeζ g =ζ| SB
+t,g
+. The restrictions ofCB satisfy
+CBζ=
+rX
+g=1
+CB
+t,gζg.(4.12)
+
+=== PAGE 30 ===
+30 OPENAI
+Fixing each vectorCB
+t,gζg therefore fixes CBζ while imposing separate conditions on ther auxiliary
+coordinate groups. When all vectorsCB
+t,gζg are fixed, ⟨ ⃗Pu(t), ζ⟩is determined byζ| SB
+t,du(t)
+. We will
+obtain the corresponding separation on the actual Boolean variables by placing(f, v)at a coordinate
+labeled(a v, df ).
+Remark4.4.We illustrate how (4.10) confines dependence outside the assigned group to one linear
+measurement. Take Q = R = 2, outside the regimeR < Qused for the running-time bound, and
+r = 2. Use {0, 1} as the group indices andI = {0, 1}, so fI(z) = 1 − 2z. Starting with the label
+(00,11), the two exchanges generate four coordinates:
+ζ0 =ζ (00,11), ζ 1 =ζ (10,01), ζ 2 =ζ (01,10), ζ 12 =ζ (11,00).
+Both exchanges preserve this set of four coordinates, so we can restrict the calculation to it. On this
+restriction,M 0 = Π1 + Π2 −Π 1Π2 fixes the kernel of
+c(ζ) =ζ 0 −ζ 1 −ζ 2 +ζ 12.
+The row indexed byu= (00,11)gives
+⟨ ⃗Pu(T), ζ⟩=ζ 0 − T
+2 ζ1 −T ζ2.
+It equalsζ 0 at zero, while
+⟨ ⃗Pu(1), ζ⟩=c(ζ) + 1
+2 ζ1 −ζ 12,⟨ ⃗Pu(2), ζ⟩=c(ζ)−ζ 2 −ζ 12.
+At t = 1, the labels of ζ1, ζ12 satisfy ay(1) = 1 = du(1). At t = 2, the labels of ζ2, ζ12 satisfy
+ay(2) = 1 = du(2). Fixing c(ζ)therefore leaves ⟨ ⃗Pu(t), ζ⟩dependent only on coordinates in its
+assigned group. Here c(ζ)plays the role of CBζ on the four-coordinate restriction. The full
+construction must give this property for everyu∈ Bwith at mostϵDmeasurement rows.
+4.4.Choosing the variable and factor groups.We now choose the families(av)v∈[n] and( df )f∈F
+from Section 4.1, and set
+uf,v = (av, df ) ((f, v)∈ A).
+These choices have two requirements. First, if a label occurscu times, its incidences needcu different
+positions in copies of the auxiliary array. Thus the number of copies needed is
+cu = #{(f, v)∈ A:uf,v =u}, h= max
+u∈B
+cu.
+Second, the actual variable group{v : av(t) = g} must be small. Boundingh alone would bound the
+number of incidences in a group, not give the required bound on its number of Boolean variables.
+The next lemma controls both quantities.
+Lemma 4.5.Let( If )f∈F satisfy (4.1), with n⩽M⩽bn , and putD = r2Q for integers r⩾ 2and
+Q⩾1. Suppose
+2(b+w)D 2 ⩽M,2Qr 2 ⩽n.(4.13)
+One can deterministically chooseav, df ∈[r] Q, withd f (t) = 1for factors of empty scope, so that
+max
+u∈B
+#{(f, v)∈ A: (av, df ) =u}⩽ 2M
+D ,
+#{v∈[n] :a v(t) =g}⩽ 2n
+r (t∈[Q], g∈[r]).
+The construction takespoly(n, M,|F |, D, Q, r, b, w)bit operations.
+
+=== PAGE 31 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 31
+Proof. We first estimate the effect of random labels; we will then fix their values deterministically.
+For this estimate, allav and all df with nonempty If are independent and uniform on[r]Q. For
+empty If, we set df identically one. Each incidence label uf,v = ( av, df )is uniform on B. Put
+nt,g = #{v:a v(t) =g}, and consider
+Φ =
+X
+u∈B
+(cu −M/D) 2,Ξ =
+QX
+t=1
+rX
+g=1
+(nt,g −n/r) 2.
+Their expansions as sums of indicators are
+Φ =
+X
+(f,v),(f ′,v′)∈A
+1{(av,df )=(av′ ,df ′ )} − M 2
+D ,
+Ξ =
+QX
+t=1
+X
+v,v′∈[n]
+1{av(t)=av′ (t)} − Qn2
+r .
+Two incidence labels are independent unless they share a factor or a variable. For each(f, v), there
+are at mostb + w incidences sharing f or v, including( f, v)itself. Independent pairs have equality
+probability1/D; the other pairs have probability at most one. Hence
+EΦ⩽M(b+w).
+For each t and v̸ = v′, the values av(t), av′(t)are independent and uniform on[ r]. The second
+expansion therefore gives
+EΞ =Qn(1−1/r)⩽Qn.
+To obtain the labels deterministically, we fix theav and the df for nonempty If one at a time. At
+each step we choose a value that does not increase the conditional expectation of
+Φ
+M(b+w) + Ξ
+Qn .
+Such a choice exists because the current expectation is the average over the possible values of the
+nexta v ord f. The final value is at most two. Since both summands are nonnegative,
+cu ⩽ M
+D +
+p
+2M(b+w), n t,g ⩽ n
+r +
+p
+2Qn.
+The two inequalities in (4.13) make the square-root terms at mostM/Dandn/r, respectively.
+The following enumeration computes the conditional expectations inpoly(n, M,|F |, D, Q, r, b, w)
+bit operations. PutK = rQ, soD = K2. Each indicator in the expansion ofΦdepends on at most the
+four independent choicesav, df , av′, df ′; repeated indices contribute just one choice. Each indicator
+inΞdepends on at most av, av′. After any partial fixing, enumerate at mostK4 = D2 assignments
+to the remaining choices in one indicator. Its conditional probability has denominator dividing
+K4. Summing the M 2 + Qn2 indicators computes both expectations. Including the normalizations
+M (b + w)and Qn, all rational values in these calculations have numerators and denominators with
+O(log(2D) + log(2M) + log(2n) + log(2Q) + log(2 +b+w))
+bits. There are at mostn + |F |choices to fix, each withK candidate values. SinceK4 = D2, the
+entire construction takespoly(n, M,|F |, D, Q, r, b, w)bit operations.□
+
+=== PAGE 32 ===
+32 OPENAI
+4.5.Placing copies of the variables in the auxiliary arrays.We now transfer the auxiliary
+rows ⃗Pu(T )and matrix CB to the rows ⃗Pf,v (T )and matrices Ct,g on the original variables required
+by Definition 3.1. Assume (4.13) and apply Lemma 4.5. With h = maxu cu, index h copies of
+the auxiliary coordinates by[h] × B. For each(f, v) ∈ A, we assignc(f, v) ∈ [h]so that all pairs
+(c(f, v), uf,v )are distinct. This is possible because no label occurs more thanhtimes, and
+hD⩽2M⩽2bn.
+Define the linear mapι:Q n − →Q[h]×B by
+(ιx)c,u =
+(
+xv,(c, u) = (c(f, v), uf,v )for some(f, v)∈ A,
+0,otherwise.
+The occupied positions are distinct, so this definition is unambiguous. Different positions can contain
+the samex v, and unused positions are fixed at zero. Forc∈[h], define the projection
+πc :Q [h]×B − →QB,(π cη)u =η c,u.
+Now put
+⃗Pf,v (T) = ⃗Puf,v (T)π c(f,v) ι,
+St,g ={v∈[n] :a v(t) =g}, σ f (t) =d f (t).
+(4.14)
+The row ⃗Pf,v (T )acts on the actual variablesx∈Q n. At T = 0, it extracts the value in position
+(c(f, v), uf,v ), which isxv. Thus ⃗Pf,v (0) = δv, and its degree is at mostR− 1. Lemma 4.5 gives
+|St,g|⩽2n/r.
+Define the measurement matrices by
+eC= diag
+ 
+CB, . . . , CB
+| {z }
+hcopies
+ 
+, bC= eCι, C t,g = bC| St,g .(4.15)
+The restriction keeps the columns inSt,g and all rows, including zero rows. ThusbCx records the
+auxiliary measurements in each copy after its coordinates have been filled fromx. The matrices Ct,g
+are integral. Their entries need not belong to{0, 1,− 1}, because coefficients at several positions
+containing the samexv are added. Each row of eC has at most D nonzero entries, all equal to1
+or −1. Multiplication byι adds entries in a common column and discards unused positions, so it
+cannot increase the sum of their absolute values. Consequently every row ofCt,g has absolute row
+sum at mostD, and its value on a Boolean assignment lies in[−D, D]∩Z.
+If (4.8) holds, eachCt,g hasc t,g =hc B rows. Hence
+rX
+g=1
+ct,g =rhc B ⩽rhϵD⩽2rϵM⩽2rϵbn.(4.16)
+Settingϵ=τ /(rb)makes this at most2τ n.
+To verify separation, fixt∈ [Q], g∈ [r]and( f, v) ∈ Awith g̸ = σf (t). Suppose ξ∈Q St,g satisfies
+Ct,gξ= ⃗0, and extend it by zero toeξ∈Q n. Equation (4.15) gives eCι eξ= ⃗0. Thus, for everyc∈[h],
+CBπcιeξ= ⃗0.
+Every nonzero coordinate ofπcιeξ contains a variable v′ with av′(t) = g. Its auxiliary label has
+first sequence av′, so this vector is supported onSB
+t,g. Lemma 4.3, applied in copy c(f, v)with
+duf,v (t) =d f (t) =σ f (t), gives
+⟨ ⃗Pf,v (t), eξ⟩=⟨ ⃗Puf,v (t), πc(f,v) ιeξ⟩= 0.
+This is the kernel condition in Definition 3.1. All inputs of factorf use the same assigned group
+df (t), and the counting sum still ranges over exactly thenBoolean bits.
+
+=== PAGE 33 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 33
+4.6.Coefficient bounds and the completed construction.The substitution rows ⃗Pf,v (T ) ∈
+Q[T ]1×n in (4.14) have polynomial entries with rational coefficients. We now bound the bits needed
+to store those coefficients; these bounds will control exact arithmetic in Section 5.4. We first give a
+common denominator and coefficient bounds for the auxiliary rows⃗Pu(T )defined in (4.10). Passing
+from ⃗Pu(T )to ⃗Pf,v (T )by (4.14) only adds coefficients in common columns or discards unused
+columns, so the same denominator and bound on the sum of absolute values apply.
+Lemma 4.6.Let dden = (R− 1)!Q!. Then dden ⃗Pu(T ) ∈Z [T ]1×D for every u∈ B. The sum of the
+absolute values of all coefficients in each rowdden ⃗Pu(T )is at most2 O(QlogQ) . The same bound holds
+for dden ⃗Pf,v (T ). The matricesM0, CB and the rows ⃗Pu(T )can be constructed inpoly(D, Q, r)bit
+operations.
+Proof.For0⩽j < R, the corresponding summand off I(W0)equals
+(−1)A0(−2)j
+ W0 −A 0I
+j
+ 
+= (−1)A0+j
+j!
+j−1Y
+a=0
+ 
+2W0 −2(A 0 +a)I
+ 
+.
+Each matrix factor on the right is integral because2W0 = QI− P
+s Πs. Also j!divides( R− 1)!.
+Multiplication by the permutation matrixV0 therefore shows that( R− 1)!M0 is integral. The
+coefficients of φu,y have denominators dividingQ
+s∈Eu,y s, which dividesQ!. Equation (4.10) proves
+the asserted common denominator.
+For the coefficient estimates, we use the matrix norm∥A∥∞ = maxi
+P
+j |A[i, j]| and the polynomial
+norm ∥ P
+j ajT j∥1 = P
+j |aj|. Since ∥W0∥∞ ⩽Q and0 ⩽A 0 + a⩽Q for all factors above, each
+2W0 −2(A 0 +a)Ihas norm at most4Q. It follows that
+∥M0∥∞ ⩽R(4Q) R−1,∥φ u,y∥1 ⩽
+Y
+s∈Eu,y
+(1 + 1/s)⩽2 Q.
+The sum of the absolute values of all coefficients in the rowdden ⃗Pu is therefore at most
+dden
+ 
+1 + (1 + 2Q)R(4Q)R−1 
+.
+Its logarithm isO(QlogQ )because R < Q. For u = uf,v, multiplication ofdden ⃗Pu(T )by πc(f,v) ι
+adds coefficients in common columns and discards unused columns. By(4.14), the resulting row is
+dden ⃗Pf,v (T), so it satisfies the same bound.
+Enumerating the eigenbasis in Lemma 4.1, evaluatingfI(W0), and forming the polynomialsφu,y
+require poly(D, Q, r)arithmetic operations. Using the common denominators above, the coefficients
+stored during these matrix and polynomial calculations have numerators and denominators with
+O(QlogQ)bits. Thus the construction takespoly(D, Q, r)bit operations.□
+The construction has three quantitative requirements. The two inequalities in(4.13) bound the
+number of auxiliary copies and the number of actual variables in each group. The tail bound with
+ϵ = τ /(rb)gives the total measurement bound through(4.16). We collect the result for use in the
+counting algorithm.
+Lemma 4.7.Let n, b, w⩾1be integers, and let( If )f∈F be subsets of[n]of size at most w, with
+each v∈ [n]belonging to at most b sets. Put M = P
+f |If | and assume n⩽M⩽bn . Let r⩾ 2and
+1⩽R < Qbe integers, let0< τ⩽1/2, and putD=r 2Q. Suppose
+2(b+w)D 2 ⩽M,2Qr 2 ⩽n,
+and an intervalI={A 0, . . . , A0 +R−1} ⊆ {0, . . . , Q}satisfies
+Pr[W /∈ I]⩽τ
+rb , W∼Bin
+ 
+Q, r−1
+2r
+ 
+.
+
+=== PAGE 34 ===
+34 OPENAI
+One can deterministically construct all the data in Definition 3.1 inpoly(n, M,|F |, D, Q, r, b, w)bit
+operations.
+Proof. Lemma 4.1 constructs CB with cB ⩽τ D/(rb). Lemmas 4.2 and 4.3 give the auxiliary
+polynomial rows. Lemma 4.5 chooses the variable and factor groups withhD⩽ 2M and |St,g|⩽ 2n/r.
+The maps in(4.14) and (4.15) then give rows with⃗Pf,v (0) = δv, degree at mostR− 1 ⩽R , and the
+required kernel implication. Every row ofCt,g has absolute row sum at mostD, and(4.16) givesPr
+g=1 ct,g ⩽ 2τ nfor each t∈ [Q]. Lemma 4.6 supplies the common denominator and coefficient
+bounds. Together, the constructions take poly(n, M,|F |, D, Q, r, b, w)bit operations, and the
+resulting arrays occupypoly(n, M,|F |, D, Q, r, b, w)bits.□
+4.7.Choosing the parameters.In the application, both the largest scopew and the maximum
+number b of factors containing a variable will be bounded by a fixed power oflogn. We now choose
+parameters satisfying Lemma 4.7 in that regime. The exponent of the counting cost depends on the
+three quantities
+R
+Q log 2Q
+R , τlog(2D+ 1), 1
+r .
+They account respectively for recovering Taylor coefficients, enumerating measurement values, and
+enumerating assignments in one group. The following choices bound all three at once.
+Lemma 4.8.Fix an integer β⩾ 1. Let n⩾ 20, put λ = ⌈log2 n⌉ and ν = ⌈log2 λ⌉, and suppose
+b, w⩽λ β andn⩽M⩽bn. For all sufficiently largen, the parameters
+r=
+$ √
+λ
+ν2
+%
+, Q=
+  λ
+128ν
+ 
+, R= (β+ 3)⌈
+√
+λ⌉,(4.17)
+τ= 1
+rλ , ϵ= 1
+br2λ , D=r 2Q,
+together with the interval specified in the proof, satisfy all numerical hypotheses of Lemma 4.7. They
+also satisfy
+R⩾32,6R⩽Q, D⩽2 λ/128,
+and
+R
+Q log 2Q
+R +τlog(2D+ 1) + 1
+r =O β
+  ν2
+√
+λ
+ 
+.(4.18)
+Given the numerical valuesn, M, b, w, the parameters and numerical hypotheses can be computed and
+checked exactly inpolyβ(logn)bit operations. For fixedβ, only finitely manynfail these checks.
+Proof.For sufficiently largen, the parameters have orders
+r= Θ(
+√
+λ/ν2), Q= Θ(λ/ν), R= Θ β(
+√
+λ).
+In particular, eventuallyr⩾2,R⩾32, and6R⩽Q. Sincelog 2 r⩽ν/2,
+log2 D= 2Qlog 2 r⩽2 λ
+128ν
+ν
+2 = λ
+128 .
+The two balance inequalities follow for sufficiently largen:
+2(b+w)D 2 ⩽4λ β2λ/64 ⩽n⩽M,2Qr 2 ⩽n.
+For the second,Q, rare bounded by fixed powers ofλ, whereas n >2λ−1. The first follows from the
+same comparison.
+Put
+µ= Q(r−1)
+2r , A 0 =
+ 
+µ− R−1
+2
+ 
+,I={A 0, . . . , A0 +R−1}.

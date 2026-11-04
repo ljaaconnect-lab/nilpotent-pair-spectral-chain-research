@@ -1,0 +1,8 @@
+{
+  "node": "n72",
+  "frozen_before_execution": true,
+  "sha256": {
+    "n72-protocol.json": "06860107703805179b0bdc812c46cd784063ab763bf4f7b180614f079566feec",
+    "pole_functional_candidate.py": "d930cca64c50f92ef901122a85671b88c2ce0482108a40d18e43c854a9e687d9"
+  }
+}

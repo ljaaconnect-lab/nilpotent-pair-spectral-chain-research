@@ -1,0 +1,1110 @@
+{
+  "_counter": 68,
+  "root": "n0",
+  "nodes": {
+    "n0": {
+      "id": "n0",
+      "parent": null,
+      "depth": 0,
+      "status": "root",
+      "hypothesis": "Resolve Conjecture 1.5; record finite exact evidence and formally verified obligations without equating scores with proof",
+      "insight": "[from n1] A small Hhat DAG is established on the development boundary; constructive extraction must be assessed separately\n[from n3] Direct Lean 4.34.1 is available; Mathlib import is missing. Use actual dependency diagnostics and verified core lemmas without weakening the original conjecture.\n[from n4] The positive frontier has an exact transfer baseline and stabilization invariant; polynomial compilation requires cheaply constructible compressed data\n[from n5] All tested positive identities preserve generic weights and marked coefficients. Kernel-verified helpers are reusable; the root polynomial gate bound still needs proof.\n[from n15] A positive half-character formula has cheap explicit initial data; compression of its scalar contraction remains an independent obligation\n[from n16] A small initialized recurrence over auxiliary variables does not yet compile the required diagonal functional; charge that projection separately\n[from n15] A positive half-character formula has cheap explicit initial data; compression of its scalar contraction remains an independent obligation\n[from n16] A small initialized recurrence over auxiliary variables does not yet compile the required diagonal functional; charge that projection separately\n[from n17] A kernel-verified general coefficient identity now supports arbitrary coefficient rings; remaining work is determinant specialization and scalar extraction compilation\n[from n56] Noncommutative double orientation, pair nilpotence and exact triangular sign formally verified; this supplies no polynomial-dimensional representation of the target\n[from n57] Actual shared scalar circuit semantics and conditional matrix-power budget formally verified; this supplies no polynomial-dimensional representation of the target\n[from n55] Actual determinant pairing with proved base-n injectivity and exact canonical central index formally verified; this supplies no polynomial-dimensional representation of the target\n[from n1] Full n=5 scalar Hhat DAG now evaluated exactly on both previously frozen positive rational cases: 10/10 checks, 1314 scalar gates, 14402 Q[t,z] terms, 120 central terms, K=3124. No polynomial extraction complexity inferred. Root report n5-full-hhat-test-report.json.\n[from n61] Independent scalar DAG correctness verified; no polynomial-sized representation or uniform polynomial compilation established\n[from n64] Local coefficient compression is insufficient to establish a global scalar extractor; synchronized paired-subset contraction must be charged. No all-n Pfaffian statement is formally verified in this leaf.\n[from n65] For a positive matrix-power construction, a cheap recurrence must be accompanied by every initial jet and a proved intertwining map; differential transition entries require their own derivatives on subsequent iterations.\n[from n66] Track native and grouped tensor orders explicitly: converting the local copy constraint to Gaussian factors is useful only with an exact joint input-and-cap shuffle intertwining. Future Ward closure must keep every remaining synchronization factor.\n[from n68] Both reduced kernel sectors can use row/column incidence rank at most n in the diagonal coefficient pairing, but this does not close all mixed moments. A valid positive root circuit needs initialized polynomial-dimensional updates and boundary, including higher moments and future-context derivatives.",
+      "metadata": {
+        "dev_score": null,
+        "test_score": 0.0,
+        "result": "",
+        "branch_ref": "7d68b541d2bfd7c2e5a0193730c563a8f43dac1b"
+      },
+      "created_at": 1791369214,
+      "updated_at": 1791392481
+    },
+    "n1": {
+      "id": "n1",
+      "parent": "n0",
+      "depth": 1,
+      "status": "merged",
+      "hypothesis": "The O(n^4) scalar DAG reproduces Hhat exactly for n=2,3,4, but coefficient expansion and subset-state DP retain exponential costs",
+      "insight": "Pairing preserves exact addresses and cancels diagonal signatures; subset-state scalar compilation is a reusable constructive baseline\n[from n4] The positive frontier has an exact transfer baseline and stabilization invariant; polynomial compilation requires cheaply constructible compressed data\n[from n5] All tested positive identities preserve generic weights and marked coefficients. Kernel-verified helpers are reusable; the root polynomial gate bound still needs proof.",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "36/36 exact development assertions passed; Hhat scalar gates 48,198,568 at n=2,3,4; no extractor bound proved",
+        "branch_ref": "7f68a91c2930d347de5388fecea72753b2f973c3"
+      },
+      "created_at": 1791369215,
+      "updated_at": 1791371735
+    },
+    "n2": {
+      "id": "n2",
+      "parent": "n0",
+      "depth": 1,
+      "status": "executed",
+      "hypothesis": "Specialization z=1 and interpolation at square shifts recover the Boolean permanent; global homogeneous coefficient recurrences require exponential dimension",
+      "insight": "Target-only structured representations remain eligible; preserve original formal-polynomial, constant-length, and uniform-construction requirements\n[from n3] Direct Lean 4.34.1 is available; Mathlib import is missing. Use actual dependency diagnostics and verified core lemmas without weakening the original conjecture.",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": null,
+        "result": "9/9 exact interpolation development checks; previous structural audit preserved, further audit search stopped on user steering",
+        "branch_ref": "7627e1b392352c3f278bebe8790b7dd9766e978c"
+      },
+      "created_at": 1791369216,
+      "updated_at": 1791371147
+    },
+    "n3": {
+      "id": "n3",
+      "parent": "n2",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "An acyclic Lean blueprint preserves base-n injection, diagonal sign pairing, and the finite-template permanent implication; actual compiler diagnostics determine verification",
+      "insight": "The exact source preserves fixed-length labels, central equality and stabilization hypotheses; polynomial compilation remains open",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": null,
+        "result": "9 accepted declarations, 7 distinct helpers, exit0 and no sorryAx; Mathlib draft separately unverified; root unproved",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791370525,
+      "updated_at": 1791371950
+    },
+    "n4": {
+      "id": "n4",
+      "parent": "n1",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "A subset-transfer matrix with a terminal self-loop realizes the target coefficient as u^T M^K v; constructive compression variants can be measured for n=2,3,4,5",
+      "insight": "Terminal stabilization replaces exponent K by n; scalar initialization and state compression remain distinct constructive obligations\n[from n5] All tested positive identities preserve generic weights and marked coefficients. Kernel-verified helpers are reusable; the root polynomial gate bound still needs proof.",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "48/48 formal-z development equalities n=2..5; matrix/row/tensor variants constructed, no polynomial extractor bound",
+        "branch_ref": "9f9725b7c96944103a78b67097751b2fb1c04bde"
+      },
+      "created_at": 1791370950,
+      "updated_at": 1791371735
+    },
+    "n5": {
+      "id": "n5",
+      "parent": "n4",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "SymPy verifies commuting square-zero tensor raising operators and symbolic terminal stabilization for n=2,3,4,5 with explicit scalar compilation counts",
+      "insight": "The exact symbolic tensor model supports the positive recurrence, whose initial target scalar and exponential state representation remain compilation obligations",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": null,
+        "result": "112/112 frozen SymPy symbolic checks n=2..5; commuting nilpotent tensor factors and terminal stabilization confirmed in tested sizes",
+        "branch_ref": "6207ea8f28565e50766e4798df91e3c72476115b"
+      },
+      "created_at": 1791371355,
+      "updated_at": 1791371733
+    },
+    "n6": {
+      "id": "n6",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionCoreBridge.decode_head",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371950,
+      "updated_at": 1791371951
+    },
+    "n7": {
+      "id": "n7",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionCoreBridge.decode_tail",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371952,
+      "updated_at": 1791371953
+    },
+    "n8": {
+      "id": "n8",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionCoreBridge.encodeDigits_injective",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371953,
+      "updated_at": 1791371954
+    },
+    "n9": {
+      "id": "n9",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionCoreBridge.central_label_iff",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371954,
+      "updated_at": 1791371955
+    },
+    "n10": {
+      "id": "n10",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionCoreBridge.orbit_stabilizes",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371955,
+      "updated_at": 1791371956
+    },
+    "n11": {
+      "id": "n11",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionCoreBridge.n2_pair_factorization",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371956,
+      "updated_at": 1791371957
+    },
+    "n12": {
+      "id": "n12",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionCoreBridge.n2_central_convolution",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371958,
+      "updated_at": 1791371958
+    },
+    "n13": {
+      "id": "n13",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneratedCollisionN2.factorization",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371959,
+      "updated_at": 1791371960
+    },
+    "n14": {
+      "id": "n14",
+      "parent": "n3",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneratedCollisionN2.central_convolution",
+      "insight": "Reuse this exact compiled helper with all of its hypotheses; it adds no axiom asserting the conjecture",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Compiler exit0 in executor and fresh coordinator replay; no sorryAx; helper statement only",
+        "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57"
+      },
+      "created_at": 1791371960,
+      "updated_at": 1791371961
+    },
+    "n15": {
+      "id": "n15",
+      "parent": "n0",
+      "depth": 1,
+      "status": "executed",
+      "hypothesis": "An ordered nilpotent tensor-network factorization may admit a compact scalar contraction with cheap original-matrix data",
+      "insight": "Half-character polarization supplies cheap initial data and diagonal factors; its explicit scalar contraction is still exponential\n[from n18] The Gram determinant supplies a cheaper exact scalar coefficient encoding; no final contraction is counted as a free gate",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "28/28 frozen constructive half-character tests n=2..5; actual gates 18,54,124,260; root unproved",
+        "branch_ref": "a3a6f044243d4006ba2c3a8a9d9577d13d9d806c"
+      },
+      "created_at": 1791372130,
+      "updated_at": 1791374241
+    },
+    "n16": {
+      "id": "n16",
+      "parent": "n0",
+      "depth": 1,
+      "status": "executed",
+      "hypothesis": "A Laurent rational-function representation of the paired determinants may yield a short recurrence whose initial data are cheap",
+      "insight": "The reciprocal determinant gives a cheap small companion recurrence over auxiliary variables; the squarefree contraction requires its own scalar compilation theorem\n[from n19] Initialized nilpotent row updates yield cheaper auxiliary circuits and actual emitted derivative DAGs; uniform polynomial scalar extraction remains the target",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "20/20 generic symbolic tests n=2..5; initialized order-n reciprocal recurrence, native gates 30,129,404,1005; projection compilation unproved",
+        "branch_ref": "ba86cbd596588993b2061db0f033ec8e5b58fac4"
+      },
+      "created_at": 1791372130,
+      "updated_at": 1791374241
+    },
+    "n17": {
+      "id": "n17",
+      "parent": "n0",
+      "depth": 1,
+      "status": "executed",
+      "hypothesis": "The all-n coefficient pairing can be formally verified through constructive list convolution and injective bounded labels",
+      "insight": "Central sign pairing is proved for actual sparse products, arbitrary distinct bounded labels and arbitrary ring weights; retain every hypothesis in determinant specialization\n[from n38] The indexed-label interface is formally proved over arbitrary finite assignments; actual Polynomial interpretation and uniform scalar extraction remain separate obligations",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "18 accepted declarations in Rat and arbitrary commutative ring; executor and independent replay exit0, no sorryAx; polynomial extraction unproved",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791372131,
+      "updated_at": 1791375549
+    },
+    "n18": {
+      "id": "n18",
+      "parent": "n15",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Constructive Cauchy-Binet and Hadamard determinant pair factorization with scalar gate counts and no uncharged contraction",
+      "insight": "Cauchy-Binet squares local incidence orientation signs and supplies a cheap product encoding; its central occupation coefficient remains a separate scalar compilation obligation\n[from n40] Shared binary-power compiler and logarithmic multiplication budget formally verified; this supplies no polynomial-dimensional representation of the target",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "36/36 frozen generic and marked positive assertions n=2..5; Gram encoding scalar gates 16,38,71,110; extraction complexity unproved",
+        "branch_ref": "1c9875ad83b903e5769bacc78df80ae7126a71cb"
+      },
+      "created_at": 1791373072,
+      "updated_at": 1791377169
+    },
+    "n19": {
+      "id": "n19",
+      "parent": "n16",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Constructive mixed-derivative propagation for the reciprocal determinant: search a compact chain with explicit initial data and charged scalar states",
+      "insight": "Sherman-Morrison square-zero updates reduce auxiliary circuit cost and support cheap initialized states; each scalar mixed-derivative contraction remains explicitly charged\n[from n39] Square-zero two-sided products and explicit outer-product propagation formally verified; this supplies no polynomial-dimensional representation of the target\n[from n39] Square-zero two-sided products and explicit outer-product propagation formally verified; this supplies no polynomial-dimensional representation of the target",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "20/20 generic checks and 12/12 development marked checks; initialized rank-one auxiliary chain has gates 9,24,54,105, full marked demand extractor 15,47,133,373; polynomial compression unproved",
+        "branch_ref": "eb1a8e4648a1e883b125661038ffe95f4a424b55"
+      },
+      "created_at": 1791373102,
+      "updated_at": 1791377155
+    },
+    "n20": {
+      "id": "n20",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairing.sign_square",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373464,
+      "updated_at": 1791373465
+    },
+    "n21": {
+      "id": "n21",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairing.selectSum_nodup",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373465,
+      "updated_at": 1791373466
+    },
+    "n22": {
+      "id": "n22",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairing.central_label_iff",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373466,
+      "updated_at": 1791373467
+    },
+    "n23": {
+      "id": "n23",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairing.central_row_select",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373467,
+      "updated_at": 1791373468
+    },
+    "n24": {
+      "id": "n24",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairing.central_row",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373469,
+      "updated_at": 1791373470
+    },
+    "n25": {
+      "id": "n25",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairing.central_pairing",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373470,
+      "updated_at": 1791373471
+    },
+    "n26": {
+      "id": "n26",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairing.coefficient_append",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373471,
+      "updated_at": 1791373472
+    },
+    "n27": {
+      "id": "n27",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairing.coefficient_multiply",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373473,
+      "updated_at": 1791373474
+    },
+    "n28": {
+      "id": "n28",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairing.central_product_coefficient",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373475,
+      "updated_at": 1791373477
+    },
+    "n29": {
+      "id": "n29",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairingRing.sign_square",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373478,
+      "updated_at": 1791373480
+    },
+    "n30": {
+      "id": "n30",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairingRing.selectSum_nodup",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373481,
+      "updated_at": 1791373482
+    },
+    "n31": {
+      "id": "n31",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairingRing.central_label_iff",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373483,
+      "updated_at": 1791373484
+    },
+    "n32": {
+      "id": "n32",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairingRing.central_row_select",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373484,
+      "updated_at": 1791373485
+    },
+    "n33": {
+      "id": "n33",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairingRing.central_row",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373485,
+      "updated_at": 1791373486
+    },
+    "n34": {
+      "id": "n34",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairingRing.central_pairing",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373486,
+      "updated_at": 1791373487
+    },
+    "n35": {
+      "id": "n35",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairingRing.coefficient_append",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373487,
+      "updated_at": 1791373489
+    },
+    "n36": {
+      "id": "n36",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairingRing.coefficient_multiply",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373489,
+      "updated_at": 1791373490
+    },
+    "n37": {
+      "id": "n37",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): GeneralCollisionPairingRing.central_product_coefficient",
+      "insight": "Reuse this compiled statement with all original assumptions; no new axiom asserting polynomial extraction",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Exact committed source accepted by executor and independent compiler replay, no sorryAx",
+        "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7"
+      },
+      "created_at": 1791373490,
+      "updated_at": 1791373491
+    },
+    "n38": {
+      "id": "n38",
+      "parent": "n17",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Compile base-label bounds and indexed occupancy injection, then specialize the verified ring pairing to actual Polynomial coefficients without assuming extraction complexity",
+      "insight": "Actual indexed power-sum labels now have proved injectivity and bounds; occupation selection and central pairing preserve their precise original hypotheses\n[from n54] Actual Polynomial interpretation of central labelled sign pairing formally verified; this supplies no polynomial-dimensional representation of the target",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "13 new declarations; indexed finite assignment labels, occupation selector and ring pairing accepted, independent replay exit0; root unproved",
+        "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa"
+      },
+      "created_at": 1791373601,
+      "updated_at": 1791377234
+    },
+    "n39": {
+      "id": "n39",
+      "parent": "n19",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verify square-zero scalar inversion and rank-one inverse update over an arbitrary commutative ring without variable division gates",
+      "insight": "Square-zero two-sided products and explicit outer-product propagation; scalar extractor remains an explicit separate obligation",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "6 audited supporting declarations; independent replay exit 0; root unproved",
+        "branch_ref": "1fc355d882554ce93fc619fd496cd32b9e7b70b6"
+      },
+      "created_at": 1791373811,
+      "updated_at": 1791377154
+    },
+    "n40": {
+      "id": "n40",
+      "parent": "n18",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verify a constructive binary-power circuit and its logarithmic operation budget without supplying the target coefficient as initial data",
+      "insight": "Shared binary-power compiler and logarithmic multiplication budget; scalar extractor remains an explicit separate obligation",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "7 audited supporting declarations; independent replay exit 0; root unproved",
+        "branch_ref": "3804886e1fd9576c403444fcd2c5a8c5872e0e78"
+      },
+      "created_at": 1791374343,
+      "updated_at": 1791377169
+    },
+    "n41": {
+      "id": "n41",
+      "parent": "n38",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionLabelBridge.digit_step_bound",
+      "insight": "Exact indexed-label helper, with every length, bound, distinctness and sign hypothesis retained",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Committed supporting lemma accepted in executor and fresh independent replay; no sorryAx",
+        "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa"
+      },
+      "created_at": 1791375550,
+      "updated_at": 1791375552
+    },
+    "n42": {
+      "id": "n42",
+      "parent": "n38",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionLabelBridge.encodeDigits_lt_pow",
+      "insight": "Exact indexed-label helper, with every length, bound, distinctness and sign hypothesis retained",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Committed supporting lemma accepted in executor and fresh independent replay; no sorryAx",
+        "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa"
+      },
+      "created_at": 1791375552,
+      "updated_at": 1791375553
+    },
+    "n43": {
+      "id": "n43",
+      "parent": "n38",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionLabelBridge.indexedLabelFrom_eq",
+      "insight": "Exact indexed-label helper, with every length, bound, distinctness and sign hypothesis retained",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Committed supporting lemma accepted in executor and fresh independent replay; no sorryAx",
+        "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa"
+      },
+      "created_at": 1791375554,
+      "updated_at": 1791375555
+    },
+    "n44": {
+      "id": "n44",
+      "parent": "n38",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionLabelBridge.indexedLabel_eq",
+      "insight": "Exact indexed-label helper, with every length, bound, distinctness and sign hypothesis retained",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Committed supporting lemma accepted in executor and fresh independent replay; no sorryAx",
+        "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa"
+      },
+      "created_at": 1791375556,
+      "updated_at": 1791375557
+    },
+    "n45": {
+      "id": "n45",
+      "parent": "n38",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionLabelBridge.indexedLabel_injective",
+      "insight": "Exact indexed-label helper, with every length, bound, distinctness and sign hypothesis retained",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Committed supporting lemma accepted in executor and fresh independent replay; no sorryAx",
+        "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa"
+      },
+      "created_at": 1791375558,
+      "updated_at": 1791375559
+    },
+    "n46": {
+      "id": "n46",
+      "parent": "n38",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionLabelBridge.indexedLabel_le_max",
+      "insight": "Exact indexed-label helper, with every length, bound, distinctness and sign hypothesis retained",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Committed supporting lemma accepted in executor and fresh independent replay; no sorryAx",
+        "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa"
+      },
+      "created_at": 1791375560,
+      "updated_at": 1791375561
+    },
+    "n47": {
+      "id": "n47",
+      "parent": "n38",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionLabelBridge.assignmentLabel_le_max",
+      "insight": "Exact indexed-label helper, with every length, bound, distinctness and sign hypothesis retained",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Committed supporting lemma accepted in executor and fresh independent replay; no sorryAx",
+        "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa"
+      },
+      "created_at": 1791375562,
+      "updated_at": 1791375563
+    },
+    "n48": {
+      "id": "n48",
+      "parent": "n38",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionLabelBridge.assignmentLabel_injective",
+      "insight": "Exact indexed-label helper, with every length, bound, distinctness and sign hypothesis retained",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Committed supporting lemma accepted in executor and fresh independent replay; no sorryAx",
+        "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa"
+      },
+      "created_at": 1791375563,
+      "updated_at": 1791375565
+    },
+    "n49": {
+      "id": "n49",
+      "parent": "n38",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionLabelBridge.occupation_all_ones_selector",
+      "insight": "Exact indexed-label helper, with every length, bound, distinctness and sign hypothesis retained",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Committed supporting lemma accepted in executor and fresh independent replay; no sorryAx",
+        "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa"
+      },
+      "created_at": 1791375565,
+      "updated_at": 1791375566
+    },
+    "n50": {
+      "id": "n50",
+      "parent": "n38",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionLabelBridge.assignmentLabel_sum_eq",
+      "insight": "Exact indexed-label helper, with every length, bound, distinctness and sign hypothesis retained",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Committed supporting lemma accepted in executor and fresh independent replay; no sorryAx",
+        "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa"
+      },
+      "created_at": 1791375567,
+      "updated_at": 1791375568
+    },
+    "n51": {
+      "id": "n51",
+      "parent": "n38",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionLabelBridge.occupation_sum_selector",
+      "insight": "Exact indexed-label helper, with every length, bound, distinctness and sign hypothesis retained",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Committed supporting lemma accepted in executor and fresh independent replay; no sorryAx",
+        "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa"
+      },
+      "created_at": 1791375568,
+      "updated_at": 1791375569
+    },
+    "n52": {
+      "id": "n52",
+      "parent": "n38",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionLabelBridge.assignmentLabels_nodup",
+      "insight": "Exact indexed-label helper, with every length, bound, distinctness and sign hypothesis retained",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Committed supporting lemma accepted in executor and fresh independent replay; no sorryAx",
+        "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa"
+      },
+      "created_at": 1791375570,
+      "updated_at": 1791375571
+    },
+    "n53": {
+      "id": "n53",
+      "parent": "n38",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Verified Base Axiom (proved helper): CollisionLabelBridge.indexed_assignment_pairing",
+      "insight": "Exact indexed-label helper, with every length, bound, distinctness and sign hypothesis retained",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Committed supporting lemma accepted in executor and fresh independent replay; no sorryAx",
+        "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa"
+      },
+      "created_at": 1791375572,
+      "updated_at": 1791375572
+    },
+    "n54": {
+      "id": "n54",
+      "parent": "n38",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Interpret the verified sparse central pairing as an actual Polynomial R product and coefficient over arbitrary commutative rings",
+      "insight": "Actual Polynomial interpretation of central labelled sign pairing; scalar extractor remains an explicit separate obligation",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "6 audited supporting declarations; independent replay exit 0; root unproved",
+        "branch_ref": "7e62fc4aa4d31a5d4261ce0072ba3f1d9b069392"
+      },
+      "created_at": 1791375625,
+      "updated_at": 1791377233
+    },
+    "n55": {
+      "id": "n55",
+      "parent": "n0",
+      "depth": 1,
+      "status": "executed",
+      "hypothesis": "Constructive general determinant-pair coefficient identity in Mathlib, with explicit injective labels and signs; extraction size remains a separate obligation",
+      "insight": "Actual determinant pairing with proved base-n injectivity and exact canonical central index; scalar extractor remains an explicit separate obligation\n[from n60] Actual padded Hhat central coefficient and exact original rational marked-A identity formally verified; this supplies no polynomial-dimensional representation of the target",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "13 audited supporting declarations; independent replay exit 0; root unproved",
+        "branch_ref": "a6f3dd13872c5a7932b19ebc875434bc005030fe"
+      },
+      "created_at": 1791376810,
+      "updated_at": 1791381258
+    },
+    "n56": {
+      "id": "n56",
+      "parent": "n0",
+      "depth": 1,
+      "status": "executed",
+      "hypothesis": "Constructive double orientation in a noncommutative ring: commuting square-zero pairs and global triangular sign, with scalar compilation cost explicit",
+      "insight": "Noncommutative double orientation, pair nilpotence and exact triangular sign; scalar extractor remains an explicit separate obligation\n[from n58] Exact projective Vandermonde orientation and original complementary monomial matrix formally verified; this supplies no polynomial-dimensional representation of the target",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "7 audited supporting declarations; independent replay exit 0; root unproved",
+        "branch_ref": "b8a9c6afb75f43c8a7143407ab82de46bf8e8dce"
+      },
+      "created_at": 1791376994,
+      "updated_at": 1791380274
+    },
+    "n57": {
+      "id": "n57",
+      "parent": "n0",
+      "depth": 1,
+      "status": "executed",
+      "hypothesis": "Explicit dense scalar matrix-power compiler with verified conditional polynomial budget; target representation is an unproved input obligation",
+      "insight": "Actual shared scalar circuit semantics and conditional matrix-power budget; scalar extractor remains an explicit separate obligation\n[from n59] Charged initial input circuit, actual Polynomial Nat budget and explicit representation criterion formally verified; this supplies no polynomial-dimensional representation of the target",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "24 audited supporting declarations; independent replay exit 0; root unproved",
+        "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17"
+      },
+      "created_at": 1791377057,
+      "updated_at": 1791379713
+    },
+    "n58": {
+      "id": "n58",
+      "parent": "n56",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Constructive reversed Vandermonde identity for the actual complementary determinant; preserve the exact triangular sign and scalar target index",
+      "insight": "Exact projective Vandermonde orientation and original complementary monomial matrix; scalar extractor remains an explicit separate obligation",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "9 audited supporting declarations; independent replay exit 0; root unproved",
+        "branch_ref": "96fdd0ca11ad17b0824d213539cc6166df569de0"
+      },
+      "created_at": 1791378465,
+      "updated_at": 1791380274
+    },
+    "n59": {
+      "id": "n59",
+      "parent": "n57",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Formal polynomial Pi and charged input-circuit composition under explicit polynomial representation hypotheses; no such target representation assumed as an axiom",
+      "insight": "Charged initial input circuit, actual Polynomial Nat budget and explicit representation criterion; scalar extractor remains an explicit separate obligation",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "4 audited supporting declarations; independent replay exit 0; root unproved",
+        "branch_ref": "367e825e5546ae4cb96e659673c1fc4cea484842"
+      },
+      "created_at": 1791379017,
+      "updated_at": 1791379712
+    },
+    "n60": {
+      "id": "n60",
+      "parent": "n55",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Formal end-to-end central coefficient identity for the actual Hhat including Vandermonde orientation, canonical K and marked rational A; extraction circuit remains open",
+      "insight": "Actual padded Hhat central coefficient and exact original rational marked-A identity; scalar extractor remains an explicit separate obligation",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "7 audited supporting declarations; independent replay exit 0; root unproved",
+        "branch_ref": "8174ac17dd1060e1a34ebff8f134fd8a799bcced"
+      },
+      "created_at": 1791379550,
+      "updated_at": 1791381258
+    },
+    "n61": {
+      "id": "n61",
+      "parent": "n0",
+      "depth": 1,
+      "status": "executed",
+      "hypothesis": "Direct sign correction factors into commuting two-edge Euler projectors; explicit scalar cofactor sharing may compress their composition without an auxiliary coefficient gate.",
+      "insight": "Direct sign correction via shared cofactor matching projectors; explicit scalar costs include markers and universal preprocessing is measured\n[from n62] Local multiaffine scalar cofactors, commuting involutive phases and actual permutation-sign correction formally verified; this supplies no polynomial-dimensional representation of the target\n[from n64] Local coefficient compression is insufficient to establish a global scalar extractor; synchronized paired-subset contraction must be charged. No all-n Pfaffian statement is formally verified in this leaf.\n[from n63] Exact Mobius reconstruction and unconditional sign-coefficient literal bounds formally verified; this supplies no polynomial-dimensional representation of the target\n[from n65] For a positive matrix-power construction, a cheap recurrence must be accompanied by every initial jet and a proved intertwining map; differential transition entries require their own derivatives on subsequent iterations.\n[from n66] Track native and grouped tensor orders explicitly: converting the local copy constraint to Gaussian factors is useful only with an exact joint input-and-cap shuffle intertwining. Future Ward closure must keep every remaining synchronization factor.\n[from n68] Both reduced kernel sectors can use row/column incidence rank at most n in the diagonal coefficient pairing, but this does not close all mixed moments. A valid positive root circuit needs initialized polynomial-dimensional updates and boundary, including higher moments and future-context derivatives.",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "Constructive projector identity and actual scalar DAG; root-only evaluation passes all frozen cases; general polynomial bound unproved",
+        "branch_ref": "2a3a6830f57eb8df200f920ec5058214bec5c32e"
+      },
+      "created_at": 1791381357,
+      "updated_at": 1791392481
+    },
+    "n62": {
+      "id": "n62",
+      "parent": "n61",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Formalize local multiaffine cofactor sign flips and the exact inversion-phase signature identity, without treating projectors or coefficient-vector actions as free scalar gates.",
+      "insight": "Local multiaffine scalar cofactors, commuting involutive phases and actual permutation-sign correction; scalar extractor remains an explicit separate obligation",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "7 audited supporting declarations; independent replay exit 0; root unproved",
+        "branch_ref": "60a68a93817b6f68af2458d5b69324cae0ba7cd2"
+      },
+      "created_at": 1791381763,
+      "updated_at": 1791383064
+    },
+    "n63": {
+      "id": "n63",
+      "parent": "n61",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "The Mobius coefficients of the Euler sign projector admit a uniform integer literal bound abs(c(S)) <= 2^card(S), proved in Lean, without assuming a polynomial extractor.",
+      "insight": "Exact Mobius reconstruction and unconditional sign-coefficient literal bounds; scalar extractor remains an explicit separate obligation",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "6 audited supporting declarations; independent replay exit 0; root unproved",
+        "branch_ref": "98a8c08b6e341202e3d6bf2e8d73bcc498380906"
+      },
+      "created_at": 1791387852,
+      "updated_at": 1791389597
+    },
+    "n64": {
+      "id": "n64",
+      "parent": "n61",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "A single Pfaffian of dimension at most card(S)+2 computes each universal correction coefficient c(S); determine exactly which additional data are needed to aggregate all matching terms into one scalar circuit.",
+      "insight": "A fixed paired-port matrix removes selected-rank dependence. A complete global contraction still requires synchronized edge-pair selection. The natural total Pfaffian yields a row-sum product and the sign-average reduction returns to n15.\n[from n67] Exact local Hadamard COPY transform, explicit Pf4 boundary, and rational matrix inverse; no global Gaussian closure formally verified; this supplies no polynomial-dimensional representation of the target\n[from n66] Track native and grouped tensor orders explicitly: converting the local copy constraint to Gaussian factors is useful only with an exact joint input-and-cap shuffle intertwining. Future Ward closure must keep every remaining synchronization factor.",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "7184/7184 frozen local identity checks; fresh committed root gate 96/96 checks on 24 new partial matchings n6..8; universal Pfaffian and scalar trace correctness are not Lean verified; root unproved",
+        "branch_ref": "c785376a2d255cc76db771d239c86c89cc7b888f"
+      },
+      "created_at": 1791387858,
+      "updated_at": 1791391655
+    },
+    "n65": {
+      "id": "n65",
+      "parent": "n61",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "A bounded-spectrum global inversion operator admits a shared scalar jet recurrence that evaluates its sign polynomial on the determinant with polynomially charged initialization and transition costs.",
+      "insight": "Bounded inversion spectrum gives a cheap companion transition only after constructing all initial jets. Variable-coefficient differential basis identities need full intertwining because later derivatives also act on transition entries.",
+      "metadata": {
+        "dev_score": null,
+        "test_score": null,
+        "result": "No complete scalar jet candidate executed; J0,J1 partial initializer written; all further jets missing; derived counts unexecuted; development score null",
+        "branch_ref": "69412b27193cc6fb9f1b948753216276faccc717"
+      },
+      "created_at": 1791389515,
+      "updated_at": 1791390870
+    },
+    "n66": {
+      "id": "n66",
+      "parent": "n64",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "A structured auxiliary Gaussian or Pfaffian gadget enforces synchronized paired-port selection in the complete contraction with polynomial size and without an explicit sign average.",
+      "insight": "An explicit coherent carry Gaussian kernel and a four-factor abstract cap are available, but target-preserving joint contraction needs the input and cap shuffle phases. Per-component scalar costs do not compute the complete family contraction.",
+      "metadata": {
+        "dev_score": 0.0,
+        "test_score": null,
+        "result": "Root obligations 0/3; base supporting symbolic identities 53/53; separate carry supplement 40/40; no full extractor or Lean root proof",
+        "branch_ref": "a04181d3d9e97e53ce4db0c1cc0309fd3b5a2517"
+      },
+      "created_at": 1791389522,
+      "updated_at": 1791391649
+    },
+    "n67": {
+      "id": "n67",
+      "parent": "n64",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "The local four-leg synchronized selector transforms under the exact Hadamard basis into twice an explicit four-mode Pfaffian even signature, with verified inverse basis constants; global transformed-family closure remains a separate obligation.",
+      "insight": "Exact local Hadamard COPY transform, explicit Pf4 boundary, and rational matrix inverse; no global Gaussian closure; scalar extractor remains an explicit separate obligation",
+      "metadata": {
+        "dev_score": 1.0,
+        "test_score": 1.0,
+        "result": "4 audited supporting declarations; independent replay exit 0; root unproved",
+        "branch_ref": "3dcfa83ae05f9ed9876ed8b67d35425e40649cf6"
+      },
+      "created_at": 1791390109,
+      "updated_at": 1791391100
+    },
+    "n68": {
+      "id": "n68",
+      "parent": "n61",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "The two structured Pfaffian families admit a polynomial-size module of mixed contraction moments stable under every remaining synchronization factor, with explicit scalar initialization and updates.",
+      "insight": "The row-incidence replacement preserves all diagonal synchronization contexts pointwise, while differentiation still needs a genuine intertwining. Explicit mixed-moment and commuting-pair transitions require a polynomial aggregation and charged terminal contraction.",
+      "metadata": {
+        "dev_score": null,
+        "test_score": null,
+        "result": "Two analytical closure candidates preserved; contextual row-incidence reduction derived informally; no complete scalar module or eligible executable candidate; development score null; zero experiments and Lean compiles",
+        "branch_ref": "1c3ee90c7cd972413db18112a8578ea96a34b2bb"
+      },
+      "created_at": 1791391382,
+      "updated_at": 1791392476
+    }
+  }
+}

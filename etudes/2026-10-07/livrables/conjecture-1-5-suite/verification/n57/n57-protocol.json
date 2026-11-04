@@ -1,0 +1,28 @@
+{
+  "node": "n57",
+  "artifact_version": "n57-dense-scalar-compiler-v1",
+  "boundary": "B_dev-explicit-matrix-compiler",
+  "frozen_formal_obligations": [
+    {"name": "matrix_power_correct", "statement": "For every semiring R, finite square matrix M, and k, the generic MonoidData compilePower adapter equals the genuine Mathlib matrix power M^k."},
+    {"name": "scalar_compiler_correct", "statement": "The explicit scalar circuit using shared matrix steps, elementary scalar additions/multiplications, and input wiring evaluates to sum_i u_i * sum_j (M^k)_ij * v_j for arbitrary semiring inputs."},
+    {"name": "dense_product_gate_count", "statement": "For r>=1, the elementary scalar gate count of the constructed dense matrix product circuit is 2*r^3-r^2."},
+    {"name": "conditional_scalar_budget", "statement": "For r>=1,n>=2 and supplied input construction cost S, the constructed scalar circuit at k=n^n-1 plus S costs at most S+4*r^3*n^2+3*r^2."}
+  ],
+  "formal_metric": "Kernel-verified obligations with no sorry or added axioms divided by 4. All declarations audited; incomplete/probe sources score zero.",
+  "complete_candidate_budget": 20,
+  "probes_counted_separately": true,
+  "python_protocol": {
+    "n_values": [2, 3, 4, 5],
+    "dimensions": "r=n only; optional r=n^2 not part of this metric",
+    "input_leaves": "One explicit leaf for every M_ij, u_i, v_i. No target answer supplied. Free zero/one constants are allowed leaves.",
+    "cases": ["identity", "cyclic_permutation", "dense_integer"],
+    "u_v": "Explicit small integer vectors from indices; no answer-dependent initialization",
+    "semantic_oracle": "Independent iterative matrix-vector update repeated k times, then a scalar dot product; exact integer arithmetic",
+    "gate_checks": "Serialized topological scalar SSA graph; count actual add and mul nodes and reject forward references. Compare with the complete dense multiplication/contraction count formula.",
+    "exports": "A full DAG for each n; evaluation agreement for all three cases. Input graphs shared across cases.",
+    "metric": "12 exact evaluation agreements plus 4 graph/topology/count checks; this finite score is reported separately from formal score"
+  },
+  "scope": "Conditional compiler ingredient. No assertion that a polynomial-dimensional target representation or polynomial-cost initial data exists.",
+  "held_out_access": false,
+  "cache_mutations": false
+}

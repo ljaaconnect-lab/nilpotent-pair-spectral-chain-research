@@ -1,0 +1,16 @@
+n66-protocol.json -text
+n66-support-protocol.json -text
+n66-source-freeze.json -text
+local_basis.py -text
+evaluate_local_basis.py -text
+LocalGadget.lean -text
+n66-support-report.json -text
+N66_BLUEPRINT.md text eol=lf
+N66_INSIGHTS.md text eol=lf
+carry_basis.py -text
+evaluate_carry_basis.py -text
+n66-carry-protocol.json -text
+n66-carry-freeze.json -text
+n66-carry-report.json -text
+N66_CARRY_BLUEPRINT.md text eol=lf
+N66_CARRY_INSIGHTS.md text eol=lf

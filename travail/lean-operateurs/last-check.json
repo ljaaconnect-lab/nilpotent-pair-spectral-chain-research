@@ -1,0 +1,10 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\fermeture-native-2026-11-03\\TerminalTaggedClosure.lean",
+  "sha256": "fcbf0d21b225fec6c7a500a1b925226083eec84cacceccc9c50903cf9d8d3daf",
+  "source_changed_during_check": false,
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "exit_code": 0,
+  "seconds": 12.468,
+  "stdout": "'TerminalTaggedClosure.tag_add' depends on axioms: [propext]\n'TerminalTaggedClosure.tag_scalar_mul' depends on axioms: [propext]\n'TerminalTaggedClosure.tag_linear_readout' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": ""
+}

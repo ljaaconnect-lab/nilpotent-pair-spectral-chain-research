@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\REGIS\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n61\\evaluate_euler.py",
+    "--child",
+    "diagnostic",
+    "--n",
+    "3"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"n\": 3,\n  \"mode\": \"diagnostic\",\n  \"result\": {\n    \"shared\": \"complete\"\n  }\n}\n",
+  "stderr": ""
+}

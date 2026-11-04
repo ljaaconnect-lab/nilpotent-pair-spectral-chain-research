@@ -1,0 +1,22 @@
+{
+  "node": "n54",
+  "round": 10,
+  "candidate_round": 7,
+  "kind": "dependency_build",
+  "source": "LabelBridge.lean",
+  "snapshot": "n54-compiler-rounds\\round-10-source.lean",
+  "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-o",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n54\\LabelBridge.olean",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n54\\LabelBridge.lean"
+  ],
+  "cwd": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n54",
+  "LEAN_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n54;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+  "environment_source": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib-environment.json",
+  "exit_code": 0,
+  "stdout": "'CollisionLabelBridge.digit_step_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.encodeDigits_lt_pow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexedLabelFrom_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexedLabel_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexedLabel_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexedLabel_le_max' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.assignmentLabel_le_max' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.assignmentLabel_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.occupation_all_ones_selector' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.assignmentLabel_sum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.occupation_sum_selector' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.assignmentLabels_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexed_assignment_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "root_conjecture_verified": false
+}

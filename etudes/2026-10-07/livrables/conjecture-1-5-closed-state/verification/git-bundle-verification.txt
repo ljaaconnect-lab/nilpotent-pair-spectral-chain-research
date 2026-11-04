@@ -1,0 +1,13 @@
+The bundle contains these 9 refs:
+efb174084fdd2bcac85a9be3bb8f39b9054a1565 refs/heads/arbor/n69
+738dbe2df096fb2176b6fff4e755628c1fe605b6 refs/heads/arbor/n70
+ab690fc49efde566b7b9c8719ac592743949dcee refs/heads/arbor/n71
+e488e08981fdf2c7b87f9d8a660e338ccf755c48 refs/heads/arbor/n72
+97513bc5e9cca5e0b33d0844980d29da1121a234 refs/heads/arbor/n73
+cbb17c6744cee4e9e5c4b423895f55f76ff82858 refs/heads/arbor/n74
+0f0ba2a8994dd06d91ac824e3ac64d4649f06944 refs/heads/arbor/n75
+5147e434b140a860d90329ec059403c2a24afc56 refs/heads/arbor/n76
+ff868e702c83e8f23f81a626d9d9a3713fdc92d9 refs/heads/arbor/n77
+The bundle records a complete history.
+The bundle uses this hash algorithm: sha1
+C:/Users/REGIS/Documents/Codex/2026-10-07/role-context-you-are-the-lead/outputs/conjecture-1-5-closed-state/search/nodes.bundle is okay

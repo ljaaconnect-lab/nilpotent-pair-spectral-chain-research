@@ -1,0 +1,61 @@
+{
+  "paired_pfaffian_identity_checks": 52,
+  "polarization_base_values": [
+    {
+      "m": 1,
+      "components": 1,
+      "minimum_base": 1,
+      "maximum_base": 1
+    },
+    {
+      "m": 2,
+      "components": 2,
+      "minimum_base": 1,
+      "maximum_base": 3
+    },
+    {
+      "m": 3,
+      "components": 4,
+      "minimum_base": 1,
+      "maximum_base": 7
+    },
+    {
+      "m": 4,
+      "components": 8,
+      "minimum_base": 1,
+      "maximum_base": 15
+    },
+    {
+      "m": 5,
+      "components": 16,
+      "minimum_base": 1,
+      "maximum_base": 31
+    },
+    {
+      "m": 6,
+      "components": 32,
+      "minimum_base": 1,
+      "maximum_base": 63
+    },
+    {
+      "m": 7,
+      "components": 64,
+      "minimum_base": 1,
+      "maximum_base": 127
+    }
+  ],
+  "exact_gate_counts": {
+    "1": 1,
+    "2": 10,
+    "3": 54,
+    "4": 150,
+    "5": 351,
+    "6": 776,
+    "7": 1689,
+    "8": 3670,
+    "9": 7983,
+    "10": 17364
+  },
+  "chosen_two_jet_third_order_contrast": "46729/389017",
+  "contrast_refutes_only_this_chosen_jet": true
+}

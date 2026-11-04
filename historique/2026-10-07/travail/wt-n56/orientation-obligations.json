@@ -1,0 +1,24 @@
+{
+  "protocol": "double-orientation-noncommutative-v1",
+  "node": "n56",
+  "complete_candidate_budget": 20,
+  "obligation_count": 6,
+  "domain": "Arbitrary noncommutative Ring R, arbitrary index type I, finite List I",
+  "relations": {
+    "square_x": "forall i, x_i*x_i=0",
+    "square_y": "forall i, y_i*y_i=0",
+    "anti_x": "forall i j, x_i*x_j=-(x_j*x_i)",
+    "anti_y": "forall i j, y_i*y_j=-(y_j*y_i)",
+    "anti_cross": "forall i j, y_i*x_j=-(x_j*y_i)"
+  },
+  "obligations": [
+    {"name": "DoubleOrientation.sign_central", "statement": "forall a n, a*(-1)^n=(-1)^n*a"},
+    {"name": "DoubleOrientation.cross_list", "statement": "y_i*prod(L.map x)=(-1)^length(L)*prod(L.map x)*y_i under the explicit odd relations"},
+    {"name": "DoubleOrientation.triangular_step", "statement": "forall n:Nat, (n+1)*n/2=n*(n-1)/2+n"},
+    {"name": "DoubleOrientation.pair_square_zero", "statement": "forall i, (x_i*y_i)*(x_i*y_i)=0 under the explicit odd relations"},
+    {"name": "DoubleOrientation.pairs_commute", "statement": "forall i j, (x_i*y_i)*(x_j*y_j)=(x_j*y_j)*(x_i*y_i) under the explicit odd relations"},
+    {"name": "DoubleOrientation.orientation_factorization", "statement": "prod(L.map (fun i => x_i*y_i))=(-1)^(length(L)*(length(L)-1)/2)*prod(L.map x)*prod(L.map y) under the explicit odd relations"}
+  ],
+  "trust_base": ["propext", "Quot.sound", "Classical.choice"],
+  "scope": "Double orientation algebra only; no scalar top-coordinate gate or root complexity assumption."
+}

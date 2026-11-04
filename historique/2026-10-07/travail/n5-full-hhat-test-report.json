@@ -1,0 +1,53 @@
+{
+  "scope": "Full n=5 scalar-DAG evaluation, positive cases already frozen and previously published; no asymptotic extraction claim.",
+  "root_conjecture_verified": false,
+  "case_file_sha256": "f354ae56cf921e8fea3714f289a27ffa0683260730c1cb22754fd8c849267091",
+  "candidate_sha256": "6f1143d634ebd7d98bce9fb5fd1ef7eb29dbb7868cd67ac29761c5d7b020a84c",
+  "evaluator_sha256": "2c393f62241c992bc816d717a2b15fe5f368e2c9064fa1b92f566020dc5dfa1c",
+  "cases": [
+    {
+      "case": "n5-positive-validation-0",
+      "checks": {
+        "full_exact": true,
+        "central_exact": true,
+        "canonical_index": true,
+        "binary_scalar_gates": true,
+        "every_gate_evaluated": true
+      },
+      "seconds": 0.23214009999355767,
+      "central_terms": 120,
+      "hhat_terms": 14402,
+      "K": 3124,
+      "gates": 1314,
+      "evaluation_stats": {
+        "scalar_gate_evaluations": 1314,
+        "max_node_terms": 14402,
+        "max_live_terms": 14403,
+        "nodes": 1332
+      }
+    },
+    {
+      "case": "n5-positive-validation-1",
+      "checks": {
+        "full_exact": true,
+        "central_exact": true,
+        "canonical_index": true,
+        "binary_scalar_gates": true,
+        "every_gate_evaluated": true
+      },
+      "seconds": 0.18333359999815002,
+      "central_terms": 120,
+      "hhat_terms": 14402,
+      "K": 3124,
+      "gates": 1314,
+      "evaluation_stats": {
+        "scalar_gate_evaluations": 1314,
+        "max_node_terms": 14402,
+        "max_live_terms": 14403,
+        "nodes": 1332
+      }
+    }
+  ],
+  "passed": 10,
+  "total": 10
+}

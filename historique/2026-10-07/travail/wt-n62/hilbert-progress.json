@@ -1,0 +1,48 @@
+{
+  "node_id": "n3",
+  "artifact_version": "n3-hilbert-core-v2",
+  "branch": "arbor/n3",
+  "fixed_root": "Conjecture 1.5, all rational matrices, polynomial scalar gates, bounded rational literals or p_ij, uniform polynomial-time constructor",
+  "root_conjecture_verified": false,
+  "decomposition_layers_limit": 3,
+  "candidate_round_limit": 20,
+  "complete_compiler_rounds_used": 16,
+  "compiler": "Lean 4.34.1, direct Windows toolchain executable",
+  "mathlib_available": false,
+  "rounds": [
+    {"round": 1, "file": "GeneratedBridge.lean", "exit_code": 1, "constraint": "unknown module prefix Mathlib; dependency unavailable"},
+    {"round": 2, "file": "CoreBridge.lean", "exit_code": 0, "verified": "n2_pair_factorization"},
+    {"round": 3, "file": "CoreBridge.lean", "exit_code": 0, "verified": "decode_head"},
+    {"round": 4, "file": "CoreBridge.lean", "exit_code": 0, "verified": "decode_tail"},
+    {"round": 5, "file": "CoreBridge.lean", "exit_code": 1, "constraint": "injectivity induction opens nil/cons goals; sorryAx rejected"},
+    {"round": 6, "file": "CoreBridge.lean", "exit_code": 1, "constraint": "grind requires case split on ys; sorryAx rejected"},
+    {"round": 7, "file": "CoreBridge.lean", "exit_code": 1, "constraint": "ys cases expose four list cases; sorryAx rejected"},
+    {"round": 8, "file": "CoreBridge.lean", "exit_code": 0, "verified": "encodeDigits_injective"},
+    {"round": 9, "file": "CoreBridge.lean", "exit_code": 0, "verified": "central_label_iff"},
+    {"round": 10, "file": "CoreBridge.lean", "exit_code": 1, "constraint": "orbit induction opens zero/succ goals; sorryAx rejected"},
+    {"round": 11, "file": "CoreBridge.lean", "exit_code": 0, "verified": "orbit_stabilizes", "warning": "unused simp argument Nat.add_succ, subsequently removed"},
+    {"round": 12, "file": "CoreBridge.lean", "exit_code": 1, "constraint": "n2 convolution simp leaves rational ring equality; sorryAx rejected"},
+    {"round": 13, "file": "CoreBridge.lean", "exit_code": 0, "verified": "n2_central_convolution"},
+    {"round": 14, "file": "CoreBridge.lean", "exit_code": 0, "verified": "strict full helper audit, seven declarations"},
+    {"round": 15, "file": "GeneratedCoreN2.lean", "exit_code": 0, "verified": "strict generated-expression audit, two declarations"},
+    {"round": 16, "file": "GeneratedBridge.lean", "exit_code": 1, "constraint": "strict Mathlib draft check, unknown module prefix Mathlib"}
+  ],
+  "accepted_axiom_union": ["propext", "Classical.choice", "Quot.sound"],
+  "unexpected_axioms": [],
+  "unresolved_core_goals": [],
+  "root_remaining_obligations": [
+    "Identify recursive bounded-digit encoding with indexed power-sum labels",
+    "Formalize all-n Vandermonde and central determinant-pair identity in a polynomial library",
+    "Formalize commuting square-zero double orientation and compressed scalar representation",
+    "Construct polynomial-width structured transfer or equivalent scalar extractor",
+    "Compile any rational-function/division construction to permitted scalar +/* circuits with original literal bounds and uniform time"
+  ],
+  "boundary": {
+    "B_dev": "All seven named CoreBridge and two named generated n2 declarations must compile at exit 0, match the manifest hash, and pass explicit axiom audits; score is accepted declarations / nine",
+    "B_dev_score": 1.0,
+    "B_test": "Reserved for coordinator; not inspected or executed by this leaf",
+    "Mathlib_draft_score": null,
+    "score_scope": "Helper verification only, never proof progress percentage for the root conjecture"
+  },
+  "path_adjustment": "Preserve the positive Step A/B/C construction frontier; core lemmas may be reused with their exact domains. Missing Mathlib is a dependency constraint, and the scalar extractor remains a constructive proof obligation."
+}

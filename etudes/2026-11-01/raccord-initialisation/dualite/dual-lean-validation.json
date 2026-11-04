@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "source": "DualReader.lean",
+  "sha256": "14f402d74733b7fca426b7d8c10c0485c47bd2db447ef62433125fa34868fbf2",
+  "exit_code": 0,
+  "stdout": "'OrientedOperators.DualReader.collisions_add' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrientedOperators.DualReader.monomialValue_add' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrientedOperators.DualReader.monomial_pullthrough' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrientedOperators.DualReader.shiftedRead_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "natural occupation shifts and diagonal reader on actual monomials",
+  "full_chain_formalization": false,
+  "general_polynomial_closure": false
+}

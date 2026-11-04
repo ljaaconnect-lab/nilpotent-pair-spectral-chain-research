@@ -1,0 +1,300 @@
+{
+  "experiments": [
+    {
+      "name": "weighted_tree",
+      "target": [
+        1,
+        5,
+        7,
+        -3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formula_one": [
+        1,
+        5,
+        7,
+        -3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formula_two": [
+        1,
+        5,
+        7,
+        -3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "first_error_one": null,
+      "first_error_two": null
+    },
+    {
+      "name": "directed_triangle",
+      "target": [
+        1,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formula_one": [
+        1,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formula_two": [
+        1,
+        0,
+        0,
+        30,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "first_error_one": null,
+      "first_error_two": null
+    },
+    {
+      "name": "bidirected_triangle",
+      "target": [
+        1,
+        0,
+        134,
+        349,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formula_one": [
+        1,
+        0,
+        134,
+        349,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formula_two": [
+        1,
+        0,
+        134,
+        349,
+        0,
+        0,
+        240240,
+        -5472669,
+        -146441498
+      ],
+      "first_error_one": null,
+      "first_error_two": 6
+    },
+    {
+      "name": "bidirected_square_with_diagonal",
+      "target": [
+        1,
+        10,
+        420,
+        1501,
+        13878,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formula_one": [
+        1,
+        10,
+        420,
+        1501,
+        13878,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formula_two": [
+        1,
+        10,
+        420,
+        1501,
+        13878,
+        0,
+        -218015,
+        29263842,
+        -250865560
+      ],
+      "first_error_one": null,
+      "first_error_two": 6
+    },
+    {
+      "name": "mixed_bouquet_2_3",
+      "target": [
+        1,
+        0,
+        2,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formula_one": [
+        1,
+        0,
+        2,
+        15,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formula_two": [
+        1,
+        0,
+        2,
+        15,
+        0,
+        0,
+        0,
+        60,
+        900
+      ],
+      "first_error_one": null,
+      "first_error_two": 7
+    },
+    {
+      "name": "directed_bouquet_3_3",
+      "target": [
+        1,
+        0,
+        0,
+        31,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formula_one": [
+        1,
+        0,
+        0,
+        31,
+        0,
+        0,
+        420,
+        0,
+        0
+      ],
+      "formula_two": [
+        1,
+        0,
+        0,
+        31,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "first_error_one": 6,
+      "first_error_two": null
+    },
+    {
+      "name": "legal_J4",
+      "target": [
+        1,
+        4,
+        12,
+        24,
+        24,
+        0,
+        0,
+        0,
+        0
+      ],
+      "formula_one": [
+        1,
+        4,
+        12,
+        24,
+        24,
+        0,
+        24,
+        48,
+        -336
+      ],
+      "formula_two": [
+        1,
+        4,
+        12,
+        24,
+        24,
+        -24,
+        -20,
+        976,
+        4134
+      ],
+      "first_error_one": 6,
+      "first_error_two": 5
+    }
+  ],
+  "bass_reduction_exact": true,
+  "generic_residual6_checks": [
+    {
+      "n": 3,
+      "first": 0,
+      "second": 384
+    },
+    {
+      "n": 4,
+      "first": 1632,
+      "second": 1200
+    },
+    {
+      "n": 5,
+      "first": 10332,
+      "second": 4232
+    }
+  ],
+  "unicyclic_phase_check": true,
+  "gaussian_bass_general_checks": 4,
+  "legal_J6_terminal_counterexample": {
+    "observed": 1800,
+    "target": 720
+  },
+  "legal_J5_formula_two_counterexample": {
+    "observed": 60,
+    "target": 120
+  },
+  "formula_two_bouquet_degree_nine_error": 13020,
+  "uniform_polynomial_identity": false
+}

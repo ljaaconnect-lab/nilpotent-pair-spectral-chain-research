@@ -1,0 +1,139 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fusion-ntt\\TerminalDifference.lean",
+  "version": 26,
+  "completed": true,
+  "seconds": 3.812,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 8,
+          "line": 61
+        },
+        "start": {
+          "character": 4,
+          "line": 61
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\nS : Type u_2\ninst✝ : Ring S\nts : List S[X]\nh : ∀ t ∈ ts, t.coeff 0 = 1\np : S[X]\nhp : p ∈ List.map (fun t => t - 1) ts\n⊢ p.coeff 0 = 0",
+      "range": {
+        "end": {
+          "character": 8,
+          "line": 61
+        },
+        "start": {
+          "character": 4,
+          "line": 61
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 62
+        },
+        "start": {
+          "character": 2,
+          "line": 62
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\nS : Type u_2\ninst✝ : Ring S\nts : List S[X]\nh : ∀ t ∈ ts, t.coeff 0 = 1\nhz : ∀ p ∈ List.map (fun t => t - 1) ts, p.coeff 0 = 0\n⊢ (List.map (fun t => t - 1) ts).prod.coeff ts.length = (List.map (fun t => t.coeff 1) ts).prod",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 62
+        },
+        "start": {
+          "character": 2,
+          "line": 62
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 66
+        },
+        "start": {
+          "character": 0,
+          "line": 66
+        }
+      },
+      "message": "'OrientedOperators.TerminalDifference.coeff_product_below_length' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 66
+        },
+        "start": {
+          "character": 0,
+          "line": 66
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 67
+        },
+        "start": {
+          "character": 0,
+          "line": 67
+        }
+      },
+      "message": "'OrientedOperators.TerminalDifference.coeff_product_at_length' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 67
+        },
+        "start": {
+          "character": 0,
+          "line": 67
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 68
+        },
+        "start": {
+          "character": 0,
+          "line": 68
+        }
+      },
+      "message": "'OrientedOperators.TerminalDifference.coeff_transport_differences' depends on axioms: [propext,\n sorryAx,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 68
+        },
+        "start": {
+          "character": 0,
+          "line": 68
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "node": "n77",
+  "artifact_version": "n77-direct-corrected-scalar-dag-v1",
+  "frozen_utc": "2026-10-07T19:00:36.5575492Z",
+  "frozen_before_development_evaluation": true,
+  "semantics_base_commit": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+  "new_lean_invocations": 0,
+  "files": {
+    "n77-protocol.json": {
+      "sha256_utf8_lf_without_bom": "95d75d68291587efa614694cdb7bb2ea7bf955324041598d14e5b7a4fd02615f",
+      "sha256_raw": "55ef3abfe0e63fc31b5e426be973b2193826d1538c9c4e251ba0b2e95c4aa8a9"
+    },
+    "n77-dev-boundary.json": {
+      "sha256_utf8_lf_without_bom": "728f8b30ecfaf6d9d866bfb290d48095fec95a3c94813d5a4c42b20c5f440caa",
+      "sha256_raw": "728f8b30ecfaf6d9d866bfb290d48095fec95a3c94813d5a4c42b20c5f440caa"
+    },
+    "direct_corrected_circuit.py": {
+      "sha256_utf8_lf_without_bom": "83e28cb17be078819a54d308f84ebb08785a6c166b842f41acc7f0bd355f4c1a",
+      "sha256_raw": "83e28cb17be078819a54d308f84ebb08785a6c166b842f41acc7f0bd355f4c1a"
+    },
+    "evaluate_direct_corrected.py": {
+      "sha256_utf8_lf_without_bom": "7e96a3a868ff815c8530ee4d28872cd523262c532fa740ea491c45a247c7d89d",
+      "sha256_raw": "7e96a3a868ff815c8530ee4d28872cd523262c532fa740ea491c45a247c7d89d"
+    },
+    "N77_BLUEPRINT.md": {
+      "sha256_utf8_lf_without_bom": "328184c7b4871b3fd6de1b27da2e6f35e978d648a9c184265b7794cf6eb0a186",
+      "sha256_raw": "328184c7b4871b3fd6de1b27da2e6f35e978d648a9c184265b7794cf6eb0a186"
+    },
+    "ActualClosedSubsetTransfer.lean": {
+      "sha256_utf8_lf_without_bom": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "sha256_raw": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    }
+  },
+  "freeze_format_version": 2,
+  "previous_freeze": "n77-source-freeze-v1.json",
+  "format_repair": "List-to-path-map only; source hashes unchanged; first run aborted before construction/evaluation."
+}

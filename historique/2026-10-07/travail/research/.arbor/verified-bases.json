@@ -1,0 +1,2906 @@
+{
+  "label": "Verified Base Axiom is a user-facing node label for a proved lemma, not an added Lean axiom",
+  "root_conjecture_verified": false,
+  "entries": [
+    {
+      "theorem": "CollisionCoreBridge.decode_head",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "axioms": [
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n6"
+    },
+    {
+      "theorem": "CollisionCoreBridge.decode_tail",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "axioms": [
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n7"
+    },
+    {
+      "theorem": "CollisionCoreBridge.encodeDigits_injective",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n8"
+    },
+    {
+      "theorem": "CollisionCoreBridge.central_label_iff",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n9"
+    },
+    {
+      "theorem": "CollisionCoreBridge.orbit_stabilizes",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "axioms": [
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n10"
+    },
+    {
+      "theorem": "CollisionCoreBridge.n2_pair_factorization",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n11"
+    },
+    {
+      "theorem": "CollisionCoreBridge.n2_central_convolution",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n12"
+    },
+    {
+      "theorem": "GeneratedCollisionN2.factorization",
+      "source": "GeneratedCoreN2.lean",
+      "source_sha256": "9f57078826bf15c45579d99eafa77f467ae1b61986bfa47885ea008c06ee9712",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n13"
+    },
+    {
+      "theorem": "GeneratedCollisionN2.central_convolution",
+      "source": "GeneratedCoreN2.lean",
+      "source_sha256": "9f57078826bf15c45579d99eafa77f467ae1b61986bfa47885ea008c06ee9712",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n14"
+    },
+    {
+      "theorem": "GeneralCollisionPairing.sign_square",
+      "source": "GeneralPairing.lean",
+      "source_sha256": "b9e314b3c7cd356345c35b326e5abcfa05beefbeaab222ee199275b21b7c6319",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n20"
+    },
+    {
+      "theorem": "GeneralCollisionPairing.selectSum_nodup",
+      "source": "GeneralPairing.lean",
+      "source_sha256": "b9e314b3c7cd356345c35b326e5abcfa05beefbeaab222ee199275b21b7c6319",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n21"
+    },
+    {
+      "theorem": "GeneralCollisionPairing.central_label_iff",
+      "source": "GeneralPairing.lean",
+      "source_sha256": "b9e314b3c7cd356345c35b326e5abcfa05beefbeaab222ee199275b21b7c6319",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n22"
+    },
+    {
+      "theorem": "GeneralCollisionPairing.central_row_select",
+      "source": "GeneralPairing.lean",
+      "source_sha256": "b9e314b3c7cd356345c35b326e5abcfa05beefbeaab222ee199275b21b7c6319",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n23"
+    },
+    {
+      "theorem": "GeneralCollisionPairing.central_row",
+      "source": "GeneralPairing.lean",
+      "source_sha256": "b9e314b3c7cd356345c35b326e5abcfa05beefbeaab222ee199275b21b7c6319",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n24"
+    },
+    {
+      "theorem": "GeneralCollisionPairing.central_pairing",
+      "source": "GeneralPairing.lean",
+      "source_sha256": "b9e314b3c7cd356345c35b326e5abcfa05beefbeaab222ee199275b21b7c6319",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n25"
+    },
+    {
+      "theorem": "GeneralCollisionPairing.coefficient_append",
+      "source": "GeneralPairing.lean",
+      "source_sha256": "b9e314b3c7cd356345c35b326e5abcfa05beefbeaab222ee199275b21b7c6319",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n26"
+    },
+    {
+      "theorem": "GeneralCollisionPairing.coefficient_multiply",
+      "source": "GeneralPairing.lean",
+      "source_sha256": "b9e314b3c7cd356345c35b326e5abcfa05beefbeaab222ee199275b21b7c6319",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n27"
+    },
+    {
+      "theorem": "GeneralCollisionPairing.central_product_coefficient",
+      "source": "GeneralPairing.lean",
+      "source_sha256": "b9e314b3c7cd356345c35b326e5abcfa05beefbeaab222ee199275b21b7c6319",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n28"
+    },
+    {
+      "theorem": "GeneralCollisionPairingRing.sign_square",
+      "source": "GeneralPairingRing.lean",
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n29"
+    },
+    {
+      "theorem": "GeneralCollisionPairingRing.selectSum_nodup",
+      "source": "GeneralPairingRing.lean",
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n30"
+    },
+    {
+      "theorem": "GeneralCollisionPairingRing.central_label_iff",
+      "source": "GeneralPairingRing.lean",
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n31"
+    },
+    {
+      "theorem": "GeneralCollisionPairingRing.central_row_select",
+      "source": "GeneralPairingRing.lean",
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n32"
+    },
+    {
+      "theorem": "GeneralCollisionPairingRing.central_row",
+      "source": "GeneralPairingRing.lean",
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n33"
+    },
+    {
+      "theorem": "GeneralCollisionPairingRing.central_pairing",
+      "source": "GeneralPairingRing.lean",
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n34"
+    },
+    {
+      "theorem": "GeneralCollisionPairingRing.coefficient_append",
+      "source": "GeneralPairingRing.lean",
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "axioms": [
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n35"
+    },
+    {
+      "theorem": "GeneralCollisionPairingRing.coefficient_multiply",
+      "source": "GeneralPairingRing.lean",
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "axioms": [
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n36"
+    },
+    {
+      "theorem": "GeneralCollisionPairingRing.central_product_coefficient",
+      "source": "GeneralPairingRing.lean",
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+      "verification": "kernel-accepted supporting theorem; root unproved",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "node_id": "n37"
+    },
+    {
+      "theorem": "CollisionLabelBridge.digit_step_bound",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma; root polynomial extraction unproved",
+      "node_id": "n41"
+    },
+    {
+      "theorem": "CollisionLabelBridge.encodeDigits_lt_pow",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma; root polynomial extraction unproved",
+      "node_id": "n42"
+    },
+    {
+      "theorem": "CollisionLabelBridge.indexedLabelFrom_eq",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma; root polynomial extraction unproved",
+      "node_id": "n43"
+    },
+    {
+      "theorem": "CollisionLabelBridge.indexedLabel_eq",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma; root polynomial extraction unproved",
+      "node_id": "n44"
+    },
+    {
+      "theorem": "CollisionLabelBridge.indexedLabel_injective",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma; root polynomial extraction unproved",
+      "node_id": "n45"
+    },
+    {
+      "theorem": "CollisionLabelBridge.indexedLabel_le_max",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma; root polynomial extraction unproved",
+      "node_id": "n46"
+    },
+    {
+      "theorem": "CollisionLabelBridge.assignmentLabel_le_max",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma; root polynomial extraction unproved",
+      "node_id": "n47"
+    },
+    {
+      "theorem": "CollisionLabelBridge.assignmentLabel_injective",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma; root polynomial extraction unproved",
+      "node_id": "n48"
+    },
+    {
+      "theorem": "CollisionLabelBridge.occupation_all_ones_selector",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma; root polynomial extraction unproved",
+      "node_id": "n49"
+    },
+    {
+      "theorem": "CollisionLabelBridge.assignmentLabel_sum_eq",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma; root polynomial extraction unproved",
+      "node_id": "n50"
+    },
+    {
+      "theorem": "CollisionLabelBridge.occupation_sum_selector",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma; root polynomial extraction unproved",
+      "node_id": "n51"
+    },
+    {
+      "theorem": "CollisionLabelBridge.assignmentLabels_nodup",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma; root polynomial extraction unproved",
+      "node_id": "n52"
+    },
+    {
+      "theorem": "CollisionLabelBridge.indexed_assignment_pairing",
+      "source": "LabelBridge.lean",
+      "source_sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "59113789e66c150fcab8b293720d01ea7bbcc0fa",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma; root polynomial extraction unproved",
+      "node_id": "n53"
+    },
+    {
+      "theorem": "SquareZeroRankOne.matrix_right_product",
+      "source": "RankOneSquareZero.lean",
+      "source_sha256": "f5ccfcef9a771b75f6785a5ae0dcda0fcd03ef992bc9072a74d6d7a8f80416e9",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "1fc355d882554ce93fc619fd496cd32b9e7b70b6",
+      "node_id": "n39",
+      "subgoal_id": "n39:L01",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "SquareZeroRankOne.matrix_left_product",
+      "source": "RankOneSquareZero.lean",
+      "source_sha256": "f5ccfcef9a771b75f6785a5ae0dcda0fcd03ef992bc9072a74d6d7a8f80416e9",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "1fc355d882554ce93fc619fd496cd32b9e7b70b6",
+      "node_id": "n39",
+      "subgoal_id": "n39:L02",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "SquareZeroRankOne.scalar_product",
+      "source": "RankOneSquareZero.lean",
+      "source_sha256": "f5ccfcef9a771b75f6785a5ae0dcda0fcd03ef992bc9072a74d6d7a8f80416e9",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "1fc355d882554ce93fc619fd496cd32b9e7b70b6",
+      "node_id": "n39",
+      "subgoal_id": "n39:L03",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "SquareZeroRankOne.rank_one_two_sided",
+      "source": "RankOneSquareZero.lean",
+      "source_sha256": "f5ccfcef9a771b75f6785a5ae0dcda0fcd03ef992bc9072a74d6d7a8f80416e9",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "1fc355d882554ce93fc619fd496cd32b9e7b70b6",
+      "node_id": "n39",
+      "subgoal_id": "n39:L04",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "SquareZeroRankOne.propagate_left_factor",
+      "source": "RankOneSquareZero.lean",
+      "source_sha256": "f5ccfcef9a771b75f6785a5ae0dcda0fcd03ef992bc9072a74d6d7a8f80416e9",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "1fc355d882554ce93fc619fd496cd32b9e7b70b6",
+      "node_id": "n39",
+      "subgoal_id": "n39:L05",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "SquareZeroRankOne.propagate_rank_one",
+      "source": "RankOneSquareZero.lean",
+      "source_sha256": "f5ccfcef9a771b75f6785a5ae0dcda0fcd03ef992bc9072a74d6d7a8f80416e9",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "1fc355d882554ce93fc619fd496cd32b9e7b70b6",
+      "node_id": "n39",
+      "subgoal_id": "n39:L06",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "SharedBinaryPower.run_append",
+      "source": "PowerCompiler.lean",
+      "source_sha256": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "3804886e1fd9576c403444fcd2c5a8c5872e0e78",
+      "node_id": "n40",
+      "subgoal_id": "n40:L01",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "SharedBinaryPower.positive_plan_correct",
+      "source": "PowerCompiler.lean",
+      "source_sha256": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "3804886e1fd9576c403444fcd2c5a8c5872e0e78",
+      "node_id": "n40",
+      "subgoal_id": "n40:L02",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "SharedBinaryPower.binary_plan_correct",
+      "source": "PowerCompiler.lean",
+      "source_sha256": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "3804886e1fd9576c403444fcd2c5a8c5872e0e78",
+      "node_id": "n40",
+      "subgoal_id": "n40:L03",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "SharedBinaryPower.binary_plan_logarithmic",
+      "source": "PowerCompiler.lean",
+      "source_sha256": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "3804886e1fd9576c403444fcd2c5a8c5872e0e78",
+      "node_id": "n40",
+      "subgoal_id": "n40:L04",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "SharedBinaryPower.central_exponent_log_bound",
+      "source": "PowerCompiler.lean",
+      "source_sha256": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "3804886e1fd9576c403444fcd2c5a8c5872e0e78",
+      "node_id": "n40",
+      "subgoal_id": "n40:L05",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "SharedBinaryPower.central_plan_gate_bound",
+      "source": "PowerCompiler.lean",
+      "source_sha256": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "3804886e1fd9576c403444fcd2c5a8c5872e0e78",
+      "node_id": "n40",
+      "subgoal_id": "n40:L06",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "SharedBinaryPower.power_add",
+      "source": "PowerCompiler.lean",
+      "source_sha256": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353",
+      "axioms": [],
+      "branch_ref": "3804886e1fd9576c403444fcd2c5a8c5872e0e78",
+      "node_id": "n40",
+      "subgoal_id": "n40:L07",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "GeneralCollisionPolynomialBridge.interp_append",
+      "source": "PolynomialBridge.lean",
+      "source_sha256": "03b5de832df55bd5025983222423a404ca71fa2596c57f771c3c8db05b426b92",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "7e62fc4aa4d31a5d4261ce0072ba3f1d9b069392",
+      "node_id": "n54",
+      "subgoal_id": "n54:L01",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "GeneralCollisionPolynomialBridge.interp_monomial_multiply",
+      "source": "PolynomialBridge.lean",
+      "source_sha256": "03b5de832df55bd5025983222423a404ca71fa2596c57f771c3c8db05b426b92",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "7e62fc4aa4d31a5d4261ce0072ba3f1d9b069392",
+      "node_id": "n54",
+      "subgoal_id": "n54:L02",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "GeneralCollisionPolynomialBridge.interp_multiply",
+      "source": "PolynomialBridge.lean",
+      "source_sha256": "03b5de832df55bd5025983222423a404ca71fa2596c57f771c3c8db05b426b92",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "7e62fc4aa4d31a5d4261ce0072ba3f1d9b069392",
+      "node_id": "n54",
+      "subgoal_id": "n54:L03",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "GeneralCollisionPolynomialBridge.coeff_interp",
+      "source": "PolynomialBridge.lean",
+      "source_sha256": "03b5de832df55bd5025983222423a404ca71fa2596c57f771c3c8db05b426b92",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "7e62fc4aa4d31a5d4261ce0072ba3f1d9b069392",
+      "node_id": "n54",
+      "subgoal_id": "n54:L04",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "GeneralCollisionPolynomialBridge.central_polynomial_coefficient",
+      "source": "PolynomialBridge.lean",
+      "source_sha256": "03b5de832df55bd5025983222423a404ca71fa2596c57f771c3c8db05b426b92",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "7e62fc4aa4d31a5d4261ce0072ba3f1d9b069392",
+      "node_id": "n54",
+      "subgoal_id": "n54:L05",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "GeneralCollisionPolynomialBridge.indexed_assignment_polynomial_coefficient",
+      "source": "PolynomialBridge.lean",
+      "source_sha256": "03b5de832df55bd5025983222423a404ca71fa2596c57f771c3c8db05b426b92",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "7e62fc4aa4d31a5d4261ce0072ba3f1d9b069392",
+      "node_id": "n54",
+      "subgoal_id": "n54:L06",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Frozen inside this depth-3 leaf; no fictitious depth-4 worktree"
+    },
+    {
+      "theorem": "DoubleOrientation.sign_central",
+      "source": "DoubleOrientation.lean",
+      "source_sha256": "d440f12b17a49b3041518f52d16bf78a75785756fb1d4389623f0ec5ecd9deea",
+      "axioms": [
+        "propext"
+      ],
+      "branch_ref": "b8a9c6afb75f43c8a7143407ab82de46bf8e8dce",
+      "node_id": "n56",
+      "subgoal_id": "n56:L01",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DoubleOrientation.cross_middle",
+      "source": "DoubleOrientation.lean",
+      "source_sha256": "d440f12b17a49b3041518f52d16bf78a75785756fb1d4389623f0ec5ecd9deea",
+      "axioms": [
+        "propext"
+      ],
+      "branch_ref": "b8a9c6afb75f43c8a7143407ab82de46bf8e8dce",
+      "node_id": "n56",
+      "subgoal_id": "n56:L02",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DoubleOrientation.pair_square_zero",
+      "source": "DoubleOrientation.lean",
+      "source_sha256": "d440f12b17a49b3041518f52d16bf78a75785756fb1d4389623f0ec5ecd9deea",
+      "axioms": [
+        "propext"
+      ],
+      "branch_ref": "b8a9c6afb75f43c8a7143407ab82de46bf8e8dce",
+      "node_id": "n56",
+      "subgoal_id": "n56:L03",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DoubleOrientation.pairs_commute",
+      "source": "DoubleOrientation.lean",
+      "source_sha256": "d440f12b17a49b3041518f52d16bf78a75785756fb1d4389623f0ec5ecd9deea",
+      "axioms": [
+        "propext"
+      ],
+      "branch_ref": "b8a9c6afb75f43c8a7143407ab82de46bf8e8dce",
+      "node_id": "n56",
+      "subgoal_id": "n56:L04",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DoubleOrientation.triangular_step",
+      "source": "DoubleOrientation.lean",
+      "source_sha256": "d440f12b17a49b3041518f52d16bf78a75785756fb1d4389623f0ec5ecd9deea",
+      "axioms": [
+        "propext"
+      ],
+      "branch_ref": "b8a9c6afb75f43c8a7143407ab82de46bf8e8dce",
+      "node_id": "n56",
+      "subgoal_id": "n56:L05",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DoubleOrientation.cross_list",
+      "source": "DoubleOrientation.lean",
+      "source_sha256": "d440f12b17a49b3041518f52d16bf78a75785756fb1d4389623f0ec5ecd9deea",
+      "axioms": [
+        "propext"
+      ],
+      "branch_ref": "b8a9c6afb75f43c8a7143407ab82de46bf8e8dce",
+      "node_id": "n56",
+      "subgoal_id": "n56:L06",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DoubleOrientation.orientation_factorization",
+      "source": "DoubleOrientation.lean",
+      "source_sha256": "d440f12b17a49b3041518f52d16bf78a75785756fb1d4389623f0ec5ecd9deea",
+      "axioms": [
+        "propext"
+      ],
+      "branch_ref": "b8a9c6afb75f43c8a7143407ab82de46bf8e8dce",
+      "node_id": "n56",
+      "subgoal_id": "n56:L07",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.matrix_power_correct",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L01",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.sumCircuit_eval",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L02",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.sumCircuit_gates",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L03",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.dotCircuit_eval",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L04",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.dotCircuit_gates",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L05",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.denseProduct_eval",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L06",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.denseProduct_matrix",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L07",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.denseProduct_raw_gates",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L08",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.dense_product_gate_count",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L09",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.instructionCircuit_eval",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L10",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.instructionCircuit_gates",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L11",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.sequenceCircuit_eval",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L12",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.sequenceCircuit_gates",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L13",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.matrixPowerCircuit_eval",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L14",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.matrixPowerCircuit_gates",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L15",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.matrixVecCircuit_eval",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L16",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.matrixVecCircuit_gates",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L17",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.contractionCircuit_eval",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L18",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.contractionCircuit_raw_gates",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L19",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.contractionCircuit_gate_count",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L20",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.scalar_compiler_correct",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L21",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.scalarCircuit_raw_gates",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L22",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.scalarCircuit_gate_count",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L23",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "DenseScalar.conditional_scalar_budget",
+      "source": "MatrixScalarCompiler.lean",
+      "source_sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "b75a6a382ff0ce07ce521f6d219ccaeb48188d17",
+      "node_id": "n57",
+      "subgoal_id": "n57:L24",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDeterminantBridge.central_sum_pairing",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "a6f3dd13872c5a7932b19ebc875434bc005030fe",
+      "node_id": "n55",
+      "subgoal_id": "n55:L01",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDeterminantBridge.prod_monomials",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "a6f3dd13872c5a7932b19ebc875434bc005030fe",
+      "node_id": "n55",
+      "subgoal_id": "n55:L02",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDeterminantBridge.permutation_sign_square",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "a6f3dd13872c5a7932b19ebc875434bc005030fe",
+      "node_id": "n55",
+      "subgoal_id": "n55:L03",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDeterminantBridge.det_row_expansion",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "a6f3dd13872c5a7932b19ebc875434bc005030fe",
+      "node_id": "n55",
+      "subgoal_id": "n55:L04",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDeterminantBridge.forward_determinant_expansion",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "a6f3dd13872c5a7932b19ebc875434bc005030fe",
+      "node_id": "n55",
+      "subgoal_id": "n55:L05",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDeterminantBridge.rho_le_index",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "a6f3dd13872c5a7932b19ebc875434bc005030fe",
+      "node_id": "n55",
+      "subgoal_id": "n55:L06",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDeterminantBridge.complement_label",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "a6f3dd13872c5a7932b19ebc875434bc005030fe",
+      "node_id": "n55",
+      "subgoal_id": "n55:L07",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDeterminantBridge.reverse_determinant_expansion",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "a6f3dd13872c5a7932b19ebc875434bc005030fe",
+      "node_id": "n55",
+      "subgoal_id": "n55:L08",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDeterminantBridge.central_determinant_pairing",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "a6f3dd13872c5a7932b19ebc875434bc005030fe",
+      "node_id": "n55",
+      "subgoal_id": "n55:L09",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDeterminantBridge.base_rho_eq",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "a6f3dd13872c5a7932b19ebc875434bc005030fe",
+      "node_id": "n55",
+      "subgoal_id": "n55:L10",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDeterminantBridge.base_rho_injective",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "a6f3dd13872c5a7932b19ebc875434bc005030fe",
+      "node_id": "n55",
+      "subgoal_id": "n55:L11",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDeterminantBridge.base_capacity_sum_add_one",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "a6f3dd13872c5a7932b19ebc875434bc005030fe",
+      "node_id": "n55",
+      "subgoal_id": "n55:L12",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDeterminantBridge.base_n_determinant_pairing",
+      "source": "DeterminantBridge.lean",
+      "source_sha256": "1861d2f25300936a3367c416529dcbde42f08e183f75422b7c273205c943e8ec",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "a6f3dd13872c5a7932b19ebc875434bc005030fe",
+      "node_id": "n55",
+      "subgoal_id": "n55:L13",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "ConditionalCriterion.compose_input_correct",
+      "source": "ConditionalCriterion.lean",
+      "source_sha256": "5b3e39f792e255b9d893800652f94d844dc84bf2ded8ba28409e7c64b47fb6ab",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "367e825e5546ae4cb96e659673c1fc4cea484842",
+      "node_id": "n59",
+      "subgoal_id": "n59:L01",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "ConditionalCriterion.Pi_eval",
+      "source": "ConditionalCriterion.lean",
+      "source_sha256": "5b3e39f792e255b9d893800652f94d844dc84bf2ded8ba28409e7c64b47fb6ab",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "367e825e5546ae4cb96e659673c1fc4cea484842",
+      "node_id": "n59",
+      "subgoal_id": "n59:L02",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "ConditionalCriterion.polynomial_composed_budget",
+      "source": "ConditionalCriterion.lean",
+      "source_sha256": "5b3e39f792e255b9d893800652f94d844dc84bf2ded8ba28409e7c64b47fb6ab",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "367e825e5546ae4cb96e659673c1fc4cea484842",
+      "node_id": "n59",
+      "subgoal_id": "n59:L03",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "ConditionalCriterion.conditional_target_coefficient",
+      "source": "ConditionalCriterion.lean",
+      "source_sha256": "5b3e39f792e255b9d893800652f94d844dc84bf2ded8ba28409e7c64b47fb6ab",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "367e825e5546ae4cb96e659673c1fc4cea484842",
+      "node_id": "n59",
+      "subgoal_id": "n59:L04",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "ReverseVandermonde.reverse_vandermonde",
+      "source": "ReverseVandermonde.lean",
+      "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "96fdd0ca11ad17b0824d213539cc6166df569de0",
+      "node_id": "n58",
+      "subgoal_id": "n58:L01",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "ReverseVandermonde.reverse_matrix_as_projective",
+      "source": "ReverseVandermonde.lean",
+      "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "96fdd0ca11ad17b0824d213539cc6166df569de0",
+      "node_id": "n58",
+      "subgoal_id": "n58:L02",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "ReverseVandermonde.power_entries",
+      "source": "ReverseVandermonde.lean",
+      "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "96fdd0ca11ad17b0824d213539cc6166df569de0",
+      "node_id": "n58",
+      "subgoal_id": "n58:L03",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "ReverseVandermonde.reverse_vandermonde_polynomial",
+      "source": "ReverseVandermonde.lean",
+      "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "96fdd0ca11ad17b0824d213539cc6166df569de0",
+      "node_id": "n58",
+      "subgoal_id": "n58:L04",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "ReverseVandermonde.complementary_exponent",
+      "source": "ReverseVandermonde.lean",
+      "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+      "axioms": [
+        "propext"
+      ],
+      "branch_ref": "96fdd0ca11ad17b0824d213539cc6166df569de0",
+      "node_id": "n58",
+      "subgoal_id": "n58:L05",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "ReverseVandermonde.paper_complementary_det",
+      "source": "ReverseVandermonde.lean",
+      "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "96fdd0ca11ad17b0824d213539cc6166df569de0",
+      "node_id": "n58",
+      "subgoal_id": "n58:L06",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "ReverseVandermonde.unit_monomial_pow",
+      "source": "ReverseVandermonde.lean",
+      "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "96fdd0ca11ad17b0824d213539cc6166df569de0",
+      "node_id": "n58",
+      "subgoal_id": "n58:L07",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "ReverseVandermonde.paper_monomial_matrix_eq",
+      "source": "ReverseVandermonde.lean",
+      "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "96fdd0ca11ad17b0824d213539cc6166df569de0",
+      "node_id": "n58",
+      "subgoal_id": "n58:L08",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "ReverseVandermonde.paper_monomial_det",
+      "source": "ReverseVandermonde.lean",
+      "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "96fdd0ca11ad17b0824d213539cc6166df569de0",
+      "node_id": "n58",
+      "subgoal_id": "n58:L09",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionEncodingBridge.centralDegree_pos",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "95a612818527d83603efce3b4c68b906ca03d78b45f473adfff93fd9ca350b0a",
+      "axioms": [
+        "propext"
+      ],
+      "branch_ref": "8174ac17dd1060e1a34ebff8f134fd8a799bcced",
+      "node_id": "n60",
+      "subgoal_id": "n60:L01",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionEncodingBridge.padding_coefficient",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "95a612818527d83603efce3b4c68b906ca03d78b45f473adfff93fd9ca350b0a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "8174ac17dd1060e1a34ebff8f134fd8a799bcced",
+      "node_id": "n60",
+      "subgoal_id": "n60:L02",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionEncodingBridge.marked_weight_eq",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "95a612818527d83603efce3b4c68b906ca03d78b45f473adfff93fd9ca350b0a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "8174ac17dd1060e1a34ebff8f134fd8a799bcced",
+      "node_id": "n60",
+      "subgoal_id": "n60:L03",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionEncodingBridge.padded_determinant_coefficient",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "95a612818527d83603efce3b4c68b906ca03d78b45f473adfff93fd9ca350b0a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "8174ac17dd1060e1a34ebff8f134fd8a799bcced",
+      "node_id": "n60",
+      "subgoal_id": "n60:L04",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionEncodingBridge.reverse_factor",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "95a612818527d83603efce3b4c68b906ca03d78b45f473adfff93fd9ca350b0a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "8174ac17dd1060e1a34ebff8f134fd8a799bcced",
+      "node_id": "n60",
+      "subgoal_id": "n60:L05",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionEncodingBridge.hhat_central_coefficient",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "95a612818527d83603efce3b4c68b906ca03d78b45f473adfff93fd9ca350b0a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "8174ac17dd1060e1a34ebff8f134fd8a799bcced",
+      "node_id": "n60",
+      "subgoal_id": "n60:L06",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionEncodingBridge.marked_A_central_identity",
+      "source": "EncodingBridge.lean",
+      "source_sha256": "95a612818527d83603efce3b4c68b906ca03d78b45f473adfff93fd9ca350b0a",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "8174ac17dd1060e1a34ebff8f134fd8a799bcced",
+      "node_id": "n60",
+      "subgoal_id": "n60:L07",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDirectProjector.inversion_phase_eq_signCoeff",
+      "source": "DirectProjector.lean",
+      "source_sha256": "c989a261b39e5a8fa4b69bbef0940359e050942fc723edf7013d2d5ff145ed04",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "60a68a93817b6f68af2458d5b69324cae0ba7cd2",
+      "node_id": "n62",
+      "subgoal_id": "n62:L01",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDirectProjector.local_mixed_cofactor",
+      "source": "DirectProjector.lean",
+      "source_sha256": "c989a261b39e5a8fa4b69bbef0940359e050942fc723edf7013d2d5ff145ed04",
+      "axioms": [
+        "propext"
+      ],
+      "branch_ref": "60a68a93817b6f68af2458d5b69324cae0ba7cd2",
+      "node_id": "n62",
+      "subgoal_id": "n62:L02",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDirectProjector.local_xy_correction",
+      "source": "DirectProjector.lean",
+      "source_sha256": "c989a261b39e5a8fa4b69bbef0940359e050942fc723edf7013d2d5ff145ed04",
+      "axioms": [
+        "propext"
+      ],
+      "branch_ref": "60a68a93817b6f68af2458d5b69324cae0ba7cd2",
+      "node_id": "n62",
+      "subgoal_id": "n62:L03",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDirectProjector.phase_involution",
+      "source": "DirectProjector.lean",
+      "source_sha256": "c989a261b39e5a8fa4b69bbef0940359e050942fc723edf7013d2d5ff145ed04",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "60a68a93817b6f68af2458d5b69324cae0ba7cd2",
+      "node_id": "n62",
+      "subgoal_id": "n62:L04",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDirectProjector.phase_commute",
+      "source": "DirectProjector.lean",
+      "source_sha256": "c989a261b39e5a8fa4b69bbef0940359e050942fc723edf7013d2d5ff145ed04",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "60a68a93817b6f68af2458d5b69324cae0ba7cd2",
+      "node_id": "n62",
+      "subgoal_id": "n62:L05",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDirectProjector.corrected_signed_weight",
+      "source": "DirectProjector.lean",
+      "source_sha256": "c989a261b39e5a8fa4b69bbef0940359e050942fc723edf7013d2d5ff145ed04",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "60a68a93817b6f68af2458d5b69324cae0ba7cd2",
+      "node_id": "n62",
+      "subgoal_id": "n62:L06",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionDirectProjector.corrected_signed_sum",
+      "source": "DirectProjector.lean",
+      "source_sha256": "c989a261b39e5a8fa4b69bbef0940359e050942fc723edf7013d2d5ff145ed04",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "60a68a93817b6f68af2458d5b69324cae0ba7cd2",
+      "node_id": "n62",
+      "subgoal_id": "n62:L07",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionMobiusBridge.coefficient_def",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "98a8c08b6e341202e3d6bf2e8d73bcc498380906",
+      "node_id": "n63",
+      "subgoal_id": "n63:L01",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionMobiusBridge.coefficient_insert",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "98a8c08b6e341202e3d6bf2e8d73bcc498380906",
+      "node_id": "n63",
+      "subgoal_id": "n63:L02",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionMobiusBridge.zeta_reconstruction",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "98a8c08b6e341202e3d6bf2e8d73bcc498380906",
+      "node_id": "n63",
+      "subgoal_id": "n63:L03",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionMobiusBridge.coefficient_abs_bound",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "98a8c08b6e341202e3d6bf2e8d73bcc498380906",
+      "node_id": "n63",
+      "subgoal_id": "n63:L04",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionMobiusBridge.coefficient_natAbs_bound",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "98a8c08b6e341202e3d6bf2e8d73bcc498380906",
+      "node_id": "n63",
+      "subgoal_id": "n63:L05",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionMobiusBridge.sign_coefficient_natAbs_bound",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "98a8c08b6e341202e3d6bf2e8d73bcc498380906",
+      "node_id": "n63",
+      "subgoal_id": "n63:L06",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionHadamardPfaffian.tensor_copy_even",
+      "source": "HadamardPfaffian.lean",
+      "source_sha256": "344aa1d55e4a215fd11251d5546f2b56908998b15859f539730f99d23d32eae5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "3dcfa83ae05f9ed9876ed8b67d35425e40649cf6",
+      "node_id": "n67",
+      "subgoal_id": "n67:L01",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionHadamardPfaffian.gaussian_ones_even",
+      "source": "HadamardPfaffian.lean",
+      "source_sha256": "344aa1d55e4a215fd11251d5546f2b56908998b15859f539730f99d23d32eae5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "3dcfa83ae05f9ed9876ed8b67d35425e40649cf6",
+      "node_id": "n67",
+      "subgoal_id": "n67:L02",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionHadamardPfaffian.hadamard_inverse",
+      "source": "HadamardPfaffian.lean",
+      "source_sha256": "344aa1d55e4a215fd11251d5546f2b56908998b15859f539730f99d23d32eae5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "3dcfa83ae05f9ed9876ed8b67d35425e40649cf6",
+      "node_id": "n67",
+      "subgoal_id": "n67:L03",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionHadamardPfaffian.gaussian4",
+      "source": "HadamardPfaffian.lean",
+      "source_sha256": "344aa1d55e4a215fd11251d5546f2b56908998b15859f539730f99d23d32eae5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "3dcfa83ae05f9ed9876ed8b67d35425e40649cf6",
+      "node_id": "n67",
+      "subgoal_id": "n67:L04",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.occupation_eq_iff_bijective",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.expanded_linear_product",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.sum_bijective_functions",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.full_coefficient_permutation",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.subsetExponent_apply",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.subsetExponent_support",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.subsetExponent_zero_iff",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.subsetExponent_erase",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.coefficient_step",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.coefficient_invariant",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.initial_state",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.step_state",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.rowProduct_eq",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.terminal_permutation",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.terminal_matrix",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.marked_central",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.marked_target",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "ActualClosedSubsetTransfer.state_dimension",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "97513bc5e9cca5e0b33d0844980d29da1121a234",
+      "verification": "Actual all-n subset baseline theorem; independently replayed. State count exponential; original polynomial root unproved.",
+      "root_score": 0,
+      "node_id": "n73"
+    },
+    {
+      "theorem": "AtomicFirstPrefix.minor_determinant",
+      "source": "AtomicFirstPrefix.lean",
+      "source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "0f0ba2a8994dd06d91ac824e3ac64d4649f06944",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n75"
+    },
+    {
+      "theorem": "AtomicFirstPrefix.sum_complement",
+      "source": "AtomicFirstPrefix.lean",
+      "source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "0f0ba2a8994dd06d91ac824e3ac64d4649f06944",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n75"
+    },
+    {
+      "theorem": "AtomicFirstPrefix.single_response",
+      "source": "AtomicFirstPrefix.lean",
+      "source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "0f0ba2a8994dd06d91ac824e3ac64d4649f06944",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n75"
+    },
+    {
+      "theorem": "AtomicFirstPrefix.weighted_response",
+      "source": "AtomicFirstPrefix.lean",
+      "source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "0f0ba2a8994dd06d91ac824e3ac64d4649f06944",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n75"
+    },
+    {
+      "theorem": "AtomicFirstPrefix.normalized_minor_response",
+      "source": "AtomicFirstPrefix.lean",
+      "source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "0f0ba2a8994dd06d91ac824e3ac64d4649f06944",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n75"
+    },
+    {
+      "theorem": "AtomicFirstPrefix.linear_extension",
+      "source": "AtomicFirstPrefix.lean",
+      "source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "0f0ba2a8994dd06d91ac824e3ac64d4649f06944",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n75"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.B1_distribution",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.erase_diagonal",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.B2_remove_diagonal",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.seed_is_empty",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.insertion_is_erase",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.pair_exponent_iff",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.table_two_pair_expansion",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.table_two_zero_of_card_ne",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.signed_response_eq_mass",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.powerset_pair_indicator",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.table_two_mass",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.B3_actual_response",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.complement_sum",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.initialized_diagonal",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.initialized_totals",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    },
+    {
+      "theorem": "AtomicSecondPrefix.B4_initialized_query",
+      "source": "AtomicSecondPrefix.lean",
+      "source_sha256": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "dev_score": 1,
+      "test_score": 1,
+      "branch_ref": "5147e434b140a860d90329ec059403c2a24afc56",
+      "verification": "Supporting elementary prefix identity, independently replayed; no full-depth polynomial compilation claim",
+      "root_score": 0,
+      "node_id": "n76"
+    }
+  ],
+  "accepted_declarations": 140,
+  "count_note": "Declaration count includes specialized and reused formulations; it is not a count of independent mathematical discoveries."
+}

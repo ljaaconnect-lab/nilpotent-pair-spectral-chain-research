@@ -1,0 +1,16 @@
+{
+  "node": "n38",
+  "round": 12,
+  "kind": "candidate",
+  "source": "LabelBridge.lean",
+  "source_sha256": "e3d6a0379b0aec597325f6d5ba3f75b9c1891b4879e8217dc494ae3c628295d3",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n38\\LabelBridge.lean"
+  ],
+  "LEAN_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n38",
+  "exit_code": 0,
+  "stdout": "'CollisionLabelBridge.digit_step_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.encodeDigits_lt_pow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexedLabelFrom_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "root_conjecture_verified": false
+}

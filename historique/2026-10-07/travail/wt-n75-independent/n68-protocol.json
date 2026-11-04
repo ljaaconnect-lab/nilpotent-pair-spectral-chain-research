@@ -1,0 +1,24 @@
+{
+  "node": "n68",
+  "artifact_version": "n68-contextual-closure-search-v1",
+  "hypothesis": "Polynomial-size mixed Ward moment module for actual synchronized two-family Pfaffian contraction",
+  "obligations": [
+    "Explicit polynomial-dimensional state map, scalar initialization from generic B, and boundary with no unknown coefficient input",
+    "Actual closed scalar update and polynomial gates and allowed-literal bit costs for every synchronization in the full remaining context",
+    "Exact identity with the original central coefficient for all n>=2 and rational A; formal root closure only with complete Lean dependency chain"
+  ],
+  "metric": "Number of complete original root obligations discharged divided by three; supporting identities are separate",
+  "dev_boundary": "At most two concrete positive closure candidates; freeze source and identity protocol before executing supportive SymPy checks for n=2,3,4,5",
+  "test_boundary": "No held-out access; any full candidate is committed for coordinator-only fresh gate",
+  "formal_budget": "Zero compiler invocations allocated; return an exact constructive blueprint before any new formal window",
+  "forbidden": [
+    "Counterexample generation",
+    "Lower-bound experiments",
+    "Free differentiation or projection gates",
+    "Replacing every future synchronization factor by a bare Gaussian tail",
+    "Assuming Gaussian or Ward module closure as an axiom",
+    "Changing the fixed hypothesis",
+    "Representing the target or unknown initial jets as inputs"
+  ],
+  "root_conjecture_verified": false
+}

@@ -1,0 +1,27 @@
+{
+  "node": "n75",
+  "domain": "all n : Nat, all R : Type with CommRing R, all vectors b,u : Fin n -> R, all J : Finset (Fin n), all f : Finset (Fin n) -> R",
+  "definition_semantics": {
+    "total": "sum j, b j",
+    "phase": "(-1 : R)^J.card",
+    "prefixMatrix": "-(1 : Matrix (Fin n) (Fin n) R) + replicateCol Unit u * replicateRow Unit (fun _ => 1)",
+    "principalMinor": "(prefixMatrix u).submatrix Subtype.val Subtype.val, actual index type J",
+    "insertionCoefficient": "if j notin J and K = insert j J then 1 else 0",
+    "singleResponse": "-sum K : Finset (Fin n), phase K * insertionCoefficient j J K",
+    "weightedResponse": "sum j, b j * singleResponse j J",
+    "familyResponse": "sum J : Finset (Fin n), f J * weightedResponse b J"
+  },
+  "leaves": [
+    {"id": "A1", "name": "sum_complement", "statement": "(sum j in J.compl, b j) = total b - sum j in J, b j"},
+    {"id": "A2", "name": "single_response", "statement": "singleResponse j J = if j notin J then phase J else 0"},
+    {"id": "A3", "name": "weighted_response", "statement": "weightedResponse b J = phase J * (total b - sum j in J, b j)"},
+    {"id": "A4", "name": "minor_determinant", "statement": "(principalMinor u J).det = phase J * (1 - sum j in J, u j)"},
+    {"id": "A5", "name": "normalized_minor_response", "hypothesis": "forall j, total b * u j = b j", "statement": "total b * (principalMinor u J).det = weightedResponse b J"},
+    {"id": "A6", "name": "linear_extension", "hypothesis": "forall j, total b * u j = b j", "statement": "total b * (sum J : Finset (Fin n), f J * (principalMinor u J).det) = familyResponse b f"}
+  ],
+  "root_score": 0,
+  "root_conjecture_verified": false,
+  "local_normalization_exists_unconditionally": false,
+  "uniform_scalar_compilation": "REQUIRED_OPEN",
+  "all_f_contraction_cost": "NO_FREE_GATE_ASSUMED"
+}

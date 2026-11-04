@@ -1,0 +1,431 @@
+{
+  "protocol_sha256": "650139fe928f442a88ef3a1b711a89d24723540b45e6927dbbf467f63f1b0427",
+  "complete_rounds": 12,
+  "tactic_probes": 0,
+  "rounds": [
+    {
+      "round": 1,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "source_sha256": "85aabad165322475be453a0601aab00fc6f77bea78adfc438944f041bc650b0d",
+      "banned_tokens": [],
+      "exit_code": null,
+      "stdout": "",
+      "stderr": "Command '['C:\\\\Users\\\\REGIS\\\\Documents\\\\Codex\\\\runtimes\\\\elan\\\\toolchains\\\\leanprover--lean4---v4.34.1\\\\bin\\\\lean.exe', 'C:\\\\Users\\\\REGIS\\\\Documents\\\\Codex\\\\2026-10-07\\\\role-context-you-are-the-lead\\\\work\\\\wt-n39\\\\RankOneSquareZero.lean']' timed out after 60 seconds",
+      "accepted": [],
+      "axiom_audit": {}
+    },
+    {
+      "round": 2,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "source_sha256": "efb01755875af8285b82a511e6c21c06f325a50a7261016e3077ab905c9ee00c",
+      "banned_tokens": [],
+      "exit_code": null,
+      "stdout": "",
+      "stderr": "Command '['C:\\\\Users\\\\REGIS\\\\Documents\\\\Codex\\\\runtimes\\\\elan\\\\toolchains\\\\leanprover--lean4---v4.34.1\\\\bin\\\\lean.exe', 'C:\\\\Users\\\\REGIS\\\\Documents\\\\Codex\\\\2026-10-07\\\\role-context-you-are-the-lead\\\\work\\\\wt-n39\\\\RankOneSquareZero.lean']' timed out after 60 seconds",
+      "accepted": [],
+      "axiom_audit": {}
+    },
+    {
+      "round": 3,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "efb01755875af8285b82a511e6c21c06f325a50a7261016e3077ab905c9ee00c",
+      "banned_tokens": [],
+      "exit_code": 1,
+      "stdout": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean:13:47: error: unsolved goals\nR : Type u_1\n\u03b9 : Type u_2\ninst\u271d\u00b2 : CommRing R\ninst\u271d\u00b9 : Fintype \u03b9\ninst\u271d : DecidableEq \u03b9\nA G U : Matrix \u03b9 \u03b9 R\nx : R\nhx : x * x = 0\nhAG : A * G = 1\n\u22a2 1 - x \u2022 (U * G) + (x \u2022 (U * G) - 0) = 1\nC:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean:15:46: warning: This simp argument is unused:\n  add_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [sub_mul, mul_add, Matrix.smul_mul, Matrix.mul_smul, smul_smul, \u2190 mul_assoc, hAG, hx, zero_smul,\n    one_mul, add_sub_cancel_right]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nC:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean:15:56: warning: This simp argument is unused:\n  add_sub_cancel_right\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [sub_mul, mul_add, Matrix.smul_mul, Matrix.mul_smul, smul_smul, \u2190 mul_assoc, hAG, hx, zero_smul,\n    one_mul, add_zero]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n'SquareZeroRankOne.matrix_right_product' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [],
+      "axiom_audit": {
+        "SquareZeroRankOne.matrix_right_product": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "9f057d95cd7a34e89ac7d93f5defa4c1ca1a6f21186337aaa542512cffc5445e",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'SquareZeroRankOne.matrix_right_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [
+        "SquareZeroRankOne.matrix_right_product"
+      ],
+      "axiom_audit": {
+        "SquareZeroRankOne.matrix_right_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "round": 5,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "1bf6f16b275ee2cc267ea1e8fdbfeba237f35d5562cd5c11942da1d48a769bb4",
+      "banned_tokens": [],
+      "exit_code": 1,
+      "stdout": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean:19:47: error: unsolved goals\nR : Type u_1\n\u03b9 : Type u_2\ninst\u271d\u00b2 : CommRing R\ninst\u271d\u00b9 : Fintype \u03b9\ninst\u271d : DecidableEq \u03b9\nA G U : Matrix \u03b9 \u03b9 R\nx : R\nhx : x * x = 0\nhGA : G * A = 1\n\u22a2 1 + x \u2022 (G * U) - (x \u2022 (G * U) + 0) = 1\nC:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean:21:44: warning: This simp argument is unused:\n  sub_zero\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [add_mul, mul_sub, Matrix.smul_mul, Matrix.mul_smul, smul_smul, mul_assoc, hGA, hx, zero_smul,\n    mul_one, sub_add_cancel]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nC:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean:21:54: warning: This simp argument is unused:\n  sub_add_cancel\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [add_mul, mul_sub, Matrix.smul_mul, Matrix.mul_smul, smul_smul, mul_assoc, hGA, hx, zero_smul,\n    mul_one, sub_zero]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n'SquareZeroRankOne.matrix_right_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.matrix_left_product' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [],
+      "axiom_audit": {
+        "SquareZeroRankOne.matrix_right_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.matrix_left_product": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "round": 6,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "25dd4ec0f0ad1794e06e39ae6f4206538da7eb05af6ddd4374bc1d5e8e539e92",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'SquareZeroRankOne.matrix_right_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.matrix_left_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [
+        "SquareZeroRankOne.matrix_right_product",
+        "SquareZeroRankOne.matrix_left_product"
+      ],
+      "axiom_audit": {
+        "SquareZeroRankOne.matrix_right_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.matrix_left_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "round": 7,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "8167b54970cb27596c4eda8bcc2963ca3c166a47bc67df296254e07cc2f90ade",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'SquareZeroRankOne.matrix_right_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.matrix_left_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.scalar_product' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [
+        "SquareZeroRankOne.scalar_product",
+        "SquareZeroRankOne.matrix_right_product",
+        "SquareZeroRankOne.matrix_left_product"
+      ],
+      "axiom_audit": {
+        "SquareZeroRankOne.matrix_right_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.matrix_left_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.scalar_product": [
+          "propext",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "round": 8,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "c9feb9b7922fe5006379966488691d0b6eb758cb044eecec188ef6ddd7df4c8f",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'SquareZeroRankOne.matrix_right_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.matrix_left_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.scalar_product' depends on axioms: [propext, Quot.sound]\n'SquareZeroRankOne.rank_one_two_sided' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [
+        "SquareZeroRankOne.scalar_product",
+        "SquareZeroRankOne.matrix_right_product",
+        "SquareZeroRankOne.matrix_left_product",
+        "SquareZeroRankOne.rank_one_two_sided"
+      ],
+      "axiom_audit": {
+        "SquareZeroRankOne.matrix_right_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.matrix_left_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.scalar_product": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.rank_one_two_sided": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "round": 9,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "a6173f7dae1c5db24c37b48095a666fafbc8608cedd75c79dd5ce00e31a10738",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'SquareZeroRankOne.matrix_right_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.matrix_left_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.scalar_product' depends on axioms: [propext, Quot.sound]\n'SquareZeroRankOne.rank_one_two_sided' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.propagate_left_factor' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [
+        "SquareZeroRankOne.scalar_product",
+        "SquareZeroRankOne.matrix_right_product",
+        "SquareZeroRankOne.matrix_left_product",
+        "SquareZeroRankOne.rank_one_two_sided",
+        "SquareZeroRankOne.propagate_left_factor"
+      ],
+      "axiom_audit": {
+        "SquareZeroRankOne.matrix_right_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.matrix_left_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.scalar_product": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.rank_one_two_sided": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.propagate_left_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "round": 10,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "b2d9686801515b4df2c39ff978a02a2b0eee0f2dddf3e31c37b701260679618a",
+      "banned_tokens": [],
+      "exit_code": 1,
+      "stdout": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean:46:47: error: expected token\n'SquareZeroRankOne.matrix_right_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.matrix_left_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.scalar_product' depends on axioms: [propext, Quot.sound]\n'SquareZeroRankOne.rank_one_two_sided' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.propagate_left_factor' depends on axioms: [propext, Classical.choice, Quot.sound]\nC:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean:56:14: error(lean.unknownIdentifier): Unknown constant `SquareZeroRankOne.propagate_rank_one`\n",
+      "stderr": "",
+      "accepted": [],
+      "axiom_audit": {
+        "SquareZeroRankOne.matrix_right_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.matrix_left_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.scalar_product": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.rank_one_two_sided": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.propagate_left_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "round": 11,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "c2e129282ac4201ed1896ceae40be5b4494f487223dfbca54c6fa5c181b2e87e",
+      "banned_tokens": [],
+      "exit_code": 1,
+      "stdout": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean:46:86: error: unsolved goals\nR : Type u_1\n\u03b9 : Type u_2\ninst\u271d\u00b2 : CommRing R\ninst\u271d\u00b9 : Fintype \u03b9\ninst\u271d : DecidableEq \u03b9\nB G : Matrix \u03b9 \u03b9 R\nu v : \u03b9 \u2192 R\nx : R\n\u22a2 B * (G + x \u2022 Matrix.vecMulVec (G.mulVec u) (Matrix.vecMul v G)) =\n    B * G + x \u2022 Matrix.vecMulVec ((B * G).mulVec u) (Matrix.vecMul v G)\nC:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean:47:13: warning: This simp argument is unused:\n  propagate_left_factor\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [Matrix.mul_vecMulVec, Matrix.vecMulVec_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n'SquareZeroRankOne.matrix_right_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.matrix_left_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.scalar_product' depends on axioms: [propext, Quot.sound]\n'SquareZeroRankOne.rank_one_two_sided' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.propagate_left_factor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.propagate_rank_one' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [],
+      "axiom_audit": {
+        "SquareZeroRankOne.matrix_right_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.matrix_left_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.scalar_product": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.rank_one_two_sided": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.propagate_left_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.propagate_rank_one": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unapproved_axioms": {
+        "SquareZeroRankOne.propagate_rank_one": [
+          "sorryAx"
+        ]
+      }
+    },
+    {
+      "round": 12,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39\\RankOneSquareZero.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n39;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "f5ccfcef9a771b75f6785a5ae0dcda0fcd03ef992bc9072a74d6d7a8f80416e9",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'SquareZeroRankOne.matrix_right_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.matrix_left_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.scalar_product' depends on axioms: [propext, Quot.sound]\n'SquareZeroRankOne.rank_one_two_sided' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.propagate_left_factor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.propagate_rank_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [
+        "SquareZeroRankOne.scalar_product",
+        "SquareZeroRankOne.matrix_right_product",
+        "SquareZeroRankOne.matrix_left_product",
+        "SquareZeroRankOne.rank_one_two_sided",
+        "SquareZeroRankOne.propagate_left_factor"
+      ],
+      "axiom_audit": {
+        "SquareZeroRankOne.matrix_right_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.matrix_left_product": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.scalar_product": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.rank_one_two_sided": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.propagate_left_factor": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SquareZeroRankOne.propagate_rank_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unapproved_axioms": {}
+    }
+  ],
+  "accepted": [
+    "SquareZeroRankOne.scalar_product",
+    "SquareZeroRankOne.matrix_right_product",
+    "SquareZeroRankOne.matrix_left_product",
+    "SquareZeroRankOne.rank_one_two_sided",
+    "SquareZeroRankOne.propagate_left_factor"
+  ],
+  "dev_score": 1.0,
+  "obligation_count": 5,
+  "root_conjecture_verified": false
+}

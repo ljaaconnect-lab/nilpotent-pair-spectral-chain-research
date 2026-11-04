@@ -1,0 +1,11 @@
+# n73 actual subset family
+
+The fixed baseline goal is a real closed state family, with arbitrary explicit row data b and n columns. Its initial state is delta at the empty set. Stage k+1 sums b(k,j) times the previous state at U minus j over j in U. There are exactly 2^n state coordinates; no polynomial compression or root-conjecture credit is claimed.
+
+The selected AND-strategy uses a true multivariate-polynomial coefficient invariant. The auxiliary polynomial is independently defined as the product of the first k linear forms. At U, the exponent has value one precisely in U. Multiplication by X_j contributes zero when j is absent, and otherwise takes the coefficient at U.erase j. This gives the induction relating the actual state recurrence to the actual row product.
+
+The hardest terminal obligation is addressed first. Expand the product of all n row forms over every column assignment. Its monomial exponent is the occupation sum of single-variable exponents. That occupation equals the all-one exponent if and only if the assignment is bijective: equality makes every column occur, finite equal-cardinality surjectivity gives bijectivity; the converse reindexes the exponent sum. Reindex the bijective functions as genuine permutations and retain the explicit product of b(i,sigma(i)). This proof has no terminal-equality or representation premise.
+
+After that terminal coefficient theorem, prove the coefficient multiplication step, delta initialization and induction invariant, then join the two verified branches. Arbitrary B is supplied explicitly by the row function matrixRows B, extending rows beyond n by zero. Instantiate B=markedWeights A and use the immutable verified EncodingBridge identity to obtain the actual marked central coefficient for n>=2.
+
+The OR alternative is a sum over injective row-prefix embeddings with exact occupied range. It is reserved for a failed coefficient route; children from independent strategies will not be mixed. No helper invokes the state terminal theorem, so the dependency graph is acyclic. Every required declaration must compile without placeholders and have a standard-axiom audit. Eight total compiler invocations include retries, probes and dependency builds; none is hidden. The shared cache and test boundary remain read-only.

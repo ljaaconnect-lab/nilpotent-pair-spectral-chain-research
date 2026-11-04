@@ -1,0 +1,209 @@
+{
+  "n": 4,
+  "J": [],
+  "depth": 2,
+  "marked": true,
+  "nodes": [
+    {
+      "op": "variable",
+      "name": "z"
+    },
+    {
+      "op": "mul",
+      "left": 0,
+      "right": 0
+    },
+    {
+      "op": "mul",
+      "left": 1,
+      "right": 1
+    },
+    {
+      "op": "mul",
+      "left": 2,
+      "right": 2
+    },
+    {
+      "op": "mul",
+      "left": 3,
+      "right": 3
+    },
+    {
+      "op": "mul",
+      "left": 4,
+      "right": 4
+    },
+    {
+      "op": "mul",
+      "left": 5,
+      "right": 5
+    },
+    {
+      "op": "mul",
+      "left": 6,
+      "right": 6
+    },
+    {
+      "op": "variable",
+      "name": "p_0_0"
+    },
+    {
+      "op": "mul",
+      "left": 8,
+      "right": 0
+    },
+    {
+      "op": "variable",
+      "name": "p_0_1"
+    },
+    {
+      "op": "mul",
+      "left": 10,
+      "right": 1
+    },
+    {
+      "op": "variable",
+      "name": "p_0_2"
+    },
+    {
+      "op": "mul",
+      "left": 12,
+      "right": 2
+    },
+    {
+      "op": "variable",
+      "name": "p_0_3"
+    },
+    {
+      "op": "mul",
+      "left": 14,
+      "right": 3
+    },
+    {
+      "op": "variable",
+      "name": "p_1_0"
+    },
+    {
+      "op": "mul",
+      "left": 16,
+      "right": 4
+    },
+    {
+      "op": "variable",
+      "name": "p_1_1"
+    },
+    {
+      "op": "mul",
+      "left": 18,
+      "right": 5
+    },
+    {
+      "op": "variable",
+      "name": "p_1_2"
+    },
+    {
+      "op": "mul",
+      "left": 20,
+      "right": 6
+    },
+    {
+      "op": "variable",
+      "name": "p_1_3"
+    },
+    {
+      "op": "mul",
+      "left": 22,
+      "right": 7
+    },
+    {
+      "op": "mul",
+      "left": 9,
+      "right": 17
+    },
+    {
+      "op": "mul",
+      "left": 11,
+      "right": 19
+    },
+    {
+      "op": "mul",
+      "left": 13,
+      "right": 21
+    },
+    {
+      "op": "mul",
+      "left": 15,
+      "right": 23
+    },
+    {
+      "op": "add",
+      "left": 9,
+      "right": 11
+    },
+    {
+      "op": "add",
+      "left": 28,
+      "right": 13
+    },
+    {
+      "op": "add",
+      "left": 29,
+      "right": 15
+    },
+    {
+      "op": "add",
+      "left": 17,
+      "right": 19
+    },
+    {
+      "op": "add",
+      "left": 31,
+      "right": 21
+    },
+    {
+      "op": "add",
+      "left": 32,
+      "right": 23
+    },
+    {
+      "op": "add",
+      "left": 24,
+      "right": 25
+    },
+    {
+      "op": "add",
+      "left": 34,
+      "right": 26
+    },
+    {
+      "op": "add",
+      "left": 35,
+      "right": 27
+    },
+    {
+      "op": "mul",
+      "left": 30,
+      "right": 33
+    },
+    {
+      "op": "constant",
+      "value": "-1"
+    },
+    {
+      "op": "mul",
+      "left": 38,
+      "right": 36
+    },
+    {
+      "op": "add",
+      "left": 37,
+      "right": 39
+    }
+  ],
+  "output": 40,
+  "initialization_gates": 28,
+  "query_gates": 3,
+  "gates": 31,
+  "scope": "One explicit subset query at fixed prefix depth; not a full extractor",
+  "root_conjecture_verified": false
+}

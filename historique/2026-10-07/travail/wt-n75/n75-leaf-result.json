@@ -1,0 +1,14 @@
+{
+  "dev_score": 1.0,
+  "root_score": 0,
+  "result": "six exact elementary first-prefix identities kernel verified",
+  "insight": "Actual principal minors agree with the coefficient-array response under explicit local h*u=b; finite linearity does not provide a free global scalar contraction",
+  "branch_ref": "arbor/n75",
+  "artifact_version": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf",
+  "source": "AtomicFirstPrefix.lean",
+  "candidate_invocations": 6,
+  "dependency_invocations": 1,
+  "probe_invocations": 0,
+  "total_invocations": 7,
+  "root_conjecture_verified": false
+}

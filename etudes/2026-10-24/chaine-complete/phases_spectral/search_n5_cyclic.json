@@ -1,0 +1,56 @@
+[
+  {
+    "n": 5,
+    "group": "cyclic",
+    "size": 3,
+    "status": "INFEASIBLE",
+    "time_seconds": 0.8660552,
+    "conflicts": 313,
+    "branches": 2891
+  },
+  {
+    "n": 5,
+    "group": "cyclic",
+    "size": 4,
+    "status": "INFEASIBLE",
+    "time_seconds": 1.4614246000000002,
+    "conflicts": 1474,
+    "branches": 12561
+  },
+  {
+    "n": 5,
+    "group": "cyclic",
+    "size": 5,
+    "status": "INFEASIBLE",
+    "time_seconds": 5.6768656,
+    "conflicts": 2954,
+    "branches": 19584
+  },
+  {
+    "n": 5,
+    "group": "cyclic",
+    "size": 6,
+    "status": "UNKNOWN",
+    "time_seconds": 8.0155803,
+    "conflicts": 9055,
+    "branches": 55162
+  },
+  {
+    "n": 5,
+    "group": "cyclic",
+    "size": 7,
+    "status": "UNKNOWN",
+    "time_seconds": 8.022601,
+    "conflicts": 10649,
+    "branches": 57995
+  },
+  {
+    "n": 5,
+    "group": "cyclic",
+    "size": 8,
+    "status": "UNKNOWN",
+    "time_seconds": 8.0276034,
+    "conflicts": 20838,
+    "branches": 132437
+  }
+]

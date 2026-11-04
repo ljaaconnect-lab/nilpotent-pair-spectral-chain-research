@@ -1,0 +1,19 @@
+{
+  "numeric_full_table_checks": 56,
+  "formal_full_table_checks": 8,
+  "gate_counts": {
+    "1": 8,
+    "2": 35,
+    "3": 56,
+    "4": 145,
+    "5": 242,
+    "6": 455,
+    "7": 928,
+    "8": 2085
+  },
+  "score": 2085,
+  "score_direction": "min",
+  "general_polynomial_proof": false,
+  "candidate_sha256": "67848ffc6e0a930496239385b28252b387b834790a6998713db2cf8a10948ebf",
+  "evaluator_sha256": "65a412a0478a525d39c2e260bb98d5eb14334a859fce3d82a219abf5aec1707e"
+}

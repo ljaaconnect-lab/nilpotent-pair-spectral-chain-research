@@ -1,0 +1,216 @@
+{
+  "node": "n18",
+  "artifact_version": "n18-occupation-gram-v1",
+  "boundary": "B_dev-n18-positive",
+  "sympy_version": "1.14.0",
+  "checklist_sha256": "e148793f76ab96355d9ae1bb33c7284ddfbcb7c1c36f3338c0395fbc6be41bc0",
+  "evaluator_sha256": "9bbd80e4f42f6a659c6bb9d290f69829db85e461aec04258ff9296f88578411f",
+  "variant_sha256": "d1a582d87c70c9f2a628cd23c0b4579b41561ed63a9bb5bc2ab4e5ddf435bc8a",
+  "passed": 36,
+  "total": 36,
+  "score": 1.0,
+  "cases": [
+    {
+      "n": 2,
+      "checks": {
+        "gram_equals_explicit_diagonal": true,
+        "gram_determinant_equals_column_product": true,
+        "supported_cauchy_binet_minor_square_sum_equals_column_product": true,
+        "squarefree_occupation_coefficient_equals_generic_permanent": true,
+        "kronecker_coefficient_equals_generic_permanent": true,
+        "original_marked_scalar_dag_coefficient_equals_independent_oracle": true,
+        "exact_scalar_gate_formula_and_components": true,
+        "target_independent_scalar_leaf_data": true,
+        "occupation_digit_selection_identity": true
+      },
+      "construction": {
+        "n": 2,
+        "q": 3,
+        "T": 4,
+        "auxiliary_degree": 6,
+        "auxiliary_min_degree": 2,
+        "original_marker_and_entry_gates": 7,
+        "auxiliary_marker_gates": 2,
+        "weighted_entry_gates": 4,
+        "column_sum_gates": 2,
+        "diagonal_product_gates": 1,
+        "gates": 16,
+        "formula": "4*n^2-2+(n-1)*(floor(log2(n+1))+popcount(n+1)-1)",
+        "input_data": "Original p_ij=1+a_ij^2 constants and z; independent auxiliary s",
+        "matrix_factors": "X is n by n^2 column incidence; W is n^2 by n^2 edge-weight diagonal",
+        "coefficient_extraction_gates": null,
+        "extraction_status": "No cheap scalar extractor supplied; dictionary extraction in the evaluator is expanded verification"
+      },
+      "scalar_evaluation": {
+        "scalar_gate_evaluations": 16,
+        "max_node_terms": 4,
+        "max_live_terms": 6,
+        "nodes": 21
+      },
+      "cb": {
+        "supported_edge_sets": 4,
+        "actual_minor_determinants": 2,
+        "all_cached_minor_squares_one": true
+      },
+      "occupation_states_checked": 3,
+      "full_marked_terms": 4,
+      "extracted_marked_terms": 2,
+      "cb_seconds": 0.0013659000032930635,
+      "symbolic_coefficient_seconds": 0.017343500003335066,
+      "scalar_seconds": 0.0003797000026679598,
+      "total_seconds": 0.17252620000363095
+    },
+    {
+      "n": 3,
+      "checks": {
+        "gram_equals_explicit_diagonal": true,
+        "gram_determinant_equals_column_product": true,
+        "supported_cauchy_binet_minor_square_sum_equals_column_product": true,
+        "squarefree_occupation_coefficient_equals_generic_permanent": true,
+        "kronecker_coefficient_equals_generic_permanent": true,
+        "original_marked_scalar_dag_coefficient_equals_independent_oracle": true,
+        "exact_scalar_gate_formula_and_components": true,
+        "target_independent_scalar_leaf_data": true,
+        "occupation_digit_selection_identity": true
+      },
+      "construction": {
+        "n": 3,
+        "q": 4,
+        "T": 21,
+        "auxiliary_degree": 48,
+        "auxiliary_min_degree": 3,
+        "original_marker_and_entry_gates": 17,
+        "auxiliary_marker_gates": 4,
+        "weighted_entry_gates": 9,
+        "column_sum_gates": 6,
+        "diagonal_product_gates": 2,
+        "gates": 38,
+        "formula": "4*n^2-2+(n-1)*(floor(log2(n+1))+popcount(n+1)-1)",
+        "input_data": "Original p_ij=1+a_ij^2 constants and z; independent auxiliary s",
+        "matrix_factors": "X is n by n^2 column incidence; W is n^2 by n^2 edge-weight diagonal",
+        "coefficient_extraction_gates": null,
+        "extraction_status": "No cheap scalar extractor supplied; dictionary extraction in the evaluator is expanded verification"
+      },
+      "scalar_evaluation": {
+        "scalar_gate_evaluations": 38,
+        "max_node_terms": 27,
+        "max_live_terms": 27,
+        "nodes": 48
+      },
+      "cb": {
+        "supported_edge_sets": 27,
+        "actual_minor_determinants": 6,
+        "all_cached_minor_squares_one": true
+      },
+      "occupation_states_checked": 10,
+      "full_marked_terms": 27,
+      "extracted_marked_terms": 6,
+      "cb_seconds": 0.012349699994956609,
+      "symbolic_coefficient_seconds": 0.13948550000350224,
+      "scalar_seconds": 0.0015526999995927326,
+      "total_seconds": 0.22552169999835314
+    },
+    {
+      "n": 4,
+      "checks": {
+        "gram_equals_explicit_diagonal": true,
+        "gram_determinant_equals_column_product": true,
+        "supported_cauchy_binet_minor_square_sum_equals_column_product": true,
+        "squarefree_occupation_coefficient_equals_generic_permanent": true,
+        "kronecker_coefficient_equals_generic_permanent": true,
+        "original_marked_scalar_dag_coefficient_equals_independent_oracle": true,
+        "exact_scalar_gate_formula_and_components": true,
+        "target_independent_scalar_leaf_data": true,
+        "occupation_digit_selection_identity": true
+      },
+      "construction": {
+        "n": 4,
+        "q": 5,
+        "T": 156,
+        "auxiliary_degree": 500,
+        "auxiliary_min_degree": 4,
+        "original_marker_and_entry_gates": 31,
+        "auxiliary_marker_gates": 9,
+        "weighted_entry_gates": 16,
+        "column_sum_gates": 12,
+        "diagonal_product_gates": 3,
+        "gates": 71,
+        "formula": "4*n^2-2+(n-1)*(floor(log2(n+1))+popcount(n+1)-1)",
+        "input_data": "Original p_ij=1+a_ij^2 constants and z; independent auxiliary s",
+        "matrix_factors": "X is n by n^2 column incidence; W is n^2 by n^2 edge-weight diagonal",
+        "coefficient_extraction_gates": null,
+        "extraction_status": "No cheap scalar extractor supplied; dictionary extraction in the evaluator is expanded verification"
+      },
+      "scalar_evaluation": {
+        "scalar_gate_evaluations": 71,
+        "max_node_terms": 256,
+        "max_live_terms": 256,
+        "nodes": 87
+      },
+      "cb": {
+        "supported_edge_sets": 256,
+        "actual_minor_determinants": 24,
+        "all_cached_minor_squares_one": true
+      },
+      "occupation_states_checked": 35,
+      "full_marked_terms": 256,
+      "extracted_marked_terms": 24,
+      "cb_seconds": 0.5164705999995931,
+      "symbolic_coefficient_seconds": 1.6827445000017178,
+      "scalar_seconds": 0.041478200000710785,
+      "total_seconds": 2.248128100000031
+    },
+    {
+      "n": 5,
+      "checks": {
+        "gram_equals_explicit_diagonal": true,
+        "gram_determinant_equals_column_product": true,
+        "supported_cauchy_binet_minor_square_sum_equals_column_product": true,
+        "squarefree_occupation_coefficient_equals_generic_permanent": true,
+        "kronecker_coefficient_equals_generic_permanent": true,
+        "original_marked_scalar_dag_coefficient_equals_independent_oracle": true,
+        "exact_scalar_gate_formula_and_components": true,
+        "target_independent_scalar_leaf_data": true,
+        "occupation_digit_selection_identity": true
+      },
+      "construction": {
+        "n": 5,
+        "q": 6,
+        "T": 1555,
+        "auxiliary_degree": 6480,
+        "auxiliary_min_degree": 5,
+        "original_marker_and_entry_gates": 49,
+        "auxiliary_marker_gates": 12,
+        "weighted_entry_gates": 25,
+        "column_sum_gates": 20,
+        "diagonal_product_gates": 4,
+        "gates": 110,
+        "formula": "4*n^2-2+(n-1)*(floor(log2(n+1))+popcount(n+1)-1)",
+        "input_data": "Original p_ij=1+a_ij^2 constants and z; independent auxiliary s",
+        "matrix_factors": "X is n by n^2 column incidence; W is n^2 by n^2 edge-weight diagonal",
+        "coefficient_extraction_gates": null,
+        "extraction_status": "No cheap scalar extractor supplied; dictionary extraction in the evaluator is expanded verification"
+      },
+      "scalar_evaluation": {
+        "scalar_gate_evaluations": 110,
+        "max_node_terms": 3125,
+        "max_live_terms": 3125,
+        "nodes": 131
+      },
+      "cb": {
+        "supported_edge_sets": 3125,
+        "actual_minor_determinants": 120,
+        "all_cached_minor_squares_one": true
+      },
+      "occupation_states_checked": 126,
+      "full_marked_terms": 3125,
+      "extracted_marked_terms": 120,
+      "cb_seconds": 10.160108900003252,
+      "symbolic_coefficient_seconds": 19.621157699999458,
+      "scalar_seconds": 0.0253999999986263,
+      "total_seconds": 29.819736999997986
+    }
+  ],
+  "general_proof_status": "UNVERIFIED unless separately kernel checked",
+  "scope": "Positive partial Gram/occupation factorization; coefficient extraction remains unbounded."
+}

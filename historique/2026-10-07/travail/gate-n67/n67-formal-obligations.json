@@ -1,0 +1,29 @@
+{
+  "node": "n67",
+  "frozen_before_first_candidate_compilation": true,
+  "namespace": "CollisionHadamardPfaffian",
+  "domain": "four Boolean legs; all scalar entries rational",
+  "definitions": {
+    "H": "H a b = if a && b then (-1:Rat) else 1",
+    "COPY4": "one exactly on the constant-false and constant-true Boolean assignments, zero otherwise",
+    "parity4": "xor (xor (y 0) (y 1)) (xor (y 2) (y 3))",
+    "EVEN4": "zero on odd parity, one on even parity",
+    "tensorCopy4": "sum x:Fin4->Bool ((product i:Fin4 H(y i)(x i)) * COPY4 x)",
+    "gaussian4": "Six independent rational upper entries; empty subset 1, two-bit subsets the corresponding aij, full subset a01*a23-a02*a13+a03*a12, odd subsets 0",
+    "hMatrix": "Matrix Bool Bool Rat with entries H",
+    "hInverse": "Matrix Bool Bool Rat with entries H/2"
+  },
+  "obligations": {
+    "tensor_copy_even": "forall y:Fin4->Bool, tensorCopy4 y = 2 * EVEN4 y",
+    "gaussian_ones_even": "forall y:Fin4->Bool, gaussian4 1 1 1 1 1 1 y = EVEN4 y",
+    "hadamard_inverse": "hInverse * hMatrix = 1 and hMatrix * hInverse = 1, with actual Matrix multiplication over Rat"
+  },
+  "gaussian_definition_is_not_even4": true,
+  "candidate_budget": 5,
+  "native_decide_forbidden": true,
+  "score_denominator": 3,
+  "root_conjecture_score": 0,
+  "root_conjecture_verified": false,
+  "global_gaussian_closure_assumed": false,
+  "heldout_tests_run": false
+}

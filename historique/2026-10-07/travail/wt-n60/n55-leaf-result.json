@@ -1,0 +1,32 @@
+{
+  "node_id": "n55",
+  "artifact_version": "n55-determinant-pairing-v1",
+  "dev_score": 1.0,
+  "result": "All four frozen determinant obligations and the exact base-n specialization are kernel-verified in one source, with thirteen accepted theorems",
+  "insight": "The actual Matrix determinant product over Polynomial R has central coefficient equal to the unsigned permutation-weight sum when row labels separate permutations. For base-n labels the injectivity follows from n38 and the exact index n^n - 1 follows from a constructive induction on the capacity sum. No scalar extraction operation is granted as a circuit gate.",
+  "branch_ref": "arbor/n55",
+  "base_commit": "7e62fc4aa4d31a5d4261ce0072ba3f1d9b069392",
+  "compiler_invocations": 27,
+  "candidate_rounds": 24,
+  "dependency_builds": 3,
+  "frozen_replays": 0,
+  "accepted_declarations": 13,
+  "final_compiler_round": 27,
+  "compiler_exit_code": 0,
+  "report": "n55-strict-report.json",
+  "source": "DeterminantBridge.lean",
+  "frozen_contract": "n55-frozen-obligations.json",
+  "blueprint": "n55-blueprint-informel.md",
+  "round_logs": "n55-compiler-rounds",
+  "root_conjecture_verified": false,
+  "heldout_tests_run": false,
+  "development_boundary": "The four fixed Matrix determinant identities, exact base-n label specialization, kernel compilation and explicit source/axiom audit",
+  "test_boundary": "Reserved for the parent; not accessed",
+  "path_adjustment_constraints": [
+    "Finite diagonal filtering needs the correct orientation of Finset.sum_ite_eq; the primed theorem did not match s = t",
+    "Both occurrences of the row index must remain inside the sum of complementary labels: the subtraction body is explicitly parenthesized and typed Fin n",
+    "The failed automated capacity induction emitted an unexpected-instance diagnostic for casts of powers; the accepted step uses direct Fin and Nat identities",
+    "The canonical index equality is proved inside base_n_determinant_pairing by subtracting 1 from the separately verified capacity-sum identity",
+    "Determinant-to-Vandermonde rewriting, a separately defined marked permanent/C_n identity, and the uniform polynomial-size bounded-constant scalar extractor are outside this node's accepted scope"
+  ]
+}

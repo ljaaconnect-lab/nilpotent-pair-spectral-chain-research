@@ -1,0 +1,11 @@
+{
+  "sympy_version": "1.14.0",
+  "checks": {
+    "cofactor": true,
+    "local_sign_flip": true,
+    "local_involution": true
+  },
+  "cofactor": "d",
+  "corrected": "a + b*x + c*y - d*x*y",
+  "scope": "Algebraic local invariant; symbolic computation is not a Lean proof or scalar complexity bound."
+}

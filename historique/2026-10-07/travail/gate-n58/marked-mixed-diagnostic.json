@@ -1,0 +1,357 @@
+{
+  "scope": "Additional development diagnostic; frozen generic score unchanged",
+  "passed": 12,
+  "total": 12,
+  "cases": [
+    {
+      "n": 2,
+      "family": "vandermonde",
+      "variant": "demand",
+      "formal_z_exact": true,
+      "gates": 15,
+      "construction": {
+        "variant": "demand",
+        "scalar_weight_gates": 8,
+        "marker_and_entry_gates": 7,
+        "total_gates": 15,
+        "construction": {
+          "compiled_gates": 8,
+          "requested_source_mask_pairs": 18,
+          "requested_by_derivative_order": {
+            "1": 7,
+            "0": 9,
+            "2": 2
+          },
+          "support_entries_charged_as_search_work": 23,
+          "no_free_projection": true
+        }
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 15,
+        "max_node_terms": 2,
+        "max_live_terms": 5,
+        "nodes": 19
+      }
+    },
+    {
+      "n": 2,
+      "family": "vandermonde",
+      "variant": "eager",
+      "formal_z_exact": true,
+      "gates": 17,
+      "construction": {
+        "variant": "eager",
+        "scalar_weight_gates": 10,
+        "marker_and_entry_gates": 7,
+        "total_gates": 17,
+        "construction": {
+          "coefficient_multiplications": 9,
+          "coefficient_additions": 1,
+          "compiled_gates": 10,
+          "total_materialized_jet_entries": 23,
+          "max_jet_entries_per_source_node": 4
+        }
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 17,
+        "max_node_terms": 2,
+        "max_live_terms": 5,
+        "nodes": 21
+      }
+    },
+    {
+      "n": 2,
+      "family": "vandermonde",
+      "variant": "bell",
+      "formal_z_exact": true,
+      "gates": 13,
+      "construction": {
+        "variant": "bell",
+        "scalar_weight_gates": 6,
+        "marker_and_entry_gates": 7,
+        "total_gates": 13,
+        "construction": {
+          "cycle_factor_gates": 1,
+          "bell_recurrence_gates": 5,
+          "bell_recurrence_formula": "3^n-2^n",
+          "cycle_states": 3,
+          "path_states": 1,
+          "partition_states": 4,
+          "partition_transitions": 4,
+          "initial_data": "Q(empty)=1, C(singleton i)=B_ii",
+          "marker_substitution_gates": 7
+        }
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 13,
+        "max_node_terms": 2,
+        "max_live_terms": 5,
+        "nodes": 17
+      }
+    },
+    {
+      "n": 3,
+      "family": "vandermonde",
+      "variant": "demand",
+      "formal_z_exact": true,
+      "gates": 47,
+      "construction": {
+        "variant": "demand",
+        "scalar_weight_gates": 30,
+        "marker_and_entry_gates": 17,
+        "total_gates": 47,
+        "construction": {
+          "compiled_gates": 30,
+          "requested_source_mask_pairs": 52,
+          "requested_by_derivative_order": {
+            "1": 21,
+            "0": 24,
+            "2": 5,
+            "3": 2
+          },
+          "support_entries_charged_as_search_work": 65,
+          "no_free_projection": true
+        }
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 47,
+        "max_node_terms": 6,
+        "max_live_terms": 12,
+        "nodes": 54
+      }
+    },
+    {
+      "n": 3,
+      "family": "vandermonde",
+      "variant": "eager",
+      "formal_z_exact": true,
+      "gates": 57,
+      "construction": {
+        "variant": "eager",
+        "scalar_weight_gates": 40,
+        "marker_and_entry_gates": 17,
+        "total_gates": 57,
+        "construction": {
+          "coefficient_multiplications": 33,
+          "coefficient_additions": 7,
+          "compiled_gates": 40,
+          "total_materialized_jet_entries": 65,
+          "max_jet_entries_per_source_node": 8
+        }
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 57,
+        "max_node_terms": 6,
+        "max_live_terms": 14,
+        "nodes": 64
+      }
+    },
+    {
+      "n": 3,
+      "family": "vandermonde",
+      "variant": "bell",
+      "formal_z_exact": true,
+      "gates": 44,
+      "construction": {
+        "variant": "bell",
+        "scalar_weight_gates": 27,
+        "marker_and_entry_gates": 17,
+        "total_gates": 44,
+        "construction": {
+          "cycle_factor_gates": 8,
+          "bell_recurrence_gates": 19,
+          "bell_recurrence_formula": "3^n-2^n",
+          "cycle_states": 7,
+          "path_states": 5,
+          "partition_states": 8,
+          "partition_transitions": 13,
+          "initial_data": "Q(empty)=1, C(singleton i)=B_ii",
+          "marker_substitution_gates": 17
+        }
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 44,
+        "max_node_terms": 6,
+        "max_live_terms": 12,
+        "nodes": 51
+      }
+    },
+    {
+      "n": 4,
+      "family": "vandermonde",
+      "variant": "demand",
+      "formal_z_exact": true,
+      "gates": 133,
+      "construction": {
+        "variant": "demand",
+        "scalar_weight_gates": 102,
+        "marker_and_entry_gates": 31,
+        "total_gates": 133,
+        "construction": {
+          "compiled_gates": 102,
+          "requested_source_mask_pairs": 136,
+          "requested_by_derivative_order": {
+            "1": 56,
+            "0": 51,
+            "2": 22,
+            "3": 5,
+            "4": 2
+          },
+          "support_entries_charged_as_search_work": 165,
+          "no_free_projection": true
+        }
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 133,
+        "max_node_terms": 24,
+        "max_live_terms": 34,
+        "nodes": 144
+      }
+    },
+    {
+      "n": 4,
+      "family": "vandermonde",
+      "variant": "eager",
+      "formal_z_exact": true,
+      "gates": 171,
+      "construction": {
+        "variant": "eager",
+        "scalar_weight_gates": 140,
+        "marker_and_entry_gates": 31,
+        "total_gates": 171,
+        "construction": {
+          "coefficient_multiplications": 106,
+          "coefficient_additions": 34,
+          "compiled_gates": 140,
+          "total_materialized_jet_entries": 165,
+          "max_jet_entries_per_source_node": 16
+        }
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 171,
+        "max_node_terms": 24,
+        "max_live_terms": 52,
+        "nodes": 182
+      }
+    },
+    {
+      "n": 4,
+      "family": "vandermonde",
+      "variant": "bell",
+      "formal_z_exact": true,
+      "gates": 136,
+      "construction": {
+        "variant": "bell",
+        "scalar_weight_gates": 105,
+        "marker_and_entry_gates": 31,
+        "total_gates": 136,
+        "construction": {
+          "cycle_factor_gates": 40,
+          "bell_recurrence_gates": 65,
+          "bell_recurrence_formula": "3^n-2^n",
+          "cycle_states": 15,
+          "path_states": 17,
+          "partition_states": 16,
+          "partition_transitions": 40,
+          "initial_data": "Q(empty)=1, C(singleton i)=B_ii",
+          "marker_substitution_gates": 31
+        }
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 136,
+        "max_node_terms": 24,
+        "max_live_terms": 37,
+        "nodes": 147
+      }
+    },
+    {
+      "n": 5,
+      "family": "vandermonde",
+      "variant": "demand",
+      "formal_z_exact": true,
+      "gates": 373,
+      "construction": {
+        "variant": "demand",
+        "scalar_weight_gates": 324,
+        "marker_and_entry_gates": 49,
+        "total_gates": 373,
+        "construction": {
+          "compiled_gates": 324,
+          "requested_source_mask_pairs": 326,
+          "requested_by_derivative_order": {
+            "1": 125,
+            "0": 94,
+            "2": 74,
+            "3": 26,
+            "4": 5,
+            "5": 2
+          },
+          "support_entries_charged_as_search_work": 387,
+          "no_free_projection": true
+        }
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 373,
+        "max_node_terms": 120,
+        "max_live_terms": 138,
+        "nodes": 390
+      }
+    },
+    {
+      "n": 5,
+      "family": "vandermonde",
+      "variant": "eager",
+      "formal_z_exact": true,
+      "gates": 503,
+      "construction": {
+        "variant": "eager",
+        "scalar_weight_gates": 454,
+        "marker_and_entry_gates": 49,
+        "total_gates": 503,
+        "construction": {
+          "coefficient_multiplications": 316,
+          "coefficient_additions": 138,
+          "compiled_gates": 454,
+          "total_materialized_jet_entries": 387,
+          "max_jet_entries_per_source_node": 32
+        }
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 503,
+        "max_node_terms": 120,
+        "max_live_terms": 264,
+        "nodes": 520
+      }
+    },
+    {
+      "n": 5,
+      "family": "vandermonde",
+      "variant": "bell",
+      "formal_z_exact": true,
+      "gates": 417,
+      "construction": {
+        "variant": "bell",
+        "scalar_weight_gates": 368,
+        "marker_and_entry_gates": 49,
+        "total_gates": 417,
+        "construction": {
+          "cycle_factor_gates": 157,
+          "bell_recurrence_gates": 211,
+          "bell_recurrence_formula": "3^n-2^n",
+          "cycle_states": 31,
+          "path_states": 49,
+          "partition_states": 32,
+          "partition_transitions": 121,
+          "initial_data": "Q(empty)=1, C(singleton i)=B_ii",
+          "marker_substitution_gates": 49
+        }
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 417,
+        "max_node_terms": 120,
+        "max_live_terms": 146,
+        "nodes": 434
+      }
+    }
+  ]
+}

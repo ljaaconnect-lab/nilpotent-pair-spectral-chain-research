@@ -1,0 +1,239 @@
+{
+  "status": "passed",
+  "general_polynomial_closure": false,
+  "general_quasipolynomial_closure": false,
+  "source_sha256": {
+    "logarithmes-chaine\\log_circuit.py": "bded6cb85a07e04151e2bf4c181d73559bdcfadfc443ef72eb6bac4a433cba98",
+    "logarithmes-chaine\\verify_log_circuit.py": "d6a89bf5423e7c5c2b829db396c56fce9af8be657786e1bafda1f103ce5c18c0",
+    "raccord-initialisation\\spectral\\reprise-globale\\shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06",
+    "raccord-initialisation\\spectral\\reprise-globale\\verify_shared_operator_dag.py": "26b8ccc63937921a894d3e272ceaadd4445f19e862f62a3be536bb539d8037e9"
+  },
+  "cases": [
+    {
+      "n": 1,
+      "Q": 97,
+      "N": 2,
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 8,
+      "formal_z_tables": 1,
+      "direct_chain_scalar_gates_same_parameters": 8,
+      "unpruned_log_chain_scalar_gates_same_parameters": 10,
+      "complete_chain_scalar_gates": 10,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 5,
+          "allocated_nodes": 11
+        }
+      ],
+      "allocated_nodes": 20,
+      "seconds": 0.0
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "N": 4,
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 16,
+      "formal_z_tables": 1,
+      "direct_chain_scalar_gates_same_parameters": 65,
+      "unpruned_log_chain_scalar_gates_same_parameters": 145,
+      "complete_chain_scalar_gates": 145,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 28,
+          "allocated_nodes": 39
+        },
+        {
+          "factor": 1,
+          "coefficient_gates": 57,
+          "active_coefficients": 1,
+          "allocated_nodes": 81
+        }
+      ],
+      "allocated_nodes": 207,
+      "seconds": 0.01600000000325963
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 32,
+      "formal_z_tables": 1,
+      "direct_chain_scalar_gates_same_parameters": 434,
+      "unpruned_log_chain_scalar_gates_same_parameters": 1336,
+      "complete_chain_scalar_gates": 1215,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 67,
+          "allocated_nodes": 85
+        },
+        {
+          "factor": 1,
+          "coefficient_gates": 214,
+          "active_coefficients": 2,
+          "allocated_nodes": 271
+        },
+        {
+          "factor": 2,
+          "coefficient_gates": 349,
+          "active_coefficients": 1,
+          "allocated_nodes": 595
+        },
+        {
+          "factor": 3,
+          "coefficient_gates": 469,
+          "active_coefficients": 1,
+          "allocated_nodes": 822
+        }
+      ],
+      "allocated_nodes": 1888,
+      "seconds": 0.13999999999941792
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 8,
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 56,
+      "formal_z_tables": 0,
+      "direct_chain_scalar_gates_same_parameters": 4441,
+      "unpruned_log_chain_scalar_gates_same_parameters": 25373,
+      "complete_chain_scalar_gates": 18114,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 122,
+          "allocated_nodes": 149
+        },
+        {
+          "factor": 1,
+          "coefficient_gates": 547,
+          "active_coefficients": 3,
+          "allocated_nodes": 642
+        },
+        {
+          "factor": 2,
+          "coefficient_gates": 2085,
+          "active_coefficients": 2,
+          "allocated_nodes": 2920
+        },
+        {
+          "factor": 3,
+          "coefficient_gates": 3019,
+          "active_coefficients": 2,
+          "allocated_nodes": 4886
+        },
+        {
+          "factor": 4,
+          "coefficient_gates": 3674,
+          "active_coefficients": 1,
+          "allocated_nodes": 6301
+        },
+        {
+          "factor": 5,
+          "coefficient_gates": 4225,
+          "active_coefficients": 1,
+          "allocated_nodes": 7553
+        },
+        {
+          "factor": 6,
+          "coefficient_gates": 4548,
+          "active_coefficients": 1,
+          "allocated_nodes": 8409
+        }
+      ],
+      "allocated_nodes": 24324,
+      "seconds": 2.5310000000026776
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 88,
+      "formal_z_tables": 0,
+      "direct_chain_scalar_gates_same_parameters": 35131,
+      "unpruned_log_chain_scalar_gates_same_parameters": 303890,
+      "complete_chain_scalar_gates": 184673,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 193,
+          "allocated_nodes": 231
+        },
+        {
+          "factor": 1,
+          "coefficient_gates": 1100,
+          "active_coefficients": 4,
+          "allocated_nodes": 1244
+        },
+        {
+          "factor": 2,
+          "coefficient_gates": 7404,
+          "active_coefficients": 3,
+          "allocated_nodes": 9068
+        },
+        {
+          "factor": 3,
+          "coefficient_gates": 16052,
+          "active_coefficients": 3,
+          "allocated_nodes": 27906
+        },
+        {
+          "factor": 4,
+          "coefficient_gates": 22394,
+          "active_coefficients": 2,
+          "allocated_nodes": 40345
+        },
+        {
+          "factor": 5,
+          "coefficient_gates": 28011,
+          "active_coefficients": 2,
+          "allocated_nodes": 50909
+        },
+        {
+          "factor": 6,
+          "coefficient_gates": 32913,
+          "active_coefficients": 2,
+          "allocated_nodes": 60684
+        },
+        {
+          "factor": 7,
+          "coefficient_gates": 36526,
+          "active_coefficients": 1,
+          "allocated_nodes": 68473
+        },
+        {
+          "factor": 8,
+          "coefficient_gates": 39579,
+          "active_coefficients": 1,
+          "allocated_nodes": 74822
+        },
+        {
+          "factor": 9,
+          "coefficient_gates": 42112,
+          "active_coefficients": 1,
+          "allocated_nodes": 80391
+        },
+        {
+          "factor": 10,
+          "coefficient_gates": 43745,
+          "active_coefficients": 1,
+          "allocated_nodes": 84140
+        }
+      ],
+      "allocated_nodes": 248698,
+      "seconds": 28.828999999997905
+    }
+  ],
+  "contract": "Formal epsilon log/exp compiled to scalar gates. Existing I-L/r factors and INTT; only a,z are data leaves. No numerical logarithm, data inverse, moment or amplitude oracle."
+}

@@ -1,0 +1,996 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "etudes/2026-11-01/linearisation-orientee-convolution/FORME_LINEARISEE.md": "a249141ecef553fedff3006f2131c654ca226a505290cbfdd68df5ec3308d870",
+    "etudes/2026-11-01/linearisation-orientee-convolution/linearised_inputs.py": "5c4c61aaacd4aa143f146bdaa64f20ae7fdbfeeac41b207eef87c4c9c7b24ada",
+    "etudes/2026-11-01/linearisation-orientee-convolution/verify_linearised_inputs.py": "b75e7c8c00123b5d1794562f869d95f16afe719373e3ca0d4baa84417645eb04",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/verify_shared_operator_dag.py": "26b8ccc63937921a894d3e272ceaadd4445f19e862f62a3be536bb539d8037e9"
+  },
+  "cases": [
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        0,
+        1,
+        2
+      ],
+      "B_roots": [
+        [
+          22,
+          25,
+          28
+        ],
+        [
+          31,
+          34,
+          37
+        ],
+        [
+          40,
+          43,
+          46
+        ]
+      ],
+      "auxiliary_roots": [
+        47,
+        48,
+        49,
+        50
+      ],
+      "coefficient_scalar_gates": 164,
+      "polynomial_representative_scalar_gates": 256,
+      "allocated_nodes": 276,
+      "gate_bounds": {
+        "input_preparation": 35,
+        "modulation": 36,
+        "forward_ntt": 192,
+        "normalization": 48,
+        "products_of_linear_forms": 92,
+        "all_coefficients": 311,
+        "all_representatives": 403
+      },
+      "coefficient_data_inputs": "a,z only",
+      "representative_inputs": "a,z and formal auxiliary x_0,...,x_(N-1)",
+      "oriented_quotient_reduced": false,
+      "complete_scalar_Z_compiled": false,
+      "label_mode": "natural",
+      "status": "passed",
+      "numeric_coefficient_tables": 3,
+      "ordinary_polynomial_tables": 3,
+      "oriented_complete_tables": 3,
+      "formal_z_coefficient_tables": 1,
+      "formal_z_oriented_tables": 1,
+      "zero_z_checked": true,
+      "zero_amplitude_row_checked": true
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        0,
+        0,
+        0
+      ],
+      "B_roots": [
+        [
+          22,
+          25,
+          28
+        ],
+        [
+          31,
+          34,
+          37
+        ],
+        [
+          40,
+          43,
+          46
+        ]
+      ],
+      "auxiliary_roots": [
+        47,
+        48,
+        49,
+        50
+      ],
+      "coefficient_scalar_gates": 77,
+      "polynomial_representative_scalar_gates": 100,
+      "allocated_nodes": 119,
+      "gate_bounds": {
+        "input_preparation": 35,
+        "modulation": 36,
+        "forward_ntt": 192,
+        "normalization": 48,
+        "products_of_linear_forms": 92,
+        "all_coefficients": 311,
+        "all_representatives": 403
+      },
+      "coefficient_data_inputs": "a,z only",
+      "representative_inputs": "a,z and formal auxiliary x_0,...,x_(N-1)",
+      "oriented_quotient_reduced": false,
+      "complete_scalar_Z_compiled": false,
+      "label_mode": "zero",
+      "status": "passed",
+      "numeric_coefficient_tables": 3,
+      "ordinary_polynomial_tables": 3,
+      "oriented_complete_tables": 3,
+      "formal_z_coefficient_tables": 1,
+      "formal_z_oriented_tables": 1,
+      "zero_z_checked": true,
+      "zero_amplitude_row_checked": true
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        1,
+        0,
+        1
+      ],
+      "B_roots": [
+        [
+          22,
+          25,
+          28
+        ],
+        [
+          31,
+          34,
+          37
+        ],
+        [
+          40,
+          43,
+          46
+        ]
+      ],
+      "auxiliary_roots": [
+        47,
+        48,
+        49,
+        50
+      ],
+      "coefficient_scalar_gates": 191,
+      "polynomial_representative_scalar_gates": 283,
+      "allocated_nodes": 303,
+      "gate_bounds": {
+        "input_preparation": 35,
+        "modulation": 36,
+        "forward_ntt": 192,
+        "normalization": 48,
+        "products_of_linear_forms": 92,
+        "all_coefficients": 311,
+        "all_representatives": 403
+      },
+      "coefficient_data_inputs": "a,z only",
+      "representative_inputs": "a,z and formal auxiliary x_0,...,x_(N-1)",
+      "oriented_quotient_reduced": false,
+      "complete_scalar_Z_compiled": false,
+      "label_mode": "irregular",
+      "status": "passed",
+      "numeric_coefficient_tables": 3,
+      "ordinary_polynomial_tables": 3,
+      "oriented_complete_tables": 3,
+      "formal_z_coefficient_tables": 1,
+      "formal_z_oriented_tables": 1,
+      "zero_z_checked": true,
+      "zero_amplitude_row_checked": true
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "B_roots": [
+        [
+          36,
+          39,
+          42,
+          45
+        ],
+        [
+          48,
+          51,
+          54,
+          57
+        ],
+        [
+          60,
+          63,
+          66,
+          69
+        ],
+        [
+          72,
+          75,
+          78,
+          81
+        ]
+      ],
+      "auxiliary_roots": [
+        82,
+        83,
+        84,
+        85
+      ],
+      "coefficient_scalar_gates": 327,
+      "polynomial_representative_scalar_gates": 451,
+      "allocated_nodes": 478,
+      "gate_bounds": {
+        "input_preparation": 63,
+        "modulation": 64,
+        "forward_ntt": 256,
+        "normalization": 64,
+        "products_of_linear_forms": 124,
+        "all_coefficients": 447,
+        "all_representatives": 571
+      },
+      "coefficient_data_inputs": "a,z only",
+      "representative_inputs": "a,z and formal auxiliary x_0,...,x_(N-1)",
+      "oriented_quotient_reduced": false,
+      "complete_scalar_Z_compiled": false,
+      "label_mode": "natural",
+      "status": "passed",
+      "numeric_coefficient_tables": 3,
+      "ordinary_polynomial_tables": 3,
+      "oriented_complete_tables": 3,
+      "formal_z_coefficient_tables": 0,
+      "formal_z_oriented_tables": 0,
+      "zero_z_checked": true,
+      "zero_amplitude_row_checked": true
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "B_roots": [
+        [
+          36,
+          39,
+          42,
+          45
+        ],
+        [
+          48,
+          51,
+          54,
+          57
+        ],
+        [
+          60,
+          63,
+          66,
+          69
+        ],
+        [
+          72,
+          75,
+          78,
+          81
+        ]
+      ],
+      "auxiliary_roots": [
+        82,
+        83,
+        84,
+        85
+      ],
+      "coefficient_scalar_gates": 131,
+      "polynomial_representative_scalar_gates": 162,
+      "allocated_nodes": 188,
+      "gate_bounds": {
+        "input_preparation": 63,
+        "modulation": 64,
+        "forward_ntt": 256,
+        "normalization": 64,
+        "products_of_linear_forms": 124,
+        "all_coefficients": 447,
+        "all_representatives": 571
+      },
+      "coefficient_data_inputs": "a,z only",
+      "representative_inputs": "a,z and formal auxiliary x_0,...,x_(N-1)",
+      "oriented_quotient_reduced": false,
+      "complete_scalar_Z_compiled": false,
+      "label_mode": "zero",
+      "status": "passed",
+      "numeric_coefficient_tables": 3,
+      "ordinary_polynomial_tables": 3,
+      "oriented_complete_tables": 3,
+      "formal_z_coefficient_tables": 0,
+      "formal_z_oriented_tables": 0,
+      "zero_z_checked": true,
+      "zero_amplitude_row_checked": true
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "B_roots": [
+        [
+          36,
+          39,
+          42,
+          45
+        ],
+        [
+          48,
+          51,
+          54,
+          57
+        ],
+        [
+          60,
+          63,
+          66,
+          69
+        ],
+        [
+          72,
+          75,
+          78,
+          81
+        ]
+      ],
+      "auxiliary_roots": [
+        82,
+        83,
+        84,
+        85
+      ],
+      "coefficient_scalar_gates": 283,
+      "polynomial_representative_scalar_gates": 407,
+      "allocated_nodes": 434,
+      "gate_bounds": {
+        "input_preparation": 63,
+        "modulation": 64,
+        "forward_ntt": 256,
+        "normalization": 64,
+        "products_of_linear_forms": 124,
+        "all_coefficients": 447,
+        "all_representatives": 571
+      },
+      "coefficient_data_inputs": "a,z only",
+      "representative_inputs": "a,z and formal auxiliary x_0,...,x_(N-1)",
+      "oriented_quotient_reduced": false,
+      "complete_scalar_Z_compiled": false,
+      "label_mode": "irregular",
+      "status": "passed",
+      "numeric_coefficient_tables": 3,
+      "ordinary_polynomial_tables": 3,
+      "oriented_complete_tables": 3,
+      "formal_z_coefficient_tables": 0,
+      "formal_z_oriented_tables": 0,
+      "zero_z_checked": true,
+      "zero_amplitude_row_checked": true
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "B_roots": [
+        [
+          54,
+          57,
+          60,
+          63,
+          66
+        ],
+        [
+          69,
+          72,
+          75,
+          78,
+          81
+        ],
+        [
+          84,
+          87,
+          90,
+          93,
+          96
+        ],
+        [
+          99,
+          102,
+          105,
+          108,
+          111
+        ],
+        [
+          114,
+          117,
+          120,
+          123,
+          126
+        ]
+      ],
+      "auxiliary_roots": [
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134
+      ],
+      "coefficient_scalar_gates": 1504,
+      "polynomial_representative_scalar_gates": 2136,
+      "allocated_nodes": 2180,
+      "gate_bounds": {
+        "input_preparation": 99,
+        "modulation": 200,
+        "forward_ntt": 1920,
+        "normalization": 320,
+        "products_of_linear_forms": 632,
+        "all_coefficients": 2539,
+        "all_representatives": 3171
+      },
+      "coefficient_data_inputs": "a,z only",
+      "representative_inputs": "a,z and formal auxiliary x_0,...,x_(N-1)",
+      "oriented_quotient_reduced": false,
+      "complete_scalar_Z_compiled": false,
+      "label_mode": "natural",
+      "status": "passed",
+      "numeric_coefficient_tables": 3,
+      "ordinary_polynomial_tables": 3,
+      "oriented_complete_tables": 3,
+      "formal_z_coefficient_tables": 0,
+      "formal_z_oriented_tables": 0,
+      "zero_z_checked": true,
+      "zero_amplitude_row_checked": true
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B_roots": [
+        [
+          54,
+          57,
+          60,
+          63,
+          66
+        ],
+        [
+          69,
+          72,
+          75,
+          78,
+          81
+        ],
+        [
+          84,
+          87,
+          90,
+          93,
+          96
+        ],
+        [
+          99,
+          102,
+          105,
+          108,
+          111
+        ],
+        [
+          114,
+          117,
+          120,
+          123,
+          126
+        ]
+      ],
+      "auxiliary_roots": [
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134
+      ],
+      "coefficient_scalar_gates": 299,
+      "polynomial_representative_scalar_gates": 378,
+      "allocated_nodes": 419,
+      "gate_bounds": {
+        "input_preparation": 99,
+        "modulation": 200,
+        "forward_ntt": 1920,
+        "normalization": 320,
+        "products_of_linear_forms": 632,
+        "all_coefficients": 2539,
+        "all_representatives": 3171
+      },
+      "coefficient_data_inputs": "a,z only",
+      "representative_inputs": "a,z and formal auxiliary x_0,...,x_(N-1)",
+      "oriented_quotient_reduced": false,
+      "complete_scalar_Z_compiled": false,
+      "label_mode": "zero",
+      "status": "passed",
+      "numeric_coefficient_tables": 3,
+      "ordinary_polynomial_tables": 3,
+      "oriented_complete_tables": 3,
+      "formal_z_coefficient_tables": 0,
+      "formal_z_oriented_tables": 0,
+      "zero_z_checked": true,
+      "zero_amplitude_row_checked": true
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        1,
+        4,
+        1,
+        0,
+        1
+      ],
+      "B_roots": [
+        [
+          54,
+          57,
+          60,
+          63,
+          66
+        ],
+        [
+          69,
+          72,
+          75,
+          78,
+          81
+        ],
+        [
+          84,
+          87,
+          90,
+          93,
+          96
+        ],
+        [
+          99,
+          102,
+          105,
+          108,
+          111
+        ],
+        [
+          114,
+          117,
+          120,
+          123,
+          126
+        ]
+      ],
+      "auxiliary_roots": [
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134
+      ],
+      "coefficient_scalar_gates": 1354,
+      "polynomial_representative_scalar_gates": 1986,
+      "allocated_nodes": 2030,
+      "gate_bounds": {
+        "input_preparation": 99,
+        "modulation": 200,
+        "forward_ntt": 1920,
+        "normalization": 320,
+        "products_of_linear_forms": 632,
+        "all_coefficients": 2539,
+        "all_representatives": 3171
+      },
+      "coefficient_data_inputs": "a,z only",
+      "representative_inputs": "a,z and formal auxiliary x_0,...,x_(N-1)",
+      "oriented_quotient_reduced": false,
+      "complete_scalar_Z_compiled": false,
+      "label_mode": "irregular",
+      "status": "passed",
+      "numeric_coefficient_tables": 3,
+      "ordinary_polynomial_tables": 3,
+      "oriented_complete_tables": 3,
+      "formal_z_coefficient_tables": 0,
+      "formal_z_oriented_tables": 0,
+      "zero_z_checked": true,
+      "zero_amplitude_row_checked": true
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "B_roots": [
+        [
+          76,
+          79,
+          82,
+          85,
+          88,
+          91
+        ],
+        [
+          94,
+          97,
+          100,
+          103,
+          106,
+          109
+        ],
+        [
+          112,
+          115,
+          118,
+          121,
+          124,
+          127
+        ],
+        [
+          130,
+          133,
+          136,
+          139,
+          142,
+          145
+        ],
+        [
+          148,
+          151,
+          154,
+          157,
+          160,
+          163
+        ],
+        [
+          166,
+          169,
+          172,
+          175,
+          178,
+          181
+        ]
+      ],
+      "auxiliary_roots": [
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189
+      ],
+      "coefficient_scalar_gates": 2009,
+      "polynomial_representative_scalar_gates": 2769,
+      "allocated_nodes": 2824,
+      "gate_bounds": {
+        "input_preparation": 143,
+        "modulation": 288,
+        "forward_ntt": 2304,
+        "normalization": 384,
+        "products_of_linear_forms": 760,
+        "all_coefficients": 3119,
+        "all_representatives": 3879
+      },
+      "coefficient_data_inputs": "a,z only",
+      "representative_inputs": "a,z and formal auxiliary x_0,...,x_(N-1)",
+      "oriented_quotient_reduced": false,
+      "complete_scalar_Z_compiled": false,
+      "label_mode": "natural",
+      "status": "passed",
+      "numeric_coefficient_tables": 3,
+      "ordinary_polynomial_tables": 3,
+      "oriented_complete_tables": 3,
+      "formal_z_coefficient_tables": 0,
+      "formal_z_oriented_tables": 0,
+      "zero_z_checked": true,
+      "zero_amplitude_row_checked": true
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B_roots": [
+        [
+          76,
+          79,
+          82,
+          85,
+          88,
+          91
+        ],
+        [
+          94,
+          97,
+          100,
+          103,
+          106,
+          109
+        ],
+        [
+          112,
+          115,
+          118,
+          121,
+          124,
+          127
+        ],
+        [
+          130,
+          133,
+          136,
+          139,
+          142,
+          145
+        ],
+        [
+          148,
+          151,
+          154,
+          157,
+          160,
+          163
+        ],
+        [
+          166,
+          169,
+          172,
+          175,
+          178,
+          181
+        ]
+      ],
+      "auxiliary_roots": [
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189
+      ],
+      "coefficient_scalar_gates": 401,
+      "polynomial_representative_scalar_gates": 496,
+      "allocated_nodes": 548,
+      "gate_bounds": {
+        "input_preparation": 143,
+        "modulation": 288,
+        "forward_ntt": 2304,
+        "normalization": 384,
+        "products_of_linear_forms": 760,
+        "all_coefficients": 3119,
+        "all_representatives": 3879
+      },
+      "coefficient_data_inputs": "a,z only",
+      "representative_inputs": "a,z and formal auxiliary x_0,...,x_(N-1)",
+      "oriented_quotient_reduced": false,
+      "complete_scalar_Z_compiled": false,
+      "label_mode": "zero",
+      "status": "passed",
+      "numeric_coefficient_tables": 3,
+      "ordinary_polynomial_tables": 3,
+      "oriented_complete_tables": 3,
+      "formal_z_coefficient_tables": 0,
+      "formal_z_oriented_tables": 0,
+      "zero_z_checked": true,
+      "zero_amplitude_row_checked": true
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        1,
+        4,
+        1,
+        0,
+        1,
+        4
+      ],
+      "B_roots": [
+        [
+          76,
+          79,
+          82,
+          85,
+          88,
+          91
+        ],
+        [
+          94,
+          97,
+          100,
+          103,
+          106,
+          109
+        ],
+        [
+          112,
+          115,
+          118,
+          121,
+          124,
+          127
+        ],
+        [
+          130,
+          133,
+          136,
+          139,
+          142,
+          145
+        ],
+        [
+          148,
+          151,
+          154,
+          157,
+          160,
+          163
+        ],
+        [
+          166,
+          169,
+          172,
+          175,
+          178,
+          181
+        ]
+      ],
+      "auxiliary_roots": [
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189
+      ],
+      "coefficient_scalar_gates": 1685,
+      "polynomial_representative_scalar_gates": 2445,
+      "allocated_nodes": 2500,
+      "gate_bounds": {
+        "input_preparation": 143,
+        "modulation": 288,
+        "forward_ntt": 2304,
+        "normalization": 384,
+        "products_of_linear_forms": 760,
+        "all_coefficients": 3119,
+        "all_representatives": 3879
+      },
+      "coefficient_data_inputs": "a,z only",
+      "representative_inputs": "a,z and formal auxiliary x_0,...,x_(N-1)",
+      "oriented_quotient_reduced": false,
+      "complete_scalar_Z_compiled": false,
+      "label_mode": "irregular",
+      "status": "passed",
+      "numeric_coefficient_tables": 3,
+      "ordinary_polynomial_tables": 3,
+      "oriented_complete_tables": 3,
+      "formal_z_coefficient_tables": 0,
+      "formal_z_oriented_tables": 0,
+      "zero_z_checked": true,
+      "zero_amplitude_row_checked": true
+    }
+  ],
+  "algebra_checks": [
+    {
+      "n": 3,
+      "N": 4,
+      "convolution_relations": 4,
+      "inverse_or_padding_relations": 4,
+      "dual_monomials_checked": 20,
+      "status": "passed"
+    },
+    {
+      "n": 4,
+      "N": 4,
+      "convolution_relations": 4,
+      "inverse_or_padding_relations": 4,
+      "dual_monomials_checked": 20,
+      "status": "passed"
+    },
+    {
+      "n": 5,
+      "N": 8,
+      "convolution_relations": 8,
+      "inverse_or_padding_relations": 8,
+      "dual_monomials_checked": 20,
+      "status": "passed"
+    },
+    {
+      "n": 6,
+      "N": 8,
+      "convolution_relations": 8,
+      "inverse_or_padding_relations": 8,
+      "dual_monomials_checked": 20,
+      "status": "passed"
+    }
+  ],
+  "totals": {
+    "numeric_coefficient_tables": 36,
+    "ordinary_polynomial_tables": 36,
+    "oriented_complete_tables": 36,
+    "formal_z_coefficient_tables": 3,
+    "formal_z_oriented_tables": 3
+  },
+  "coefficient_preparation_polynomial_bound_proved": true,
+  "ordinary_representative_polynomial_bound_proved": true,
+  "complete_scalar_Z_compiled": false,
+  "general_polynomial_quotient_reader_established": false,
+  "compiler_uses_subset_or_jet_tables": false,
+  "reference_evaluators_use_small_monomial_and_subset_tables": true,
+  "lean_formalization_of_this_construction": false
+}

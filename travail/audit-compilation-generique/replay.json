@@ -1,0 +1,250 @@
+{
+  "status": "passed",
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "version_stdout": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n",
+  "version_stderr": "",
+  "version_exit_code": 0,
+  "environment_helper": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\lean_check.py",
+  "environment": {
+    "LEAN_PATH": "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\build;D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\sources;D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\lean-operateurs\\local-cache;D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+    "LEAN_SRC_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\src\\lean\\lake",
+    "LEAN_SYSROOT": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1"
+  },
+  "proof_changes": false,
+  "historical_report_changes": false,
+  "runs": [
+    {
+      "source": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-10-07\\livrables\\conjecture-1-5-suite\\proofs\\PowerCompiler.lean",
+      "snapshot": "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\sources\\PowerCompiler.lean",
+      "sha256": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353",
+      "lf_normalized_sha256": "c66d703e08237358eb992905106e01cb040d27314d42053030821f335450c863",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "-j1",
+        "-o",
+        "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\build\\PowerCompiler.olean",
+        "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\sources\\PowerCompiler.lean"
+      ],
+      "cwd": "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\sources",
+      "elapsed_seconds": 77.078,
+      "exit_code": 0,
+      "stdout": "'SharedBinaryPower.run_append' depends on axioms: [propext, Quot.sound]\n'SharedBinaryPower.power_add' does not depend on any axioms\n'SharedBinaryPower.positive_plan_correct' depends on axioms: [propext, Quot.sound]\n'SharedBinaryPower.binary_plan_correct' depends on axioms: [propext, Quot.sound]\n'SharedBinaryPower.binary_plan_logarithmic' depends on axioms: [propext, Quot.sound]\n'SharedBinaryPower.central_exponent_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedBinaryPower.central_plan_gate_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_logarithmic": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_plan_gate_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_changed": false,
+      "status": "passed"
+    },
+    {
+      "source": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-10-07\\livrables\\conjecture-1-5-suite\\proofs\\MatrixScalarCompiler.lean",
+      "snapshot": "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\sources\\MatrixScalarCompiler.lean",
+      "sha256": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+      "lf_normalized_sha256": "6c2ad98a6eca9590430dcc973cec57daaa1d1e28c9009366fdb50df96fd5a69b",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "-j1",
+        "-o",
+        "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\build\\MatrixScalarCompiler.olean",
+        "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\sources\\MatrixScalarCompiler.lean"
+      ],
+      "cwd": "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\sources",
+      "elapsed_seconds": 132.375,
+      "exit_code": 0,
+      "stdout": "'DenseScalar.matrix_power_correct' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.sumCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.sumCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.dotCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.dotCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.denseProduct_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.denseProduct_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.denseProduct_raw_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.dense_product_gate_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.instructionCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.instructionCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.sequenceCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.sequenceCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.matrixPowerCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.matrixPowerCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.matrixVecCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.matrixVecCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.contractionCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.contractionCircuit_raw_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.contractionCircuit_gate_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.scalar_compiler_correct' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.scalarCircuit_raw_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.scalarCircuit_gate_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DenseScalar.conditional_scalar_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "axiom_audit": {
+        "DenseScalar.matrix_power_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.sumCircuit_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.sumCircuit_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.dotCircuit_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.dotCircuit_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.denseProduct_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.denseProduct_matrix": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.denseProduct_raw_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.dense_product_gate_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.instructionCircuit_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.instructionCircuit_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.sequenceCircuit_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.sequenceCircuit_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.matrixPowerCircuit_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.matrixPowerCircuit_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.matrixVecCircuit_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.matrixVecCircuit_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.contractionCircuit_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.contractionCircuit_raw_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.contractionCircuit_gate_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.scalar_compiler_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.scalarCircuit_raw_gates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.scalarCircuit_gate_count": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "DenseScalar.conditional_scalar_budget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_changed": false,
+      "status": "passed"
+    },
+    {
+      "source": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-10-07\\livrables\\conjecture-1-5-suite\\proofs\\ConditionalCriterion.lean",
+      "snapshot": "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\sources\\ConditionalCriterion.lean",
+      "sha256": "5b3e39f792e255b9d893800652f94d844dc84bf2ded8ba28409e7c64b47fb6ab",
+      "lf_normalized_sha256": "0d3de6f6475371f1226de953c7c707ff7b5abf31557715be195bdb125fab8189",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "-j1",
+        "-o",
+        "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\build\\ConditionalCriterion.olean",
+        "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\sources\\ConditionalCriterion.lean"
+      ],
+      "cwd": "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\sources",
+      "elapsed_seconds": 29.281,
+      "exit_code": 0,
+      "stdout": "'ConditionalCriterion.compose_input_correct' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ConditionalCriterion.Pi_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ConditionalCriterion.polynomial_composed_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ConditionalCriterion.conditional_target_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "axiom_audit": {
+        "ConditionalCriterion.compose_input_correct": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConditionalCriterion.Pi_eval": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConditionalCriterion.polynomial_composed_budget": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ConditionalCriterion.conditional_target_coefficient": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_changed": false,
+      "status": "passed"
+    }
+  ]
+}

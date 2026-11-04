@@ -1,0 +1,177 @@
+{
+  "entries": [
+    {
+      "theorem": "CollisionMobiusBridge.coefficient_def",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "98a8c08b6e341202e3d6bf2e8d73bcc498380906",
+      "node_id": "n63",
+      "subgoal_id": "n63:L01",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionMobiusBridge.coefficient_insert",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "98a8c08b6e341202e3d6bf2e8d73bcc498380906",
+      "node_id": "n63",
+      "subgoal_id": "n63:L02",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionMobiusBridge.zeta_reconstruction",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "98a8c08b6e341202e3d6bf2e8d73bcc498380906",
+      "node_id": "n63",
+      "subgoal_id": "n63:L03",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionMobiusBridge.coefficient_abs_bound",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "98a8c08b6e341202e3d6bf2e8d73bcc498380906",
+      "node_id": "n63",
+      "subgoal_id": "n63:L04",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionMobiusBridge.coefficient_natAbs_bound",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "98a8c08b6e341202e3d6bf2e8d73bcc498380906",
+      "node_id": "n63",
+      "subgoal_id": "n63:L05",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionMobiusBridge.sign_coefficient_natAbs_bound",
+      "source": "MobiusBridge.lean",
+      "source_sha256": "da3f851f48d7b5baa5226067955bbc6ae7c5c39b36f8563f36eee108893796dd",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "98a8c08b6e341202e3d6bf2e8d73bcc498380906",
+      "node_id": "n63",
+      "subgoal_id": "n63:L06",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionHadamardPfaffian.tensor_copy_even",
+      "source": "HadamardPfaffian.lean",
+      "source_sha256": "344aa1d55e4a215fd11251d5546f2b56908998b15859f539730f99d23d32eae5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "3dcfa83ae05f9ed9876ed8b67d35425e40649cf6",
+      "node_id": "n67",
+      "subgoal_id": "n67:L01",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionHadamardPfaffian.gaussian_ones_even",
+      "source": "HadamardPfaffian.lean",
+      "source_sha256": "344aa1d55e4a215fd11251d5546f2b56908998b15859f539730f99d23d32eae5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "3dcfa83ae05f9ed9876ed8b67d35425e40649cf6",
+      "node_id": "n67",
+      "subgoal_id": "n67:L02",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionHadamardPfaffian.hadamard_inverse",
+      "source": "HadamardPfaffian.lean",
+      "source_sha256": "344aa1d55e4a215fd11251d5546f2b56908998b15859f539730f99d23d32eae5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "3dcfa83ae05f9ed9876ed8b67d35425e40649cf6",
+      "node_id": "n67",
+      "subgoal_id": "n67:L03",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    },
+    {
+      "theorem": "CollisionHadamardPfaffian.gaussian4",
+      "source": "HadamardPfaffian.lean",
+      "source_sha256": "344aa1d55e4a215fd11251d5546f2b56908998b15859f539730f99d23d32eae5",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "branch_ref": "3dcfa83ae05f9ed9876ed8b67d35425e40649cf6",
+      "node_id": "n67",
+      "subgoal_id": "n67:L04",
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "verification": "kernel-accepted supporting lemma, independent replay",
+      "depth_note": "Supporting theorem frozen inside this committed experiment artifact; no separate worktree claimed"
+    }
+  ],
+  "accepted_declarations": 10,
+  "count_note": "Supporting declarations only; no conjectural axiom or proof of Conjecture 1.5.",
+  "root_conjecture_verified": false
+}

@@ -1,0 +1,10 @@
+Nat.log2_def (n : Nat) : n.log2 = if 2 ≤ n then (n / 2).log2 + 1 else 0
+Nat.log2_lt {n k : Nat} (h : n ≠ 0) : n.log2 < k ↔ n < 2 ^ k
+Nat.log2_two_pow {n : Nat} : (2 ^ n).log2 = n
+Nat.pow_mul (a m n : Nat) : a ^ (m * n) = (a ^ m) ^ n
+Nat.pow_le_pow_left {n m : Nat} (h : n ≤ m) (i : Nat) : n ^ i ≤ m ^ i
+Nat.div_lt_self {n k : Nat} (hLtN : 0 < n) (hLtK : 1 < k) : n / k < n
+Nat.pow_succ (n m : Nat) : n ^ m.succ = n ^ m * n
+Nat.mod_add_div (m k : Nat) : m % k + k * (m / k) = m
+Nat.lt_pow_self {n a : Nat} (h : 1 < a) : n < a ^ n
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerProbe.lean:12:7: error(lean.unknownIdentifier): Unknown constant `Nat.lt_pow_two`

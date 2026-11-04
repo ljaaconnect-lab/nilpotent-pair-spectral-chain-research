@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "reports": [
+    {
+      "report": "documents/composition-native-2026-11-03/native-bounds-lean-validation.json",
+      "report_sha256": "2cda8a9188be3f5cd85c334140ad8998e28f8c4a8662a0a96d864bc449b08373",
+      "recorded_status": "passed",
+      "matched_source_and_dependency_hashes": 1
+    },
+    {
+      "report": "documents/induction-native-2026-11-03/shared-cost-induction-validation.json",
+      "report_sha256": "4fbe88021e7a71fac52c89c297c2c017999e0d033f0cdefd68edf261bf203308",
+      "recorded_status": "passed",
+      "matched_source_and_dependency_hashes": 1
+    },
+    {
+      "report": "documents/induction-native-2026-11-03/native-prefix-lean-validation.json",
+      "report_sha256": "54d29fbfe5e8eb01c5a4049b54cac8b1ce39c1ce3f511e6e384c75cba1c298cd",
+      "recorded_status": "passed",
+      "matched_source_and_dependency_hashes": 7
+    },
+    {
+      "report": "documents/induction-native-2026-11-03/spectral-readout-lean-validation.json",
+      "report_sha256": "3f5ccccaee1676c919a3a6a1dfa68d78c2506c345f2686a45efae056d3c6a2a6",
+      "recorded_status": "passed",
+      "matched_source_and_dependency_hashes": 1
+    },
+    {
+      "report": "documents/induction-native-2026-11-03/native-chain-lean-validation.json",
+      "report_sha256": "4a4427de97217671d57da35ca475cb5ee53a442f4f06273d6b23e193a30b8132",
+      "recorded_status": "passed",
+      "matched_source_and_dependency_hashes": 1
+    },
+    {
+      "report": "documents/fermeture-native-2026-11-03/all-closure-lean-validation.json",
+      "report_sha256": "ee53b62b95d96eb5e705939e834549154c2ce97c995754552bf8ae37f83c3478",
+      "recorded_status": "passed",
+      "matched_source_and_dependency_hashes": 13
+    },
+    {
+      "report": "documents/fermeture-native-2026-11-03/auxiliary-erasure-validation.json",
+      "report_sha256": "a8c6203d84b8baaff1acc6f23a578c65fa0ab05e3a25519994d36cd879f9f3a9",
+      "recorded_status": "passed",
+      "matched_source_and_dependency_hashes": 7
+    },
+    {
+      "report": "documents/fermeture-native-2026-11-03/shared-state-lean-validation.json",
+      "report_sha256": "11441c682313f629151b3a7ee059e5907112a292f082b10586b60525505c8aba",
+      "recorded_status": "passed",
+      "matched_source_and_dependency_hashes": 7
+    },
+    {
+      "report": "documents/fermeture-native-2026-11-03/tagged-closure-lean-validation.json",
+      "report_sha256": "3007fc7a1fab7cb904e0268106fb1adf5b63b7f61bc5b4d316bc0e717755e817",
+      "recorded_status": "passed",
+      "matched_source_and_dependency_hashes": 5
+    },
+    {
+      "report": "documents/fermeture-native-2026-11-03/terminal-label-lean-validation.json",
+      "report_sha256": "dcd180449de7c81a12e1876a9d191f25bb219f135fb92895af3b753d09b4b3d4",
+      "recorded_status": "passed",
+      "matched_source_and_dependency_hashes": 3
+    },
+    {
+      "report": "documents/fermeture-native-2026-11-03/certified-closure-lean-validation.json",
+      "report_sha256": "9141e09ce8a80a7c4d0f5323cc952a3fe9a25a995e0c3c85afff04ece2fa8d34",
+      "recorded_status": "passed",
+      "matched_source_and_dependency_hashes": 11
+    },
+    {
+      "report": "documents/cout-meme-circuit-2026-11-03/same-dag-cost-lean-validation.json",
+      "report_sha256": "9692324b96e8a8d233ca1e47a14e08a5909f4cdac898b93e4a07c02676b0026e",
+      "recorded_status": "passed",
+      "matched_source_and_dependency_hashes": 1
+    },
+    {
+      "report": "documents/verification-compilation-generique-2026-11-02.json",
+      "report_sha256": "60af1d855ae1f747e41c5a7e663ac3864a247974418d10b0336e1ac83d821dfa",
+      "recorded_status": "passed",
+      "matched_source_and_dependency_hashes": 6
+    }
+  ],
+  "unique_files_checked": 31,
+  "source_and_dependency_sha256": {
+    "documents/composition-native-2026-11-03/NativeCompositionBounds.lean": "0bb0960ddeb106a1b6c587187bfb5ee3cb7b501aa0da478e0aa8b706fb6e9a30",
+    "documents/cout-meme-circuit-2026-11-03/SameDAGCost.lean": "65cd3b070bd311979fc38bcb1425962b4e90cfc14acac5b03b1330b5f0ac88a9",
+    "documents/fermeture-native-2026-11-03/AuxiliaryErasure.lean": "61f744b1965e479226532e05a2c5c9f27a0a944ee4919134edaf01f505f93536",
+    "documents/fermeture-native-2026-11-03/CertifiedScalarClosure.lean": "b09edb916051ee7b7506acacb9a8e64210260084c3c426fb040b79a908f4a0e1",
+    "documents/fermeture-native-2026-11-03/SharedStateClosure.lean": "3a8967002e677b413ed521ac6d2f2b0646a3b50ac553e30dd19a4b66f53b968e",
+    "documents/fermeture-native-2026-11-03/TerminalLabelNecessity.lean": "9e4d34eab3d36e155270f844d553099866936b0376bf3439245eb9654721e26a",
+    "documents/fermeture-native-2026-11-03/TerminalTaggedClosure.lean": "629fb2f327960bd626d6b5847ebe6841094685e857e9576166273cc99bfbd09a",
+    "documents/fermeture-native-2026-11-03/replay_all.py": "f32c5b73adb461af8fbe5b910aca741b4692d5987c43ea69580d0d2761e16f52",
+    "documents/fermeture-native-2026-11-03/replay_auxiliary_erasure.py": "abe7cf68d97779abcc6dc9914ede7191a6fb512adcfad50a1dccdb77b6dd9380",
+    "documents/fermeture-native-2026-11-03/replay_certified_closure.py": "0261ac7be792122e18aa670ec171d4b15fe14e7ba166c960c0767196be0de507",
+    "documents/fermeture-native-2026-11-03/replay_shared_state.py": "ac65b62b49c531772a0ee3481e1c073cc5b6fd6b267ab16b6a030b967eae7548",
+    "documents/fermeture-native-2026-11-03/replay_tagged_closure.py": "c9f78d572fed20d89c6c50826eb1a3e28a9d17b950170281ca6bf13bf9b7c0df",
+    "documents/fermeture-native-2026-11-03/replay_terminal_label.py": "16982f94470bb188d136cceb50cc8fc325ce0f8baf6609336f5d600972a2037c",
+    "documents/induction-native-2026-11-03/NativeChainInduction.lean": "e7f0deb849367479632d7723ae8e1597f381df2edb57cca6aefc60071c8cbb46",
+    "documents/induction-native-2026-11-03/NativePrefixInduction.lean": "848ce82f955d76835748c3d86cd5324b4e0c3502ae53896fd5c0ada5db5214ed",
+    "documents/induction-native-2026-11-03/SharedCostInduction.lean": "4a697eaa53d71cf620fad2dcf766ea41dbad3f6816435538d8e8125ab27a6009",
+    "documents/induction-native-2026-11-03/SpectralReadoutCompatibility.lean": "06faa3f168773e65763ac0c0f2e29112fefb2864a83e7f90c831c227e256d046",
+    "documents/induction-native-2026-11-03/replay_native_prefix.py": "0b8dc7b0086a3899f020d70290fe057b4797678c7c2a40d2a4d0338bcd43a1f4",
+    "etudes/2026-10-07/livrables/conjecture-1-5-suite/proofs/ConditionalCriterion.lean": "5b3e39f792e255b9d893800652f94d844dc84bf2ded8ba28409e7c64b47fb6ab",
+    "etudes/2026-10-07/livrables/conjecture-1-5-suite/proofs/MatrixScalarCompiler.lean": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+    "etudes/2026-10-07/livrables/conjecture-1-5-suite/proofs/PowerCompiler.lean": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353",
+    "etudes/2026-11-01/lean-operateurs/lean_check.py": "a5e21cfb624e5258009425f6c6eecaf0eb1b529d953bbb2607717dab44a439ad",
+    "travail/audit-compilation-generique/build/MatrixScalarCompiler.olean": "3af2d83a084a074cb94c0fc09629f512f9917dcaaefad572827d4ca41a374708",
+    "travail/audit-compilation-generique/build/PowerCompiler.olean": "8af8c79424416700d97c35c1a7a1a4b9a3d7c1e3daaf12d8ce6bfbffadd760bb",
+    "travail/audit-compilation-generique/sources/ConditionalCriterion.lean": "5b3e39f792e255b9d893800652f94d844dc84bf2ded8ba28409e7c64b47fb6ab",
+    "travail/audit-compilation-generique/sources/MatrixScalarCompiler.lean": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+    "travail/audit-compilation-generique/sources/PowerCompiler.lean": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353",
+    "travail/fermeture-native/build/AuxiliaryErasure.olean": "3a2d56048aacb81fc205281d58ee789a13b26e1a7dd3ba42c856f53f5e49df00",
+    "travail/fermeture-native/build/SharedCostInduction.olean": "f8f9a69df6fb3829b0cd57e62211b2a1e669b6a086ebde69fb7428e8d8a64794",
+    "travail/fermeture-native/build/SharedStateClosure.olean": "81546b72edaa4082395e7295ae4232519de17cfb5edec9dff4a0bb2cffe6979c",
+    "travail/fermeture-native/build/TerminalTaggedClosure.olean": "5c159311e86b0d84ecce3ded15b69410781ab6c5db87c4817c95f6fdaf664321"
+  },
+  "lean_rerun_during_this_inventory": false,
+  "new_theorems_claimed": false,
+  "scope": "Inventory audit: read theorem hypotheses and verify present sources/dependencies match accepted Lean reports. No new assertion of unconditional scalar polynomial closure."
+}

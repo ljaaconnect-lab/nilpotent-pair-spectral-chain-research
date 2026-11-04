@@ -1,0 +1,57 @@
+{
+  "node": "n39",
+  "dev_score": 1.0,
+  "metric": "accepted_frozen_obligations / 5",
+  "compiler_exit_code": 0,
+  "lean_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "complete_rounds": 12,
+  "complete_round_budget": 16,
+  "accepted": [
+    "SquareZeroRankOne.scalar_product",
+    "SquareZeroRankOne.matrix_right_product",
+    "SquareZeroRankOne.matrix_left_product",
+    "SquareZeroRankOne.rank_one_two_sided",
+    "SquareZeroRankOne.propagate_left_factor"
+  ],
+  "additional_verified": [
+    "SquareZeroRankOne.propagate_rank_one"
+  ],
+  "axiom_audit": {
+    "SquareZeroRankOne.matrix_right_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SquareZeroRankOne.matrix_left_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SquareZeroRankOne.scalar_product": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SquareZeroRankOne.rank_one_two_sided": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SquareZeroRankOne.propagate_left_factor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SquareZeroRankOne.propagate_rank_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "unapproved_axioms": {},
+  "source_sha256": "f5ccfcef9a771b75f6785a5ae0dcda0fcd03ef992bc9072a74d6d7a8f80416e9",
+  "protocol_sha256": "650139fe928f442a88ef3a1b711a89d24723540b45e6927dbbf467f63f1b0427",
+  "root_conjecture_verified": false,
+  "held_out_accessed": false,
+  "result": "Explicit scalar and matrix square-zero update products verified.",
+  "remaining_constructive_obligation": "Instantiate the quotient-ring updates and compile coefficient contraction to a polynomial-size scalar circuit with cheap initialized data."
+}

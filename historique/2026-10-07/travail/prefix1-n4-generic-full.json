@@ -1,0 +1,79 @@
+{
+  "n": 4,
+  "J": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "depth": 1,
+  "marked": false,
+  "nodes": [
+    {
+      "op": "variable",
+      "name": "b_0_0"
+    },
+    {
+      "op": "variable",
+      "name": "b_0_1"
+    },
+    {
+      "op": "variable",
+      "name": "b_0_2"
+    },
+    {
+      "op": "variable",
+      "name": "b_0_3"
+    },
+    {
+      "op": "add",
+      "left": 0,
+      "right": 1
+    },
+    {
+      "op": "add",
+      "left": 4,
+      "right": 2
+    },
+    {
+      "op": "add",
+      "left": 5,
+      "right": 3
+    },
+    {
+      "op": "add",
+      "left": 0,
+      "right": 1
+    },
+    {
+      "op": "add",
+      "left": 7,
+      "right": 2
+    },
+    {
+      "op": "add",
+      "left": 8,
+      "right": 3
+    },
+    {
+      "op": "constant",
+      "value": "-1"
+    },
+    {
+      "op": "mul",
+      "left": 10,
+      "right": 9
+    },
+    {
+      "op": "add",
+      "left": 6,
+      "right": 11
+    }
+  ],
+  "output": 12,
+  "initialization_gates": 3,
+  "query_gates": 5,
+  "gates": 8,
+  "scope": "One explicit subset query at fixed prefix depth; not a full extractor",
+  "root_conjecture_verified": false
+}

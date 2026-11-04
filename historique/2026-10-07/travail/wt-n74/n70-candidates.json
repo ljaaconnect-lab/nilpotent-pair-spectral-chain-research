@@ -1,0 +1,30 @@
+{
+  "node": "n70",
+  "artifact_version": "n70-row-block-transfer-v1",
+  "root_protocol": "n70-protocol.json",
+  "hypothesis_unchanged": true,
+  "candidate_limit": 3,
+  "candidates": [
+    {
+      "id": "row-anchored-residual",
+      "construction": "Simultaneous row projection gives F=h-A-B+sum_j U_j V_j; with shared odd row anchors its residual is one row pair times an explicit bilinear matrix",
+      "new_closure_question": "Can the structured row-pair residual be transported through every later block using a polynomial scalar state, retaining the complete future product?"
+    },
+    {
+      "id": "common-base-plus-rank-one-aggregation",
+      "construction": "For D_i=alpha_i I+u_i v_i^T in a single common basis, the fully multilinear determinant coefficient is a factorial-weighted univariate determinant coefficient sum",
+      "new_closure_question": "Does an actual context-preserving transport of all weighted row residuals produce this common-base class with cheap data and boundary?"
+    },
+    {
+      "id": "coherent-row-gaussian-mixture",
+      "construction": "Division-free row factor is a linear combination of 2n+3 Gaussian exponentials, with all future factors retained in each branch",
+      "new_closure_question": "Can the global family of Gaussian branches be merged into a polynomial scalar representation valid for every future context?"
+    }
+  ],
+  "support_status": "Informal derivations only; no Lean allocation",
+  "development_evaluator_status": "Not instantiated because no complete executable candidate has been isolated",
+  "sympy_checks_planned_without_complete_candidate": [],
+  "forbidden_free_gates": ["derivative", "Gaussian integral", "coefficient extractor", "Hadamard contraction", "Pfaffian"],
+  "held_out_access": false,
+  "root_conjecture_verified": false
+}

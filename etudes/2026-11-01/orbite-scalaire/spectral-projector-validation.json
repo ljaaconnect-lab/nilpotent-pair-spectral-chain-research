@@ -1,0 +1,2317 @@
+{
+  "status": "pass",
+  "date": "2026-11-01",
+  "scope": "Scalar NTT coefficient-fusion and readout component from supplied mu_(j,f); initialization from a_ij,z is outside the bound.",
+  "general_polynomial_closure_proved": false,
+  "observation_initialization_included": false,
+  "coefficient_wires_shared_across_all_N_frequencies": true,
+  "coefficient_vectors_checked": 22,
+  "synthetic_cases_checked": 44,
+  "frequencies_checked": 300,
+  "full_inverse_ntt_tables_checked": 44,
+  "field_requirement": "Q prime, Q>max(2,h), M|Q-1 and N|Q-1; exact root orders checked",
+  "formula_h_positive": "3*h*M + 2*M*log2(M) + N*(2*h+1) + 2*N*log2(N)+N",
+  "formula_h_zero": "2*N*log2(N)+N; no inner transform and no readout multiplication",
+  "invalid_parameters_rejected": [
+    [
+      3,
+      3,
+      1,
+      1
+    ],
+    [
+      4,
+      17,
+      2,
+      1
+    ],
+    [
+      2,
+      17,
+      1,
+      16
+    ],
+    [
+      11,
+      97,
+      8,
+      1
+    ]
+  ],
+  "synthetic_cases_source": "validation.json",
+  "synthetic_cases_source_sha256": "0025c0dcc3dfd58dc540830bc20dfcd1e0e0f51b254f9ebedaabee10b729de41",
+  "source_sha256": {
+    "collision_observer.py": "53eb5d5890e2d5d8187928a41fec58de5697e98cb85c3b2dab3a64506432867e",
+    "spectral_projector.py": "e82cb9af832baed580a2f029f5d9e640b8652f2bc00f0beeebcab05e857a75d9",
+    "verify_spectral_projector.py": "965b0098a6ca764d640c9cf8d1b0198e969b7cb168b87a226e3622d3dc2a04de"
+  },
+  "configurations": [
+    {
+      "n": 1,
+      "h": 0,
+      "Q": 17,
+      "N": 2,
+      "M": 1,
+      "root_N": 16,
+      "root_M": null,
+      "pi_coefficients_including_padding": [
+        1
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 0,
+        "pointwise_products": 0,
+        "coefficient_inverse_ntt": 0,
+        "shared_inner_total": 0,
+        "shared_inner_formula": 0,
+        "observer_readouts": 0,
+        "outer_inverse_ntt": 6,
+        "total": 6,
+        "total_formula": 6,
+        "scalar_additions": 2,
+        "scalar_multiplications": 4,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 2,
+      "h": 1,
+      "Q": 17,
+      "N": 4,
+      "M": 2,
+      "root_N": 13,
+      "root_M": 16,
+      "pi_coefficients_including_padding": [
+        1,
+        16
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 4,
+        "pointwise_products": 0,
+        "coefficient_inverse_ntt": 6,
+        "shared_inner_total": 10,
+        "shared_inner_formula": 10,
+        "observer_readouts": 12,
+        "outer_inverse_ntt": 20,
+        "total": 42,
+        "total_formula": 42,
+        "scalar_additions": 16,
+        "scalar_multiplications": 26,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 3,
+      "h": 3,
+      "Q": 17,
+      "N": 4,
+      "M": 4,
+      "root_N": 13,
+      "root_M": 13,
+      "pi_coefficients_including_padding": [
+        1,
+        1,
+        1,
+        14
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 24,
+        "pointwise_products": 8,
+        "coefficient_inverse_ntt": 20,
+        "shared_inner_total": 52,
+        "shared_inner_formula": 52,
+        "observer_readouts": 28,
+        "outer_inverse_ntt": 20,
+        "total": 100,
+        "total_formula": 100,
+        "scalar_additions": 40,
+        "scalar_multiplications": 60,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 4,
+      "h": 6,
+      "Q": 17,
+      "N": 8,
+      "M": 8,
+      "root_N": 9,
+      "root_M": 9,
+      "pi_coefficients_including_padding": [
+        1,
+        12,
+        10,
+        5,
+        15,
+        5,
+        3,
+        0
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 96,
+        "pointwise_products": 40,
+        "coefficient_inverse_ntt": 56,
+        "shared_inner_total": 192,
+        "shared_inner_formula": 192,
+        "observer_readouts": 104,
+        "outer_inverse_ntt": 56,
+        "total": 352,
+        "total_formula": 352,
+        "scalar_additions": 144,
+        "scalar_multiplications": 208,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 5,
+      "h": 10,
+      "Q": 17,
+      "N": 8,
+      "M": 16,
+      "root_N": 9,
+      "root_M": 3,
+      "pi_coefficients_including_padding": [
+        1,
+        12,
+        15,
+        14,
+        12,
+        6,
+        7,
+        15,
+        2,
+        7,
+        11,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 320,
+        "pointwise_products": 144,
+        "coefficient_inverse_ntt": 144,
+        "shared_inner_total": 608,
+        "shared_inner_formula": 608,
+        "observer_readouts": 168,
+        "outer_inverse_ntt": 56,
+        "total": 832,
+        "total_formula": 832,
+        "scalar_additions": 328,
+        "scalar_multiplications": 504,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 6,
+      "h": 15,
+      "Q": 17,
+      "N": 8,
+      "M": 16,
+      "root_N": 9,
+      "root_M": 3,
+      "pi_coefficients_including_padding": [
+        1,
+        16,
+        1,
+        16,
+        1,
+        16,
+        1,
+        16,
+        1,
+        16,
+        1,
+        16,
+        1,
+        16,
+        1,
+        16
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 480,
+        "pointwise_products": 224,
+        "coefficient_inverse_ntt": 144,
+        "shared_inner_total": 848,
+        "shared_inner_formula": 848,
+        "observer_readouts": 248,
+        "outer_inverse_ntt": 56,
+        "total": 1152,
+        "total_formula": 1152,
+        "scalar_additions": 448,
+        "scalar_multiplications": 704,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 1,
+      "h": 0,
+      "Q": 97,
+      "N": 2,
+      "M": 1,
+      "root_N": 96,
+      "root_M": null,
+      "pi_coefficients_including_padding": [
+        1
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 0,
+        "pointwise_products": 0,
+        "coefficient_inverse_ntt": 0,
+        "shared_inner_total": 0,
+        "shared_inner_formula": 0,
+        "observer_readouts": 0,
+        "outer_inverse_ntt": 6,
+        "total": 6,
+        "total_formula": 6,
+        "scalar_additions": 2,
+        "scalar_multiplications": 4,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 2,
+      "h": 1,
+      "Q": 97,
+      "N": 4,
+      "M": 2,
+      "root_N": 22,
+      "root_M": 96,
+      "pi_coefficients_including_padding": [
+        1,
+        96
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 4,
+        "pointwise_products": 0,
+        "coefficient_inverse_ntt": 6,
+        "shared_inner_total": 10,
+        "shared_inner_formula": 10,
+        "observer_readouts": 12,
+        "outer_inverse_ntt": 20,
+        "total": 42,
+        "total_formula": 42,
+        "scalar_additions": 16,
+        "scalar_multiplications": 26,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 3,
+      "h": 3,
+      "Q": 97,
+      "N": 4,
+      "M": 4,
+      "root_N": 22,
+      "root_M": 22,
+      "pi_coefficients_including_padding": [
+        1,
+        79,
+        1,
+        16
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 24,
+        "pointwise_products": 8,
+        "coefficient_inverse_ntt": 20,
+        "shared_inner_total": 52,
+        "shared_inner_formula": 52,
+        "observer_readouts": 28,
+        "outer_inverse_ntt": 20,
+        "total": 100,
+        "total_formula": 100,
+        "scalar_additions": 40,
+        "scalar_multiplications": 60,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 4,
+      "h": 6,
+      "Q": 97,
+      "N": 8,
+      "M": 8,
+      "root_N": 64,
+      "root_M": 64,
+      "pi_coefficients_including_padding": [
+        1,
+        80,
+        68,
+        1,
+        9,
+        61,
+        71,
+        0
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 96,
+        "pointwise_products": 40,
+        "coefficient_inverse_ntt": 56,
+        "shared_inner_total": 192,
+        "shared_inner_formula": 192,
+        "observer_readouts": 104,
+        "outer_inverse_ntt": 56,
+        "total": 352,
+        "total_formula": 352,
+        "scalar_additions": 144,
+        "scalar_multiplications": 208,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 5,
+      "h": 10,
+      "Q": 97,
+      "N": 8,
+      "M": 16,
+      "root_N": 64,
+      "root_M": 8,
+      "pi_coefficients_including_padding": [
+        1,
+        53,
+        7,
+        78,
+        52,
+        50,
+        89,
+        74,
+        44,
+        79,
+        55,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 320,
+        "pointwise_products": 144,
+        "coefficient_inverse_ntt": 144,
+        "shared_inner_total": 608,
+        "shared_inner_formula": 608,
+        "observer_readouts": 168,
+        "outer_inverse_ntt": 56,
+        "total": 832,
+        "total_formula": 832,
+        "scalar_additions": 328,
+        "scalar_multiplications": 504,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 6,
+      "h": 15,
+      "Q": 97,
+      "N": 8,
+      "M": 16,
+      "root_N": 64,
+      "root_M": 8,
+      "pi_coefficients_including_padding": [
+        1,
+        70,
+        25,
+        9,
+        47,
+        94,
+        93,
+        18,
+        14,
+        47,
+        59,
+        74,
+        1,
+        79,
+        59,
+        86
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 480,
+        "pointwise_products": 224,
+        "coefficient_inverse_ntt": 144,
+        "shared_inner_total": 848,
+        "shared_inner_formula": 848,
+        "observer_readouts": 248,
+        "outer_inverse_ntt": 56,
+        "total": 1152,
+        "total_formula": 1152,
+        "scalar_additions": 448,
+        "scalar_multiplications": 704,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 7,
+      "h": 21,
+      "Q": 97,
+      "N": 8,
+      "M": 32,
+      "root_N": 64,
+      "root_M": 28,
+      "pi_coefficients_including_padding": [
+        1,
+        86,
+        1,
+        9,
+        63,
+        71,
+        77,
+        83,
+        33,
+        31,
+        48,
+        64,
+        6,
+        15,
+        74,
+        6,
+        8,
+        12,
+        48,
+        64,
+        40,
+        33,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 1344,
+        "pointwise_products": 640,
+        "coefficient_inverse_ntt": 352,
+        "shared_inner_total": 2336,
+        "shared_inner_formula": 2336,
+        "observer_readouts": 344,
+        "outer_inverse_ntt": 56,
+        "total": 2736,
+        "total_formula": 2736,
+        "scalar_additions": 1024,
+        "scalar_multiplications": 1712,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 8,
+      "h": 28,
+      "Q": 97,
+      "N": 16,
+      "M": 32,
+      "root_N": 8,
+      "root_M": 28,
+      "pi_coefficients_including_padding": [
+        1,
+        76,
+        40,
+        3,
+        64,
+        30,
+        58,
+        76,
+        78,
+        67,
+        46,
+        79,
+        0,
+        81,
+        82,
+        59,
+        86,
+        94,
+        63,
+        90,
+        69,
+        47,
+        36,
+        12,
+        80,
+        81,
+        56,
+        15,
+        80,
+        0,
+        0,
+        0
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 1792,
+        "pointwise_products": 864,
+        "coefficient_inverse_ntt": 352,
+        "shared_inner_total": 3008,
+        "shared_inner_formula": 3008,
+        "observer_readouts": 912,
+        "outer_inverse_ntt": 144,
+        "total": 4064,
+        "total_formula": 4064,
+        "scalar_additions": 1568,
+        "scalar_multiplications": 2496,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 1,
+      "h": 0,
+      "Q": 998244353,
+      "N": 2,
+      "M": 1,
+      "root_N": 998244352,
+      "root_M": null,
+      "pi_coefficients_including_padding": [
+        1
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 0,
+        "pointwise_products": 0,
+        "coefficient_inverse_ntt": 0,
+        "shared_inner_total": 0,
+        "shared_inner_formula": 0,
+        "observer_readouts": 0,
+        "outer_inverse_ntt": 6,
+        "total": 6,
+        "total_formula": 6,
+        "scalar_additions": 2,
+        "scalar_multiplications": 4,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 2,
+      "h": 1,
+      "Q": 998244353,
+      "N": 4,
+      "M": 2,
+      "root_N": 911660635,
+      "root_M": 998244352,
+      "pi_coefficients_including_padding": [
+        1,
+        998244352
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 4,
+        "pointwise_products": 0,
+        "coefficient_inverse_ntt": 6,
+        "shared_inner_total": 10,
+        "shared_inner_formula": 10,
+        "observer_readouts": 12,
+        "outer_inverse_ntt": 20,
+        "total": 42,
+        "total_formula": 42,
+        "scalar_additions": 16,
+        "scalar_multiplications": 26,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 3,
+      "h": 3,
+      "Q": 998244353,
+      "N": 4,
+      "M": 4,
+      "root_N": 911660635,
+      "root_M": 911660635,
+      "pi_coefficients_including_padding": [
+        1,
+        166374057,
+        1,
+        831870294
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 24,
+        "pointwise_products": 8,
+        "coefficient_inverse_ntt": 20,
+        "shared_inner_total": 52,
+        "shared_inner_formula": 52,
+        "observer_readouts": 28,
+        "outer_inverse_ntt": 20,
+        "total": 100,
+        "total_formula": 100,
+        "scalar_additions": 40,
+        "scalar_multiplications": 60,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 4,
+      "h": 6,
+      "Q": 998244353,
+      "N": 8,
+      "M": 8,
+      "root_N": 372528824,
+      "root_M": 372528824,
+      "pi_coefficients_including_padding": [
+        1,
+        648858827,
+        321656516,
+        353544874,
+        533783439,
+        494962825,
+        641926577,
+        0
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 96,
+        "pointwise_products": 40,
+        "coefficient_inverse_ntt": 56,
+        "shared_inner_total": 192,
+        "shared_inner_formula": 192,
+        "observer_readouts": 104,
+        "outer_inverse_ntt": 56,
+        "total": 352,
+        "total_formula": 352,
+        "scalar_additions": 144,
+        "scalar_multiplications": 208,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 5,
+      "h": 10,
+      "Q": 998244353,
+      "N": 8,
+      "M": 16,
+      "root_N": 372528824,
+      "root_M": 929031873,
+      "pi_coefficients_including_padding": [
+        1,
+        173108244,
+        276081909,
+        8775349,
+        432932921,
+        884064378,
+        225754578,
+        855349173,
+        191891350,
+        574313733,
+        370705776,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 320,
+        "pointwise_products": 144,
+        "coefficient_inverse_ntt": 144,
+        "shared_inner_total": 608,
+        "shared_inner_formula": 608,
+        "observer_readouts": 168,
+        "outer_inverse_ntt": 56,
+        "total": 832,
+        "total_formula": 832,
+        "scalar_additions": 328,
+        "scalar_multiplications": 504,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 6,
+      "h": 15,
+      "Q": 998244353,
+      "N": 8,
+      "M": 16,
+      "root_N": 372528824,
+      "root_M": 929031873,
+      "pi_coefficients_including_padding": [
+        1,
+        60469183,
+        899061366,
+        391629142,
+        633542855,
+        895769942,
+        831566504,
+        527193062,
+        114627126,
+        911636288,
+        954310928,
+        743479304,
+        43171194,
+        616842948,
+        516697446,
+        844201888
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 480,
+        "pointwise_products": 224,
+        "coefficient_inverse_ntt": 144,
+        "shared_inner_total": 848,
+        "shared_inner_formula": 848,
+        "observer_readouts": 248,
+        "outer_inverse_ntt": 56,
+        "total": 1152,
+        "total_formula": 1152,
+        "scalar_additions": 448,
+        "scalar_multiplications": 704,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 7,
+      "h": 21,
+      "Q": 998244353,
+      "N": 8,
+      "M": 32,
+      "root_N": 372528824,
+      "root_M": 452798380,
+      "pi_coefficients_including_padding": [
+        1,
+        584338366,
+        629796837,
+        119429287,
+        538581357,
+        870153843,
+        638267543,
+        706241119,
+        849928054,
+        747676938,
+        399833822,
+        434337677,
+        165843014,
+        176976419,
+        879554225,
+        643042987,
+        262016675,
+        668223959,
+        209787465,
+        677855413,
+        417612783,
+        361190099,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 1344,
+        "pointwise_products": 640,
+        "coefficient_inverse_ntt": 352,
+        "shared_inner_total": 2336,
+        "shared_inner_formula": 2336,
+        "observer_readouts": 344,
+        "outer_inverse_ntt": 56,
+        "total": 2736,
+        "total_formula": 2736,
+        "scalar_additions": 1024,
+        "scalar_multiplications": 1712,
+        "observation_initialization_included": false
+      }
+    },
+    {
+      "n": 8,
+      "h": 28,
+      "Q": 998244353,
+      "N": 16,
+      "M": 32,
+      "root_N": 929031873,
+      "root_M": 452798380,
+      "pi_coefficients_including_padding": [
+        1,
+        442629560,
+        563278434,
+        223181017,
+        107155403,
+        850832412,
+        468001362,
+        72202966,
+        184935068,
+        938933316,
+        991658339,
+        827603702,
+        67541239,
+        413441058,
+        698235566,
+        32396911,
+        155962804,
+        224085004,
+        629442968,
+        114812527,
+        910756416,
+        626070801,
+        397768257,
+        649997598,
+        651250632,
+        22333653,
+        952859596,
+        51823402,
+        707986577,
+        0,
+        0,
+        0
+      ],
+      "coefficients_match_independent_convolution": true,
+      "coefficients_above_h_are_zero": true,
+      "costs": {
+        "factor_ntt_evaluations": 1792,
+        "pointwise_products": 864,
+        "coefficient_inverse_ntt": 352,
+        "shared_inner_total": 3008,
+        "shared_inner_formula": 3008,
+        "observer_readouts": 912,
+        "outer_inverse_ntt": 144,
+        "total": 4064,
+        "total_formula": 4064,
+        "scalar_additions": 1568,
+        "scalar_multiplications": 2496,
+        "observation_initialization_included": false
+      }
+    }
+  ],
+  "cases": [
+    {
+      "n": 1,
+      "Q": 17,
+      "mixture_id": 0,
+      "labels": [
+        2
+      ],
+      "observation_table_sha256": "8d3f47cc7eeff2999b863abbc150c6f1f57e3e48607c242fe58aef519b65afcd",
+      "projected_frequencies": [
+        4,
+        4
+      ],
+      "inverse_ntt_channels": [
+        4,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 1,
+      "Q": 17,
+      "mixture_id": 1,
+      "labels": [
+        4
+      ],
+      "observation_table_sha256": "9f420dd0dc615819b91345b29ef669f13335ec7a17efbf965c7247ba21baefbf",
+      "projected_frequencies": [
+        1,
+        1
+      ],
+      "inverse_ntt_channels": [
+        1,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 2,
+      "Q": 17,
+      "mixture_id": 0,
+      "labels": [
+        0,
+        6
+      ],
+      "observation_table_sha256": "96606001c3d9a0d4c25eaf602e974be0eca9ab03bdd215755338faa8fba3535c",
+      "projected_frequencies": [
+        3,
+        14,
+        3,
+        14
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        3,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 2,
+      "Q": 17,
+      "mixture_id": 1,
+      "labels": [
+        10,
+        4
+      ],
+      "observation_table_sha256": "adbec1d14a2c722767c8c171498a12807bd5ff13de019832e7e0803bb97bf3ad",
+      "projected_frequencies": [
+        5,
+        12,
+        5,
+        12
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        5,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 3,
+      "Q": 17,
+      "mixture_id": 0,
+      "labels": [
+        8,
+        8,
+        0
+      ],
+      "observation_table_sha256": "5fea82ad93b859649d55996e5c617eabd6b6dfe9acc100d7e90de652faf47384",
+      "projected_frequencies": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "inverse_ntt_channels": [
+        8,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 3,
+      "Q": 17,
+      "mixture_id": 1,
+      "labels": [
+        4,
+        4,
+        0
+      ],
+      "observation_table_sha256": "c0f9289c939b73f3c2be52b0f7b3d0dae2d67e377179bb0a806c1d103c5190b0",
+      "projected_frequencies": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "inverse_ntt_channels": [
+        16,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 4,
+      "Q": 17,
+      "mixture_id": 0,
+      "labels": [
+        8,
+        8,
+        10,
+        0
+      ],
+      "observation_table_sha256": "dfe758531c9398878ded91ad8834df479d5bdfc64b819a1521fbab1b58e0d3ec",
+      "projected_frequencies": [
+        1,
+        13,
+        16,
+        4,
+        1,
+        13,
+        16,
+        4
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 4,
+      "Q": 17,
+      "mixture_id": 1,
+      "labels": [
+        23,
+        23,
+        1,
+        0
+      ],
+      "observation_table_sha256": "3ec3907b214793c21425bc0e50b5af6dc33aa39db7c0d16552cb6e94e4cd95f0",
+      "projected_frequencies": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        15,
+        13,
+        9
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 5,
+      "Q": 17,
+      "mixture_id": 0,
+      "labels": [
+        17,
+        17,
+        12,
+        1,
+        0
+      ],
+      "observation_table_sha256": "24c84b4c7f26ed88321842c9b130aec8561d4f2f3bad7ed09a28df210a05479b",
+      "projected_frequencies": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        15,
+        13,
+        9
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 5,
+      "Q": 17,
+      "mixture_id": 1,
+      "labels": [
+        14,
+        14,
+        0,
+        2,
+        0
+      ],
+      "observation_table_sha256": "9cdb316ae48f6475dad483df976f9bdc96862e740837a3332eac2a2ed19a3238",
+      "projected_frequencies": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 6,
+      "Q": 17,
+      "mixture_id": 0,
+      "labels": [
+        5,
+        5,
+        7,
+        12,
+        17,
+        0
+      ],
+      "observation_table_sha256": "92516d25947cb133cdfb032982e34481251d92d600b665de3a4d7a911f03a399",
+      "projected_frequencies": [
+        1,
+        4,
+        16,
+        13,
+        1,
+        4,
+        16,
+        13
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 6,
+      "Q": 17,
+      "mixture_id": 1,
+      "labels": [
+        18,
+        18,
+        4,
+        2,
+        7,
+        0
+      ],
+      "observation_table_sha256": "559d00b498f91e9b6ad666fe1a450eb351c4bc3035ede33b1d652e60a6b810d0",
+      "projected_frequencies": [
+        1,
+        9,
+        13,
+        15,
+        16,
+        8,
+        4,
+        2
+      ],
+      "inverse_ntt_channels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 1,
+      "Q": 97,
+      "mixture_id": 0,
+      "labels": [
+        5
+      ],
+      "observation_table_sha256": "ac7bab99c0d689edca14c0c15782217dd83b410246ba989a0c05b09fed9ccbf6",
+      "projected_frequencies": [
+        81,
+        16
+      ],
+      "inverse_ntt_channels": [
+        0,
+        81
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 1,
+      "Q": 97,
+      "mixture_id": 1,
+      "labels": [
+        1
+      ],
+      "observation_table_sha256": "79970ebc7c165b12c5af6a4281d4b02f8dd7634a373d460fb1705febd27af310",
+      "projected_frequencies": [
+        38,
+        59
+      ],
+      "inverse_ntt_channels": [
+        0,
+        38
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "mixture_id": 0,
+      "labels": [
+        8,
+        9
+      ],
+      "observation_table_sha256": "d38d17d9561c5013e192f07ee4cd85e86786069f9d5b0332e54353131020437f",
+      "projected_frequencies": [
+        30,
+        78,
+        67,
+        19
+      ],
+      "inverse_ntt_channels": [
+        0,
+        30,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "mixture_id": 1,
+      "labels": [
+        3,
+        2
+      ],
+      "observation_table_sha256": "0b366b74aaadb33d0807603e16e7e281c5ad3c19842e0889c28cd5d8233aec6a",
+      "projected_frequencies": [
+        87,
+        71,
+        10,
+        26
+      ],
+      "inverse_ntt_channels": [
+        0,
+        87,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "mixture_id": 0,
+      "labels": [
+        1,
+        1,
+        0
+      ],
+      "observation_table_sha256": "68962157b58e41d8110a253378f940c11d0432d5424790ab4283439b52504bc3",
+      "projected_frequencies": [
+        8,
+        89,
+        8,
+        89
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        8,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "mixture_id": 1,
+      "labels": [
+        2,
+        2,
+        0
+      ],
+      "observation_table_sha256": "fa62699c751fbb9444ea98e808e5eabce54110caaa6f3337e80f913ca63c005e",
+      "projected_frequencies": [
+        90,
+        90,
+        90,
+        90
+      ],
+      "inverse_ntt_channels": [
+        90,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "mixture_id": 0,
+      "labels": [
+        0,
+        0,
+        7,
+        0
+      ],
+      "observation_table_sha256": "12118f8553f6e6af8c82fd9a2730faa03ee8648e351bc60ef8ede74321bce270",
+      "projected_frequencies": [
+        42,
+        34,
+        46,
+        28,
+        55,
+        63,
+        51,
+        69
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        42
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "mixture_id": 1,
+      "labels": [
+        20,
+        20,
+        9,
+        0
+      ],
+      "observation_table_sha256": "e39fd07a0042d2855d08c65ef7fee3030ef2945a5c38759c09379738d0fc5f5c",
+      "projected_frequencies": [
+        68,
+        84,
+        41,
+        5,
+        29,
+        13,
+        56,
+        92
+      ],
+      "inverse_ntt_channels": [
+        0,
+        68,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "mixture_id": 0,
+      "labels": [
+        12,
+        12,
+        13,
+        11,
+        0
+      ],
+      "observation_table_sha256": "03f250c2651a48e2675b367cc54c7404890fc644a04765f01ae3a9623580bf76",
+      "projected_frequencies": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "inverse_ntt_channels": [
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "mixture_id": 1,
+      "labels": [
+        18,
+        18,
+        1,
+        6,
+        0
+      ],
+      "observation_table_sha256": "a7464cbe2d6117e8cce4417a515de3d3c3ee54058b0661a43c4afe660af7499e",
+      "projected_frequencies": [
+        71,
+        58,
+        87,
+        82,
+        26,
+        39,
+        10,
+        15
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        71,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "mixture_id": 0,
+      "labels": [
+        2,
+        2,
+        7,
+        6,
+        19,
+        0
+      ],
+      "observation_table_sha256": "69adb0d74fdaba4be47e2fae391be16691f1adf99e6d9c53d0335d08a359d64c",
+      "projected_frequencies": [
+        15,
+        82,
+        15,
+        82,
+        15,
+        82,
+        15,
+        82
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "mixture_id": 1,
+      "labels": [
+        9,
+        9,
+        15,
+        13,
+        16,
+        0
+      ],
+      "observation_table_sha256": "b52fa702bb5c1e64e392c1110d8ca9edbabb40b46d601b7fe97ee6d372831383",
+      "projected_frequencies": [
+        1,
+        75,
+        96,
+        22,
+        1,
+        75,
+        96,
+        22
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 7,
+      "Q": 97,
+      "mixture_id": 0,
+      "labels": [
+        11,
+        11,
+        15,
+        8,
+        1,
+        0,
+        0
+      ],
+      "observation_table_sha256": "23e03832634ceb264670474d86799be6a682171930b3f75513fdf78d04207813",
+      "projected_frequencies": [
+        1,
+        75,
+        96,
+        22,
+        1,
+        75,
+        96,
+        22
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 7,
+      "Q": 97,
+      "mixture_id": 1,
+      "labels": [
+        8,
+        8,
+        5,
+        19,
+        13,
+        21,
+        0
+      ],
+      "observation_table_sha256": "e18e10eb86af6c12d39a0070362b3136dd1d422bb343d8809845c602c0e983f8",
+      "projected_frequencies": [
+        1,
+        22,
+        96,
+        75,
+        1,
+        22,
+        96,
+        75
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 8,
+      "Q": 97,
+      "mixture_id": 0,
+      "labels": [
+        10,
+        10,
+        27,
+        9,
+        13,
+        22,
+        11,
+        0
+      ],
+      "observation_table_sha256": "ad0f59511c63b1d791f05c6fd9876acbc3b412a1bafd7a593e61865b2e95c1d6",
+      "projected_frequencies": [
+        1,
+        50,
+        75,
+        64,
+        96,
+        47,
+        22,
+        33,
+        1,
+        50,
+        75,
+        64,
+        96,
+        47,
+        22,
+        33
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 8,
+      "Q": 97,
+      "mixture_id": 1,
+      "labels": [
+        9,
+        9,
+        14,
+        9,
+        47,
+        3,
+        5,
+        0
+      ],
+      "observation_table_sha256": "17e1d1ae13379f7eb4a87fcc9db46ae542ce833463940dbc1bb1dff7de8a02a3",
+      "projected_frequencies": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "inverse_ntt_channels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 1,
+      "Q": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        1
+      ],
+      "observation_table_sha256": "bdce81bfd5cef1998b7c1da8a95d73f709813fa95d8f217c6ff413591ae8466e",
+      "projected_frequencies": [
+        468712133,
+        529532220
+      ],
+      "inverse_ntt_channels": [
+        0,
+        468712133
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 1,
+      "Q": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        1
+      ],
+      "observation_table_sha256": "1aa8ea25bea7320b2b0c71717479dec002daccb2b7194f2156990a2f505f903e",
+      "projected_frequencies": [
+        835905177,
+        162339176
+      ],
+      "inverse_ntt_channels": [
+        0,
+        835905177
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 2,
+      "Q": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        1,
+        9
+      ],
+      "observation_table_sha256": "46039ad757370ab1c512851d5142851d7ba120754408e3c070ec10d084cc07df",
+      "projected_frequencies": [
+        700890938,
+        297353415,
+        700890938,
+        297353415
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        700890938,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 2,
+      "Q": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        9,
+        9
+      ],
+      "observation_table_sha256": "61de01db567f82ccccd9ec18d8f4f05869d218ad733134b3e4bcb128c5bd6783",
+      "projected_frequencies": [
+        418379940,
+        579864413,
+        418379940,
+        579864413
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        418379940,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 3,
+      "Q": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        6,
+        6,
+        0
+      ],
+      "observation_table_sha256": "5500e563c213901da2d3bc46e6c5a479c63f92a1a543becb95c514171507956a",
+      "projected_frequencies": [
+        373566327,
+        373566327,
+        373566327,
+        373566327
+      ],
+      "inverse_ntt_channels": [
+        373566327,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 3,
+      "Q": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        8,
+        8,
+        0
+      ],
+      "observation_table_sha256": "abfdd28953d9287ced3232f96ed1b8e5614de445268aae3e2b1d6afe28eee0a2",
+      "projected_frequencies": [
+        731464632,
+        731464632,
+        731464632,
+        731464632
+      ],
+      "inverse_ntt_channels": [
+        731464632,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 4,
+      "Q": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        10,
+        10,
+        12,
+        0
+      ],
+      "observation_table_sha256": "a1c44fd07c60203e4e7a3f1c3f6f454b7c5ff5369dbb919dcb5f41816d628cb6",
+      "projected_frequencies": [
+        359875593,
+        359875593,
+        359875593,
+        359875593,
+        359875593,
+        359875593,
+        359875593,
+        359875593
+      ],
+      "inverse_ntt_channels": [
+        359875593,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 4,
+      "Q": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        4,
+        4,
+        5,
+        0
+      ],
+      "observation_table_sha256": "e21c3aadf11992f70fb163ec540855b962c15e22844638c49b1c14b41203f9fa",
+      "projected_frequencies": [
+        1,
+        625715529,
+        911660635,
+        509520358,
+        998244352,
+        372528824,
+        86583718,
+        488723995
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 5,
+      "Q": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        5,
+        5,
+        18,
+        13,
+        0
+      ],
+      "observation_table_sha256": "0e3930c89e02b6c41d625ef9cb14a44ad119faf8b34c8620a06d1ee8c8665af6",
+      "projected_frequencies": [
+        384976521,
+        311986417,
+        94819588,
+        447513503,
+        613267832,
+        686257936,
+        903424765,
+        550730850
+      ],
+      "inverse_ntt_channels": [
+        0,
+        384976521,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 5,
+      "Q": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        2,
+        2,
+        15,
+        9,
+        0
+      ],
+      "observation_table_sha256": "12b80e787a3b3d970066865411b93bb84bc822b8318f6f4c44659ccb3d7d319e",
+      "projected_frequencies": [
+        1,
+        998244352,
+        1,
+        998244352,
+        1,
+        998244352,
+        1,
+        998244352
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 6,
+      "Q": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        20,
+        20,
+        21,
+        15,
+        22,
+        0
+      ],
+      "observation_table_sha256": "db38b0219cbd7311a2e7f4c17527a67293f2f7d421bc5a0dfa9067b83fb25752",
+      "projected_frequencies": [
+        32538341,
+        590945000,
+        965706012,
+        407299353,
+        32538341,
+        590945000,
+        965706012,
+        407299353
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        32538341,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 6,
+      "Q": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        11,
+        11,
+        1,
+        7,
+        5,
+        0
+      ],
+      "observation_table_sha256": "2154ecb38867f8558cbf0c41a393455ddbae46040366c282284df6d9d3e71a6d",
+      "projected_frequencies": [
+        1,
+        488723995,
+        86583718,
+        372528824,
+        998244352,
+        509520358,
+        911660635,
+        625715529
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 7,
+      "Q": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        6,
+        6,
+        16,
+        6,
+        23,
+        14,
+        0
+      ],
+      "observation_table_sha256": "dc4058302ac2d5f68021bb7a5f35c0694102448414f109100afa69af4db52e10",
+      "projected_frequencies": [
+        1,
+        509520358,
+        86583718,
+        625715529,
+        998244352,
+        488723995,
+        911660635,
+        372528824
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 7,
+      "Q": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        2,
+        2,
+        2,
+        23,
+        17,
+        23,
+        0
+      ],
+      "observation_table_sha256": "1c09b952a09a9a0e7501b3c48d310e6c016ccffcd4aea7c578a768c55c3080ec",
+      "projected_frequencies": [
+        1,
+        625715529,
+        911660635,
+        509520358,
+        998244352,
+        372528824,
+        86583718,
+        488723995
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 8,
+      "Q": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        45,
+        45,
+        23,
+        22,
+        7,
+        17,
+        30,
+        0
+      ],
+      "observation_table_sha256": "884921df046ab1a63bf612e2f4483c34288d0dae210f52f4ab2e218c09165a8c",
+      "projected_frequencies": [
+        1,
+        624949902,
+        625715529,
+        661054123,
+        911660635,
+        929031873,
+        509520358,
+        369330050,
+        998244352,
+        373294451,
+        372528824,
+        337190230,
+        86583718,
+        69212480,
+        488723995,
+        628914303
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    },
+    {
+      "n": 8,
+      "Q": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        1,
+        1,
+        8,
+        41,
+        26,
+        6,
+        47,
+        0
+      ],
+      "observation_table_sha256": "a86b9ac2f2a86c30733ee95c434ea33aaa1c237470d81f09de5492d5b906766e",
+      "projected_frequencies": [
+        1,
+        372528824,
+        911660635,
+        488723995,
+        998244352,
+        625715529,
+        86583718,
+        509520358,
+        1,
+        372528824,
+        911660635,
+        488723995,
+        998244352,
+        625715529,
+        86583718,
+        509520358
+      ],
+      "inverse_ntt_channels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "matches_companion_observer": true,
+      "matches_all_expected_channels": true
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "n": 5,
+  "variant": "shared_cofactor_matchings",
+  "checks": {
+    "euler_diagonal_identity": true,
+    "grouped_row_identity": true,
+    "partial_matching_cofactor_identity": true,
+    "final_cofactor_scalar_DAG_generic_evaluation": true,
+    "final_marked_formal_z_evaluation": true,
+    "serialized_topology_count_input_audit": true
+  },
+  "passed": 6,
+  "total": 6,
+  "generic_gates": 10503,
+  "marked_gates": 10552,
+  "generic_counts": {
+    "variable": 25,
+    "add": 5175,
+    "constant": 14,
+    "mul": 5328
+  },
+  "marked_counts": {
+    "variable": 1,
+    "mul": 5377,
+    "constant": 31,
+    "add": 5175
+  },
+  "construction": {
+    "states": 813,
+    "all_partial_matching_state_bound": 1546,
+    "attempts": 31190,
+    "compatible_transitions": 3030,
+    "preprocessing_integer_adds": 3030,
+    "preprocessing_integer_muls": 3119,
+    "maximum_integer_coefficient_bit_length": 5,
+    "coefficient_l1_bound": 16679880978201,
+    "stages": [
+      {
+        "row_pair": [
+          0,
+          1
+        ],
+        "nonzero_matching_states": 11
+      },
+      {
+        "row_pair": [
+          0,
+          2
+        ],
+        "nonzero_matching_states": 41
+      },
+      {
+        "row_pair": [
+          0,
+          3
+        ],
+        "nonzero_matching_states": 121
+      },
+      {
+        "row_pair": [
+          0,
+          4
+        ],
+        "nonzero_matching_states": 305
+      },
+      {
+        "row_pair": [
+          1,
+          2
+        ],
+        "nonzero_matching_states": 363
+      },
+      {
+        "row_pair": [
+          1,
+          3
+        ],
+        "nonzero_matching_states": 423
+      },
+      {
+        "row_pair": [
+          1,
+          4
+        ],
+        "nonzero_matching_states": 533
+      },
+      {
+        "row_pair": [
+          2,
+          3
+        ],
+        "nonzero_matching_states": 618
+      },
+      {
+        "row_pair": [
+          2,
+          4
+        ],
+        "nonzero_matching_states": 703
+      },
+      {
+        "row_pair": [
+          3,
+          4
+        ],
+        "nonzero_matching_states": 813
+      }
+    ],
+    "distinct_complementary_minors": 227,
+    "minor_cache_bound": 252,
+    "edge_product_cache_entries": 949,
+    "allocated_gates_before_liveness": 14085,
+    "reachable_gates": 10503,
+    "gate_counts": {
+      "variable": 25,
+      "add": 5175,
+      "constant": 14,
+      "mul": 5328
+    },
+    "construction_seconds": 0.5723035999981221,
+    "cost_scope": "Each determinant and edge product uses scalar gates; universal integer preprocessing is separately counted."
+  },
+  "cofactor_identity": {
+    "verified_local_cofactors": 813,
+    "scope": "Finite exact local identities, independent of scalar compiler evaluation"
+  },
+  "generic_evaluation": {
+    "actual_scalar_gate_evaluations": 10503,
+    "maximum_node_terms": 120
+  },
+  "marked_evaluation": {
+    "scalar_gate_evaluations": 10552,
+    "max_node_terms": 120,
+    "max_live_terms": 1745,
+    "nodes": 10584
+  },
+  "generic_audit": {
+    "gates_from_nodes": 10503,
+    "variables": [
+      "x0",
+      "x1",
+      "x10",
+      "x11",
+      "x12",
+      "x13",
+      "x14",
+      "x15",
+      "x16",
+      "x17",
+      "x18",
+      "x19",
+      "x2",
+      "x20",
+      "x21",
+      "x22",
+      "x23",
+      "x24",
+      "x3",
+      "x4",
+      "x5",
+      "x6",
+      "x7",
+      "x8",
+      "x9"
+    ],
+    "maximum_constant_numerator_bits": 5,
+    "maximum_constant_denominator_bits": 3,
+    "no_unknown_target_leaf": true,
+    "allowed_constants": "determinant rational recurrence constants, universal integer projector coefficients, prescribed p=1+a^2"
+  },
+  "marked_audit": {
+    "gates_from_nodes": 10552,
+    "variables": [
+      "z"
+    ],
+    "maximum_constant_numerator_bits": 6,
+    "maximum_constant_denominator_bits": 6,
+    "no_unknown_target_leaf": true,
+    "allowed_constants": "determinant rational recurrence constants, universal integer projector coefficients, prescribed p=1+a^2"
+  },
+  "elapsed_seconds": 37.48968669999158,
+  "source_hashes": {
+    "euler_identity.py": "2b346b46e559f6b1d39f422e2bb4878b228bc148552effd04c11dd5dc1be11d9",
+    "validate_euler_identity.py": "5ad3762d3c672ef5815a6a45ccf59944dfacc4f2e288a0c3f26321a5e4e4687d",
+    "euler_compiler.py": "baf3ad1ba13b39e6895f86f1319ee7c928e3ad37283ea48ba133331b91d30320",
+    "evaluate_euler.py": "cfa5e99acef39e607cfcbcd99b480364af3cf34f478986cf68eb684bf99d2153",
+    "candidate.py": "6f1143d634ebd7d98bce9fb5fd1ef7eb29dbb7868cd67ac29761c5d7b020a84c",
+    "n61-protocol.json": "f599b50a2a6e94fe6c2a2b2a5dd45b1b57cad74d4780e0a3f317373da4e16061"
+  },
+  "artifacts": {
+    "generic": {
+      "path": "n61-generic-dag-n5.json",
+      "sha256": "1c49cf2d40232d78f5d11fa8ee89be1bf7f0e60ae80721964371d2a8f6620a93"
+    },
+    "marked": {
+      "path": "n61-marked-dag-n5.json",
+      "sha256": "b895fa675b048ad9182ded73494bf5fbc5ea0bef3b3378ffc6b3a35914a5acd4"
+    }
+  },
+  "scope": "Exact finite validation; not a polynomial bound or kernel theorem"
+}

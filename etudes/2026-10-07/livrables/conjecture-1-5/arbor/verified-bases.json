@@ -1,0 +1,136 @@
+{
+  "label": "Verified Base Axiom is a user-facing node label for a proved lemma, not an added Lean axiom",
+  "root_conjecture_verified": false,
+  "distinct_results": 7,
+  "entries": [
+    {
+      "theorem": "CollisionCoreBridge.decode_head",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "axioms": [
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n6"
+    },
+    {
+      "theorem": "CollisionCoreBridge.decode_tail",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "axioms": [
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n7"
+    },
+    {
+      "theorem": "CollisionCoreBridge.encodeDigits_injective",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n8"
+    },
+    {
+      "theorem": "CollisionCoreBridge.central_label_iff",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n9"
+    },
+    {
+      "theorem": "CollisionCoreBridge.orbit_stabilizes",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "axioms": [
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n10"
+    },
+    {
+      "theorem": "CollisionCoreBridge.n2_pair_factorization",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n11"
+    },
+    {
+      "theorem": "CollisionCoreBridge.n2_central_convolution",
+      "source": "CoreBridge.lean",
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n12"
+    },
+    {
+      "theorem": "GeneratedCollisionN2.factorization",
+      "source": "GeneratedCoreN2.lean",
+      "source_sha256": "9f57078826bf15c45579d99eafa77f467ae1b61986bfa47885ea008c06ee9712",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n13"
+    },
+    {
+      "theorem": "GeneratedCollisionN2.central_convolution",
+      "source": "GeneratedCoreN2.lean",
+      "source_sha256": "9f57078826bf15c45579d99eafa77f467ae1b61986bfa47885ea008c06ee9712",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "dev_score": 1.0,
+      "test_score": 1.0,
+      "branch_ref": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+      "verification": "kernel-accepted helper; original root unproved",
+      "node_id": "n14"
+    }
+  ]
+}

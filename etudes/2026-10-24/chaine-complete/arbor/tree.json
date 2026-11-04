@@ -1,0 +1,134 @@
+{
+  "_counter": 7,
+  "root": "n0",
+  "nodes": {
+    "n0": {
+      "id": "n0",
+      "parent": null,
+      "depth": 0,
+      "status": "root",
+      "hypothesis": "Construct the complete oriented spectral chain by uniform polynomial scalar gates from original inputs, allowing joint fusion and terminal reading without a corrected-amplitude input",
+      "insight": "[from n1] Joint cell-phase determinants compile the complete spectrum directly in small dimensions. General compression must leave explicit sign-separating coordinates and bounded terminal character expansions.\n[from n5] A global Gaussian compiler is exact from original inputs with scalar four-coordinate observers; its regular polarization uses exponentially many components. No uniform polynomial fusion has been proved.\n[from n6] Spectral determinants and nonlinear cycle corrections give constructive closed subclasses, while none of the tested global correction formulas covers legal dense inputs.\n[from n7] Spectral quotient coefficients must themselves be compiled from the original cells; bounded-frontier elimination is constructive, but the dense all-order excursion parameters remain uncompiled.",
+      "metadata": {
+        "dev_score": null,
+        "test_score": 2085.0,
+        "result": "",
+        "branch_ref": "1cd3db9"
+      },
+      "created_at": 1792818009,
+      "updated_at": 1792819882
+    },
+    "n1": {
+      "id": "n1",
+      "parent": "n0",
+      "depth": 1,
+      "status": "executed",
+      "hypothesis": "Polynomial-size cell-phase spectral labels separate permutation signs without separating individual permutations and yield a joint determinant-Fourier scalar compiler",
+      "insight": "Separate signs rather than all permutations, but terminal cell-score coordinates or bounded Fourier support still grow superpolynomially. This leaves fusion-dependent correction and unbounded character weights open.\n[from n7] Spectral quotient coefficients must themselves be compiled from the original cells; bounded-frontier elimination is constructive, but the dense all-order excursion parameters remain uncompiled.",
+      "metadata": {
+        "dev_score": null,
+        "test_score": null,
+        "result": "Exact rational full-chain scalar constructions for n<=4; finite abelian score family needs at least (n!)^2/n^n occupied bins; no general candidate submitted",
+        "branch_ref": "2d4e247aee8547dd30016bd012c8b1046d876d38"
+      },
+      "created_at": 1792818078,
+      "updated_at": 1792819882
+    },
+    "n2": {
+      "id": "n2",
+      "parent": "n0",
+      "depth": 1,
+      "status": "executed",
+      "hypothesis": "Frequency-conditioned Gaussian or Pfaffian representations close under oriented row fusion and permit a polynomial scalar terminal contraction without exposing the amplitude beforehand",
+      "insight": "Same-orientation XX and YY couplings permit genuine compression beyond principal determinants. A successful Gaussian representation must absorb diagonal directional jets or share their components polynomially.\n[from n5] A global Gaussian compiler is exact from original inputs with scalar four-coordinate observers; its regular polarization uses exponentially many components. No uniform polynomial fusion has been proved.",
+      "metadata": {
+        "dev_score": null,
+        "test_score": null,
+        "result": "A single general antisymmetric kernel represents the third paired layer; explicit jets eliminate data divisions. Fourth layer is five Pfaffian components. No polynomial all-layer fusion submitted.",
+        "branch_ref": "3fa7c389ff85ef17640e8241f241849bfd578045"
+      },
+      "created_at": 1792818082,
+      "updated_at": 1792819880
+    },
+    "n3": {
+      "id": "n3",
+      "parent": "n0",
+      "depth": 1,
+      "status": "merged",
+      "hypothesis": "Joint Schur-Good normalization and a polynomial spectral projector eliminate the remaining simultaneous repetitions and provide a full-chain scalar compiler",
+      "insight": "Implicit density corrections can resum all repetitions on structural cycle families, including mixed degrees and original phases. General overlapping-cycle closure is not obtained.\n[from n6] Spectral determinants and nonlinear cycle corrections give constructive closed subclasses, while none of the tested global correction formulas covers legal dense inputs.",
+      "metadata": {
+        "dev_score": 1912.0,
+        "test_score": 1912.0,
+        "result": "Exact exponential whole-table reference passes development; polynomial corrections proved for cycles, bouquets, cycle-incidence forests, and zero-diagonal degree six only",
+        "branch_ref": "b51d545902ef7159c104c98f8abfae4714bc4d5c"
+      },
+      "created_at": 1792818085,
+      "updated_at": 1792819881
+    },
+    "n4": {
+      "id": "n4",
+      "parent": "n1",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Unbounded rational character weights or a differential correction acting during fusion yield a polynomial joint scalar compiler despite the bounded-readout cell-score obstruction",
+      "insight": "Unbounded rational character weights remain allowed and cannot be excluded by the bounded Fourier argument. Polynomially many differential generators do not themselves compile their action.\n[from n7] Spectral quotient coefficients must themselves be compiled from the original cells; bounded-frontier elimination is constructive, but the dense all-order excursion parameters remain uncompiled.",
+      "metadata": {
+        "dev_score": null,
+        "test_score": null,
+        "result": "Differential orientation correction exact; Lie closure n^3 but explicit cyclic module n^n. Four independent signed determinant phases excluded computationally at n5. No general compiler submitted.",
+        "branch_ref": "5cc26fb6e768a870d27bc32d3fa95241af0c488a"
+      },
+      "created_at": 1792818905,
+      "updated_at": 1792819882
+    },
+    "n5": {
+      "id": "n5",
+      "parent": "n2",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "A regular implicit antisymmetric-kernel completion at the all-ones matrix absorbs successive paired row fusions with polynomially many scalar jets",
+      "insight": "General skew kernels and polynomial scalar readers do not impose an amplitude input. Regular polarization and Gray sharing are exact, but do not remove exponential component count. Numerical completions establish no obstruction.",
+      "metadata": {
+        "dev_score": 3670.0,
+        "test_score": 3670.0,
+        "result": "A full original-input scalar compiler obtained by regular Gaussian polarization; exact all-slot development tests pass. It has 2^(n-3) components, not polynomially bounded fusion.",
+        "branch_ref": "42631b841de8d79b3db4abe0b2a16738c0a2fc8e"
+      },
+      "created_at": 1792819110,
+      "updated_at": 1792819879
+    },
+    "n6": {
+      "id": "n6",
+      "parent": "n3",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "A nonbacktracking spectral or edge-cavity determinant resums overlapping-cycle corrections globally without enumerating simple cycles or subsets",
+      "insight": "A nonbacktracking determinant resums Gaussian loops exactly. Incompatible occupations require further correction; restricted failed formulas do not rule out a different joint representation.",
+      "metadata": {
+        "dev_score": null,
+        "test_score": null,
+        "result": "Bass-Schur identity proved for all graphs; complete proposed scalar corrections valid for unicyclic supports but legal dense counterexamples remain.",
+        "branch_ref": "c97f13a50cc4a70cf453bd0ed46865532e010069"
+      },
+      "created_at": 1792819111,
+      "updated_at": 1792819871
+    },
+    "n7": {
+      "id": "n7",
+      "parent": "n4",
+      "depth": 3,
+      "status": "executed",
+      "hypothesis": "Paired-orientation compression of generalized zero eigenspaces yields a polynomial scalar spectral elimination on the hard-core transition operator",
+      "insight": "Zero-eigenspace elimination can be constructed without a supplied amplitude on bounded-frontier supports. A small quotient or polynomial Schur recurrence is insufficient without polynomial scalar computation of every coefficient.",
+      "metadata": {
+        "dev_score": null,
+        "test_score": null,
+        "result": "Exact original-cell scalar spectral compilers for fixed bands; all-order uniform-projection excursion recurrence has explicit interval injection parameters, whose dense computation is not closed.",
+        "branch_ref": "dc4693a75821b7dad86a29e06e4218d75e1ff537"
+      },
+      "created_at": 1792819112,
+      "updated_at": 1792819872
+    }
+  }
+}

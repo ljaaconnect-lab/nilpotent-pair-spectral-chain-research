@@ -1,0 +1,33 @@
+{
+  "status": "infrastructure_failure_missing_dependency",
+  "dev_score": null,
+  "root_conjecture_verified": false,
+  "lean_verified": false,
+  "verified_scope": "Mathlib draft, dependency unavailable",
+  "source": "GeneratedBridge.lean",
+  "report_output": "mathlib-verification-report.json",
+  "source_sha256": "945065098401ab59ce48fa07d4742b323af2ca99668bec981c59b8c91f793260",
+  "attempts": [
+    {
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n3\\GeneratedBridge.lean"
+      ],
+      "exit_code": 1,
+      "stdout": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n3\\GeneratedBridge.lean:1:0: error: unknown module prefix 'Mathlib'\n\nNo directory 'Mathlib' or file 'Mathlib.olean' in the search path entries:\nc:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean\n",
+      "stderr": ""
+    }
+  ],
+  "error_stack": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n3\\GeneratedBridge.lean:1:0: error: unknown module prefix 'Mathlib'\n\nNo directory 'Mathlib' or file 'Mathlib.olean' in the search path entries:\nc:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean\n"
+  ],
+  "compiler_version": {
+    "command": [
+      "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+      "--version"
+    ],
+    "exit_code": 0,
+    "stdout": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)\n",
+    "stderr": ""
+  }
+}

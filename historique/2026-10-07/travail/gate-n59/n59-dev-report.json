@@ -1,0 +1,57 @@
+{
+  "node": "n59",
+  "artifact_version": "n59-composed-polynomial-criterion-v1",
+  "dev_score": 1.0,
+  "passed": 2,
+  "denominator": 2,
+  "compiler_exit_code": 0,
+  "compiler_errors": 0,
+  "source_sha256": "0d3de6f6475371f1226de953c7c707ff7b5abf31557715be195bdb125fab8189",
+  "final_candidate": "candidate-01",
+  "axiom_audit": {
+    "ConditionalCriterion.compose_input_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConditionalCriterion.Pi_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConditionalCriterion.polynomial_composed_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConditionalCriterion.conditional_target_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "audited_new_declarations": 4,
+  "candidate_rounds": 1,
+  "candidate_budget": 12,
+  "probes": 1,
+  "dependencies": 2,
+  "environment_keys": [
+    "LEAN_PATH",
+    "LEAN_SRC_PATH",
+    "LEAN_SYSROOT"
+  ],
+  "actual_polynomial_type": "Polynomial Nat",
+  "Pi_eval": "n^c+4*n^(3*d+2)+3*n^(2*d)",
+  "initialization_charge": "Actual initial.gates in composedCircuit; bounded by supplied S<=n^c",
+  "conditional_coefficient_identity": "H.coeff(n^n-1)=u^T M^(n^n-1) v is an explicit theorem argument",
+  "remaining_target_obligations": [
+    "Explicit target representation preserving formal z markers",
+    "Uniform polynomial running time of the target-data constructor",
+    "Source-model provenance/admissibility of rational and parameter input leaves",
+    "Bounded rational-literal bit lengths and bit-operation accounting"
+  ],
+  "new_numerical_experiments": 0,
+  "held_out_access": false,
+  "cache_mutations": false,
+  "root_conjecture_verified": false
+}

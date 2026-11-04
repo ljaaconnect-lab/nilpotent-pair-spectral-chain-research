@@ -1,0 +1,372 @@
+{
+  "protocol": "positive-mixed-dev-v1",
+  "split": "dev",
+  "score": 1.0,
+  "passed": 20,
+  "total": 20,
+  "evaluator_sha256": "b139cb2c4f2d50a51d1a6246baa7f3376bb45ae880bbb06126c5ccbb7ad8057c",
+  "artifact_sha256": "e1a317ce2cdf1d8eca3a8188a7da325c3da82495e6c2ba60c198013723e5cd5c",
+  "cases": [
+    {
+      "n": 2,
+      "checks": {
+        "eager_permanent": true,
+        "demand_permanent": true,
+        "bell_permanent": true,
+        "all_F_prefix_jets": true,
+        "all_G_prefix_jets": true
+      },
+      "construction": {
+        "native_gates": 9,
+        "formula": "3*n+n*(n-1)*(2*n-1)/2",
+        "initial_data": "F=1, G=B",
+        "marker_substitution_gates": 7
+      },
+      "eager": {
+        "coefficient_multiplications": 9,
+        "coefficient_additions": 1,
+        "compiled_gates": 10,
+        "total_materialized_jet_entries": 23,
+        "max_jet_entries_per_source_node": 4
+      },
+      "demand": {
+        "compiled_gates": 8,
+        "requested_source_mask_pairs": 18,
+        "requested_by_derivative_order": {
+          "1": 7,
+          "0": 9,
+          "2": 2
+        },
+        "support_entries_charged_as_search_work": 23,
+        "no_free_projection": true
+      },
+      "bell": {
+        "scalar_gates": 6,
+        "cycle_factor_gates": 1,
+        "bell_recurrence_gates": 5,
+        "bell_recurrence_formula": "3^n-2^n",
+        "cycle_states": 3,
+        "path_states": 1,
+        "partition_states": 4,
+        "partition_transitions": 4,
+        "initial_data": "Q(empty)=1, C(singleton i)=B_ii",
+        "marker_substitution_gates": 7
+      },
+      "layers": {
+        "all_F_prefix_coefficients_exact": true,
+        "all_G_prefix_path_coefficients_exact": true,
+        "F_checks": 7,
+        "G_checks": 6,
+        "layers": [
+          {
+            "processed": 0,
+            "retained_G_components": 4,
+            "F_jet_entries": 1,
+            "total_retained_scalar_jet_entries": 5,
+            "maximum_derivative_order": 0
+          },
+          {
+            "processed": 1,
+            "retained_G_components": 1,
+            "F_jet_entries": 2,
+            "total_retained_scalar_jet_entries": 4,
+            "maximum_derivative_order": 1
+          },
+          {
+            "processed": 2,
+            "retained_G_components": 0,
+            "F_jet_entries": 4,
+            "total_retained_scalar_jet_entries": 4,
+            "maximum_derivative_order": 2
+          }
+        ],
+        "peak_retained_scalar_states": 5
+      },
+      "generic_permanent_terms": 2,
+      "seconds": 0.12115569999878062
+    },
+    {
+      "n": 3,
+      "checks": {
+        "eager_permanent": true,
+        "demand_permanent": true,
+        "bell_permanent": true,
+        "all_F_prefix_jets": true,
+        "all_G_prefix_jets": true
+      },
+      "construction": {
+        "native_gates": 24,
+        "formula": "3*n+n*(n-1)*(2*n-1)/2",
+        "initial_data": "F=1, G=B",
+        "marker_substitution_gates": 17
+      },
+      "eager": {
+        "coefficient_multiplications": 33,
+        "coefficient_additions": 7,
+        "compiled_gates": 40,
+        "total_materialized_jet_entries": 65,
+        "max_jet_entries_per_source_node": 8
+      },
+      "demand": {
+        "compiled_gates": 30,
+        "requested_source_mask_pairs": 52,
+        "requested_by_derivative_order": {
+          "1": 21,
+          "0": 24,
+          "2": 5,
+          "3": 2
+        },
+        "support_entries_charged_as_search_work": 65,
+        "no_free_projection": true
+      },
+      "bell": {
+        "scalar_gates": 27,
+        "cycle_factor_gates": 8,
+        "bell_recurrence_gates": 19,
+        "bell_recurrence_formula": "3^n-2^n",
+        "cycle_states": 7,
+        "path_states": 5,
+        "partition_states": 8,
+        "partition_transitions": 13,
+        "initial_data": "Q(empty)=1, C(singleton i)=B_ii",
+        "marker_substitution_gates": 17
+      },
+      "layers": {
+        "all_F_prefix_coefficients_exact": true,
+        "all_G_prefix_path_coefficients_exact": true,
+        "F_checks": 15,
+        "G_checks": 21,
+        "layers": [
+          {
+            "processed": 0,
+            "retained_G_components": 9,
+            "F_jet_entries": 1,
+            "total_retained_scalar_jet_entries": 10,
+            "maximum_derivative_order": 0
+          },
+          {
+            "processed": 1,
+            "retained_G_components": 4,
+            "F_jet_entries": 2,
+            "total_retained_scalar_jet_entries": 10,
+            "maximum_derivative_order": 1
+          },
+          {
+            "processed": 2,
+            "retained_G_components": 1,
+            "F_jet_entries": 4,
+            "total_retained_scalar_jet_entries": 8,
+            "maximum_derivative_order": 2
+          },
+          {
+            "processed": 3,
+            "retained_G_components": 0,
+            "F_jet_entries": 8,
+            "total_retained_scalar_jet_entries": 8,
+            "maximum_derivative_order": 3
+          }
+        ],
+        "peak_retained_scalar_states": 10
+      },
+      "generic_permanent_terms": 6,
+      "seconds": 0.025834599997324403
+    },
+    {
+      "n": 4,
+      "checks": {
+        "eager_permanent": true,
+        "demand_permanent": true,
+        "bell_permanent": true,
+        "all_F_prefix_jets": true,
+        "all_G_prefix_jets": true
+      },
+      "construction": {
+        "native_gates": 54,
+        "formula": "3*n+n*(n-1)*(2*n-1)/2",
+        "initial_data": "F=1, G=B",
+        "marker_substitution_gates": 31
+      },
+      "eager": {
+        "coefficient_multiplications": 106,
+        "coefficient_additions": 34,
+        "compiled_gates": 140,
+        "total_materialized_jet_entries": 165,
+        "max_jet_entries_per_source_node": 16
+      },
+      "demand": {
+        "compiled_gates": 102,
+        "requested_source_mask_pairs": 136,
+        "requested_by_derivative_order": {
+          "1": 56,
+          "0": 51,
+          "2": 22,
+          "3": 5,
+          "4": 2
+        },
+        "support_entries_charged_as_search_work": 165,
+        "no_free_projection": true
+      },
+      "bell": {
+        "scalar_gates": 105,
+        "cycle_factor_gates": 40,
+        "bell_recurrence_gates": 65,
+        "bell_recurrence_formula": "3^n-2^n",
+        "cycle_states": 15,
+        "path_states": 17,
+        "partition_states": 16,
+        "partition_transitions": 40,
+        "initial_data": "Q(empty)=1, C(singleton i)=B_ii",
+        "marker_substitution_gates": 31
+      },
+      "layers": {
+        "all_F_prefix_coefficients_exact": true,
+        "all_G_prefix_path_coefficients_exact": true,
+        "F_checks": 31,
+        "G_checks": 58,
+        "layers": [
+          {
+            "processed": 0,
+            "retained_G_components": 16,
+            "F_jet_entries": 1,
+            "total_retained_scalar_jet_entries": 17,
+            "maximum_derivative_order": 0
+          },
+          {
+            "processed": 1,
+            "retained_G_components": 9,
+            "F_jet_entries": 2,
+            "total_retained_scalar_jet_entries": 20,
+            "maximum_derivative_order": 1
+          },
+          {
+            "processed": 2,
+            "retained_G_components": 4,
+            "F_jet_entries": 4,
+            "total_retained_scalar_jet_entries": 20,
+            "maximum_derivative_order": 2
+          },
+          {
+            "processed": 3,
+            "retained_G_components": 1,
+            "F_jet_entries": 8,
+            "total_retained_scalar_jet_entries": 16,
+            "maximum_derivative_order": 3
+          },
+          {
+            "processed": 4,
+            "retained_G_components": 0,
+            "F_jet_entries": 16,
+            "total_retained_scalar_jet_entries": 16,
+            "maximum_derivative_order": 4
+          }
+        ],
+        "peak_retained_scalar_states": 20
+      },
+      "generic_permanent_terms": 24,
+      "seconds": 0.2201430999994045
+    },
+    {
+      "n": 5,
+      "checks": {
+        "eager_permanent": true,
+        "demand_permanent": true,
+        "bell_permanent": true,
+        "all_F_prefix_jets": true,
+        "all_G_prefix_jets": true
+      },
+      "construction": {
+        "native_gates": 105,
+        "formula": "3*n+n*(n-1)*(2*n-1)/2",
+        "initial_data": "F=1, G=B",
+        "marker_substitution_gates": 49
+      },
+      "eager": {
+        "coefficient_multiplications": 316,
+        "coefficient_additions": 138,
+        "compiled_gates": 454,
+        "total_materialized_jet_entries": 387,
+        "max_jet_entries_per_source_node": 32
+      },
+      "demand": {
+        "compiled_gates": 324,
+        "requested_source_mask_pairs": 326,
+        "requested_by_derivative_order": {
+          "1": 125,
+          "0": 94,
+          "2": 74,
+          "3": 26,
+          "4": 5,
+          "5": 2
+        },
+        "support_entries_charged_as_search_work": 387,
+        "no_free_projection": true
+      },
+      "bell": {
+        "scalar_gates": 368,
+        "cycle_factor_gates": 157,
+        "bell_recurrence_gates": 211,
+        "bell_recurrence_formula": "3^n-2^n",
+        "cycle_states": 31,
+        "path_states": 49,
+        "partition_states": 32,
+        "partition_transitions": 121,
+        "initial_data": "Q(empty)=1, C(singleton i)=B_ii",
+        "marker_substitution_gates": 49
+      },
+      "layers": {
+        "all_F_prefix_coefficients_exact": true,
+        "all_G_prefix_path_coefficients_exact": true,
+        "F_checks": 63,
+        "G_checks": 141,
+        "layers": [
+          {
+            "processed": 0,
+            "retained_G_components": 25,
+            "F_jet_entries": 1,
+            "total_retained_scalar_jet_entries": 26,
+            "maximum_derivative_order": 0
+          },
+          {
+            "processed": 1,
+            "retained_G_components": 16,
+            "F_jet_entries": 2,
+            "total_retained_scalar_jet_entries": 34,
+            "maximum_derivative_order": 1
+          },
+          {
+            "processed": 2,
+            "retained_G_components": 9,
+            "F_jet_entries": 4,
+            "total_retained_scalar_jet_entries": 40,
+            "maximum_derivative_order": 2
+          },
+          {
+            "processed": 3,
+            "retained_G_components": 4,
+            "F_jet_entries": 8,
+            "total_retained_scalar_jet_entries": 40,
+            "maximum_derivative_order": 3
+          },
+          {
+            "processed": 4,
+            "retained_G_components": 1,
+            "F_jet_entries": 16,
+            "total_retained_scalar_jet_entries": 32,
+            "maximum_derivative_order": 4
+          },
+          {
+            "processed": 5,
+            "retained_G_components": 0,
+            "F_jet_entries": 32,
+            "total_retained_scalar_jet_entries": 32,
+            "maximum_derivative_order": 5
+          }
+        ],
+        "peak_retained_scalar_states": 40
+      },
+      "generic_permanent_terms": 120,
+      "seconds": 2.1547358999960124
+    }
+  ],
+  "scope": "Exact generic formal-B finite checks; scalar jet gates charged; no Lean proof."
+}

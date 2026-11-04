@@ -1,0 +1,58 @@
+{
+  "root_conjecture_verified": false,
+  "polynomial_closed_state_family_verified": false,
+  "actual_closed_baseline_verified": true,
+  "state_dimension": "2^n",
+  "baseline_source": "proofs/ActualClosedSubsetTransfer.lean",
+  "new_baseline_theorems": 18,
+  "independent_replay_exit_code": 0,
+  "reference_positive_checks": "108/108 development only",
+  "formal_invocations_current_window": 19,
+  "prior_window_preserved": 19,
+  "atomic_proof_files": [
+    {
+      "node": "n75",
+      "source": "AtomicFirstPrefix.lean",
+      "declarations": [
+        "AtomicFirstPrefix.sum_complement",
+        "AtomicFirstPrefix.single_response",
+        "AtomicFirstPrefix.weighted_response",
+        "AtomicFirstPrefix.minor_determinant",
+        "AtomicFirstPrefix.normalized_minor_response",
+        "AtomicFirstPrefix.linear_extension"
+      ]
+    },
+    {
+      "node": "n76",
+      "source": "AtomicSecondPrefix.lean",
+      "declarations": [
+        "AtomicSecondPrefix.B1_distribution",
+        "AtomicSecondPrefix.erase_diagonal",
+        "AtomicSecondPrefix.B2_remove_diagonal",
+        "AtomicSecondPrefix.seed_is_empty",
+        "AtomicSecondPrefix.insertion_is_erase",
+        "AtomicSecondPrefix.pair_exponent_iff",
+        "AtomicSecondPrefix.table_two_pair_expansion",
+        "AtomicSecondPrefix.table_two_zero_of_card_ne",
+        "AtomicSecondPrefix.signed_response_eq_mass",
+        "AtomicSecondPrefix.powerset_pair_indicator",
+        "AtomicSecondPrefix.table_two_mass",
+        "AtomicSecondPrefix.B3_actual_response",
+        "AtomicSecondPrefix.complement_sum",
+        "AtomicSecondPrefix.initialized_diagonal",
+        "AtomicSecondPrefix.initialized_totals",
+        "AtomicSecondPrefix.B4_initialized_query"
+      ]
+    }
+  ],
+  "local_circuit_development_checks": "2160/2160",
+  "local_circuit_scope": "Fixed prefix depth1 or2, one explicit subset J",
+  "direct_complete_polynomial_checks": "4/4 symbolic whole-polynomial cases",
+  "direct_development_cases": "36/36 exact Fraction cases",
+  "new_root_extractor_heldout_boundary_opened": false,
+  "independent_baseline_replay_boundary_run": true,
+  "active_target": "Whole corrected polynomial PA=CnDA; direct scalar circuit",
+  "coefficient_extraction_strategy": "Archived equivalent formulation, not an additional obligation",
+  "direct_Cn_semantic_bridge_formally_verified": false,
+  "open_obligation": "Construct initialized polynomial-size scalar updates connected to the complete corrected polynomial, with admissible literal bits and uniform polynomial bit-time compilation."
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "Moment state dimension and algebraic reading bridge only; no polynomial cost for computing the supplied moment vector is assumed or proved.",
+  "source": "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\constantes-cd-2026-11-02\\lean\\MomentCompilerBridge.lean",
+  "source_sha256": "16ce5e527b9193f894daf4af04ca9912c38917beb80665e3d025ff1af7514d3a",
+  "source_changed_during_check": false,
+  "replay_sha256": "35d9b2fc5c7b403a1782f8ca0648530d25401d387d81ba64047153e4783921c8",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "-o",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\constantes-cd\\MomentCompilerBridge.olean",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\constantes-cd-2026-11-02\\lean\\MomentCompilerBridge.lean"
+  ],
+  "exit_code": 0,
+  "seconds": 16.532,
+  "stdout": "'MomentCompilerBridge.momentDimension_le_square' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MomentCompilerBridge.preparationB_le_fourth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MomentCompilerBridge.generator_le_fifth' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MomentCompilerBridge.momentMatrix_idempotent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MomentCompilerBridge.momentMatrix_pow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'MomentCompilerBridge.momentMatrix_read' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": ""
+}

@@ -1,0 +1,64 @@
+{
+  "node": "n70",
+  "artifact_version": "n70-row-block-transfer-v1",
+  "dev_score": null,
+  "root_obligations_discharged": 0,
+  "root_obligations_total": 3,
+  "score_reason": "Concrete row-block identities and data transports are available, but no polynomial initialized scalar evaluator closes the actual original contraction",
+  "root_conjecture_verified": false,
+  "complete_executable_root_candidate": false,
+  "supporting_status": "Every new general identity and cost is informal; no Lean or mathematical evaluator run",
+  "candidate_results": [
+    {
+      "id": "row-anchored-residual",
+      "exact_local_identity": "hF-(h-A)(h-Bq)=-u*s*sum_jk D_jk*v_j*t_k; D=diag(w)*(hI-b*a^T)",
+      "analytical_data_gates": "2*n^2+5*n with chart inputs supplied",
+      "missing": "Original-kernel chart transport, all future context operations, and polynomial evaluated state",
+      "root_obligation_discharged": false
+    },
+    {
+      "id": "common-base-plus-rank-one-aggregation",
+      "exact_conditional_identity": "If D_i=alpha_i I+u_i v_i^T in one common basis, mixed coefficient=sum_k (n-k)!*[x^k]det(diag(alpha)+x V^T U)",
+      "analytical_conditional_scalar_bound": "S+(2*n^3-n^2)+(2*n^4-n^3+2*n^2-n)*(n+1)^2+3*n",
+      "transport": "T_i=diag(w_i,j/w_i+1,j); d_next=tau*d_current; p_next=tau*p_current; q unchanged; Gaussian/future covectors and normalization transported",
+      "analytical_transport_gates_given_ratios": "2*n^2 for all n residuals, plus n*(d-1) for the upper Gaussian kernel and n*M for M future covectors",
+      "analytical_ratio_gates_at_truncation_q": "n*(4*q+4) using known nonzero rational chart constants and only scalar add/mul",
+      "projective_identity": "det(H_i)*P_i+1,r=adj(H_i+1)*H_i*P_i,r, P_i,r=adj(H_i)*D_r",
+      "first_new_object_required": "P_(S,I)=[t_(S-complement)] product_(j in I-complement) sum_(r in S-complement) d_i,r,j*t_r",
+      "missing": "Charged scalar initialization/aggregation of this complete colored diagonal response, and target-preserving transport to the original kernels",
+      "root_obligation_discharged": false
+    },
+    {
+      "id": "coherent-row-gaussian-mixture",
+      "exact_local_descriptions": [
+        "2*n+3 symmetric exponential terms with constant 1/2",
+        "n+3 exponential terms with no division",
+        "n+1 homogeneous Gaussian components using two private auxiliary pairs"
+      ],
+      "homogeneous_kernel": "Auxiliary block diag(a_j*J2,b_j*J2), coupling rows u_j,v_j,s_j,t_j; vacuum padded with two unit J2 blocks",
+      "conditional_literal_global_branch_bound": "(n+1)^n kernels of order d+4*n, assuming a compatible transport for every row block",
+      "missing": "Polynomial coherent sharing of the global sum for every remaining context, with charged Pfaffian compiler and orientation",
+      "root_obligation_discharged": false
+    }
+  ],
+  "count_provenance": "Analytical source-derived recipes only; no actual scalar DAG gate measurements or formal count certification",
+  "budget": {
+    "candidate_limit": 3,
+    "analytical_candidates": 3,
+    "refinements_within_existing_candidates": 2,
+    "complete_root_candidate_implementations": 0,
+    "sympy_validations": 0,
+    "numerical_experiments": 0,
+    "lean_allocation": 0,
+    "lean_compiles": 0,
+    "lean_probes": 0
+  },
+  "held_out_reads": 0,
+  "shared_arbor_writes": 0,
+  "output_directory_writes": 0,
+  "counterexample_campaigns": 0,
+  "lower_bound_experiments": 0,
+  "unknown_target_input_used": false,
+  "free_derivative_coefficient_pfaffian_or_projection_gate_used": false,
+  "root_protocol_preserved": true
+}

@@ -1,0 +1,21 @@
+{
+  "node": "n62",
+  "scope": "Exact local projectors and inversion-phase correction; no scalar polynomial compilation claim",
+  "frozen_before_compilation": true,
+  "obligations": [
+    "For F(x,y)=a+b*x+c*y+d*x*y over any CommRing, F(1,1)-F(1,0)-F(0,1)+F(0,0)=d",
+    "The scalar operation F(x,y)-2*x*y*(F(1,1)-F(1,0)-F(0,1)+F(0,0)) equals a+b*x+c*y-d*x*y",
+    "Pointwise phase actions P(s) -> if p(s) then -P(s) else P(s) are involutions",
+    "Two such pointwise phase actions commute",
+    "For every permutation sigma of Fin n, product_i product_l in Ioi i (if sigma i < sigma l then 1 else -1) over CommRing R equals CollisionDeterminantBridge.signCoeff sigma",
+    "Multiplying an actual signed permutation weight by that inversion phase gives the unsigned weight",
+    "Summing the corrected signed weights gives the unsigned sum for arbitrary matrices b"
+  ],
+  "constraints": [
+    "Reuse the actual Mathlib permutation signature; do not assume the signature formula",
+    "No sorry, admit, native_decide, new axioms, or weakened main statements",
+    "Do not claim the pointwise coefficient action has a polynomial scalar implementation",
+    "Keep candidate compilations separate from dependency builds and probes"
+  ],
+  "candidate_budget": 12
+}

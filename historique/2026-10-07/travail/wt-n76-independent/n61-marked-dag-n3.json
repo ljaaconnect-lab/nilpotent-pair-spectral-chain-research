@@ -1,0 +1,696 @@
+{
+  "n": 3,
+  "artifact": "shared_cofactor_matchings",
+  "model": "Q[x] or Q[z], fan-in-two scalar add/mul only",
+  "gates": 125,
+  "counts": {
+    "variable": 1,
+    "mul": 77,
+    "constant": 13,
+    "add": 48
+  },
+  "output": 138,
+  "nodes": [
+    {
+      "op": "variable",
+      "name": "z"
+    },
+    {
+      "op": "mul",
+      "left": 0,
+      "right": 0
+    },
+    {
+      "op": "mul",
+      "left": 1,
+      "right": 1
+    },
+    {
+      "op": "mul",
+      "left": 2,
+      "right": 2
+    },
+    {
+      "op": "mul",
+      "left": 3,
+      "right": 3
+    },
+    {
+      "op": "mul",
+      "left": 4,
+      "right": 4
+    },
+    {
+      "op": "mul",
+      "left": 5,
+      "right": 5
+    },
+    {
+      "op": "mul",
+      "left": 6,
+      "right": 6
+    },
+    {
+      "op": "mul",
+      "left": 7,
+      "right": 7
+    },
+    {
+      "op": "constant",
+      "value": "5/4"
+    },
+    {
+      "op": "mul",
+      "left": 9,
+      "right": 0
+    },
+    {
+      "op": "constant",
+      "value": "10/9"
+    },
+    {
+      "op": "mul",
+      "left": 11,
+      "right": 1
+    },
+    {
+      "op": "constant",
+      "value": "17/16"
+    },
+    {
+      "op": "mul",
+      "left": 13,
+      "right": 2
+    },
+    {
+      "op": "constant",
+      "value": "2"
+    },
+    {
+      "op": "mul",
+      "left": 15,
+      "right": 3
+    },
+    {
+      "op": "constant",
+      "value": "13/9"
+    },
+    {
+      "op": "mul",
+      "left": 17,
+      "right": 4
+    },
+    {
+      "op": "mul",
+      "left": 9,
+      "right": 5
+    },
+    {
+      "op": "constant",
+      "value": "13/4"
+    },
+    {
+      "op": "mul",
+      "left": 20,
+      "right": 6
+    },
+    {
+      "op": "mul",
+      "left": 15,
+      "right": 7
+    },
+    {
+      "op": "constant",
+      "value": "25/16"
+    },
+    {
+      "op": "mul",
+      "left": 23,
+      "right": 8
+    },
+    {
+      "op": "add",
+      "left": 10,
+      "right": 18
+    },
+    {
+      "op": "add",
+      "left": 24,
+      "right": 25
+    },
+    {
+      "op": "constant",
+      "value": "-1"
+    },
+    {
+      "op": "mul",
+      "left": 26,
+      "right": 27
+    },
+    {
+      "op": "add",
+      "left": 10,
+      "right": 28
+    },
+    {
+      "op": "add",
+      "left": 18,
+      "right": 28
+    },
+    {
+      "op": "add",
+      "left": 24,
+      "right": 28
+    },
+    {
+      "op": "mul",
+      "left": 10,
+      "right": 29
+    },
+    {
+      "op": "mul",
+      "left": 12,
+      "right": 16
+    },
+    {
+      "op": "add",
+      "left": 32,
+      "right": 33
+    },
+    {
+      "op": "mul",
+      "left": 14,
+      "right": 21
+    },
+    {
+      "op": "add",
+      "left": 34,
+      "right": 35
+    },
+    {
+      "op": "mul",
+      "left": 10,
+      "right": 12
+    },
+    {
+      "op": "mul",
+      "left": 12,
+      "right": 30
+    },
+    {
+      "op": "add",
+      "left": 37,
+      "right": 38
+    },
+    {
+      "op": "mul",
+      "left": 14,
+      "right": 22
+    },
+    {
+      "op": "add",
+      "left": 39,
+      "right": 40
+    },
+    {
+      "op": "mul",
+      "left": 10,
+      "right": 14
+    },
+    {
+      "op": "mul",
+      "left": 12,
+      "right": 19
+    },
+    {
+      "op": "add",
+      "left": 42,
+      "right": 43
+    },
+    {
+      "op": "mul",
+      "left": 14,
+      "right": 31
+    },
+    {
+      "op": "add",
+      "left": 44,
+      "right": 45
+    },
+    {
+      "op": "mul",
+      "left": 16,
+      "right": 29
+    },
+    {
+      "op": "mul",
+      "left": 16,
+      "right": 18
+    },
+    {
+      "op": "add",
+      "left": 47,
+      "right": 48
+    },
+    {
+      "op": "mul",
+      "left": 19,
+      "right": 21
+    },
+    {
+      "op": "add",
+      "left": 49,
+      "right": 50
+    },
+    {
+      "op": "mul",
+      "left": 18,
+      "right": 30
+    },
+    {
+      "op": "add",
+      "left": 33,
+      "right": 52
+    },
+    {
+      "op": "mul",
+      "left": 19,
+      "right": 22
+    },
+    {
+      "op": "add",
+      "left": 53,
+      "right": 54
+    },
+    {
+      "op": "mul",
+      "left": 14,
+      "right": 16
+    },
+    {
+      "op": "mul",
+      "left": 18,
+      "right": 19
+    },
+    {
+      "op": "add",
+      "left": 56,
+      "right": 57
+    },
+    {
+      "op": "mul",
+      "left": 19,
+      "right": 31
+    },
+    {
+      "op": "add",
+      "left": 58,
+      "right": 59
+    },
+    {
+      "op": "mul",
+      "left": 21,
+      "right": 29
+    },
+    {
+      "op": "mul",
+      "left": 16,
+      "right": 22
+    },
+    {
+      "op": "add",
+      "left": 61,
+      "right": 62
+    },
+    {
+      "op": "mul",
+      "left": 21,
+      "right": 24
+    },
+    {
+      "op": "add",
+      "left": 63,
+      "right": 64
+    },
+    {
+      "op": "mul",
+      "left": 12,
+      "right": 21
+    },
+    {
+      "op": "mul",
+      "left": 22,
+      "right": 30
+    },
+    {
+      "op": "add",
+      "left": 66,
+      "right": 67
+    },
+    {
+      "op": "mul",
+      "left": 22,
+      "right": 24
+    },
+    {
+      "op": "add",
+      "left": 68,
+      "right": 69
+    },
+    {
+      "op": "add",
+      "left": 35,
+      "right": 54
+    },
+    {
+      "op": "mul",
+      "left": 24,
+      "right": 31
+    },
+    {
+      "op": "add",
+      "left": 71,
+      "right": 72
+    },
+    {
+      "op": "add",
+      "left": 36,
+      "right": 55
+    },
+    {
+      "op": "add",
+      "left": 73,
+      "right": 74
+    },
+    {
+      "op": "constant",
+      "value": "-1/2"
+    },
+    {
+      "op": "mul",
+      "left": 75,
+      "right": 76
+    },
+    {
+      "op": "add",
+      "left": 36,
+      "right": 77
+    },
+    {
+      "op": "add",
+      "left": 55,
+      "right": 77
+    },
+    {
+      "op": "add",
+      "left": 73,
+      "right": 77
+    },
+    {
+      "op": "mul",
+      "left": 10,
+      "right": 78
+    },
+    {
+      "op": "mul",
+      "left": 12,
+      "right": 51
+    },
+    {
+      "op": "add",
+      "left": 81,
+      "right": 82
+    },
+    {
+      "op": "mul",
+      "left": 14,
+      "right": 65
+    },
+    {
+      "op": "add",
+      "left": 83,
+      "right": 84
+    },
+    {
+      "op": "mul",
+      "left": 16,
+      "right": 41
+    },
+    {
+      "op": "mul",
+      "left": 18,
+      "right": 79
+    },
+    {
+      "op": "add",
+      "left": 86,
+      "right": 87
+    },
+    {
+      "op": "mul",
+      "left": 19,
+      "right": 70
+    },
+    {
+      "op": "add",
+      "left": 88,
+      "right": 89
+    },
+    {
+      "op": "mul",
+      "left": 21,
+      "right": 46
+    },
+    {
+      "op": "mul",
+      "left": 22,
+      "right": 60
+    },
+    {
+      "op": "add",
+      "left": 91,
+      "right": 92
+    },
+    {
+      "op": "mul",
+      "left": 24,
+      "right": 80
+    },
+    {
+      "op": "add",
+      "left": 93,
+      "right": 94
+    },
+    {
+      "op": "add",
+      "left": 85,
+      "right": 90
+    },
+    {
+      "op": "add",
+      "left": 95,
+      "right": 96
+    },
+    {
+      "op": "constant",
+      "value": "1/3"
+    },
+    {
+      "op": "mul",
+      "left": 97,
+      "right": 98
+    },
+    {
+      "op": "mul",
+      "left": 24,
+      "right": 33
+    },
+    {
+      "op": "mul",
+      "left": 100,
+      "right": 15
+    },
+    {
+      "op": "mul",
+      "left": 19,
+      "right": 66
+    },
+    {
+      "op": "constant",
+      "value": "-2"
+    },
+    {
+      "op": "mul",
+      "left": 102,
+      "right": 103
+    },
+    {
+      "op": "mul",
+      "left": 22,
+      "right": 56
+    },
+    {
+      "op": "mul",
+      "left": 103,
+      "right": 105
+    },
+    {
+      "op": "mul",
+      "left": 14,
+      "right": 18
+    },
+    {
+      "op": "mul",
+      "left": 21,
+      "right": 107
+    },
+    {
+      "op": "mul",
+      "left": 15,
+      "right": 108
+    },
+    {
+      "op": "mul",
+      "left": 18,
+      "right": 35
+    },
+    {
+      "op": "mul",
+      "left": 15,
+      "right": 110
+    },
+    {
+      "op": "mul",
+      "left": 16,
+      "right": 40
+    },
+    {
+      "op": "mul",
+      "left": 103,
+      "right": 112
+    },
+    {
+      "op": "mul",
+      "left": 18,
+      "right": 21
+    },
+    {
+      "op": "mul",
+      "left": 14,
+      "right": 114
+    },
+    {
+      "op": "mul",
+      "left": 15,
+      "right": 115
+    },
+    {
+      "op": "mul",
+      "left": 12,
+      "right": 50
+    },
+    {
+      "op": "mul",
+      "left": 103,
+      "right": 117
+    },
+    {
+      "op": "mul",
+      "left": 10,
+      "right": 54
+    },
+    {
+      "op": "mul",
+      "left": 15,
+      "right": 119
+    },
+    {
+      "op": "mul",
+      "left": 21,
+      "right": 43
+    },
+    {
+      "op": "constant",
+      "value": "4"
+    },
+    {
+      "op": "mul",
+      "left": 121,
+      "right": 122
+    },
+    {
+      "op": "mul",
+      "left": 105,
+      "right": 122
+    },
+    {
+      "op": "constant",
+      "value": "-4"
+    },
+    {
+      "op": "mul",
+      "left": 108,
+      "right": 125
+    },
+    {
+      "op": "add",
+      "left": 99,
+      "right": 101
+    },
+    {
+      "op": "add",
+      "left": 104,
+      "right": 127
+    },
+    {
+      "op": "add",
+      "left": 106,
+      "right": 128
+    },
+    {
+      "op": "add",
+      "left": 109,
+      "right": 129
+    },
+    {
+      "op": "add",
+      "left": 111,
+      "right": 130
+    },
+    {
+      "op": "add",
+      "left": 113,
+      "right": 131
+    },
+    {
+      "op": "add",
+      "left": 116,
+      "right": 132
+    },
+    {
+      "op": "add",
+      "left": 118,
+      "right": 133
+    },
+    {
+      "op": "add",
+      "left": 120,
+      "right": 134
+    },
+    {
+      "op": "add",
+      "left": 123,
+      "right": 135
+    },
+    {
+      "op": "add",
+      "left": 124,
+      "right": 136
+    },
+    {
+      "op": "add",
+      "left": 126,
+      "right": 137
+    }
+  ]
+}

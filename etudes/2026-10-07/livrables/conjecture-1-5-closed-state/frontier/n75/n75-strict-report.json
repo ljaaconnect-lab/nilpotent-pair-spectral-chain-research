@@ -1,0 +1,170 @@
+{
+  "node": "n75",
+  "accepted": true,
+  "source": "AtomicFirstPrefix.lean",
+  "source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf",
+  "protocol_sha256": "7d3512685e67be195aab9cefba37e2e9eb46789c33dbfe331f51fc1cfb4c1ea2",
+  "formal_contract_sha256": "72d86ada3081019b1e01d79d9749e1bc5a9096688cea37f78bf14c9be8623cf6",
+  "candidate_invocations": 6,
+  "dependency_invocations": 1,
+  "probe_invocations": 0,
+  "total_n75_invocations": 7,
+  "prior_shared_invocations": 7,
+  "shared_invocations_through_n75": 14,
+  "history": [
+    {
+      "round": 1,
+      "exit_code": 1,
+      "source_sha256": "75880dbd517b1f790e2caff50719b3e10e77e69f9b8af484e30b752dc2ee4db4"
+    },
+    {
+      "round": 2,
+      "exit_code": 0,
+      "source_sha256": "8409b5b82b4b2963f91feed2bd79128c2c9ccd3e4146b6983ac140c3af8772f9"
+    },
+    {
+      "round": 3,
+      "exit_code": 1,
+      "source_sha256": "7be569c7e7c59f609ca48a612fd0e2c125b7c510d6a0258db143cde9c69345fd"
+    },
+    {
+      "round": 4,
+      "exit_code": 0,
+      "source_sha256": "8c6c96426a33a1f2a34da71ae043a3220201ae919d3a02d26d17b7542f84aa5a"
+    },
+    {
+      "round": 5,
+      "exit_code": 0,
+      "source_sha256": "c2194fa3c817bae7637375bfe687fd28fb84c4508af6004974daa04a1567b431"
+    },
+    {
+      "round": 6,
+      "exit_code": 0,
+      "source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf"
+    }
+  ],
+  "accepted_declarations": [
+    "sum_complement",
+    "single_response",
+    "weighted_response",
+    "minor_determinant",
+    "normalized_minor_response",
+    "linear_extension"
+  ],
+  "axiom_audit": {
+    "minor_determinant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sum_complement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "single_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "weighted_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "normalized_minor_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "linear_extension": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "declarations": [
+    "AtomicFirstPrefix.sum_complement",
+    "AtomicFirstPrefix.single_response",
+    "AtomicFirstPrefix.weighted_response",
+    "AtomicFirstPrefix.minor_determinant",
+    "AtomicFirstPrefix.normalized_minor_response",
+    "AtomicFirstPrefix.linear_extension"
+  ],
+  "goal_statuses": [
+    {
+      "id": "A1",
+      "declaration": "AtomicFirstPrefix.sum_complement",
+      "status": "closed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "A2",
+      "declaration": "AtomicFirstPrefix.single_response",
+      "status": "closed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "A3",
+      "declaration": "AtomicFirstPrefix.weighted_response",
+      "status": "closed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "A4",
+      "declaration": "AtomicFirstPrefix.minor_determinant",
+      "status": "closed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "A5",
+      "declaration": "AtomicFirstPrefix.normalized_minor_response",
+      "status": "closed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "id": "A6",
+      "declaration": "AtomicFirstPrefix.linear_extension",
+      "status": "closed",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "history_integrity": true,
+  "dependency_build_accepted": true,
+  "dependency_build_report_sha256": "af83b1ffb0ea0f35b3252adc25470a0b05172611b06d8fe734cd34e9349f8ccb",
+  "source_encoding": "UTF-8",
+  "source_newlines": "LF",
+  "dev_score": 1.0,
+  "root_score": 0,
+  "root_conjecture_verified": false,
+  "constraints": [
+    "local h*u=b is explicit",
+    "h=0/existence/compilation REQUIRED_OPEN",
+    "all-f contraction has no free scalar gate",
+    "second-prefix/global closure REQUIRED_OPEN"
+  ]
+}

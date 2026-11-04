@@ -1,0 +1,44 @@
+{
+  "tag": "candidate-01",
+  "kind": "candidate",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n59\\ConditionalCriterion.lean"
+  ],
+  "environment_keys": [
+    "LEAN_PATH",
+    "LEAN_SRC_PATH",
+    "LEAN_SYSROOT"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 20.121078999996826,
+  "source_sha256": "0d3de6f6475371f1226de953c7c707ff7b5abf31557715be195bdb125fab8189",
+  "error_count": 0,
+  "source_clean": true,
+  "axiom_audit": {
+    "ConditionalCriterion.compose_input_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConditionalCriterion.Pi_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConditionalCriterion.polynomial_composed_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ConditionalCriterion.conditional_target_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "passed": 2,
+  "denominator": 2,
+  "dev_score": 1.0,
+  "root_conjecture_verified": false
+}

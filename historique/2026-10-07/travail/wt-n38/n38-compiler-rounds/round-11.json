@@ -1,0 +1,16 @@
+{
+  "node": "n38",
+  "round": 11,
+  "kind": "candidate",
+  "source": "LabelBridge.lean",
+  "source_sha256": "33b2adec9ba4d3012ae0915bc64a3b482ab602ae4618adc619697709ac36be4c",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n38\\LabelBridge.lean"
+  ],
+  "LEAN_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n38",
+  "exit_code": 1,
+  "stdout": "'CollisionLabelBridge.digit_step_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.encodeDigits_lt_pow' depends on axioms: [propext, Classical.choice, Quot.sound]\nC:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n38\\LabelBridge.lean:33:20: error: unsolved goals\nn : Nat\nd : Fin n\nds : List (Fin n)\nih : \u2200 (start : Nat), indexedLabelFrom n start ds = n ^ start * encodeDigits n ds\nstart : Nat\nhshift : (List.mapIdx (fun i d => \u2191d * n ^ (start + (i + 1))) ds).sum = n ^ (start + 1) * encodeDigits n ds\n\u22a2 \u2191d * n ^ start + n ^ start * n * encodeDigits n ds = n ^ start * (\u2191d + n * encodeDigits n ds)\n'CollisionLabelBridge.indexedLabelFrom_eq' depends on axioms: [propext, sorryAx]\n",
+  "stderr": "",
+  "root_conjecture_verified": false
+}

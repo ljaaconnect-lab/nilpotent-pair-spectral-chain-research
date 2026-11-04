@@ -1,0 +1,374 @@
+{
+  "artifact_version": "n40-shared-binary-power-v1",
+  "examples": [
+    {
+      "exponent": 0,
+      "instructions": [],
+      "output": 0,
+      "nodes": [
+        {
+          "op": "identity_leaf",
+          "value": "one"
+        },
+        {
+          "op": "input_leaf",
+          "value": "explicit initial a"
+        }
+      ],
+      "multiplications": 0,
+      "log2": 0,
+      "initialization": "a is explicitly supplied; its cost is not included",
+      "scope": "Shared monoid multiplication graph, not a circuit for the research target"
+    },
+    {
+      "exponent": 1,
+      "instructions": [],
+      "output": 1,
+      "nodes": [
+        {
+          "op": "identity_leaf",
+          "value": "one"
+        },
+        {
+          "op": "input_leaf",
+          "value": "explicit initial a"
+        }
+      ],
+      "multiplications": 0,
+      "log2": 0,
+      "initialization": "a is explicitly supplied; its cost is not included",
+      "scope": "Shared monoid multiplication graph, not a circuit for the research target"
+    },
+    {
+      "exponent": 2,
+      "instructions": [
+        "square"
+      ],
+      "output": 2,
+      "nodes": [
+        {
+          "op": "identity_leaf",
+          "value": "one"
+        },
+        {
+          "op": "input_leaf",
+          "value": "explicit initial a"
+        },
+        {
+          "op": "mul",
+          "left": 1,
+          "right": 1
+        }
+      ],
+      "multiplications": 1,
+      "log2": 1,
+      "initialization": "a is explicitly supplied; its cost is not included",
+      "scope": "Shared monoid multiplication graph, not a circuit for the research target"
+    },
+    {
+      "exponent": 3,
+      "instructions": [
+        "square",
+        "multiplyBase"
+      ],
+      "output": 3,
+      "nodes": [
+        {
+          "op": "identity_leaf",
+          "value": "one"
+        },
+        {
+          "op": "input_leaf",
+          "value": "explicit initial a"
+        },
+        {
+          "op": "mul",
+          "left": 1,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 2,
+          "right": 1
+        }
+      ],
+      "multiplications": 2,
+      "log2": 1,
+      "initialization": "a is explicitly supplied; its cost is not included",
+      "scope": "Shared monoid multiplication graph, not a circuit for the research target"
+    },
+    {
+      "exponent": 26,
+      "instructions": [
+        "square",
+        "multiplyBase",
+        "square",
+        "square",
+        "multiplyBase",
+        "square"
+      ],
+      "output": 7,
+      "nodes": [
+        {
+          "op": "identity_leaf",
+          "value": "one"
+        },
+        {
+          "op": "input_leaf",
+          "value": "explicit initial a"
+        },
+        {
+          "op": "mul",
+          "left": 1,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 3,
+          "right": 3
+        },
+        {
+          "op": "mul",
+          "left": 4,
+          "right": 4
+        },
+        {
+          "op": "mul",
+          "left": 5,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 6,
+          "right": 6
+        }
+      ],
+      "multiplications": 6,
+      "log2": 4,
+      "initialization": "a is explicitly supplied; its cost is not included",
+      "scope": "Shared monoid multiplication graph, not a circuit for the research target"
+    },
+    {
+      "exponent": 255,
+      "instructions": [
+        "square",
+        "multiplyBase",
+        "square",
+        "multiplyBase",
+        "square",
+        "multiplyBase",
+        "square",
+        "multiplyBase",
+        "square",
+        "multiplyBase",
+        "square",
+        "multiplyBase",
+        "square",
+        "multiplyBase"
+      ],
+      "output": 15,
+      "nodes": [
+        {
+          "op": "identity_leaf",
+          "value": "one"
+        },
+        {
+          "op": "input_leaf",
+          "value": "explicit initial a"
+        },
+        {
+          "op": "mul",
+          "left": 1,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 3,
+          "right": 3
+        },
+        {
+          "op": "mul",
+          "left": 4,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 5,
+          "right": 5
+        },
+        {
+          "op": "mul",
+          "left": 6,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 7,
+          "right": 7
+        },
+        {
+          "op": "mul",
+          "left": 8,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 9,
+          "right": 9
+        },
+        {
+          "op": "mul",
+          "left": 10,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 11,
+          "right": 11
+        },
+        {
+          "op": "mul",
+          "left": 12,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 13,
+          "right": 13
+        },
+        {
+          "op": "mul",
+          "left": 14,
+          "right": 1
+        }
+      ],
+      "multiplications": 14,
+      "log2": 7,
+      "initialization": "a is explicitly supplied; its cost is not included",
+      "scope": "Shared monoid multiplication graph, not a circuit for the research target"
+    },
+    {
+      "exponent": 3124,
+      "instructions": [
+        "square",
+        "multiplyBase",
+        "square",
+        "square",
+        "square",
+        "square",
+        "square",
+        "multiplyBase",
+        "square",
+        "multiplyBase",
+        "square",
+        "square",
+        "multiplyBase",
+        "square",
+        "square"
+      ],
+      "output": 16,
+      "nodes": [
+        {
+          "op": "identity_leaf",
+          "value": "one"
+        },
+        {
+          "op": "input_leaf",
+          "value": "explicit initial a"
+        },
+        {
+          "op": "mul",
+          "left": 1,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 2,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 3,
+          "right": 3
+        },
+        {
+          "op": "mul",
+          "left": 4,
+          "right": 4
+        },
+        {
+          "op": "mul",
+          "left": 5,
+          "right": 5
+        },
+        {
+          "op": "mul",
+          "left": 6,
+          "right": 6
+        },
+        {
+          "op": "mul",
+          "left": 7,
+          "right": 7
+        },
+        {
+          "op": "mul",
+          "left": 8,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 9,
+          "right": 9
+        },
+        {
+          "op": "mul",
+          "left": 10,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 11,
+          "right": 11
+        },
+        {
+          "op": "mul",
+          "left": 12,
+          "right": 12
+        },
+        {
+          "op": "mul",
+          "left": 13,
+          "right": 1
+        },
+        {
+          "op": "mul",
+          "left": 14,
+          "right": 14
+        },
+        {
+          "op": "mul",
+          "left": 15,
+          "right": 15
+        }
+      ],
+      "multiplications": 15,
+      "log2": 11,
+      "initialization": "a is explicitly supplied; its cost is not included",
+      "scope": "Shared monoid multiplication graph, not a circuit for the research target"
+    }
+  ],
+  "scalar_bound": "s_init+s_u+s_v+2*log2(k)*(2*r^3-r^2)+(2*r^2+r-1)",
+  "coordinate_output_adjustment": "A fixed matrix entry costs no contraction gates",
+  "unknown_root_data": "No polynomial dimension/initial-data construction for the root target has been established here"
+}

@@ -1,0 +1,1942 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "documents/inventaire-complet-2026-11-03/measure_complete_inventory.py": "3d60eee52571ca914dc6fd31ebe570de02396e70f5bd4bfe814d63e1c1be3661",
+    "documents/cout-meme-circuit-2026-11-03/measure_same_dag.py": "f7e283d3bdbd26c94ad9826fb776c5de1f422cae51a72b9a921d9ec9fdcc0b25",
+    "documents/reanalyse-quotient-2026-11-03/verify_joint_convolution.py": "7cf95e197d464834610336dbfc59d6f1e033556dd2714faa7df01ae37299ee4d",
+    "documents/reanalyse-quotient-2026-11-03/compiler_joint_convolution.py": "93eacd7276bec4d1dbda24fd9670592ec050a96837819be06b176e563bab6471",
+    "documents/composition-native-2026-11-03/compose_native_representatives.py": "2e68d57225c04caddace2d91946cf7c88273a702bbc7833e1f380a253e54d9f4",
+    "documents/composition-native-2026-11-03/verify_native_composition.py": "52894580b8b933aa0b7ba936ee3a50667e452fea542c31fc4c56368cc6fbb3ed",
+    "etudes/2026-11-01/linearisation-orientee-convolution/linearised_inputs.py": "5c4c61aaacd4aa143f146bdaa64f20ae7fdbfeeac41b207eef87c4c9c7b24ada",
+    "etudes/2026-11-01/linearisation-orientee-convolution/verify_linearised_inputs.py": "b75e7c8c00123b5d1794562f869d95f16afe719373e3ca0d4baa84417645eb04",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06"
+  },
+  "cases": [
+    {
+      "n": 1,
+      "Q": 97,
+      "N": 2,
+      "omega": 96,
+      "labels": [
+        -1
+      ],
+      "variant": "direct_convolution",
+      "groups": 1,
+      "states": 2,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 1,
+          "additions": 1,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 6
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 5,
+          "additions": 2,
+          "multiplications": 3,
+          "upper_bound_for_this_group_and_state_count": 6
+        }
+      ],
+      "total_gates": 11,
+      "useful_preparation_P": 4,
+      "residual_J": 7,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "cab1a73064c99a0c1a9b887d43f421a3f0d926259b714bd313386c6f0191ea12"
+    },
+    {
+      "n": 1,
+      "Q": 97,
+      "N": 2,
+      "omega": 96,
+      "labels": [
+        -1
+      ],
+      "variant": "fused_with_preparation",
+      "groups": 1,
+      "states": 2,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 1,
+          "additions": 1,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 5,
+          "additions": 2,
+          "multiplications": 3,
+          "upper_bound_for_this_group_and_state_count": 6
+        }
+      ],
+      "total_gates": 9,
+      "useful_preparation_P": 3,
+      "residual_J": 6,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "212054649419abfc7302b7abce3cff9e5cc8ce43188b73ab01c4a70467f1ff5e"
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        -3,
+        0
+      ],
+      "variant": "direct_convolution",
+      "groups": 3,
+      "states": 5,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 3,
+          "additions": 0,
+          "multiplications": 3,
+          "upper_bound_for_this_group_and_state_count": 3
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 4,
+          "additions": 0,
+          "multiplications": 4,
+          "upper_bound_for_this_group_and_state_count": 4
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 4,
+          "additions": 4,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 4
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 4,
+          "additions": 0,
+          "multiplications": 4,
+          "upper_bound_for_this_group_and_state_count": 4
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 22,
+          "additions": 8,
+          "multiplications": 14,
+          "upper_bound_for_this_group_and_state_count": 40
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 7,
+          "additions": 3,
+          "multiplications": 4,
+          "upper_bound_for_this_group_and_state_count": 28
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 3,
+          "additions": 0,
+          "multiplications": 3,
+          "upper_bound_for_this_group_and_state_count": 3
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 4,
+          "additions": 2,
+          "multiplications": 2,
+          "upper_bound_for_this_group_and_state_count": 5
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 3,
+          "additions": 0,
+          "multiplications": 3,
+          "upper_bound_for_this_group_and_state_count": 3
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 17,
+          "additions": 8,
+          "multiplications": 9,
+          "upper_bound_for_this_group_and_state_count": 20
+        }
+      ],
+      "total_gates": 72,
+      "useful_preparation_P": 37,
+      "residual_J": 35,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "dd1b283bbcec4bcd3361263ec09f1115958a5a817248787dc698f644f23cd8a2"
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        -3,
+        0
+      ],
+      "variant": "fused_with_preparation",
+      "groups": 3,
+      "states": 5,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 3,
+          "additions": 0,
+          "multiplications": 3,
+          "upper_bound_for_this_group_and_state_count": 3
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 4,
+          "additions": 0,
+          "multiplications": 4,
+          "upper_bound_for_this_group_and_state_count": 4
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 4,
+          "additions": 4,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 4
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 4,
+          "additions": 0,
+          "multiplications": 4,
+          "upper_bound_for_this_group_and_state_count": 4
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 2,
+          "additions": 0,
+          "multiplications": 2,
+          "upper_bound_for_this_group_and_state_count": 2
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 3,
+          "additions": 3,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 3
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 4,
+          "additions": 2,
+          "multiplications": 2,
+          "upper_bound_for_this_group_and_state_count": 5
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 3,
+          "additions": 0,
+          "multiplications": 3,
+          "upper_bound_for_this_group_and_state_count": 3
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 17,
+          "additions": 8,
+          "multiplications": 9,
+          "upper_bound_for_this_group_and_state_count": 20
+        }
+      ],
+      "total_gates": 45,
+      "useful_preparation_P": 17,
+      "residual_J": 28,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "4690b42120a8d237483395608247bd89f51b7d17ea3d3617f747956cb9317bae"
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        -5,
+        -2,
+        4
+      ],
+      "variant": "direct_convolution",
+      "groups": 7,
+      "states": 15,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 8,
+          "additions": 0,
+          "multiplications": 8,
+          "upper_bound_for_this_group_and_state_count": 8
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 9,
+          "additions": 0,
+          "multiplications": 9,
+          "upper_bound_for_this_group_and_state_count": 9
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 9,
+          "additions": 9,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 9
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 9,
+          "additions": 0,
+          "multiplications": 9,
+          "upper_bound_for_this_group_and_state_count": 9
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 42,
+          "additions": 18,
+          "multiplications": 24,
+          "upper_bound_for_this_group_and_state_count": 60
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 49,
+          "additions": 21,
+          "multiplications": 28,
+          "upper_bound_for_this_group_and_state_count": 112
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound_for_this_group_and_state_count": 7
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 31,
+          "additions": 17,
+          "multiplications": 14,
+          "upper_bound_for_this_group_and_state_count": 39
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 3,
+          "additions": 0,
+          "multiplications": 3,
+          "upper_bound_for_this_group_and_state_count": 3
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 17,
+          "additions": 8,
+          "multiplications": 9,
+          "upper_bound_for_this_group_and_state_count": 20
+        }
+      ],
+      "total_gates": 185,
+      "useful_preparation_P": 77,
+      "residual_J": 108,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "b972fe9460a4e146a970770a30da5619c7630a37da58fb3a018dbd6f1ea65598"
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        -5,
+        -2,
+        4
+      ],
+      "variant": "fused_with_preparation",
+      "groups": 7,
+      "states": 15,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 8,
+          "additions": 0,
+          "multiplications": 8,
+          "upper_bound_for_this_group_and_state_count": 8
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 9,
+          "additions": 0,
+          "multiplications": 9,
+          "upper_bound_for_this_group_and_state_count": 9
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 9,
+          "additions": 9,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 9
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 9,
+          "additions": 0,
+          "multiplications": 9,
+          "upper_bound_for_this_group_and_state_count": 9
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 12,
+          "additions": 0,
+          "multiplications": 12,
+          "upper_bound_for_this_group_and_state_count": 12
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 14,
+          "additions": 14,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 14
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 31,
+          "additions": 17,
+          "multiplications": 14,
+          "upper_bound_for_this_group_and_state_count": 39
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 3,
+          "additions": 0,
+          "multiplications": 3,
+          "upper_bound_for_this_group_and_state_count": 3
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 17,
+          "additions": 8,
+          "multiplications": 9,
+          "upper_bound_for_this_group_and_state_count": 20
+        }
+      ],
+      "total_gates": 113,
+      "useful_preparation_P": 35,
+      "residual_J": 78,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "f42ca9b3a0869f31ece510f833c7bc88c6abba91e8036105d330be4e5e2a8c76"
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        -7,
+        -4,
+        2,
+        10
+      ],
+      "variant": "direct_convolution",
+      "groups": 15,
+      "states": 52,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound_for_this_group_and_state_count": 15
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 16,
+          "additions": 0,
+          "multiplications": 16,
+          "upper_bound_for_this_group_and_state_count": 16
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 16,
+          "additions": 16,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 16
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 16,
+          "additions": 0,
+          "multiplications": 16,
+          "upper_bound_for_this_group_and_state_count": 16
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 148,
+          "additions": 64,
+          "multiplications": 84,
+          "upper_bound_for_this_group_and_state_count": 224
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 585,
+          "additions": 273,
+          "multiplications": 312,
+          "upper_bound_for_this_group_and_state_count": 1320
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound_for_this_group_and_state_count": 15
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 190,
+          "additions": 109,
+          "multiplications": 81,
+          "upper_bound_for_this_group_and_state_count": 229
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound_for_this_group_and_state_count": 7
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 49,
+          "additions": 24,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 56
+        }
+      ],
+      "total_gates": 1058,
+      "useful_preparation_P": 211,
+      "residual_J": 847,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "5a22c580e3b85b16d7352b7e6bc58949b2fc4b10a54e98d17344c7c05d2a789b"
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        -7,
+        -4,
+        2,
+        10
+      ],
+      "variant": "fused_with_preparation",
+      "groups": 15,
+      "states": 52,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound_for_this_group_and_state_count": 15
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 16,
+          "additions": 0,
+          "multiplications": 16,
+          "upper_bound_for_this_group_and_state_count": 16
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 16,
+          "additions": 16,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 16
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 16,
+          "additions": 0,
+          "multiplications": 16,
+          "upper_bound_for_this_group_and_state_count": 16
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 44,
+          "additions": 0,
+          "multiplications": 44,
+          "upper_bound_for_this_group_and_state_count": 44
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 45,
+          "additions": 45,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 45
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 190,
+          "additions": 109,
+          "multiplications": 81,
+          "upper_bound_for_this_group_and_state_count": 229
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound_for_this_group_and_state_count": 7
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 49,
+          "additions": 24,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 56
+        }
+      ],
+      "total_gates": 399,
+      "useful_preparation_P": 63,
+      "residual_J": 336,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "6d607cb73903c198a6c47427f804c0aad98a0391f09fab018070bb9fade26394"
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        -9,
+        -6,
+        0,
+        8,
+        18
+      ],
+      "variant": "direct_convolution",
+      "groups": 31,
+      "states": 203,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 24,
+          "additions": 0,
+          "multiplications": 24,
+          "upper_bound_for_this_group_and_state_count": 24
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 25,
+          "additions": 0,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 25
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 25,
+          "additions": 25,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 25
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 25,
+          "additions": 0,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 25
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 200,
+          "additions": 90,
+          "multiplications": 110,
+          "upper_bound_for_this_group_and_state_count": 280
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 1545,
+          "additions": 721,
+          "multiplications": 824,
+          "upper_bound_for_this_group_and_state_count": 3120
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 31,
+          "additions": 0,
+          "multiplications": 31,
+          "upper_bound_for_this_group_and_state_count": 31
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 1111,
+          "additions": 654,
+          "multiplications": 457,
+          "upper_bound_for_this_group_and_state_count": 1265
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound_for_this_group_and_state_count": 7
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 49,
+          "additions": 24,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 56
+        }
+      ],
+      "total_gates": 3043,
+      "useful_preparation_P": 299,
+      "residual_J": 2744,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "210f521c1a0c0f70422c80c853a96f804d8e125d55439ca6691571e284d7c97b"
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        -9,
+        -6,
+        0,
+        8,
+        18
+      ],
+      "variant": "fused_with_preparation",
+      "groups": 31,
+      "states": 203,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 24,
+          "additions": 0,
+          "multiplications": 24,
+          "upper_bound_for_this_group_and_state_count": 24
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 25,
+          "additions": 0,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 25
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 25,
+          "additions": 25,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 25
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 25,
+          "additions": 0,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 25
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 130,
+          "additions": 0,
+          "multiplications": 130,
+          "upper_bound_for_this_group_and_state_count": 130
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 124,
+          "additions": 124,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 124
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 1111,
+          "additions": 654,
+          "multiplications": 457,
+          "upper_bound_for_this_group_and_state_count": 1265
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound_for_this_group_and_state_count": 7
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 49,
+          "additions": 24,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 56
+        }
+      ],
+      "total_gates": 1521,
+      "useful_preparation_P": 99,
+      "residual_J": 1422,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "d20742d969531228fb424a385503c3ada8a6c5180860e40fdb20bd49b86f50eb"
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        -11,
+        -8,
+        -2,
+        6,
+        16,
+        28
+      ],
+      "variant": "direct_convolution",
+      "groups": 63,
+      "states": 877,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 35,
+          "additions": 0,
+          "multiplications": 35,
+          "upper_bound_for_this_group_and_state_count": 35
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 36,
+          "additions": 0,
+          "multiplications": 36,
+          "upper_bound_for_this_group_and_state_count": 36
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 36,
+          "additions": 36,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 36
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 36,
+          "additions": 0,
+          "multiplications": 36,
+          "upper_bound_for_this_group_and_state_count": 36
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 258,
+          "additions": 120,
+          "multiplications": 138,
+          "upper_bound_for_this_group_and_state_count": 336
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 3585,
+          "additions": 1673,
+          "multiplications": 1912,
+          "upper_bound_for_this_group_and_state_count": 6840
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 63,
+          "additions": 0,
+          "multiplications": 63,
+          "upper_bound_for_this_group_and_state_count": 63
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 6517,
+          "additions": 3926,
+          "multiplications": 2591,
+          "upper_bound_for_this_group_and_state_count": 7062
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound_for_this_group_and_state_count": 7
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 49,
+          "additions": 24,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 56
+        }
+      ],
+      "total_gates": 10623,
+      "useful_preparation_P": 401,
+      "residual_J": 10222,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "c59ed924f1ea7b0876d84be1df21fee7d48da668b6d69d7e9c56b42fe16f970e"
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        -11,
+        -8,
+        -2,
+        6,
+        16,
+        28
+      ],
+      "variant": "fused_with_preparation",
+      "groups": 63,
+      "states": 877,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 35,
+          "additions": 0,
+          "multiplications": 35,
+          "upper_bound_for_this_group_and_state_count": 35
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 36,
+          "additions": 0,
+          "multiplications": 36,
+          "upper_bound_for_this_group_and_state_count": 36
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 36,
+          "additions": 36,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 36
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 36,
+          "additions": 0,
+          "multiplications": 36,
+          "upper_bound_for_this_group_and_state_count": 36
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 342,
+          "additions": 0,
+          "multiplications": 342,
+          "upper_bound_for_this_group_and_state_count": 342
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 315,
+          "additions": 315,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 315
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 6517,
+          "additions": 3926,
+          "multiplications": 2591,
+          "upper_bound_for_this_group_and_state_count": 7062
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound_for_this_group_and_state_count": 7
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 49,
+          "additions": 24,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 56
+        }
+      ],
+      "total_gates": 7374,
+      "useful_preparation_P": 143,
+      "residual_J": 7231,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "5d3ac1e66cc3ed8a4dcfeebacc2b42697b369b37653f5cf941abdad131a8097c"
+    },
+    {
+      "n": 3,
+      "Q": 5,
+      "N": 4,
+      "omega": 2,
+      "labels": [
+        -5,
+        -2,
+        4
+      ],
+      "variant": "direct_convolution",
+      "groups": 7,
+      "states": 15,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 8,
+          "additions": 0,
+          "multiplications": 8,
+          "upper_bound_for_this_group_and_state_count": 8
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 9,
+          "additions": 0,
+          "multiplications": 9,
+          "upper_bound_for_this_group_and_state_count": 9
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 9,
+          "additions": 9,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 9
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 9,
+          "additions": 0,
+          "multiplications": 9,
+          "upper_bound_for_this_group_and_state_count": 9
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 42,
+          "additions": 18,
+          "multiplications": 24,
+          "upper_bound_for_this_group_and_state_count": 60
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 49,
+          "additions": 21,
+          "multiplications": 28,
+          "upper_bound_for_this_group_and_state_count": 112
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound_for_this_group_and_state_count": 7
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 31,
+          "additions": 17,
+          "multiplications": 14,
+          "upper_bound_for_this_group_and_state_count": 39
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 3,
+          "additions": 0,
+          "multiplications": 3,
+          "upper_bound_for_this_group_and_state_count": 3
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 17,
+          "additions": 8,
+          "multiplications": 9,
+          "upper_bound_for_this_group_and_state_count": 20
+        }
+      ],
+      "total_gates": 184,
+      "useful_preparation_P": 77,
+      "residual_J": 107,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "f77a891728b456492b49571b4df35acc28ea17452a02f98b732d814ba91e2b4d"
+    },
+    {
+      "n": 3,
+      "Q": 5,
+      "N": 4,
+      "omega": 2,
+      "labels": [
+        -5,
+        -2,
+        4
+      ],
+      "variant": "fused_with_preparation",
+      "groups": 7,
+      "states": 15,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 8,
+          "additions": 0,
+          "multiplications": 8,
+          "upper_bound_for_this_group_and_state_count": 8
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 9,
+          "additions": 0,
+          "multiplications": 9,
+          "upper_bound_for_this_group_and_state_count": 9
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 9,
+          "additions": 9,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 9
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 9,
+          "additions": 0,
+          "multiplications": 9,
+          "upper_bound_for_this_group_and_state_count": 9
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 12,
+          "additions": 0,
+          "multiplications": 12,
+          "upper_bound_for_this_group_and_state_count": 12
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 14,
+          "additions": 14,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 14
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 31,
+          "additions": 17,
+          "multiplications": 14,
+          "upper_bound_for_this_group_and_state_count": 39
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 3,
+          "additions": 0,
+          "multiplications": 3,
+          "upper_bound_for_this_group_and_state_count": 3
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 17,
+          "additions": 8,
+          "multiplications": 9,
+          "upper_bound_for_this_group_and_state_count": 20
+        }
+      ],
+      "total_gates": 112,
+      "useful_preparation_P": 35,
+      "residual_J": 77,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "1f4b34f936c8062c23dfcdff682468910bae31fcab5cfaf585202237f8f70b05"
+    },
+    {
+      "n": 4,
+      "Q": 17,
+      "N": 8,
+      "omega": 2,
+      "labels": [
+        -7,
+        -4,
+        2,
+        10
+      ],
+      "variant": "direct_convolution",
+      "groups": 15,
+      "states": 52,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound_for_this_group_and_state_count": 15
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 16,
+          "additions": 0,
+          "multiplications": 16,
+          "upper_bound_for_this_group_and_state_count": 16
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 16,
+          "additions": 16,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 16
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 16,
+          "additions": 0,
+          "multiplications": 16,
+          "upper_bound_for_this_group_and_state_count": 16
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 148,
+          "additions": 64,
+          "multiplications": 84,
+          "upper_bound_for_this_group_and_state_count": 224
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 585,
+          "additions": 273,
+          "multiplications": 312,
+          "upper_bound_for_this_group_and_state_count": 1320
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound_for_this_group_and_state_count": 15
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 190,
+          "additions": 109,
+          "multiplications": 81,
+          "upper_bound_for_this_group_and_state_count": 229
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound_for_this_group_and_state_count": 7
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 49,
+          "additions": 24,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 56
+        }
+      ],
+      "total_gates": 1058,
+      "useful_preparation_P": 211,
+      "residual_J": 847,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "1fc2ec749781b49468e90dd0762598eeb3348e46dfd0c5d57864b2e06ec7e4e2"
+    },
+    {
+      "n": 4,
+      "Q": 17,
+      "N": 8,
+      "omega": 2,
+      "labels": [
+        -7,
+        -4,
+        2,
+        10
+      ],
+      "variant": "fused_with_preparation",
+      "groups": 15,
+      "states": 52,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound_for_this_group_and_state_count": 15
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 16,
+          "additions": 0,
+          "multiplications": 16,
+          "upper_bound_for_this_group_and_state_count": 16
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 16,
+          "additions": 16,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 16
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 16,
+          "additions": 0,
+          "multiplications": 16,
+          "upper_bound_for_this_group_and_state_count": 16
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 44,
+          "additions": 0,
+          "multiplications": 44,
+          "upper_bound_for_this_group_and_state_count": 44
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 45,
+          "additions": 45,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 45
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 190,
+          "additions": 109,
+          "multiplications": 81,
+          "upper_bound_for_this_group_and_state_count": 229
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound_for_this_group_and_state_count": 7
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 49,
+          "additions": 24,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 56
+        }
+      ],
+      "total_gates": 399,
+      "useful_preparation_P": 63,
+      "residual_J": 336,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "571a88ed0e14d11cfa19d309f444f54487c3f47c441f34059bbe679432c95324"
+    },
+    {
+      "n": 5,
+      "Q": 257,
+      "N": 8,
+      "omega": 4,
+      "labels": [
+        -9,
+        -6,
+        0,
+        8,
+        18
+      ],
+      "variant": "direct_convolution",
+      "groups": 31,
+      "states": 203,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 24,
+          "additions": 0,
+          "multiplications": 24,
+          "upper_bound_for_this_group_and_state_count": 24
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 25,
+          "additions": 0,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 25
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 25,
+          "additions": 25,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 25
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 25,
+          "additions": 0,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 25
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 200,
+          "additions": 90,
+          "multiplications": 110,
+          "upper_bound_for_this_group_and_state_count": 280
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 1545,
+          "additions": 721,
+          "multiplications": 824,
+          "upper_bound_for_this_group_and_state_count": 3120
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 31,
+          "additions": 0,
+          "multiplications": 31,
+          "upper_bound_for_this_group_and_state_count": 31
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 1111,
+          "additions": 654,
+          "multiplications": 457,
+          "upper_bound_for_this_group_and_state_count": 1265
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound_for_this_group_and_state_count": 7
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 49,
+          "additions": 24,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 56
+        }
+      ],
+      "total_gates": 3043,
+      "useful_preparation_P": 299,
+      "residual_J": 2744,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "abe4f4de0e45e08ff6e2b8454b7aa6e2edbb89ebf3eb889a747a449f8bcf27b9"
+    },
+    {
+      "n": 5,
+      "Q": 257,
+      "N": 8,
+      "omega": 4,
+      "labels": [
+        -9,
+        -6,
+        0,
+        8,
+        18
+      ],
+      "variant": "fused_with_preparation",
+      "groups": 31,
+      "states": 203,
+      "stages": [
+        {
+          "stage": "z_powers",
+          "useful_distinct_gates": 24,
+          "additions": 0,
+          "multiplications": 24,
+          "upper_bound_for_this_group_and_state_count": 24
+        },
+        {
+          "stage": "a_squares",
+          "useful_distinct_gates": 25,
+          "additions": 0,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 25
+        },
+        {
+          "stage": "one_plus_a_squared",
+          "useful_distinct_gates": 25,
+          "additions": 25,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 25
+        },
+        {
+          "stage": "B_products",
+          "useful_distinct_gates": 25,
+          "additions": 0,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 25
+        },
+        {
+          "stage": "coefficient_NTT",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "fusion_vectors",
+          "useful_distinct_gates": 130,
+          "additions": 0,
+          "multiplications": 130,
+          "upper_bound_for_this_group_and_state_count": 130
+        },
+        {
+          "stage": "group_weights",
+          "useful_distinct_gates": 124,
+          "additions": 124,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 124
+        },
+        {
+          "stage": "R_recurrence",
+          "useful_distinct_gates": 1111,
+          "additions": 654,
+          "multiplications": 457,
+          "upper_bound_for_this_group_and_state_count": 1265
+        },
+        {
+          "stage": "factorial_normalization",
+          "useful_distinct_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound_for_this_group_and_state_count": 1
+        },
+        {
+          "stage": "universal_sign_in_terminal_label",
+          "useful_distinct_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound_for_this_group_and_state_count": 0
+        },
+        {
+          "stage": "shared_phases",
+          "useful_distinct_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound_for_this_group_and_state_count": 7
+        },
+        {
+          "stage": "true_INTT",
+          "useful_distinct_gates": 49,
+          "additions": 24,
+          "multiplications": 25,
+          "upper_bound_for_this_group_and_state_count": 56
+        }
+      ],
+      "total_gates": 1521,
+      "useful_preparation_P": 99,
+      "residual_J": 1422,
+      "full_scalar_a_z_only": true,
+      "partition_disjoint_and_complete": true,
+      "graph_and_outputs_sha256": "49965801d4a85e371d203e38f44962be966ce5a9812d494f51049a2eee4a99e5"
+    }
+  ],
+  "counting_model": "Distinct useful binary +/* gates, structural constants and wires free.",
+  "allocation_time_is_not_semantic_attribution": true,
+  "partition_disjoint_and_complete_for_every_case": true,
+  "all_totals_equal_previous_semantically_verified_compiler_report": true,
+  "scope": "Complete scalar circuits including true INTT; the fused variant charges reused sums to group weights, not to a separate NTT block.",
+  "general_polynomial_bound_proved": false
+}

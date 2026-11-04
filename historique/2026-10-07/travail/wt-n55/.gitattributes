@@ -1,0 +1,9 @@
+# Preserve the exact bytes whose hashes bind n55 compiler evidence.
+/DeterminantBridge.lean -text
+/compile_n55.py -text
+/verify_n55.py -text
+/n55-* -text
+/n55-compiler-rounds/** -text
+
+# Publication: retain every archived file byte on all platforms.
+* -text

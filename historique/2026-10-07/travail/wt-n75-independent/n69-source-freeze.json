@@ -1,0 +1,12 @@
+{
+  "node": "n69",
+  "artifact_version": "n69-joint-interfaces-v1",
+  "phase": "frozen-before-construction-counts; no eligible identity evaluator",
+  "base_commit": "1c3ee90c7cd972413db18112a8578ea96a34b2bb",
+  "files": {
+    "n69-protocol.json": "fd35c4f059cc564643abdeb9e6003d3663fb7b19a88ff7307ec706e38a237da1",
+    "n69-candidates.json": "19a23cef89310c5cc68f73d96717645c856ce4a747d7ce83663b06f5acb98935",
+    "n69_interfaces.py": "f2451f681015cd9a455823a65e42e259a158a1e4f6d689d17c80a088504d77c4",
+    "compile_n69_references.py": "27f628ca95d6dcce33c544241f3c277612bf4506d6b493cae06ede6fcabe6a7d"
+  }
+}

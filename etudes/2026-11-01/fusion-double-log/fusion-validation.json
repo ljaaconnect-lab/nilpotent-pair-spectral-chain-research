@@ -1,0 +1,654 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "etudes/2026-11-01/fusion-double-log/fused_circuit.py": "42fc48847aef4f8b19490f0e2ee3055818e9ee3d114e13371855eb23a2be0515",
+    "etudes/2026-11-01/fusion-double-log/verify_fused_circuit.py": "01116035f7b890df190646568ab17bf8cdaecc609f75e53e74baf0bae628836f",
+    "etudes/2026-11-01/logarithmes-chaine/log_circuit.py": "bded6cb85a07e04151e2bf4c181d73559bdcfadfc443ef72eb6bac4a433cba98",
+    "etudes/2026-11-01/logarithmes-chaine/verify_log_circuit.py": "d6a89bf5423e7c5c2b829db396c56fce9af8be657786e1bafda1f103ce5c18c0",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/verify_shared_operator_dag.py": "26b8ccc63937921a894d3e272ceaadd4445f19e862f62a3be536bb539d8037e9"
+  },
+  "cases": [
+    {
+      "n": 1,
+      "mode": "direct",
+      "Q": 97,
+      "N": 2,
+      "labels": [
+        1
+      ],
+      "projector_factors": [],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 0,
+      "formal_z_tables": 1,
+      "complete_chain_scalar_gates": 3,
+      "uncompressed_direct_fused_gates": 3,
+      "original_unfused_direct_gates_same_parameters": 9,
+      "allocated_nodes": 9,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 4
+        }
+      ],
+      "seconds": 0.0
+    },
+    {
+      "n": 1,
+      "mode": "single",
+      "Q": 97,
+      "N": 2,
+      "labels": [
+        1
+      ],
+      "projector_factors": [],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 8,
+      "formal_z_tables": 1,
+      "complete_chain_scalar_gates": 3,
+      "uncompressed_direct_fused_gates": null,
+      "original_unfused_direct_gates_same_parameters": null,
+      "allocated_nodes": 10,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 4
+        }
+      ],
+      "seconds": 0.0
+    },
+    {
+      "n": 1,
+      "mode": "double",
+      "Q": 97,
+      "N": 2,
+      "labels": [
+        1
+      ],
+      "projector_factors": [],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 8,
+      "formal_z_tables": 1,
+      "complete_chain_scalar_gates": 3,
+      "uncompressed_direct_fused_gates": null,
+      "original_unfused_direct_gates_same_parameters": null,
+      "allocated_nodes": 11,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 4
+        }
+      ],
+      "seconds": 0.0
+    },
+    {
+      "n": 2,
+      "mode": "direct",
+      "Q": 97,
+      "N": 4,
+      "labels": [
+        1,
+        0
+      ],
+      "projector_factors": [
+        1
+      ],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 0,
+      "formal_z_tables": 1,
+      "complete_chain_scalar_gates": 23,
+      "uncompressed_direct_fused_gates": 26,
+      "original_unfused_direct_gates_same_parameters": 65,
+      "allocated_nodes": 47,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 22
+        },
+        {
+          "factor": 1,
+          "coefficient_gates": 31
+        }
+      ],
+      "seconds": 0.01600000000325963
+    },
+    {
+      "n": 2,
+      "mode": "single",
+      "Q": 97,
+      "N": 4,
+      "labels": [
+        1,
+        0
+      ],
+      "projector_factors": [
+        1
+      ],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 16,
+      "formal_z_tables": 1,
+      "complete_chain_scalar_gates": 31,
+      "uncompressed_direct_fused_gates": null,
+      "original_unfused_direct_gates_same_parameters": null,
+      "allocated_nodes": 66,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 26
+        },
+        {
+          "factor": 1,
+          "coefficient_gates": 35,
+          "terminal_correction_without_derivatives": true
+        }
+      ],
+      "seconds": 0.0
+    },
+    {
+      "n": 2,
+      "mode": "double",
+      "Q": 97,
+      "N": 4,
+      "labels": [
+        1,
+        0
+      ],
+      "projector_factors": [
+        1
+      ],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 16,
+      "formal_z_tables": 1,
+      "complete_chain_scalar_gates": 36,
+      "uncompressed_direct_fused_gates": null,
+      "original_unfused_direct_gates_same_parameters": null,
+      "allocated_nodes": 77,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 29
+        },
+        {
+          "factor": 1,
+          "coefficient_gates": 38,
+          "terminal_correction_without_derivatives": true
+        }
+      ],
+      "seconds": 0.0
+    },
+    {
+      "n": 3,
+      "mode": "direct",
+      "Q": 97,
+      "N": 4,
+      "labels": [
+        1,
+        0,
+        1
+      ],
+      "projector_factors": [
+        1,
+        3
+      ],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 0,
+      "formal_z_tables": 1,
+      "complete_chain_scalar_gates": 72,
+      "uncompressed_direct_fused_gates": 151,
+      "original_unfused_direct_gates_same_parameters": 450,
+      "allocated_nodes": 109,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 52
+        },
+        {
+          "factor": 3,
+          "terminal_collision_levels_fused_into_readout": [
+            1,
+            3
+          ],
+          "output_gates": 72
+        }
+      ],
+      "seconds": 0.031000000002677552
+    },
+    {
+      "n": 3,
+      "mode": "single",
+      "Q": 97,
+      "N": 4,
+      "labels": [
+        1,
+        0,
+        1
+      ],
+      "projector_factors": [
+        1,
+        3
+      ],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 8,
+      "formal_z_tables": 1,
+      "complete_chain_scalar_gates": 94,
+      "uncompressed_direct_fused_gates": null,
+      "original_unfused_direct_gates_same_parameters": null,
+      "allocated_nodes": 157,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 64
+        },
+        {
+          "factor": 3,
+          "terminal_collision_levels_fused_into_readout": [
+            1,
+            3
+          ],
+          "output_gates": 94
+        }
+      ],
+      "seconds": 0.0
+    },
+    {
+      "n": 3,
+      "mode": "double",
+      "Q": 97,
+      "N": 4,
+      "labels": [
+        1,
+        0,
+        1
+      ],
+      "projector_factors": [
+        1,
+        3
+      ],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 8,
+      "formal_z_tables": 1,
+      "complete_chain_scalar_gates": 109,
+      "uncompressed_direct_fused_gates": null,
+      "original_unfused_direct_gates_same_parameters": null,
+      "allocated_nodes": 188,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 73
+        },
+        {
+          "factor": 3,
+          "terminal_collision_levels_fused_into_readout": [
+            1,
+            3
+          ],
+          "output_gates": 109
+        }
+      ],
+      "seconds": 0.01600000000325963
+    },
+    {
+      "n": 4,
+      "mode": "direct",
+      "Q": 97,
+      "N": 8,
+      "labels": [
+        1,
+        4,
+        1,
+        0
+      ],
+      "projector_factors": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 0,
+      "formal_z_tables": 0,
+      "complete_chain_scalar_gates": 362,
+      "uncompressed_direct_fused_gates": 860,
+      "original_unfused_direct_gates_same_parameters": 4383,
+      "allocated_nodes": 741,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 94
+        },
+        {
+          "factor": 1,
+          "coefficient_gates": 172
+        },
+        {
+          "factor": 2,
+          "coefficient_gates": 364
+        },
+        {
+          "factor": 6,
+          "terminal_collision_levels_fused_into_readout": [
+            3,
+            6
+          ],
+          "output_gates": 362
+        }
+      ],
+      "seconds": 0.20299999999406282
+    },
+    {
+      "n": 4,
+      "mode": "single",
+      "Q": 97,
+      "N": 8,
+      "labels": [
+        1,
+        4,
+        1,
+        0
+      ],
+      "projector_factors": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 24,
+      "formal_z_tables": 0,
+      "complete_chain_scalar_gates": 1973,
+      "uncompressed_direct_fused_gates": null,
+      "original_unfused_direct_gates_same_parameters": null,
+      "allocated_nodes": 3883,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 118
+        },
+        {
+          "factor": 1,
+          "coefficient_gates": 543,
+          "min_correction_degree": 2,
+          "linear_log_correction": false
+        },
+        {
+          "factor": 2,
+          "coefficient_gates": 2093,
+          "min_correction_degree": 3,
+          "linear_log_correction": true
+        },
+        {
+          "factor": 6,
+          "terminal_collision_levels_fused_into_readout": [
+            3,
+            6
+          ],
+          "output_gates": 1973
+        }
+      ],
+      "seconds": 0.20300000000861473
+    },
+    {
+      "n": 4,
+      "mode": "double",
+      "Q": 97,
+      "N": 8,
+      "labels": [
+        1,
+        4,
+        1,
+        0
+      ],
+      "projector_factors": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 24,
+      "formal_z_tables": 0,
+      "complete_chain_scalar_gates": 3182,
+      "uncompressed_direct_fused_gates": null,
+      "original_unfused_direct_gates_same_parameters": null,
+      "allocated_nodes": 6298,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 135
+        },
+        {
+          "factor": 1,
+          "coefficient_gates": 784,
+          "min_correction_degree": 2,
+          "linear_log_correction": false
+        },
+        {
+          "factor": 2,
+          "coefficient_gates": 3297,
+          "min_correction_degree": 3,
+          "linear_log_correction": true
+        },
+        {
+          "factor": 6,
+          "terminal_collision_levels_fused_into_readout": [
+            3,
+            6
+          ],
+          "output_gates": 3182
+        }
+      ],
+      "seconds": 0.2659999999887077
+    },
+    {
+      "n": 5,
+      "mode": "direct",
+      "Q": 97,
+      "N": 8,
+      "labels": [
+        1,
+        4,
+        1,
+        0,
+        1
+      ],
+      "projector_factors": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        10
+      ],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 0,
+      "formal_z_tables": 0,
+      "complete_chain_scalar_gates": 2858,
+      "uncompressed_direct_fused_gates": 7708,
+      "original_unfused_direct_gates_same_parameters": 35645,
+      "allocated_nodes": 7541,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 148
+        },
+        {
+          "factor": 1,
+          "coefficient_gates": 280
+        },
+        {
+          "factor": 2,
+          "coefficient_gates": 1007
+        },
+        {
+          "factor": 3,
+          "coefficient_gates": 2089
+        },
+        {
+          "factor": 4,
+          "coefficient_gates": 3021
+        },
+        {
+          "factor": 10,
+          "terminal_collision_levels_fused_into_readout": [
+            6,
+            10
+          ],
+          "output_gates": 2858
+        }
+      ],
+      "seconds": 1.6720000000059372
+    },
+    {
+      "n": 5,
+      "mode": "single",
+      "Q": 97,
+      "N": 8,
+      "labels": [
+        1,
+        4,
+        1,
+        0,
+        1
+      ],
+      "projector_factors": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        10
+      ],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 40,
+      "formal_z_tables": 0,
+      "complete_chain_scalar_gates": 20620,
+      "uncompressed_direct_fused_gates": null,
+      "original_unfused_direct_gates_same_parameters": null,
+      "allocated_nodes": 52158,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 188
+        },
+        {
+          "factor": 1,
+          "coefficient_gates": 1095,
+          "min_correction_degree": 2,
+          "linear_log_correction": false
+        },
+        {
+          "factor": 2,
+          "coefficient_gates": 7444,
+          "min_correction_degree": 3,
+          "linear_log_correction": true
+        },
+        {
+          "factor": 3,
+          "coefficient_gates": 16257,
+          "min_correction_degree": 3,
+          "linear_log_correction": true
+        },
+        {
+          "factor": 4,
+          "coefficient_gates": 22679,
+          "min_correction_degree": 4,
+          "linear_log_correction": true
+        },
+        {
+          "factor": 10,
+          "terminal_collision_levels_fused_into_readout": [
+            6,
+            10
+          ],
+          "output_gates": 20620
+        }
+      ],
+      "seconds": 1.7969999999913853
+    },
+    {
+      "n": 5,
+      "mode": "double",
+      "Q": 97,
+      "N": 8,
+      "labels": [
+        1,
+        4,
+        1,
+        0,
+        1
+      ],
+      "projector_factors": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        10
+      ],
+      "status": "passed",
+      "tables": 8,
+      "intermediate_epsilon_jets": 40,
+      "formal_z_tables": 0,
+      "complete_chain_scalar_gates": 42001,
+      "uncompressed_direct_fused_gates": null,
+      "original_unfused_direct_gates_same_parameters": null,
+      "allocated_nodes": 102461,
+      "stages": [
+        {
+          "factor": 0,
+          "coefficient_gates": 215
+        },
+        {
+          "factor": 1,
+          "coefficient_gates": 1629,
+          "min_correction_degree": 2,
+          "linear_log_correction": false
+        },
+        {
+          "factor": 2,
+          "coefficient_gates": 12342,
+          "min_correction_degree": 3,
+          "linear_log_correction": true
+        },
+        {
+          "factor": 3,
+          "coefficient_gates": 30763,
+          "min_correction_degree": 3,
+          "linear_log_correction": true
+        },
+        {
+          "factor": 4,
+          "coefficient_gates": 44573,
+          "min_correction_degree": 4,
+          "linear_log_correction": true
+        },
+        {
+          "factor": 10,
+          "terminal_collision_levels_fused_into_readout": [
+            6,
+            10
+          ],
+          "output_gates": 42001
+        }
+      ],
+      "seconds": 3.672000000005937
+    }
+  ],
+  "general_polynomial_closure": false,
+  "general_quasipolynomial_closure": false,
+  "contract": "Same oriented collision projector. Homogeneous normalized log and double-log coordinates; exact fusion of all spectral phases and INTT into routing. Only a,z data leaves and scalar +,* runtime gates."
+}

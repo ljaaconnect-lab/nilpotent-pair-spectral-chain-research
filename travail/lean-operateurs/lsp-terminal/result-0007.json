@@ -1,0 +1,61 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fusion-ntt\\TerminalDifference.lean",
+  "version": 7,
+  "completed": true,
+  "seconds": 0.516,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 41,
+          "line": 24
+        },
+        "start": {
+          "character": 36,
+          "line": 24
+        }
+      },
+      "message": "omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  f ≥ 0\n  e ≥ 0\n  e - f ≥ 0\n  d ≥ 1\n  d + e ≥ 0\n  c ≥ 0\n  c - d - e ≥ 1\nwhere\n c := ↑(p :: ps).length\n d := ↑a\n e := ↑b\n f := ↑ps.length",
+      "range": {
+        "end": {
+          "character": 41,
+          "line": 24
+        },
+        "start": {
+          "character": 36,
+          "line": 24
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 10,
+          "line": 25
+        },
+        "start": {
+          "character": 6,
+          "line": 25
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase neg\nR : Type u_1\ninst✝ : Semiring R\np : R[X]\nps : List R[X]\nih : (∀ p ∈ ps, p.coeff 0 = 0) → ∀ k < ps.length, ps.prod.coeff k = 0\nhz : ∀ p_1 ∈ p :: ps, p_1.coeff 0 = 0\nk : ℕ\nhk : k < (p :: ps).length\na b : ℕ\nhab : (a, b) ∈ Finset.antidiagonal k\nha : ¬a = 0\nhab' : (a, b).1 + (a, b).2 = k\nhb : b < ps.length\n⊢ p.coeff (a, b).1 * ps.prod.coeff (a, b).2 = 0",
+      "range": {
+        "end": {
+          "character": 10,
+          "line": 25
+        },
+        "start": {
+          "character": 6,
+          "line": 25
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    }
+  ]
+}

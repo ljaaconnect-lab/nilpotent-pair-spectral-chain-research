@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\Users\\REGIS\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n64\\evaluate_pfaffian.py",
+    "--child",
+    "--n",
+    "4"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"n\": 4,\n  \"passed\": 836,\n  \"total\": 836,\n  \"unique_column_patterns\": 34,\n  \"elapsed_seconds\": 1.5553053000039654\n}\n",
+  "stderr": ""
+}

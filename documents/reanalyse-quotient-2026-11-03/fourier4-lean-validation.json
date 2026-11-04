@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\reanalyse-quotient-2026-11-03\\Fourier4Normalization.lean"
+  ],
+  "source": "Fourier4Normalization.lean",
+  "source_sha256": "2a71324d059a60d1d70d9f6e6452da81d75cbc0226127671a3d46731680b22f6",
+  "replay_sha256": "2ffd5be9910539c2c1ae9b73e4b5fe2469a1894cf22ba585569e4f39e2c71309",
+  "environment_helper": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\lean_check.py",
+  "environment_helper_sha256": "a5e21cfb624e5258009425f6c6eecaf0eb1b529d953bbb2607717dab44a439ad",
+  "imported_circuit_olean_sha256": "3af2d83a084a074cb94c0fc09629f512f9917dcaaefad572827d4ca41a374708",
+  "source_changed_during_check": false,
+  "exit_code": 0,
+  "seconds": 16.688,
+  "stdout": "'Fourier4Normalization.q0_square_zero' depends on axioms: [propext]\n'Fourier4Normalization.q1_square_zero' depends on axioms: [propext, Quot.sound]\n'Fourier4Normalization.row_coordinates' depends on axioms: [propext, Quot.sound]\n'Fourier4Normalization.normalized_product' depends on axioms: [propext, Quot.sound]\n'Fourier4Normalization.padding_sum' depends on axioms: [propext, Quot.sound]\n'Fourier4Normalization.terminal_label' depends on axioms: [propext, Quot.sound]\n'Fourier4Normalization.coefficient_circuit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Fourier4Normalization.scalar_normalization' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "q0_square_zero",
+    "q1_square_zero",
+    "row_coordinates",
+    "normalized_product",
+    "padding_sum",
+    "terminal_label",
+    "coefficient_circuit",
+    "scalar_normalization"
+  ],
+  "all_theorem_axioms_printed": true,
+  "source_has_no_placeholders_or_added_axioms": true,
+  "scope": "Exact n=2,N=4 normalization in an arbitrary commutative algebra, directly from the four convolution relations and two padding relations.",
+  "coefficient_circuit": "B00*B11+B01*B10",
+  "scalar_gates_from_B": 3,
+  "auxiliary_coordinates_inverted": false,
+  "ambient_ring_may_contain_nilpotents": true,
+  "general_polynomial_bound_proved": false,
+  "lean_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)"
+}

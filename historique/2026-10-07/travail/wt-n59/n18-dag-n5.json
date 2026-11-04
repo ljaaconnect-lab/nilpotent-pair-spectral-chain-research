@@ -1,0 +1,699 @@
+{
+  "artifact_version": "n18-occupation-gram-v1",
+  "A": [
+    [
+      "1",
+      "2/5",
+      "1/7",
+      "0",
+      "-1/11"
+    ],
+    [
+      "3/2",
+      "1",
+      "3/4",
+      "3/5",
+      "1/2"
+    ],
+    [
+      "9/5",
+      "10/7",
+      "11/9",
+      "12/11",
+      "1"
+    ],
+    [
+      "2",
+      "7/4",
+      "8/5",
+      "3/2",
+      "10/7"
+    ],
+    [
+      "15/7",
+      "2",
+      "21/11",
+      "24/13",
+      "9/5"
+    ]
+  ],
+  "construction": {
+    "n": 5,
+    "q": 6,
+    "T": 1555,
+    "auxiliary_degree": 6480,
+    "auxiliary_min_degree": 5,
+    "original_marker_and_entry_gates": 49,
+    "auxiliary_marker_gates": 12,
+    "weighted_entry_gates": 25,
+    "column_sum_gates": 20,
+    "diagonal_product_gates": 4,
+    "gates": 110,
+    "formula": "4*n^2-2+(n-1)*(floor(log2(n+1))+popcount(n+1)-1)",
+    "input_data": "Original p_ij=1+a_ij^2 constants and z; independent auxiliary s",
+    "matrix_factors": "X is n by n^2 column incidence; W is n^2 by n^2 edge-weight diagonal",
+    "coefficient_extraction_gates": null,
+    "extraction_status": "No cheap scalar extractor supplied; dictionary extraction in the evaluator is expanded verification"
+  },
+  "dag": {
+    "model": "Q with z,t leaves and fan-in-two add/mul gates",
+    "gates": 110,
+    "output": 130,
+    "nodes": [
+      {
+        "op": "variable",
+        "name": "z"
+      },
+      {
+        "op": "mul",
+        "left": 0,
+        "right": 0
+      },
+      {
+        "op": "mul",
+        "left": 1,
+        "right": 1
+      },
+      {
+        "op": "mul",
+        "left": 2,
+        "right": 2
+      },
+      {
+        "op": "mul",
+        "left": 3,
+        "right": 3
+      },
+      {
+        "op": "mul",
+        "left": 4,
+        "right": 4
+      },
+      {
+        "op": "mul",
+        "left": 5,
+        "right": 5
+      },
+      {
+        "op": "mul",
+        "left": 6,
+        "right": 6
+      },
+      {
+        "op": "mul",
+        "left": 7,
+        "right": 7
+      },
+      {
+        "op": "mul",
+        "left": 8,
+        "right": 8
+      },
+      {
+        "op": "mul",
+        "left": 9,
+        "right": 9
+      },
+      {
+        "op": "mul",
+        "left": 10,
+        "right": 10
+      },
+      {
+        "op": "mul",
+        "left": 11,
+        "right": 11
+      },
+      {
+        "op": "mul",
+        "left": 12,
+        "right": 12
+      },
+      {
+        "op": "mul",
+        "left": 13,
+        "right": 13
+      },
+      {
+        "op": "mul",
+        "left": 14,
+        "right": 14
+      },
+      {
+        "op": "mul",
+        "left": 15,
+        "right": 15
+      },
+      {
+        "op": "mul",
+        "left": 16,
+        "right": 16
+      },
+      {
+        "op": "mul",
+        "left": 17,
+        "right": 17
+      },
+      {
+        "op": "mul",
+        "left": 18,
+        "right": 18
+      },
+      {
+        "op": "mul",
+        "left": 19,
+        "right": 19
+      },
+      {
+        "op": "mul",
+        "left": 20,
+        "right": 20
+      },
+      {
+        "op": "mul",
+        "left": 21,
+        "right": 21
+      },
+      {
+        "op": "mul",
+        "left": 22,
+        "right": 22
+      },
+      {
+        "op": "mul",
+        "left": 23,
+        "right": 23
+      },
+      {
+        "op": "constant",
+        "value": "2"
+      },
+      {
+        "op": "mul",
+        "left": 25,
+        "right": 0
+      },
+      {
+        "op": "constant",
+        "value": "29/25"
+      },
+      {
+        "op": "mul",
+        "left": 27,
+        "right": 1
+      },
+      {
+        "op": "constant",
+        "value": "50/49"
+      },
+      {
+        "op": "mul",
+        "left": 29,
+        "right": 2
+      },
+      {
+        "op": "constant",
+        "value": "1"
+      },
+      {
+        "op": "mul",
+        "left": 31,
+        "right": 3
+      },
+      {
+        "op": "constant",
+        "value": "122/121"
+      },
+      {
+        "op": "mul",
+        "left": 33,
+        "right": 4
+      },
+      {
+        "op": "constant",
+        "value": "13/4"
+      },
+      {
+        "op": "mul",
+        "left": 35,
+        "right": 5
+      },
+      {
+        "op": "mul",
+        "left": 25,
+        "right": 6
+      },
+      {
+        "op": "constant",
+        "value": "25/16"
+      },
+      {
+        "op": "mul",
+        "left": 38,
+        "right": 7
+      },
+      {
+        "op": "constant",
+        "value": "34/25"
+      },
+      {
+        "op": "mul",
+        "left": 40,
+        "right": 8
+      },
+      {
+        "op": "constant",
+        "value": "5/4"
+      },
+      {
+        "op": "mul",
+        "left": 42,
+        "right": 9
+      },
+      {
+        "op": "constant",
+        "value": "106/25"
+      },
+      {
+        "op": "mul",
+        "left": 44,
+        "right": 10
+      },
+      {
+        "op": "constant",
+        "value": "149/49"
+      },
+      {
+        "op": "mul",
+        "left": 46,
+        "right": 11
+      },
+      {
+        "op": "constant",
+        "value": "202/81"
+      },
+      {
+        "op": "mul",
+        "left": 48,
+        "right": 12
+      },
+      {
+        "op": "constant",
+        "value": "265/121"
+      },
+      {
+        "op": "mul",
+        "left": 50,
+        "right": 13
+      },
+      {
+        "op": "mul",
+        "left": 25,
+        "right": 14
+      },
+      {
+        "op": "constant",
+        "value": "5"
+      },
+      {
+        "op": "mul",
+        "left": 53,
+        "right": 15
+      },
+      {
+        "op": "constant",
+        "value": "65/16"
+      },
+      {
+        "op": "mul",
+        "left": 55,
+        "right": 16
+      },
+      {
+        "op": "constant",
+        "value": "89/25"
+      },
+      {
+        "op": "mul",
+        "left": 57,
+        "right": 17
+      },
+      {
+        "op": "mul",
+        "left": 35,
+        "right": 18
+      },
+      {
+        "op": "mul",
+        "left": 46,
+        "right": 19
+      },
+      {
+        "op": "constant",
+        "value": "274/49"
+      },
+      {
+        "op": "mul",
+        "left": 61,
+        "right": 20
+      },
+      {
+        "op": "mul",
+        "left": 53,
+        "right": 21
+      },
+      {
+        "op": "constant",
+        "value": "562/121"
+      },
+      {
+        "op": "mul",
+        "left": 64,
+        "right": 22
+      },
+      {
+        "op": "constant",
+        "value": "745/169"
+      },
+      {
+        "op": "mul",
+        "left": 66,
+        "right": 23
+      },
+      {
+        "op": "mul",
+        "left": 44,
+        "right": 24
+      },
+      {
+        "op": "variable",
+        "name": "t"
+      },
+      {
+        "op": "mul",
+        "left": 69,
+        "right": 69
+      },
+      {
+        "op": "mul",
+        "left": 70,
+        "right": 69
+      },
+      {
+        "op": "mul",
+        "left": 71,
+        "right": 71
+      },
+      {
+        "op": "mul",
+        "left": 72,
+        "right": 72
+      },
+      {
+        "op": "mul",
+        "left": 73,
+        "right": 72
+      },
+      {
+        "op": "mul",
+        "left": 74,
+        "right": 74
+      },
+      {
+        "op": "mul",
+        "left": 75,
+        "right": 75
+      },
+      {
+        "op": "mul",
+        "left": 76,
+        "right": 75
+      },
+      {
+        "op": "mul",
+        "left": 77,
+        "right": 77
+      },
+      {
+        "op": "mul",
+        "left": 78,
+        "right": 78
+      },
+      {
+        "op": "mul",
+        "left": 79,
+        "right": 78
+      },
+      {
+        "op": "mul",
+        "left": 80,
+        "right": 80
+      },
+      {
+        "op": "mul",
+        "left": 26,
+        "right": 69
+      },
+      {
+        "op": "mul",
+        "left": 28,
+        "right": 69
+      },
+      {
+        "op": "mul",
+        "left": 30,
+        "right": 69
+      },
+      {
+        "op": "mul",
+        "left": 32,
+        "right": 69
+      },
+      {
+        "op": "mul",
+        "left": 34,
+        "right": 69
+      },
+      {
+        "op": "mul",
+        "left": 36,
+        "right": 72
+      },
+      {
+        "op": "mul",
+        "left": 37,
+        "right": 72
+      },
+      {
+        "op": "mul",
+        "left": 39,
+        "right": 72
+      },
+      {
+        "op": "mul",
+        "left": 41,
+        "right": 72
+      },
+      {
+        "op": "mul",
+        "left": 43,
+        "right": 72
+      },
+      {
+        "op": "mul",
+        "left": 45,
+        "right": 75
+      },
+      {
+        "op": "mul",
+        "left": 47,
+        "right": 75
+      },
+      {
+        "op": "mul",
+        "left": 49,
+        "right": 75
+      },
+      {
+        "op": "mul",
+        "left": 51,
+        "right": 75
+      },
+      {
+        "op": "mul",
+        "left": 52,
+        "right": 75
+      },
+      {
+        "op": "mul",
+        "left": 54,
+        "right": 78
+      },
+      {
+        "op": "mul",
+        "left": 56,
+        "right": 78
+      },
+      {
+        "op": "mul",
+        "left": 58,
+        "right": 78
+      },
+      {
+        "op": "mul",
+        "left": 59,
+        "right": 78
+      },
+      {
+        "op": "mul",
+        "left": 60,
+        "right": 78
+      },
+      {
+        "op": "mul",
+        "left": 62,
+        "right": 81
+      },
+      {
+        "op": "mul",
+        "left": 63,
+        "right": 81
+      },
+      {
+        "op": "mul",
+        "left": 65,
+        "right": 81
+      },
+      {
+        "op": "mul",
+        "left": 67,
+        "right": 81
+      },
+      {
+        "op": "mul",
+        "left": 68,
+        "right": 81
+      },
+      {
+        "op": "add",
+        "left": 82,
+        "right": 87
+      },
+      {
+        "op": "add",
+        "left": 107,
+        "right": 92
+      },
+      {
+        "op": "add",
+        "left": 108,
+        "right": 97
+      },
+      {
+        "op": "add",
+        "left": 109,
+        "right": 102
+      },
+      {
+        "op": "add",
+        "left": 83,
+        "right": 88
+      },
+      {
+        "op": "add",
+        "left": 111,
+        "right": 93
+      },
+      {
+        "op": "add",
+        "left": 112,
+        "right": 98
+      },
+      {
+        "op": "add",
+        "left": 113,
+        "right": 103
+      },
+      {
+        "op": "add",
+        "left": 84,
+        "right": 89
+      },
+      {
+        "op": "add",
+        "left": 115,
+        "right": 94
+      },
+      {
+        "op": "add",
+        "left": 116,
+        "right": 99
+      },
+      {
+        "op": "add",
+        "left": 117,
+        "right": 104
+      },
+      {
+        "op": "add",
+        "left": 85,
+        "right": 90
+      },
+      {
+        "op": "add",
+        "left": 119,
+        "right": 95
+      },
+      {
+        "op": "add",
+        "left": 120,
+        "right": 100
+      },
+      {
+        "op": "add",
+        "left": 121,
+        "right": 105
+      },
+      {
+        "op": "add",
+        "left": 86,
+        "right": 91
+      },
+      {
+        "op": "add",
+        "left": 123,
+        "right": 96
+      },
+      {
+        "op": "add",
+        "left": 124,
+        "right": 101
+      },
+      {
+        "op": "add",
+        "left": 125,
+        "right": 106
+      },
+      {
+        "op": "mul",
+        "left": 110,
+        "right": 114
+      },
+      {
+        "op": "mul",
+        "left": 127,
+        "right": 118
+      },
+      {
+        "op": "mul",
+        "left": 128,
+        "right": 122
+      },
+      {
+        "op": "mul",
+        "left": 129,
+        "right": 126
+      }
+    ]
+  }
+}

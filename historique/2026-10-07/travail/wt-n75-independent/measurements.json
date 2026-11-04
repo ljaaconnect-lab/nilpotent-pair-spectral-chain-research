@@ -1,0 +1,268 @@
+{
+  "protocol": "n1-explicit-dags-v1",
+  "split": "dev",
+  "cases": [
+    {
+      "case": "n2-identity",
+      "n": 2,
+      "K": 3,
+      "hhat": {
+        "gates": 48,
+        "terms": 6,
+        "seconds": 0.001218599994899705,
+        "scalar_gate_evaluations": 48,
+        "max_node_terms": 6,
+        "max_live_terms": 14,
+        "nodes": 55
+      },
+      "subset_dp": {
+        "gates": 12,
+        "terms": 2,
+        "seconds": 0.0002525000018067658,
+        "states": 4,
+        "transitions": 4,
+        "dp_gates": 5,
+        "marker_and_entry_gates": 7,
+        "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)",
+        "scalar_gate_evaluations": 12,
+        "max_node_terms": 2,
+        "max_live_terms": 6,
+        "nodes": 15
+      },
+      "dp_matches_extracted_central": true
+    },
+    {
+      "case": "n2-cyclic",
+      "n": 2,
+      "K": 3,
+      "hhat": {
+        "gates": 48,
+        "terms": 6,
+        "seconds": 0.0008320000051753595,
+        "scalar_gate_evaluations": 48,
+        "max_node_terms": 6,
+        "max_live_terms": 14,
+        "nodes": 55
+      },
+      "subset_dp": {
+        "gates": 12,
+        "terms": 2,
+        "seconds": 0.0002299999978276901,
+        "states": 4,
+        "transitions": 4,
+        "dp_gates": 5,
+        "marker_and_entry_gates": 7,
+        "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)",
+        "scalar_gate_evaluations": 12,
+        "max_node_terms": 2,
+        "max_live_terms": 6,
+        "nodes": 15
+      },
+      "dp_matches_extracted_central": true
+    },
+    {
+      "case": "n2-vandermonde",
+      "n": 2,
+      "K": 3,
+      "hhat": {
+        "gates": 48,
+        "terms": 6,
+        "seconds": 0.0008578000051784329,
+        "scalar_gate_evaluations": 48,
+        "max_node_terms": 6,
+        "max_live_terms": 14,
+        "nodes": 56
+      },
+      "subset_dp": {
+        "gates": 12,
+        "terms": 2,
+        "seconds": 0.0002461000040057115,
+        "states": 4,
+        "transitions": 4,
+        "dp_gates": 5,
+        "marker_and_entry_gates": 7,
+        "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)",
+        "scalar_gate_evaluations": 12,
+        "max_node_terms": 2,
+        "max_live_terms": 5,
+        "nodes": 16
+      },
+      "dp_matches_extracted_central": true
+    },
+    {
+      "case": "n3-identity",
+      "n": 3,
+      "K": 26,
+      "hhat": {
+        "gates": 198,
+        "terms": 38,
+        "seconds": 0.0060964999938732944,
+        "scalar_gate_evaluations": 198,
+        "max_node_terms": 38,
+        "max_live_terms": 45,
+        "nodes": 206
+      },
+      "subset_dp": {
+        "gates": 34,
+        "terms": 6,
+        "seconds": 0.0005721999987144955,
+        "states": 8,
+        "transitions": 12,
+        "dp_gates": 17,
+        "marker_and_entry_gates": 17,
+        "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)",
+        "scalar_gate_evaluations": 34,
+        "max_node_terms": 6,
+        "max_live_terms": 12,
+        "nodes": 37
+      },
+      "dp_matches_extracted_central": true
+    },
+    {
+      "case": "n3-cyclic",
+      "n": 3,
+      "K": 26,
+      "hhat": {
+        "gates": 198,
+        "terms": 38,
+        "seconds": 0.004976399999577552,
+        "scalar_gate_evaluations": 198,
+        "max_node_terms": 38,
+        "max_live_terms": 45,
+        "nodes": 206
+      },
+      "subset_dp": {
+        "gates": 34,
+        "terms": 6,
+        "seconds": 0.0006632000004174188,
+        "states": 8,
+        "transitions": 12,
+        "dp_gates": 17,
+        "marker_and_entry_gates": 17,
+        "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)",
+        "scalar_gate_evaluations": 34,
+        "max_node_terms": 6,
+        "max_live_terms": 12,
+        "nodes": 37
+      },
+      "dp_matches_extracted_central": true
+    },
+    {
+      "case": "n3-vandermonde",
+      "n": 3,
+      "K": 26,
+      "hhat": {
+        "gates": 198,
+        "terms": 38,
+        "seconds": 0.004430700006196275,
+        "scalar_gate_evaluations": 198,
+        "max_node_terms": 38,
+        "max_live_terms": 45,
+        "nodes": 210
+      },
+      "subset_dp": {
+        "gates": 34,
+        "terms": 6,
+        "seconds": 0.0008845999982440844,
+        "states": 8,
+        "transitions": 12,
+        "dp_gates": 17,
+        "marker_and_entry_gates": 17,
+        "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)",
+        "scalar_gate_evaluations": 34,
+        "max_node_terms": 6,
+        "max_live_terms": 12,
+        "nodes": 41
+      },
+      "dp_matches_extracted_central": true
+    },
+    {
+      "case": "n4-identity",
+      "n": 4,
+      "K": 255,
+      "hhat": {
+        "gates": 568,
+        "terms": 578,
+        "seconds": 0.036010399999213405,
+        "scalar_gate_evaluations": 568,
+        "max_node_terms": 578,
+        "max_live_terms": 579,
+        "nodes": 577
+      },
+      "subset_dp": {
+        "gates": 80,
+        "terms": 24,
+        "seconds": 0.0016868000020622276,
+        "states": 16,
+        "transitions": 32,
+        "dp_gates": 49,
+        "marker_and_entry_gates": 31,
+        "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)",
+        "scalar_gate_evaluations": 80,
+        "max_node_terms": 24,
+        "max_live_terms": 32,
+        "nodes": 83
+      },
+      "dp_matches_extracted_central": true
+    },
+    {
+      "case": "n4-cyclic",
+      "n": 4,
+      "K": 255,
+      "hhat": {
+        "gates": 568,
+        "terms": 578,
+        "seconds": 0.03636420000111684,
+        "scalar_gate_evaluations": 568,
+        "max_node_terms": 578,
+        "max_live_terms": 579,
+        "nodes": 577
+      },
+      "subset_dp": {
+        "gates": 80,
+        "terms": 24,
+        "seconds": 0.0036301000000094064,
+        "states": 16,
+        "transitions": 32,
+        "dp_gates": 49,
+        "marker_and_entry_gates": 31,
+        "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)",
+        "scalar_gate_evaluations": 80,
+        "max_node_terms": 24,
+        "max_live_terms": 32,
+        "nodes": 83
+      },
+      "dp_matches_extracted_central": true
+    },
+    {
+      "case": "n4-vandermonde",
+      "n": 4,
+      "K": 255,
+      "hhat": {
+        "gates": 568,
+        "terms": 578,
+        "seconds": 0.03583570000046166,
+        "scalar_gate_evaluations": 568,
+        "max_node_terms": 578,
+        "max_live_terms": 579,
+        "nodes": 585
+      },
+      "subset_dp": {
+        "gates": 80,
+        "terms": 24,
+        "seconds": 0.0021540999950957485,
+        "states": 16,
+        "transitions": 32,
+        "dp_gates": 49,
+        "marker_and_entry_gates": 31,
+        "formula": "total gates = 2*n^2-1 + n*2^n - (2^n-1)",
+        "scalar_gate_evaluations": 80,
+        "max_node_terms": 24,
+        "max_live_terms": 32,
+        "nodes": 91
+      },
+      "dp_matches_extracted_central": true
+    }
+  ],
+  "scope": "Finite exact scalar-DAG evaluation. DP formula describes this algorithm, not a lower bound."
+}

@@ -1,0 +1,60 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\CollisionFilter.lean",
+  "version": 7,
+  "seconds": 0.265,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 10,
+          "line": 20
+        },
+        "start": {
+          "character": 6,
+          "line": 20
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\nι : Type u_1\ninst✝ : DecidableEq ι\nr : ℕ\nw : Fin r → ι\nh : Function.Injective w\ni j : Fin r\n⊢ equalityMatrix w i j = 1 i j",
+      "range": {
+        "end": {
+          "character": 10,
+          "line": 20
+        },
+        "start": {
+          "character": 6,
+          "line": 20
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 78,
+          "line": 21
+        },
+        "start": {
+          "character": 4,
+          "line": 21
+        }
+      },
+      "message": "try 'simp' instead of 'simpa'\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`",
+      "range": {
+        "end": {
+          "character": 78,
+          "line": 21
+        },
+        "start": {
+          "character": 4,
+          "line": 21
+        }
+      },
+      "severity": 2,
+      "source": "Lean 4"
+    }
+  ]
+}

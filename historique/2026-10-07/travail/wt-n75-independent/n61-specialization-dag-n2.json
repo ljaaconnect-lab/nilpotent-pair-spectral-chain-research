@@ -1,0 +1,136 @@
+{
+  "model": "Q[x] or Q[z], fan-in-two scalar add/mul only",
+  "gates": 19,
+  "counts": {
+    "variable": 4,
+    "add": 11,
+    "constant": 3,
+    "mul": 8
+  },
+  "output": 25,
+  "nodes": [
+    {
+      "op": "variable",
+      "name": "x0"
+    },
+    {
+      "op": "variable",
+      "name": "x1"
+    },
+    {
+      "op": "variable",
+      "name": "x2"
+    },
+    {
+      "op": "variable",
+      "name": "x3"
+    },
+    {
+      "op": "add",
+      "left": 0,
+      "right": 3
+    },
+    {
+      "op": "constant",
+      "value": "-1"
+    },
+    {
+      "op": "mul",
+      "left": 4,
+      "right": 5
+    },
+    {
+      "op": "add",
+      "left": 0,
+      "right": 6
+    },
+    {
+      "op": "add",
+      "left": 3,
+      "right": 6
+    },
+    {
+      "op": "mul",
+      "left": 0,
+      "right": 7
+    },
+    {
+      "op": "mul",
+      "left": 1,
+      "right": 2
+    },
+    {
+      "op": "add",
+      "left": 9,
+      "right": 10
+    },
+    {
+      "op": "mul",
+      "left": 3,
+      "right": 8
+    },
+    {
+      "op": "add",
+      "left": 10,
+      "right": 12
+    },
+    {
+      "op": "add",
+      "left": 11,
+      "right": 13
+    },
+    {
+      "op": "constant",
+      "value": "-1/2"
+    },
+    {
+      "op": "mul",
+      "left": 14,
+      "right": 15
+    },
+    {
+      "op": "add",
+      "left": 9,
+      "right": 12
+    },
+    {
+      "op": "mul",
+      "left": 15,
+      "right": 17
+    },
+    {
+      "op": "mul",
+      "left": 5,
+      "right": 18
+    },
+    {
+      "op": "add",
+      "left": 16,
+      "right": 19
+    },
+    {
+      "op": "add",
+      "left": 19,
+      "right": 20
+    },
+    {
+      "op": "add",
+      "left": 18,
+      "right": 21
+    },
+    {
+      "op": "constant",
+      "value": "-2"
+    },
+    {
+      "op": "mul",
+      "left": 22,
+      "right": 23
+    },
+    {
+      "op": "add",
+      "left": 16,
+      "right": 24
+    }
+  ]
+}

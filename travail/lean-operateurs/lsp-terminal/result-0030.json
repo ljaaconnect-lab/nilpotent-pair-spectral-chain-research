@@ -1,0 +1,108 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fusion-ntt\\TerminalDifference.lean",
+  "version": 30,
+  "completed": true,
+  "seconds": 2.14,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 86,
+          "line": 63
+        },
+        "start": {
+          "character": 2,
+          "line": 63
+        }
+      },
+      "message": "Type mismatch: After simplification, term\n  coeff_product_at_length (List.map (fun t => t - 1) ts) hz\n has type\n  (List.map (fun t => t - 1) ts).prod.coeff ts.length = (List.map (fun x => x.coeff 1 - (coeff 1) 1) ts).prod\nbut is expected to have type\n  (List.map (fun t => t - 1) ts).prod.coeff ts.length = (List.map (fun t => t.coeff 1) ts).prod",
+      "range": {
+        "end": {
+          "character": 86,
+          "line": 63
+        },
+        "start": {
+          "character": 2,
+          "line": 63
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 67
+        },
+        "start": {
+          "character": 0,
+          "line": 67
+        }
+      },
+      "message": "'OrientedOperators.TerminalDifference.coeff_product_below_length' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 67
+        },
+        "start": {
+          "character": 0,
+          "line": 67
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 68
+        },
+        "start": {
+          "character": 0,
+          "line": 68
+        }
+      },
+      "message": "'OrientedOperators.TerminalDifference.coeff_product_at_length' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 68
+        },
+        "start": {
+          "character": 0,
+          "line": 68
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 69
+        },
+        "start": {
+          "character": 0,
+          "line": 69
+        }
+      },
+      "message": "'OrientedOperators.TerminalDifference.coeff_transport_differences' depends on axioms: [propext,\n sorryAx,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 69
+        },
+        "start": {
+          "character": 0,
+          "line": 69
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    }
+  ]
+}

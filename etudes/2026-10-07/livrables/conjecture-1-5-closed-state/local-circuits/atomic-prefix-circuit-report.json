@@ -1,0 +1,370 @@
+{
+  "checks": 2160,
+  "passed": 2160,
+  "failures": [],
+  "gate_counts": [
+    {
+      "n": 2,
+      "depth": 1,
+      "marked": false,
+      "J": [],
+      "initialization_gates": 1,
+      "query_gates": 0,
+      "gates": 1
+    },
+    {
+      "n": 2,
+      "depth": 1,
+      "marked": false,
+      "J": [
+        0,
+        1
+      ],
+      "initialization_gates": 1,
+      "query_gates": 3,
+      "gates": 4
+    },
+    {
+      "n": 2,
+      "depth": 1,
+      "marked": true,
+      "J": [],
+      "initialization_gates": 4,
+      "query_gates": 0,
+      "gates": 4
+    },
+    {
+      "n": 2,
+      "depth": 1,
+      "marked": true,
+      "J": [
+        0,
+        1
+      ],
+      "initialization_gates": 4,
+      "query_gates": 3,
+      "gates": 7
+    },
+    {
+      "n": 2,
+      "depth": 2,
+      "marked": false,
+      "J": [],
+      "initialization_gates": 5,
+      "query_gates": 3,
+      "gates": 8
+    },
+    {
+      "n": 2,
+      "depth": 2,
+      "marked": false,
+      "J": [
+        0,
+        1
+      ],
+      "initialization_gates": 5,
+      "query_gates": 12,
+      "gates": 17
+    },
+    {
+      "n": 2,
+      "depth": 2,
+      "marked": true,
+      "J": [],
+      "initialization_gates": 12,
+      "query_gates": 3,
+      "gates": 15
+    },
+    {
+      "n": 2,
+      "depth": 2,
+      "marked": true,
+      "J": [
+        0,
+        1
+      ],
+      "initialization_gates": 12,
+      "query_gates": 12,
+      "gates": 24
+    },
+    {
+      "n": 3,
+      "depth": 1,
+      "marked": false,
+      "J": [],
+      "initialization_gates": 2,
+      "query_gates": 0,
+      "gates": 2
+    },
+    {
+      "n": 3,
+      "depth": 1,
+      "marked": false,
+      "J": [
+        0,
+        1,
+        2
+      ],
+      "initialization_gates": 2,
+      "query_gates": 5,
+      "gates": 7
+    },
+    {
+      "n": 3,
+      "depth": 1,
+      "marked": true,
+      "J": [],
+      "initialization_gates": 7,
+      "query_gates": 0,
+      "gates": 7
+    },
+    {
+      "n": 3,
+      "depth": 1,
+      "marked": true,
+      "J": [
+        0,
+        1,
+        2
+      ],
+      "initialization_gates": 7,
+      "query_gates": 5,
+      "gates": 12
+    },
+    {
+      "n": 3,
+      "depth": 2,
+      "marked": false,
+      "J": [],
+      "initialization_gates": 9,
+      "query_gates": 3,
+      "gates": 12
+    },
+    {
+      "n": 3,
+      "depth": 2,
+      "marked": false,
+      "J": [
+        0,
+        1,
+        2
+      ],
+      "initialization_gates": 9,
+      "query_gates": 16,
+      "gates": 25
+    },
+    {
+      "n": 3,
+      "depth": 2,
+      "marked": true,
+      "J": [],
+      "initialization_gates": 20,
+      "query_gates": 3,
+      "gates": 23
+    },
+    {
+      "n": 3,
+      "depth": 2,
+      "marked": true,
+      "J": [
+        0,
+        1,
+        2
+      ],
+      "initialization_gates": 20,
+      "query_gates": 16,
+      "gates": 36
+    },
+    {
+      "n": 4,
+      "depth": 1,
+      "marked": false,
+      "J": [],
+      "initialization_gates": 3,
+      "query_gates": 0,
+      "gates": 3
+    },
+    {
+      "n": 4,
+      "depth": 1,
+      "marked": false,
+      "J": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "initialization_gates": 3,
+      "query_gates": 5,
+      "gates": 8
+    },
+    {
+      "n": 4,
+      "depth": 1,
+      "marked": true,
+      "J": [],
+      "initialization_gates": 10,
+      "query_gates": 0,
+      "gates": 10
+    },
+    {
+      "n": 4,
+      "depth": 1,
+      "marked": true,
+      "J": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "initialization_gates": 10,
+      "query_gates": 5,
+      "gates": 15
+    },
+    {
+      "n": 4,
+      "depth": 2,
+      "marked": false,
+      "J": [],
+      "initialization_gates": 13,
+      "query_gates": 3,
+      "gates": 16
+    },
+    {
+      "n": 4,
+      "depth": 2,
+      "marked": false,
+      "J": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "initialization_gates": 13,
+      "query_gates": 18,
+      "gates": 31
+    },
+    {
+      "n": 4,
+      "depth": 2,
+      "marked": true,
+      "J": [],
+      "initialization_gates": 28,
+      "query_gates": 3,
+      "gates": 31
+    },
+    {
+      "n": 4,
+      "depth": 2,
+      "marked": true,
+      "J": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "initialization_gates": 28,
+      "query_gates": 18,
+      "gates": 46
+    },
+    {
+      "n": 5,
+      "depth": 1,
+      "marked": false,
+      "J": [],
+      "initialization_gates": 4,
+      "query_gates": 0,
+      "gates": 4
+    },
+    {
+      "n": 5,
+      "depth": 1,
+      "marked": false,
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "initialization_gates": 4,
+      "query_gates": 7,
+      "gates": 11
+    },
+    {
+      "n": 5,
+      "depth": 1,
+      "marked": true,
+      "J": [],
+      "initialization_gates": 13,
+      "query_gates": 0,
+      "gates": 13
+    },
+    {
+      "n": 5,
+      "depth": 1,
+      "marked": true,
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "initialization_gates": 13,
+      "query_gates": 7,
+      "gates": 20
+    },
+    {
+      "n": 5,
+      "depth": 2,
+      "marked": false,
+      "J": [],
+      "initialization_gates": 17,
+      "query_gates": 3,
+      "gates": 20
+    },
+    {
+      "n": 5,
+      "depth": 2,
+      "marked": false,
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "initialization_gates": 17,
+      "query_gates": 22,
+      "gates": 39
+    },
+    {
+      "n": 5,
+      "depth": 2,
+      "marked": true,
+      "J": [],
+      "initialization_gates": 36,
+      "query_gates": 3,
+      "gates": 39
+    },
+    {
+      "n": 5,
+      "depth": 2,
+      "marked": true,
+      "J": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "initialization_gates": 36,
+      "query_gates": 22,
+      "gates": 58
+    }
+  ],
+  "root_conjecture_verified": false,
+  "uniform_constructor_scope": "Fixed depth1 or2, one explicit J",
+  "all_J_cost": "Separate queries over all 2^n subsets is not a polynomial-size root construction"
+}

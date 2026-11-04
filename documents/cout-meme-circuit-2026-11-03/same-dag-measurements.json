@@ -1,0 +1,1516 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "source_sha256": {
+    "documents/cout-meme-circuit-2026-11-03/measure_same_dag.py": "f7e283d3bdbd26c94ad9826fb776c5de1f422cae51a72b9a921d9ec9fdcc0b25",
+    "documents/composition-native-2026-11-03/compose_native_representatives.py": "2e68d57225c04caddace2d91946cf7c88273a702bbc7833e1f380a253e54d9f4",
+    "etudes/2026-11-01/linearisation-orientee-convolution/linearised_inputs.py": "5c4c61aaacd4aa143f146bdaa64f20ae7fdbfeeac41b207eef87c4c9c7b24ada",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06"
+  },
+  "seconds": 5.922,
+  "cases": [
+    {
+      "n": 1,
+      "Q": 97,
+      "N": 2,
+      "omega": 96,
+      "labels": [
+        -1
+      ],
+      "graph_and_output_roots_sha256": "bb813d49e4f2d0674536bf14a6679102451ced12377bac0fc6962627cc447b54",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 3,
+          "additions": 1,
+          "multiplications": 2,
+          "upper_bound": 3
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound": 6
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 3,
+          "additions": 1,
+          "multiplications": 2,
+          "upper_bound": 3
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound": 0
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound": 0
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound": 1
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 5,
+          "additions": 2,
+          "multiplications": 3,
+          "upper_bound": 6
+        }
+      ],
+      "all_useful_scalar_gates": 13,
+      "allocated_arithmetic_gates": 13,
+      "preparation_gates": 4,
+      "preparation_gates_used_by_output": 4,
+      "representative_residual_gates": 9,
+      "preparation_bound": 9,
+      "explicit_complete_representative_bound": 19,
+      "cubic_complete_representative_bound": 29,
+      "auxiliary_input_count": 2,
+      "original_input_count": 2,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 1,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        -3,
+        0
+      ],
+      "graph_and_output_roots_sha256": "886a42670d46f3fad4488dee4cbda26d5b62307c1f77547dce4bf2cbc5d2e239",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 15,
+          "additions": 4,
+          "multiplications": 11,
+          "upper_bound": 15
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 22,
+          "additions": 8,
+          "multiplications": 14,
+          "upper_bound": 40
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 14,
+          "additions": 6,
+          "multiplications": 8,
+          "upper_bound": 14
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound": 1
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound": 1
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 3,
+          "additions": 0,
+          "multiplications": 3,
+          "upper_bound": 3
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 17,
+          "additions": 8,
+          "multiplications": 9,
+          "upper_bound": 20
+        }
+      ],
+      "all_useful_scalar_gates": 73,
+      "allocated_arithmetic_gates": 73,
+      "preparation_gates": 37,
+      "preparation_gates_used_by_output": 37,
+      "representative_residual_gates": 36,
+      "preparation_bound": 55,
+      "explicit_complete_representative_bound": 96,
+      "cubic_complete_representative_bound": 232,
+      "auxiliary_input_count": 4,
+      "original_input_count": 5,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 2,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        -5,
+        -2,
+        4
+      ],
+      "graph_and_output_roots_sha256": "667c3cc06225c32d5aec7e02dcee3c9a1e500d7bc91100688a6c5657e5a87e30",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 35,
+          "additions": 9,
+          "multiplications": 26,
+          "upper_bound": 35
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 42,
+          "additions": 18,
+          "multiplications": 24,
+          "upper_bound": 60
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 21,
+          "additions": 9,
+          "multiplications": 12,
+          "upper_bound": 21
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 2,
+          "additions": 0,
+          "multiplications": 2,
+          "upper_bound": 2
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound": 1
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 3,
+          "additions": 0,
+          "multiplications": 3,
+          "upper_bound": 3
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 17,
+          "additions": 8,
+          "multiplications": 9,
+          "upper_bound": 20
+        }
+      ],
+      "all_useful_scalar_gates": 121,
+      "allocated_arithmetic_gates": 121,
+      "preparation_gates": 77,
+      "preparation_gates_used_by_output": 77,
+      "representative_residual_gates": 44,
+      "preparation_bound": 95,
+      "explicit_complete_representative_bound": 144,
+      "cubic_complete_representative_bound": 783,
+      "auxiliary_input_count": 4,
+      "original_input_count": 10,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 3,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        -7,
+        -4,
+        2,
+        10
+      ],
+      "graph_and_output_roots_sha256": "5575bda35f0ea4abd8e0bcfa2c2c735fb5befb64d6f372a5c6668b37f117d244",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 63,
+          "additions": 16,
+          "multiplications": 47,
+          "upper_bound": 63
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 148,
+          "additions": 64,
+          "multiplications": 84,
+          "upper_bound": 224
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 60,
+          "additions": 28,
+          "multiplications": 32,
+          "upper_bound": 60
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 3,
+          "additions": 0,
+          "multiplications": 3,
+          "upper_bound": 3
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound": 0
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound": 7
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 49,
+          "additions": 24,
+          "multiplications": 25,
+          "upper_bound": 56
+        }
+      ],
+      "all_useful_scalar_gates": 330,
+      "allocated_arithmetic_gates": 330,
+      "preparation_gates": 211,
+      "preparation_gates_used_by_output": 211,
+      "representative_residual_gates": 119,
+      "preparation_bound": 287,
+      "explicit_complete_representative_bound": 419,
+      "cubic_complete_representative_bound": 1856,
+      "auxiliary_input_count": 8,
+      "original_input_count": 17,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 4,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        -9,
+        -6,
+        0,
+        8,
+        18
+      ],
+      "graph_and_output_roots_sha256": "551b5dfb748ed5f18257fe3013906e904ab3430e99453e9dcd4d5741e3084fa5",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 99,
+          "additions": 25,
+          "multiplications": 74,
+          "upper_bound": 99
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 200,
+          "additions": 90,
+          "multiplications": 110,
+          "upper_bound": 280
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 75,
+          "additions": 35,
+          "multiplications": 40,
+          "upper_bound": 75
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 4,
+          "additions": 0,
+          "multiplications": 4,
+          "upper_bound": 4
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound": 0
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound": 7
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 49,
+          "additions": 24,
+          "multiplications": 25,
+          "upper_bound": 56
+        }
+      ],
+      "all_useful_scalar_gates": 434,
+      "allocated_arithmetic_gates": 434,
+      "preparation_gates": 299,
+      "preparation_gates_used_by_output": 299,
+      "representative_residual_gates": 135,
+      "preparation_bound": 379,
+      "explicit_complete_representative_bound": 527,
+      "cubic_complete_representative_bound": 3625,
+      "auxiliary_input_count": 8,
+      "original_input_count": 26,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 5,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        -11,
+        -8,
+        -2,
+        6,
+        16,
+        28
+      ],
+      "graph_and_output_roots_sha256": "7d347c94f7587efedf8df83e263cf2bf134af35628dd65ee9a0c4ac0b4f59827",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 143,
+          "additions": 36,
+          "multiplications": 107,
+          "upper_bound": 143
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 258,
+          "additions": 120,
+          "multiplications": 138,
+          "upper_bound": 336
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 90,
+          "additions": 42,
+          "multiplications": 48,
+          "upper_bound": 90
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 5,
+          "additions": 0,
+          "multiplications": 5,
+          "upper_bound": 5
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound": 1
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound": 7
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 49,
+          "additions": 24,
+          "multiplications": 25,
+          "upper_bound": 56
+        }
+      ],
+      "all_useful_scalar_gates": 553,
+      "allocated_arithmetic_gates": 553,
+      "preparation_gates": 401,
+      "preparation_gates_used_by_output": 401,
+      "representative_residual_gates": 152,
+      "preparation_bound": 479,
+      "explicit_complete_representative_bound": 644,
+      "cubic_complete_representative_bound": 6264,
+      "auxiliary_input_count": 8,
+      "original_input_count": 37,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 6,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 7,
+      "Q": 17,
+      "N": 8,
+      "omega": 2,
+      "labels": [
+        -13,
+        -10,
+        -4,
+        4,
+        14,
+        26,
+        40
+      ],
+      "graph_and_output_roots_sha256": "651fce15cd8952e89e0474e7eca5ce70d4d5c0f984c23f3c892c3b3f9d7f1a24",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 195,
+          "additions": 49,
+          "multiplications": 146,
+          "upper_bound": 195
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 322,
+          "additions": 154,
+          "multiplications": 168,
+          "upper_bound": 392
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 105,
+          "additions": 49,
+          "multiplications": 56,
+          "upper_bound": 105
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 6,
+          "additions": 0,
+          "multiplications": 6,
+          "upper_bound": 6
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound": 1
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound": 7
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 49,
+          "additions": 24,
+          "multiplications": 25,
+          "upper_bound": 56
+        }
+      ],
+      "all_useful_scalar_gates": 685,
+      "allocated_arithmetic_gates": 685,
+      "preparation_gates": 517,
+      "preparation_gates_used_by_output": 517,
+      "representative_residual_gates": 168,
+      "preparation_bound": 587,
+      "explicit_complete_representative_bound": 768,
+      "cubic_complete_representative_bound": 9947,
+      "auxiliary_input_count": 8,
+      "original_input_count": 50,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 7,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 8,
+      "Q": 17,
+      "N": 16,
+      "omega": 3,
+      "labels": [
+        -15,
+        -12,
+        -6,
+        2,
+        12,
+        24,
+        38,
+        54
+      ],
+      "graph_and_output_roots_sha256": "43d6a6639eaf78d3f7dac1244383ae09727fcd9cfae74716d40a0ef2786113a2",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 255,
+          "additions": 64,
+          "multiplications": 191,
+          "upper_bound": 255
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 840,
+          "additions": 384,
+          "multiplications": 456,
+          "upper_bound": 1152
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 248,
+          "additions": 120,
+          "multiplications": 128,
+          "upper_bound": 248
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 7,
+          "additions": 0,
+          "multiplications": 7,
+          "upper_bound": 7
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound": 0
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound": 15
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 129,
+          "additions": 64,
+          "multiplications": 65,
+          "upper_bound": 144
+        }
+      ],
+      "all_useful_scalar_gates": 1494,
+      "allocated_arithmetic_gates": 1494,
+      "preparation_gates": 1095,
+      "preparation_gates_used_by_output": 1095,
+      "representative_residual_gates": 399,
+      "preparation_bound": 1407,
+      "explicit_complete_representative_bound": 1835,
+      "cubic_complete_representative_bound": 14848,
+      "auxiliary_input_count": 16,
+      "original_input_count": 65,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 8,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 9,
+      "Q": 97,
+      "N": 16,
+      "omega": 8,
+      "labels": [
+        -17,
+        -14,
+        -8,
+        0,
+        10,
+        22,
+        36,
+        52,
+        70
+      ],
+      "graph_and_output_roots_sha256": "f69ec6627281d434a5aee979e9becfcc347f5247d6fdfcb156093f53733b4a71",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 323,
+          "additions": 81,
+          "multiplications": 242,
+          "upper_bound": 323
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 972,
+          "additions": 450,
+          "multiplications": 522,
+          "upper_bound": 1296
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 279,
+          "additions": 135,
+          "multiplications": 144,
+          "upper_bound": 279
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 8,
+          "additions": 0,
+          "multiplications": 8,
+          "upper_bound": 8
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound": 0
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound": 15
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 129,
+          "additions": 64,
+          "multiplications": 65,
+          "upper_bound": 144
+        }
+      ],
+      "all_useful_scalar_gates": 1726,
+      "allocated_arithmetic_gates": 1726,
+      "preparation_gates": 1295,
+      "preparation_gates_used_by_output": 1295,
+      "representative_residual_gates": 431,
+      "preparation_bound": 1619,
+      "explicit_complete_representative_bound": 2079,
+      "cubic_complete_representative_bound": 21141,
+      "auxiliary_input_count": 16,
+      "original_input_count": 82,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 9,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 10,
+      "Q": 97,
+      "N": 16,
+      "omega": 8,
+      "labels": [
+        -19,
+        -16,
+        -10,
+        -2,
+        8,
+        20,
+        34,
+        50,
+        68,
+        88
+      ],
+      "graph_and_output_roots_sha256": "664192e2b377033aae0b6bf626d2246fb01c153cd177235d72f98e9475b6f1bc",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 399,
+          "additions": 100,
+          "multiplications": 299,
+          "upper_bound": 399
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 1110,
+          "additions": 520,
+          "multiplications": 590,
+          "upper_bound": 1440
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 310,
+          "additions": 150,
+          "multiplications": 160,
+          "upper_bound": 310
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 9,
+          "additions": 0,
+          "multiplications": 9,
+          "upper_bound": 9
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound": 1
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound": 15
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 129,
+          "additions": 64,
+          "multiplications": 65,
+          "upper_bound": 144
+        }
+      ],
+      "all_useful_scalar_gates": 1973,
+      "allocated_arithmetic_gates": 1973,
+      "preparation_gates": 1509,
+      "preparation_gates_used_by_output": 1509,
+      "representative_residual_gates": 464,
+      "preparation_bound": 1839,
+      "explicit_complete_representative_bound": 2332,
+      "cubic_complete_representative_bound": 29000,
+      "auxiliary_input_count": 16,
+      "original_input_count": 101,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 10,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 11,
+      "Q": 97,
+      "N": 16,
+      "omega": 8,
+      "labels": [
+        -21,
+        -18,
+        -12,
+        -4,
+        6,
+        18,
+        32,
+        48,
+        66,
+        86,
+        108
+      ],
+      "graph_and_output_roots_sha256": "ca21ac5e95b4d8c325323e764f0dec204f44d7e4642d0c1e59c00017b9422f58",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 483,
+          "additions": 121,
+          "multiplications": 362,
+          "upper_bound": 483
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 1254,
+          "additions": 594,
+          "multiplications": 660,
+          "upper_bound": 1584
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 341,
+          "additions": 165,
+          "multiplications": 176,
+          "upper_bound": 341
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 10,
+          "additions": 0,
+          "multiplications": 10,
+          "upper_bound": 10
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound": 1
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound": 15
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 129,
+          "additions": 64,
+          "multiplications": 65,
+          "upper_bound": 144
+        }
+      ],
+      "all_useful_scalar_gates": 2233,
+      "allocated_arithmetic_gates": 2233,
+      "preparation_gates": 1737,
+      "preparation_gates_used_by_output": 1737,
+      "representative_residual_gates": 496,
+      "preparation_bound": 2067,
+      "explicit_complete_representative_bound": 2592,
+      "cubic_complete_representative_bound": 38599,
+      "auxiliary_input_count": 16,
+      "original_input_count": 122,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 11,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 12,
+      "Q": 97,
+      "N": 16,
+      "omega": 8,
+      "labels": [
+        -23,
+        -20,
+        -14,
+        -6,
+        4,
+        16,
+        30,
+        46,
+        64,
+        84,
+        106,
+        130
+      ],
+      "graph_and_output_roots_sha256": "ef8a7aa01c241d80294cf711cb3ed0e5ed686d05b1c015ff7e6c2809f2a095b6",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 575,
+          "additions": 144,
+          "multiplications": 431,
+          "upper_bound": 575
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 1404,
+          "additions": 672,
+          "multiplications": 732,
+          "upper_bound": 1728
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 372,
+          "additions": 180,
+          "multiplications": 192,
+          "upper_bound": 372
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 11,
+          "additions": 0,
+          "multiplications": 11,
+          "upper_bound": 11
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound": 0
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound": 15
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 129,
+          "additions": 64,
+          "multiplications": 65,
+          "upper_bound": 144
+        }
+      ],
+      "all_useful_scalar_gates": 2506,
+      "allocated_arithmetic_gates": 2506,
+      "preparation_gates": 1979,
+      "preparation_gates_used_by_output": 1979,
+      "representative_residual_gates": 527,
+      "preparation_bound": 2303,
+      "explicit_complete_representative_bound": 2859,
+      "cubic_complete_representative_bound": 50112,
+      "auxiliary_input_count": 16,
+      "original_input_count": 145,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 12,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 13,
+      "Q": 97,
+      "N": 16,
+      "omega": 8,
+      "labels": [
+        -25,
+        -22,
+        -16,
+        -8,
+        2,
+        14,
+        28,
+        44,
+        62,
+        82,
+        104,
+        128,
+        154
+      ],
+      "graph_and_output_roots_sha256": "da0295e734146a5741ef80b5ff74f11089831276e3cb99a471f8031f7582730f",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 675,
+          "additions": 169,
+          "multiplications": 506,
+          "upper_bound": 675
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 1560,
+          "additions": 754,
+          "multiplications": 806,
+          "upper_bound": 1872
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 403,
+          "additions": 195,
+          "multiplications": 208,
+          "upper_bound": 403
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 12,
+          "additions": 0,
+          "multiplications": 12,
+          "upper_bound": 12
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound": 0
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound": 15
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 129,
+          "additions": 64,
+          "multiplications": 65,
+          "upper_bound": 144
+        }
+      ],
+      "all_useful_scalar_gates": 2794,
+      "allocated_arithmetic_gates": 2794,
+      "preparation_gates": 2235,
+      "preparation_gates_used_by_output": 2235,
+      "representative_residual_gates": 559,
+      "preparation_bound": 2547,
+      "explicit_complete_representative_bound": 3135,
+      "cubic_complete_representative_bound": 63713,
+      "auxiliary_input_count": 16,
+      "original_input_count": 170,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 13,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 14,
+      "Q": 97,
+      "N": 16,
+      "omega": 8,
+      "labels": [
+        -27,
+        -24,
+        -18,
+        -10,
+        0,
+        12,
+        26,
+        42,
+        60,
+        80,
+        102,
+        126,
+        152,
+        180
+      ],
+      "graph_and_output_roots_sha256": "43311f0db740775191604f5c45f417097be3500286500a327747a29cfadf8c46",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 783,
+          "additions": 196,
+          "multiplications": 587,
+          "upper_bound": 783
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 1722,
+          "additions": 840,
+          "multiplications": 882,
+          "upper_bound": 2016
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 434,
+          "additions": 210,
+          "multiplications": 224,
+          "upper_bound": 434
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 13,
+          "additions": 0,
+          "multiplications": 13,
+          "upper_bound": 13
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound": 1
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound": 15
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 129,
+          "additions": 64,
+          "multiplications": 65,
+          "upper_bound": 144
+        }
+      ],
+      "all_useful_scalar_gates": 3097,
+      "allocated_arithmetic_gates": 3097,
+      "preparation_gates": 2505,
+      "preparation_gates_used_by_output": 2505,
+      "representative_residual_gates": 592,
+      "preparation_bound": 2799,
+      "explicit_complete_representative_bound": 3420,
+      "cubic_complete_representative_bound": 79576,
+      "auxiliary_input_count": 16,
+      "original_input_count": 197,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 14,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 15,
+      "Q": 97,
+      "N": 16,
+      "omega": 8,
+      "labels": [
+        -29,
+        -26,
+        -20,
+        -12,
+        -2,
+        10,
+        24,
+        40,
+        58,
+        78,
+        100,
+        124,
+        150,
+        178,
+        208
+      ],
+      "graph_and_output_roots_sha256": "b9c4f5a0f021fbfc034b62e7c7328f252be0072ca12846f77f6e61dc06cc1d06",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 899,
+          "additions": 225,
+          "multiplications": 674,
+          "upper_bound": 899
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 1890,
+          "additions": 930,
+          "multiplications": 960,
+          "upper_bound": 2160
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 465,
+          "additions": 225,
+          "multiplications": 240,
+          "upper_bound": 465
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 14,
+          "additions": 0,
+          "multiplications": 14,
+          "upper_bound": 14
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 1,
+          "additions": 0,
+          "multiplications": 1,
+          "upper_bound": 1
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound": 15
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 129,
+          "additions": 64,
+          "multiplications": 65,
+          "upper_bound": 144
+        }
+      ],
+      "all_useful_scalar_gates": 3413,
+      "allocated_arithmetic_gates": 3413,
+      "preparation_gates": 2789,
+      "preparation_gates_used_by_output": 2789,
+      "representative_residual_gates": 624,
+      "preparation_bound": 3059,
+      "explicit_complete_representative_bound": 3712,
+      "cubic_complete_representative_bound": 97875,
+      "auxiliary_input_count": 16,
+      "original_input_count": 226,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 15,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 16,
+      "Q": 97,
+      "N": 32,
+      "omega": 19,
+      "labels": [
+        -31,
+        -28,
+        -22,
+        -14,
+        -4,
+        8,
+        22,
+        38,
+        56,
+        76,
+        98,
+        122,
+        148,
+        176,
+        206,
+        238
+      ],
+      "graph_and_output_roots_sha256": "0351bd314ee030092accf3cbbbdd30ee9a643240a52886459c19b845477cface",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 1023,
+          "additions": 256,
+          "multiplications": 767,
+          "upper_bound": 1023
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 4368,
+          "additions": 2048,
+          "multiplications": 2320,
+          "upper_bound": 5632
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 1008,
+          "additions": 496,
+          "multiplications": 512,
+          "upper_bound": 1008
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 15,
+          "additions": 0,
+          "multiplications": 15,
+          "upper_bound": 15
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound": 0
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 31,
+          "additions": 0,
+          "multiplications": 31,
+          "upper_bound": 31
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 321,
+          "additions": 160,
+          "multiplications": 161,
+          "upper_bound": 352
+        }
+      ],
+      "all_useful_scalar_gates": 6766,
+      "allocated_arithmetic_gates": 6766,
+      "preparation_gates": 5391,
+      "preparation_gates_used_by_output": 5391,
+      "representative_residual_gates": 1375,
+      "preparation_bound": 6655,
+      "explicit_complete_representative_bound": 8091,
+      "cubic_complete_representative_bound": 118784,
+      "auxiliary_input_count": 32,
+      "original_input_count": 257,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 16,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    },
+    {
+      "n": 32,
+      "Q": 193,
+      "N": 64,
+      "omega": 11,
+      "labels": [
+        -63,
+        -60,
+        -54,
+        -46,
+        -36,
+        -24,
+        -10,
+        6,
+        24,
+        44,
+        66,
+        90,
+        116,
+        144,
+        174,
+        206,
+        240,
+        276,
+        314,
+        354,
+        396,
+        440,
+        486,
+        534,
+        584,
+        636,
+        690,
+        746,
+        804,
+        864,
+        926,
+        990
+      ],
+      "graph_and_output_roots_sha256": "ac3fcd0b320e059077762ed53a38d205a04fe3a2284f79efc21ebfa5f066843c",
+      "stages": [
+        {
+          "stage": "B",
+          "new_distinct_useful_gates": 4095,
+          "additions": 1024,
+          "multiplications": 3071,
+          "upper_bound": 4095
+        },
+        {
+          "stage": "coefficient_NTT",
+          "new_distinct_useful_gates": 21536,
+          "additions": 10240,
+          "multiplications": 11296,
+          "upper_bound": 26624
+        },
+        {
+          "stage": "row_forms",
+          "new_distinct_useful_gates": 4064,
+          "additions": 2016,
+          "multiplications": 2048,
+          "upper_bound": 4064
+        },
+        {
+          "stage": "shared_product",
+          "new_distinct_useful_gates": 31,
+          "additions": 0,
+          "multiplications": 31,
+          "upper_bound": 31
+        },
+        {
+          "stage": "universal_sign",
+          "new_distinct_useful_gates": 0,
+          "additions": 0,
+          "multiplications": 0,
+          "upper_bound": 0
+        },
+        {
+          "stage": "shared_phases",
+          "new_distinct_useful_gates": 63,
+          "additions": 0,
+          "multiplications": 63,
+          "upper_bound": 63
+        },
+        {
+          "stage": "true_INTT",
+          "new_distinct_useful_gates": 769,
+          "additions": 384,
+          "multiplications": 385,
+          "upper_bound": 832
+        }
+      ],
+      "all_useful_scalar_gates": 30558,
+      "allocated_arithmetic_gates": 30558,
+      "preparation_gates": 25631,
+      "preparation_gates_used_by_output": 25631,
+      "representative_residual_gates": 4927,
+      "preparation_bound": 30719,
+      "explicit_complete_representative_bound": 35771,
+      "cubic_complete_representative_bound": 950272,
+      "auxiliary_input_count": 64,
+      "original_input_count": 1025,
+      "partitions_exact": true,
+      "same_graph_for_all_stages": true,
+      "forward_NTT_calls": 32,
+      "actual_INTT_calls": 1,
+      "derivative_calls": 0,
+      "collision_filter_calls": 0,
+      "normalized_scalar_chain_gates": null,
+      "normalized_scalar_chain_constructed_by_this_program": false
+    }
+  ],
+  "selected_compiler": "compile_native_representatives",
+  "selected_output_roots": "outputs: all slots of the actual INTT",
+  "counting_model": "distinct reachable +/* nodes; inputs, constants, wires are not arithmetic gates",
+  "constants_are_structural_and_pre_evaluated": true,
+  "reference_normalizers_used": false,
+  "all_stage_counts_extracted_from_the_same_emitted_graph": true,
+  "semantic_correctness_reference": "documents/composition-native-2026-11-03/native-composition-validation.json",
+  "scope": "Exact measurements of the existing complete representative DAG; no measured total for an unimplemented normalized compact scalar DAG.",
+  "general_polynomial_scalar_output_bound_proved": false
+}

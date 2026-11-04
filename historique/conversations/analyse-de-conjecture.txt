@@ -1,0 +1,355 @@
+Analyse de conjecture
+Export des messages publics
+
+UTILISATEUR
+on se concentre uniquement sur les sous ensembles qui introduisait les exponentielles c'est qu'on veut résoudre
+
+ASSISTANT
+Oui. **La cible unique est la propagation séparée des sous-ensembles**
+\[
+c_{i+1,S\cup\{j\}}
+\mathrel{+}=
+c_{i,S}B_{i+1,j}.
+\]
+
+Nous cherchons à effectuer **l’effet collectif de ces mises à jour**, sans créer une case ou une branche de calcul pour chaque \(S\).
+
+Il suffit de produire le coefficient final \(c_{n,[n]}=P_A\). Produire explicitement tous les coefficients intermédiaires n’est pas une exigence.
+
+La construction recherchée doit donc permettre :
+
+- de représenter collectivement les choix de colonnes déjà utilisés ;
+- d’intégrer une nouvelle ligne en conservant exactement l’exclusion des collisions ;
+- de lire le coefficient final avec un nombre total polynomial de portes \(+,-,\times\).
+
+**Le critère décisif est le coût cumulé de ces trois opérations.** Stocker simplement les lignes ou conserver une expression factorisée donne déjà une description compacte ; il faut encore rendre son exploitation et sa lecture finale polynomiales.
+
+C’est précisément cette représentation collective, avec sa règle de mise à jour et sa lecture explicites, qui reste à construire. Le raccordement au papier intervient ensuite, sur le même scalaire \(P_A\).
+
+UTILISATEUR
+vas-y
+
+ASSISTANT
+J’ai travaillé directement sur le regroupement des sous-ensembles. **Je n’ai pas obtenu la règle générale de coût polynomial.** Les regroupements par profils communs et par continuations proportionnelles donnent des mises à jour exactes, mais ne réduisent pas suffisamment les états pour les matrices du papier.
+
+Un résultat plus général précise désormais ce qu’une représentation collective doit éviter.
+
+À une étape \(i\), écrivons
+\[
+F=(c_{i,S})_{|S|=i},
+\qquad m=\binom ni.
+\]
+
+Supposons qu’on remplace ce vecteur par \(r\) scalaires
+\[
+E(F)=(e_1(F),\ldots,e_r(F)),
+\]
+où \(E\) est une fonction polynomiale fixe des coefficients. Supposons aussi que chaque continuation puisse calculer le résultat final par \(+,-,\times\), **en utilisant ce résumé comme seule information sur le préfixe**.
+
+Alors :
+\[
+\boxed{r\ge \binom ni.}
+\]
+
+Cette borne vaut même lorsque les \(e_j\) sont non linéaires.
+
+La preuve utilise l’homogénéité. Multiplier une ligne passée par \(\lambda\) multiplie tout \(F\) par \(\lambda\). Pour une continuation \(s\), la lecture finale est une forme linéaire \(L_s(F)\). Son décodeur polynomial \(R_s\) satisfait donc
+\[
+R_s(E(\lambda F))=\lambda L_s(F).
+\]
+
+En prenant le coefficient de \(\lambda\), on obtient
+\[
+DR_s(E(0))\,DE(0)\,F=L_s(F).
+\]
+
+Les états atteignables engendrent l’espace des coordonnées, et les continuations séparent ces coordonnées. Par conséquent, \(DE(0)\) doit être injectif : sa sortie possède au moins \(m\) coordonnées. La restriction \(p_{ij}=1+a_{ij}^2\) permet cette argumentation par prolongement des identités polynomiales aux paramètres \(p_{ij}\).
+
+**Ce résultat concerne une compression polynomiale du seul vecteur des coefficients. Il ne constitue pas une borne contre tous les circuits.**
+
+Il donne une direction précise pour notre objectif : **construire la représentation directement depuis les facteurs d’entrée et conserver leur structure**, plutôt que remplacer les coefficients par quelques sommes, moments ou fonctions polynomiales de ces coefficients.
+
+Les \(in\) entrées des lignes déjà traitées fournissent déjà une description compacte de tous les états possibles. Le problème restant est exactement celui-ci :
+
+\[
+\boxed{\text{calculer la lecture filtrée depuis cette description, sans développer les }S.}
+\]
+
+Je n’ai pas encore construit cette lecture polynomiale. La fermeture générale reste donc ouverte dans notre travail ; les regroupements testés ne la démontrent pas.
+
+UTILISATEUR
+essayons la convolution aussi pour voir. on est tjrs sur les sous-ensembles
+
+ASSISTANT
+Oui. **La convolution permet de conserver les coefficients utiles dans un circuit factorisé polynomial, sans parcourir les sous-ensembles.** J’ai établi cette représentation exactement. La lecture scalaire du coefficient final reste toutefois à construire.
+
+Posons d’abord la convolution disjointe :
+\[
+(f\star g)(S)=\sum_{T\subseteq S}f(T)g(S\setminus T).
+\]
+Avec \(f_i(\{j\})=B_{ij}\), et \(f_i=0\) ailleurs, notre récurrence devient
+\[
+c_i=f_1\star\cdots\star f_i.
+\]
+Cela autorise des regroupements de lignes, mais la convolution rapide habituelle travaille encore sur des tables exponentielles : \(O(n^2 2^n)\) opérations pour deux fonctions générales. Même sa version FFT conserve ce facteur. :chatgpt-content-reference{index="0"}
+
+**La construction intéressante consiste donc à garder la convolution sous forme factorisée.**
+
+Attribuons à la colonne \(j\) le poids \(2^{j-1}\), et définissons
+\[
+\mu(S)=\sum_{j\in S}2^{j-1},
+\qquad
+F_i(t)=\prod_{r=1}^{i}
+\left(\sum_{j=1}^{n}B_{rj}t^{2^{j-1}}\right).
+\]
+
+On obtient l’identité :
+\[
+\boxed{
+[t^{\mu(S)}]F_i(t)=c_{i,S}
+\qquad\text{pour }|S|=i.
+}
+\]
+
+Voici la preuve. Chaque contribution au produit choisit exactement \(i\) puissances de deux. Si une colonne est répétée, deux puissances identiques s’additionnent et produisent une retenue. Chaque retenue diminue le nombre de termes dans l’écriture binaire finale. L’exposant obtenu possède donc strictement moins de \(i\) bits à \(1\).
+
+Or \(\mu(S)\) possède exactement \(i\) bits à \(1\). **Aucune contribution avec collision ne peut atteindre cette adresse.**
+
+Les termes avec collision restent présents dans \(F_i\), mais ils ne contaminent jamais les coefficients utiles. En particulier :
+\[
+\boxed{
+P_A=[t^{2^n-1}]
+\prod_{i=1}^{n}
+\left(\sum_{j=1}^{n}B_{ij}t^{2^{j-1}}\right).
+}
+\]
+
+Cette identité vaut pour toute matrice \(B\), pas seulement pour un exemple.
+
+**Le circuit qui construit ce produit est réellement polynomial.**
+
+À partir des entrées \(B_{ij}\), le décompte est :
+
+| Construction | Portes |
+|---|---:|
+| \(t,t^2,t^4,\ldots,t^{2^{n-1}}\), par carrés successifs | \(n-1\) |
+| Multiplications par les \(B_{ij}\) | \(n^2\) |
+| Additions dans les facteurs | \(n(n-1)\) |
+| Multiplications des facteurs | \(n-1\) |
+| **Total** | **\(2n^2+n-2\)** |
+
+Pour deux blocs de lignes disjoints \(I,J\),
+\[
+F_{I\cup J}=F_I F_J.
+\]
+Le raccord entre blocs demande donc une multiplication supplémentaire. L’arbre complet utilise \(n-1\) multiplications de blocs.
+
+L’évaluation de \(F_n(t_0)\) est également polynomiale en opérations arithmétiques. Sur un corps fini, elle possède aussi un coût binaire polynomial en \(n\) et dans la taille du module. Cela ne justifie pas une évaluation entière à précision exponentielle.
+
+**Le test décisif concerne maintenant l’extraction.**
+
+Une convolution cyclique modulo \(t^N-1\) mélange les exposants congrus modulo \(N\). Avec \(N=2^n\), le coefficient recherché reste exact : un exposant parasite serait
+\[
+2^n-1+k2^n,\qquad k\ge1,
+\]
+et posséderait plus de \(n\) bits à \(1\), ce qui est impossible avec seulement \(n\) choix de colonnes.
+
+Mais cette longueur est exponentielle. Une longueur courte peut donner un résultat faux. Pour \(n=3\) et \(B_{ij}=1\),
+\[
+F_3(t)=(t+t^2+t^4)^3.
+\]
+Le coefficient exact de \(t^7\) vaut \(6\). Modulo \(t^4-1\), la lecture correspondante vaut \(7\) : le choix trois fois de la première colonne produit \(t^3\), confondu avec \(t^7\).
+
+On peut généraliser ce contrôle. Pour **ce codage binaire**, toute longueur cyclique exacte pour toutes les matrices doit satisfaire
+\[
+\boxed{N\ge 2^n-n.}
+\]
+
+En effet, si \(N\le2^n-n-1\), alors
+\[
+e=2^n-1-N\in[n,2^n-2].
+\]
+Tout entier de cet intervalle peut s’écrire comme somme de exactement \(n\) puissances de deux autorisées : on part de son écriture binaire, puis on dédouble des puissances jusqu’à obtenir \(n\) termes. Cette affectation avec collision atteint \(e\), donc la même case cyclique que la cible.
+
+Cette borne concerne la convolution cyclique ainsi construite. **Elle ne constitue pas une impossibilité pour tout circuit utilisant des convolutions.**
+
+Pour le raccord au papier, on conserve simplement
+\[
+B_{ij}(z)=p_{ij}z^{w_{ij}},
+\]
+et on utilise \(t\) comme variable auxiliaire distincte de \(z\). L’identité donne exactement le même \(P_A(z)\), sans facteur supplémentaire.
+
+| Exigence | Résultat obtenu |
+|---|---|
+| Construction sans énumération des sous-ensembles | Oui, sous forme factorisée |
+| Taille du circuit représentant \(F_n\) | \(O(n^2)\) |
+| Fusion et évaluation des blocs de \(F_n\) | Polynomiales |
+| Identité avec le \(P_A\) du papier | Démontrée |
+| Circuit scalaire polynomial produisant \(P_A\) | **Non établi : extraction restante** |
+
+La question précise devient donc : **comment compiler la lecture \([t^{2^n-1}]F_n\) directement sur les facteurs, avec polynomialement de portes \(+,-,\times\), sans construire la table de convolution ?** Le produit compact est désormais justifié ; considérer cette lecture comme une opération gratuite masquerait encore l’exponentielle.
+
+UTILISATEUR
+essayons l'idée d'une chirurgie localisé. le papier donne déjà tout le calcul si j'ai bien compris et c'est le coût au niveau des sous-ensembles qui est exponentielle. donc le calcul arrive à ce niveau on fait une chirurgie localisé rapide avec une convolution polynomiale enfin d'éviter l'exponentielle.
+
+ASSISTANT
+**Oui : on peut limiter l’intervention au bloc qui propage les sous-ensembles.** Pour la récurrence examinée, le calcul exact est déjà défini. Le travail consiste à remplacer sa réalisation exponentielle par un circuit polynomial, puis à fournir le même scalaire \(P_A\) au bloc spectral.
+
+La chirurgie doit commencer **avant que les coefficients \(c_{i,S}\) soient développés explicitement**. Une fois une couche de \(\binom ni\) coefficients construite, son coût est déjà payé.
+
+J’ai testé concrètement deux façons de localiser cette intervention.
+
+**Première tentative : remplacer plusieurs mises à jour par une seule convolution.**
+
+Regroupons \(k\) lignes. Notons \(d_{i,k,T}\) le poids des affectations de ces nouvelles lignes utilisant exactement les colonnes de \(T\). La mise à jour exacte devient :
+\[
+\boxed{
+c_{i+k,S}
+=
+\sum_{\substack{T\subseteq S\\|T|=k}}
+c_{i,S\setminus T}\,d_{i,k,T}.
+}
+\]
+
+C’est bien une convolution disjointe. Pour \(k\) constant, les coefficients propres au petit bloc se calculent en coût polynomial.
+
+Cependant, le nombre de raccords entre les états d’entrée et ceux de sortie vaut :
+\[
+\boxed{
+\binom n{i+k}\binom{i+k}k
+=
+\binom ni\binom{n-i}k.
+}
+\]
+
+Au milieu du calcul, ce nombre reste exponentiel. **La petite convolution est rapide ; son application à tous les états conserve le problème.** Cette première chirurgie ne suffit donc pas.
+
+**Deuxième tentative : filtrer de petits groupes de colonnes indépendamment.**
+
+Le problème apparaît déjà avec :
+\[
+B=\begin{pmatrix}a&b\\c&d\end{pmatrix}.
+\]
+Imposer localement une utilisation de chaque colonne, puis combiner les résultats, donne :
+\[
+(a+c)(b+d)=ad+bc+ab+cd.
+\]
+La sortie recherchée est \(ad+bc\). Les termes supplémentaires \(ab\) et \(cd\) utilisent deux fois une même ligne.
+
+La convolution locale doit donc préserver une information qui traverse les groupes : **quelles lignes participent à quels choix**. Si cette information est représentée par des sous-ensembles de lignes, on retrouve l’exponentielle sous une autre forme.
+
+Cela précise le périmètre nécessaire de ta chirurgie :
+\[
+(B_{ij})
+\;\longrightarrow\;
+\boxed{\mathcal K_n}
+\;\longrightarrow\;
+P_A
+\;\longrightarrow\;
+\text{bloc spectral}.
+\]
+
+Le remplacement \(\mathcal K_n\) englobe **la propagation et la lecture finale**, tout en restant localisé dans l’architecture du papier. Son interface ne comporte que \(n^2\) entrées et une sortie : elle n’impose donc pas, à elle seule, une taille exponentielle.
+
+Pour valider ce remplacement, il faut construire ensemble :
+
+\[
+E_I=\text{représentation compacte du bloc }I,
+\]
+\[
+E_{I\cup J}=\operatorname{Fusion}(E_I,E_J),
+\qquad
+P_A=\operatorname{Lecture}(E_{[n]}),
+\]
+avec des représentations de taille polynomiale et un **budget polynomial total de portes**, lecture comprise.
+
+Le produit factorisé de notre essai précédent fournit déjà une représentation compacte et une fusion polynomiale. **Il ne fournit pas encore cette lecture.** Le raccorder maintenant au papier en laissant une extraction de coefficient non compilée ne résoudrait pas le coût.
+
+Ta proposition fixe donc un périmètre de recherche cohérent : **remplacer uniquement ce bloc, en conservant son entrée et sa sortie**. Les convolutions locales testées ne ferment pas encore ce remplacement ; le point à construire est leur composition exacte avec une lecture scalaire polynomiale, sans matérialiser les corrélations sous forme de sous-ensembles.
+
+UTILISATEUR
+vas-y et si la convolution est trop lourd utilisons une matrice stocastique
+
+ASSISTANT
+J’ai testé la piste stochastique. **Elle permet de décrire exactement le calcul, mais la matrice doit mémoriser les choix déjà faits.** C’est cette mémoire qu’il faut comprimer pour réussir la chirurgie.
+
+Pour commencer, prenons \(z=1\), donc les entrées légales du papier sont positives :
+\[
+B_{ij}=1+a_{ij}^{2}.
+\]
+Posons
+\[
+s_i=\sum_j B_{ij},
+\qquad
+p_{ij}=\frac{B_{ij}}{s_i}.
+\]
+La matrice \(p\) est stochastique : ses entrées sont positives et chaque ligne somme à \(1\).
+
+Si chaque ligne choisit une colonne suivant ces probabilités, alors :
+\[
+\boxed{
+P_A=\left(\prod_i s_i\right)
+\Pr(\text{toutes les colonnes choisies sont distinctes}).
+}
+\]
+
+Le tableau \(p\) ne comporte que \(n^2\) entrées. **La question devient le calcul exact de cette probabilité jointe.**
+
+Une matrice de transition qui respecte exactement le filtre possède les états \(S\) — colonnes déjà utilisées — et un état d’échec \(\dagger\) :
+\[
+T_i(S,S\cup\{j\})=p_{ij}\quad(j\notin S),
+\]
+\[
+T_i(S,\dagger)=\sum_{j\in S}p_{ij},
+\qquad T_i(\dagger,\dagger)=1.
+\]
+Chaque ligne somme bien à \(1\). Cependant, cette construction conserve les \(2^n\) états possibles.
+
+**J’ai aussi testé une version qui ne produit que des chemins sans collision.**
+
+Depuis \(S\), on choisit uniquement une colonne disponible :
+\[
+R_i(S)=\sum_{j\notin S}B_{ij},
+\qquad
+Q_i(S,S\cup\{j\})=\frac{B_{ij}}{R_i(S)}.
+\]
+Un chemin se construit en \(O(n^2)\) opérations arithmétiques. En lui attribuant le poids
+\[
+W=\prod_{i=1}^{n}R_i(S_{i-1}),
+\]
+on obtient exactement
+\[
+\boxed{\mathbb E[W]=P_A.}
+\]
+En effet, pour chaque permutation \(\sigma\), les dénominateurs de sa probabilité se compensent avec \(W\), laissant \(\prod_i B_{i,\sigma(i)}\).
+
+Mais les chemins n’ont généralement pas le même poids. Par exemple :
+\[
+B=\begin{pmatrix}1&2\\2&1\end{pmatrix}.
+\]
+Les deux chemins ont les poids \(3\) et \(6\), avec probabilités \(1/3\) et \(2/3\). Ainsi :
+\[
+P_A=\frac13\,3+\frac23\,6=5.
+\]
+Un chemin rapide ne fournit donc pas la valeur exacte. Cette construction relève de l’échantillonnage d’importance séquentiel, utilisé pour estimer ces sommes ; elle ne fournit pas automatiquement un circuit calculant leur moyenne exacte. :chatgpt-content-reference{index="0"}
+
+**On peut préciser la limite des petites matrices séquentielles.**
+
+Supposons que le remplacement traite chaque ligne séparément :
+\[
+\Pi(B)=u^\top T_1(B_1)\cdots T_n(B_n)v,
+\]
+où \(\Pi(B)=P_A/\prod_i s_i\), et que l’état intermédiaire possède \(m_i\) coordonnées après \(i\) lignes. Alors, pour ce modèle :
+\[
+\boxed{m_i\ge\binom ni.}
+\]
+
+La preuve repose sur les continuations possibles. Indexons les préfixes par les ensembles \(S\) de taille \(i\), et les suffixes par les compléments d’ensembles \(T\). Favorisons fortement les choix correspondants avec des poids légaux \(1+t^2\), en laissant les autres poids à \(1\). Quand \(t\) augmente, la matrice des probabilités finales tend vers l’identité : le préfixe et le suffixe s’accordent exactement lorsque \(S=T\).
+
+Cette matrice a donc un rang \(\binom ni\) pour des valeurs suffisamment grandes de \(t\). Or un passage par seulement \(m_i\) coordonnées impose un rang au plus \(m_i\).
+
+**Cette borne concerne une propagation linéaire dont chaque transition dépend uniquement de sa ligne.** Elle n’exclut pas un circuit général, ni des matrices construites à partir de plusieurs lignes simultanément.
+
+Enfin, les probabilités introduisent des divisions dépendant des entrées. Pour respecter les portes \(+,-,\times\), on peut suivre les poids non normalisés ; cela élimine les divisions, mais retrouve la propagation initiale.
+
+Le résultat du test est donc précis : **remplacer la convolution par une petite chaîne stochastique séquentielle ne supprime pas l’exponentielle.** La piste matricielle reste envisageable avec une construction qui combine plusieurs lignes, mais son calcul et sa lecture scalaire doivent encore être explicités et bornés polynomialement. Je n’ai pas obtenu ce remplacement complet.

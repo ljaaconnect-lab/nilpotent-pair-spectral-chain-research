@@ -1,0 +1,16 @@
+{
+  "node": "n65",
+  "artifact_version": "n65-inversion-jet-audit-v1",
+  "recorded_at_utc": "2026-10-07T16:18:27.788179+00:00",
+  "source_hashes": {
+    "n65-protocol.json": "4902973fac0d41ef3aa0310c55733af5fb47b67b6108e7f59803f0a0ec77d15b",
+    "initial_jets.py": "503aa85ca201b4ae3b28dc8ef33a7dd9f20553a8a4d1fb4fab5be5107443667f",
+    "N65_BLUEPRINT.md": "5386619090a528bff067cb95b0dc93bc6486f5ee5fab6da4d46f0edddfbd01e1",
+    "N65_INSIGHTS.md": "4c45fbfc5a78061116dca2b6be27fe7c73d36c50fb5c02c1b45cd1806db18286",
+    "n65-dev-report.json": "979d5559e384a1921a18ed3301249a061f470143ff4c42b1404d586d352c20db",
+    "candidate.py": "6f1143d634ebd7d98bce9fb5fd1ef7eb29dbb7868cd67ac29761c5d7b020a84c",
+    "euler_compiler.py": "9974e6b1feec828f656d56cd6537f4a3f70c10fee2b2c701eb9e2b7a38f9cf2d"
+  },
+  "numerical_experiments": 0,
+  "formal_rounds": 0
+}

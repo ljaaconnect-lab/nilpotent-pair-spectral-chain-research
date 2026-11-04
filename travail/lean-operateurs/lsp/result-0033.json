@@ -1,0 +1,232 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\WordFilter.lean",
+  "version": 5,
+  "completed": true,
+  "seconds": 13.594,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase pos\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : c = b\nhac : a = b\nhad : a = d\n⊢ (if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then 768 else 0) +\n      ((if b = d ∧ d = b then -192 else 0) +\n        ((if b = e ∧ e = b then -192 else 0) +\n          ((if d = e ∧ e = d then -64 else 0) +\n            (64 +\n              ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -192 else 0) +\n                ((if b = d ∧ b = e ∧ d = b ∧ e = b then -64 else 0) +\n                  ((if b = d ∧ d = b then 64 else 0) +\n                    ((if b = e ∧ b = d ∧ d = b ∧ e = b then -64 else 0) +\n                      ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -64 else 0) +\n                        ((if b = d ∧ d = b then 32 else 0) +\n                          ((if b = e ∧ e = b then 64 else 0) +\n                            ((if b = e ∧ e = b then 32 else 0) +\n                              ((if d = e ∧ e = d then 32 else 0) +\n                                (-32 +\n                                  ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -192 else 0) +\n                                    ((if b = d ∧ b = e ∧ b = d ∧ d = b ∧ e = b then -64 else 0) +\n                                      ((if b = d ∧ d = b then 64 else 0) +\n                                        ((if b = e ∧ b = d ∧ b = e ∧ d = b ∧ e = b then -64 else 0) +\n                                          ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -64 else 0) +\n                                            ((if b = d ∧ d = b then 32 else 0) +\n                                              ((if b = e ∧ e = b then 64 else 0) +\n                                                ((if b = e ∧ e = b then 32 else 0) +\n                                                  ((if d = e ∧ e = d then 32 else 0) +\n                                                    (-32 +\n                                                      ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -64\n                                                        else 0) +\n                                                        ((if b = d ∧ b = e ∧ d = b ∧ e = b then -64 else 0) +\n                                                          ((if b = d ∧ d = b then 32 else 0) +\n                                                            ((if b = e ∧ b = d ∧ d = b ∧ e = b then -64 else 0) +\n                                                              ((if\n                                                                    (b = d ∧ b = e) ∧\n                                                                      (d = b ∧ d = e) ∧ e = b ∧ e = d then\n                                                                  -192\n                                                                else 0) +\n                                                                ((if b = d ∧ d = b then 64 else 0) +\n                                                                  ((if b = e ∧ e = b then 32 else 0) +\n                                                                    ((if b = e ∧ e = b then 64 else 0) +\n                                                                      ((if d = e ∧ e = d then 32 else 0) +\n                                                                        (-32 +\n                                                                          ((if\n                                                                                (b = d ∧ b = e) ∧\n                                                                                  (d = b ∧ d = e) ∧ e = b ∧ e = d then\n                                                                              64\n                                                                            else 0) +\n                                                                            ((if b = d ∧ b = e ∧ d = b ∧ e = b then 32\n                                                                              else 0) +\n                                                                              ((if b = d ∧ b = e ∧ d = b ∧ e = b then 32\n                                                                                else 0) +\n                                                                                ((if b = d ∧ d = b then -32 else 0) +\n                                                                                  ((if\n                                                                                        b = e ∧\n                                                                                          b = d ∧ d = b ∧ e = b then\n                                                                                      32\n                                                                                    else 0) +\n                                                                                    ((if\n                                                                                          (b = d ∧ b = e) ∧\n                                                                                            (d = b ∧ d = e) ∧\n                                                                                              e = b ∧ e = d then\n                                                                                        64\n                                                                                      else 0) +\n                                                                                      ((if\n                                                                                            b = d ∧\n                                                                                              b = e ∧ d = b ∧ e = b then\n                                                                                          32\n                                                                                        else 0) +\n                                                                                        ((if b = d ∧ d = b then -32\n                                                                                          else 0) +\n                                                                                          ((if\n                                                                                                b = e ∧\n                                                                                                  b = d ∧\n                                                                                                    d = b ∧ e = b then\n                                                                                              32\n                                                                                            else 0) +\n                                                                                            ((if\n                                                                                                  b = e ∧\n                                                                                                    b = d ∧\n                                                                                                      d = b ∧ e = b then\n                                                                                                32\n                                                                                              else 0) +\n                                                                                              ((if\n                                                                                                    (b = d ∧ b = e) ∧\n                                                                                                      (d = b ∧ d = e) ∧\n                                                                                                        e = b ∧\n                                                                                                          e = d then\n                                                                                                  64\n                                                                                                else 0) +\n                                                                                                ((if b = d ∧ d = b then\n                                                                                                    -32\n                                                                                                  else 0) +\n                                                                                                  ((if\n                                                                                                        b = e ∧\n                                                                                                          e = b then\n                                                                                                      -32\n                                                                                                    else 0) +\n                                                                                                    ((if\n                                                                                                          b = e ∧\n                                                                                                            e = b then\n                                                                                                        -32\n                                                                                                      else 0) +\n                                                                                                      ((if\n                                                                                                            b = e ∧\n                                                                                                              e = b then\n                                                                                                          -32\n                                                                                                        else 0) +\n                                                                                                        ⋯))))))))))))))))))))))))))))))))))))))))))))))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase neg\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : c = b\nhac : a = b\nhad : ¬a = d\n⊢ (if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then 768 else 0) +\n      ((if b = d ∧ d = b then -192 else 0) +\n        ((if b = e ∧ e = b then -192 else 0) +\n          ((if d = e ∧ e = d then -64 else 0) +\n            (64 +\n              ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -192 else 0) +\n                ((if b = d ∧ b = e ∧ d = b ∧ e = b then -64 else 0) +\n                  ((if b = d ∧ d = b then 64 else 0) +\n                    ((if b = e ∧ b = d ∧ d = b ∧ e = b then -64 else 0) +\n                      ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -64 else 0) +\n                        ((if b = d ∧ d = b then 32 else 0) +\n                          ((if b = e ∧ e = b then 64 else 0) +\n                            ((if b = e ∧ e = b then 32 else 0) +\n                              ((if d = e ∧ e = d then 32 else 0) +\n                                (-32 +\n                                  ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -192 else 0) +\n                                    ((if b = d ∧ b = e ∧ b = d ∧ d = b ∧ e = b then -64 else 0) +\n                                      ((if b = d ∧ d = b then 64 else 0) +\n                                        ((if b = e ∧ b = d ∧ b = e ∧ d = b ∧ e = b then -64 else 0) +\n                                          ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -64 else 0) +\n                                            ((if b = d ∧ d = b then 32 else 0) +\n                                              ((if b = e ∧ e = b then 64 else 0) +\n                                                ((if b = e ∧ e = b then 32 else 0) +\n                                                  ((if d = e ∧ e = d then 32 else 0) +\n                                                    (-32 +\n                                                      ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -64\n                                                        else 0) +\n                                                        ((if b = d ∧ b = e ∧ d = b ∧ e = b then -64 else 0) +\n                                                          ((if b = d ∧ d = b then 32 else 0) +\n                                                            ((if b = e ∧ b = d ∧ d = b ∧ e = b then -64 else 0) +\n                                                              ((if\n                                                                    (b = d ∧ b = e) ∧\n                                                                      (d = b ∧ d = e) ∧ e = b ∧ e = d then\n                                                                  -192\n                                                                else 0) +\n                                                                ((if b = d ∧ d = b then 64 else 0) +\n                                                                  ((if b = e ∧ e = b then 32 else 0) +\n                                                                    ((if b = e ∧ e = b then 64 else 0) +\n                                                                      ((if d = e ∧ e = d then 32 else 0) +\n                                                                        (-32 +\n                                                                          ((if\n                                                                                (b = d ∧ b = e) ∧\n                                                                                  (d = b ∧ d = e) ∧ e = b ∧ e = d then\n                                                                              64\n                                                                            else 0) +\n                                                                            ((if b = d ∧ b = e ∧ d = b ∧ e = b then 32\n                                                                              else 0) +\n                                                                              ((if b = d ∧ b = e ∧ d = b ∧ e = b then 32\n                                                                                else 0) +\n                                                                                ((if b = d ∧ d = b then -32 else 0) +\n                                                                                  ((if\n                                                                                        b = e ∧\n                                                                                          b = d ∧ d = b ∧ e = b then\n                                                                                      32\n                                                                                    else 0) +\n                                                                                    ((if\n                                                                                          (b = d ∧ b = e) ∧\n                                                                                            (d = b ∧ d = e) ∧\n                                                                                              e = b ∧ e = d then\n                                                                                        64\n                                                                                      else 0) +\n                                                                                      ((if\n                                                                                            b = d ∧\n                                                                                              b = e ∧ d = b ∧ e = b then\n                                                                                          32\n                                                                                        else 0) +\n                                                                                        ((if b = d ∧ d = b then -32\n                                                                                          else 0) +\n                                                                                          ((if\n                                                                                                b = e ∧\n                                                                                                  b = d ∧\n                                                                                                    d = b ∧ e = b then\n                                                                                              32\n                                                                                            else 0) +\n                                                                                            ((if\n                                                                                                  b = e ∧\n                                                                                                    b = d ∧\n                                                                                                      d = b ∧ e = b then\n                                                                                                32\n                                                                                              else 0) +\n                                                                                              ((if\n                                                                                                    (b = d ∧ b = e) ∧\n                                                                                                      (d = b ∧ d = e) ∧\n                                                                                                        e = b ∧\n                                                                                                          e = d then\n                                                                                                  64\n                                                                                                else 0) +\n                                                                                                ((if b = d ∧ d = b then\n                                                                                                    -32\n                                                                                                  else 0) +\n                                                                                                  ((if\n                                                                                                        b = e ∧\n                                                                                                          e = b then\n                                                                                                      -32\n                                                                                                    else 0) +\n                                                                                                    ((if\n                                                                                                          b = e ∧\n                                                                                                            e = b then\n                                                                                                        -32\n                                                                                                      else 0) +\n                                                                                                      ((if\n                                                                                                            b = e ∧\n                                                                                                              e = b then\n                                                                                                          -32\n                                                                                                        else 0) +\n                                                                                                        ⋯))))))))))))))))))))))))))))))))))))))))))))))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase pos\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : a = b\nhac : ¬b = c\nhad : a = d\n⊢ (if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -192 else 0) +\n      ((if b = d ∧ c = e ∧ d = b ∧ e = c then -64 else 0) +\n        ((if b = d ∧ d = b then 64 else 0) +\n          ((if b = e ∧ c = d ∧ d = c ∧ e = b then -64 else 0) +\n            ((if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then -64 else 0) +\n              ((if c = d ∧ d = c then 32 else 0) +\n                ((if b = e ∧ e = b then 64 else 0) +\n                  ((if c = e ∧ e = c then 32 else 0) +\n                    ((if d = e ∧ e = d then 32 else 0) +\n                      (-32 +\n                        ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then 64 else 0) +\n                          ((if b = d ∧ b = e ∧ d = b ∧ e = b then 32 else 0) +\n                            ((if b = d ∧ c = e ∧ d = b ∧ e = c then 32 else 0) +\n                              ((if b = d ∧ d = b then -32 else 0) +\n                                ((if b = e ∧ b = d ∧ d = b ∧ e = b then 32 else 0) +\n                                  ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then 64 else 0) +\n                                    ((if b = d ∧ c = e ∧ d = b ∧ e = c then 32 else 0) +\n                                      ((if b = d ∧ d = b then -32 else 0) +\n                                        ((if b = e ∧ c = d ∧ d = c ∧ e = b then 32 else 0) +\n                                          ((if b = e ∧ c = d ∧ d = c ∧ e = b then 32 else 0) +\n                                            ((if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then 64 else 0) +\n                                              ((if c = d ∧ d = c then -32 else 0) +\n                                                ((if b = e ∧ e = b then -32 else 0) +\n                                                  ((if b = e ∧ e = b then -32 else 0) +\n                                                    ((if c = e ∧ e = c then -32 else 0) +\n                                                      ((if d = e ∧ e = d then -32 else 0) +\n                                                        32))))))))))))))))))))))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase neg\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : a = b\nhac : ¬b = c\nhad : ¬a = d\n⊢ (if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -192 else 0) +\n      ((if b = d ∧ c = e ∧ d = b ∧ e = c then -64 else 0) +\n        ((if b = d ∧ d = b then 64 else 0) +\n          ((if b = e ∧ c = d ∧ d = c ∧ e = b then -64 else 0) +\n            ((if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then -64 else 0) +\n              ((if c = d ∧ d = c then 32 else 0) +\n                ((if b = e ∧ e = b then 64 else 0) +\n                  ((if c = e ∧ e = c then 32 else 0) +\n                    ((if d = e ∧ e = d then 32 else 0) +\n                      (-32 +\n                        ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then 64 else 0) +\n                          ((if b = d ∧ b = e ∧ d = b ∧ e = b then 32 else 0) +\n                            ((if b = d ∧ c = e ∧ d = b ∧ e = c then 32 else 0) +\n                              ((if b = d ∧ d = b then -32 else 0) +\n                                ((if b = e ∧ b = d ∧ d = b ∧ e = b then 32 else 0) +\n                                  ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then 64 else 0) +\n                                    ((if b = d ∧ c = e ∧ d = b ∧ e = c then 32 else 0) +\n                                      ((if b = d ∧ d = b then -32 else 0) +\n                                        ((if b = e ∧ c = d ∧ d = c ∧ e = b then 32 else 0) +\n                                          ((if b = e ∧ c = d ∧ d = c ∧ e = b then 32 else 0) +\n                                            ((if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then 64 else 0) +\n                                              ((if c = d ∧ d = c then -32 else 0) +\n                                                ((if b = e ∧ e = b then -32 else 0) +\n                                                  ((if b = e ∧ e = b then -32 else 0) +\n                                                    ((if c = e ∧ e = c then -32 else 0) +\n                                                      ((if d = e ∧ e = d then -32 else 0) +\n                                                        32))))))))))))))))))))))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase pos\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : ¬c = b\nhac : a = c\nhad : a = d\n⊢ (if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then -192 else 0) +\n      ((if c = d ∧ b = e ∧ c = d ∧ d = c ∧ e = b then -64 else 0) +\n        ((if c = d ∧ d = c then 64 else 0) +\n          ((if c = e ∧ b = d ∧ c = e ∧ d = b ∧ e = c then -64 else 0) +\n            ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -64 else 0) +\n              ((if b = d ∧ d = b then 32 else 0) +\n                ((if c = e ∧ e = c then 64 else 0) +\n                  ((if b = e ∧ e = b then 32 else 0) +\n                    ((if d = e ∧ e = d then 32 else 0) +\n                      (-32 +\n                        ((if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then 64 else 0) +\n                          ((if c = d ∧ b = e ∧ d = c ∧ e = b then 32 else 0) +\n                            ((if c = d ∧ c = e ∧ d = c ∧ e = c then 32 else 0) +\n                              ((if c = d ∧ d = c then -32 else 0) +\n                                ((if c = e ∧ b = d ∧ d = b ∧ e = c then 32 else 0) +\n                                  ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then 64 else 0) +\n                                    ((if b = d ∧ c = e ∧ d = b ∧ e = c then 32 else 0) +\n                                      ((if b = d ∧ d = b then -32 else 0) +\n                                        ((if c = e ∧ c = d ∧ d = c ∧ e = c then 32 else 0) +\n                                          ((if b = e ∧ c = d ∧ d = c ∧ e = b then 32 else 0) +\n                                            ((if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then 64 else 0) +\n                                              ((if c = d ∧ d = c then -32 else 0) +\n                                                ((if c = e ∧ e = c then -32 else 0) +\n                                                  ((if b = e ∧ e = b then -32 else 0) +\n                                                    ((if c = e ∧ e = c then -32 else 0) +\n                                                      ((if d = e ∧ e = d then -32 else 0) +\n                                                        32))))))))))))))))))))))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase neg\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : ¬c = b\nhac : a = c\nhad : ¬a = d\n⊢ (if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then -192 else 0) +\n      ((if c = d ∧ b = e ∧ c = d ∧ d = c ∧ e = b then -64 else 0) +\n        ((if c = d ∧ d = c then 64 else 0) +\n          ((if c = e ∧ b = d ∧ c = e ∧ d = b ∧ e = c then -64 else 0) +\n            ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then -64 else 0) +\n              ((if b = d ∧ d = b then 32 else 0) +\n                ((if c = e ∧ e = c then 64 else 0) +\n                  ((if b = e ∧ e = b then 32 else 0) +\n                    ((if d = e ∧ e = d then 32 else 0) +\n                      (-32 +\n                        ((if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then 64 else 0) +\n                          ((if c = d ∧ b = e ∧ d = c ∧ e = b then 32 else 0) +\n                            ((if c = d ∧ c = e ∧ d = c ∧ e = c then 32 else 0) +\n                              ((if c = d ∧ d = c then -32 else 0) +\n                                ((if c = e ∧ b = d ∧ d = b ∧ e = c then 32 else 0) +\n                                  ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then 64 else 0) +\n                                    ((if b = d ∧ c = e ∧ d = b ∧ e = c then 32 else 0) +\n                                      ((if b = d ∧ d = b then -32 else 0) +\n                                        ((if c = e ∧ c = d ∧ d = c ∧ e = c then 32 else 0) +\n                                          ((if b = e ∧ c = d ∧ d = c ∧ e = b then 32 else 0) +\n                                            ((if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then 64 else 0) +\n                                              ((if c = d ∧ d = c then -32 else 0) +\n                                                ((if c = e ∧ e = c then -32 else 0) +\n                                                  ((if b = e ∧ e = b then -32 else 0) +\n                                                    ((if c = e ∧ e = c then -32 else 0) +\n                                                      ((if d = e ∧ e = d then -32 else 0) +\n                                                        32))))))))))))))))))))))))) =\n    0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase pos\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : ¬a = b\nhac : ¬a = c\nhad : a = d\n⊢ (if (a = d ∧ a = e) ∧ b = c ∧ c = b ∧ (d = a ∧ d = e) ∧ e = a ∧ e = d then -64 else 0) +\n      ((if a = d ∧ (b = c ∧ b = e) ∧ (c = b ∧ c = e) ∧ d = a ∧ e = b ∧ e = c then -64 else 0) +\n        ((if a = d ∧ b = c ∧ c = b ∧ d = a then 32 else 0) +\n          ((if a = e ∧ (b = c ∧ b = d) ∧ (c = b ∧ c = d) ∧ (d = b ∧ d = c) ∧ e = a then -64 else 0) +\n            ((if\n                  (b = c ∧ b = d ∧ b = e) ∧\n                    (c = b ∧ c = d ∧ c = e) ∧ (d = b ∧ d = c ∧ d = e) ∧ e = b ∧ e = c ∧ e = d then\n                -192\n              else 0) +\n              ((if (b = c ∧ b = d) ∧ (c = b ∧ c = d) ∧ d = b ∧ d = c then 64 else 0) +\n                ((if a = e ∧ b = c ∧ c = b ∧ e = a then 32 else 0) +\n                  ((if (b = c ∧ b = e) ∧ (c = b ∧ c = e) ∧ e = b ∧ e = c then 64 else 0) +\n                    ((if b = c ∧ c = b ∧ d = e ∧ e = d then 32 else 0) +\n                      ((if b = c ∧ c = b then -32 else 0) +\n                        ((if (a = d ∧ a = e) ∧ (d = a ∧ d = e) ∧ e = a ∧ e = d then 64 else 0) +\n                          ((if a = d ∧ b = e ∧ d = a ∧ e = b then 32 else 0) +\n                            ((if a = d ∧ c = e ∧ d = a ∧ e = c then 32 else 0) +\n                              ((if a = d ∧ d = a then -32 else 0) +\n                                ((if a = e ∧ b = d ∧ d = b ∧ e = a then 32 else 0) +\n                                  ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then 64 else 0) +\n                                    ((if b = d ∧ c = e ∧ d = b ∧ e = c then 32 else 0) +\n                                      ((if b = d ∧ d = b then -32 else 0) +\n                                        ((if a = e ∧ c = d ∧ d = c ∧ e = a then 32 else 0) +\n                                          ((if b = e ∧ c = d ∧ d = c ∧ e = b then 32 else 0) +\n                                            ((if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then 64 else 0) +\n                                              ((if c = d ∧ d = c then -32 else 0) +\n                                                ((if a = e ∧ e = a then -32 else 0) +\n                                                  ((if b = e ∧ e = b then -32 else 0) +\n                                                    ((if c = e ∧ e = c then -32 else 0) +\n                                                      ((if d = e ∧ e = d then -32 else 0) +\n                                                        32))))))))))))))))))))))))) =\n    if ¬a = d ∧ ¬a = e ∧ ¬b = c ∧ ¬b = d ∧ ¬b = e ∧ ¬c = d ∧ ¬c = e ∧ ¬d = e then 32 else 0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase neg\nα : Type u\ninst✝ : DecidableEq α\na b c d e : α\nhab : ¬a = b\nhac : ¬a = c\nhad : ¬a = d\n⊢ (if (a = d ∧ a = e) ∧ b = c ∧ c = b ∧ (d = a ∧ d = e) ∧ e = a ∧ e = d then -64 else 0) +\n      ((if a = d ∧ (b = c ∧ b = e) ∧ (c = b ∧ c = e) ∧ d = a ∧ e = b ∧ e = c then -64 else 0) +\n        ((if a = d ∧ b = c ∧ c = b ∧ d = a then 32 else 0) +\n          ((if a = e ∧ (b = c ∧ b = d) ∧ (c = b ∧ c = d) ∧ (d = b ∧ d = c) ∧ e = a then -64 else 0) +\n            ((if\n                  (b = c ∧ b = d ∧ b = e) ∧\n                    (c = b ∧ c = d ∧ c = e) ∧ (d = b ∧ d = c ∧ d = e) ∧ e = b ∧ e = c ∧ e = d then\n                -192\n              else 0) +\n              ((if (b = c ∧ b = d) ∧ (c = b ∧ c = d) ∧ d = b ∧ d = c then 64 else 0) +\n                ((if a = e ∧ b = c ∧ c = b ∧ e = a then 32 else 0) +\n                  ((if (b = c ∧ b = e) ∧ (c = b ∧ c = e) ∧ e = b ∧ e = c then 64 else 0) +\n                    ((if b = c ∧ c = b ∧ d = e ∧ e = d then 32 else 0) +\n                      ((if b = c ∧ c = b then -32 else 0) +\n                        ((if (a = d ∧ a = e) ∧ (d = a ∧ d = e) ∧ e = a ∧ e = d then 64 else 0) +\n                          ((if a = d ∧ b = e ∧ d = a ∧ e = b then 32 else 0) +\n                            ((if a = d ∧ c = e ∧ d = a ∧ e = c then 32 else 0) +\n                              ((if a = d ∧ d = a then -32 else 0) +\n                                ((if a = e ∧ b = d ∧ d = b ∧ e = a then 32 else 0) +\n                                  ((if (b = d ∧ b = e) ∧ (d = b ∧ d = e) ∧ e = b ∧ e = d then 64 else 0) +\n                                    ((if b = d ∧ c = e ∧ d = b ∧ e = c then 32 else 0) +\n                                      ((if b = d ∧ d = b then -32 else 0) +\n                                        ((if a = e ∧ c = d ∧ d = c ∧ e = a then 32 else 0) +\n                                          ((if b = e ∧ c = d ∧ d = c ∧ e = b then 32 else 0) +\n                                            ((if (c = d ∧ c = e) ∧ (d = c ∧ d = e) ∧ e = c ∧ e = d then 64 else 0) +\n                                              ((if c = d ∧ d = c then -32 else 0) +\n                                                ((if a = e ∧ e = a then -32 else 0) +\n                                                  ((if b = e ∧ e = b then -32 else 0) +\n                                                    ((if c = e ∧ e = c then -32 else 0) +\n                                                      ((if d = e ∧ e = d then -32 else 0) +\n                                                        32))))))))))))))))))))))))) =\n    if ¬a = d ∧ ¬a = e ∧ ¬b = c ∧ ¬b = d ∧ ¬b = e ∧ ¬c = d ∧ ¬c = e ∧ ¬d = e then 32 else 0",
+      "range": {
+        "end": {
+          "character": 16,
+          "line": 84
+        },
+        "start": {
+          "character": 12,
+          "line": 84
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    }
+  ]
+}

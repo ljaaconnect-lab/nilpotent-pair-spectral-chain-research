@@ -1,0 +1,28 @@
+{
+  "parent": "n61",
+  "base_ref": "2a3a6830f57eb8df200f920ec5058214bec5c32e",
+  "hypothesis": "Uniform Mobius correction coefficient and integer literal bound",
+  "dev_boundary": "Generic Lean theorems with all finite-set binders preserved; compiler and axiom audit",
+  "test_boundary": "Coordinator fresh checkout replay of exact committed source and printed axioms",
+  "metric": "fraction of four fixed helper obligations verified; root conjecture score is independent and remains zero",
+  "obligations": [
+    "Explicit Mobius coefficient definition over S.powerset",
+    "Zeta reconstruction equals original function, without assuming reconstruction",
+    "abs coefficient <= 2^S.card when every function value has abs <= 1",
+    "natAbs coefficient < 2^(n+1) if S.card <= n"
+  ],
+  "candidate_limit": 12,
+  "forbidden": [
+    "sorryAx",
+    "new axioms",
+    "native_decide",
+    "assuming a polynomial representation"
+  ],
+  "root_conjecture_verified": false,
+  "clarification_before_compilation": {
+    "obligations_3_and_4_share_h_f": "forall T:Finset alpha, T subset S -> abs(f T)<=1",
+    "obligation_4_also_requires": "S.card <= n",
+    "authorized_by": "Root direct clarification: obligation4 conserve exactement la borne h_f de obligation3",
+    "original_protocol_sha256": "1529a7130cb6613c2c58dd6c7c2718c43c066c6065105e16137f60ed65b0d4ce"
+  }
+}

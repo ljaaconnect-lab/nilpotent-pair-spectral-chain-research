@@ -1,0 +1,262 @@
+{
+  "date": "2026-11-01",
+  "status": "quintic_operator_verified",
+  "general_polynomial_solution": false,
+  "exact_through_order": 5,
+  "free_word_coefficients_checked": 15035,
+  "numeric_spectral_tables_correct": 60,
+  "formal_z_spectral_tables_correct": 10,
+  "scalar_costs": [
+    {
+      "n": 1,
+      "N": 2,
+      "gates": 17,
+      "matrix_dimension": 2,
+      "quintic_repair": true,
+      "integer_recurrence": true,
+      "exact_through_degree": 5,
+      "general_validity": false,
+      "Q": 998244353,
+      "labels": [
+        5
+      ]
+    },
+    {
+      "n": 1,
+      "N": 2,
+      "gates": 16,
+      "matrix_dimension": 2,
+      "quintic_repair": true,
+      "integer_recurrence": true,
+      "exact_through_degree": 5,
+      "general_validity": false,
+      "Q": 17,
+      "labels": [
+        6
+      ]
+    },
+    {
+      "n": 2,
+      "N": 4,
+      "gates": 156,
+      "matrix_dimension": 3,
+      "quintic_repair": true,
+      "integer_recurrence": true,
+      "exact_through_degree": 5,
+      "general_validity": false,
+      "Q": 998244353,
+      "labels": [
+        3,
+        1
+      ]
+    },
+    {
+      "n": 2,
+      "N": 4,
+      "gates": 154,
+      "matrix_dimension": 3,
+      "quintic_repair": true,
+      "integer_recurrence": true,
+      "exact_through_degree": 5,
+      "general_validity": false,
+      "Q": 17,
+      "labels": [
+        7,
+        6
+      ]
+    },
+    {
+      "n": 3,
+      "N": 4,
+      "gates": 443,
+      "matrix_dimension": 4,
+      "quintic_repair": true,
+      "integer_recurrence": true,
+      "exact_through_degree": 5,
+      "general_validity": false,
+      "Q": 998244353,
+      "labels": [
+        6,
+        3,
+        4
+      ]
+    },
+    {
+      "n": 3,
+      "N": 4,
+      "gates": 452,
+      "matrix_dimension": 4,
+      "quintic_repair": true,
+      "integer_recurrence": true,
+      "exact_through_degree": 5,
+      "general_validity": false,
+      "Q": 17,
+      "labels": [
+        3,
+        6,
+        5
+      ]
+    },
+    {
+      "n": 4,
+      "N": 8,
+      "gates": 7892,
+      "matrix_dimension": 5,
+      "quintic_repair": true,
+      "integer_recurrence": true,
+      "exact_through_degree": 5,
+      "general_validity": false,
+      "Q": 998244353,
+      "labels": [
+        4,
+        7,
+        0,
+        4
+      ]
+    },
+    {
+      "n": 4,
+      "N": 8,
+      "gates": 7908,
+      "matrix_dimension": 5,
+      "quintic_repair": true,
+      "integer_recurrence": true,
+      "exact_through_degree": 5,
+      "general_validity": false,
+      "Q": 17,
+      "labels": [
+        0,
+        1,
+        2,
+        6
+      ]
+    },
+    {
+      "n": 5,
+      "N": 8,
+      "gates": 83672,
+      "matrix_dimension": 6,
+      "quintic_repair": true,
+      "integer_recurrence": true,
+      "exact_through_degree": 5,
+      "general_validity": false,
+      "Q": 998244353,
+      "labels": [
+        5,
+        3,
+        4,
+        6,
+        4
+      ]
+    },
+    {
+      "n": 5,
+      "N": 8,
+      "gates": 83672,
+      "matrix_dimension": 6,
+      "quintic_repair": true,
+      "integer_recurrence": true,
+      "exact_through_degree": 5,
+      "general_validity": false,
+      "Q": 17,
+      "labels": [
+        4,
+        1,
+        2,
+        4,
+        1
+      ]
+    }
+  ],
+  "previous_legal_counterexample_repaired": {
+    "Q": 998244353,
+    "z": 2,
+    "p": [
+      [
+        17,
+        2,
+        10,
+        10,
+        10
+      ],
+      [
+        2,
+        17,
+        2,
+        17,
+        2
+      ],
+      [
+        10,
+        10,
+        5,
+        2,
+        2
+      ],
+      [
+        5,
+        10,
+        2,
+        5,
+        2
+      ],
+      [
+        17,
+        10,
+        17,
+        10,
+        5
+      ]
+    ],
+    "got": [
+      0,
+      0,
+      131890214,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      131890214,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "remaining_order6_witness": {
+    "word": [
+      0,
+      0,
+      0,
+      0,
+      2,
+      5
+    ],
+    "integer_coefficient_H6": "-240",
+    "required_coefficient": 0,
+    "spectral_slot": 7
+  },
+  "formal_tower_nonzero_patterns": {
+    "4": 12,
+    "5": 44,
+    "6": 200,
+    "7": 869,
+    "8": 4138
+  },
+  "lean_scope": "See lean-validation.json; matrix compiler tests are separate from Lean proofs.",
+  "code_sha256": {
+    "etudes/2026-11-01/lean-operateurs/circuit.py": "6fba60787d047e2f3583bc0e0121ebab2e3bc5c6d35d11e3ee98e0ec0f287801",
+    "etudes/2026-11-01/lean-operateurs/derive_quintic.py": "1689e18c453377f2aa7fbbaac58d7c89df2139add95f987e11199e13a6e6c80c",
+    "etudes/2026-11-01/lean-operateurs/verifier.py": "55b6b8950f696bb71680377f88fa7aaf88ed03e49484b9e9df87e4b84af9fcde",
+    "etudes/2026-11-01/lean-operateurs/correcteurs.json": "beaef3a4c69a204bfd09e47b38056aadfb2802f9b55260f3e9935a0c33835e64",
+    "etudes/2026-11-01/operateurs-horloge/circuit.py": "4960f0f6dc50f73f85c444f6028a7061129eda6ca326974b5bf167ab9870bb31",
+    "etudes/2026-11-01/operateurs-horloge/sonder_jordan.py": "6bd91bb6811d3ee13e62072e1c0395bf69670916b211533cb76f47b6ff962570",
+    "etudes/2026-10-24/chaine-complete/reference/dag.py": "73959d4040fa2cdf642c653bbedd68e3be60fb5853c9ce081202f5620c50a08d"
+  }
+}

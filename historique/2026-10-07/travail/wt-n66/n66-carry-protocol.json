@@ -1,0 +1,18 @@
+{
+  "node": "n66",
+  "artifact_version": "carry-supplement-v1",
+  "parent_artifact_commit": "5aa4033e3b0e0093a473d4f229e9ed02ca8a2f0a",
+  "fixed_hypothesis": "Positive parity-carry Gaussian family with explicit graded routing toward synchronized paired-port contraction",
+  "kernel_sizes": [0, 1, 2, 3, 4, 5],
+  "pair_sizes": [0, 1, 2, 3, 4],
+  "support_denominator": 40,
+  "support_metric": "Exact finite local identity pass fraction, not proof confidence or root extraction correctness",
+  "root_obligation_denominator": 3,
+  "root_metric": "Original n66 score: correct explicit root scalar construction, polynomial gate/literal/initialization certificate, exact root identity",
+  "lean_compile_budget": 20,
+  "lean_compiles_planned": 0,
+  "positive_only": true,
+  "heldout_access": false,
+  "forbidden": ["modify frozen n66 source", "claim ordinary Hadamard equals a port-permuted Gaussian tensor", "free tensor coefficient or contraction", "counterexample campaign", "lower-bound campaign"],
+  "support_checks": ["local Gaussian T and actual scalar DAG", "native coherent Gaussian and actual scalar DAG for six N", "graded port permutation for six N", "grouped coherent Gaussian for six N", "abstract Walsh orthogonality for six N", "abstract paired-copy transform for five m", "cap port permutation for five m", "four-factor parity-cap identity for five m"]
+}

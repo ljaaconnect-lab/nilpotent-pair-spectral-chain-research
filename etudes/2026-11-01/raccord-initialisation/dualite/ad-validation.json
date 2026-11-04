@@ -1,0 +1,319 @@
+{
+  "status": "passed",
+  "general_polynomial_closure": false,
+  "scope": "direct AD compilation of the existing projector on a shared scalar DAG; measured candidate only",
+  "count_includes": "kernel counts include a,z preparation and symbolic s; full_table_cost additionally specializes and shares all frequencies and emits the INTT from a,z only",
+  "sharing": "hash-consed binary commutative gates; constant folding; eliminate zero and one; add(x,x)=2*x",
+  "cases": [
+    {
+      "n": 1,
+      "q": 97,
+      "complete": true,
+      "steps": [
+        {
+          "step": 0,
+          "allocated_gates": 4,
+          "live_gates": 4
+        }
+      ],
+      "generic_evaluation_checks": 3,
+      "spectral_frequencies": 2,
+      "terminal_live_scalar_gates": 4,
+      "table": [
+        83,
+        0
+      ],
+      "all_one_point_live_gates": 3,
+      "full_table_cost": {
+        "spectrum_allocated_gates": 3,
+        "complete_table_allocated_gates": 8,
+        "complete_table_live_gates": 8
+      }
+    },
+    {
+      "n": 2,
+      "q": 97,
+      "complete": true,
+      "steps": [
+        {
+          "step": 0,
+          "allocated_gates": 22,
+          "live_gates": 22
+        },
+        {
+          "step": 1,
+          "reverse_first_gates_added": 6,
+          "reverse_second_gates_added": [
+            2,
+            2
+          ],
+          "allocated_gates": 39,
+          "live_gates": 33
+        }
+      ],
+      "generic_evaluation_checks": 3,
+      "spectral_frequencies": 4,
+      "terminal_live_scalar_gates": 33,
+      "table": [
+        0,
+        0,
+        0,
+        47
+      ],
+      "all_one_point_live_gates": 25,
+      "full_table_cost": {
+        "spectrum_allocated_gates": 48,
+        "complete_table_allocated_gates": 65,
+        "complete_table_live_gates": 65
+      }
+    },
+    {
+      "n": 3,
+      "q": 97,
+      "complete": true,
+      "steps": [
+        {
+          "step": 0,
+          "allocated_gates": 52,
+          "live_gates": 52
+        },
+        {
+          "step": 1,
+          "reverse_first_gates_added": 17,
+          "reverse_second_gates_added": [
+            14,
+            14,
+            14
+          ],
+          "allocated_gates": 121,
+          "live_gates": 104
+        },
+        {
+          "step": 2,
+          "reverse_first_gates_added": 75,
+          "reverse_second_gates_added": [
+            42,
+            42,
+            42
+          ],
+          "allocated_gates": 329,
+          "live_gates": 240
+        },
+        {
+          "step": 3,
+          "reverse_first_gates_added": 162,
+          "reverse_second_gates_added": [
+            82,
+            82,
+            82
+          ],
+          "allocated_gates": 744,
+          "live_gates": 499
+        }
+      ],
+      "generic_evaluation_checks": 3,
+      "spectral_frequencies": 4,
+      "terminal_live_scalar_gates": 499,
+      "table": [
+        0,
+        0,
+        0,
+        80
+      ],
+      "all_one_point_live_gates": 418,
+      "full_table_cost": {
+        "spectrum_allocated_gates": 1303,
+        "complete_table_allocated_gates": 1320,
+        "complete_table_live_gates": 1320
+      }
+    },
+    {
+      "n": 4,
+      "q": 97,
+      "complete": true,
+      "steps": [
+        {
+          "step": 0,
+          "allocated_gates": 94,
+          "live_gates": 94
+        },
+        {
+          "step": 1,
+          "reverse_first_gates_added": 32,
+          "reverse_second_gates_added": [
+            25,
+            25,
+            25,
+            25
+          ],
+          "allocated_gates": 239,
+          "live_gates": 208
+        },
+        {
+          "step": 2,
+          "reverse_first_gates_added": 189,
+          "reverse_second_gates_added": [
+            187,
+            181,
+            175,
+            167
+          ],
+          "allocated_gates": 1147,
+          "live_gates": 982
+        },
+        {
+          "step": 3,
+          "reverse_first_gates_added": 982,
+          "reverse_second_gates_added": [
+            434,
+            434,
+            434,
+            434
+          ],
+          "allocated_gates": 3874,
+          "live_gates": 3215
+        },
+        {
+          "step": 4,
+          "reverse_first_gates_added": 3222,
+          "reverse_second_gates_added": [
+            1253,
+            1253,
+            1253,
+            1251
+          ],
+          "allocated_gates": 12115,
+          "live_gates": 9870
+        },
+        {
+          "step": 5,
+          "reverse_first_gates_added": 9858,
+          "reverse_second_gates_added": [
+            3752,
+            3752,
+            3752,
+            3760
+          ],
+          "allocated_gates": 36998,
+          "live_gates": 29571
+        },
+        {
+          "step": 6,
+          "reverse_first_gates_added": 29058,
+          "reverse_second_gates_added": [
+            11172,
+            11172,
+            11172,
+            11196
+          ],
+          "allocated_gates": 110777,
+          "live_gates": 87362
+        }
+      ],
+      "generic_evaluation_checks": 3,
+      "spectral_frequencies": 8,
+      "terminal_live_scalar_gates": 87362,
+      "table": [
+        76,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_one_point_live_gates": 61898,
+      "full_table_cost": {
+        "spectrum_allocated_gates": 294379,
+        "complete_table_allocated_gates": 294428,
+        "complete_table_live_gates": 294428
+      }
+    },
+    {
+      "n": 5,
+      "q": 97,
+      "complete": false,
+      "steps": [
+        {
+          "step": 0,
+          "allocated_gates": 148,
+          "live_gates": 148
+        },
+        {
+          "step": 1,
+          "reverse_first_gates_added": 51,
+          "reverse_second_gates_added": [
+            36,
+            36,
+            36,
+            36,
+            36
+          ],
+          "allocated_gates": 395,
+          "live_gates": 346
+        },
+        {
+          "step": 2,
+          "reverse_first_gates_added": 345,
+          "reverse_second_gates_added": [
+            421,
+            409,
+            397,
+            385,
+            369
+          ],
+          "allocated_gates": 2732,
+          "live_gates": 2484
+        },
+        {
+          "step": 3,
+          "reverse_first_gates_added": 3118,
+          "reverse_second_gates_added": [
+            2005,
+            1977,
+            1949,
+            1921,
+            1890
+          ],
+          "allocated_gates": 15603,
+          "live_gates": 13992
+        },
+        {
+          "step": 4,
+          "reverse_first_gates_added": 17633,
+          "reverse_second_gates_added": [
+            7273,
+            7265,
+            7233,
+            7201,
+            7210
+          ],
+          "allocated_gates": 69429,
+          "live_gates": 60450
+        },
+        {
+          "step": 5,
+          "reverse_first_gates_added": 75559,
+          "reverse_second_gates_added": [
+            25187,
+            25162,
+            25125,
+            25088,
+            25162
+          ],
+          "allocated_gates": 270723,
+          "live_gates": 230544
+        },
+        {
+          "stopped_during_step": 6,
+          "allocated_gates": 599944,
+          "node_limit": 600000
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "ad_compilation.py": "bbbba423f6ce50a23f146a44d6cf61cdc5a2d14361068be0f1d74544dc9f99ba"
+  }
+}

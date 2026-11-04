@@ -1,0 +1,15 @@
+{
+  "objective": "Construct the complete oriented spectral chain by uniform polynomial scalar gates from original inputs, allowing joint fusion and terminal reading without a corrected-amplitude input",
+  "metric_direction": "min",
+  "dev_eval": "python evaluate_dev.py",
+  "test_eval": "Coordinator-only separate full-table protocol with independent seed and field",
+  "material": ".",
+  "branching": 3,
+  "max_depth": 3,
+  "budget_cycles": 12,
+  "cycles_used": 2,
+  "best_node": "n3",
+  "best_test_score": 1912.0,
+  "best_branch_ref": "b51d545902ef7159c104c98f8abfae4714bc4d5c",
+  "created_at": 1792818009
+}

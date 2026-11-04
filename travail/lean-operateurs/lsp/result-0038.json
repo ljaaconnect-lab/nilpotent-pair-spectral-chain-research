@@ -1,0 +1,108 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\WordFilter.lean",
+  "version": 10,
+  "completed": true,
+  "seconds": 2.313,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 100
+        },
+        "start": {
+          "character": 0,
+          "line": 100
+        }
+      },
+      "message": "'OrientedOperators.PartitionCertificate.literal5_identity' does not depend on any axioms",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 100
+        },
+        "start": {
+          "character": 0,
+          "line": 100
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 101
+        },
+        "start": {
+          "character": 0,
+          "line": 101
+        }
+      },
+      "message": "'OrientedOperators.PartitionCertificate.fifth_filter_on_arbitrary_columns' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 101
+        },
+        "start": {
+          "character": 0,
+          "line": 101
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 102
+        },
+        "start": {
+          "character": 0,
+          "line": 102
+        }
+      },
+      "message": "'OrientedOperators.PartitionCertificate.normalForm_exact5' does not depend on any axioms",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 102
+        },
+        "start": {
+          "character": 0,
+          "line": 102
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 103
+        },
+        "start": {
+          "character": 0,
+          "line": 103
+        }
+      },
+      "message": "'OrientedOperators.PartitionCertificate.quintic_word_certificate' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 103
+        },
+        "start": {
+          "character": 0,
+          "line": 103
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    }
+  ]
+}

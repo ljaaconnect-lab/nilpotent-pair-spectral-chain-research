@@ -1,0 +1,56 @@
+{
+  "independent_term_weight_classes": {
+    "1": [
+      {
+        "absolute_weights": [
+          "1"
+        ],
+        "normalized_matrices": 1
+      }
+    ],
+    "2": [],
+    "3": [
+      {
+        "absolute_weights": [
+          "1",
+          "1",
+          "1"
+        ],
+        "normalized_matrices": 6
+      }
+    ],
+    "4": [
+      {
+        "absolute_weights": [
+          "1/2",
+          "1/2",
+          "1/2",
+          "1/2"
+        ],
+        "normalized_matrices": 24
+      },
+      {
+        "absolute_weights": [
+          "1",
+          "1",
+          "1",
+          "2"
+        ],
+        "normalized_matrices": 96
+      }
+    ]
+  },
+  "probe": {
+    "n": 5,
+    "weights": [
+      1,
+      1,
+      1,
+      2
+    ],
+    "status": "INFEASIBLE",
+    "time_seconds": 0.6380532,
+    "branches": 24640,
+    "conflicts": 5389
+  }
+}

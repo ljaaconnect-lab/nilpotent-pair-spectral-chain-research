@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "source": "NativeChainInduction.lean",
+  "source_sha256": "e7f0deb849367479632d7723ae8e1597f381df2edb57cca6aefc60071c8cbb46",
+  "source_changed_during_check": false,
+  "replay_sha256": "6a3e5ebc4abd810a5f31f9d9a1ce87c1d5429bf8bd56fdd98c5477bbb1d9d906",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "-o",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\induction-native\\build\\NativeChainInduction.olean",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\induction-native-2026-11-03\\NativeChainInduction.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 17.266,
+  "stdout": "'NativeChainInduction.chain_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativeChainInduction.chain_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativeChainInduction.chain_polynomial_gate_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "chain_eval",
+    "chain_gates",
+    "chain_polynomial_gate_bound"
+  ],
+  "all_axioms_printed": true,
+  "no_placeholders_or_added_axioms": true,
+  "dependency_sha256": {
+    "documents/induction-native-2026-11-03/NativePrefixInduction.lean": "848ce82f955d76835748c3d86cd5324b4e0c3502ae53896fd5c0ada5db5214ed",
+    "travail/induction-native/build/NativePrefixInduction.olean": "7aa53890e6e26d4a0b7c1bd502a7f946ebf65e449c792b29f836c35ae2da004e"
+  },
+  "dependencies_unchanged": true,
+  "scope": "Shared native prefix and suffix circuit semantics and gate bounds; preparation and suffix bounds are explicit hypotheses.",
+  "python_compiler_formalized": false,
+  "auxiliary_variables_eliminated": false,
+  "complete_scalar_a_z_only_chain_proved": false
+}

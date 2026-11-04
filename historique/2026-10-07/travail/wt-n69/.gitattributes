@@ -1,0 +1,16 @@
+n69-protocol.json -text
+n69-candidates.json -text
+n69_interfaces.py -text
+compile_n69_references.py -text
+n69-source-freeze.json -text
+n69-construction-costs.json -text
+n69-dev-report.json -text
+n69-joint_phase-n*.json -text
+n69-fixed_H_pf-n*.json -text
+n69-rowjet_generic_reference-n*.json -text
+n69-rowjet_marked_reference-n*.json -text
+N69_BLUEPRINT.md text eol=lf
+N69_INSIGHTS.md text eol=lf
+
+# Publication: retain every archived file byte on all platforms.
+* -text

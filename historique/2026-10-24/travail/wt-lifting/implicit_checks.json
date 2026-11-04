@@ -1,0 +1,323 @@
+{
+  "symbolic_certificates": [
+    {
+      "n": 3,
+      "K_monomials": 1,
+      "K": "b2*b5*b6*b7",
+      "block_identity_exact": true,
+      "adjugate_defect_exact": true,
+      "triple_row_factorial_exact": true
+    },
+    {
+      "n": 4,
+      "K_monomials": 12,
+      "K": "b10**2*b12*b13*b3*b7 + b10*b11*b12*b13*b2*b7 + b10*b11*b12*b13*b3*b6 + b10*b12*b14*b3*b7*b9 + b10*b13*b14*b3*b7*b8 + b11**2*b12*b13*b2*b6 + b11*b12*b15*b2*b6*b9 + b11*b13*b15*b2*b6*b8 + b14**2*b3*b7*b8*b9 + b14*b15*b2*b7*b8*b9 + b14*b15*b3*b6*b8*b9 + b15**2*b2*b6*b8*b9",
+      "block_identity_exact": true,
+      "adjugate_defect_exact": true,
+      "triple_row_factorial_exact": true
+    }
+  ],
+  "numeric_checks": 15,
+  "fixed_minor_jacobian_ranks": [
+    {
+      "n": 3,
+      "rank": 10,
+      "unknowns": 10
+    },
+    {
+      "n": 4,
+      "rank": 17,
+      "unknowns": 17
+    },
+    {
+      "n": 5,
+      "rank": 26,
+      "unknowns": 26
+    },
+    {
+      "n": 6,
+      "rank": 37,
+      "unknowns": 37
+    },
+    {
+      "n": 7,
+      "rank": 50,
+      "unknowns": 50
+    },
+    {
+      "n": 8,
+      "rank": 65,
+      "unknowns": 65
+    }
+  ],
+  "wrong_newton_lifts": [
+    {
+      "B": [
+        [
+          5,
+          2,
+          5
+        ],
+        [
+          5,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          5
+        ]
+      ],
+      "determinant": 9,
+      "permanent": 149,
+      "R0": [
+        [
+          0,
+          64,
+          37
+        ],
+        [
+          85,
+          0,
+          40
+        ],
+        [
+          120,
+          90,
+          0
+        ]
+      ],
+      "S0": 288,
+      "residual_at_true_permanent": -209124,
+      "newton_trace": [
+        {
+          "precision_bits": 1,
+          "root": 1,
+          "permanent_residue": 1
+        },
+        {
+          "precision_bits": 2,
+          "root": 1,
+          "permanent_residue": 1
+        },
+        {
+          "precision_bits": 4,
+          "root": 9,
+          "permanent_residue": 5
+        },
+        {
+          "precision_bits": 8,
+          "root": 153,
+          "permanent_residue": 149
+        },
+        {
+          "precision_bits": 16,
+          "root": 2457,
+          "permanent_residue": 149
+        }
+      ]
+    },
+    {
+      "B": [
+        [
+          5,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          5,
+          2
+        ],
+        [
+          5,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "determinant": 5,
+      "permanent": 403,
+      "R0": [
+        [
+          0,
+          23,
+          -51,
+          -36
+        ],
+        [
+          7,
+          0,
+          27,
+          6
+        ],
+        [
+          -24,
+          39,
+          0,
+          50
+        ],
+        [
+          -57,
+          33,
+          187,
+          0
+        ]
+      ],
+      "S0": -225,
+      "residual_at_true_permanent": 18175332452,
+      "newton_trace": [
+        {
+          "precision_bits": 1,
+          "root": 1,
+          "permanent_residue": 1
+        },
+        {
+          "precision_bits": 2,
+          "root": 3,
+          "permanent_residue": 3
+        },
+        {
+          "precision_bits": 4,
+          "root": 15,
+          "permanent_residue": 3
+        },
+        {
+          "precision_bits": 8,
+          "root": 207,
+          "permanent_residue": 147
+        },
+        {
+          "precision_bits": 16,
+          "root": 463,
+          "permanent_residue": 403
+        }
+      ]
+    }
+  ],
+  "exact_small_newton_systems": [
+    {
+      "n": 3,
+      "B": [
+        [
+          5,
+          2,
+          5
+        ],
+        [
+          5,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          5
+        ]
+      ],
+      "newton_trace": [
+        {
+          "precision_in_t": 2,
+          "P_coefficients": [
+            1,
+            9
+          ]
+        },
+        {
+          "precision_in_t": 4,
+          "P_coefficients": [
+            1,
+            9,
+            41,
+            98
+          ]
+        }
+      ],
+      "exact_P_coefficients": [
+        1,
+        9,
+        41,
+        98
+      ],
+      "at_t_one": 149,
+      "system_coefficients_use_only_size_one_or_two_permanents": true
+    },
+    {
+      "n": 4,
+      "B": [
+        [
+          5,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          5,
+          2
+        ],
+        [
+          5,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "newton_trace": [
+        {
+          "precision_in_t": 2,
+          "P_coefficients": [
+            1,
+            4
+          ]
+        },
+        {
+          "precision_in_t": 4,
+          "P_coefficients": [
+            1,
+            4,
+            30,
+            151
+          ]
+        },
+        {
+          "precision_in_t": 5,
+          "P_coefficients": [
+            1,
+            4,
+            30,
+            151,
+            217
+          ]
+        }
+      ],
+      "exact_P_coefficients": [
+        1,
+        4,
+        30,
+        151,
+        217
+      ],
+      "at_t_one": 403,
+      "system_coefficients_use_only_size_one_or_two_permanents": true
+    }
+  ],
+  "uniform_closed_system_found": false,
+  "candidate_evaluator_run": false
+}

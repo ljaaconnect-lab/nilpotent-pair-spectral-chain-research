@@ -1,0 +1,76 @@
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n57\MatrixScalarCompiler.lean:205:10: error: Type mismatch: After simplification, term
+  matrix_power_correct r M k
+ has type
+  @Eq (Matrix (Fin r) (Fin r) R) (run (matrixMonoid r R) M M (binaryPlan k)) (M ^ k)
+but is expected to have type
+  @Eq (Matrix (Fin r) (Fin r) R) (List.foldl (step (matrixMonoid r R) M) M (binaryPlan k)) (M ^ k)
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n57\MatrixScalarCompiler.lean:251:6: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  (matrixVecCircuit ?r).eval ?inputs ?i
+in the target expression
+  Sum.elim (fun i => inputs (Sum.inr (Sum.inl i))) ((matrixVecCircuit r).eval inputs) (Sum.inl i) *
+      Sum.elim (fun i => inputs (Sum.inr (Sum.inl i))) ((matrixVecCircuit r).eval inputs) (Sum.inr i) =
+    inputs (Sum.inr (Sum.inl i)) * ∑ j, inputs (Sum.inl (i, j)) * inputs (Sum.inr (Sum.inr j))
+
+r : ℕ
+R : Type u
+inst✝ : Semiring R
+inputs : Inputs r → R
+i : Fin r
+a✝ : i ∈ Finset.univ
+⊢ Sum.elim (fun i => inputs (Sum.inr (Sum.inl i))) ((matrixVecCircuit r).eval inputs) (Sum.inl i) *
+      Sum.elim (fun i => inputs (Sum.inr (Sum.inl i))) ((matrixVecCircuit r).eval inputs) (Sum.inr i) =
+    inputs (Sum.inr (Sum.inl i)) * ∑ j, inputs (Sum.inl (i, j)) * inputs (Sum.inr (Sum.inr j))
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n57\MatrixScalarCompiler.lean:272:43: error: unsolved goals
+r : ℕ
+R : Type u
+inst✝ : Semiring R
+M : Matrix (Fin r) (Fin r) R
+u v : Fin r → R
+k : ℕ
+⊢ ∑ i, u i * ∑ j, (matrixPowerCircuit r k).eval (Sum.elim (fun c => M c.1 c.2) (Sum.elim u v) ∘ Sum.inl) (i, j) * v j =
+    ∑ i, u i * ∑ j, (M ^ k) i j * v j
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n57\MatrixScalarCompiler.lean:273:42: warning: This simp argument is unused:
+  Function.comp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [scalarCircuit, Circuit.eval]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n57\MatrixScalarCompiler.lean:275:24: warning: This simp argument is unused:
+  Circuit.eval
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [inputData, Function.comp_apply, Sum.elim_inl, Sum.elim_inr, matrixPowerCircuit_eval]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n57\MatrixScalarCompiler.lean:276:4: warning: This simp argument is unused:
+  matrixPowerCircuit_eval
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [inputData, Circuit.eval, Function.comp_apply, Sum.elim_inl, Sum.elim_inr]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'DenseScalar.matrix_power_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.sumCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.sumCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.dotCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.dotCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.denseProduct_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.denseProduct_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.denseProduct_raw_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.dense_product_gate_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.instructionCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.instructionCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.sequenceCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.sequenceCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.matrixPowerCircuit_eval' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'DenseScalar.matrixPowerCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.matrixVecCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.matrixVecCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.contractionCircuit_eval' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'DenseScalar.contractionCircuit_raw_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.contractionCircuit_gate_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.scalar_compiler_correct' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'DenseScalar.scalarCircuit_raw_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.scalarCircuit_gate_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.conditional_scalar_budget' depends on axioms: [propext, Classical.choice, Quot.sound]

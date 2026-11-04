@@ -1,0 +1,18 @@
+{
+  "scope": "Degree transfer from a supplied polynomial identity and numerical interpolation obstruction only. Invariant existence, semistability, Kempf theory, determinant rank-drop multiplicities, and scalar-circuit bounds are not formalized.",
+  "source": "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\deformations-existence-2026-11-02\\lean\\DegreeBarrier.lean",
+  "source_sha256": "a91ca89e7c36ea1849cba07a65a98ada2ab2ddbfd0303ccc848afe0d7275e9b3",
+  "source_changed_during_check": false,
+  "replay_sha256": "7e1a9564ae0913667ad30c7ec813fcf5c3661b5344ec0e4a9bfa3954594294b9",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "-o",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\deformations-existence-degree-barrier\\DegreeBarrier.olean",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\deformations-existence-2026-11-02\\lean\\DegreeBarrier.lean"
+  ],
+  "exit_code": 0,
+  "seconds": 14.422,
+  "stdout": "'DeformationDegreeBarrier.degree_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DeformationDegreeBarrier.no_degree_below_sample_count' depends on axioms: [propext]\n'DeformationDegreeBarrier.identity_obstructs_short_interpolation' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+  "stderr": ""
+}

@@ -1,0 +1,510 @@
+{
+  "node": "n15",
+  "artifact_version": "n15-gray-half-character-v1",
+  "boundary": "B_dev-n15-positive",
+  "sympy_version": "1.14.0",
+  "hypothesis_sha256": "619965bbc4a4ce3bd3263384c9654d42762454935fb67530922d572b48c06363",
+  "implementation_sha256": "cd6660fb8e5f87e684d0851946892bd79ac380737b9b3f14776ee908be544edc",
+  "evaluator_sha256": "37d0d45693416ab6d317514116e47c5fd8edd4c5355b4b5257cb71be0a292ab2",
+  "passed": 28,
+  "total": 28,
+  "score": 1.0,
+  "cases": [
+    {
+      "n": 2,
+      "checks": {
+        "generic_diagonal_contraction_equals_permutation_oracle": true,
+        "generic_gray_contraction_equals_permutation_oracle": true,
+        "every_gray_row_factor_matches_direct_diagonal_entry": true,
+        "half_character_assignment_selection_identity": true,
+        "original_marked_scalar_dag_equals_independent_oracle": true,
+        "exact_gate_formula_and_component_accounting": true,
+        "cheap_target_independent_scalar_leaf_data": true
+      },
+      "stats": {
+        "n": 2,
+        "dimension": 2,
+        "gates": 18,
+        "formula": "5*n*(n-1)+n*2^n",
+        "marker_and_entry_gates": 7,
+        "signed_update_preparation_gates": 2,
+        "initial_row_sum_gates": 2,
+        "gray_update_gates": 2,
+        "row_product_gates": 2,
+        "bucket_sum_gates": 0,
+        "signed_bucket_combination_and_normalization_gates": 3,
+        "scalar_leaf_data": "z; p_ij=1+a_ij^2; 1,-1,2,-2,2^(1-n)",
+        "path": [
+          {
+            "step": 0,
+            "mask": 0,
+            "signs": [
+              1,
+              1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 1,
+            "mask": 1,
+            "signs": [
+              1,
+              -1
+            ],
+            "parity": -1
+          }
+        ]
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 18,
+        "max_node_terms": 4,
+        "max_live_terms": 10,
+        "nodes": 26
+      },
+      "marked_terms": 2,
+      "diagonal_symbolic_seconds": 0.02900729999964824,
+      "gray_symbolic_seconds": 0.0071637000000919215,
+      "scalar_seconds": 0.0006578000029549003,
+      "total_seconds": 0.16219139999884646
+    },
+    {
+      "n": 3,
+      "checks": {
+        "generic_diagonal_contraction_equals_permutation_oracle": true,
+        "generic_gray_contraction_equals_permutation_oracle": true,
+        "every_gray_row_factor_matches_direct_diagonal_entry": true,
+        "half_character_assignment_selection_identity": true,
+        "original_marked_scalar_dag_equals_independent_oracle": true,
+        "exact_gate_formula_and_component_accounting": true,
+        "cheap_target_independent_scalar_leaf_data": true
+      },
+      "stats": {
+        "n": 3,
+        "dimension": 4,
+        "gates": 54,
+        "formula": "5*n*(n-1)+n*2^n",
+        "marker_and_entry_gates": 17,
+        "signed_update_preparation_gates": 9,
+        "initial_row_sum_gates": 6,
+        "gray_update_gates": 9,
+        "row_product_gates": 8,
+        "bucket_sum_gates": 2,
+        "signed_bucket_combination_and_normalization_gates": 3,
+        "scalar_leaf_data": "z; p_ij=1+a_ij^2; 1,-1,2,-2,2^(1-n)",
+        "path": [
+          {
+            "step": 0,
+            "mask": 0,
+            "signs": [
+              1,
+              1,
+              1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 1,
+            "mask": 1,
+            "signs": [
+              1,
+              -1,
+              1
+            ],
+            "parity": -1
+          },
+          {
+            "step": 2,
+            "mask": 3,
+            "signs": [
+              1,
+              -1,
+              -1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 3,
+            "mask": 2,
+            "signs": [
+              1,
+              1,
+              -1
+            ],
+            "parity": -1
+          }
+        ]
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 54,
+        "max_node_terms": 27,
+        "max_live_terms": 108,
+        "nodes": 67
+      },
+      "marked_terms": 6,
+      "diagonal_symbolic_seconds": 0.06318629999441328,
+      "gray_symbolic_seconds": 0.04063660000247182,
+      "scalar_seconds": 0.0033323000025120564,
+      "total_seconds": 0.11034959999960847
+    },
+    {
+      "n": 4,
+      "checks": {
+        "generic_diagonal_contraction_equals_permutation_oracle": true,
+        "generic_gray_contraction_equals_permutation_oracle": true,
+        "every_gray_row_factor_matches_direct_diagonal_entry": true,
+        "half_character_assignment_selection_identity": true,
+        "original_marked_scalar_dag_equals_independent_oracle": true,
+        "exact_gate_formula_and_component_accounting": true,
+        "cheap_target_independent_scalar_leaf_data": true
+      },
+      "stats": {
+        "n": 4,
+        "dimension": 8,
+        "gates": 124,
+        "formula": "5*n*(n-1)+n*2^n",
+        "marker_and_entry_gates": 31,
+        "signed_update_preparation_gates": 20,
+        "initial_row_sum_gates": 12,
+        "gray_update_gates": 28,
+        "row_product_gates": 24,
+        "bucket_sum_gates": 6,
+        "signed_bucket_combination_and_normalization_gates": 3,
+        "scalar_leaf_data": "z; p_ij=1+a_ij^2; 1,-1,2,-2,2^(1-n)",
+        "path": [
+          {
+            "step": 0,
+            "mask": 0,
+            "signs": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 1,
+            "mask": 1,
+            "signs": [
+              1,
+              -1,
+              1,
+              1
+            ],
+            "parity": -1
+          },
+          {
+            "step": 2,
+            "mask": 3,
+            "signs": [
+              1,
+              -1,
+              -1,
+              1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 3,
+            "mask": 2,
+            "signs": [
+              1,
+              1,
+              -1,
+              1
+            ],
+            "parity": -1
+          },
+          {
+            "step": 4,
+            "mask": 6,
+            "signs": [
+              1,
+              1,
+              -1,
+              -1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 5,
+            "mask": 7,
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1
+            ],
+            "parity": -1
+          },
+          {
+            "step": 6,
+            "mask": 5,
+            "signs": [
+              1,
+              -1,
+              1,
+              -1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 7,
+            "mask": 4,
+            "signs": [
+              1,
+              1,
+              1,
+              -1
+            ],
+            "parity": -1
+          }
+        ]
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 124,
+        "max_node_terms": 256,
+        "max_live_terms": 2048,
+        "nodes": 143
+      },
+      "marked_terms": 24,
+      "diagonal_symbolic_seconds": 0.6258431999958702,
+      "gray_symbolic_seconds": 1.1563814999972237,
+      "scalar_seconds": 0.09700140000495594,
+      "total_seconds": 1.9405011999988346
+    },
+    {
+      "n": 5,
+      "checks": {
+        "generic_diagonal_contraction_equals_permutation_oracle": true,
+        "generic_gray_contraction_equals_permutation_oracle": true,
+        "every_gray_row_factor_matches_direct_diagonal_entry": true,
+        "half_character_assignment_selection_identity": true,
+        "original_marked_scalar_dag_equals_independent_oracle": true,
+        "exact_gate_formula_and_component_accounting": true,
+        "cheap_target_independent_scalar_leaf_data": true
+      },
+      "stats": {
+        "n": 5,
+        "dimension": 16,
+        "gates": 260,
+        "formula": "5*n*(n-1)+n*2^n",
+        "marker_and_entry_gates": 49,
+        "signed_update_preparation_gates": 35,
+        "initial_row_sum_gates": 20,
+        "gray_update_gates": 75,
+        "row_product_gates": 64,
+        "bucket_sum_gates": 14,
+        "signed_bucket_combination_and_normalization_gates": 3,
+        "scalar_leaf_data": "z; p_ij=1+a_ij^2; 1,-1,2,-2,2^(1-n)",
+        "path": [
+          {
+            "step": 0,
+            "mask": 0,
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 1,
+            "mask": 1,
+            "signs": [
+              1,
+              -1,
+              1,
+              1,
+              1
+            ],
+            "parity": -1
+          },
+          {
+            "step": 2,
+            "mask": 3,
+            "signs": [
+              1,
+              -1,
+              -1,
+              1,
+              1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 3,
+            "mask": 2,
+            "signs": [
+              1,
+              1,
+              -1,
+              1,
+              1
+            ],
+            "parity": -1
+          },
+          {
+            "step": 4,
+            "mask": 6,
+            "signs": [
+              1,
+              1,
+              -1,
+              -1,
+              1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 5,
+            "mask": 7,
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              1
+            ],
+            "parity": -1
+          },
+          {
+            "step": 6,
+            "mask": 5,
+            "signs": [
+              1,
+              -1,
+              1,
+              -1,
+              1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 7,
+            "mask": 4,
+            "signs": [
+              1,
+              1,
+              1,
+              -1,
+              1
+            ],
+            "parity": -1
+          },
+          {
+            "step": 8,
+            "mask": 12,
+            "signs": [
+              1,
+              1,
+              1,
+              -1,
+              -1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 9,
+            "mask": 13,
+            "signs": [
+              1,
+              -1,
+              1,
+              -1,
+              -1
+            ],
+            "parity": -1
+          },
+          {
+            "step": 10,
+            "mask": 15,
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 11,
+            "mask": 14,
+            "signs": [
+              1,
+              1,
+              -1,
+              -1,
+              -1
+            ],
+            "parity": -1
+          },
+          {
+            "step": 12,
+            "mask": 10,
+            "signs": [
+              1,
+              1,
+              -1,
+              1,
+              -1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 13,
+            "mask": 11,
+            "signs": [
+              1,
+              -1,
+              -1,
+              1,
+              -1
+            ],
+            "parity": -1
+          },
+          {
+            "step": 14,
+            "mask": 9,
+            "signs": [
+              1,
+              -1,
+              1,
+              1,
+              -1
+            ],
+            "parity": 1
+          },
+          {
+            "step": 15,
+            "mask": 8,
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              -1
+            ],
+            "parity": -1
+          }
+        ]
+      },
+      "evaluation": {
+        "scalar_gate_evaluations": 260,
+        "max_node_terms": 3125,
+        "max_live_terms": 50000,
+        "nodes": 286
+      },
+      "marked_terms": 120,
+      "diagonal_symbolic_seconds": 45.06456709999475,
+      "gray_symbolic_seconds": 23.460926100000506,
+      "scalar_seconds": 0.6197438000017428,
+      "total_seconds": 69.39313219999894
+    }
+  ],
+  "general_proof_status": "UNVERIFIED unless separately verified by Lean",
+  "scope": "Positive finite identities for a new exponential contraction; no polynomial gate claim."
+}

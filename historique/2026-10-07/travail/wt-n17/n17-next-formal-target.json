@@ -1,0 +1,13 @@
+{
+  "origin": "n18 constructive Gram/occupation encoding, communicated by arbor_simulator",
+  "status": "proposed, not yet kernel_verified",
+  "statement": "For n>=1 and m:[0,n)->Nat with m_i<=n, equality sum_i m_i*(n+1)^i = sum_i (n+1)^i implies all m_i=1",
+  "dependency_path": [
+    "Represent each m_i and each 1 as Fin(n+1) digits",
+    "Prove recursive encodeDigits of fixed-length lists equals the indexed natural power sum",
+    "Apply the already-verified recursive fixed-length encodeDigits_injective theorem",
+    "Convert digit equalities back to m_i=1"
+  ],
+  "scope": "Occupation-label uniqueness only, no coefficient-extraction circuit bound",
+  "compiler_rounds_spent_on_this_target": 0
+}

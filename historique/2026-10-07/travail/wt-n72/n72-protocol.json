@@ -1,0 +1,32 @@
+{
+  "node": "n72",
+  "hypothesis_fixed": true,
+  "source_identity": "q_sigma(t)=D_n(t)/product_i(t-theta_i,sigma(i)); a valid functional must satisfy ell(q_sigma)=sign(sigma) for every sigma",
+  "candidate_variants": [
+    "additive",
+    "squared_additive",
+    "radix"
+  ],
+  "theta": {
+    "additive": "(n+1)*(i+1)+(j+1)",
+    "squared_additive": "((n+1)*(i+1)+(j+1))**2",
+    "radix": "(n+1)**(i+1)+(j+1)"
+  },
+  "development": "Exactly all permutations at n=2,3,4,5; linear functional synthesis only, no matrix counterexample generation",
+  "root_obligations": [
+    "An all-n analytic formula or polynomial-time uniform constructor for ell",
+    "Exact functional identity on every permutation",
+    "Division-free scalar compilation of D*det(B_ij/(t-theta_ij))",
+    "Polynomial total gate and literal-bit bounds, complete Lean verification"
+  ],
+  "root_metric": "Complete root obligations discharged / four; finite fits alone get no root credit",
+  "test_boundary": "Untouched coordinator-only root boundary; not run until an eligible all-n scalar constructor is frozen",
+  "forbidden": [
+    "No counterexample or lower-bound campaigns",
+    "No free coefficient extraction or variable division gates",
+    "No factorial-time functional fitting advertised as a uniform constructor",
+    "No finite n observations advertised as an all-n proof"
+  ],
+  "formal_invocations_allocated": 0,
+  "root_conjecture_verified": false
+}

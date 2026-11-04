@@ -1,0 +1,27 @@
+{
+  "node": "n71",
+  "frozen_before_first_compilation": true,
+  "source": "ScalarDAG.lean",
+  "namespace": "CollisionScalarDAG",
+  "open_proposition": "AlgebraicCircuitComponent",
+  "exact_goal": "exists Pi:Polynomial Nat, forall n:Nat, 1 <= n -> forall A:Matrix (Fin n) (Fin n) Rat, exists c:Circuit n, c.gates <= Pi.eval n and c.literalBound (Pi.eval n) and c.eval A = CollisionEncodingBridge.markedPermanent A",
+  "leaves": ["marked i j evaluates to C(1+(A i j)^2)", "z evaluates to Polynomial.X", "rational q evaluates to Polynomial.C q"],
+  "gates": ["add of two Fin k references when appended at node k", "mul of two Fin k references when appended at node k"],
+  "sharing": "References name previously computed nodes, including leaves; identical references do not copy subcircuits",
+  "gate_count": "Sum of binary addition and multiplication nodes; source leaves count zero, matching the article circuit convention",
+  "rational_bit_length": "One numerator sign bit plus nonempty binary magnitude of normalized numerator plus nonempty binary normalized positive denominator",
+  "bit_bound_applies_to": "Every rational literal; the designated p_ij leaves are explicitly exempt",
+  "forbidden_inputs": ["target coefficients", "unknown jets", "matrix entries not compiled from these leaves", "arbitrary polynomial leaves", "coefficient/extraction/projection gates"],
+  "uniformity": {
+    "status": "REQUIRED_OPEN",
+    "goal": "An actual finite encoding and executable constructor producing these DAGs from rational (n,A), with a proven bit-operation runtime polynomial in n and L",
+    "L": "Total binary length of rational matrix numerators and denominators",
+    "not_formalized_by": "An abstract function equipped with an arbitrarily declared cost",
+    "reason": "No executable global constructor has yet been supplied; the Lean proposition is deliberately only the algebraic-circuit component"
+  },
+  "candidate_and_dependency_invocation_limit": 8,
+  "elaborated_prop_is_root_proof": false,
+  "root_conjecture_verified": false,
+  "root_score": 0,
+  "heldout_tests_run": false
+}

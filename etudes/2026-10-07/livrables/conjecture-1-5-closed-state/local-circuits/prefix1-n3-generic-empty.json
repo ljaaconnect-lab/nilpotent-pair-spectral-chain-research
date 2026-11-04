@@ -1,0 +1,36 @@
+{
+  "n": 3,
+  "J": [],
+  "depth": 1,
+  "marked": false,
+  "nodes": [
+    {
+      "op": "variable",
+      "name": "b_0_0"
+    },
+    {
+      "op": "variable",
+      "name": "b_0_1"
+    },
+    {
+      "op": "variable",
+      "name": "b_0_2"
+    },
+    {
+      "op": "add",
+      "left": 0,
+      "right": 1
+    },
+    {
+      "op": "add",
+      "left": 3,
+      "right": 2
+    }
+  ],
+  "output": 4,
+  "initialization_gates": 2,
+  "query_gates": 0,
+  "gates": 2,
+  "scope": "One explicit subset query at fixed prefix depth; not a full extractor",
+  "root_conjecture_verified": false
+}

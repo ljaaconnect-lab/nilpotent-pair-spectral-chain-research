@@ -1,0 +1,145 @@
+CONSTRUCTION EXACTE DE TOUTE LA CHAÎNE ORIENTÉE ET SPECTRALE
+24 octobre 2026 — borne exponentielle explicite
+
+Cette construction n'établit PAS la borne polynomiale générale demandée.
+Elle donne une représentation par noyaux, une fusion globale exacte et un
+lecteur en portes scalaires depuis les seules données originales. Son
+nombre de composantes est encore 2^(n−3). La distinction est essentielle.
+
+1. ENTRÉES ET SORTIES
+
+On prend les données du papier :
+  p_ij = 1+a_ij²,
+  B_ij = p_ij z^(2^((i−1)n+j−1)),
+  N = la plus petite puissance de deux strictement supérieure à n,
+  ζ_j(f) = ω^(f d_j),   k* = Σ_j d_j mod N.
+
+Le signe universel du papier est déjà corrigé dans l'orientation appariée.
+La cible scalaire finale vaut, au seul slot k*, la somme des produits B
+associés aux bijections. Ce coefficient est une SORTIE de la construction.
+Il n'est jamais fourni comme entrée ni exigé avant la couche spectrale.
+
+2. UN LECTEUR SCALAIRE POUR UN NOYAU À DEUX LIGNES EXCEPTIONNELLES
+
+Pour trois vecteurs h,b,c de longueur n, définissons seulement par les
+opérations suivantes les quatre accumulateurs A00,A10,A01,A11.
+Au départ : (1,0,0,0). À la colonne j, simultanément :
+
+  A00' = h_j A00,
+  A10' = h_j A10 + b_j A00,
+  A01' = h_j A01 + c_j A00,
+  A11' = h_j A11 + b_j A01 + c_j A10.
+
+Cela coûte au plus 12n portes scalaires binaires. Il n'y a aucune division
+par une donnée, aucun calcul formel gratuit de coefficient et aucune
+lecture dans une algèbre de dimension cachée. L'invariant, prouvé par
+multiplication d'un facteur à chaque étape, est : Auv est le coefficient
+de u^u v^v dans ∏_{j déjà traités}(h_j+b_j u+c_j v), modulo (u²,v²).
+Cette petite algèbre est entièrement développée en quatre coordonnées.
+
+La valeur terminale H(h,b,c)=A11 est donc exactement
+
+  Σ_{j≠l} b_j c_l ∏_{r hors {j,l}} h_r.                       (1)
+
+3. INTERPRÉTATION PAR UN SEUL NOYAU ANTISYMÉTRIQUE
+
+Cette étape explique la représentation orientée ; le compilateur peut
+utiliser directement le lecteur précédent sans fabriquer les entrées
+inutilisées d'une matrice.
+
+Supposons provisoirement les h_j inversibles, et posons r_j=b_j/h_j,
+s_j=c_j/h_j. Construisons dans l'ordre groupé x/y les blocs
+
+  X_jl = r_l−r_j,
+  Y_jl = ((n−2)!/n)(s_l−s_j),
+  C_jl = δ_jl−1/n+(n−1)!r_j s_l,
+  K0 = [[X,C], [−Cᵀ,Y]].
+
+Passons dans l'ordre apparié x1,y1,...,xn,yn et multiplions chaque mode x_j
+par h_j, chaque mode y_j par 1. Le noyau obtenu est K. Alors
+
+  Pf(K) = (n−2)! H(h,b,c).                                    (2)
+
+Preuve. Pour U_j=(1,r_j), V_j=(−1/n,(n−1)!s_j) et la matrice
+antisymétrique standard J2, on a X=U J2 Uᵀ,
+Y=−(1/(n−1))V J2 Vᵀ, C=I+UVᵀ. L'expansion du Pfaffien de cette mise à
+jour de rang au plus quatre ne comporte que ses termes d'ordres 0,2,4 :
+
+  Pf(K0) = 1+tr(T)+(n/(n−1))det(T),   T=VᵀU.
+
+Or tr(T)=−1+(n−1)!Σrs et
+det(T)=−((n−1)!/n)(nΣrs−(Σr)(Σs)). Cela donne
+(n−2)!((Σr)(Σs)−Σrs). La congruence multiplie le Pfaffien par ∏h_j,
+d'où (2) et (1). Le lecteur (1), polynomial, étend l'identité à tout h,
+y compris h_j=0. Pour conserver explicitement un noyau sans division
+variable, les notes jointes donnent aussi une implantation par jets.
+
+4. FUSION DES n LIGNES GÉNÉRIQUES
+
+Écrivons m=n−2, a_1,...,a_m les m premières lignes de B, et b,c les deux
+dernières. Posons λ_i=2^(i−1). Pour chaque choix ε_i∈{−1,1}, ε_m=1, posons
+
+  h_ε = Σ_{i=1}^m ε_i λ_i a_i,
+  w_ε = (∏_i ε_i)/(2^(m−1)∏_i λ_i).
+
+La fusion globale, construite depuis ces seules lignes, est
+
+  S = Σ_{ε_m=1} w_ε H(h_ε,b,c).                              (3)
+
+Preuve de correction sans coefficient fourni. Développons (1), puis les
+m facteurs h_ε restants. Un terme choisit b,c sur deux colonnes distinctes
+et attribue l'une des lignes a_i à chacune des autres colonnes. La somme
+sur ε annule ce terme sauf si les multiplicités des a_1,...,a_(m−1) sont
+toutes impaires. Elles sont alors au moins un ; comme leur somme avec la
+dernière multiplicité vaut m, cette dernière vaut aussi un et toutes les
+autres valent un. Le facteur de chaque terme survivant est exactement
+2^(m−1)∏λ_i, annulé par w_ε. Il reste chaque bijection une fois, avec son
+amplitude et son marqueur binaires d'origine. Aucun terme collisionnel ne
+survit et aucun coefficient de permutation négatif n'est conservé.
+
+Au point où toutes les entrées non marquées valent 1, h_ε est un entier
+impair entre 1 et 2^m−1, car le plus grand λ porte le signe +. Les bases
+de tous les développements en jets sont donc régulières. Les poids ont
+une longueur binaire O(n²), et ne cachent pas une table exponentielle.
+
+5. LE SPECTRAL EST PORTÉ DEPUIS LES ENTRÉES
+
+À la fréquence f, multiplions toutes les cellules de colonne j par ζ_j(f)
+AVANT (3). Les vecteurs h_ε,b,c de cette colonne reçoivent tous cette même
+phase. Chaque étape du lecteur prend exactement un facteur de la colonne.
+Par conséquent sa valeur finale, pour chaque composante, est multipliée
+par ∏_j ζ_j(f)=ω^(fΣd_j). Au niveau des noyaux, c'est la congruence
+x_j→ζ_j(f)x_j, y_j→y_j ; les rapports r,s restent inchangés.
+
+L'inverse de Fourier donne donc directement le slot k* et des zéros dans
+les autres slots. La correction du signe, les phases, la fusion et la
+lecture sont ainsi compilées ensemble. L'orthogonalité peut être appliquée
+par le compilateur, ce qui évite de calculer des phases connues uniquement
+pour les annuler ensuite. Ce réordonnancement n'utilise aucun P_A d'entrée.
+
+6. COÛT ET LIMITE EXACTE DE CETTE CONSTRUCTION
+
+Il existe 2^(n−3) composantes. Les h_ε se partagent par parcours Gray ;
+le lecteur emploie quatre accumulateurs et au plus 12n portes par noyau.
+L'implantation archivée compte, depuis p et pour n≥3 :
+
+  2n²+4n(n−3)−n−2+(13n+2)·2^(n−3) portes.
+
+À n=8, cela fait 3670 portes. Partir des a_ij ajoute 2n² portes.
+Les marqueurs sont préparés par carrés successifs, sans écrire un entier
+de taille exponentielle comme constante fournie. Les petits cas n=1,2
+sont traités explicitement dans le code.
+
+La preuve établit donc une chaîne exacte pour n quelconque et un lecteur
+scalaire explicite. Elle n'établit pas une taille polynomiale : le facteur
+2^(n−3) demeure. Aucun partage polynomial de la somme (3), aucune autre
+fusion générale polynomialement bornée, ni aucune impossibilité générale
+d'une telle fusion n'ont été démontrés dans ce travail.
+
+SOURCE ET REPRODUCTIBILITÉ
+
+Cette note accompagne chaine_orientee_spectrale_2026-10-24.zip. Le dossier
+gaussian/ contient les preuves détaillées, les circuits exécutables, les
+comptes de portes et les contrôles formels. Les évaluations sur des cas
+finis vérifient le code ; les identités (1)−(3) prouvent sa correction.
+La nouveauté bibliographique de ces identités n'est pas revendiquée.

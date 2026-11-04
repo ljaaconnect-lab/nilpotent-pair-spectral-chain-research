@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "-o",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\induction-native\\build\\NativePrefixInduction.olean",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\induction-native-2026-11-03\\NativePrefixInduction.lean"
+  ],
+  "source_sha256": {
+    "documents/induction-native-2026-11-03/NativePrefixInduction.lean": "848ce82f955d76835748c3d86cd5324b4e0c3502ae53896fd5c0ada5db5214ed",
+    "documents/induction-native-2026-11-03/replay_native_prefix.py": "0b8dc7b0086a3899f020d70290fe057b4797678c7c2a40d2a4d0338bcd43a1f4",
+    "etudes/2026-11-01/lean-operateurs/lean_check.py": "a5e21cfb624e5258009425f6c6eecaf0eb1b529d953bbb2607717dab44a439ad",
+    "travail/audit-compilation-generique/build/MatrixScalarCompiler.olean": "3af2d83a084a074cb94c0fc09629f512f9917dcaaefad572827d4ca41a374708",
+    "travail/audit-compilation-generique/build/PowerCompiler.olean": "8af8c79424416700d97c35c1a7a1a4b9a3d7c1e3daaf12d8ce6bfbffadd760bb",
+    "travail/audit-compilation-generique/sources/MatrixScalarCompiler.lean": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+    "travail/audit-compilation-generique/sources/PowerCompiler.lean": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353"
+  },
+  "source_changed_during_check": false,
+  "exit_code": 0,
+  "seconds": 43.531,
+  "stdout": "'NativePrefixInduction.prefix_circuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativePrefixInduction.prefix_circuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativePrefixInduction.map_prefix' does not depend on any axioms\n'NativePrefixInduction.composed_prefix_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativePrefixInduction.composed_prefix_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativePrefixInduction.native_prefix_compilation' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "prefix_circuit_eval",
+    "prefix_circuit_gates",
+    "map_prefix",
+    "composed_prefix_eval",
+    "composed_prefix_gates",
+    "native_prefix_compilation"
+  ],
+  "all_theorem_axioms_printed": true,
+  "source_has_no_placeholders_or_added_axioms": true,
+  "scope": "Shared prefix multiplication program, its evaluation and actual gate count, and semantic transport through a ring homomorphism.",
+  "prefix_compiler_formalized": true,
+  "prefix_gate_count_derived_from_program": true,
+  "preparation_circuit_is_external_parameter": true,
+  "quotient_homomorphism_is_semantic_not_a_gate": true,
+  "auxiliary_variables_eliminated": false,
+  "complete_scalar_a_z_only_compiler_formalized": false,
+  "complete_scalar_chain_polynomial_bound_proved": false,
+  "exact_prefix_gate_count": "n-1",
+  "exact_composed_gate_count": "prepare.gates+(n-1)",
+  "same_preparation_output_bundle_reused_by_every_prefix_gate": true,
+  "import_cache": "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\audit-compilation-generique\\build",
+  "olean": "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\induction-native\\build\\NativePrefixInduction.olean",
+  "olean_sha256": "7aa53890e6e26d4a0b7c1bd502a7f946ebf65e449c792b29f836c35ae2da004e"
+}

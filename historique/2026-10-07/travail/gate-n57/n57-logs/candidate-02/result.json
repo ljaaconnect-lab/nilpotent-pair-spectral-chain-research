@@ -1,0 +1,145 @@
+{
+  "tag": "candidate-02",
+  "kind": "candidate",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n57\\MatrixScalarCompiler.lean"
+  ],
+  "environment_keys": [
+    "LEAN_PATH",
+    "LEAN_SRC_PATH",
+    "LEAN_SYSROOT"
+  ],
+  "environment_file": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib-environment.json",
+  "source_sha256": "6c2ad98a6eca9590430dcc973cec57daaa1d1e28c9009366fdb50df96fd5a69b",
+  "exit_code": 0,
+  "elapsed_seconds": 26.314793600002304,
+  "error_count": 0,
+  "source_clean": true,
+  "axiom_audit": {
+    "DenseScalar.matrix_power_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.sumCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.sumCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.dotCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.dotCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.denseProduct_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.denseProduct_matrix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.denseProduct_raw_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.dense_product_gate_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.instructionCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.instructionCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.sequenceCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.sequenceCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.matrixPowerCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.matrixPowerCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.matrixVecCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.matrixVecCircuit_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.contractionCircuit_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.contractionCircuit_raw_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.contractionCircuit_gate_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.scalar_compiler_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.scalarCircuit_raw_gates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.scalarCircuit_gate_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "DenseScalar.conditional_scalar_budget": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "passed": 4,
+  "denominator": 4,
+  "dev_score": 1.0,
+  "root_representation_established": false
+}

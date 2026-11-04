@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "n": 2,
+  "Q": 5,
+  "N": 4,
+  "omega": 2,
+  "target": 1,
+  "gamma_mod_Q": 4,
+  "snapshots": [
+    {
+      "x": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "F0": 0,
+      "INTT_outputs": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "x": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "F0": 1,
+      "INTT_outputs": [
+        0,
+        4,
+        0,
+        0
+      ]
+    }
+  ],
+  "native_Omega_coefficient": 2,
+  "actual_INTT_calls": 1,
+  "native_program_unchanged": true,
+  "scope": "The selected actual INTT wire equals gamma*F0 as a representative. Substituting auxiliary coordinates does not extract its quotient coefficient.",
+  "no_general_circuit_lower_bound": true,
+  "source_sha256": {
+    "documents/raccord-intt-2026-11-04/check_final_case.py": "7e0f37729aa26b286606fa239f9e8403849a0e3a1f02e8f28a6b4eb0a79660f6",
+    "documents/composition-native-2026-11-03/compose_native_representatives.py": "2e68d57225c04caddace2d91946cf7c88273a702bbc7833e1f380a253e54d9f4",
+    "etudes/2026-11-01/linearisation-orientee-convolution/linearised_inputs.py": "5c4c61aaacd4aa143f146bdaa64f20ae7fdbfeeac41b207eef87c4c9c7b24ada"
+  }
+}

@@ -1,0 +1,28 @@
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n57\MatrixScalarCompiler.lean:183:11: error: Tactic `rfl` failed: The left-hand side
+  (sequenceCircuit r []).gates
+is not definitionally equal to the right-hand side
+  [].length * (denseProduct r).gates
+
+case nil
+r : ℕ
+⊢ (sequenceCircuit r []).gates = [].length * (denseProduct r).gates
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n57\MatrixScalarCompiler.lean:198:39: warning: `if_false` has been deprecated: Use `ite_false` instead
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n57\MatrixScalarCompiler.lean:199:4: error: 'change' tactic failed, pattern
+  (sequenceCircuit r (binaryPlan k)).eval (matrixState r M M) (Sum.inr c) = ?m.47
+is not definitionally equal to target
+  (sequenceCircuit r (binaryPlan k)).eval ((fun c => M c.1 c.2) ∘ Sum.elim id id) (Sum.inr c) = (M ^ k) c.1 c.2
+'DenseScalar.matrix_power_correct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.sumCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.sumCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.dotCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.dotCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.denseProduct_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.denseProduct_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.denseProduct_raw_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.dense_product_gate_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.instructionCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.instructionCircuit_gates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.sequenceCircuit_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'DenseScalar.sequenceCircuit_gates' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'DenseScalar.matrixPowerCircuit_eval' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'DenseScalar.matrixPowerCircuit_gates' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]

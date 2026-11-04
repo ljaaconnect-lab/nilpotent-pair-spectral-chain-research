@@ -1,0 +1,15 @@
+'SharedBinaryPower.run_append' depends on axioms: [propext, Quot.sound]
+'SharedBinaryPower.power_add' does not depend on any axioms
+'SharedBinaryPower.positive_plan_correct' depends on axioms: [propext, Quot.sound]
+'SharedBinaryPower.binary_plan_correct' depends on axioms: [propext, Quot.sound]
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerCompiler.lean:90:17: warning: Possibly looping simp theorem: `binaryPlan.eq_1`
+
+Note: Possibly caused by: `binaryPlan`
+
+Hint: You can disable a simp theorem from the default simp set by passing `- theoremName` to `simp`.
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerCompiler.lean:90:6: error: Tactic `simp` failed with a nested error:
+maximum recursion depth has been reached
+use `set_option maxRecDepth <num>` to increase limit
+use `set_option diagnostics true` to get diagnostic information
+'SharedBinaryPower.binary_plan_logarithmic' depends on axioms: [propext, sorryAx, Quot.sound]
+'SharedBinaryPower.central_exponent_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

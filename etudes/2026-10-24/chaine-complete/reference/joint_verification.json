@@ -1,0 +1,98 @@
+{
+  "phase_covariance_checks": 8,
+  "cycle_checks": [
+    {
+      "length": 1,
+      "single": 1,
+      "double": 0
+    },
+    {
+      "length": 2,
+      "single": 1,
+      "double": 0
+    },
+    {
+      "length": 3,
+      "single": 1,
+      "double": 1
+    },
+    {
+      "length": 4,
+      "single": 1,
+      "double": 3
+    }
+  ],
+  "sidon_witness": {
+    "labels": [
+      0,
+      1,
+      4,
+      10,
+      12,
+      17
+    ],
+    "U": [
+      0,
+      3,
+      4
+    ],
+    "V": [
+      1,
+      2,
+      5
+    ],
+    "sum": 22
+  },
+  "moment_witnesses": [
+    {
+      "moments": 1,
+      "n": 4,
+      "repeat_support": 2,
+      "double_cycle_coefficient": 0
+    },
+    {
+      "moments": 2,
+      "n": 8,
+      "repeat_support": 4,
+      "double_cycle_coefficient": 3
+    },
+    {
+      "moments": 3,
+      "n": 16,
+      "repeat_support": 8,
+      "double_cycle_coefficient": 21
+    },
+    {
+      "moments": 4,
+      "n": 32,
+      "repeat_support": 16,
+      "double_cycle_coefficient": 105
+    }
+  ],
+  "feature_rank_check": {
+    "n": 8,
+    "subset_size": 4,
+    "dimension": 70,
+    "rank": 28,
+    "bound": 37
+  },
+  "sample_lower_bounds": {
+    "8": 2,
+    "12": 12,
+    "16": 94,
+    "20": 876,
+    "32": 1136258,
+    "64": 880645911072846
+  },
+  "legal_full_table_failures": {
+    "J4_zero_labels": [
+      18,
+      24
+    ],
+    "corrected_J6_zero_labels": [
+      260,
+      720
+    ]
+  },
+  "general_polynomial_proof": false
+}

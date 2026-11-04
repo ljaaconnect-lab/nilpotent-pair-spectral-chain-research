@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-01",
+  "status": "passed",
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "independent_cli_replay": true,
+  "general_polynomial_solution": false,
+  "files": [
+    {
+      "source": "ClockContraction.lean",
+      "sha256": "3dd5494922365f7b92250b4087be071a269eec5999ac0562681f9d65378c026d",
+      "source_changed_during_check": false,
+      "exit_code": 0,
+      "seconds": 17.422,
+      "stdout": "'OrientedOperators.ClockContraction.factorization' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "Insertion.lean",
+      "sha256": "c96481980afd37f5dfcba127c0afdc05d23de020c860b9bea1ad88f717377332",
+      "source_changed_during_check": false,
+      "exit_code": 0,
+      "seconds": 12.875,
+      "stdout": "'OrientedOperators.FullInsertion.insert_after_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrientedOperators.FullInsertion.insertion_commutes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrientedOperators.FullInsertion.insertion_commutes_on_polynomials' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'OrientedOperators.FullInsertion.insertion_is_derivation_plus_right' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'OrientedOperators.FullInsertion.derivation_product_rule' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ]
+}

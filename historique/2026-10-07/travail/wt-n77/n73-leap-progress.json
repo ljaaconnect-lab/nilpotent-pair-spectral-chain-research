@@ -1,0 +1,224 @@
+{
+  "node": "n73",
+  "method": "Local adapted LEAP workflow",
+  "selected_strategy": "actual_multivariate_coefficient_invariant",
+  "alternative_strategy": {
+    "name": "injective_prefix_embeddings",
+    "status": "UNUSED",
+    "required": false
+  },
+  "root": {
+    "id": "actual_subset_baseline",
+    "kind": "AND",
+    "status": "VERIFIED",
+    "required": [
+      "initial_state",
+      "step_state",
+      "coefficient_invariant",
+      "terminal_permutation",
+      "terminal_matrix",
+      "marked_central",
+      "state_dimension"
+    ]
+  },
+  "goals": {
+    "occupation_eq_iff_bijective": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [],
+      "statement": "(f : Fin n \u2192 Fin n) :\n    occupation f = subsetExponent Finset.univ \u2194 Function.Bijective f",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.occupation_eq_iff_bijective",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "expanded_linear_product": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [],
+      "statement": "(b : Nat \u2192 Fin n \u2192 R) :\n    (\u220f i : Fin n, linearForm (b i.val)) =\n      \u2211 f : Fin n \u2192 Fin n,\n        monomial (occupation f) (\u220f i : Fin n, b i.val (f i))",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.expanded_linear_product",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "sum_bijective_functions": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [],
+      "statement": "(w : (Fin n \u2192 Fin n) \u2192 R) :\n    (\u2211 f : Fin n \u2192 Fin n, if Function.Bijective f then w f else 0) =\n      \u2211 \u03c3 : Equiv.Perm (Fin n), w \u03c3",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.sum_bijective_functions",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "full_coefficient_permutation": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [
+        "occupation_eq_iff_bijective",
+        "expanded_linear_product",
+        "sum_bijective_functions"
+      ],
+      "statement": "(b : Nat \u2192 Fin n \u2192 R) :\n    (\u220f i : Fin n, linearForm (b i.val)).coeff (subsetExponent Finset.univ) =\n      \u2211 \u03c3 : Equiv.Perm (Fin n), \u220f i : Fin n, b i.val (\u03c3 i)",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.full_coefficient_permutation",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "subsetExponent_apply": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [],
+      "statement": "(U : Finset (Fin n)) (j : Fin n) :\n    subsetExponent U j = if j \u2208 U then 1 else 0",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.subsetExponent_apply",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "subsetExponent_support": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [
+        "subsetExponent_apply"
+      ],
+      "statement": "(U : Finset (Fin n)) :\n    (subsetExponent U).support = U",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.subsetExponent_support",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "subsetExponent_zero_iff": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [
+        "subsetExponent_support"
+      ],
+      "statement": "(U : Finset (Fin n)) :\n    subsetExponent U = 0 \u2194 U = \u2205",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.subsetExponent_zero_iff",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "subsetExponent_erase": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [
+        "subsetExponent_apply"
+      ],
+      "statement": "(U : Finset (Fin n)) (j : Fin n) :\n    subsetExponent U - Finsupp.single j 1 = subsetExponent (U.erase j)",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.subsetExponent_erase",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "coefficient_step": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [
+        "subsetExponent_support",
+        "subsetExponent_erase"
+      ],
+      "statement": "(c : Fin n \u2192 R) (p : MvPolynomial (Fin n) R)\n    (U : Finset (Fin n)) :\n    (linearForm c * p).coeff (subsetExponent U) =\n      \u2211 j \u2208 U, c j * p.coeff (subsetExponent (U.erase j))",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.coefficient_step",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "coefficient_invariant": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [
+        "subsetExponent_zero_iff",
+        "coefficient_step"
+      ],
+      "statement": "(b : Nat \u2192 Fin n \u2192 R) (k : Nat)\n    (U : Finset (Fin n)) :\n    state b k U = (rowProduct b k).coeff (subsetExponent U)",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.coefficient_invariant",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "initial_state": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [],
+      "statement": "(b : Nat \u2192 Fin n \u2192 R) (U : Finset (Fin n)) :\n    state b 0 U = if U = \u2205 then 1 else 0",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.initial_state",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "step_state": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [],
+      "statement": "(b : Nat \u2192 Fin n \u2192 R) (k : Nat) (U : Finset (Fin n)) :\n    state b (k + 1) U = \u2211 j \u2208 U, b k j * state b k (U.erase j)",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.step_state",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "rowProduct_eq": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [],
+      "statement": "(b : Nat \u2192 Fin n \u2192 R) (k : Nat) :\n    rowProduct b k = \u220f i : Fin k, linearForm (b i.val)",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.rowProduct_eq",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "terminal_permutation": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [
+        "coefficient_invariant",
+        "rowProduct_eq",
+        "full_coefficient_permutation"
+      ],
+      "statement": "(b : Nat \u2192 Fin n \u2192 R) :\n    state b n Finset.univ =\n      \u2211 \u03c3 : Equiv.Perm (Fin n), \u220f i : Fin n, b i.val (\u03c3 i)",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.terminal_permutation",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "terminal_matrix": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [
+        "terminal_permutation"
+      ],
+      "statement": "(B : Matrix (Fin n) (Fin n) R) :\n    state (matrixRows B) n Finset.univ =\n      \u2211 \u03c3 : Equiv.Perm (Fin n), \u220f i : Fin n, B i (\u03c3 i)",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.terminal_matrix",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "marked_central": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [
+        "terminal_matrix"
+      ],
+      "statement": "(n : Nat) (hn : 2 \u2264 n)\n    (A : Matrix (Fin n) (Fin n) Rat) :\n    state (matrixRows (markedWeights A)) n Finset.univ =\n      (markedHhat A).coeff (centralDegree n)",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.marked_central",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "marked_target": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [
+        "terminal_matrix"
+      ],
+      "statement": "(A : Matrix (Fin n) (Fin n) Rat) :\n    state (matrixRows (markedWeights A)) n Finset.univ = markedPermanent A",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.marked_target",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    },
+    "state_dimension": {
+      "kind": "AND",
+      "status": "VERIFIED",
+      "required": [],
+      "statement": "(n : Nat) :\n    Fintype.card (Finset (Fin n)) = 2 ^ n",
+      "source": "ActualClosedSubsetTransfer.lean",
+      "declaration": "ActualClosedSubsetTransfer.state_dimension",
+      "source_sha256": "356ad7f876412c2c940d3c69f6698f159ad48f8673b0caaefa927fc7ed4bbe9f"
+    }
+  },
+  "external_verified_dependencies": {
+    "marked_central": "CollisionEncodingBridge.hhat_central_coefficient",
+    "marked_target": "CollisionEncodingBridge.marked_weight_eq"
+  },
+  "acyclic": true,
+  "compiler_evidence": "n73-strict-report.json",
+  "review": "Independent terminal coefficient and genuine recurrence-invariant branches are both complete before they are joined; no target identity is assumed",
+  "state_dimension": "2^n",
+  "Conjecture_1_5": "OPEN",
+  "root_conjecture_credit": 0
+}

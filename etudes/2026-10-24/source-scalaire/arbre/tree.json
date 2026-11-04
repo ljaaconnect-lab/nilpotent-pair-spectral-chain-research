@@ -1,0 +1,118 @@
+{
+  "_counter": 6,
+  "root": "n0",
+  "nodes": {
+    "n0": {
+      "id": "n0",
+      "parent": null,
+      "depth": 0,
+      "status": "root",
+      "hypothesis": "Construct an exact uniform polynomial scalar source for PA; score finite DAG improvements without equating them to a proof",
+      "insight": "[from n1] A compact spectral or rational generating function is usable only when its input moments and final contraction are constructed as scalar gates; both must be included in any source claim.\n[from n3] Lifting the characteristic-two image needs a closed scalar representation of all correction interactions; polynomial precision length, or efficient computation of an individual correction, does not by itself supply one.\n[from n2] A compact local fusion rule must include its accumulated mixed terms and scalar contraction; preservation of each separate direction does not establish closure of their superposition.\n[from n4] Input-dependent coordinate changes can remove whole collision classes with polynomial scalar cost, but their remaining simultaneous-collision corrections require a uniform formula, not a finite list of low-degree cancellations.\n[from n5] Adaptive representations must be tested against their algebraic identities, not only parameter counts. Low-order determinant representations can exist without a closed update to all orders.\n[from n6] Implicit polynomial solvers are useful only when every equation coefficient has a counted source circuit. A proved solver and a unique formal solution do not permit hiding smaller permanents inside the system data.",
+      "metadata": {
+        "dev_score": null,
+        "test_score": 1920.0,
+        "result": "",
+        "branch_ref": "73fda3c"
+      },
+      "created_at": 1792815833,
+      "updated_at": 1792817053
+    },
+    "n1": {
+      "id": "n1",
+      "parent": "n0",
+      "depth": 1,
+      "status": "merged",
+      "hypothesis": "The global collision projector can be compiled through an input-dependent rational generating function with a polynomial closed recurrence and exact terminal evaluation",
+      "insight": "Polynomial collision spectrum and compact cumulants do not compute their initial amplitudes; diagonal rational resummation removes loops but retains overlaps of longer cycles.\n[from n4] Input-dependent coordinate changes can remove whole collision classes with polynomial scalar cost, but their remaining simultaneous-collision corrections require a uniform formula, not a finite list of low-degree cancellations.",
+      "metadata": {
+        "dev_score": 1912.0,
+        "test_score": 1912.0,
+        "result": "Exact source compiler saves n redundant multiplications; 56 frozen development checks pass. Global collision, Bell and rational substitutions supply no polynomial final readout. Commit contains exact verifiers and proofs.",
+        "branch_ref": "e59cbe84958d5d3968f45f5097a8b9150b910dd2"
+      },
+      "created_at": 1792815844,
+      "updated_at": 1792816743
+    },
+    "n2": {
+      "id": "n2",
+      "parent": "n0",
+      "depth": 1,
+      "status": "executed",
+      "hypothesis": "A nonlinear representation built from row factors and adapted to the known suffix admits polynomial fusion and direct scalar readout",
+      "insight": "Individual jet directions stay rank one under exchange, but pivot multipliers generate mixed connected interactions; a scalar final contraction needs a representation carrying these interactions.\n[from n5] Adaptive representations must be tested against their algebraic identities, not only parameter counts. Low-order determinant representations can exist without a closed update to all orders.",
+      "metadata": {
+        "dev_score": 8116.0,
+        "test_score": null,
+        "result": "Exact division-free pivot-jet compiler passes56 frozen development cases; size4*3^(n-1)-3*2^n+2n^2+n, no improvement over baseline. Rank-one exchange proved, mixed interactions computed exactly.",
+        "branch_ref": "a9ed9bf"
+      },
+      "created_at": 1792815845,
+      "updated_at": 1792816796
+    },
+    "n3": {
+      "id": "n3",
+      "parent": "n0",
+      "depth": 1,
+      "status": "executed",
+      "hypothesis": "The polynomial characteristic-two determinant source lifts uniformly to characteristic zero with polynomial overhead",
+      "insight": "Each inversion correction weight can be computed polynomially, but a polynomial contraction over all partial matchings is still required. Fourier diagonalization has exponential support even after row and column parity constraints.\n[from n6] Implicit polynomial solvers are useful only when every equation coefficient has a counted source circuit. A proved solver and a unique formal solution do not permit hiding smaller permanents inside the system data.",
+      "metadata": {
+        "dev_score": null,
+        "test_score": null,
+        "result": "Exact lifting and Gaussian-weight identities checked; no scalar compiler submitted. Verified lift/Jacobi instances, marked inversion expansions, polar rank formulas and quadratic Gauss sums.",
+        "branch_ref": "4300d13687a89cff3d5e5d685d188081c4d44d58"
+      },
+      "created_at": 1792815845,
+      "updated_at": 1792817053
+    },
+    "n4": {
+      "id": "n4",
+      "parent": "n1",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "An input-dependent implicit univariate substitution with a Lagrange-Good Jacobian removes repeated cycles while preserving a polynomial scalar recurrence",
+      "insight": "Input-dependent Schur normalization kills every occupancy with exactly one repeated index. Pair and higher simultaneous repetitions remain, and fixed-degree corrections do not yet form a closed polynomial family.",
+      "metadata": {
+        "dev_score": 1912.0,
+        "test_score": null,
+        "result": "Polynomial implicit Schur-Good scalar compiled and identities proved. General readout fails: degree4 and5 corrections explicit, but corrected all-ones size6 gives260 instead of720. Candidate remains n1 exact exponential source.",
+        "branch_ref": "2f1469d11038dc93af89dffda05a8eca3fb74fe0"
+      },
+      "created_at": 1792816171,
+      "updated_at": 1792816739
+    },
+    "n5": {
+      "id": "n5",
+      "parent": "n2",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Flag permanents admit a polynomially constructible principal-minor matrix representation with a scalar determinant readout and closed row update",
+      "insight": "Flag permanents and principal minors have equal parameter dimension but different identities. A separate matrix at each layer remains possible, while rank-i and demonstrated determinant-mixture repairs do not close polynomially.",
+      "metadata": {
+        "dev_score": null,
+        "test_score": null,
+        "result": "Exact n4 certificates disprove a shared principal-minor encoding, even for proper layers. Full-rank layer2 and two-determinant layer3 identities verified symbolically. No general scalar candidate.",
+        "branch_ref": "00d55927fff7d1e7b05b1f68ee8b97ce3859a1d1"
+      },
+      "created_at": 1792816338,
+      "updated_at": 1792816793
+    },
+    "n6": {
+      "id": "n6",
+      "parent": "n3",
+      "depth": 2,
+      "status": "executed",
+      "hypothesis": "Permanent and its first adjugate satisfy a polynomial closed implicit lifting system with a nonsingular characteristic-two initial Jacobian",
+      "insight": "Newton precision doubling and a nonsingular explicit Jacobian are available. The required permanent/Dodgson defect coefficient circuits remain the source problem; their tested recursion has exponentially many distinct states even after sharing.",
+      "metadata": {
+        "dev_score": null,
+        "test_score": null,
+        "result": "Exact n^2+1 variable Newton system executed at n3,n4. Conditional compiler size O(s*n^2+n^4), where s includes all H,K coefficient circuits. Shared-index closures counted exactly; no polynomial coefficient closure obtained.",
+        "branch_ref": "09b991b5f784c31b2c9041088fb49751c6ad6159"
+      },
+      "created_at": 1792816382,
+      "updated_at": 1792817049
+    }
+  }
+}

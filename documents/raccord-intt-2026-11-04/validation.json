@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-11-04T05:01:55.887348+00:00",
+  "source": "INTTProjection.lean",
+  "source_sha256": "cd0e8110386fd86ee1eb42c30b19b4288892df8a84eebebca7a0ff1bfad22ba0",
+  "replay_sha256": "4e23c0677fa07c94fa0379a060fa6a3157e3d03b3b65d531e5aef816b608de4e",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\raccord-intt-2026-11-04\\INTTProjection.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 12.875,
+  "source_unchanged": true,
+  "no_placeholders_or_added_axioms": true,
+  "all_theorem_axioms_audited": true,
+  "theorems": [
+    "linear_readout_projection",
+    "gate_projection",
+    "step_projection",
+    "program_projection",
+    "selected_output_same_program",
+    "fused_target_readout",
+    "fused_target_constant_iff"
+  ],
+  "stdout": "'INTTProjection.linear_readout_projection' depends on axioms: [propext, Classical.choice, Quot.sound]\n'INTTProjection.gate_projection' does not depend on any axioms\n'INTTProjection.step_projection' depends on axioms: [propext, Classical.choice, Quot.sound]\n'INTTProjection.program_projection' depends on axioms: [propext, Classical.choice, Quot.sound]\n'INTTProjection.selected_output_same_program' depends on axioms: [propext, Classical.choice, Quot.sound]\n'INTTProjection.fused_target_readout' depends on axioms: [propext, Classical.choice, Quot.sound]\n'INTTProjection.fused_target_constant_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Linear projection through a shared spectral program; projected input values must already be computed. Kernel identity remains explicit.",
+  "native_nonlinear_prefix_scalarized": false,
+  "complete_scalar_a_z_only_chain_proved": false,
+  "radix2_fft_implementation_formalized": false
+}

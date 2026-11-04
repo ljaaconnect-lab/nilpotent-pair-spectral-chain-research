@@ -1,0 +1,35 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\CollisionFilter.lean",
+  "version": 5,
+  "seconds": 0.281,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 8,
+          "line": 22
+        },
+        "start": {
+          "character": 4,
+          "line": 22
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase neg\nι : Type u_1\ninst✝ : DecidableEq ι\nr : ℕ\nw : Fin r → ι\nh : ¬Function.Injective w\ni j : Fin r\nhij : w i = w j\nhne : i ≠ j\nk : Fin r\n⊢ equalityMatrix w i k = equalityMatrix w j k",
+      "range": {
+        "end": {
+          "character": 8,
+          "line": 22
+        },
+        "start": {
+          "character": 4,
+          "line": 22
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    }
+  ]
+}

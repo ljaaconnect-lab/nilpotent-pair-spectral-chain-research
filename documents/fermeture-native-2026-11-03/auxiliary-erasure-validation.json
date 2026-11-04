@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "-o",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\fermeture-native\\build\\AuxiliaryErasure.olean",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\fermeture-native-2026-11-03\\AuxiliaryErasure.lean"
+  ],
+  "source_sha256": {
+    "documents/fermeture-native-2026-11-03/AuxiliaryErasure.lean": "61f744b1965e479226532e05a2c5c9f27a0a944ee4919134edaf01f505f93536",
+    "documents/fermeture-native-2026-11-03/replay_auxiliary_erasure.py": "abe7cf68d97779abcc6dc9914ede7191a6fb512adcfad50a1dccdb77b6dd9380",
+    "etudes/2026-11-01/lean-operateurs/lean_check.py": "a5e21cfb624e5258009425f6c6eecaf0eb1b529d953bbb2607717dab44a439ad",
+    "travail/audit-compilation-generique/build/MatrixScalarCompiler.olean": "3af2d83a084a074cb94c0fc09629f512f9917dcaaefad572827d4ca41a374708",
+    "travail/audit-compilation-generique/build/PowerCompiler.olean": "8af8c79424416700d97c35c1a7a1a4b9a3d7c1e3daaf12d8ce6bfbffadd760bb",
+    "travail/audit-compilation-generique/sources/MatrixScalarCompiler.lean": "a3727f39068b03b356a9bfe09c28083fc077ea98572d8e4e96f5bf88e4f0541f",
+    "travail/audit-compilation-generique/sources/PowerCompiler.lean": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353"
+  },
+  "source_changed_during_check": false,
+  "exit_code": 0,
+  "seconds": 14.062,
+  "stdout": "'AuxiliaryErasure.erase_correct' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AuxiliaryErasure.erase_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AuxiliaryErasure.erase_eval' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AuxiliaryErasure.independent_of_spec' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AuxiliaryErasure.scalarization_sufficiency' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "erase_correct",
+    "erase_gates",
+    "erase_eval",
+    "independent_of_spec",
+    "scalarization_sufficiency"
+  ],
+  "all_theorem_axioms_printed": true,
+  "source_has_no_placeholders_or_added_axioms": true,
+  "scope": "An explicit same-size scalar circuit replacing all auxiliary inputs by zero; correctness when outputs are independent of them over the fixed semiring.",
+  "exact_gate_count": "eraseAux(c).gates = c.gates",
+  "exact_semantics": "eraseAux(c).eval(a) = c.eval(Sum.elim(a, zero))",
+  "scalarization_witness": "eraseAux(c), using only original input wires and zero constants",
+  "tagged_terminal_application": "Independence must hold for an explicit scalar coefficient b, not merely for an oriented homogeneous representative H supported on a fixed terminal label.",
+  "formal_identity_policy": "Choose the coefficient semiring R appropriate to the formal markers; finite-field pointwise equality is not promoted to a formal polynomial identity.",
+  "erasure_circuit_formalized": true,
+  "erasure_gate_count_derived_from_program": true,
+  "auxiliary_independence_is_explicit_hypothesis": true,
+  "independence_semiring_is_fixed": true,
+  "auxiliary_index_nonempty_required": false,
+  "native_output_independence_proved": false,
+  "coefficient_reader_introduced": false,
+  "native_a_z_only_scalarization_proved": false,
+  "complete_native_scalar_chain_polynomial_bound_proved": false,
+  "olean": "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\fermeture-native\\build\\AuxiliaryErasure.olean",
+  "olean_sha256": "3a2d56048aacb81fc205281d58ee789a13b26e1a7dd3ba42c856f53f5e49df00"
+}

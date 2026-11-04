@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "source": "ResolventFusion.lean",
+  "sha256": "ac6848f3173c796304831b7dec68ac4ebe043f7b17118a1ef4ae348b49826b8d",
+  "source_changed_during_check": false,
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "exit_code": 0,
+  "seconds": 12.922,
+  "stdout": "'OrientedOperators.ResolventFusion.factorization' does not depend on any axioms\n'OrientedOperators.ResolventFusion.fusion' depends on axioms: [propext]\n'OrientedOperators.ResolventFusion.observer_fusion' depends on axioms: [propext]\n'OrientedOperators.ResolventFusion.finite_mul_sub' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrientedOperators.ResolventFusion.sub_mul_finite' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrientedOperators.ResolventFusion.finite_left_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrientedOperators.ResolventFusion.finite_right_inverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrientedOperators.ResolventFusion.finite_fusion' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "general_polynomial_solution": false
+}

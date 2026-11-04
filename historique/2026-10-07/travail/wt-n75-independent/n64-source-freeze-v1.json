@@ -1,0 +1,14 @@
+{
+  "node": "n64",
+  "frozen_at_utc": "2026-10-07T15:50:26.663824+00:00",
+  "before_first_test": true,
+  "source_hashes": {
+    "n64-protocol.json": "df1339dc3b95dc35ecf29413bdd5a7603f0d6314ee0b73d1755c48bac7e5f8a0",
+    "N64_BLUEPRINT.md": "322a0945b7af808af47199f6412d90c5f7ef40348dd932eab491bb20f067f10d",
+    "pfaffian_coefficients.py": "1bd0c45b3273065b2718bcea6dbca5f64ede5e85353d7f145cc8dcbd6e3634c7",
+    "evaluate_pfaffian.py": "bf2e8577469c3c233140f9c4ac1be9dfb36d73664a3f09e1da2dfa5d9351e76c",
+    "euler_compiler.py": "9974e6b1feec828f656d56cd6537f4a3f70c10fee2b2c701eb9e2b7a38f9cf2d",
+    "candidate.py": "6f1143d634ebd7d98bce9fb5fd1ef7eb29dbb7868cd67ac29761c5d7b020a84c"
+  },
+  "denominator": 7184
+}

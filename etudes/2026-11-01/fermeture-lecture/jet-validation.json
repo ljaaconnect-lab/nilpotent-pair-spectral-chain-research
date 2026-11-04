@@ -1,0 +1,239 @@
+{
+  "status": "passed",
+  "generic_circuit_cases": 72,
+  "full_chain_tables": 33,
+  "all_coefficients_through_order_n_checked": true,
+  "all_imaginary_coordinates_checked_zero": true,
+  "general_polynomial_solution": false,
+  "source_compiler": "Existing full-insertion compiler, with exponential gate bound",
+  "scope": "Polynomial overhead of a reduction, conditional on receiving a scalar source circuit",
+  "costs": [
+    {
+      "n": 1,
+      "source_gates": 9,
+      "source_additions": 3,
+      "source_multiplications": 6,
+      "input_preparation_gates": 1,
+      "compiled_scalar_gates": 151,
+      "proven_simulation_bound": 253,
+      "operations": "ordinary scalar add/mul only",
+      "extension": "K[i]/(i^2+1), represented by pairs over K",
+      "constructs_missing_source_circuit": false,
+      "Q": 3,
+      "labels": [
+        1
+      ],
+      "target_slot": 1,
+      "tables_checked": 3
+    },
+    {
+      "n": 1,
+      "source_gates": 9,
+      "source_additions": 3,
+      "source_multiplications": 6,
+      "input_preparation_gates": 1,
+      "compiled_scalar_gates": 151,
+      "proven_simulation_bound": 253,
+      "operations": "ordinary scalar add/mul only",
+      "extension": "K[i]/(i^2+1), represented by pairs over K",
+      "constructs_missing_source_circuit": false,
+      "Q": 17,
+      "labels": [
+        1
+      ],
+      "target_slot": 1,
+      "tables_checked": 3
+    },
+    {
+      "n": 2,
+      "source_gates": 44,
+      "source_additions": 16,
+      "source_multiplications": 28,
+      "input_preparation_gates": 4,
+      "compiled_scalar_gates": 1444,
+      "proven_simulation_bound": 2776,
+      "operations": "ordinary scalar add/mul only",
+      "extension": "K[i]/(i^2+1), represented by pairs over K",
+      "constructs_missing_source_circuit": false,
+      "Q": 17,
+      "labels": [
+        0,
+        0
+      ],
+      "target_slot": 0,
+      "tables_checked": 3
+    },
+    {
+      "n": 3,
+      "source_gates": 152,
+      "source_additions": 41,
+      "source_multiplications": 111,
+      "input_preparation_gates": 9,
+      "compiled_scalar_gates": 9439,
+      "proven_simulation_bound": 17033,
+      "operations": "ordinary scalar add/mul only",
+      "extension": "K[i]/(i^2+1), represented by pairs over K",
+      "constructs_missing_source_circuit": false,
+      "Q": 17,
+      "labels": [
+        1,
+        6,
+        1
+      ],
+      "target_slot": 0,
+      "tables_checked": 3
+    },
+    {
+      "n": 4,
+      "source_gates": 864,
+      "source_additions": 288,
+      "source_multiplications": 576,
+      "input_preparation_gates": 16,
+      "compiled_scalar_gates": 74896,
+      "proven_simulation_bound": 151216,
+      "operations": "ordinary scalar add/mul only",
+      "extension": "K[i]/(i^2+1), represented by pairs over K",
+      "constructs_missing_source_circuit": false,
+      "Q": 17,
+      "labels": [
+        2,
+        8,
+        8,
+        4
+      ],
+      "target_slot": 6,
+      "tables_checked": 3
+    },
+    {
+      "n": 5,
+      "source_gates": 3182,
+      "source_additions": 1177,
+      "source_multiplications": 2005,
+      "input_preparation_gates": 25,
+      "compiled_scalar_gates": 369034,
+      "proven_simulation_bound": 801889,
+      "operations": "ordinary scalar add/mul only",
+      "extension": "K[i]/(i^2+1), represented by pairs over K",
+      "constructs_missing_source_circuit": false,
+      "Q": 17,
+      "labels": [
+        1,
+        3,
+        10,
+        10,
+        8
+      ],
+      "target_slot": 0,
+      "tables_checked": 3
+    },
+    {
+      "n": 1,
+      "source_gates": 8,
+      "source_additions": 3,
+      "source_multiplications": 5,
+      "input_preparation_gates": 1,
+      "compiled_scalar_gates": 128,
+      "proven_simulation_bound": 225,
+      "operations": "ordinary scalar add/mul only",
+      "extension": "K[i]/(i^2+1), represented by pairs over K",
+      "constructs_missing_source_circuit": false,
+      "Q": 97,
+      "labels": [
+        0
+      ],
+      "target_slot": 0,
+      "tables_checked": 3
+    },
+    {
+      "n": 2,
+      "source_gates": 50,
+      "source_additions": 16,
+      "source_multiplications": 34,
+      "input_preparation_gates": 4,
+      "compiled_scalar_gates": 1732,
+      "proven_simulation_bound": 3154,
+      "operations": "ordinary scalar add/mul only",
+      "extension": "K[i]/(i^2+1), represented by pairs over K",
+      "constructs_missing_source_circuit": false,
+      "Q": 97,
+      "labels": [
+        0,
+        3
+      ],
+      "target_slot": 3,
+      "tables_checked": 3
+    },
+    {
+      "n": 3,
+      "source_gates": 146,
+      "source_additions": 41,
+      "source_multiplications": 105,
+      "input_preparation_gates": 9,
+      "compiled_scalar_gates": 8947,
+      "proven_simulation_bound": 16361,
+      "operations": "ordinary scalar add/mul only",
+      "extension": "K[i]/(i^2+1), represented by pairs over K",
+      "constructs_missing_source_circuit": false,
+      "Q": 97,
+      "labels": [
+        5,
+        3,
+        0
+      ],
+      "target_slot": 0,
+      "tables_checked": 3
+    },
+    {
+      "n": 4,
+      "source_gates": 932,
+      "source_additions": 288,
+      "source_multiplications": 644,
+      "input_preparation_gates": 16,
+      "compiled_scalar_gates": 83396,
+      "proven_simulation_bound": 163116,
+      "operations": "ordinary scalar add/mul only",
+      "extension": "K[i]/(i^2+1), represented by pairs over K",
+      "constructs_missing_source_circuit": false,
+      "Q": 97,
+      "labels": [
+        5,
+        7,
+        2,
+        3
+      ],
+      "target_slot": 1,
+      "tables_checked": 3
+    },
+    {
+      "n": 5,
+      "source_gates": 3162,
+      "source_additions": 1177,
+      "source_multiplications": 1985,
+      "input_preparation_gates": 25,
+      "compiled_scalar_gates": 365494,
+      "proven_simulation_bound": 796849,
+      "operations": "ordinary scalar add/mul only",
+      "extension": "K[i]/(i^2+1), represented by pairs over K",
+      "constructs_missing_source_circuit": false,
+      "Q": 97,
+      "labels": [
+        4,
+        1,
+        1,
+        4,
+        0
+      ],
+      "target_slot": 2,
+      "tables_checked": 3
+    }
+  ],
+  "source_sha256": {
+    "etudes/2026-11-01/fermeture-lecture/jet_compiler.py": "6c2c0541f38368b116152920c6229490479873a9bb824b1c31b70e2714638457",
+    "etudes/2026-11-01/fermeture-lecture/verify_jets.py": "7d10b6fae947957ec53323798eaeafdb1581ee968007f0ad16788f289153c0c2",
+    "etudes/2026-11-01/fermeture-generale/circuit.py": "5f2b80d00dbe08b4430353d87e5fddea0058c5076dc8b90b0ddef2ea03200861",
+    "etudes/2026-11-01/fermeture-generale/insertion_circuit.py": "33e3cc84a849ca61d54eed3a8ec979bcb2926e7a704be25a4b48c730e39c6cd3",
+    "etudes/2026-11-01/operateurs-horloge/circuit.py": "4960f0f6dc50f73f85c444f6028a7061129eda6ca326974b5bf167ab9870bb31",
+    "etudes/2026-10-24/chaine-complete/reference/dag.py": "73959d4040fa2cdf642c653bbedd68e3be60fb5853c9ce081202f5620c50a08d"
+  },
+  "elapsed_seconds": 4.687
+}

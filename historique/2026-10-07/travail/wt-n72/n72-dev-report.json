@@ -1,0 +1,189 @@
+{
+  "node": "n72",
+  "evaluated_candidate_variants": 3,
+  "results": [
+    {
+      "variant": "additive",
+      "n": 2,
+      "degree": 2,
+      "development_permutations": 2,
+      "exact_functional_found": true,
+      "functional": [
+        "2/3",
+        "67/36",
+        "0"
+      ],
+      "initialization": "Finite development RREF; not a uniform all-n constructor",
+      "elapsed_seconds": 0.0,
+      "root_conjecture_verified": false
+    },
+    {
+      "variant": "additive",
+      "n": 3,
+      "degree": 6,
+      "development_permutations": 6,
+      "exact_functional_found": true,
+      "functional": [
+        "3/128",
+        "15/64",
+        "317/128",
+        "1755/64",
+        "40457/128",
+        "23031131/7680",
+        "0"
+      ],
+      "initialization": "Finite development RREF; not a uniform all-n constructor",
+      "elapsed_seconds": 0.0,
+      "root_conjecture_verified": false
+    },
+    {
+      "variant": "additive",
+      "n": 4,
+      "degree": 12,
+      "development_permutations": 24,
+      "exact_functional_found": false,
+      "functional": null,
+      "initialization": "Finite development RREF; not a uniform all-n constructor",
+      "elapsed_seconds": 0.014999999999417923,
+      "root_conjecture_verified": false
+    },
+    {
+      "variant": "additive",
+      "n": 5,
+      "degree": 20,
+      "development_permutations": 120,
+      "exact_functional_found": false,
+      "functional": null,
+      "initialization": "Finite development RREF; not a uniform all-n constructor",
+      "elapsed_seconds": 0.04700000000593718,
+      "root_conjecture_verified": false
+    },
+    {
+      "variant": "squared_additive",
+      "n": 2,
+      "degree": 2,
+      "development_permutations": 2,
+      "exact_functional_found": true,
+      "functional": [
+        "77/11112",
+        "2249/22224",
+        "0"
+      ],
+      "initialization": "Finite development RREF; not a uniform all-n constructor",
+      "elapsed_seconds": 0.0,
+      "root_conjecture_verified": false
+    },
+    {
+      "variant": "squared_additive",
+      "n": 3,
+      "degree": 6,
+      "development_permutations": 6,
+      "exact_functional_found": true,
+      "functional": [
+        "1218455912183/1700786538998681739264",
+        "399848371114687/10552607389696366245888",
+        "114045855790858309/29019670321665007176192",
+        "92736871580933237/212598317374835217408",
+        "1709399824262998439423/29019670321665007176192",
+        "424225786191953531411471/58039340643330014352384",
+        "0"
+      ],
+      "initialization": "Finite development RREF; not a uniform all-n constructor",
+      "elapsed_seconds": 0.015999999988707714,
+      "root_conjecture_verified": false
+    },
+    {
+      "variant": "squared_additive",
+      "n": 4,
+      "degree": 12,
+      "development_permutations": 24,
+      "exact_functional_found": false,
+      "functional": null,
+      "initialization": "Finite development RREF; not a uniform all-n constructor",
+      "elapsed_seconds": 0.0,
+      "root_conjecture_verified": false
+    },
+    {
+      "variant": "squared_additive",
+      "n": 5,
+      "degree": 20,
+      "development_permutations": 120,
+      "exact_functional_found": false,
+      "functional": null,
+      "initialization": "Finite development RREF; not a uniform all-n constructor",
+      "elapsed_seconds": 0.07800000000861473,
+      "root_conjecture_verified": false
+    },
+    {
+      "variant": "radix",
+      "n": 2,
+      "degree": 2,
+      "development_permutations": 2,
+      "exact_functional_found": true,
+      "functional": [
+        "1/3",
+        "47/45",
+        "0"
+      ],
+      "initialization": "Finite development RREF; not a uniform all-n constructor",
+      "elapsed_seconds": 0.0,
+      "root_conjecture_verified": false
+    },
+    {
+      "variant": "radix",
+      "n": 3,
+      "degree": 6,
+      "development_permutations": 6,
+      "exact_functional_found": true,
+      "functional": [
+        "1/11520",
+        "2443/1933440",
+        "935603/34801920",
+        "1743367/1933440",
+        "1555046567/34801920",
+        "10824630152437/6264345600",
+        "0"
+      ],
+      "initialization": "Finite development RREF; not a uniform all-n constructor",
+      "elapsed_seconds": 0.0,
+      "root_conjecture_verified": false
+    },
+    {
+      "variant": "radix",
+      "n": 4,
+      "degree": 12,
+      "development_permutations": 24,
+      "exact_functional_found": false,
+      "functional": null,
+      "initialization": "Finite development RREF; not a uniform all-n constructor",
+      "elapsed_seconds": 0.014999999999417923,
+      "root_conjecture_verified": false
+    },
+    {
+      "variant": "radix",
+      "n": 5,
+      "degree": 20,
+      "development_permutations": 120,
+      "exact_functional_found": false,
+      "functional": null,
+      "initialization": "Finite development RREF; not a uniform all-n constructor",
+      "elapsed_seconds": 0.09399999999732245,
+      "root_conjecture_verified": false
+    }
+  ],
+  "supporting_fit_count": 6,
+  "dev_root_score": 0.0,
+  "root_obligations_closed": 0,
+  "heldout_runs": 0,
+  "formal_compiler_invocations": 0,
+  "source_freeze": {
+    "node": "n72",
+    "frozen_before_execution": true,
+    "sha256": {
+      "n72-protocol.json": "06860107703805179b0bdc812c46cd784063ab763bf4f7b180614f079566feec",
+      "pole_functional_candidate.py": "d930cca64c50f92ef901122a85671b88c2ce0482108a40d18e43c854a9e687d9"
+    }
+  },
+  "root_conjecture_verified": false,
+  "constraint": "A positive root formula requires a polynomial-size coefficient functional satisfying all permutation identities, plus a charged uniform constructor. Finite RREF fits alone do not establish it."
+}

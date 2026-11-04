@@ -1,0 +1,19 @@
+{
+  "node": "n62",
+  "incident": "premature dependent candidate and concurrent journal number collision",
+  "dependency_session": 66477,
+  "dependency_exit_code": 0,
+  "candidate_session": 38712,
+  "candidate_exit_code": 1,
+  "candidate_error": "unknown module prefix 'DeterminantBridge'",
+  "original_shared_round": 4,
+  "recovered_unique_rounds": [
+    4,
+    5
+  ],
+  "original_metadata_preserved": "n62-compiler-rounds/journal-collision-original.json",
+  "snapshot_preserved": "n62-compiler-rounds/journal-collision-overwritten-snapshot.lean",
+  "constraints_unchanged": true,
+  "candidate_failure_counted": true,
+  "repair": "Exclusive process lock, immutable source-byte digest, sequential completion checks."
+}

@@ -1,0 +1,30 @@
+{
+  "node": "n74",
+  "hypothesis_fixed": true,
+  "candidate_limit": 2,
+  "candidates": [
+    "Context-specific projective Schur/covariance update",
+    "Charged adjugate response restricted to actual suffix row products"
+  ],
+  "parent_material": "n70 variable-frame transport and explicit DR response; n69 contextual prefix sectors read-only",
+  "exact_target": "L(P_n)=per(B); marked substitution and original central coefficient stay unchanged",
+  "root_obligations": [
+    "Explicit uniform scalar initialization from allowed p entries, z and short constants",
+    "Exact updates preserving the actual suffix contraction for every n and rational A",
+    "Exact terminal scalar and polynomial gate/literal-bit/bit-time bounds; full Lean root"
+  ],
+  "metric": "Three complete root obligations closed / three; conditions, formal definitions and small-size fits do not close root",
+  "formal_invocations_allocated": 0,
+  "development": "No evaluation until an initialized explicit complete candidate exists; then freeze executable before positive n=2..5 checks",
+  "test_boundary": "Coordinator-only root boundary remains untouched",
+  "forbidden": [
+    "No unknown prefix/suffix partition function used as input",
+    "No counterexample or lower-bound campaigns",
+    "No free Wick, Pfaffian, derivative, Hadamard, coefficient or variable-division gates",
+    "No assumption of global Gaussian closure",
+    "No full-context preservation advertised if only actual suffix is preserved",
+    "No weakened root quantifiers or altered input marking"
+  ],
+  "note": "Preserving every arbitrary polynomial f(q) was a sufficient helper requirement, not a requirement of Conjecture 1.5. Its relaxation does not resolve initialization.",
+  "root_conjecture_verified": false
+}

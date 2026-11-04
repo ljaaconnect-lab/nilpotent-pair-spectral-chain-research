@@ -1,0 +1,43 @@
+{
+  "node": "n74",
+  "artifact_version": "n74-atomic-suffix-blueprint-v1",
+  "dev_score": null,
+  "root_obligations_discharged": 0,
+  "root_obligations_total": 3,
+  "root_conjecture_verified": false,
+  "eligible_initialized_closed_polynomial_scalar_candidates": 0,
+  "score_reason": "Elementary initialization and first fusion do not initialize or close the required general actual-suffix response",
+  "five_obligations": [
+    {"name": "Initialization", "elementary_status": "explicit m0,M0, marked inputs and first h0/projective M1", "formal_n74_status": "uncompiled", "root_closed": false},
+    {"name": "Column insertion", "elementary_status": "exact known sector identity by square-zero multiplication", "formal_n74_status": "uncompiled; no baseline replay", "root_closed": false},
+    {"name": "Actual suffix reading", "elementary_status": "semantic directional-derivative reader", "construction_status": "K_i and general eta responses not initialized", "root_closed": false},
+    {"name": "Fusion", "elementary_status": "first fusion and exact rank-one scalar constraint", "construction_status": "general charged update satisfying actual reader remains open", "root_closed": false},
+    {"name": "Normalization", "elementary_status": "first pivot and scalar truncated reciprocal compiler", "construction_status": "later pivots and full uniform scalar budget unproved", "root_closed": false}
+  ],
+  "first_effectively_calculable_scalar": "h0=sum_j b_0j, with n-1 additions once inputs are supplied",
+  "first_projective_data_analytical_gates": "2*n",
+  "marked_input_analytical_gates": "2*n^2-1",
+  "first_marked_projective_data_analytical_gates": "2*n^2-1+2*n",
+  "first_response_not_initialized": "K_1(M1), specifically eta_j and eta_jk obtained from actual remaining rows 2,...,n-1",
+  "unknown_response_or_target_used_as_input": false,
+  "new_general_claim_status": "Informal derivations only; no Lean compiler run",
+  "cost_status": "Analytical scalar recipes, not measured DAGs or formally certified costs",
+  "budget": {
+    "candidate_limit": 2,
+    "candidates_preserved": 2,
+    "new_strategies_after_method_change": 0,
+    "complete_candidate_implementations": 0,
+    "sympy_or_numerical_evaluations": 0,
+    "formal_allocation": 0,
+    "Lean_compiles": 0,
+    "Lean_probes": 0,
+    "new_global_cycles_requested": 0
+  },
+  "held_out_reads": 0,
+  "shared_arbor_writes": 0,
+  "output_directory_writes": 0,
+  "counterexample_campaigns": 0,
+  "lower_bound_campaigns": 0,
+  "root_protocol_unchanged": true,
+  "method": "Stopped monolithic search at user steering; isolate exact atomic obligations for coordinator's next Lean window"
+}

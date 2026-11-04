@@ -1,0 +1,11 @@
+{
+  "commit": "3fa7c389ff85ef17640e8241f241849bfd578045",
+  "numeric_full_table_checks": 10,
+  "formal_full_table_checks": 1,
+  "all_triples_of_six_columns_checks": 60,
+  "charged_gate_counts": {
+    "3": 9583,
+    "4": 232378
+  },
+  "all_n_polynomial_fusion_proved": false
+}

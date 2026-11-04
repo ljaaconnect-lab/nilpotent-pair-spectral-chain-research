@@ -1,0 +1,727 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "documents/induction-native-2026-11-03/verify_prefix_induction.py": "c1cd0a0c69e9b5c01b8ae19ed8e71e1ab4223b52b7d7d43c3ff24058bbfbcde3",
+    "documents/composition-native-2026-11-03/compose_native_representatives.py": "2e68d57225c04caddace2d91946cf7c88273a702bbc7833e1f380a253e54d9f4",
+    "etudes/2026-11-01/linearisation-orientee-convolution/linearised_inputs.py": "5c4c61aaacd4aa143f146bdaa64f20ae7fdbfeeac41b207eef87c4c9c7b24ada",
+    "etudes/2026-11-01/linearisation-orientee-convolution/verify_linearised_inputs.py": "b75e7c8c00123b5d1794562f869d95f16afe719373e3ca0d4baa84417645eb04",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/verify_shared_operator_dag.py": "26b8ccc63937921a894d3e272ceaadd4445f19e862f62a3be536bb539d8037e9"
+  },
+  "cases": [
+    {
+      "n": 1,
+      "Q": 97,
+      "N": 2,
+      "omega": 96,
+      "status": "passed",
+      "coefficient_scalar_gates": 4,
+      "coefficient_bound": 9,
+      "rank_checks": [
+        {
+          "rank": 0,
+          "homogeneous_x_degree": 0,
+          "shared_gates_including_all_C": 4,
+          "additional_gates_this_rank": 0,
+          "bound_using_actual_C": 4,
+          "bound_using_C_majorant": 9,
+          "auxiliary_variable_count": 0
+        },
+        {
+          "rank": 1,
+          "homogeneous_x_degree": 1,
+          "shared_gates_including_all_C": 7,
+          "additional_gates_this_rank": 3,
+          "bound_using_actual_C": 8,
+          "bound_using_C_majorant": 13,
+          "auxiliary_variable_count": 2
+        }
+      ],
+      "sample_modes": [
+        "random",
+        "zero_z",
+        "zero_first_row",
+        "zero_last_row",
+        "all_a_zero_z_one",
+        "second_random"
+      ],
+      "totals": {
+        "numeric_instances": 6,
+        "numeric_prefix_identities": 12,
+        "ordinary_prefix_values": 12,
+        "terminal_F0_identities": 12,
+        "formal_z_instances": 1,
+        "formal_z_prefix_identities": 2
+      },
+      "Q_at_most_n_choose_2": false,
+      "allocated_nodes_not_used_as_prefix_gate_count": 20,
+      "prefix_zero_is_one": true,
+      "all_C_preparation_included": true,
+      "future_forms_not_counted": true,
+      "auxiliary_names_unchanged": true,
+      "no_other_variable_leaves": true,
+      "last_prefix_matches_balanced_F0": true,
+      "derivative_calls": 0,
+      "collision_operator_calls": 0
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "status": "passed",
+      "coefficient_scalar_gates": 37,
+      "coefficient_bound": 55,
+      "rank_checks": [
+        {
+          "rank": 0,
+          "homogeneous_x_degree": 0,
+          "shared_gates_including_all_C": 37,
+          "additional_gates_this_rank": 0,
+          "bound_using_actual_C": 37,
+          "bound_using_C_majorant": 55,
+          "auxiliary_variable_count": 0
+        },
+        {
+          "rank": 1,
+          "homogeneous_x_degree": 1,
+          "shared_gates_including_all_C": 44,
+          "additional_gates_this_rank": 7,
+          "bound_using_actual_C": 45,
+          "bound_using_C_majorant": 63,
+          "auxiliary_variable_count": 4
+        },
+        {
+          "rank": 2,
+          "homogeneous_x_degree": 2,
+          "shared_gates_including_all_C": 52,
+          "additional_gates_this_rank": 8,
+          "bound_using_actual_C": 53,
+          "bound_using_C_majorant": 71,
+          "auxiliary_variable_count": 4
+        }
+      ],
+      "sample_modes": [
+        "random",
+        "zero_z",
+        "zero_first_row",
+        "zero_last_row",
+        "all_a_zero_z_one",
+        "second_random"
+      ],
+      "totals": {
+        "numeric_instances": 6,
+        "numeric_prefix_identities": 18,
+        "ordinary_prefix_values": 18,
+        "terminal_F0_identities": 12,
+        "formal_z_instances": 1,
+        "formal_z_prefix_identities": 3
+      },
+      "Q_at_most_n_choose_2": false,
+      "allocated_nodes_not_used_as_prefix_gate_count": 82,
+      "prefix_zero_is_one": true,
+      "all_C_preparation_included": true,
+      "future_forms_not_counted": true,
+      "auxiliary_names_unchanged": true,
+      "no_other_variable_leaves": true,
+      "last_prefix_matches_balanced_F0": true,
+      "derivative_calls": 0,
+      "collision_operator_calls": 0
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "status": "passed",
+      "coefficient_scalar_gates": 77,
+      "coefficient_bound": 95,
+      "rank_checks": [
+        {
+          "rank": 0,
+          "homogeneous_x_degree": 0,
+          "shared_gates_including_all_C": 77,
+          "additional_gates_this_rank": 0,
+          "bound_using_actual_C": 77,
+          "bound_using_C_majorant": 95,
+          "auxiliary_variable_count": 0
+        },
+        {
+          "rank": 1,
+          "homogeneous_x_degree": 1,
+          "shared_gates_including_all_C": 84,
+          "additional_gates_this_rank": 7,
+          "bound_using_actual_C": 85,
+          "bound_using_C_majorant": 103,
+          "auxiliary_variable_count": 4
+        },
+        {
+          "rank": 2,
+          "homogeneous_x_degree": 2,
+          "shared_gates_including_all_C": 92,
+          "additional_gates_this_rank": 8,
+          "bound_using_actual_C": 93,
+          "bound_using_C_majorant": 111,
+          "auxiliary_variable_count": 4
+        },
+        {
+          "rank": 3,
+          "homogeneous_x_degree": 3,
+          "shared_gates_including_all_C": 100,
+          "additional_gates_this_rank": 8,
+          "bound_using_actual_C": 101,
+          "bound_using_C_majorant": 119,
+          "auxiliary_variable_count": 4
+        }
+      ],
+      "sample_modes": [
+        "random",
+        "zero_z",
+        "zero_first_row",
+        "zero_last_row",
+        "all_a_zero_z_one",
+        "second_random"
+      ],
+      "totals": {
+        "numeric_instances": 6,
+        "numeric_prefix_identities": 24,
+        "ordinary_prefix_values": 24,
+        "terminal_F0_identities": 12,
+        "formal_z_instances": 1,
+        "formal_z_prefix_identities": 4
+      },
+      "Q_at_most_n_choose_2": false,
+      "allocated_nodes_not_used_as_prefix_gate_count": 135,
+      "prefix_zero_is_one": true,
+      "all_C_preparation_included": true,
+      "future_forms_not_counted": true,
+      "auxiliary_names_unchanged": true,
+      "no_other_variable_leaves": true,
+      "last_prefix_matches_balanced_F0": true,
+      "derivative_calls": 0,
+      "collision_operator_calls": 0
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "status": "passed",
+      "coefficient_scalar_gates": 211,
+      "coefficient_bound": 287,
+      "rank_checks": [
+        {
+          "rank": 0,
+          "homogeneous_x_degree": 0,
+          "shared_gates_including_all_C": 211,
+          "additional_gates_this_rank": 0,
+          "bound_using_actual_C": 211,
+          "bound_using_C_majorant": 287,
+          "auxiliary_variable_count": 0
+        },
+        {
+          "rank": 1,
+          "homogeneous_x_degree": 1,
+          "shared_gates_including_all_C": 226,
+          "additional_gates_this_rank": 15,
+          "bound_using_actual_C": 227,
+          "bound_using_C_majorant": 303,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 2,
+          "homogeneous_x_degree": 2,
+          "shared_gates_including_all_C": 242,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 243,
+          "bound_using_C_majorant": 319,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 3,
+          "homogeneous_x_degree": 3,
+          "shared_gates_including_all_C": 258,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 259,
+          "bound_using_C_majorant": 335,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 4,
+          "homogeneous_x_degree": 4,
+          "shared_gates_including_all_C": 274,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 275,
+          "bound_using_C_majorant": 351,
+          "auxiliary_variable_count": 8
+        }
+      ],
+      "sample_modes": [
+        "random",
+        "zero_z",
+        "zero_first_row",
+        "zero_last_row",
+        "all_a_zero_z_one",
+        "second_random"
+      ],
+      "totals": {
+        "numeric_instances": 6,
+        "numeric_prefix_identities": 30,
+        "ordinary_prefix_values": 30,
+        "terminal_F0_identities": 12,
+        "formal_z_instances": 0,
+        "formal_z_prefix_identities": 0
+      },
+      "Q_at_most_n_choose_2": false,
+      "allocated_nodes_not_used_as_prefix_gate_count": 344,
+      "prefix_zero_is_one": true,
+      "all_C_preparation_included": true,
+      "future_forms_not_counted": true,
+      "auxiliary_names_unchanged": true,
+      "no_other_variable_leaves": true,
+      "last_prefix_matches_balanced_F0": true,
+      "derivative_calls": 0,
+      "collision_operator_calls": 0
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "status": "passed",
+      "coefficient_scalar_gates": 299,
+      "coefficient_bound": 379,
+      "rank_checks": [
+        {
+          "rank": 0,
+          "homogeneous_x_degree": 0,
+          "shared_gates_including_all_C": 299,
+          "additional_gates_this_rank": 0,
+          "bound_using_actual_C": 299,
+          "bound_using_C_majorant": 379,
+          "auxiliary_variable_count": 0
+        },
+        {
+          "rank": 1,
+          "homogeneous_x_degree": 1,
+          "shared_gates_including_all_C": 314,
+          "additional_gates_this_rank": 15,
+          "bound_using_actual_C": 315,
+          "bound_using_C_majorant": 395,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 2,
+          "homogeneous_x_degree": 2,
+          "shared_gates_including_all_C": 330,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 331,
+          "bound_using_C_majorant": 411,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 3,
+          "homogeneous_x_degree": 3,
+          "shared_gates_including_all_C": 346,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 347,
+          "bound_using_C_majorant": 427,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 4,
+          "homogeneous_x_degree": 4,
+          "shared_gates_including_all_C": 362,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 363,
+          "bound_using_C_majorant": 443,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 5,
+          "homogeneous_x_degree": 5,
+          "shared_gates_including_all_C": 378,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 379,
+          "bound_using_C_majorant": 459,
+          "auxiliary_variable_count": 8
+        }
+      ],
+      "sample_modes": [
+        "random",
+        "zero_z",
+        "zero_first_row",
+        "zero_last_row",
+        "all_a_zero_z_one",
+        "second_random"
+      ],
+      "totals": {
+        "numeric_instances": 6,
+        "numeric_prefix_identities": 36,
+        "ordinary_prefix_values": 36,
+        "terminal_F0_identities": 12,
+        "formal_z_instances": 0,
+        "formal_z_prefix_identities": 0
+      },
+      "Q_at_most_n_choose_2": false,
+      "allocated_nodes_not_used_as_prefix_gate_count": 458,
+      "prefix_zero_is_one": true,
+      "all_C_preparation_included": true,
+      "future_forms_not_counted": true,
+      "auxiliary_names_unchanged": true,
+      "no_other_variable_leaves": true,
+      "last_prefix_matches_balanced_F0": true,
+      "derivative_calls": 0,
+      "collision_operator_calls": 0
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "status": "passed",
+      "coefficient_scalar_gates": 401,
+      "coefficient_bound": 479,
+      "rank_checks": [
+        {
+          "rank": 0,
+          "homogeneous_x_degree": 0,
+          "shared_gates_including_all_C": 401,
+          "additional_gates_this_rank": 0,
+          "bound_using_actual_C": 401,
+          "bound_using_C_majorant": 479,
+          "auxiliary_variable_count": 0
+        },
+        {
+          "rank": 1,
+          "homogeneous_x_degree": 1,
+          "shared_gates_including_all_C": 416,
+          "additional_gates_this_rank": 15,
+          "bound_using_actual_C": 417,
+          "bound_using_C_majorant": 495,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 2,
+          "homogeneous_x_degree": 2,
+          "shared_gates_including_all_C": 432,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 433,
+          "bound_using_C_majorant": 511,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 3,
+          "homogeneous_x_degree": 3,
+          "shared_gates_including_all_C": 448,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 449,
+          "bound_using_C_majorant": 527,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 4,
+          "homogeneous_x_degree": 4,
+          "shared_gates_including_all_C": 464,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 465,
+          "bound_using_C_majorant": 543,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 5,
+          "homogeneous_x_degree": 5,
+          "shared_gates_including_all_C": 480,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 481,
+          "bound_using_C_majorant": 559,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 6,
+          "homogeneous_x_degree": 6,
+          "shared_gates_including_all_C": 496,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 497,
+          "bound_using_C_majorant": 575,
+          "auxiliary_variable_count": 8
+        }
+      ],
+      "sample_modes": [
+        "random",
+        "zero_z",
+        "zero_first_row",
+        "zero_last_row",
+        "all_a_zero_z_one",
+        "second_random"
+      ],
+      "totals": {
+        "numeric_instances": 6,
+        "numeric_prefix_identities": 42,
+        "ordinary_prefix_values": 42,
+        "terminal_F0_identities": 12,
+        "formal_z_instances": 0,
+        "formal_z_prefix_identities": 0
+      },
+      "Q_at_most_n_choose_2": false,
+      "allocated_nodes_not_used_as_prefix_gate_count": 589,
+      "prefix_zero_is_one": true,
+      "all_C_preparation_included": true,
+      "future_forms_not_counted": true,
+      "auxiliary_names_unchanged": true,
+      "no_other_variable_leaves": true,
+      "last_prefix_matches_balanced_F0": true,
+      "derivative_calls": 0,
+      "collision_operator_calls": 0
+    },
+    {
+      "n": 7,
+      "Q": 17,
+      "N": 8,
+      "omega": 2,
+      "status": "passed",
+      "coefficient_scalar_gates": 517,
+      "coefficient_bound": 587,
+      "rank_checks": [
+        {
+          "rank": 0,
+          "homogeneous_x_degree": 0,
+          "shared_gates_including_all_C": 517,
+          "additional_gates_this_rank": 0,
+          "bound_using_actual_C": 517,
+          "bound_using_C_majorant": 587,
+          "auxiliary_variable_count": 0
+        },
+        {
+          "rank": 1,
+          "homogeneous_x_degree": 1,
+          "shared_gates_including_all_C": 532,
+          "additional_gates_this_rank": 15,
+          "bound_using_actual_C": 533,
+          "bound_using_C_majorant": 603,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 2,
+          "homogeneous_x_degree": 2,
+          "shared_gates_including_all_C": 548,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 549,
+          "bound_using_C_majorant": 619,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 3,
+          "homogeneous_x_degree": 3,
+          "shared_gates_including_all_C": 564,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 565,
+          "bound_using_C_majorant": 635,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 4,
+          "homogeneous_x_degree": 4,
+          "shared_gates_including_all_C": 580,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 581,
+          "bound_using_C_majorant": 651,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 5,
+          "homogeneous_x_degree": 5,
+          "shared_gates_including_all_C": 596,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 597,
+          "bound_using_C_majorant": 667,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 6,
+          "homogeneous_x_degree": 6,
+          "shared_gates_including_all_C": 612,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 613,
+          "bound_using_C_majorant": 683,
+          "auxiliary_variable_count": 8
+        },
+        {
+          "rank": 7,
+          "homogeneous_x_degree": 7,
+          "shared_gates_including_all_C": 628,
+          "additional_gates_this_rank": 16,
+          "bound_using_actual_C": 629,
+          "bound_using_C_majorant": 699,
+          "auxiliary_variable_count": 8
+        }
+      ],
+      "sample_modes": [
+        "random",
+        "zero_z",
+        "zero_first_row",
+        "zero_last_row",
+        "all_a_zero_z_one",
+        "second_random"
+      ],
+      "totals": {
+        "numeric_instances": 6,
+        "numeric_prefix_identities": 48,
+        "ordinary_prefix_values": 48,
+        "terminal_F0_identities": 12,
+        "formal_z_instances": 0,
+        "formal_z_prefix_identities": 0
+      },
+      "Q_at_most_n_choose_2": true,
+      "allocated_nodes_not_used_as_prefix_gate_count": 734,
+      "prefix_zero_is_one": true,
+      "all_C_preparation_included": true,
+      "future_forms_not_counted": true,
+      "auxiliary_names_unchanged": true,
+      "no_other_variable_leaves": true,
+      "last_prefix_matches_balanced_F0": true,
+      "derivative_calls": 0,
+      "collision_operator_calls": 0
+    },
+    {
+      "n": 8,
+      "Q": 17,
+      "N": 16,
+      "omega": 3,
+      "status": "passed",
+      "coefficient_scalar_gates": 1095,
+      "coefficient_bound": 1407,
+      "rank_checks": [
+        {
+          "rank": 0,
+          "homogeneous_x_degree": 0,
+          "shared_gates_including_all_C": 1095,
+          "additional_gates_this_rank": 0,
+          "bound_using_actual_C": 1095,
+          "bound_using_C_majorant": 1407,
+          "auxiliary_variable_count": 0
+        },
+        {
+          "rank": 1,
+          "homogeneous_x_degree": 1,
+          "shared_gates_including_all_C": 1126,
+          "additional_gates_this_rank": 31,
+          "bound_using_actual_C": 1127,
+          "bound_using_C_majorant": 1439,
+          "auxiliary_variable_count": 16
+        },
+        {
+          "rank": 2,
+          "homogeneous_x_degree": 2,
+          "shared_gates_including_all_C": 1158,
+          "additional_gates_this_rank": 32,
+          "bound_using_actual_C": 1159,
+          "bound_using_C_majorant": 1471,
+          "auxiliary_variable_count": 16
+        },
+        {
+          "rank": 3,
+          "homogeneous_x_degree": 3,
+          "shared_gates_including_all_C": 1190,
+          "additional_gates_this_rank": 32,
+          "bound_using_actual_C": 1191,
+          "bound_using_C_majorant": 1503,
+          "auxiliary_variable_count": 16
+        },
+        {
+          "rank": 4,
+          "homogeneous_x_degree": 4,
+          "shared_gates_including_all_C": 1222,
+          "additional_gates_this_rank": 32,
+          "bound_using_actual_C": 1223,
+          "bound_using_C_majorant": 1535,
+          "auxiliary_variable_count": 16
+        },
+        {
+          "rank": 5,
+          "homogeneous_x_degree": 5,
+          "shared_gates_including_all_C": 1254,
+          "additional_gates_this_rank": 32,
+          "bound_using_actual_C": 1255,
+          "bound_using_C_majorant": 1567,
+          "auxiliary_variable_count": 16
+        },
+        {
+          "rank": 6,
+          "homogeneous_x_degree": 6,
+          "shared_gates_including_all_C": 1286,
+          "additional_gates_this_rank": 32,
+          "bound_using_actual_C": 1287,
+          "bound_using_C_majorant": 1599,
+          "auxiliary_variable_count": 16
+        },
+        {
+          "rank": 7,
+          "homogeneous_x_degree": 7,
+          "shared_gates_including_all_C": 1318,
+          "additional_gates_this_rank": 32,
+          "bound_using_actual_C": 1319,
+          "bound_using_C_majorant": 1631,
+          "auxiliary_variable_count": 16
+        },
+        {
+          "rank": 8,
+          "homogeneous_x_degree": 8,
+          "shared_gates_including_all_C": 1350,
+          "additional_gates_this_rank": 32,
+          "bound_using_actual_C": 1351,
+          "bound_using_C_majorant": 1663,
+          "auxiliary_variable_count": 16
+        }
+      ],
+      "sample_modes": [
+        "random",
+        "zero_z",
+        "zero_first_row",
+        "zero_last_row",
+        "all_a_zero_z_one",
+        "second_random"
+      ],
+      "totals": {
+        "numeric_instances": 6,
+        "numeric_prefix_identities": 54,
+        "ordinary_prefix_values": 54,
+        "terminal_F0_identities": 12,
+        "formal_z_instances": 0,
+        "formal_z_prefix_identities": 0
+      },
+      "Q_at_most_n_choose_2": true,
+      "allocated_nodes_not_used_as_prefix_gate_count": 1526,
+      "prefix_zero_is_one": true,
+      "all_C_preparation_included": true,
+      "future_forms_not_counted": true,
+      "auxiliary_names_unchanged": true,
+      "no_other_variable_leaves": true,
+      "last_prefix_matches_balanced_F0": true,
+      "derivative_calls": 0,
+      "collision_operator_calls": 0
+    }
+  ],
+  "totals": {
+    "numeric_instances": 48,
+    "numeric_prefix_identities": 264,
+    "ordinary_prefix_values": 264,
+    "terminal_F0_identities": 96,
+    "formal_z_instances": 3,
+    "formal_z_prefix_identities": 9,
+    "structural_rank_checks": 44
+  },
+  "elapsed_seconds": 0.4781257000140613,
+  "prefix_specification": "F_0=1; F_(k+1)=F_k*sum_r C[k,r]*x[-r mod N]",
+  "semantics_checked": "rho_x(F_k)=product of the first k unmodulated native oriented rows",
+  "cost_checked": "reachable gates for all C roots and prefixes through k <= actual_G_C+2*k*N",
+  "uniform_majorant_checked": "G_C_bound+2*k*N <= 18*n^3 for all tested 0<=k<=n",
+  "counting_rule": "shared reachable arithmetic gates only; future forms and spectral nodes excluded",
+  "source_compiler_unchanged": true,
+  "reference_support_tables_only_in_verifier": true,
+  "general_induction_formally_proved_by_this_script": false,
+  "finite_checks_do_not_replace_general_proof": true,
+  "complete_scalar_a_z_only": false,
+  "auxiliary_x_variables_retained": true,
+  "general_polynomial_scalar_amplitude_bound_established": false
+}

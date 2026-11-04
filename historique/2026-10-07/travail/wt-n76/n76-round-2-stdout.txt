@@ -1,0 +1,62 @@
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:70:33: warning: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Finsupp.add_apply, subsetExponent_apply, hju] at hj
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:78:34: warning: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [subsetExponent_apply, hne, Ne.symm hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:78:61: warning: This simp argument is unused:
+  Ne.symm hne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [subsetExponent_apply, Finsupp.single_apply, hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:81:36: warning: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [subsetExponent_apply, hne, Ne.symm hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:81:58: warning: This simp argument is unused:
+  hne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [subsetExponent_apply, Finsupp.single_apply, Ne.symm hne]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:82:36: warning: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [subsetExponent_apply, hlj, hlk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:156:23: warning: `if_true` has been deprecated: Use `ite_true` instead
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:156:32: warning: `if_false` has been deprecated: Use `ite_false` instead
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:156:23: warning: `if_true` has been deprecated: Use `ite_true` instead
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n76\AtomicSecondPrefix.lean:156:32: warning: `if_false` has been deprecated: Use `ite_false` instead
+'AtomicSecondPrefix.B1_distribution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.erase_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.B2_remove_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.seed_is_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.insertion_is_erase' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.pair_exponent_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.table_two_pair_expansion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.table_two_zero_of_card_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.signed_response_eq_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.powerset_pair_indicator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.table_two_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.B3_actual_response' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.complement_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.initialized_diagonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.initialized_totals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AtomicSecondPrefix.B4_initialized_query' depends on axioms: [propext, Classical.choice, Quot.sound]

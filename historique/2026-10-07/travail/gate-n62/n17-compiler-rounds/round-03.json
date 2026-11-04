@@ -1,0 +1,13 @@
+{
+  "node": "n17",
+  "round": 3,
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n17\\GeneralPairing.lean"
+  ],
+  "exit_code": 0,
+  "stdout": "'GeneralCollisionPairing.sign_square' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairing.selectSum_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "sorryAx_present": false,
+  "root_conjecture_verified": false
+}

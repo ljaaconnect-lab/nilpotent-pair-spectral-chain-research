@@ -1,0 +1,8 @@
+{
+  "node": "n17",
+  "variant": "generic Lean.Grind.CommRing R",
+  "source": "GeneralPairingRing.lean",
+  "sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+  "root_conjecture_verified": false,
+  "verified": false
+}

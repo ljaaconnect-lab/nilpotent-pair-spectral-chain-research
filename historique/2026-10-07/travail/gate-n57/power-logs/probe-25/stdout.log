@@ -1,0 +1,32 @@
+'SharedBinaryPower.run_append' depends on axioms: [propext, Quot.sound]
+'SharedBinaryPower.power_add' does not depend on any axioms
+'SharedBinaryPower.positive_plan_correct' depends on axioms: [propext, Quot.sound]
+'SharedBinaryPower.binary_plan_correct' depends on axioms: [propext, Quot.sound]
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerCompiler.lean:95:16: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 0
+  c ≥ 1
+  b ≥ 0
+  a ≥ 0
+  2*a - b ≥ 0
+  2*a - b - d ≤ -3
+where
+ a := ↑(k / 2).log2
+ b := ↑(binaryPlan (k / 2)).length
+ c := ↑k / 2
+ d := ↑[Instruction.square].length
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerCompiler.lean:95:16: error: omega could not prove the goal:
+a possible counterexample may satisfy the constraints
+  d ≥ 1
+  c ≥ 0
+  b ≥ 0
+  a ≥ 0
+  2*a - b ≥ 0
+  2*a - b - c ≤ -3
+where
+ a := ↑(k / 2).log2
+ b := ↑(binaryPlan (k / 2)).length
+ c := ↑[Instruction.square, Instruction.multiplyBase].length
+ d := ↑k / 2
+'SharedBinaryPower.binary_plan_logarithmic' depends on axioms: [propext, sorryAx, Quot.sound]
+'SharedBinaryPower.central_exponent_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,30 @@
+{
+  "node": "n68",
+  "artifact_version": "n68-contextual-closure-search-v1",
+  "parent_protocol": "n68-protocol.json",
+  "additive_scope": "Preserve two analytical transition interfaces and the contextual rank reduction; no change to the root metric or hypothesis",
+  "candidate_limit": 2,
+  "candidate_1": {
+    "name": "contextual-even-moments-through-degree-four",
+    "input_context": "Actual processed product and the complete future product of synchronization factors",
+    "transition": "h*M(I)-b*M(I;U)-a*M(I;V)+M(I;UV), expanded with explicit coefficient products and exterior sorting signs",
+    "missing": "Scalar closure of orders six and eight and all future-factor Ward derivatives from a polynomial initialized state"
+  },
+  "candidate_2": {
+    "name": "row-column-paired-commuting-square-zero-occupation",
+    "generator_model": "xi_i and eta_j are even pairs of odd generators, commute, and have square zero",
+    "transition": "q'(I,J)=q(I,J)+w_ij*q(I-minus-i,J-minus-j) when i in I and j in J",
+    "reference_dimension": "binom(2*n,n)",
+    "missing": "Transport from the original Pfaffian kernels with orientation, polynomial aggregation, and charged terminal extraction"
+  },
+  "supporting_reduction": "F_Q=0 for repeated a-row incidences; otherwise Ktilde and Krow agree entrywise on Q, hence F_Q*(Gtilde_Q-Grow_Q)=0 in every diagonal context",
+  "formal_status": "All new general reductions are informal; no Lean invocation allocated or performed",
+  "eligible_complete_candidate": false,
+  "planned_sympy_checks_after_freeze": [],
+  "reason_for_no_checks": "The fixed metric requires a complete constructive closure; unrelated identity-only checks cannot replace that metric",
+  "score_if_no_complete_candidate": null,
+  "held_out_access": false,
+  "counterexample_search": false,
+  "lower_bound_search": false,
+  "free_moment_or_derivative_gate": false
+}

@@ -1,0 +1,11 @@
+{
+  "node": "n72",
+  "artifact_version": "pole-functional-v1",
+  "dev_score": 0.0,
+  "result": "Six exact development fits for n=2,3; no functional supplied by the three frozen pole grids for n=4,5. No root constructor.",
+  "insight": "Polynomial degree of the rational determinant alone does not supply the sign-correcting coefficient functional; its exact permutation identities and uniform initialization need separate construction.",
+  "branch_ref": "arbor/n72",
+  "root_conjecture_verified": false,
+  "formal_compiler_invocations": 0,
+  "heldout_runs": 0
+}

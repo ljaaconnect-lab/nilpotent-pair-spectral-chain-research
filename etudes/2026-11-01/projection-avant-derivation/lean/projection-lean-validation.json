@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "source": "Projection.lean",
+  "sha256": "8868985171c11b9de068a78efb42c5658d0a92d8050819c61a70b2c5cf570526",
+  "replay_sha256": "4ef7b18a6b24ee62b83f3b0ab74be6a429c7ed496058bba5f855b67c40027601",
+  "dependency": {
+    "original_source": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\Algebra\\Polynomial\\Derivative.lean",
+    "original_source_sha256": "ab04d4335576e18032f8ed2c15f5bea04a9e0f44bcf15e5ac398a78a3056a5bb",
+    "local_module": "LocalPolynomialDerivative",
+    "source_copied_unchanged": true,
+    "rebuilt_during_replay": false,
+    "compiled_artifact_sha256": {
+      "LocalPolynomialDerivative.ir": "b34475bfc21902cae6cbe78b9481ed5973599a119ad7d5443cb4737697709dee",
+      "LocalPolynomialDerivative.ir.sig": "9d07bfb4b5b27244af7e353a51b5dd64b6394aa03283ee467b1c0b7782aa20b2",
+      "LocalPolynomialDerivative.olean": "715bc30ac45085fa565cd86988c704be0cb5d60f236715bab77f9ae27f15449a",
+      "LocalPolynomialDerivative.olean.private": "747fcbb7734538f040339ee4e27d9d3fce44a00b35068fbc569f2450f1c7d20f",
+      "LocalPolynomialDerivative.olean.server": "6d20b48859fc2e5db8d2c416178b5c348b3a9338c8b19c2612e94b5a5c3c19a1"
+    }
+  },
+  "exit_code": 0,
+  "stdout": "'DirectProjection.derivative_at_zero_eq_coeff_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectProjection.derivative_monomial_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "Actual Mathlib formal derivative followed by evaluation at zero extracts coefficient one; general monomial filter over any coefficient semiring",
+  "multivariate_compiler_formalized": false,
+  "spectral_routing_formalized": false,
+  "general_polynomial_closure": false,
+  "general_scalar_circuit_lower_bound": false,
+  "full_chain_formalization": false
+}

@@ -1,0 +1,15 @@
+{
+  "objective": "Construct an exact uniform polynomial scalar source for PA; score finite DAG improvements without equating them to a proof",
+  "metric_direction": "min",
+  "dev_eval": "python evaluate_dev.py",
+  "test_eval": "Coordinator-only fixed independent cases in baseline-gate protocol",
+  "material": ".",
+  "branching": 3,
+  "max_depth": 3,
+  "budget_cycles": 6,
+  "cycles_used": 2,
+  "best_node": "n1",
+  "best_test_score": 1912.0,
+  "best_branch_ref": "e59cbe84958d5d3968f45f5097a8b9150b910dd2",
+  "created_at": 1792815833
+}

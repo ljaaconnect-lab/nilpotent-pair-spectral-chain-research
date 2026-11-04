@@ -1,0 +1,8884 @@
+{
+  "status": "pass",
+  "date": "2026-11-01",
+  "seed": 2026110113,
+  "scope": "Scalar observer component from supplied moments mu_j; NOT initialization from a_ij,z and NOT the whole Z chain.",
+  "general_polynomial_closure_proved": false,
+  "conditional_fusion_and_readout_polynomial": true,
+  "field_requirement": "Q prime and Q > max(2,n*(n-1)/2)",
+  "test_field_primality_checked": true,
+  "bound": "h*(4*h+2) scalar +/* gates, h=n*(n-1)/2; final readout is a wire",
+  "n_one_zero_gate_case_checked": true,
+  "synthetic_monomial_tables_checked": 44,
+  "phase_frequencies_checked": 300,
+  "reference_inverse_ntt_tables_checked": 44,
+  "stage_coordinates_checked": 90252,
+  "no_subset_state_in_component_or_verifier": true,
+  "invalid_field_sizes_rejected": [
+    {
+      "n": 1,
+      "Q": 2
+    },
+    {
+      "n": 3,
+      "Q": 3
+    },
+    {
+      "n": 7,
+      "Q": 17
+    }
+  ],
+  "source_sha256": {
+    "collision_observer.py": "53eb5d5890e2d5d8187928a41fec58de5697e98cb85c3b2dab3a64506432867e",
+    "verify_collision_observer.py": "c9fc8122893734f56455559181fde7fc16fb56f637f65db5307d3cf304e1543a"
+  },
+  "configurations": [
+    {
+      "n": 1,
+      "h": 0,
+      "prime": 17,
+      "N": 2,
+      "root": 16,
+      "state_scalars": 1,
+      "scalar_gates": 0,
+      "gates_per_factor": 0,
+      "scalar_additions": 0,
+      "scalar_multiplications": 0,
+      "chi_integer_coefficients": [
+        0,
+        1
+      ]
+    },
+    {
+      "n": 2,
+      "h": 1,
+      "prime": 17,
+      "N": 4,
+      "root": 13,
+      "state_scalars": 2,
+      "scalar_gates": 6,
+      "gates_per_factor": 6,
+      "scalar_additions": 3,
+      "scalar_multiplications": 3,
+      "chi_integer_coefficients": [
+        0,
+        -1,
+        1
+      ]
+    },
+    {
+      "n": 3,
+      "h": 3,
+      "prime": 17,
+      "N": 4,
+      "root": 13,
+      "state_scalars": 4,
+      "scalar_gates": 42,
+      "gates_per_factor": 14,
+      "scalar_additions": 21,
+      "scalar_multiplications": 21,
+      "chi_integer_coefficients": [
+        0,
+        -6,
+        11,
+        -6,
+        1
+      ]
+    },
+    {
+      "n": 4,
+      "h": 6,
+      "prime": 17,
+      "N": 8,
+      "root": 9,
+      "state_scalars": 7,
+      "scalar_gates": 156,
+      "gates_per_factor": 26,
+      "scalar_additions": 78,
+      "scalar_multiplications": 78,
+      "chi_integer_coefficients": [
+        0,
+        720,
+        -1764,
+        1624,
+        -735,
+        175,
+        -21,
+        1
+      ]
+    },
+    {
+      "n": 5,
+      "h": 10,
+      "prime": 17,
+      "N": 8,
+      "root": 9,
+      "state_scalars": 11,
+      "scalar_gates": 420,
+      "gates_per_factor": 42,
+      "scalar_additions": 210,
+      "scalar_multiplications": 210,
+      "chi_integer_coefficients": [
+        0,
+        3628800,
+        -10628640,
+        12753576,
+        -8409500,
+        3416930,
+        -902055,
+        157773,
+        -18150,
+        1320,
+        -55,
+        1
+      ]
+    },
+    {
+      "n": 6,
+      "h": 15,
+      "prime": 17,
+      "N": 8,
+      "root": 9,
+      "state_scalars": 16,
+      "scalar_gates": 930,
+      "gates_per_factor": 62,
+      "scalar_additions": 465,
+      "scalar_multiplications": 465,
+      "chi_integer_coefficients": [
+        0,
+        -1307674368000,
+        4339163001600,
+        -6165817614720,
+        5056995703824,
+        -2706813345600,
+        1009672107080,
+        -272803210680,
+        54631129553,
+        -8207628000,
+        928095740,
+        -78558480,
+        4899622,
+        -218400,
+        6580,
+        -120,
+        1
+      ]
+    },
+    {
+      "n": 1,
+      "h": 0,
+      "prime": 97,
+      "N": 2,
+      "root": 96,
+      "state_scalars": 1,
+      "scalar_gates": 0,
+      "gates_per_factor": 0,
+      "scalar_additions": 0,
+      "scalar_multiplications": 0,
+      "chi_integer_coefficients": [
+        0,
+        1
+      ]
+    },
+    {
+      "n": 2,
+      "h": 1,
+      "prime": 97,
+      "N": 4,
+      "root": 22,
+      "state_scalars": 2,
+      "scalar_gates": 6,
+      "gates_per_factor": 6,
+      "scalar_additions": 3,
+      "scalar_multiplications": 3,
+      "chi_integer_coefficients": [
+        0,
+        -1,
+        1
+      ]
+    },
+    {
+      "n": 3,
+      "h": 3,
+      "prime": 97,
+      "N": 4,
+      "root": 22,
+      "state_scalars": 4,
+      "scalar_gates": 42,
+      "gates_per_factor": 14,
+      "scalar_additions": 21,
+      "scalar_multiplications": 21,
+      "chi_integer_coefficients": [
+        0,
+        -6,
+        11,
+        -6,
+        1
+      ]
+    },
+    {
+      "n": 4,
+      "h": 6,
+      "prime": 97,
+      "N": 8,
+      "root": 64,
+      "state_scalars": 7,
+      "scalar_gates": 156,
+      "gates_per_factor": 26,
+      "scalar_additions": 78,
+      "scalar_multiplications": 78,
+      "chi_integer_coefficients": [
+        0,
+        720,
+        -1764,
+        1624,
+        -735,
+        175,
+        -21,
+        1
+      ]
+    },
+    {
+      "n": 5,
+      "h": 10,
+      "prime": 97,
+      "N": 8,
+      "root": 64,
+      "state_scalars": 11,
+      "scalar_gates": 420,
+      "gates_per_factor": 42,
+      "scalar_additions": 210,
+      "scalar_multiplications": 210,
+      "chi_integer_coefficients": [
+        0,
+        3628800,
+        -10628640,
+        12753576,
+        -8409500,
+        3416930,
+        -902055,
+        157773,
+        -18150,
+        1320,
+        -55,
+        1
+      ]
+    },
+    {
+      "n": 6,
+      "h": 15,
+      "prime": 97,
+      "N": 8,
+      "root": 64,
+      "state_scalars": 16,
+      "scalar_gates": 930,
+      "gates_per_factor": 62,
+      "scalar_additions": 465,
+      "scalar_multiplications": 465,
+      "chi_integer_coefficients": [
+        0,
+        -1307674368000,
+        4339163001600,
+        -6165817614720,
+        5056995703824,
+        -2706813345600,
+        1009672107080,
+        -272803210680,
+        54631129553,
+        -8207628000,
+        928095740,
+        -78558480,
+        4899622,
+        -218400,
+        6580,
+        -120,
+        1
+      ]
+    },
+    {
+      "n": 7,
+      "h": 21,
+      "prime": 97,
+      "N": 8,
+      "root": 64,
+      "state_scalars": 22,
+      "scalar_gates": 1806,
+      "gates_per_factor": 86,
+      "scalar_additions": 903,
+      "scalar_multiplications": 903,
+      "chi_integer_coefficients": [
+        0,
+        -51090942171709440000,
+        186244810780170240000,
+        -298631902863216384000,
+        284093315901811468800,
+        -181664979520697076096,
+        83637381699544802976,
+        -28939583397335447760,
+        7744654310169576800,
+        -1634980697246583456,
+        276019109275035346,
+        -37600535086859745,
+        4154823851430525,
+        -373100999802531,
+        27188611869881,
+        -1599718388730,
+        75289668850,
+        -2792167686,
+        79721796,
+        -1689765,
+        25025,
+        -231,
+        1
+      ]
+    },
+    {
+      "n": 8,
+      "h": 28,
+      "prime": 97,
+      "N": 16,
+      "root": 8,
+      "state_scalars": 29,
+      "scalar_gates": 3192,
+      "gates_per_factor": 114,
+      "scalar_additions": 1596,
+      "scalar_multiplications": 1596,
+      "chi_integer_coefficients": [
+        0,
+        304888344611713860501504000000,
+        -1197348677077520393310044160000,
+        2105684281550279072336117760000,
+        -2236045380156380112643362816000,
+        1625014498326371300452283596800,
+        -866422974395414742142363398144,
+        354237722035840197377888292864,
+        -114481515057741551880042390144,
+        29891934088703915048808047424,
+        -6409259592413089839517170080,
+        1142413073615783087483702480,
+        -170857232541629621904997080,
+        21590257290787088602515180,
+        -2316762871029690607422990,
+        211821088794711294496815,
+        -16532187926098943672490,
+        1101911578045922391915,
+        -62656135265695354110,
+        3031400077459516035,
+        -124243455209483610,
+        4285624815406935,
+        -123268226851770,
+        2918785153245,
+        -55880640270,
+        843041745,
+        -9642906,
+        78561,
+        -406,
+        1
+      ]
+    },
+    {
+      "n": 1,
+      "h": 0,
+      "prime": 998244353,
+      "N": 2,
+      "root": 998244352,
+      "state_scalars": 1,
+      "scalar_gates": 0,
+      "gates_per_factor": 0,
+      "scalar_additions": 0,
+      "scalar_multiplications": 0,
+      "chi_integer_coefficients": [
+        0,
+        1
+      ]
+    },
+    {
+      "n": 2,
+      "h": 1,
+      "prime": 998244353,
+      "N": 4,
+      "root": 911660635,
+      "state_scalars": 2,
+      "scalar_gates": 6,
+      "gates_per_factor": 6,
+      "scalar_additions": 3,
+      "scalar_multiplications": 3,
+      "chi_integer_coefficients": [
+        0,
+        -1,
+        1
+      ]
+    },
+    {
+      "n": 3,
+      "h": 3,
+      "prime": 998244353,
+      "N": 4,
+      "root": 911660635,
+      "state_scalars": 4,
+      "scalar_gates": 42,
+      "gates_per_factor": 14,
+      "scalar_additions": 21,
+      "scalar_multiplications": 21,
+      "chi_integer_coefficients": [
+        0,
+        -6,
+        11,
+        -6,
+        1
+      ]
+    },
+    {
+      "n": 4,
+      "h": 6,
+      "prime": 998244353,
+      "N": 8,
+      "root": 372528824,
+      "state_scalars": 7,
+      "scalar_gates": 156,
+      "gates_per_factor": 26,
+      "scalar_additions": 78,
+      "scalar_multiplications": 78,
+      "chi_integer_coefficients": [
+        0,
+        720,
+        -1764,
+        1624,
+        -735,
+        175,
+        -21,
+        1
+      ]
+    },
+    {
+      "n": 5,
+      "h": 10,
+      "prime": 998244353,
+      "N": 8,
+      "root": 372528824,
+      "state_scalars": 11,
+      "scalar_gates": 420,
+      "gates_per_factor": 42,
+      "scalar_additions": 210,
+      "scalar_multiplications": 210,
+      "chi_integer_coefficients": [
+        0,
+        3628800,
+        -10628640,
+        12753576,
+        -8409500,
+        3416930,
+        -902055,
+        157773,
+        -18150,
+        1320,
+        -55,
+        1
+      ]
+    },
+    {
+      "n": 6,
+      "h": 15,
+      "prime": 998244353,
+      "N": 8,
+      "root": 372528824,
+      "state_scalars": 16,
+      "scalar_gates": 930,
+      "gates_per_factor": 62,
+      "scalar_additions": 465,
+      "scalar_multiplications": 465,
+      "chi_integer_coefficients": [
+        0,
+        -1307674368000,
+        4339163001600,
+        -6165817614720,
+        5056995703824,
+        -2706813345600,
+        1009672107080,
+        -272803210680,
+        54631129553,
+        -8207628000,
+        928095740,
+        -78558480,
+        4899622,
+        -218400,
+        6580,
+        -120,
+        1
+      ]
+    },
+    {
+      "n": 7,
+      "h": 21,
+      "prime": 998244353,
+      "N": 8,
+      "root": 372528824,
+      "state_scalars": 22,
+      "scalar_gates": 1806,
+      "gates_per_factor": 86,
+      "scalar_additions": 903,
+      "scalar_multiplications": 903,
+      "chi_integer_coefficients": [
+        0,
+        -51090942171709440000,
+        186244810780170240000,
+        -298631902863216384000,
+        284093315901811468800,
+        -181664979520697076096,
+        83637381699544802976,
+        -28939583397335447760,
+        7744654310169576800,
+        -1634980697246583456,
+        276019109275035346,
+        -37600535086859745,
+        4154823851430525,
+        -373100999802531,
+        27188611869881,
+        -1599718388730,
+        75289668850,
+        -2792167686,
+        79721796,
+        -1689765,
+        25025,
+        -231,
+        1
+      ]
+    },
+    {
+      "n": 8,
+      "h": 28,
+      "prime": 998244353,
+      "N": 16,
+      "root": 929031873,
+      "state_scalars": 29,
+      "scalar_gates": 3192,
+      "gates_per_factor": 114,
+      "scalar_additions": 1596,
+      "scalar_multiplications": 1596,
+      "chi_integer_coefficients": [
+        0,
+        304888344611713860501504000000,
+        -1197348677077520393310044160000,
+        2105684281550279072336117760000,
+        -2236045380156380112643362816000,
+        1625014498326371300452283596800,
+        -866422974395414742142363398144,
+        354237722035840197377888292864,
+        -114481515057741551880042390144,
+        29891934088703915048808047424,
+        -6409259592413089839517170080,
+        1142413073615783087483702480,
+        -170857232541629621904997080,
+        21590257290787088602515180,
+        -2316762871029690607422990,
+        211821088794711294496815,
+        -16532187926098943672490,
+        1101911578045922391915,
+        -62656135265695354110,
+        3031400077459516035,
+        -124243455209483610,
+        4285624815406935,
+        -123268226851770,
+        2918785153245,
+        -55880640270,
+        843041745,
+        -9642906,
+        78561,
+        -406,
+        1
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "n": 1,
+      "prime": 17,
+      "mixture_id": 0,
+      "labels": [
+        2
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 11,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 2,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 11,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 3,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 6,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 10,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 3,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 4,
+          "powers": [
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        4,
+        4
+      ],
+      "reference_inverse_ntt_channels": [
+        4,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 1,
+      "prime": 17,
+      "mixture_id": 1,
+      "labels": [
+        4
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 3,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 16,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 11,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 10,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 16,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 16,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 6,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 2,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        1
+      ],
+      "reference_inverse_ntt_channels": [
+        1,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 2,
+      "prime": 17,
+      "mixture_id": 0,
+      "labels": [
+        0,
+        6
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 3,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 4,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 11,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 10,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        3,
+        14,
+        3,
+        14
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        3,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 2,
+      "prime": 17,
+      "mixture_id": 1,
+      "labels": [
+        10,
+        4
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 11,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 11,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 4,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 11,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 3,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 14,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 10,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 16,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 14,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            2,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        5,
+        12,
+        5,
+        12
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        5,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 3,
+      "prime": 17,
+      "mixture_id": 0,
+      "labels": [
+        8,
+        8,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 7,
+          "powers": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": 16,
+          "powers": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 3,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 11,
+          "powers": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 4,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 3,
+          "powers": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 1,
+          "powers": [
+            0,
+            2,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "reference_inverse_ntt_channels": [
+        8,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 3,
+      "prime": 17,
+      "mixture_id": 1,
+      "labels": [
+        4,
+        4,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 6,
+          "powers": [
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": 1,
+          "powers": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 14,
+          "powers": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 4,
+          "powers": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 7,
+          "powers": [
+            2,
+            1,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        16,
+        16,
+        16,
+        16
+      ],
+      "reference_inverse_ntt_channels": [
+        16,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 4,
+      "prime": 17,
+      "mixture_id": 0,
+      "labels": [
+        8,
+        8,
+        10,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 16,
+          "powers": [
+            4,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 1,
+          "powers": [
+            0,
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            2,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 14,
+          "powers": [
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            1,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            2,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            2,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            1,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            1,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 4,
+          "powers": [
+            1,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 6,
+          "powers": [
+            1,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 7,
+          "powers": [
+            1,
+            1,
+            2,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        13,
+        16,
+        4,
+        1,
+        13,
+        16,
+        4
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 4,
+      "prime": 17,
+      "mixture_id": 1,
+      "labels": [
+        23,
+        23,
+        1,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            4,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            1,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            2,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            1,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 14,
+          "powers": [
+            0,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            0,
+            1,
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": 1,
+          "powers": [
+            2,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 10,
+          "powers": [
+            2,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            1,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 3,
+          "powers": [
+            2,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            1,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 2,
+          "powers": [
+            1,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 16,
+          "powers": [
+            0,
+            1,
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": 7,
+          "powers": [
+            1,
+            2,
+            1,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        15,
+        13,
+        9
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 5,
+      "prime": 17,
+      "mixture_id": 0,
+      "labels": [
+        17,
+        17,
+        12,
+        1,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 3,
+          "powers": [
+            2,
+            1,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 3,
+          "powers": [
+            0,
+            1,
+            3,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 7,
+          "powers": [
+            0,
+            1,
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            0,
+            4,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 16,
+          "powers": [
+            3,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 4,
+          "powers": [
+            1,
+            0,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 6,
+          "powers": [
+            0,
+            3,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            1,
+            2,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 14,
+          "powers": [
+            1,
+            0,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 7,
+          "powers": [
+            0,
+            3,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 1,
+          "powers": [
+            3,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 4,
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            5
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            1,
+            1,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 1,
+          "powers": [
+            2,
+            0,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            1,
+            1,
+            0,
+            2,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        15,
+        13,
+        9
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 5,
+      "prime": 17,
+      "mixture_id": 1,
+      "labels": [
+        14,
+        14,
+        0,
+        2,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 16,
+          "powers": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            0,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            2,
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 3,
+          "powers": [
+            0,
+            2,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            0,
+            2,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": 16,
+          "powers": [
+            0,
+            1,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 10,
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 6,
+          "powers": [
+            0,
+            2,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            0,
+            1,
+            0,
+            3,
+            1
+          ]
+        },
+        {
+          "coefficient": 2,
+          "powers": [
+            1,
+            2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            0,
+            2,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 1,
+          "powers": [
+            0,
+            1,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 11,
+          "powers": [
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 2,
+          "powers": [
+            2,
+            0,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 16,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 6,
+      "prime": 17,
+      "mixture_id": 0,
+      "labels": [
+        5,
+        5,
+        7,
+        12,
+        17,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            6,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            1,
+            2,
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 11,
+          "powers": [
+            0,
+            2,
+            0,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 3,
+          "powers": [
+            0,
+            0,
+            1,
+            3,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            3,
+            0,
+            0,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            3,
+            1,
+            0,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            0,
+            1,
+            2,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            0,
+            0,
+            1,
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 6,
+          "powers": [
+            1,
+            1,
+            0,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 7,
+          "powers": [
+            0,
+            1,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            0,
+            1,
+            3,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 1,
+          "powers": [
+            0,
+            1,
+            0,
+            3,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            1,
+            1,
+            1,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 1,
+          "powers": [
+            3,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            2,
+            2,
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 4,
+          "powers": [
+            0,
+            0,
+            1,
+            0,
+            3,
+            2
+          ]
+        },
+        {
+          "coefficient": 7,
+          "powers": [
+            2,
+            2,
+            1,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        4,
+        16,
+        13,
+        1,
+        4,
+        16,
+        13
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 6,
+      "prime": 17,
+      "mixture_id": 1,
+      "labels": [
+        18,
+        18,
+        4,
+        2,
+        7,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 16,
+          "powers": [
+            6,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            1,
+            0,
+            1,
+            3,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            0,
+            3,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            1,
+            1,
+            1,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 10,
+          "powers": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            0,
+            3,
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 1,
+          "powers": [
+            0,
+            1,
+            0,
+            3,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 14,
+          "powers": [
+            0,
+            2,
+            2,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 6,
+          "powers": [
+            1,
+            0,
+            0,
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 4,
+          "powers": [
+            0,
+            1,
+            2,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 6,
+          "powers": [
+            0,
+            0,
+            2,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            1,
+            3,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 4,
+          "powers": [
+            1,
+            3,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            0,
+            2,
+            1,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            0,
+            1,
+            3,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 2,
+          "powers": [
+            1,
+            2,
+            0,
+            1,
+            0,
+            2
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        9,
+        13,
+        15,
+        16,
+        8,
+        4,
+        2
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 1,
+      "prime": 97,
+      "mixture_id": 0,
+      "labels": [
+        5
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 60,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 7,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 96,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 94,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 49,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 72,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 60,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 40,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 95,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 68,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 28,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 90,
+          "powers": [
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        81,
+        16
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        81
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 1,
+      "prime": 97,
+      "mixture_id": 1,
+      "labels": [
+        1
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 93,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 54,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 54,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 32,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 4,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 79,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 90,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 87,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 7,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 65,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 42,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        38,
+        59
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        38
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 2,
+      "prime": 97,
+      "mixture_id": 0,
+      "labels": [
+        8,
+        9
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 50,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 93,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 34,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 50,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 34,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 85,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 23,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 41,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 96,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 2,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 91,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 21,
+          "powers": [
+            1,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        30,
+        78,
+        67,
+        19
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        30,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 2,
+      "prime": 97,
+      "mixture_id": 1,
+      "labels": [
+        3,
+        2
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 79,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 81,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 38,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 43,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 84,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 20,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 34,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 17,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 90,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 55,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 74,
+          "powers": [
+            0,
+            2
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        87,
+        71,
+        10,
+        26
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        87,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 3,
+      "prime": 97,
+      "mixture_id": 0,
+      "labels": [
+        1,
+        1,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 90,
+          "powers": [
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 67,
+          "powers": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 79,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 58,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 71,
+          "powers": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 81,
+          "powers": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 81,
+          "powers": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 11,
+          "powers": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 7,
+          "powers": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 64,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 26,
+          "powers": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 47,
+          "powers": [
+            1,
+            2,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        8,
+        89,
+        8,
+        89
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        8,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 3,
+      "prime": 97,
+      "mixture_id": 1,
+      "labels": [
+        2,
+        2,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 40,
+          "powers": [
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 64,
+          "powers": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 21,
+          "powers": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 43,
+          "powers": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 42,
+          "powers": [
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": 29,
+          "powers": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 78,
+          "powers": [
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 79,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 92,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 61,
+          "powers": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 21,
+          "powers": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 79,
+          "powers": [
+            0,
+            2,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        90,
+        90,
+        90,
+        90
+      ],
+      "reference_inverse_ntt_channels": [
+        90,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 4,
+      "prime": 97,
+      "mixture_id": 0,
+      "labels": [
+        0,
+        0,
+        7,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 43,
+          "powers": [
+            4,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 49,
+          "powers": [
+            0,
+            3,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 91,
+          "powers": [
+            1,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 36,
+          "powers": [
+            2,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 55,
+          "powers": [
+            1,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 29,
+          "powers": [
+            0,
+            3,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 64,
+          "powers": [
+            3,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 41,
+          "powers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 52,
+          "powers": [
+            0,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 25,
+          "powers": [
+            2,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 27,
+          "powers": [
+            0,
+            3,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 31,
+          "powers": [
+            2,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 39,
+          "powers": [
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 73,
+          "powers": [
+            3,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 85,
+          "powers": [
+            2,
+            1,
+            0,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        42,
+        34,
+        46,
+        28,
+        55,
+        63,
+        51,
+        69
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        42
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 4,
+      "prime": 97,
+      "mixture_id": 1,
+      "labels": [
+        20,
+        20,
+        9,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            4,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 28,
+          "powers": [
+            0,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 56,
+          "powers": [
+            1,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 42,
+          "powers": [
+            1,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 1,
+          "powers": [
+            0,
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "coefficient": 67,
+          "powers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 78,
+          "powers": [
+            2,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 3,
+          "powers": [
+            0,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 72,
+          "powers": [
+            1,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 51,
+          "powers": [
+            1,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 53,
+          "powers": [
+            2,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 86,
+          "powers": [
+            2,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 51,
+          "powers": [
+            0,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            0,
+            1,
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": 59,
+          "powers": [
+            1,
+            2,
+            1,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        68,
+        84,
+        41,
+        5,
+        29,
+        13,
+        56,
+        92
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        68,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 5,
+      "prime": 97,
+      "mixture_id": 0,
+      "labels": [
+        12,
+        12,
+        13,
+        11,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 19,
+          "powers": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 62,
+          "powers": [
+            1,
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 53,
+          "powers": [
+            1,
+            1,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 72,
+          "powers": [
+            2,
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 33,
+          "powers": [
+            1,
+            1,
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": 74,
+          "powers": [
+            2,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 50,
+          "powers": [
+            0,
+            0,
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 66,
+          "powers": [
+            0,
+            1,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 59,
+          "powers": [
+            1,
+            0,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 11,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 30,
+          "powers": [
+            2,
+            2,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 10,
+          "powers": [
+            1,
+            1,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 58,
+          "powers": [
+            2,
+            0,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 26,
+          "powers": [
+            0,
+            1,
+            1,
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": 90,
+          "powers": [
+            2,
+            0,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 32,
+          "powers": [
+            0,
+            2,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "reference_inverse_ntt_channels": [
+        12,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 5,
+      "prime": 97,
+      "mixture_id": 1,
+      "labels": [
+        18,
+        18,
+        1,
+        6,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 27,
+          "powers": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 30,
+          "powers": [
+            2,
+            1,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 43,
+          "powers": [
+            1,
+            0,
+            3,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 49,
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 70,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 11,
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 56,
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": 68,
+          "powers": [
+            1,
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 2,
+          "powers": [
+            2,
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 10,
+          "powers": [
+            2,
+            2,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 41,
+          "powers": [
+            0,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            2,
+            0,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 47,
+          "powers": [
+            0,
+            2,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 36,
+          "powers": [
+            2,
+            2,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 42,
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 19,
+          "powers": [
+            0,
+            1,
+            2,
+            0,
+            2
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        71,
+        58,
+        87,
+        82,
+        26,
+        39,
+        10,
+        15
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        71,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 6,
+      "prime": 97,
+      "mixture_id": 0,
+      "labels": [
+        2,
+        2,
+        7,
+        6,
+        19,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 94,
+          "powers": [
+            6,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 61,
+          "powers": [
+            0,
+            0,
+            1,
+            0,
+            3,
+            2
+          ]
+        },
+        {
+          "coefficient": 85,
+          "powers": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 74,
+          "powers": [
+            2,
+            0,
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 14,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 25,
+          "powers": [
+            2,
+            1,
+            0,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 73,
+          "powers": [
+            1,
+            0,
+            1,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 75,
+          "powers": [
+            0,
+            0,
+            1,
+            1,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 10,
+          "powers": [
+            3,
+            1,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 40,
+          "powers": [
+            1,
+            1,
+            1,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 54,
+          "powers": [
+            3,
+            2,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 32,
+          "powers": [
+            1,
+            2,
+            0,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            0,
+            3,
+            0,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 35,
+          "powers": [
+            2,
+            2,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            1,
+            1,
+            0,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 91,
+          "powers": [
+            2,
+            1,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 20,
+          "powers": [
+            2,
+            2,
+            1,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        15,
+        82,
+        15,
+        82,
+        15,
+        82,
+        15,
+        82
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        15,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 6,
+      "prime": 97,
+      "mixture_id": 1,
+      "labels": [
+        9,
+        9,
+        15,
+        13,
+        16,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 50,
+          "powers": [
+            6,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 5,
+          "powers": [
+            0,
+            2,
+            3,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 4,
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 51,
+          "powers": [
+            0,
+            0,
+            3,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 36,
+          "powers": [
+            3,
+            1,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 26,
+          "powers": [
+            0,
+            2,
+            0,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 88,
+          "powers": [
+            0,
+            2,
+            0,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 37,
+          "powers": [
+            0,
+            0,
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            1,
+            1,
+            2,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 47,
+          "powers": [
+            0,
+            1,
+            3,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 26,
+          "powers": [
+            1,
+            2,
+            1,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 71,
+          "powers": [
+            1,
+            2,
+            2,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 64,
+          "powers": [
+            0,
+            1,
+            1,
+            3,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 6,
+          "powers": [
+            0,
+            3,
+            0,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 15,
+          "powers": [
+            0,
+            0,
+            0,
+            3,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 80,
+          "powers": [
+            2,
+            1,
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 95,
+          "powers": [
+            2,
+            0,
+            1,
+            1,
+            0,
+            2
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        75,
+        96,
+        22,
+        1,
+        75,
+        96,
+        22
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 7,
+      "prime": 97,
+      "mixture_id": 0,
+      "labels": [
+        11,
+        11,
+        15,
+        8,
+        1,
+        0,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 46,
+          "powers": [
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 73,
+          "powers": [
+            2,
+            0,
+            2,
+            1,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 53,
+          "powers": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 31,
+          "powers": [
+            2,
+            0,
+            2,
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 79,
+          "powers": [
+            3,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 24,
+          "powers": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 73,
+          "powers": [
+            1,
+            1,
+            1,
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 11,
+          "powers": [
+            1,
+            0,
+            3,
+            2,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 57,
+          "powers": [
+            0,
+            0,
+            1,
+            3,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 6,
+          "powers": [
+            0,
+            0,
+            2,
+            0,
+            1,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 32,
+          "powers": [
+            0,
+            1,
+            3,
+            0,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 86,
+          "powers": [
+            1,
+            0,
+            1,
+            2,
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": 14,
+          "powers": [
+            2,
+            1,
+            0,
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 31,
+          "powers": [
+            1,
+            1,
+            2,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 42,
+          "powers": [
+            2,
+            0,
+            1,
+            0,
+            3,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 51,
+          "powers": [
+            1,
+            2,
+            1,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 33,
+          "powers": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 8,
+          "powers": [
+            2,
+            1,
+            1,
+            0,
+            1,
+            0,
+            2
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        75,
+        96,
+        22,
+        1,
+        75,
+        96,
+        22
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 7,
+      "prime": 97,
+      "mixture_id": 1,
+      "labels": [
+        8,
+        8,
+        5,
+        19,
+        13,
+        21,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 86,
+          "powers": [
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 71,
+          "powers": [
+            1,
+            1,
+            0,
+            2,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 23,
+          "powers": [
+            0,
+            2,
+            1,
+            1,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 80,
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 59,
+          "powers": [
+            0,
+            1,
+            3,
+            1,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 73,
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 83,
+          "powers": [
+            1,
+            1,
+            2,
+            0,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 93,
+          "powers": [
+            3,
+            2,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 41,
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            1,
+            3,
+            1
+          ]
+        },
+        {
+          "coefficient": 59,
+          "powers": [
+            2,
+            2,
+            2,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 34,
+          "powers": [
+            1,
+            1,
+            2,
+            0,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 93,
+          "powers": [
+            1,
+            2,
+            2,
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 83,
+          "powers": [
+            2,
+            1,
+            0,
+            0,
+            0,
+            3,
+            1
+          ]
+        },
+        {
+          "coefficient": 92,
+          "powers": [
+            0,
+            0,
+            1,
+            2,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 76,
+          "powers": [
+            1,
+            2,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 20,
+          "powers": [
+            2,
+            0,
+            0,
+            3,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 26,
+          "powers": [
+            3,
+            0,
+            0,
+            1,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 58,
+          "powers": [
+            0,
+            2,
+            0,
+            0,
+            3,
+            2,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        22,
+        96,
+        75,
+        1,
+        22,
+        96,
+        75
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 8,
+      "prime": 97,
+      "mixture_id": 0,
+      "labels": [
+        10,
+        10,
+        27,
+        9,
+        13,
+        22,
+        11,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 96,
+          "powers": [
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 20,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 47,
+          "powers": [
+            1,
+            0,
+            1,
+            2,
+            0,
+            0,
+            0,
+            4
+          ]
+        },
+        {
+          "coefficient": 60,
+          "powers": [
+            0,
+            1,
+            1,
+            1,
+            2,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 86,
+          "powers": [
+            0,
+            3,
+            0,
+            1,
+            2,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            2,
+            0,
+            0,
+            1,
+            1,
+            0,
+            3,
+            1
+          ]
+        },
+        {
+          "coefficient": 13,
+          "powers": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 49,
+          "powers": [
+            1,
+            0,
+            2,
+            0,
+            0,
+            0,
+            3,
+            2
+          ]
+        },
+        {
+          "coefficient": 85,
+          "powers": [
+            1,
+            0,
+            1,
+            4,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 50,
+          "powers": [
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            3,
+            1
+          ]
+        },
+        {
+          "coefficient": 92,
+          "powers": [
+            0,
+            2,
+            1,
+            0,
+            1,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 70,
+          "powers": [
+            2,
+            0,
+            2,
+            1,
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": 48,
+          "powers": [
+            0,
+            0,
+            2,
+            1,
+            0,
+            2,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 75,
+          "powers": [
+            1,
+            3,
+            0,
+            0,
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 90,
+          "powers": [
+            0,
+            2,
+            2,
+            2,
+            0,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 38,
+          "powers": [
+            1,
+            1,
+            2,
+            1,
+            1,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 9,
+          "powers": [
+            0,
+            1,
+            2,
+            4,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 90,
+          "powers": [
+            1,
+            0,
+            0,
+            4,
+            1,
+            1,
+            0,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        50,
+        75,
+        64,
+        96,
+        47,
+        22,
+        33,
+        1,
+        50,
+        75,
+        64,
+        96,
+        47,
+        22,
+        33
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 8,
+      "prime": 97,
+      "mixture_id": 1,
+      "labels": [
+        9,
+        9,
+        14,
+        9,
+        47,
+        3,
+        5,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 25,
+          "powers": [
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 50,
+          "powers": [
+            0,
+            1,
+            1,
+            0,
+            5,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 46,
+          "powers": [
+            0,
+            0,
+            2,
+            2,
+            2,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 93,
+          "powers": [
+            2,
+            1,
+            2,
+            1,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 25,
+          "powers": [
+            2,
+            0,
+            2,
+            0,
+            2,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 56,
+          "powers": [
+            1,
+            0,
+            2,
+            0,
+            2,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 2,
+          "powers": [
+            1,
+            1,
+            1,
+            3,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 19,
+          "powers": [
+            0,
+            0,
+            2,
+            2,
+            1,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 72,
+          "powers": [
+            0,
+            3,
+            1,
+            0,
+            0,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 23,
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            0,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 93,
+          "powers": [
+            0,
+            2,
+            0,
+            1,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 55,
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0,
+            3,
+            2
+          ]
+        },
+        {
+          "coefficient": 94,
+          "powers": [
+            2,
+            2,
+            1,
+            0,
+            1,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 77,
+          "powers": [
+            1,
+            2,
+            0,
+            2,
+            0,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 12,
+          "powers": [
+            2,
+            0,
+            0,
+            3,
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 63,
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            1,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 33,
+          "powers": [
+            1,
+            2,
+            0,
+            0,
+            1,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 21,
+          "powers": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "coefficient": 83,
+          "powers": [
+            2,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "reference_inverse_ntt_channels": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 1,
+      "prime": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        1
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 491841138,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 636335567,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 163948173,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 265408474,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 133536755,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 422585036,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 747260390,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 904206704,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 451950078,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 433032311,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 472707585,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 337121686,
+          "powers": [
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        468712133,
+        529532220
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        468712133
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 1,
+      "prime": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        1
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 325729839,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 339124105,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 832421292,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 99326606,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 713915040,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 12728066,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 842961287,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 892844642,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 256876907,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 436240076,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 731833906,
+          "powers": [
+            1
+          ]
+        },
+        {
+          "coefficient": 343125175,
+          "powers": [
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        835905177,
+        162339176
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        835905177
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 2,
+      "prime": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        1,
+        9
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 11836074,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 389674826,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 805061444,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 963850888,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 317304231,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 835501124,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 512331618,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 246129187,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 231675813,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 188946763,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 266459764,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 268143298,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 362355173,
+          "powers": [
+            0,
+            2
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        700890938,
+        297353415,
+        700890938,
+        297353415
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        700890938,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 2,
+      "prime": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        9,
+        9
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 444927891,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 914893974,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 883071801,
+          "powers": [
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 419378609,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 166822294,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 725250114,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 654310742,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 35575469,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 112823307,
+          "powers": [
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 82223790,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 408238528,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 41325310,
+          "powers": [
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 963338521,
+          "powers": [
+            1,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        418379940,
+        579864413,
+        418379940,
+        579864413
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        418379940,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 3,
+      "prime": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        6,
+        6,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 393980930,
+          "powers": [
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 636370231,
+          "powers": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 575721825,
+          "powers": [
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": 631873697,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 820279883,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 985033880,
+          "powers": [
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 216531467,
+          "powers": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 410949204,
+          "powers": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 43082339,
+          "powers": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 487848794,
+          "powers": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 917901452,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 71022199,
+          "powers": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 136239716,
+          "powers": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 1777370,
+          "powers": [
+            2,
+            0,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        373566327,
+        373566327,
+        373566327,
+        373566327
+      ],
+      "reference_inverse_ntt_channels": [
+        373566327,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 3,
+      "prime": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        8,
+        8,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 271651814,
+          "powers": [
+            3,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 196214001,
+          "powers": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 754223314,
+          "powers": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 318877367,
+          "powers": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 170093121,
+          "powers": [
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 660454329,
+          "powers": [
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 373035827,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 585781348,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 548103629,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 210173766,
+          "powers": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 788014868,
+          "powers": [
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 623497882,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 597534651,
+          "powers": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 169525787,
+          "powers": [
+            2,
+            0,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        731464632,
+        731464632,
+        731464632,
+        731464632
+      ],
+      "reference_inverse_ntt_channels": [
+        731464632,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 4,
+      "prime": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        10,
+        10,
+        12,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 64201213,
+          "powers": [
+            4,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 80852556,
+          "powers": [
+            0,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 655956426,
+          "powers": [
+            0,
+            0,
+            3,
+            1
+          ]
+        },
+        {
+          "coefficient": 242621100,
+          "powers": [
+            1,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 942037534,
+          "powers": [
+            2,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 97858232,
+          "powers": [
+            1,
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": 938334834,
+          "powers": [
+            2,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 265253351,
+          "powers": [
+            0,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 75159159,
+          "powers": [
+            1,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 349078773,
+          "powers": [
+            2,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 110180908,
+          "powers": [
+            1,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 823531960,
+          "powers": [
+            1,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 272313894,
+          "powers": [
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 359875592,
+          "powers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 900167808,
+          "powers": [
+            0,
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        359875593,
+        359875593,
+        359875593,
+        359875593,
+        359875593,
+        359875593,
+        359875593,
+        359875593
+      ],
+      "reference_inverse_ntt_channels": [
+        359875593,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 4,
+      "prime": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        4,
+        4,
+        5,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 414903085,
+          "powers": [
+            4,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 945366335,
+          "powers": [
+            0,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 110965041,
+          "powers": [
+            1,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 677130883,
+          "powers": [
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 766070721,
+          "powers": [
+            1,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 836198901,
+          "powers": [
+            2,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 322336313,
+          "powers": [
+            2,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 21902997,
+          "powers": [
+            1,
+            0,
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": 345038242,
+          "powers": [
+            0,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 223432141,
+          "powers": [
+            1,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 173597942,
+          "powers": [
+            1,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 560644265,
+          "powers": [
+            1,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 204643903,
+          "powers": [
+            1,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 749083756,
+          "powers": [
+            0,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 293042390,
+          "powers": [
+            3,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        625715529,
+        911660635,
+        509520358,
+        998244352,
+        372528824,
+        86583718,
+        488723995
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 5,
+      "prime": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        5,
+        5,
+        18,
+        13,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 232294941,
+          "powers": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 712425018,
+          "powers": [
+            2,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 766378003,
+          "powers": [
+            1,
+            1,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 140862843,
+          "powers": [
+            1,
+            0,
+            3,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 310421723,
+          "powers": [
+            0,
+            1,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 288819267,
+          "powers": [
+            2,
+            2,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 632533841,
+          "powers": [
+            2,
+            2,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 258741380,
+          "powers": [
+            1,
+            0,
+            4,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 909651796,
+          "powers": [
+            0,
+            1,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 130648248,
+          "powers": [
+            0,
+            2,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 707039911,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 684376673,
+          "powers": [
+            1,
+            1,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 75265695,
+          "powers": [
+            2,
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 258607750,
+          "powers": [
+            2,
+            2,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 676180962,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 263765757,
+          "powers": [
+            0,
+            1,
+            2,
+            1,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        384976521,
+        311986417,
+        94819588,
+        447513503,
+        613267832,
+        686257936,
+        903424765,
+        550730850
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        384976521,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 5,
+      "prime": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        2,
+        2,
+        15,
+        9,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 221491562,
+          "powers": [
+            5,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 135255359,
+          "powers": [
+            0,
+            1,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 338222738,
+          "powers": [
+            3,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 827757724,
+          "powers": [
+            0,
+            1,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 569774279,
+          "powers": [
+            2,
+            0,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 670370450,
+          "powers": [
+            3,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 254754099,
+          "powers": [
+            0,
+            2,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 173765134,
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": 812011760,
+          "powers": [
+            3,
+            2,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 232375429,
+          "powers": [
+            2,
+            1,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 214658021,
+          "powers": [
+            1,
+            0,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 595434649,
+          "powers": [
+            0,
+            2,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 866687420,
+          "powers": [
+            0,
+            1,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 724685870,
+          "powers": [
+            0,
+            2,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 513518908,
+          "powers": [
+            2,
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 563954586,
+          "powers": [
+            2,
+            1,
+            2,
+            0,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        998244352,
+        1,
+        998244352,
+        1,
+        998244352,
+        1,
+        998244352
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 6,
+      "prime": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        20,
+        20,
+        21,
+        15,
+        22,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 368585942,
+          "powers": [
+            6,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 783866087,
+          "powers": [
+            2,
+            1,
+            1,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 283420771,
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 656603185,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 484696300,
+          "powers": [
+            0,
+            0,
+            1,
+            1,
+            3,
+            1
+          ]
+        },
+        {
+          "coefficient": 32538340,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 673171537,
+          "powers": [
+            0,
+            1,
+            1,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 629955885,
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 668767192,
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 110579850,
+          "powers": [
+            0,
+            1,
+            3,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 68499404,
+          "powers": [
+            1,
+            1,
+            1,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 439445549,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 183303626,
+          "powers": [
+            2,
+            1,
+            1,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 139362130,
+          "powers": [
+            0,
+            0,
+            4,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 549351279,
+          "powers": [
+            3,
+            1,
+            0,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 883799166,
+          "powers": [
+            1,
+            0,
+            4,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 194632787,
+          "powers": [
+            1,
+            1,
+            1,
+            0,
+            2,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        32538341,
+        590945000,
+        965706012,
+        407299353,
+        32538341,
+        590945000,
+        965706012,
+        407299353
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        32538341,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 6,
+      "prime": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        11,
+        11,
+        1,
+        7,
+        5,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 328368099,
+          "powers": [
+            6,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 454508119,
+          "powers": [
+            2,
+            1,
+            0,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 255279246,
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            4,
+            2
+          ]
+        },
+        {
+          "coefficient": 90436770,
+          "powers": [
+            2,
+            1,
+            0,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 929708440,
+          "powers": [
+            1,
+            0,
+            3,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 194578108,
+          "powers": [
+            2,
+            0,
+            0,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 756863282,
+          "powers": [
+            1,
+            1,
+            2,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 633626269,
+          "powers": [
+            0,
+            1,
+            2,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 724543650,
+          "powers": [
+            1,
+            0,
+            1,
+            1,
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": 870491814,
+          "powers": [
+            1,
+            0,
+            1,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 64342113,
+          "powers": [
+            2,
+            0,
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 69492283,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 325305090,
+          "powers": [
+            0,
+            3,
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 852229937,
+          "powers": [
+            2,
+            1,
+            0,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 712318927,
+          "powers": [
+            0,
+            0,
+            2,
+            3,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 406072882,
+          "powers": [
+            0,
+            0,
+            1,
+            3,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 380936182,
+          "powers": [
+            2,
+            0,
+            1,
+            2,
+            1,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        488723995,
+        86583718,
+        372528824,
+        998244352,
+        509520358,
+        911660635,
+        625715529
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 7,
+      "prime": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        6,
+        6,
+        16,
+        6,
+        23,
+        14,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 75226426,
+          "powers": [
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 88009549,
+          "powers": [
+            1,
+            0,
+            2,
+            2,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 912968256,
+          "powers": [
+            1,
+            2,
+            2,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 308054205,
+          "powers": [
+            1,
+            1,
+            0,
+            3,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 495826046,
+          "powers": [
+            2,
+            0,
+            1,
+            2,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 834613277,
+          "powers": [
+            0,
+            0,
+            0,
+            3,
+            3,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 598315493,
+          "powers": [
+            1,
+            1,
+            0,
+            2,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 417656183,
+          "powers": [
+            1,
+            2,
+            0,
+            1,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 792863729,
+          "powers": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 2939236,
+          "powers": [
+            0,
+            2,
+            2,
+            0,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 920515045,
+          "powers": [
+            0,
+            1,
+            2,
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 811887481,
+          "powers": [
+            0,
+            0,
+            2,
+            2,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 607783122,
+          "powers": [
+            0,
+            2,
+            0,
+            2,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 165535175,
+          "powers": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            1,
+            3
+          ]
+        },
+        {
+          "coefficient": 365518144,
+          "powers": [
+            0,
+            1,
+            0,
+            0,
+            3,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 355858579,
+          "powers": [
+            0,
+            0,
+            1,
+            0,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 496861791,
+          "powers": [
+            1,
+            0,
+            3,
+            0,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 386194853,
+          "powers": [
+            2,
+            0,
+            1,
+            0,
+            1,
+            3,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        509520358,
+        86583718,
+        625715529,
+        998244352,
+        488723995,
+        911660635,
+        372528824
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 7,
+      "prime": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        2,
+        2,
+        2,
+        23,
+        17,
+        23,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 200583711,
+          "powers": [
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 138732300,
+          "powers": [
+            0,
+            2,
+            1,
+            2,
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 648081750,
+          "powers": [
+            1,
+            1,
+            0,
+            3,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 837916049,
+          "powers": [
+            2,
+            0,
+            0,
+            3,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 824665768,
+          "powers": [
+            1,
+            0,
+            2,
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 612223248,
+          "powers": [
+            1,
+            2,
+            1,
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 727553652,
+          "powers": [
+            0,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 21279890,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 386962354,
+          "powers": [
+            1,
+            1,
+            0,
+            2,
+            2,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 63004207,
+          "powers": [
+            1,
+            1,
+            3,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 677575718,
+          "powers": [
+            1,
+            1,
+            1,
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 942711085,
+          "powers": [
+            0,
+            1,
+            0,
+            2,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 645805781,
+          "powers": [
+            0,
+            1,
+            3,
+            0,
+            0,
+            0,
+            3
+          ]
+        },
+        {
+          "coefficient": 861066763,
+          "powers": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            3,
+            1
+          ]
+        },
+        {
+          "coefficient": 172096959,
+          "powers": [
+            1,
+            1,
+            2,
+            0,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 916902401,
+          "powers": [
+            0,
+            1,
+            2,
+            0,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 768072467,
+          "powers": [
+            3,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 138368395,
+          "powers": [
+            0,
+            2,
+            1,
+            2,
+            1,
+            1,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        625715529,
+        911660635,
+        509520358,
+        998244352,
+        372528824,
+        86583718,
+        488723995
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 8,
+      "prime": 998244353,
+      "mixture_id": 0,
+      "labels": [
+        45,
+        45,
+        23,
+        22,
+        7,
+        17,
+        30,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 586554616,
+          "powers": [
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 848413514,
+          "powers": [
+            2,
+            0,
+            0,
+            2,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 225024669,
+          "powers": [
+            1,
+            1,
+            3,
+            1,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 398812353,
+          "powers": [
+            2,
+            2,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 208659178,
+          "powers": [
+            1,
+            3,
+            0,
+            0,
+            2,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 201951969,
+          "powers": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "coefficient": 624711258,
+          "powers": [
+            1,
+            1,
+            1,
+            2,
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 600967239,
+          "powers": [
+            1,
+            1,
+            1,
+            0,
+            2,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 103960034,
+          "powers": [
+            1,
+            1,
+            1,
+            2,
+            1,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 926807611,
+          "powers": [
+            0,
+            4,
+            1,
+            1,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 197686230,
+          "powers": [
+            1,
+            0,
+            0,
+            4,
+            0,
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 335828639,
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            0,
+            3,
+            0,
+            1
+          ]
+        },
+        {
+          "coefficient": 684593680,
+          "powers": [
+            1,
+            0,
+            2,
+            1,
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 169275242,
+          "powers": [
+            2,
+            1,
+            2,
+            2,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 328837620,
+          "powers": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 293630009,
+          "powers": [
+            1,
+            2,
+            1,
+            0,
+            0,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 581536304,
+          "powers": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            2,
+            3,
+            1
+          ]
+        },
+        {
+          "coefficient": 342093817,
+          "powers": [
+            1,
+            1,
+            2,
+            0,
+            1,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 861276906,
+          "powers": [
+            1,
+            1,
+            0,
+            3,
+            1,
+            1,
+            1,
+            0
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        624949902,
+        625715529,
+        661054123,
+        911660635,
+        929031873,
+        509520358,
+        369330050,
+        998244352,
+        373294451,
+        372528824,
+        337190230,
+        86583718,
+        69212480,
+        488723995,
+        628914303
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    },
+    {
+      "n": 8,
+      "prime": 998244353,
+      "mixture_id": 1,
+      "labels": [
+        1,
+        1,
+        8,
+        41,
+        26,
+        6,
+        47,
+        0
+      ],
+      "terms": [
+        {
+          "coefficient": 1,
+          "powers": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 930806267,
+          "powers": [
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "coefficient": 352544656,
+          "powers": [
+            1,
+            0,
+            1,
+            1,
+            2,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 868084938,
+          "powers": [
+            2,
+            0,
+            1,
+            1,
+            0,
+            1,
+            3,
+            0
+          ]
+        },
+        {
+          "coefficient": 510293807,
+          "powers": [
+            3,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 161516527,
+          "powers": [
+            1,
+            0,
+            2,
+            0,
+            1,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 470493246,
+          "powers": [
+            1,
+            2,
+            0,
+            1,
+            1,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 87340161,
+          "powers": [
+            2,
+            1,
+            0,
+            2,
+            0,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 368131047,
+          "powers": [
+            0,
+            1,
+            0,
+            2,
+            0,
+            3,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 221014634,
+          "powers": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            3,
+            2
+          ]
+        },
+        {
+          "coefficient": 431196919,
+          "powers": [
+            1,
+            3,
+            0,
+            0,
+            0,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 867978792,
+          "powers": [
+            2,
+            0,
+            0,
+            3,
+            1,
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "coefficient": 949299774,
+          "powers": [
+            3,
+            2,
+            1,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 521993612,
+          "powers": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            0,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 857674942,
+          "powers": [
+            2,
+            0,
+            1,
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "coefficient": 100755973,
+          "powers": [
+            1,
+            1,
+            0,
+            1,
+            2,
+            1,
+            2,
+            0
+          ]
+        },
+        {
+          "coefficient": 938001135,
+          "powers": [
+            2,
+            2,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "coefficient": 445278795,
+          "powers": [
+            0,
+            1,
+            2,
+            0,
+            2,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "coefficient": 909075012,
+          "powers": [
+            0,
+            2,
+            2,
+            0,
+            0,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "coefficient": 612739358,
+          "powers": [
+            1,
+            2,
+            2,
+            0,
+            0,
+            0,
+            2,
+            1
+          ]
+        }
+      ],
+      "final_frequency_readouts": [
+        1,
+        372528824,
+        911660635,
+        488723995,
+        998244352,
+        625715529,
+        86583718,
+        509520358,
+        1,
+        372528824,
+        911660635,
+        488723995,
+        998244352,
+        625715529,
+        86583718,
+        509520358
+      ],
+      "reference_inverse_ntt_channels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_stage_observations_match": true,
+      "all_terminal_readouts_match": true,
+      "whole_inverse_ntt_table_matches": true
+    }
+  ]
+}

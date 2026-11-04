@@ -1,0 +1,23 @@
+{
+  "node": "n17",
+  "commit": "b12329e5416a4bfc253ac948a3994d86382e64e7",
+  "root_conjecture_verified": false,
+  "global_compiler_rounds_after_replay": 38,
+  "sources": [
+    {
+      "file": "GeneralPairing.lean",
+      "sha256": "b9e314b3c7cd356345c35b326e5abcfa05beefbeaab222ee199275b21b7c6319",
+      "exit_code": 0,
+      "stdout": "'GeneralCollisionPairing.sign_square' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairing.selectSum_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairing.central_label_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairing.central_row_select' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairing.central_row' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairing.central_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairing.coefficient_append' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairing.coefficient_multiply' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairing.central_product_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "file": "GeneralPairingRing.lean",
+      "sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "exit_code": 0,
+      "stdout": "'GeneralCollisionPairingRing.sign_square' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairingRing.selectSum_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairingRing.central_label_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairingRing.central_row_select' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairingRing.central_row' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairingRing.central_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairingRing.coefficient_append' depends on axioms: [propext]\n'GeneralCollisionPairingRing.coefficient_multiply' depends on axioms: [propext]\n'GeneralCollisionPairingRing.central_product_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "accepted_declarations": 18
+}

@@ -1,0 +1,504 @@
+{
+  "status": "passed",
+  "scope": "Exact counterexamples to two stated restricted candidates; not a proof of impossibility of a general polynomial scalar circuit.",
+  "source_sha256": {
+    "verify_candidates.py": "2b277547ddff19040b18def270f11e2373bffca967f4afa4b9b1d40c71c2631f"
+  },
+  "determinantal_compression": {
+    "status": "restricted_family_counterexample_verified",
+    "scope": "Only the family det(U^T diag(x) V), with U,V of size n by n-2 and independent x_i, is excluded for these second derivatives. No general circuit lower bound is asserted.",
+    "mathematical_reason": "Cauchy--Binet and complementary minors would require the coefficient matrix to equal p Hadamard q for two decomposable skew matrices. The displayed four-outer-product identity forces rank at most 4 over any extension of F_17.",
+    "n": 5,
+    "Q": 17,
+    "z_specialization": 1,
+    "positive_first_step": {
+      "identity": "D_(1,...,1) product_i x_i = e_4(x) = det(U^T diag(x) U)",
+      "U": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      ],
+      "squared_maximal_minors": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "four_outer_product_formula": "(u wedge v) Hadamard (r wedge s) = (u*r)(v*s)^T - (u*s)(v*r)^T - (v*r)(u*s)^T + (v*s)(u*r)^T",
+    "decomposable_sample": {
+      "u": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "v": [
+        2,
+        5,
+        1,
+        7,
+        3
+      ],
+      "r": [
+        1,
+        4,
+        2,
+        3,
+        7
+      ],
+      "s": [
+        3,
+        1,
+        8,
+        2,
+        6
+      ],
+      "p": [
+        [
+          0,
+          1,
+          12,
+          16,
+          10
+        ],
+        [
+          16,
+          0,
+          4,
+          11,
+          15
+        ],
+        [
+          5,
+          13,
+          0,
+          0,
+          4
+        ],
+        [
+          1,
+          6,
+          0,
+          0,
+          11
+        ],
+        [
+          7,
+          2,
+          13,
+          6,
+          0
+        ]
+      ],
+      "q": [
+        [
+          0,
+          6,
+          2,
+          10,
+          2
+        ],
+        [
+          11,
+          0,
+          13,
+          5,
+          0
+        ],
+        [
+          15,
+          4,
+          0,
+          14,
+          7
+        ],
+        [
+          7,
+          12,
+          3,
+          0,
+          4
+        ],
+        [
+          15,
+          0,
+          10,
+          13,
+          0
+        ]
+      ],
+      "hadamard_product": [
+        [
+          0,
+          6,
+          7,
+          7,
+          3
+        ],
+        [
+          6,
+          0,
+          1,
+          4,
+          0
+        ],
+        [
+          7,
+          1,
+          0,
+          0,
+          11
+        ],
+        [
+          7,
+          4,
+          0,
+          0,
+          10
+        ],
+        [
+          3,
+          0,
+          11,
+          10,
+          0
+        ]
+      ],
+      "ranks": [
+        2,
+        2,
+        4
+      ]
+    },
+    "equal_direction_target": {
+      "identity": "D_1 D_1 product_i x_i = 2 e_3(x)",
+      "complementary_coefficient_matrix": [
+        [
+          0,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          0,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          0,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          0
+        ]
+      ],
+      "rank": 5,
+      "determinant_mod_Q": 9
+    },
+    "distinct_legal_directions": {
+      "original_a": [
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "B_at_z_1": [
+        [
+          1,
+          1,
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          5,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          10,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          1,
+          1
+        ]
+      ],
+      "input_rank": 5,
+      "directions": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          5,
+          10,
+          2
+        ]
+      ],
+      "complementary_coefficient_matrix": [
+        [
+          0,
+          3,
+          6,
+          11,
+          3
+        ],
+        [
+          3,
+          0,
+          7,
+          12,
+          4
+        ],
+        [
+          6,
+          7,
+          0,
+          15,
+          7
+        ],
+        [
+          11,
+          12,
+          15,
+          0,
+          12
+        ],
+        [
+          3,
+          4,
+          7,
+          12,
+          0
+        ]
+      ],
+      "rank": 5,
+      "determinant_mod_Q": 6
+    }
+  },
+  "hankel_observation": {
+    "status": "restricted_state_counterexample_verified",
+    "scope": "Only a state retaining this one scalar observation curve (equivalently all its coefficients/Hankel data) plus the unchanged future columns is refuted, at z=1. States retaining the full formal z information or additional directional observations are not refuted.",
+    "n": 3,
+    "Q": 17,
+    "z_specialization": 1,
+    "spectral_labels": [
+      0,
+      0,
+      0
+    ],
+    "original_a": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ]
+    ],
+    "B_at_z_1": [
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          5,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          5,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ]
+    ],
+    "curve_definition": "h(t) = Delta_e0 G(t(e1+e2)) = product_i(B_i0+t*(B_i1+B_i2)) - product_i(t*(B_i1+B_i2))",
+    "equal_curve_coefficients_ascending": [
+      10,
+      51,
+      72
+    ],
+    "equal_curve_coefficients_mod_Q": [
+      10,
+      0,
+      4
+    ],
+    "equal_Hankel_matrix": [
+      [
+        10,
+        51,
+        72
+      ],
+      [
+        51,
+        72,
+        0
+      ],
+      [
+        72,
+        0,
+        0
+      ]
+    ],
+    "future_columns_are_equal": true,
+    "full_terminal_differences": [
+      35,
+      39
+    ],
+    "independent_permutation_oracle": [
+      35,
+      39
+    ],
+    "full_terminal_differences_mod_Q": [
+      1,
+      5
+    ]
+  },
+  "verified_utc": "2026-11-01T07:46:56.755045+00:00"
+}

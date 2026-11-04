@@ -1,0 +1,89 @@
+{
+  "protocol": "simulation-v1",
+  "split": "test",
+  "score": 1.0,
+  "passed": 24,
+  "total": 24,
+  "evaluator_sha256": "2c393f62241c992bc816d717a2b15fe5f368e2c9064fa1b92f566020dc5dfa1c",
+  "cases": [
+    {
+      "case": "n2-heldout-0",
+      "n": 2,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 48,
+      "K": 3,
+      "hhat_terms": 6
+    },
+    {
+      "case": "n2-heldout-1",
+      "n": 2,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 48,
+      "K": 3,
+      "hhat_terms": 6
+    },
+    {
+      "case": "n3-heldout-0",
+      "n": 3,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 198,
+      "K": 26,
+      "hhat_terms": 38
+    },
+    {
+      "case": "n3-heldout-1",
+      "n": 3,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 198,
+      "K": 26,
+      "hhat_terms": 38
+    },
+    {
+      "case": "n4-heldout-0",
+      "n": 4,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 568,
+      "K": 255,
+      "hhat_terms": 578
+    },
+    {
+      "case": "n4-heldout-1",
+      "n": 4,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 568,
+      "K": 255,
+      "hhat_terms": 578
+    }
+  ],
+  "scope": "Finite exact checks; no proof of asymptotic circuit complexity."
+}

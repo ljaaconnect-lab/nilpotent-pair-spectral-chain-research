@@ -1,0 +1,8 @@
+{
+  "artifact_version": "n18-occupation-gram-v1",
+  "timestamp_utc": "2026-10-07T11:43:10.5072029Z",
+  "evaluator_frozen_before_variant_coding": true,
+  "checklist_sha256": "e148793f76ab96355d9ae1bb33c7284ddfbcb7c1c36f3338c0395fbc6be41bc0",
+  "evaluator_sha256": "9bbd80e4f42f6a659c6bb9d290f69829db85e461aec04258ff9296f88578411f",
+  "total_checks": 36
+}

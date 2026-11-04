@@ -1,0 +1,54 @@
+{
+  "tag": "dependency-01",
+  "kind": "dependency",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n57\\PowerCompiler.lean",
+    "-o",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n57\\proof-build\\PowerCompiler.olean"
+  ],
+  "environment_keys": [
+    "LEAN_PATH",
+    "LEAN_SRC_PATH",
+    "LEAN_SYSROOT"
+  ],
+  "environment_file": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib-environment.json",
+  "source_sha256": "c66d703e08237358eb992905106e01cb040d27314d42053030821f335450c863",
+  "exit_code": 0,
+  "elapsed_seconds": 10.888661299999512,
+  "error_count": 0,
+  "source_clean": true,
+  "axiom_audit": {
+    "SharedBinaryPower.run_append": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SharedBinaryPower.positive_plan_correct": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SharedBinaryPower.binary_plan_correct": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SharedBinaryPower.binary_plan_logarithmic": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SharedBinaryPower.central_exponent_log_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharedBinaryPower.central_plan_gate_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharedBinaryPower.power_add": []
+  },
+  "passed": 0,
+  "denominator": 4,
+  "dev_score": null,
+  "root_representation_established": false
+}

@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\cout-meme-circuit-2026-11-03\\SameDAGCost.lean"
+  ],
+  "source": "SameDAGCost.lean",
+  "source_sha256": "65cd3b070bd311979fc38bcb1425962b4e90cfc14acac5b03b1330b5f0ac88a9",
+  "replay_sha256": "68bb7dbc3120cfb699d022ad3b030e2904bcba172007983284b100bf08792d98",
+  "environment_helper": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\lean_check.py",
+  "environment_helper_sha256": "a5e21cfb624e5258009425f6c6eecaf0eb1b529d953bbb2607717dab44a439ad",
+  "source_changed_during_check": false,
+  "exit_code": 0,
+  "seconds": 18.875,
+  "stdout": "'SameDAGCost.same_dag_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SameDAGCost.coefficient_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SameDAGCost.same_dag_polynomial_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SameDAGCost.same_dag_polynomial_family' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "same_dag_card",
+    "coefficient_bound",
+    "same_dag_polynomial_bound",
+    "same_dag_polynomial_family"
+  ],
+  "all_theorem_axioms_printed": true,
+  "source_has_no_placeholders_or_added_axioms": true,
+  "scope": "Exact set accounting for gates of the same supplied scalar DAG; polynomial consequence of one global joint remainder bound.",
+  "gate_set_semantics": {
+    "G": "Final reachable ordinary +/* gates of the fixed graph.",
+    "P": "Actually constructed scalar coefficient prefix B -> C, in the same graph.",
+    "J": "card(G \\ P): all joint fusion/normalization/sign/spectral gates remaining in that graph."
+  },
+  "bounds": {
+    "exact_partition": "card(G) = card(G intersect P) + card(G \\ P)",
+    "coefficient_prefix": "4*n^2 - 1 + 2*n*N*ell + n*N <= 10*n^3",
+    "conditional_total": "J <= K*n^d implies card(G) <= (10+K)*n^max(3,d)",
+    "family_constants": "K and d are fixed outside the quantifier over n."
+  },
+  "hypotheses": [
+    "n >= 1",
+    "N <= 2*n",
+    "ell <= n",
+    "card(P) <= coefficientBound(n,N,ell)",
+    "jointCost(G,P) <= K*n^d"
+  ],
+  "same_graph_interpretation_and_gate_set_extraction_external": true,
+  "new_compiler_constructed": false,
+  "separate_reader_or_intermediate_amplitude_required": false,
+  "native_joint_gate_bound_proved": false,
+  "complete_native_polynomial_bound_proved": false,
+  "lean_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)"
+}

@@ -1,0 +1,17 @@
+{
+  "protocol": "reverse-vandermonde-paper-exponents-v1",
+  "node": "n58",
+  "complete_candidate_budget": 20,
+  "obligation_count": 6,
+  "domain": "Arbitrary n:Nat and arbitrary CommRing R; no positivity, injectivity, domain, or characteristic assumption",
+  "obligations": [
+    {"name": "ReverseVandermonde.reverse_matrix_as_projective", "statement": "of(fun i j:Fin n => (v i)^(n-1-j.val)) = Matrix.projVandermonde (const 1) v"},
+    {"name": "ReverseVandermonde.reverse_vandermonde", "statement": "det(of(fun i j:Fin n => (v i)^(n-1-j.val))) = product_i:Fin n product_l in Ioi i (v i-v l)"},
+    {"name": "ReverseVandermonde.power_entries", "statement": "For t:Polynomial R and i j:Fin n, (t^(n^i.val))^(n-1-j.val)=t^((n^i.val)*(n-1-j.val))"},
+    {"name": "ReverseVandermonde.reverse_vandermonde_polynomial", "statement": "For arbitrary t:Polynomial R, det(of(fun i j:Fin n => t^((n^i.val)*(n-1-j.val)))) = product_i product_l in Ioi i (t^(n^i.val)-t^(n^l.val))"},
+    {"name": "ReverseVandermonde.complementary_exponent", "statement": "For all n i j:Nat, (n-1)*n^i-j*n^i = n^i*(n-1-j)"},
+    {"name": "ReverseVandermonde.paper_complementary_det", "statement": "For arbitrary t:Polynomial R, det(of(fun i j:Fin n => t^((n-1)*n^i.val-j.val*n^i.val))) = product_i product_l in Ioi i (t^(n^i.val)-t^(n^l.val))"}
+  ],
+  "trust_base": ["propext", "Quot.sound", "Classical.choice"],
+  "scope": "Exact reverse Vandermonde and original complementary determinant entries; no scalar extraction complexity claim"
+}

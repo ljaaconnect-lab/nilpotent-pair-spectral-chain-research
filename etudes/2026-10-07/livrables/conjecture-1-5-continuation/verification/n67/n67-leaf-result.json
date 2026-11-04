@@ -1,0 +1,19 @@
+{
+  "node_id": "n67",
+  "artifact_version": "n67-hadamard-pfaffian-v1",
+  "dev_score": 1.0,
+  "helper_score": "3/3",
+  "root_conjecture_score": 0,
+  "result": "Exact four-leg Hadamard COPY transform, explicit six-parameter Pf4 all-one signature, and both rational matrix inverse products kernel verified",
+  "insight": "The local boundary signature is representable and the basis change is invertible; contraction closure, crossing compatibility and polynomial scalar compilation remain additional global obligations",
+  "branch_ref": "arbor/n67",
+  "source": "HadamardPfaffian.lean",
+  "source_sha256": "344aa1d55e4a215fd11251d5546f2b56908998b15859f539730f99d23d32eae5",
+  "report": "n67-strict-report.json",
+  "candidate_rounds": 4,
+  "dependency_builds": 0,
+  "probe_compilations": 0,
+  "root_conjecture_verified": false,
+  "heldout_tests_run": false,
+  "constraint": "Ordinary decide was replaced by kernel reduction after its real round-1 transparency diagnostic, preserving all three frozen statements"
+}

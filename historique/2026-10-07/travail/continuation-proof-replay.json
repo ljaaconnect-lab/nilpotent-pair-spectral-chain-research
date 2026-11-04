@@ -1,0 +1,338 @@
+{
+  "root_conjecture_verified": false,
+  "boundary": "fresh committed proof replay",
+  "leaves": [
+    {
+      "node": "n39",
+      "commit": "1fc355d882554ce93fc619fd496cd32b9e7b70b6",
+      "description": "Square-zero two-sided products and explicit outer-product propagation",
+      "sources": [
+        {
+          "file": "RankOneSquareZero.lean",
+          "sha256": "f5ccfcef9a771b75f6785a5ae0dcda0fcd03ef992bc9072a74d6d7a8f80416e9",
+          "command": [
+            "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+            "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\gate-n39\\RankOneSquareZero.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "'SquareZeroRankOne.matrix_right_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.matrix_left_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.scalar_product' depends on axioms: [propext, Quot.sound]\n'SquareZeroRankOne.rank_one_two_sided' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.propagate_left_factor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SquareZeroRankOne.propagate_rank_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+          "stderr": "",
+          "axiom_audit": {
+            "SquareZeroRankOne.matrix_right_product": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "SquareZeroRankOne.matrix_left_product": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "SquareZeroRankOne.scalar_product": [
+              "Quot.sound",
+              "propext"
+            ],
+            "SquareZeroRankOne.rank_one_two_sided": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "SquareZeroRankOne.propagate_left_factor": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "SquareZeroRankOne.propagate_rank_one": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        }
+      ],
+      "root_conjecture_verified": false,
+      "accepted_new_declarations": 6
+    },
+    {
+      "node": "n40",
+      "commit": "3804886e1fd9576c403444fcd2c5a8c5872e0e78",
+      "description": "Shared binary-power compiler and logarithmic multiplication budget",
+      "sources": [
+        {
+          "file": "PowerCompiler.lean",
+          "sha256": "2b1f75ee38baf241fb82cef16c85923b08f8d52a69f29b4fe61b0c6f51873353",
+          "command": [
+            "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+            "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\gate-n40\\PowerCompiler.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "'SharedBinaryPower.run_append' depends on axioms: [propext, Quot.sound]\n'SharedBinaryPower.power_add' does not depend on any axioms\n'SharedBinaryPower.positive_plan_correct' depends on axioms: [propext, Quot.sound]\n'SharedBinaryPower.binary_plan_correct' depends on axioms: [propext, Quot.sound]\n'SharedBinaryPower.binary_plan_logarithmic' depends on axioms: [propext, Quot.sound]\n'SharedBinaryPower.central_exponent_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SharedBinaryPower.central_plan_gate_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+          "stderr": "",
+          "axiom_audit": {
+            "SharedBinaryPower.run_append": [
+              "Quot.sound",
+              "propext"
+            ],
+            "SharedBinaryPower.positive_plan_correct": [
+              "Quot.sound",
+              "propext"
+            ],
+            "SharedBinaryPower.binary_plan_correct": [
+              "Quot.sound",
+              "propext"
+            ],
+            "SharedBinaryPower.binary_plan_logarithmic": [
+              "Quot.sound",
+              "propext"
+            ],
+            "SharedBinaryPower.central_exponent_log_bound": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "SharedBinaryPower.central_plan_gate_bound": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "SharedBinaryPower.power_add": []
+          }
+        }
+      ],
+      "root_conjecture_verified": false,
+      "accepted_new_declarations": 7
+    },
+    {
+      "node": "n54",
+      "commit": "7e62fc4aa4d31a5d4261ce0072ba3f1d9b069392",
+      "description": "Actual Polynomial interpretation of central labelled sign pairing",
+      "sources": [
+        {
+          "file": "CoreBridge.lean",
+          "sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+          "command": [
+            "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+            "-o",
+            "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\gate-n54\\CoreBridge.olean",
+            "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\gate-n54\\CoreBridge.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "'CollisionCoreBridge.decode_head' depends on axioms: [propext]\n'CollisionCoreBridge.decode_tail' depends on axioms: [propext]\n'CollisionCoreBridge.encodeDigits_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionCoreBridge.central_label_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionCoreBridge.orbit_stabilizes' depends on axioms: [propext]\n'CollisionCoreBridge.n2_pair_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionCoreBridge.n2_central_convolution' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+          "stderr": "",
+          "axiom_audit": {
+            "CollisionCoreBridge.decode_head": [
+              "propext"
+            ],
+            "CollisionCoreBridge.decode_tail": [
+              "propext"
+            ],
+            "CollisionCoreBridge.encodeDigits_injective": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionCoreBridge.central_label_iff": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionCoreBridge.orbit_stabilizes": [
+              "propext"
+            ],
+            "CollisionCoreBridge.n2_pair_factorization": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionCoreBridge.n2_central_convolution": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        },
+        {
+          "file": "GeneralPairingRing.lean",
+          "sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+          "command": [
+            "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+            "-o",
+            "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\gate-n54\\GeneralPairingRing.olean",
+            "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\gate-n54\\GeneralPairingRing.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "'GeneralCollisionPairingRing.sign_square' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairingRing.selectSum_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairingRing.central_label_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairingRing.central_row_select' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairingRing.central_row' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairingRing.central_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPairingRing.coefficient_append' depends on axioms: [propext]\n'GeneralCollisionPairingRing.coefficient_multiply' depends on axioms: [propext]\n'GeneralCollisionPairingRing.central_product_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+          "stderr": "",
+          "axiom_audit": {
+            "GeneralCollisionPairingRing.sign_square": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "GeneralCollisionPairingRing.selectSum_nodup": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "GeneralCollisionPairingRing.central_label_iff": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "GeneralCollisionPairingRing.central_row_select": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "GeneralCollisionPairingRing.central_row": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "GeneralCollisionPairingRing.central_pairing": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "GeneralCollisionPairingRing.coefficient_append": [
+              "propext"
+            ],
+            "GeneralCollisionPairingRing.coefficient_multiply": [
+              "propext"
+            ],
+            "GeneralCollisionPairingRing.central_product_coefficient": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        },
+        {
+          "file": "LabelBridge.lean",
+          "sha256": "f709c19b9e1227598820b552f36aea575c63a790cd7c1fff23a498bcc5a18fd7",
+          "command": [
+            "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+            "-o",
+            "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\gate-n54\\LabelBridge.olean",
+            "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\gate-n54\\LabelBridge.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "'CollisionLabelBridge.digit_step_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.encodeDigits_lt_pow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexedLabelFrom_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexedLabel_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexedLabel_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexedLabel_le_max' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.assignmentLabel_le_max' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.assignmentLabel_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.occupation_all_ones_selector' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.assignmentLabel_sum_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.occupation_sum_selector' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.assignmentLabels_nodup' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionLabelBridge.indexed_assignment_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+          "stderr": "",
+          "axiom_audit": {
+            "CollisionLabelBridge.digit_step_bound": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionLabelBridge.encodeDigits_lt_pow": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionLabelBridge.indexedLabelFrom_eq": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionLabelBridge.indexedLabel_eq": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionLabelBridge.indexedLabel_injective": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionLabelBridge.indexedLabel_le_max": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionLabelBridge.assignmentLabel_le_max": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionLabelBridge.assignmentLabel_injective": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionLabelBridge.occupation_all_ones_selector": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionLabelBridge.assignmentLabel_sum_eq": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionLabelBridge.occupation_sum_selector": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionLabelBridge.assignmentLabels_nodup": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "CollisionLabelBridge.indexed_assignment_pairing": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        },
+        {
+          "file": "PolynomialBridge.lean",
+          "sha256": "03b5de832df55bd5025983222423a404ca71fa2596c57f771c3c8db05b426b92",
+          "command": [
+            "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+            "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\gate-n54\\PolynomialBridge.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "'GeneralCollisionPolynomialBridge.interp_append' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPolynomialBridge.interp_monomial_multiply' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPolynomialBridge.interp_multiply' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPolynomialBridge.coeff_interp' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneralCollisionPolynomialBridge.central_polynomial_coefficient' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'GeneralCollisionPolynomialBridge.indexed_assignment_polynomial_coefficient' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+          "stderr": "",
+          "axiom_audit": {
+            "GeneralCollisionPolynomialBridge.interp_append": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "GeneralCollisionPolynomialBridge.interp_monomial_multiply": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "GeneralCollisionPolynomialBridge.interp_multiply": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "GeneralCollisionPolynomialBridge.coeff_interp": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "GeneralCollisionPolynomialBridge.central_polynomial_coefficient": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ],
+            "GeneralCollisionPolynomialBridge.indexed_assignment_polynomial_coefficient": [
+              "Classical.choice",
+              "Quot.sound",
+              "propext"
+            ]
+          }
+        }
+      ],
+      "root_conjecture_verified": false,
+      "accepted_new_declarations": 6
+    }
+  ]
+}

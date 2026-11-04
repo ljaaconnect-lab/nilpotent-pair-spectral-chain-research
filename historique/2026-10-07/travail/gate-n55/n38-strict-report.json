@@ -1,0 +1,184 @@
+{
+  "node_id": "n38",
+  "artifact_version": "n38-indexed-label-bridge-v1",
+  "root_conjecture_verified": false,
+  "heldout_tests_run": false,
+  "compiler_invocations": 24,
+  "candidate_rounds": 22,
+  "dependency_builds": 2,
+  "prior_global_compiler_rounds": 38,
+  "global_compiler_rounds": 62,
+  "expected_declarations": 13,
+  "accepted_declarations": 13,
+  "dependency_audits": {
+    "CoreBridge.lean": {
+      "round": 1,
+      "source_sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "compiler_exit_code": 0,
+      "axioms": {
+        "CollisionCoreBridge.decode_head": [
+          "propext"
+        ],
+        "CollisionCoreBridge.decode_tail": [
+          "propext"
+        ],
+        "CollisionCoreBridge.encodeDigits_injective": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionCoreBridge.central_label_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionCoreBridge.orbit_stabilizes": [
+          "propext"
+        ],
+        "CollisionCoreBridge.n2_pair_factorization": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CollisionCoreBridge.n2_central_convolution": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "GeneralPairingRing.lean": {
+      "round": 23,
+      "source_sha256": "2dc66131f5885c4e56adbd338fb1b735f8676f8640e666d2964c324cd3c906fb",
+      "compiler_exit_code": 0,
+      "axioms": {
+        "GeneralCollisionPairingRing.sign_square": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.selectSum_nodup": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_label_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_row_select": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_row": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_pairing": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.coefficient_append": [
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.coefficient_multiply": [
+          "propext"
+        ],
+        "GeneralCollisionPairingRing.central_product_coefficient": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    }
+  },
+  "axiom_audit": {
+    "CollisionLabelBridge.digit_step_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionLabelBridge.encodeDigits_lt_pow": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionLabelBridge.indexedLabelFrom_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionLabelBridge.indexedLabel_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionLabelBridge.indexedLabel_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionLabelBridge.indexedLabel_le_max": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionLabelBridge.assignmentLabel_le_max": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionLabelBridge.assignmentLabel_injective": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionLabelBridge.occupation_all_ones_selector": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionLabelBridge.assignmentLabel_sum_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionLabelBridge.occupation_sum_selector": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionLabelBridge.assignmentLabels_nodup": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "CollisionLabelBridge.indexed_assignment_pairing": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "errors": [],
+  "source": "LabelBridge.lean",
+  "source_sha256": "7a590618813dcbfedaf9badb3a6d8beeaea729f73b1d3232b23377fbf0917fa9",
+  "final_compiler_round": 24,
+  "compiler_exit_code": 0,
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n38\\LabelBridge.lean"
+  ],
+  "LEAN_PATH": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n38",
+  "dev_score": 1.0,
+  "status": "indexed_label_bridge_verified",
+  "accepted_trust_base": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "scope": "Indexed labels, occupancy selector and actual sparse product coefficient; no determinant/Vandermonde or Polynomial-library interpretation, no scalar extraction complexity claim"
+}

@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "source": "SpectralReadoutCompatibility.lean",
+  "source_sha256": "06faa3f168773e65763ac0c0f2e29112fefb2864a83e7f90c831c227e256d046",
+  "source_changed_during_check": false,
+  "replay_sha256": "6a3e5ebc4abd810a5f31f9d9a1ce87c1d5429bf8bd56fdd98c5477bbb1d9d906",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "-o",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\induction-native\\build\\SpectralReadoutCompatibility.olean",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\induction-native-2026-11-03\\SpectralReadoutCompatibility.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 13.828,
+  "stdout": "'NativeSpectralInduction.map_readout' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativeSpectralInduction.shared_phase_readout' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativeSpectralInduction.readout_of_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "map_readout",
+    "shared_phase_readout",
+    "readout_of_kernel"
+  ],
+  "all_axioms_printed": true,
+  "no_placeholders_or_added_axioms": true,
+  "dependency_sha256": {},
+  "dependencies_unchanged": true,
+  "scope": "Ring-homomorphism compatibility with spectral linear readout; kernel orthogonality is an explicit hypothesis.",
+  "python_compiler_formalized": false,
+  "auxiliary_variables_eliminated": false,
+  "complete_scalar_a_z_only_chain_proved": false
+}

@@ -1,0 +1,126 @@
+{
+  "objective": "Resolve Conjecture 1.5; record finite exact evidence and formally verified obligations without equating scores with proof",
+  "metric_direction": "max",
+  "dev_eval": "python evaluate.py --split dev; separate structural-v1 and Lean declaration checks as frozen in README",
+  "test_eval": "coordinator only: independent rational matrices and independent Boolean reduction cases, frozen outside worktrees",
+  "material": "7d68b541d2bfd7c2e5a0193730c563a8f43dac1b",
+  "branching": 3,
+  "max_depth": 3,
+  "budget_cycles": 24,
+  "cycles_used": 23,
+  "best_node": "n1",
+  "best_test_score": 1.0,
+  "best_branch_ref": "7f68a91c2930d347de5388fecea72753b2f973c3",
+  "created_at": 1791369214,
+  "continuation_authorization": "User asks why search stopped without a closed family; resume global proof search, not merely local reporting.",
+  "current_formal_window": {
+    "max_decomposition_layers": 3,
+    "complete_candidate_rounds": 20,
+    "actual_total_compiler_invocations": 19,
+    "counting": "Shared new continuation window; all candidates, dependencies and replays count together. Prior 19 invocations remain in history.",
+    "authorization": "User explicitly requests continuing the unclosed construction search.",
+    "evidence": [
+      "n71 compiler rounds 2: timeout124 then actual0; interface only",
+      "n73 compiler rounds 4: 1,0,0,0; 18 actual subset theorems",
+      "Coordinator n73 exact committed replay:0, 18 audits accepted"
+    ],
+    "actual_complete_candidate_compilations": 14,
+    "actual_independent_commit_replays": 4,
+    "actual_delivered_source_replays": 0,
+    "actual_dependency_compilations": 1,
+    "candidate_exit_records": [
+      [
+        "n71",
+        "round-01.json",
+        124
+      ],
+      [
+        "n71",
+        "round-02.json",
+        0
+      ],
+      [
+        "n73",
+        "round-01.json",
+        1
+      ],
+      [
+        "n73",
+        "round-02.json",
+        0
+      ],
+      [
+        "n73",
+        "round-03.json",
+        0
+      ],
+      [
+        "n73",
+        "round-04.json",
+        0
+      ],
+      [
+        "n75",
+        "round-01.json",
+        1
+      ],
+      [
+        "n75",
+        "round-02.json",
+        0
+      ],
+      [
+        "n75",
+        "round-03.json",
+        1
+      ],
+      [
+        "n75",
+        "round-04.json",
+        0
+      ],
+      [
+        "n75",
+        "round-05.json",
+        0
+      ],
+      [
+        "n75",
+        "round-06.json",
+        0
+      ],
+      [
+        "n76",
+        "n76-round-1-report.json",
+        1
+      ],
+      [
+        "n76",
+        "n76-round-2-report.json",
+        0
+      ]
+    ]
+  },
+  "formal_window_history": [
+    {
+      "label": "through n68",
+      "max_decomposition_layers": 3,
+      "complete_candidate_rounds": 20,
+      "counting": "All current-window formal child candidates and retries count jointly; prior rounds are preserved separately.",
+      "actual_complete_candidate_compilations": 15,
+      "actual_independent_commit_replays": 2,
+      "actual_delivered_source_replays": 2,
+      "actual_total_compiler_invocations": 19,
+      "evidence": [
+        "n63 compiler snapshots: 11",
+        "n67 compiler snapshots: 4",
+        "root fresh replay: n63, n67",
+        "delivered standalone replay: n63, n67"
+      ]
+    }
+  ],
+  "root_conjecture_verified": false,
+  "actual_closed_baseline_node": "n73",
+  "root_polynomial_state_family_verified": false,
+  "atomic_decomposition_authorization": "User explicitly redirects the active search to elementary constructive subproblems solved one by one; four further coordinator cycles allocated locally, no formal budget reset."
+}

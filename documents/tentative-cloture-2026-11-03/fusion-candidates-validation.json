@@ -1,0 +1,1577 @@
+{
+  "status": "passed",
+  "parameters": {
+    "n": 2,
+    "Q": 97,
+    "N": 4,
+    "omega": 22,
+    "labels": [
+      0,
+      1
+    ],
+    "z": 1,
+    "gamma": -1
+  },
+  "source_sha256": {
+    "documents/tentative-cloture-2026-11-03/verify_fusion_candidates.py": "1596b2fbe65499e43d072c9e62e242920cd288bf4e0aa80062cac09e4cfab6a2",
+    "documents/composition-native-2026-11-03/compose_native_representatives.py": "2e68d57225c04caddace2d91946cf7c88273a702bbc7833e1f380a253e54d9f4",
+    "documents/composition-native-2026-11-03/verify_native_composition.py": "52894580b8b933aa0b7ba936ee3a50667e452fea542c31fc4c56368cc6fbb3ed",
+    "etudes/2026-11-01/linearisation-orientee-convolution/linearised_inputs.py": "5c4c61aaacd4aa143f146bdaa64f20ae7fdbfeeac41b207eef87c4c9c7b24ada",
+    "etudes/2026-11-01/linearisation-orientee-convolution/verify_linearised_inputs.py": "b75e7c8c00123b5d1794562f869d95f16afe719373e3ca0d4baa84417645eb04",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06"
+  },
+  "native_compiler_reused": true,
+  "same_C_wires_and_true_INTT": true,
+  "x_signal_for_q_equal_one": [
+    2,
+    23,
+    0,
+    76
+  ],
+  "native_representative_gate_count": 73,
+  "cases": [
+    {
+      "name": "unequal_entries",
+      "a": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "B": [
+        [
+          1,
+          5
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "C": [
+        [
+          50,
+          52,
+          96,
+          94
+        ],
+        [
+          50,
+          31,
+          1,
+          20
+        ]
+      ],
+      "v": [
+        [
+          50,
+          94,
+          96,
+          52
+        ],
+        [
+          50,
+          20,
+          1,
+          31
+        ]
+      ],
+      "cumulative_direction": [
+        3,
+        17,
+        0,
+        83
+      ],
+      "row_sums": [
+        6,
+        6
+      ],
+      "column_sums": [
+        6,
+        6
+      ],
+      "F0_at_q_one": 36,
+      "ordinary_true_INTT_outputs_including_gamma": [
+        0,
+        61,
+        0,
+        0
+      ],
+      "oriented_Omega_coordinates_oracle": [
+        0,
+        26,
+        0,
+        0
+      ],
+      "cumulative_translation_values_t_0_through_96": [
+        0,
+        36,
+        47,
+        33,
+        91,
+        27,
+        35,
+        18,
+        73,
+        6,
+        11,
+        88,
+        43,
+        70,
+        72,
+        49,
+        1,
+        25,
+        24,
+        95,
+        44,
+        65,
+        61,
+        32,
+        75,
+        93,
+        86,
+        54,
+        94,
+        12,
+        2,
+        64,
+        4,
+        16,
+        3,
+        62,
+        96,
+        8,
+        89,
+        48,
+        79,
+        85,
+        66,
+        22,
+        50,
+        53,
+        31,
+        81,
+        9,
+        9,
+        81,
+        31,
+        53,
+        50,
+        22,
+        66,
+        85,
+        79,
+        48,
+        89,
+        8,
+        96,
+        62,
+        3,
+        16,
+        4,
+        64,
+        2,
+        12,
+        94,
+        54,
+        86,
+        93,
+        75,
+        32,
+        61,
+        65,
+        44,
+        95,
+        24,
+        25,
+        1,
+        49,
+        72,
+        70,
+        43,
+        88,
+        11,
+        6,
+        73,
+        18,
+        35,
+        27,
+        91,
+        33,
+        47,
+        36
+      ],
+      "individual_dual_values": [
+        5,
+        5
+      ],
+      "exact_two_direction_repair": 26
+    },
+    {
+      "name": "equal_entries",
+      "a": [
+        [
+          14,
+          14
+        ],
+        [
+          14,
+          14
+        ]
+      ],
+      "B": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "C": [
+        [
+          50,
+          90,
+          0,
+          57
+        ],
+        [
+          50,
+          90,
+          0,
+          57
+        ]
+      ],
+      "v": [
+        [
+          50,
+          57,
+          0,
+          90
+        ],
+        [
+          50,
+          57,
+          0,
+          90
+        ]
+      ],
+      "cumulative_direction": [
+        3,
+        17,
+        0,
+        83
+      ],
+      "row_sums": [
+        6,
+        6
+      ],
+      "column_sums": [
+        6,
+        6
+      ],
+      "F0_at_q_one": 36,
+      "ordinary_true_INTT_outputs_including_gamma": [
+        0,
+        61,
+        0,
+        0
+      ],
+      "oriented_Omega_coordinates_oracle": [
+        0,
+        18,
+        0,
+        0
+      ],
+      "cumulative_translation_values_t_0_through_96": [
+        0,
+        36,
+        47,
+        33,
+        91,
+        27,
+        35,
+        18,
+        73,
+        6,
+        11,
+        88,
+        43,
+        70,
+        72,
+        49,
+        1,
+        25,
+        24,
+        95,
+        44,
+        65,
+        61,
+        32,
+        75,
+        93,
+        86,
+        54,
+        94,
+        12,
+        2,
+        64,
+        4,
+        16,
+        3,
+        62,
+        96,
+        8,
+        89,
+        48,
+        79,
+        85,
+        66,
+        22,
+        50,
+        53,
+        31,
+        81,
+        9,
+        9,
+        81,
+        31,
+        53,
+        50,
+        22,
+        66,
+        85,
+        79,
+        48,
+        89,
+        8,
+        96,
+        62,
+        3,
+        16,
+        4,
+        64,
+        2,
+        12,
+        94,
+        54,
+        86,
+        93,
+        75,
+        32,
+        61,
+        65,
+        44,
+        95,
+        24,
+        25,
+        1,
+        49,
+        72,
+        70,
+        43,
+        88,
+        11,
+        6,
+        73,
+        18,
+        35,
+        27,
+        91,
+        33,
+        47,
+        36
+      ],
+      "individual_dual_values": [
+        9,
+        9
+      ],
+      "exact_two_direction_repair": 18
+    }
+  ],
+  "padded_family_n_2_through_8": [
+    {
+      "n": 2,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        0,
+        1
+      ],
+      "gamma": -1,
+      "target_slot": 1,
+      "cases": [
+        {
+          "a": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "cumulative_direction": [
+            3,
+            17,
+            0,
+            83
+          ],
+          "F0_at_q_one": 36,
+          "ordinary_true_INTT_outputs_including_gamma": [
+            0,
+            61,
+            0,
+            0
+          ],
+          "oriented_Omega_coordinates_oracle": [
+            0,
+            26,
+            0,
+            0
+          ]
+        },
+        {
+          "a": [
+            [
+              14,
+              14
+            ],
+            [
+              14,
+              14
+            ]
+          ],
+          "cumulative_direction": [
+            3,
+            17,
+            0,
+            83
+          ],
+          "F0_at_q_one": 36,
+          "ordinary_true_INTT_outputs_including_gamma": [
+            0,
+            61,
+            0,
+            0
+          ],
+          "oriented_Omega_coordinates_oracle": [
+            0,
+            18,
+            0,
+            0
+          ]
+        }
+      ],
+      "all_97_cumulative_translation_values_equal_36_t_power_n": true,
+      "native_representative_gate_count": 73
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "labels": [
+        0,
+        1,
+        2
+      ],
+      "gamma": -1,
+      "target_slot": 3,
+      "cases": [
+        {
+          "a": [
+            [
+              0,
+              2,
+              22
+            ],
+            [
+              2,
+              0,
+              22
+            ],
+            [
+              22,
+              22,
+              0
+            ]
+          ],
+          "cumulative_direction": [
+            76,
+            41,
+            73,
+            10
+          ],
+          "F0_at_q_one": 36,
+          "ordinary_true_INTT_outputs_including_gamma": [
+            0,
+            0,
+            0,
+            61
+          ],
+          "oriented_Omega_coordinates_oracle": [
+            0,
+            0,
+            0,
+            26
+          ]
+        },
+        {
+          "a": [
+            [
+              14,
+              14,
+              22
+            ],
+            [
+              14,
+              14,
+              22
+            ],
+            [
+              22,
+              22,
+              0
+            ]
+          ],
+          "cumulative_direction": [
+            76,
+            41,
+            73,
+            10
+          ],
+          "F0_at_q_one": 36,
+          "ordinary_true_INTT_outputs_including_gamma": [
+            0,
+            0,
+            0,
+            61
+          ],
+          "oriented_Omega_coordinates_oracle": [
+            0,
+            0,
+            0,
+            18
+          ]
+        }
+      ],
+      "all_97_cumulative_translation_values_equal_36_t_power_n": true,
+      "native_representative_gate_count": 121
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "gamma": 1,
+      "target_slot": 6,
+      "cases": [
+        {
+          "a": [
+            [
+              0,
+              2,
+              22,
+              22
+            ],
+            [
+              2,
+              0,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              0,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              0
+            ]
+          ],
+          "cumulative_direction": [
+            26,
+            92,
+            96,
+            82,
+            0,
+            1,
+            75,
+            22
+          ],
+          "F0_at_q_one": 36,
+          "ordinary_true_INTT_outputs_including_gamma": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            36,
+            0
+          ],
+          "oriented_Omega_coordinates_oracle": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            26,
+            0
+          ]
+        },
+        {
+          "a": [
+            [
+              14,
+              14,
+              22,
+              22
+            ],
+            [
+              14,
+              14,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              0,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              0
+            ]
+          ],
+          "cumulative_direction": [
+            26,
+            92,
+            96,
+            82,
+            0,
+            1,
+            75,
+            22
+          ],
+          "F0_at_q_one": 36,
+          "ordinary_true_INTT_outputs_including_gamma": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            36,
+            0
+          ],
+          "oriented_Omega_coordinates_oracle": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            18,
+            0
+          ]
+        }
+      ],
+      "all_97_cumulative_translation_values_equal_36_t_power_n": true,
+      "native_representative_gate_count": 330
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "gamma": 1,
+      "target_slot": 2,
+      "cases": [
+        {
+          "a": [
+            [
+              0,
+              2,
+              22,
+              22,
+              22
+            ],
+            [
+              2,
+              0,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              0,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              0,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              0
+            ]
+          ],
+          "cumulative_direction": [
+            14,
+            7,
+            84,
+            94,
+            85,
+            13,
+            63,
+            34
+          ],
+          "F0_at_q_one": 36,
+          "ordinary_true_INTT_outputs_including_gamma": [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "oriented_Omega_coordinates_oracle": [
+            0,
+            0,
+            26,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "a": [
+            [
+              14,
+              14,
+              22,
+              22,
+              22
+            ],
+            [
+              14,
+              14,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              0,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              0,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              0
+            ]
+          ],
+          "cumulative_direction": [
+            14,
+            7,
+            84,
+            94,
+            85,
+            13,
+            63,
+            34
+          ],
+          "F0_at_q_one": 36,
+          "ordinary_true_INTT_outputs_including_gamma": [
+            0,
+            0,
+            36,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "oriented_Omega_coordinates_oracle": [
+            0,
+            0,
+            18,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "all_97_cumulative_translation_values_equal_36_t_power_n": true,
+      "native_representative_gate_count": 434
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "gamma": -1,
+      "target_slot": 7,
+      "cases": [
+        {
+          "a": [
+            [
+              0,
+              2,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              2,
+              0,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              0,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              0,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              0,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              22,
+              0
+            ]
+          ],
+          "cumulative_direction": [
+            2,
+            25,
+            57,
+            86,
+            0,
+            92,
+            90,
+            42
+          ],
+          "F0_at_q_one": 36,
+          "ordinary_true_INTT_outputs_including_gamma": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            61
+          ],
+          "oriented_Omega_coordinates_oracle": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            26
+          ]
+        },
+        {
+          "a": [
+            [
+              14,
+              14,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              14,
+              14,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              0,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              0,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              0,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              22,
+              0
+            ]
+          ],
+          "cumulative_direction": [
+            2,
+            25,
+            57,
+            86,
+            0,
+            92,
+            90,
+            42
+          ],
+          "F0_at_q_one": 36,
+          "ordinary_true_INTT_outputs_including_gamma": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            61
+          ],
+          "oriented_Omega_coordinates_oracle": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            18
+          ]
+        }
+      ],
+      "all_97_cumulative_translation_values_equal_36_t_power_n": true,
+      "native_representative_gate_count": 553
+    },
+    {
+      "n": 7,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "gamma": -1,
+      "target_slot": 5,
+      "cases": [
+        {
+          "a": [
+            [
+              0,
+              2,
+              22,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              2,
+              0,
+              22,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              0,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              0,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              0,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              22,
+              0,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              22,
+              22,
+              0
+            ]
+          ],
+          "cumulative_direction": [
+            87,
+            52,
+            69,
+            59,
+            85,
+            22,
+            5,
+            15
+          ],
+          "F0_at_q_one": 36,
+          "ordinary_true_INTT_outputs_including_gamma": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            61,
+            0,
+            0
+          ],
+          "oriented_Omega_coordinates_oracle": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            26,
+            0,
+            0
+          ]
+        },
+        {
+          "a": [
+            [
+              14,
+              14,
+              22,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              14,
+              14,
+              22,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              0,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              0,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              0,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              22,
+              0,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              22,
+              22,
+              0
+            ]
+          ],
+          "cumulative_direction": [
+            87,
+            52,
+            69,
+            59,
+            85,
+            22,
+            5,
+            15
+          ],
+          "F0_at_q_one": 36,
+          "ordinary_true_INTT_outputs_including_gamma": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            61,
+            0,
+            0
+          ],
+          "oriented_Omega_coordinates_oracle": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            18,
+            0,
+            0
+          ]
+        }
+      ],
+      "all_97_cumulative_translation_values_equal_36_t_power_n": true,
+      "native_representative_gate_count": 685
+    },
+    {
+      "n": 8,
+      "Q": 97,
+      "N": 16,
+      "omega": 8,
+      "labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "gamma": 1,
+      "target_slot": 12,
+      "cases": [
+        {
+          "a": [
+            [
+              0,
+              2,
+              22,
+              22,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              2,
+              0,
+              22,
+              22,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              0,
+              22,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              0,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              0,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              22,
+              0,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              22,
+              22,
+              0,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              22,
+              22,
+              22,
+              0
+            ]
+          ],
+          "cumulative_direction": [
+            86,
+            53,
+            15,
+            7,
+            48,
+            59,
+            47,
+            47,
+            0,
+            52,
+            22,
+            55,
+            86,
+            26,
+            87,
+            92
+          ],
+          "F0_at_q_one": 36,
+          "ordinary_true_INTT_outputs_including_gamma": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          "oriented_Omega_coordinates_oracle": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            26,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "a": [
+            [
+              14,
+              14,
+              22,
+              22,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              14,
+              14,
+              22,
+              22,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              0,
+              22,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              0,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              0,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              22,
+              0,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              22,
+              22,
+              0,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              22,
+              22,
+              22,
+              0
+            ]
+          ],
+          "cumulative_direction": [
+            86,
+            53,
+            15,
+            7,
+            48,
+            59,
+            47,
+            47,
+            0,
+            52,
+            22,
+            55,
+            86,
+            26,
+            87,
+            92
+          ],
+          "F0_at_q_one": 36,
+          "ordinary_true_INTT_outputs_including_gamma": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            36,
+            0,
+            0,
+            0
+          ],
+          "oriented_Omega_coordinates_oracle": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            18,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "all_97_cumulative_translation_values_equal_36_t_power_n": true,
+      "native_representative_gate_count": 1494
+    }
+  ],
+  "all_97_cumulative_translation_readings_agree": true,
+  "cumulative_direction_alone_does_not_determine_terminal_reading": true,
+  "q_one_specialization_does_not_determine_terminal_reading": true,
+  "two_direction_fusion_repair_exact": true,
+  "general_polynomial_gate_bound_established": false,
+  "general_impossibility_claimed": false,
+  "oracle_only_uses_nilpotent_support_dictionaries": true,
+  "scope": "Only the proposed loss of all separate directions, and the q=1 specialization, are distinguished by this legal pair. The exact two-direction repair retains the two individual dual readings; no bound for arbitrary numbers of directions is inferred. The padded-family checks are limited to n=2,...,8 over F_97 and do not assert availability of every transform length in F_97."
+}

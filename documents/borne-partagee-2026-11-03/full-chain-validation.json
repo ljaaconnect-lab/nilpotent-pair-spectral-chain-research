@@ -1,0 +1,301 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06",
+    "etudes/2026-11-01/borne-chaine-generale/si-direct/CROISSANCE_DAG_DIRECT.md": "922c80d3b82d8d5f39336039f694eb31a8e8b92b84be785cf54862182e99f8be",
+    "documents/borne-partagee-2026-11-03/CROISSANCE_COMPILATEUR_COMPLET.md": "81c98fc0b39e6ba90e103cebb2da9db8cabc4e29ea07024015a755799ea5cc68",
+    "documents/borne-partagee-2026-11-03/verify_full_chain.py": "ebb4e628df69c6607885a76e5c9f54dfcb612d86a55241cf648f20f522c5cd13"
+  },
+  "scope": "Historical shared_operator_dag.compile_chain only; finite checks support a written general proof.",
+  "general_claim": "For n=2m>=4, the final shared scalar DAG has at least binomial(2m,m)>=2^m arithmetic gates.",
+  "claim_includes": [
+    "original a,z preparation",
+    "all h=binomial(n,2) factors",
+    "all phase substitutions",
+    "actual radix-2 INTT"
+  ],
+  "general_scalar_circuit_lower_bound_claimed": false,
+  "general_compiler_reachability_formalized_in_lean": false,
+  "historical_compiler_modified": false,
+  "witnesses_belong_only_to_verifier": true,
+  "cases": [
+    {
+      "n": 4,
+      "m": 2,
+      "h": 6,
+      "Q": 97,
+      "N": 8,
+      "omega": 64,
+      "labels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "passed",
+      "witness_roots": [
+        288,
+        297,
+        305,
+        386,
+        394,
+        470
+      ],
+      "witness_count": 6,
+      "initial_scalar_gates": 94,
+      "final_scalar_gates": 4441,
+      "allocated_nodes_actual_compiler": 6169,
+      "derivative_cache_entries_actual_compiler": 2972,
+      "node_allocations_by_replay_and_witness_checks": 0,
+      "derivative_cache_allocations_by_replay_and_witness_checks": 0,
+      "semantic_separation_checks": 36,
+      "repeated_column_zero_output_tables": 6,
+      "bijective_output_tables": 1,
+      "checkpoints": [
+        {
+          "name": "after_m_factors",
+          "scalar_gates": 364,
+          "witnesses_reachable": 6,
+          "output_roots": [
+            546
+          ]
+        },
+        {
+          "name": "after_all_h_factors",
+          "scalar_gates": 1020,
+          "witnesses_reachable": 6,
+          "output_roots": [
+            2118
+          ]
+        },
+        {
+          "name": "after_phase_0",
+          "scalar_gates": 860,
+          "witnesses_reachable": 6,
+          "output_roots": [
+            2573
+          ]
+        },
+        {
+          "name": "after_phase_1",
+          "scalar_gates": 974,
+          "witnesses_reachable": 6,
+          "output_roots": [
+            3149
+          ]
+        },
+        {
+          "name": "after_phase_2",
+          "scalar_gates": 943,
+          "witnesses_reachable": 6,
+          "output_roots": [
+            3679
+          ]
+        },
+        {
+          "name": "after_phase_3",
+          "scalar_gates": 974,
+          "witnesses_reachable": 6,
+          "output_roots": [
+            4218
+          ]
+        },
+        {
+          "name": "after_phase_4",
+          "scalar_gates": 884,
+          "witnesses_reachable": 6,
+          "output_roots": [
+            4677
+          ]
+        },
+        {
+          "name": "after_phase_5",
+          "scalar_gates": 974,
+          "witnesses_reachable": 6,
+          "output_roots": [
+            5162
+          ]
+        },
+        {
+          "name": "after_phase_6",
+          "scalar_gates": 943,
+          "witnesses_reachable": 6,
+          "output_roots": [
+            5637
+          ]
+        },
+        {
+          "name": "after_phase_7",
+          "scalar_gates": 974,
+          "witnesses_reachable": 6,
+          "output_roots": [
+            6118
+          ]
+        },
+        {
+          "name": "after_actual_intt_all_outputs",
+          "scalar_gates": 4441,
+          "witnesses_reachable": 6,
+          "output_roots": [
+            6161,
+            6162,
+            6163,
+            6164,
+            6165,
+            6166,
+            6167,
+            6168
+          ]
+        }
+      ],
+      "seconds": 0.266
+    },
+    {
+      "n": 6,
+      "m": 3,
+      "h": 15,
+      "Q": 97,
+      "N": 8,
+      "omega": 64,
+      "labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "status": "passed",
+      "witness_roots": [
+        7951,
+        9689,
+        11282,
+        12800,
+        9783,
+        11378,
+        12896,
+        11471,
+        12989,
+        12524,
+        9795,
+        11390,
+        12908,
+        11483,
+        13001,
+        12538,
+        11496,
+        13014,
+        12553,
+        12567
+      ],
+      "witness_count": 20,
+      "initial_scalar_gates": 214,
+      "final_scalar_gates": 242471,
+      "allocated_nodes_actual_compiler": 354118,
+      "derivative_cache_entries_actual_compiler": 216210,
+      "node_allocations_by_replay_and_witness_checks": 0,
+      "derivative_cache_allocations_by_replay_and_witness_checks": 0,
+      "semantic_separation_checks": 400,
+      "repeated_column_zero_output_tables": 20,
+      "bijective_output_tables": 1,
+      "checkpoints": [
+        {
+          "name": "after_m_factors",
+          "scalar_gates": 8566,
+          "witnesses_reachable": 20,
+          "output_roots": [
+            13055
+          ]
+        },
+        {
+          "name": "after_all_h_factors",
+          "scalar_gates": 62578,
+          "witnesses_reachable": 20,
+          "output_roots": [
+            143501
+          ]
+        },
+        {
+          "name": "after_phase_0",
+          "scalar_gates": 55900,
+          "witnesses_reachable": 20,
+          "output_roots": [
+            167533
+          ]
+        },
+        {
+          "name": "after_phase_1",
+          "scalar_gates": 60810,
+          "witnesses_reachable": 20,
+          "output_roots": [
+            196474
+          ]
+        },
+        {
+          "name": "after_phase_2",
+          "scalar_gates": 59699,
+          "witnesses_reachable": 20,
+          "output_roots": [
+            224286
+          ]
+        },
+        {
+          "name": "after_phase_3",
+          "scalar_gates": 60810,
+          "witnesses_reachable": 20,
+          "output_roots": [
+            252434
+          ]
+        },
+        {
+          "name": "after_phase_4",
+          "scalar_gates": 57298,
+          "witnesses_reachable": 20,
+          "output_roots": [
+            277158
+          ]
+        },
+        {
+          "name": "after_phase_5",
+          "scalar_gates": 60810,
+          "witnesses_reachable": 20,
+          "output_roots": [
+            302906
+          ]
+        },
+        {
+          "name": "after_phase_6",
+          "scalar_gates": 59699,
+          "witnesses_reachable": 20,
+          "output_roots": [
+            328319
+          ]
+        },
+        {
+          "name": "after_phase_7",
+          "scalar_gates": 60810,
+          "witnesses_reachable": 20,
+          "output_roots": [
+            354067
+          ]
+        },
+        {
+          "name": "after_actual_intt_all_outputs",
+          "scalar_gates": 242471,
+          "witnesses_reachable": 20,
+          "output_roots": [
+            354110,
+            354111,
+            354112,
+            354113,
+            354114,
+            354115,
+            354116,
+            354117
+          ]
+        }
+      ],
+      "seconds": 25.328
+    }
+  ]
+}

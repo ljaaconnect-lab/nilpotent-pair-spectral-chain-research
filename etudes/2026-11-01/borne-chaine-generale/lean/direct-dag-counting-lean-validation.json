@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "source": "DirectDagCounting.lean",
+  "sha256": "073caf2da71ddfb5475584f792fdad8de54f50d636f8aad2887ad74588c29705",
+  "replay_sha256": "854bda8eb664095fe8ede3ab55e37bd1ff37a605e4978484a155bfcfd3f936a5",
+  "exit_code": 0,
+  "stdout": "'DirectDagCounting.two_pow_le_middle_choose' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectDagCounting.choose_le_of_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DirectDagCounting.two_pow_le_of_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "scope": "2^m <= choose(2*m,m) and conditional counting transfer along a supplied injection",
+  "compiler_formalized": false,
+  "derivative_reachability_formalized": false,
+  "injection_into_compiler_gates_constructed": false,
+  "general_scalar_circuit_lower_bound": false,
+  "general_polynomial_closure": false,
+  "full_chain_formalization": false
+}

@@ -1,0 +1,11 @@
+{
+  "n": 2,
+  "inversion_pairs": 1,
+  "row_pairs": 1,
+  "euler_diagonal_identity": true,
+  "grouped_row_identity": true,
+  "permutation_terms": 2,
+  "scope": "SymPy exact identity only; no differentiation counted as a scalar gate",
+  "elapsed_seconds": 0.10329270000511315,
+  "protocol_sha256": "f599b50a2a6e94fe6c2a2b2a5dd45b1b57cad74d4780e0a3f317373da4e16061"
+}

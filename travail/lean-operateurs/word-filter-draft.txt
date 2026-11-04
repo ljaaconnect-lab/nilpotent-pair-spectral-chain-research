@@ -1,0 +1,16 @@
+def compatible {α : Type u} [DecidableEq α] (pattern : Pattern) (w : List α) : Bool :=
+  (pattern.zip w).all fun a => (pattern.zip w).all fun b =>
+    if a.1 = b.1 then decide (a.2 = b.2) else true
+
+def wordWeight {α : Type u} [DecidableEq α] (w : List α) (p : Poly) : Int :=
+  (p.map fun (pattern, c) => if compatible pattern w then c else 0).sum
+
+theorem fifth_filter_on_arbitrary_columns {α : Type u} [DecidableEq α]
+    (a b c d e : α) :
+    wordWeight [a, b, c, d, e] (exact 5) =
+      if a ≠ b ∧ a ≠ c ∧ a ≠ d ∧ a ≠ e ∧ b ≠ c ∧ b ≠ d ∧ b ≠ e ∧
+        c ≠ d ∧ c ≠ e ∧ d ≠ e then 32 else 0 := by
+  simp [wordWeight, compatible, exact, partitions, arity, mobius, blockSize,
+    factorial, List.sum_cons, List.sum_nil]
+  done
+

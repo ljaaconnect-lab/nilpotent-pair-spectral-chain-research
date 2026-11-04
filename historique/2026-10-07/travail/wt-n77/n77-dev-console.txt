@@ -1,0 +1,1 @@
+{"node": "n77", "artifact_version": "n77-direct-corrected-scalar-dag-v1", "dev_score": 1.0, "root_score": 0, "positive_cases_passed": 36, "positive_cases_total": 36, "seconds": 0.155735, "measured_marked_gates": {"1": 2, "2": 12, "3": 34, "4": 80, "5": 178}}

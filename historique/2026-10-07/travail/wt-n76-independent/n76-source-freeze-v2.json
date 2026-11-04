@@ -1,0 +1,20 @@
+{
+  "node": "n76",
+  "candidate_version": 2,
+  "compiler_invocations_before_freeze": 1,
+  "leaves_unchanged": [
+    "B1",
+    "B2",
+    "B3",
+    "B4"
+  ],
+  "parent_freeze_sha256": "995bc5e96b0bdd7fc8711e8f9f669977bbd77a6cfc464d70fd948ed14054bec7",
+  "adjustment": "Repair exact compiler diagnostics: reserved identifier, lemma arguments, row function rewrites, sum order, finite membership cases. Runner stdout UTF8 repair only.",
+  "files": {
+    "AtomicSecondPrefix.lean": "5dfd49a3b490f7a4d6cc289491fbb8a4f04484690dbbd33ae40fe5f9a909a321",
+    "run_atomic.py": "7cce5f7591e7d7ea2d526941de893f0336f1546f965c1407fbd035df559897d2",
+    "n76-contract.json": "115f351e4e920d8baf8f477b33f7f2539b09b0c3d72c437d9f42775252fd8b8c",
+    "n76-dependency-provenance.json": "5ccaf00798501869c90adbdb2cf373b4fdfec444f9960916a55c3410f4ed0cf7",
+    "n76-protocol.json": "c464ef7802adcade57484ff896c4f8ad92d4d928cc66e46ec6e9eee09a8501af"
+  }
+}

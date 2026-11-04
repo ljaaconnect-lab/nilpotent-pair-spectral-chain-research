@@ -1,0 +1,4 @@
+'SharedBinaryPower.power_add' does not depend on any axioms
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerCompiler.lean:53:20: error(lean.unknownIdentifier): Unknown constant `Nat.strong_induction_on`
+'SharedBinaryPower.positive_plan_correct' depends on axioms: [propext, sorryAx, Quot.sound]
+'SharedBinaryPower.central_exponent_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

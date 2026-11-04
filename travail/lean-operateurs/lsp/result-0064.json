@@ -1,0 +1,111 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fermeture-generale\\Insertion.lean",
+  "version": 15,
+  "completed": true,
+  "seconds": 0.453,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 10,
+          "line": 55
+        },
+        "start": {
+          "character": 6,
+          "line": 55
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\ncase cons\nα : Type u_1\na : α\nv : List α\nx : α\nu : List α\nih : derive a (u ++ v) = Multiset.map (fun w => w ++ v) (derive a u) + Multiset.map (fun w => u ++ w) (derive a v)\n⊢ {a :: x :: (u ++ v)} +\n      (Multiset.map ((fun x_1 => x :: x_1) ∘ fun w => w ++ v) (derive a u) +\n        Multiset.map ((fun x_1 => x :: x_1) ∘ fun w => u ++ w) (derive a v)) =\n    {a :: x :: (u ++ v)} + Multiset.map ((fun w => w ++ v) ∘ List.cons x) (derive a u) +\n      Multiset.map (fun x_1 => x :: (u ++ x_1)) (derive a v)",
+      "range": {
+        "end": {
+          "character": 10,
+          "line": 55
+        },
+        "start": {
+          "character": 6,
+          "line": 55
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 57
+        },
+        "start": {
+          "character": 0,
+          "line": 57
+        }
+      },
+      "message": "'OrientedOperators.FullInsertion.insert_after_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 57
+        },
+        "start": {
+          "character": 0,
+          "line": 57
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 58
+        },
+        "start": {
+          "character": 0,
+          "line": 58
+        }
+      },
+      "message": "'OrientedOperators.FullInsertion.insertion_commutes' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 58
+        },
+        "start": {
+          "character": 0,
+          "line": 58
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 59
+        },
+        "start": {
+          "character": 0,
+          "line": 59
+        }
+      },
+      "message": "'OrientedOperators.FullInsertion.insertion_commutes_on_polynomials' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 59
+        },
+        "start": {
+          "character": 0,
+          "line": 59
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    }
+  ]
+}

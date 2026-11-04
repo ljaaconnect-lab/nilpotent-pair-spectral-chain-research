@@ -1,0 +1,174 @@
+{
+  "cycle_checks": 54,
+  "disjoint_cycle_jet_degree": 18,
+  "nonzero_beta_through_degree_six": {
+    "(3, 2)": "-1/3",
+    "(2, 3)": "1/2",
+    "(1, 6)": "-1/6"
+  },
+  "bouquet_checks": [
+    {
+      "cycles": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "degree": 8,
+      "jets": [
+        1,
+        0,
+        5,
+        0,
+        0,
+        0,
+        -5,
+        0,
+        137
+      ]
+    },
+    {
+      "cycles": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          15
+        ]
+      ],
+      "degree": 8,
+      "jets": [
+        1,
+        0,
+        2,
+        15,
+        0,
+        0,
+        217,
+        60,
+        1430
+      ]
+    },
+    {
+      "cycles": [
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "degree": 8,
+      "jets": [
+        1,
+        7,
+        5,
+        0,
+        0,
+        91,
+        -5,
+        -980,
+        137
+      ]
+    }
+  ],
+  "bouquet_phase_check": true,
+  "cactus_degree_twelve": [
+    1,
+    0,
+    4,
+    0,
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cyclic_incidence_candidate": {
+    "observed": [
+      1,
+      0,
+      3,
+      2,
+      0,
+      -6,
+      -1,
+      24,
+      27
+    ],
+    "target": [
+      1,
+      0,
+      3,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "loopless_residual_checks": [
+    {
+      "n": 2,
+      "residual": 0
+    },
+    {
+      "n": 2,
+      "residual": 0
+    },
+    {
+      "n": 2,
+      "residual": 0
+    },
+    {
+      "n": 3,
+      "residual": -10
+    },
+    {
+      "n": 3,
+      "residual": -162
+    },
+    {
+      "n": 3,
+      "residual": 234
+    },
+    {
+      "n": 4,
+      "residual": -80
+    },
+    {
+      "n": 4,
+      "residual": -6
+    },
+    {
+      "n": 4,
+      "residual": 44
+    }
+  ],
+  "overlap_counterexamples": {
+    "weighted_star_residual6": 30,
+    "bidirected_triangle_residual6": 9
+  },
+  "legal_J6_after_c4_c5_cycle_correction": {
+    "observed": 205,
+    "target": 720
+  },
+  "general_polynomial_proof": false
+}

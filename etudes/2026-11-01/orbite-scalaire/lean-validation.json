@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "source": "OrbitDifference.lean",
+  "sha256": "5675e20980dc122642052845eda0848b5b10e9455883aed4aaa1049fef59beb5",
+  "source_changed_during_check": false,
+  "exit_code": 0,
+  "seconds": 14.985,
+  "compiler": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "stdout": "'OrientedOperators.OrbitDifference.intertwiner_diff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrientedOperators.OrbitDifference.intertwiner_iterated_diffs' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "intertwiner_diff",
+    "intertwiner_iterated_diffs"
+  ],
+  "scope": "Abstract intertwining of additive transports and additive readout with ordinary differences of the orbit function, including arbitrary lists. Additivity and transport fusion are explicit hypotheses. The orbit product formula, collision projector and scalar complexity are written proofs, not formalized here.",
+  "full_chain_formalization": false,
+  "general_polynomial_closure": false
+}

@@ -1,0 +1,33 @@
+{
+  "status": "helpers_verified",
+  "root_conjecture_verified": false,
+  "commit": "a9fb85d1a2d83db55cf85457de978b2f2de3ba57",
+  "coordinator_compiler_rounds": 2,
+  "total_compiler_rounds": 18,
+  "sources": [
+    {
+      "source": "CoreBridge.lean",
+      "sha256": "7c7b7d565b41a281ec95465bcca5935de00677a6c8607a6f5c5ffa75e1ddc4b8",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\gate-n3\\CoreBridge.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'CollisionCoreBridge.decode_head' depends on axioms: [propext]\n'CollisionCoreBridge.decode_tail' depends on axioms: [propext]\n'CollisionCoreBridge.encodeDigits_injective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionCoreBridge.central_label_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionCoreBridge.orbit_stabilizes' depends on axioms: [propext]\n'CollisionCoreBridge.n2_pair_factorization' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CollisionCoreBridge.n2_central_convolution' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "source": "GeneratedCoreN2.lean",
+      "sha256": "9f57078826bf15c45579d99eafa77f467ae1b61986bfa47885ea008c06ee9712",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\gate-n3\\GeneratedCoreN2.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'GeneratedCollisionN2.factorization' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GeneratedCollisionN2.central_convolution' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "accepted_declarations": 9,
+  "distinct_results": 7
+}

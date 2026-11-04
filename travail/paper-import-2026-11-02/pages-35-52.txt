@@ -1,0 +1,1124 @@
+=== PAGE 35 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 35
+Here Q/4 ⩽µ⩽Q/ 2. Since R⩽Q/ 6, the interval lies in{0, . . . , Q}. Its center differs from
+µ by less than one, and R⩾ 32ensures that it contains every integer within R/4of µ. For
+W∼Bin(Q,(r−1)/(2r)), Hoeffding’s inequality gives
+Pr[W /∈ I]⩽2e−R2/(8Q) ⩽2e −16(β+3)2ν ⩽2 −(β+2)ν ⩽λ −(β+2) ⩽ 1
+br2λ .
+The last inequality usesb⩽λ β and r2 ⩽λ . This proves(4.8) with ϵ = τ /(rb). Also0 < τ⩽ 1/2
+oncer⩾2.
+Finally,
+R
+Q =O β(ν/
+√
+λ),log(2Q/R) =O(ν), τlog(2D+ 1) =O(1/r).
+Together with1/r=O(ν 2/
+√
+λ), these prove (4.18).
+We finish by showing that the parameters in(4.17) can be constructed exactly within the stated
+bit bound. The algorithm finds λ = ⌈log2 n⌉ as the least integer withn⩽ 2λ, and then finds
+ν = ⌈log2 λ⌉ in the same way. It obtainsr as the largest integer satisfyingr2ν4 ⩽λ , computes Q by
+integer division, and finds⌈
+√
+λ⌉ by an integer square-root search to obtainR. If r <2or Q⩽R ,
+the algorithm reports failure at this stage. Otherwise it constructsτ, ϵ, Dand the endpoints ofI
+using integer or rational arithmetic. It then checksI ⊆ {0, . . . , Q}, the two balance inequalities,
+R⩾ 32, and6 R⩽Q . The tail probability in(4.8) has denominator(2 r)Q, so its required bound can
+also be checked by integer arithmetic. These computations takepolyβ(logn )bit operations. The
+preceding estimates show that all checks pass for sufficiently largen.□
+5.Counting common zeros of sparse polynomial equations
+We now prove Theorem 2.2. The input is a systemP of mtest ⩽cn polynomial equationsPi(x) = 0
+over F2 in n Boolean variables. EachPi is a list of at most(logn )c monomials of degree at mostk,
+for fixedk, c. Our target is the integer
+N(P) = #{x∈ {0,1}n :P i(x) = 0for everyi}.(5.1)
+First we build a product with one factor per equation whose value on the Boolean cube records the
+common-zero indicator. The difficulty is keeping its total input degree linear inn. Next we construct
+the replacement forms for these factors and use Section 3 to sum the product. Section 6 uses the
+resulting algorithm for arbitrary supplied systems, including systems that still accept nonsatisfying
+assignments of a formula.
+5.1.An integer polynomial for one equation.On Boolean inputs we may replace each positive
+power xj
+v by xv. Combine duplicate monomials modulo two. IfMi is the resulting list of variable
+sets forP i, define its integer lift by
+Li( ⃗X) =
+X
+M∈M i
+Y
+v∈M
+Xv.
+The empty monomial is1and the empty sum is0. The valueLi(x)counts the monomials equal
+to one, soPi(x) = 0precisely when Li(x)is even. Write Ii = S
+M∈M i M. Although Li can read
+k(logn) c variables, it still has degree at mostk.
+Set ℓ = n + 1. Since0 ⩽N (P) ⩽ 2n < 2ℓ, it suffices to obtain its residue modulo2ℓ. We first
+represent the evenness indicator by an integer polynomial modulo this power of two. Multiplying
+mtest such indicators directly would give only a quadratic degree bound; the form of the next lemma
+will let us control the degree across all equations together.
+Put h(Y ) = Y (Y− 1). Its value is even at every integerY. Writing the indicator in powers ofh
+exposes one factor of two for each copy ofhin the product.
+
+=== PAGE 36 ===
+36 OPENAI
+Lemma 5.1.For every integer ℓ⩾ 1, one can construct polynomialse0, . . . , eℓ−1 ∈Z [Y ], each of
+degree at most one, such that
+pℓ(Y) =
+ℓ−1X
+j=0
+ej(Y)h(Y) j, p ℓ(y)≡1 {2|y} (mod 2 ℓ) (y∈Z).(5.2)
+The coefficients of theej have poly(ℓ)bits, and the construction uses poly(ℓ)bit operations and
+poly(ℓ)bits of space.
+Proof. Let Fℓ be the modulus-amplifying polynomial of Beigel and Tarui [BT94, Section 2.3].
+Chan and Williams applyFℓ to sums of clause-violation indicators to count satisfying assignments
+deterministically [CW21, Theorem 2.5 and proof of Theorem 1.6]. We need the indicator of even
+parity, so we take its complement:
+pℓ(Y) = 1−F ℓ(Y) = (1−Y) ℓ
+ℓ−1X
+j=0
+ ℓ+j−1
+j
+ 
+Y j.(5.3)
+The finite sum is the inverse of(1−Y )ℓ modulo Y ℓ. Indeed, the coefficient ofY j in(1+ Y +Y 2 +· · ·)ℓ
+counts weak compositions ofjintoℓparts and equals
+ ℓ+j−1
+j
+ 
+. Therefore
+pℓ(Y)≡1 (modY ℓ), p ℓ(Y)≡0 (mod (1−Y) ℓ).
+For eveny, the first congruence givespℓ(y) ≡ 1 ( mod 2ℓ). For odd y, the second givespℓ(y) ≡ 0
+(mod 2 ℓ).
+The polynomialpℓ has integer coefficients and degree less than2ℓ. Successive division by the monic
+quadratic h = Y 2 −Y writes it uniquely asP
+j<ℓ ejhj, with integer remaindersej of degree less
+than two. Lemma B.1 in Appendix B bounds their coefficients and proves thepoly(ℓ)bit-operation
+bound for this construction.□
+5.2.Keeping the product degree linear.The full product Qmtest
+i=1 pℓ(Li( ⃗X))has degree at most
+kmtest(2ℓ− 1). Each factorh(y)contributes a factor of two at integer arguments, so a term containing
+at least ℓ such factors can be discarded modulo2ℓ. This lets us retain only terms whose total power
+of h is less thanℓ, across all equations together. Introduce a formal variableV to record that power,
+using the sameV for every equation. Its exponent records a guaranteed power of two dividing the
+corresponding term at integer arguments. It is not an additional Boolean variable to be summed
+over. This is where we choose the coefficient algebra of Section 3.1:
+Aℓ =Q[V]/(V ℓ).
+In this algebra every multiplication discards powersV s with s⩾ℓ . Once the product is formed, we
+add its retained coefficients using the linear map
+Sℓ
+ ℓ−1X
+s=0
+bsV s
+!
+=
+ℓ−1X
+s=0
+bs.
+This map need not preserve products, so it is applied only after the factors have been multiplied.
+We use the same notation for polynomial coefficientsbs.
+Lemma 5.2.Letm test ⩾0andℓ⩾1be integers. For integersy 1, . . . , ymtest, put
+Bi(V) =
+ℓ−1X
+j=0
+ej(yi)h(yi)jV j.
+Then
+Sℓ
+ mtestY
+i=1
+Bi(V) modV ℓ
+ 
+≡
+mtestY
+i=1
+1{2|yi} (mod 2 ℓ).
+
+=== PAGE 37 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 37
+For any nonnegative integerd∗, if theyi are instead polynomials overQ of total degree at mostd∗, then
+each retained coefficient ofV s, and hence their sum, has total input degree at mostd∗(mtest +2(ℓ− 1)).
+Proof.Before truncation, a term contributing to the coefficient ofVs has the form
+mtestY
+i=1
+eji(yi)h(yi)ji,
+mtestX
+i=1
+ji =s.
+At integer arguments it is divisible by2s. Dropping every coefficient withs⩾ℓ therefore leaves the
+sum of coefficients unchanged modulo2ℓ. Without truncation, that sum isQ
+i pℓ(yi), which has the
+required congruence by Lemma 5.1.
+For polynomial arguments, every retained term hasP
+i ji ⩽ℓ− 1. Since dege ji ⩽ 1and degh = 2,
+its degree is at most
+mtestX
+i=1
+d∗(1 + 2ji)⩽d ∗(mtest + 2(ℓ−1)).
+The bound holds coefficient by coefficient, as well as for their sum.□
+To see why the truncation uses the total order across all equations, takeℓ= 2. Then
+p2(Y) = 1−3Y 2 + 2Y 3 = (1−Y) + (2Y−1)h(Y).
+For two equations, multiplication moduloV2, followed byS2, retains
+(1−y 1)(1−y 2) + (2y1 −1)h(y 1)(1−y 2) + (1−y 1)(2y2 −1)h(y 2).
+Its degree is at most four. The omitted term(2y1 − 1)(2y2 − 1)h(y1)h(y2)has degree six, but is
+divisible by four at integer inputs.
+5.3.Counting with supplied replacement forms.For equation i supply Section 3 with the
+factor
+Bi((Xv)v∈Ii, V) =
+ℓ−1X
+j=0
+ej(Li( ⃗X))h(L i( ⃗X)) jV j inA ℓ[(Xv)v∈Ii].(5.4)
+Within a factor, every occurrence ofXv uses the same replacement form; different factors may use
+different forms forXv. Even if each factor receives its own independent inputs,Li has degree at most
+k in those inputs. Lemma 5.2 bounds the input degree of the productinAℓ by d = k(mtest + 2(ℓ− 1)).
+Thus the product satisfies precisely the degree hypothesis(3.2) of the common routine. Adding
+factors equal to one with scope{v}ensures that all declared variables occur in the construction.
+Let H(T ) ∈ Aℓ[T ]be (3.3) for these factors. ItsV-coefficients at T = 0are integers because all
+replacements restore their Boolean inputs at zero. By the same lemma, summing their values gives
+degT H⩽d H :=kR(m test + 2(ℓ−1)),S ℓ(H(0))≡N(P) (mod 2 ℓ).(5.5)
+Consequently the least nonnegative residue ofSℓ(H(0))is the exact count. Interpolation takes place
+over the rationals; the congruence is needed only on Boolean inputs atT= 0.
+5.4.Cost of evaluating the factors.
+Proposition 5.3.Let a list of degree-at-most-k polynomial equations onn variables and a design
+satisfying Definition 3.1 for their factors be given. LetS⩾ 1bound the total length of the monomial
+lists and factor scopes, and use anyℓ with2 ℓ > 2n. With dH from (5.5) and q, Jfrom (3.5), N (P)
+can be computed deterministically in
+poly(n, mtest, ℓ, D, Q, R, J, r, k, S)Cq(2D+ 1) 2τ n22n/r
+bit operations andpoly(n, mtest, ℓ, D, Q, R, J, r, k, S)bits of working space.
+
+=== PAGE 38 ===
+38 OPENAI
+Proof. Apply Proposition 3.4 with coefficients inAℓ. At an evaluation pointt, the routine uses
+Aℓ[z]/(zJ ), so a stored element has justJ ℓrational coefficients. To evaluate factori at a fixed
+Boolean substitution ⃗X =1 U in (3.7), first evaluate each listed monomial by multiplying its at
+most k substituted inputs, then add the results to getLi. Use this value in (5.4), successively
+multiplying by h(Li)to obtain its powers. This takes polynomially many rational operations in the
+displayed parameters and never enumerates assignments to the entire scopeIi. The polynomials ej
+are computed once by Lemma 5.1.
+For bit complexity, the rows have common denominatordden = (R− 1)!Q!. Each substituted
+monomial has denominator dividing∆ =dk
+den, every lifted factor has denominator dividingΓ = ∆2ℓ−1,
+and their product has denominator dividingΩ = Γmtest. Thus exponentially many summands can be
+accumulated over one denominator. Appendix B bounds the bit lengths in these sums by
+Bsum = poly(n, mtest, ℓ, k, Q,log(D+ 2),log(S+ 2)).(5.6)
+For each0 ⩽s < ℓwe interpolate the rational polynomial[V s]H(T )from its QJ Taylor coefficients.
+The appendix verifies polynomial bit cost for this interpolation and the final integer remainder in
+(5.5). The O(QJ ℓ)stored coefficients, the design and the sequential enumerations in Proposition 3.4
+give the stated space bound.□
+5.5.Constructing the forms and completing the proof.Each sparse polynomial reads few
+variables, but one variable might occur in many equations. We first fix the values of the few variables
+with the largest numbers of occurrences. On each resulting branch we can construct the design
+required by Proposition 5.3.
+Proof of Theorem 2.2.Let P be the supplied polynomial system. An empty list of equations gives
+2n common zeros; a constant equation1 = 0gives none. Discard equations0 = 0. Include a neutral
+factor equal to one with scope{v}for each declared variablev, and write
+M=
+X
+f∈F
+|If |
+for the total number of factor–variable incidences. The input bounds implyM = n(logn )Ok,c(1), and
+every scope has(logn )Ok,c(1) variables. A particular variable, however, may occur in many of these
+scopes.
+Putλ=⌈log 2 n⌉and
+b0 =
+  M
+n
+ 
+⌈
+√
+λ⌉.
+Let S⊆ [n]be the variables belonging to more than b0 scopes. For each b∈ {0, 1}S, we fix
+x|S = b and count the completions on[n] \S ; we call this restricted problem a branch. Since
+|S|⩽M/b 0 ⩽n/
+√
+λ, there are at most2n/
+√
+λ branches. Each branch has the same numbern′ of
+free variables, with
+n′ ⩾n− n√
+λ
+⩾ n
+2 (n⩾20).
+Substitute the fixed bits in everyPi over F2 and combine duplicate monomials modulo two before
+forming its integer lift. Neither degree nor the number of monomials increases. A constant equation
+can again be handled immediately. The branches partition the Boolean cube, so their common-zero
+counts add toN(P).
+To apply Section 4, remove the fixed variables from the scopes and relabel the free variables by
+[n′]. Write I ′
+f ⊆ [n′]for the restricted scopes andM ′ = P
+f |I ′
+f | for their total incidence count. Letb
+be the maximum factor incidence of a free variable and letw = maxf |I ′
+f |. Then b⩽b 0, and bothb
+andware bounded by a fixed power oflogn ′. The remaining neutral factors ensureM′ ⩾n ′. Set
+λ′ =⌈log 2 n′⌉, ν ′ =⌈log 2 λ′⌉,
+
+=== PAGE 39 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 39
+and choose the smallest integerβ⩾ 1with b, w⩽ (λ′)β. For fixedk, c, the possible values ofβ are
+bounded by a constant for all sufficiently largen. We apply Lemma 4.8 to the restricted scopes(I ′
+f )
+on[n ′], with incidence countM′, using
+r=
+$ √
+λ′
+(ν′)2
+%
+, Q=
+  λ′
+128ν′
+ 
+, R= (β+ 3)⌈
+√
+λ′⌉.
+If r < 2or Q⩽R , use the exhaustive-search fallback below before formingτ, ϵ, or the parity
+interpolation intervalI. Otherwise set
+τ= 1
+rλ′ , ϵ= 1
+br2λ′ , D=r 2Q,
+and carry out the remaining feasibility checks from that lemma. For all sufficiently largen, Lemma 4.7
+supplies the required rows and measurement matrices, with
+r= Θ
+  √logn ′
+(log logn ′)2
+ 
+, Q= Θ
+  logn ′
+log logn ′
+ 
+, R=O k,c(
+p
+logn ′), D⩽(2n ′)1/128.
+On every branch we may use the original precisionℓ = n + 1, since even the unrestricted
+count is smaller than2 ℓ. As n′ ⩾n/ 2, both ℓ and mtest are Oc(n′). Thus dH = Ok,c(n′R),
+J=O k,c(n′R/Q) + 1, and (3.16), in dimensionn′, has exponent
+Ok,c
+  n′(log logn ′)2
+√logn ′
+ 
+=O k,c
+  n(log logn) 2
+√logn
+ 
+.
+All substitution data, coefficient arrays, and interpolation systems have total representation length
+nOk,c(1) bits. Multiplying the per-branch running time by at most2 n/
+√
+λ leaves the displayed
+exponential bound unchanged, so summing the branch answers gives the required running time.
+To implement the construction for every input size, the algorithm checks its numerical hypotheses
+using integer arithmetic. In addition to the preliminary guards above, it checks2(b + w)D2 ⩽M ′
+and2 Qr2 ⩽n ′ from Lemma 4.5, the endpoints ofI, R⩾ 32,6 R⩽Q , and the binomial tail bound
+in (4.8), which can be tested exactly. If any check fails, the algorithm abandons the branched
+computation and checks the original equations directly on all2n assignments. For fixed k, c, the
+bounds just proved and Lemma 4.8 show that a failure can occur only for finitely manyn. This
+fallback is therefore absorbed in the theorem’s constants.
+To combine the branch counts within the stated space bound, we process the branches one at a time.
+We initialize an integer accumulatorZ = 0and add each branch’s answer to it. The construction and
+Proposition 5.3 usenOk,c(1) bits of space on each branch. Disjointness gives0⩽Z⩽ 2n throughout,
+and the final value isN(P), as claimed.□
+6.Reducing#k-SAT to counting common zeros
+Given a sparsek-CNF F with at mostBn clauses, where B is polylogarithmic inn, we construct
+O(n)sparse polynomial equations on its originaln variables whose common zeros are exactly its
+satisfying assignments. One equation per clause could requireBn equations. Instead, each equation
+will test the parity of the violations of a short list of clauses. We use Theorem 2.2 both to choose
+these equations and to obtain the final count.
+Let m be the number of indexed clauses andve(x)the violation bit of clausee. As a polynomial
+over F2, ve is a product of the factors1 +xv for positive literals andxv for negative literals. A
+tautological clause hasve = 0and an empty clause has ve = 1. After removing repeated literals,
+degv e ⩽k and ve expands to at most2k monomials. Put v(x) = (v1(x), . . . , vm(x)). For a binary
+matrixAwithmcolumns, rowispecifies the equation
+Pi(x) :=
+X
+e:Aie=1
+ve(x) = 0overF 2.(6.1)
+
+=== PAGE 40 ===
+40 OPENAI
+Write PA for this system andN (A) = N (PA)for its number of common zeros. Every satisfying
+assignment passes every row. HenceN (A) = #F + D(A), where D(A)counts the nonsatisfying
+assignments still passing. We do not know#F, but it is the same for every candidate next row: the
+row minimizingNalso minimizesD.
+We represent a test row by a list of pairs(e, c)with e∈ [m]and c∈ {0, 1}, summing coefficients
+modulo2if a clause index is repeated. The length of this list counts all pairs, including repeated
+indices and pairs with coefficient zero. A row of list lengths thus reads at mostks variables before
+cancellation.
+6.1.Initial tests that exclude small violation sets.If an assignment violates only one of many
+clauses, a test sampling a short list of clauses is unlikely to notice it. We therefore first construct
+a matrix A(0) that rejects every nonzero violation vector with small support. Every nonsatisfying
+assignment that passes these initial tests must violate many clauses. A further test that samples a
+short list of clauses can then reject each such assignment with constant probability.
+We use the standard edge-based Tanner code: bits are assigned to the edges of an expander, and
+the bits incident to each vertex must form a word of a prescribed local linear code (see Tanner [Tan81,
+Section II] for the local constraints and Sipser and Spielman [SS96, Sections IV and VI] for the
+expander construction). The usual local-distance and expansion argument gives the needed lower
+bound on the weight of a nonzero codeword. The proof below constructs the graph and local code
+deterministically, with parameters that meet our bounds on the number and length of the tests.
+Lemma 6.1.Letn, m, Bbe positive integers withm⩽Bn, and put
+µ=⌊log 2 m⌋+ 1, P= 20000B 2µ2, D 0 = 320000B2µ3.
+There is a deterministic construction of a binary matrixA(0) with m columns and at most3n rows
+such that every row has at mostD0 nonzero entries and
+z∈ {0,1}m \ {⃗0}, A (0)z= ⃗0 (mod 2) =⇒ |suppz|⩾m/P.
+The construction uses exp(poly(B,log (m + 2)))bit operations and poly(n, m, B)bits of working
+space.
+Proof. We construct a bipartite graph with betweenm and2 m edges, using its edges as temporary
+binary coordinates. Checks at each vertex will force every vertex touched by a nonzero edge to have
+many nonzero incident edges; a mixing bound will then force large total weight. At the end, we keep
+medge coordinates and fix the rest to zero. Let
+dG = min(m, D0), q G = min{2a :a∈Z ⩾0,2 adG ⩾m}.
+Then m⩽q GdG < 2m. Write qG = 2ℓG and take two copies of{0, 1}ℓG as the vertex sets. For each
+left vertex u and each portj∈ [dG], put an edge fromu to u⊕s j, where ⊕ denotes bitwise addition
+modulo2and the shifts s1, . . . , sdG ∈ {0, 1}ℓG will be chosen below. Edges are indexed by the pairs
+(u, j); parallel edges remain distinct. Every vertex on either side has one incident edge at each port
+j, so the graph isdG-regular.
+To obtain the mixing estimate(6.3), we choose the shifts so that every parity of a nonempty set
+of coordinates is nearly balanced. For a nonzero vectorb∈ {0, 1}ℓG, the bitb·s j mod 2is the parity
+of those coordinates ofsj wherebequals1. Withε= 1/(200Bµ), we require
+   
+dGX
+j=1
+(−1)b·sj
+    ⩽εd G
+ 
+b∈ {0,1}ℓG \ {⃗0}
+ 
+.(6.2)
+The sum in(6.2) is the number of indicesj with even parity minus the number with odd parity.
+Thus, for every nonzerob, each parity occurs at a fraction of indices between(1−ε )/2and(1 + ε)/2.
+A list of shifts with this property is calledε-biased [NN93, Definitions 2.1–2.2].
+
+=== PAGE 41 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 41
+If qG = 1, there is no condition to check. OtherwisedG = D0. To show that suitable shifts exist,
+we choose them independently and uniformly at random. For each fixed nonzerob, the signs(−1)b·sj
+are independent and uniform in{−1, 1}. Hoeffding’s inequality bounds the probability of violating
+(6.2) for thisbby2 exp(−ε 2dG/2). A union bound overbgives total failure probability at most
+2qG exp(−ε2dG/2) = 2qG exp(−4µ)<1,
+where qG < 2m <2µ+1. Exhaustively enumerating the shift tuples and checking(6.2) therefore finds
+a valid tuple inexp(O(dG log(m+ 2)))time.
+We next derive the mixing estimate from(6.2). LetA G be the qG ×q G matrix withA G[u, v] =
+|{j∈ [dG] : u⊕s j = v}|; its entries count edges from left verticesu to right verticesv. Both sides
+have the same index set{0, 1}ℓG, on which the functionsχb(u) = (−1)b·u form an orthogonal basis.
+For everyb, u∈ {0,1}ℓG,
+(AGχb)(u) =
+dGX
+j=1
+χb(u⊕s j) =χ b(u)
+dGX
+j=1
+(−1)b·sj .
+Thus each χb is an eigenvector: the constant functionχ⃗0 has eigenvaluedG, while(6.2) bounds all
+other eigenvalues in absolute value byεdG. For setsU of left vertices andV of right vertices, let
+eG(U, V)count the edges between them, including multiplicity. Decomposing the indicator vectors
+ofU, Vinto their constant and orthogonal parts and applying Cauchy–Schwarz gives
+eG(U, V)⩽ dG|U||V|
+qG
++εd G
+p
+|U||V|.(6.3)
+To specify the local code, we put
+cG =
+  dG
+8B
+ 
+, δ= 1
+100Bµ .
+We need a binary matrixAloc with cG rows anddG columns such that every nonzero word in its kernel
+modulo2has weight at least δdG. To prove that such a matrix exists, we consider a matrix whose
+entries are independent uniform bits. For each fixed nonzero word, one of its nonzero coordinates
+makes the parity in each row uniform; independence of the rows therefore gives probability2−cG
+that the word lies in the kernel. Seth=⌈δdG⌉ −1. Ifh= 0, there are no nonzero words of weight
+less thanδd G. Otherwise their number is at most
+hX
+j=1
+ dG
+j
+ 
+⩽(h+ 1)(2d G)h ⩽(2d G)2h <2 dG/(25B).
+For the last inequality, useh < δdG, dG ⩽m < 2µ, and µ + 1 ⩽ 2µ. Since cG ⩾d G/(8B), a union
+bound shows that a suitableAloc exists. Enumerating the2 cGdG binary matrices and testing all
+words of weight less thanδdG finds one inexp(poly(B,log(m+ 2)))bit operations.
+At every vertex on both sides, impose thecG rows ofAloc on its incident edge coordinates, ordered
+by their ports. These constraints define a Tanner code with local codeCloc = kerF2 Aloc. Its incidence
+graph has one bit node for every edge of our graph and one local-code node for every vertex; each bit
+participates in the constraints at its two endpoints. Consider a nonzero edge word accepted by all
+these checks. LetU, Vbe the vertices touched by its nonzero edges on the two sides, and leth′ be
+its weight. Each vertex inU∪V is incident to at leastδdG nonzero edges, soh′ ⩾δd G max(|U|,|V| ).
+Therefore
+δdG
+p
+|U||V|⩽h ′ ⩽e G(U, V)⩽ dG|U||V|
+qG
++εd G
+p
+|U||V|.
+BothUandVare nonempty. Dividing byd G
+p
+|U||V|yields
+p
+|U||V|⩾(δ−ε)q G, and hence
+h′ ⩾δ(δ−ε)q GdG = qGdG
+20000B2µ2 ⩾ m
+P .
+
+=== PAGE 42 ===
+42 OPENAI
+Shorten this Tanner code by keeping anym of the qGdG edge coordinates, identifying them with
+[m], and setting the remaining coordinates to zero. Restricting all the vertex checks to the retained
+coordinates gives A(0). Any word accepted byA(0) extends by zeros to an accepted edge word, so it
+has the required weight. Every row has at mostdG ⩽D 0 nonzero entries. There are2qGcG rows. If
+qG = 1, thend G =mand
+2cG ⩽ m
+4B + 2⩽ n
+4 + 2⩽3n.
+Ifq G >1, thend G =D 0 ⩾8B, and
+2qGcG ⩽ qGdG
+4B + 2qG ⩽ qGdG
+2B < m
+B ⩽n.
+The searches over shifts, local matrices, and test words are sequential. Storing the current choices
+and the final rows usespoly(n, m, B)bits of working space.□
+6.2.Choosing additional equations by counting common zeros.After the initial checks,
+every nonsatisfying assignment still passing violates at leastm/P clauses. This lets a short random
+test catch each such assignment with constant probability. To make the choice deterministic we use
+the averaging principle underlying conditional expectations [Rag88].
+Lemma 6.2.With P, D0 and A(0) from Lemma 6.1, a deterministic procedure appends3n rows
+of list lengthP and obtains a matrixA with N (A) = #F. It uses at most3n(2m)P common-zero
+counts. Every candidate system has at most6n equations, each involving at most2k max(D0, P)
+monomials of degree at mostk.
+Proof.At a stage with current matrixA, enumerate the ordered lists
+γ= ((e 1, c1), . . . ,(eP , cP ))∈ C:= ([m]× {0,1})P .
+The listγrepresents the binary rowh γ with
+(hγ)e =
+  X
+j:ej =e
+cj
+ 
+mod 2 (e∈[m]).
+There are(2 m)P lists; distinct lists are still counted separately when they represent the same row.
+WriteA;h γ for the matrix obtained by appendinghγ toA.
+Fix a nonsatisfying assignmentx accepted by A. The initial rows remain inA, so |suppv (x)|⩾
+m/P. For a uniform listγ, the probability that none ofe1, . . . , eP belongs to this support is at most
+(1−1/P) P ⩽e −1 <1/2.
+Conditional on the indices hitting the support, choose one hit positionj. After fixing every coefficient
+except cj, the uniform bitcj makes hγ ·v (x)uniform modulo2. This remains true when some clause
+indices are repeated. Thus, for each suchx, at least a quarter of the candidate lists give a row that
+rejectsx.
+Summing this bound over the nonsatisfying assignments still passing, we find
+EγD(A;h γ)⩽ 3
+4 D(A).
+For every candidate, computeN (A; hγ)by counting the common zeros of its polynomial system.
+Append a candidate attaining the minimum, breaking ties by enumeration order. SinceN (A; hγ) =
+#F + D(A; hγ)for every γ, the chosen row leaves at most3
+4 D(A)nonsatisfying assignments. After
+3n rounds at most(3/4)3n2n = (27/32)n < 1remain; their number is an integer, so it is zero. The
+procedure runs for a fixed number of rounds and never needs to knowD(A)or#F.
+The initial matrix has at most3n rows, and every candidate is evaluated with at most3n additional
+rows. A row listings clauses expands, by(6.1), to at most2ks monomials on the original variables;
+duplicates cancel overF2. These observations give the claimed size and query bounds.□
+
+=== PAGE 43 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 43
+6.3.Counting one sparse formula.Suppose n⩾ 20and1 ⩽m⩽Bn , where B is bounded by a
+fixed power oflogn depending only onk. Construct the initial matrix by Lemma 6.1. This uses
+exp((logn )Ok(1))bit operations and polynomial space. Both P and D0 are( logn )Ok(1), so every
+candidate in Lemma 6.2 is an instance of Theorem 2.2 with a single fixedc = c(k). This applies to
+discarded candidates as well as the final system: the counter requires only the number, degree and
+sparsity of the equations. Expanding each row and combining monomials costs polynomial time and
+space for fixedk.
+At most3n(2m) P + 1 = exp((logn) Ok(1))calls suffice, including one final count. Each call takes
+2Ok(n(log logn) 2/√logn) bit operations. Since any fixed power oflogn is o(n(log logn)2/√logn ), the
+total time, including construction and candidate comparisons, is
+(n+m) Ok(1)2Ok(n(log logn) 2/√logn) .(6.4)
+The final count is#F by the greedy lemma. A formula with no clauses or containing an empty
+clause is handled directly. Candidates are examined sequentially; only the current rows, a candidate,
+the best row and its count need be kept in addition to the counter’s polynomial working space.
+6.4.Returning to a general formula.We use disjoint sparsification to partition the satisfying
+assignments among sparse formulas on the samen declared variables. The preceding algorithm
+counts each of these formulas. The parameterσ controls a tradeoff: making it smaller reduces the
+number of formulas but increases their occurrence boundB. Our solver permitsB to grow as a fixed
+power of logn, so we can letσ tend to zero while keeping both the number of formulas and the cost
+per formula within the desired time bound.
+Lemma 6.3.Fix k⩾ 2. Given a k-CNF on n declared variables withm clauses and a rational
+0< σ⩽1, a deterministic algorithm constructs a tree ofk-CNFs on the same variables. LetLσ be
+the total binary encoding length of the supplied numerator and denominator ofσ. An assignment
+satisfies the input exactly when it satisfies one leaf formula, and it cannot satisfy two distinct leaves.
+The tree has
+polyk(n, σ−1) 2σn
+nodes and depthpolyk(n, σ−1). In every leaf, each variable occurs at mostB times, where B is an
+explicitly computed integer satisfying
+B=O k
+  
+σ−1 log(2/σ)
+ k−1 
+.
+Input normalization usespolyk(n, m)bit operations. Constructing the numerical parameters uses
+polyk(Lσ)bit operations. Thereafter, processing each node usespolyk(n,log (2/σ))bit operations.
+The input count is the sum of the leaf counts.
+Appendix A proves the lemma, including the disjointness that justifies adding the leaf counts.
+Proposition 6.4.For each fixedk⩾ 2, the interpolation algorithm counts the satisfying assignments
+of a k-CNF on n⩾ 20declared variables with m clauses in( n + m)Ok(1)2Ok(ρ(n)) bit operations and
+(n+m) Ok(1) bits of space.
+Proof. We first normalize the input in(n + m)Ok(1) time by deleting repeated literals, tautological
+clauses, duplicate clauses, and clauses containing another clause. We retain alln declared variables.
+An empty clause gives count zero, and a formula with no clauses gives count2n. We handlen <20
+by exhaustive search. Forn⩾20, we next select the sparsification parameter. Define
+λn =⌈log 2 n⌉, ν n =⌈log 2 λn⌉, s=
+  √λn
+ν2n
+ 
+.
+We computes by integer comparisons, taking the largest nonnegative integer satisfyings2ν4
+n ⩽λ n.
+If s <2, we use exhaustive search;√λn/ν2
+n tends to infinity, so there are only finitely many such
+
+=== PAGE 44 ===
+44 OPENAI
+sizes. Otherwise we apply Lemma 6.3 withσ = 1/s. The tree has at most2n/s polyk(n, s)nodes,
+and its leaves have occurrence bound
+B=O k
+ 
+(slogs) k−1 
+= (logn) Ok(1).
+Each leaf uses the originaln variables and has at mostBn nonempty clauses. We count each leaf by
+the sparse-formula algorithm of Section 6.3, whose running time is given by(6.4). Leaves with no
+clauses or containing an empty clause are handled directly. The clause count in that application is
+the number of clauses in the leaf;min the final bound remains the input clause count.
+Fors⩾2, the floor in its definition gives
+n
+s =O
+  nν2
+n√λn
+ 
+=O(ρ(n)).
+Thus both the number of leaves and the time to count each leaf have exponentOk(ρ(n)). Their
+polynomial factors, together with normalization and the work at the tree nodes, are bounded by
+(n+m) Ok(1). The total number of bit operations is therefore
+(n+m) Ok(1)2Ok(ρ(n)).
+The finite exhaustive-search cases are absorbed in the constants. All parameters, initial checks, and
+additional rows are computed by the deterministic procedures above; every counting query uses the
+common-zero algorithm of Theorem 2.2.
+To bound the space used by the full algorithm, we traverse the sparsification tree depth first and
+count one leaf at a time. The current path haspolyk(n, s)nodes, and each normalized formula has a
+polyk(n)-bit encoding. Since s⩽
+p
+⌈log2 n⌉, storing this path and counting one leaf usepolyk(n, m)
+bits. Disjointness keeps the sum of the processed leaf counts between zero and2n, so its accumulator
+uses at mostn+ 1bits. Thus the total space ispoly k(n, m)bits.□
+AppendixA.Partitioning the satisfying assignments
+Fix k⩾ 2and a rational0 < σ⩽ 1. We prove Lemma 6.3 by repeatedly splitting a formula into
+two cases. Both children use the samen variables, and every satisfying assignment of the parent
+satisfies exactly one child. We follow the rule for choosing a shared set of literals and the insertion
+accounting of [CIP06, Section 6]. The refinement that makes the two cases disjoint is standard in
+exact counting [DHM+14, Appendix A].
+Throughout this appendix, a clause is a set of literals and denotes their disjunction. Itswidth
+is the number of literals it contains. We delete tautological clauses, repeated clauses, and clauses
+containing another clause. Thus the remaining clauses form an antichain under inclusion. We keep
+all n declared variables and do not propagate unit clauses. An empty clause gives count zero, and
+the empty formula gives count2n.
+A.1.The branching rule.Fix an integer M⩾ 2. We will obtain an occurrence boundB =
+Ok(M k−1)at every leaf, then chooseMso that the tree has at mostpolyk(n, σ−1)2σn nodes. Put
+θj =M j (0⩽j < k).
+WritingFfor the current family of clauses, define
+degc(H) = #{C∈F:|C|=c, H⊆C}
+for each literal setH. We branch whenever a nonempty proper subsetH of a width-c clause satisfies
+degc(H)⩾θ c−|H| .(A.1)
+The algorithm chooses the smallest possiblec, and then the largest possible|H|; break any remaining
+ties deterministically. Thus a nonempty shared literal setH leaving j = c− |H|other literals must
+occur in at leastMj clauses before we branch on it.
+
+=== PAGE 45 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 45
+Let H∪P 1, . . . , H∪Pz be all the width-c clauses containing the chosenH, and letG consist of
+the other clauses. Putj = c− |H|. Here Pa is the set of literals left after removingH from the ath
+selected clause, so eachPa has widthjandz⩾θ j. The two children are
+FA =G∧H, F B =G∧
+z^
+a=1
+Pa ∧
+^
+ℓ∈H
+{¬ℓ}.(A.2)
+We restore the antichain condition in each child by removing clauses made redundant by its new
+clauses. The setsPa may overlap. The satisfying assignments of the children are disjoint:FA requires
+some literal ofHto be true, whereasF B requires every literal ofHto be false.
+Lemma A.1.The children in (A.2) partition the satisfying assignments of their parent. Every new
+clause has width less thanc. The A-child inserts one new clause, and theB-child inserts at leastθj
+new clauses of widthj. All newly inserted clauses survive the immediate normalization. Every old
+clause removed in either child contains a newly inserted strict subset.
+Proof. Every assignment satisfies exactly one of the conditionssome literal ofH is trueandevery
+literal of H is false. In the first case, all selected clauses are satisfied, leavingG∧H . In the second,
+each selected clause reduces toPa, and the unit clauses{¬ℓ} enforce this case. Thus the two children
+partition the parent’s satisfying assignments.
+The old antichain contains no clause included inH or in anyPa: such a clause would be a strict
+subset ofH∪P a. Thus H and the distinct equal-width clausesPa are new. NoPa contains a variable
+of H, since its parent is nontautological. Consequently, none of the unit clauses{¬ℓ}, ℓ∈H , is a
+subset of anyPa. Any unit clause {¬ℓ} already present is retained and is not counted as a new
+insertion. The remaining new unit clauses and the clausesPa all survive. Each selected old clause
+contains the newly inserted clauseH for child A, or its newly inserted subsetPa for child B. Every
+other removed clause contains a newly inserted strict subset by the normalization rule.□
+A.2.Counting insertions.To bound the tree, we count every clause introduced along one path,
+including clauses later deleted. Clauses present in the input are excluded from this count. By
+Lemma A.1, each step inserts a clause, so bounding the total number of insertions also bounds the
+path length.
+For this accounting, a clause is marked when a branch introduces it. First we bound how many
+marked clauses can still be present and contain a given literal set. The smallest-width priority
+controls those present before a branch; the largest-|H| priority controls those introduced by that
+branch.
+Lemma A.2.At every node, for1 ⩽i < j < kand every literal setS of size i, fewer than2θj−i
+marked clauses of widthjthat are still present containS.
+Proof. Initially there are no marked clauses. It suffices to consider a branch that inserts clauses
+of width j. Its selected widthc is larger thanj. Before insertion, fewer thanθj−i current width-j
+clauses containS: otherwise the smallest-width priority would select a width at mostj.
+Choosing child A inserts only one clause. Suppose childB inserts clauses Pa of width j. If none
+of the Pa contains S, the number of new width-j clauses containing S is zero. Otherwise S lies in a
+petal and is therefore disjoint fromH. In this casePa contains S exactly when the selected clause
+H∪P a contains H∪S . Since0 < i < j, H∪S is larger thanH and is a proper subset of a selected
+width-cclause. The priority for the largest shared set therefore gives
+#{a:S⊆P a}= deg c(H∪S)< θ c−|H∪S| =θ j−i.
+The other new clauses{¬ℓ} have width one. Thus the old and new clauses of widthj together
+satisfy the asserted bound. Deletion cannot increase it.□
+
+=== PAGE 46 ===
+46 OPENAI
+Lemma A.3.Along any path or path prefix, the total numberTj of width-j insertions satisfies
+Tj ⩽4(3M) j−1nfor1⩽j < k.
+Proof. The case n = 0is immediate, so assume n⩾ 1. For the current path prefix, letLj be the
+number of marked width-j clauses still present, and letDj be the number of width-j insertions whose
+clauses have since been deleted. ThenTj = Lj + Dj. Units are never deleted, soT1 ⩽ 2n⩽ 4n. For
+j⩾2, sum Lemma A.2 over the2nsingle literals. This givesL j ⩽4nθ j−1.
+Whenever a marked clause of widthj is deleted, assign that deletion to one newly introduced
+strict subset contained in it; Lemma A.1 guarantees such a subset. If the new clause has widthi < j,
+Lemma A.2 shows that it was contained in fewer than2θj−i marked clauses of widthj immediately
+before the branch. Thus one insertion of a width-i clause receives at most that many deletions.
+Summing over the widthsiof the new clauses givesDj ⩽2 Pj−1
+i=1 θj−iTi. Therefore
+Tj =L j +D j ⩽4nθ j−1 + 2
+j−1X
+i=1
+θj−iTi.(A.3)
+The first term counts clauses still present; the sum counts those that were deleted. Dividing by
+nM j−1 and applying induction gives
+Tj
+nM j−1 ⩽4 + 2
+j−1X
+i=1
+4·3 i−1 = 4·3 j−1,
+as required. □
+A.3.The size of the tree.We now convert Lemma A.3 into a bound on the number of tree nodes.
+It controls both the length of a path and the number of times that path chooses theB-child in(A.2).
+Write these bounds asCnandΓn/M, respectively, where
+C= 4
+k−2X
+j=0
+(3M) j,Γ = 4
+k−2X
+j=0
+3j = 2(3k−1 −1).
+Lemma A.3 gives depth at mostCn. A choice of childB with |Pa| = j inserts at leastM j clauses of
+width j, so a path contains at most4· 3j−1n/M such choices. In total, a path choosesB at most
+Γn/Mtimes.
+A path with few choices ofB has a short description. Because the branching rule is deterministic,
+a node is determined by its depth and the positions at which its path choosesB; every other position
+choosesA. ForM⩾Γ, this bounds the number of nodes by
+(Cn+ 1)
+X
+a⩽⌊Γn/M⌋
+ Cn
+a
+ 
+⩽(Cn+ 1) 22(Γn/M) log2(4CM) .
+HereΓ n/M⩽n⩽Cn/ 4. For a positive integera, use
+ Cn
+a
+ 
+⩽ (4Cn/a)a; this upper bound increases
+fora⩽Cn/4. There are at mostCn+ 1summands. The caseΓn/M <1is immediate.
+We choose M to make the exponent in this bound at mostσn. Test powers of twoM⩾ Γin
+increasing order. For each choice, computeCandh=⌈log 2(4CM)⌉, and stop when
+Γh⩽σM.
+All comparisons are exact. SinceC = Ok(M k−2)andΓdepends only on k, the first successful choice
+satisfies
+M=O k
+ 
+σ−1 log(2/σ)
+ 
+.
+The tree therefore has at most(Cn+ 1)2 2σn nodes.
+
+=== PAGE 47 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 47
+At a leaf,(A.1) fails for every nonempty proper subset of a clause. A fixed literal belongs to fewer
+than θc−1 width-c clauses when c⩾ 2, and to at most one unit clause. Hence each variable occurs at
+most
+B= 2
+k−1X
+j=0
+M j ⩽4M k−1 =O k
+  
+σ−1 log(2/σ)
+ k−1 
+.
+Thus every leaf has the required bound on occurrences per variable. The repeated two-case partition
+also shows that each original satisfying assignment occurs at exactly one leaf, so summing the leaf
+counts gives the original count.
+To implement the branching rule at a node, we computedegc(H)for its current formula. For each
+width-c clause, we enumerate its nonempty proper subsetsH and increment the counter indexed
+by( c, H). There are Ok(nk)possible nonempty normalized clauses, each with at most2k subsets.
+The clause counters useOk(log(n + 2))bits, and the thresholds useOk(logM )bits. Computing the
+counts, choosing a branch, and normalizing its children therefore usepolyk(n,logM )bit operations
+and bits of working space per node. The bound onMgiveslogM=O k(log(2/σ)).
+With Lσ as in Lemma 6.3, the parameter search examinesOk(Lσ)powers of two. Its integer
+operands have Ok(Lσ)bits, so constructing the numerical parameters usespolyk(Lσ)bit operations
+and bits of working space.
+AppendixB.Exact arithmetic and space
+Section 4 bounds the rational coefficients of the substitution rows⃗Pf,v (T ). We complete the
+bit-cost and space estimates in Proposition 5.3 by bounding the lifted factors, the sums used to
+compute the Taylor polynomials ofH, and the final interpolation. The essential point is that each
+sum uses a fixed denominator. Its numerator grows with the number of summands, so its bit length
+grows only with the logarithm of that number. For any polynomialG = P
+α cα ⃗X α in finitely many
+indeterminates, write∥G∥ 1 = P
+α |cα|for its coefficient norm.
+B.1.Integer coefficients of the lifted indicator.We first bound the coefficients of the parity
+polynomials supplied by Lemma 5.1. They occur in every equation factorBi in (5.4), so their sizes
+enter the bit-cost bounds for evaluating those factors. For an integerℓ⩾ 1, recall h(Y ) = Y (Y− 1)
+and the polynomials from Lemma 5.1:
+pℓ(Y) = (1−Y) ℓ
+ℓ−1X
+j=0
+ ℓ+j−1
+j
+ 
+Y j =
+ℓ−1X
+j=0
+ej(Y)h(Y) j,dege j ⩽1.
+That lemma proves the parity congruence and constructs theej by successive monic division byh.
+Here we bound the integers occurring in this construction.
+Lemma B.1.Writee j(Y) =a j +b jYfor0⩽j < ℓ. Thena j, bj ∈Zand
+|aj|,|b j|⩽2 Cℓ2
+(0⩽j < ℓ)
+for an absolute constantC. Successive division ofpℓ by h constructs these polynomials usingpoly(ℓ)
+bit operations and bits of working space.
+Proof.The coefficient-norm inequality∥f g∥1 ⩽∥f∥ 1∥g∥1, together with the binomial identity
+ℓ−1X
+j=0
+ ℓ+j−1
+j
+ 
+=
+ 2ℓ−1
+ℓ−1
+ 
+gives
+∥pℓ∥1 ⩽2 ℓ
+ 2ℓ−1
+ℓ−1
+ 
+⩽2 3ℓ.
+
+=== PAGE 48 ===
+48 OPENAI
+Monic division byh = Y 2 −Y preserves integer coefficients. Each leading-term elimination increases
+the sum of the coefficient norms of the current quotient and remainder by at most a factor of three.
+There are O(ℓ2)eliminations in all the successive divisions. Thus every intermediate coefficient has
+absolute value at most2O(ℓ2), which proves the stated bound foraj, bj. Its signed binary encoding
+consequently uses O(ℓ2)bits. Each coefficient vector hasO(ℓ)entries. The successive divisions use
+O(ℓ2)integer arithmetic operations on integers ofO(ℓ2)bits, giving the claimedpoly(ℓ)bit-operation
+and space bounds. □
+B.2.Bit complexity of the sums over Boolean assignments.We now bound every intermediate
+value in the computation ofHt(z) = H(t + z) modz J from (3.13). Starting with the substitution
+rows ⃗Pf,v (T ), we bound the substituted factors, their sums over each group of Boolean variables,
+and the accumulatorTt for the Taylor data in Proposition 5.3. Fix a polynomial systemP in n
+Boolean variables, withmtest equations of degree at mostk, precision ℓ such that2 ℓ > 2n, and a
+replacement design for its equation factors. Suppose the rows⃗Pf,v, partitions St,g, and matricesCt,g
+satisfy Definition 3.1, with parametersQ, R, r, D, τ. Recall the degree bound forH and the number
+of Taylor coefficients retained at each node:
+dH =kR
+ 
+mtest + 2(ℓ−1)
+ 
+, J=
+  dH
+Q
+ 
++ 1.
+All polynomials in the Taylor variablez and the shared truncation markerV are stored in their
+unique representative modulo(zJ , Vℓ). Removing terms outside these degree ranges cannot increase
+the coefficient norm.
+The substitution rows have common denominator
+dden = (R−1)!Q!.
+We use an integerBP ⩾ 1such that every integer coefficient of every rowdden ⃗Pf,v (T )has absolute
+value at most2BP. Definition 3.1 givesBP = O(QlogQ + logD ). At a fixed nodet∈ [Q]and for a
+fixed correction setU⊆[n], the input to factorfat variablevis
+θf,v (z;x) =⟨ ⃗Pf,v (t), x⟩+
+
+ ⃗Pf,v (t+z)− ⃗Pf,v (t),1 U
+ 
+, x∈ {0,1} n.
+Let Li(z; x)be the sum of the listed monomials of equation i after these substitutions. Each
+ddenθi,v(z;x)is an integer polynomial of coefficient norm at most
+B0 =d den + 3n(R+ 1)2 BP (Q+ 1) R.
+Indeed, each of the three row evaluations inθi,v contributes at mostn(R + 1)2BP (Q + 1)R after
+denominators are cleared. The bound holds also for the representatives in the group sums.
+Put∆ = dk
+den. For a monomial of degreeu⩽k , multiplying its substituted value by∆gives an
+integer polynomial of norm at mostdk−u
+den Bu
+0 ⩽B k
+0, including the constant monomial. AsS bounds
+the total list length,
+B= max{∆, SBk
+0 }satisfies∥∆L i(z;x)∥ 1 ⩽B.
+Consequently logd den = O(Qlog (Q + 2)), logB 0 = O(Qlog (Q + 2) + log(nD + 2)), and logB =
+O(klogB 0 + log(S+ 2)).
+The substituted factor of equationiis
+Bi(z, V;x) =
+ℓ−1X
+j=0
+ej
+ 
+Li(z;x)
+ 
+h
+ 
+Li(z;x)
+ jV j (mod (z J , Vℓ)).
+Since ej is integral and has degree at most one, its substitution has denominator dividing∆; the
+denominator ofh(L i)j divides∆ 2j. Thus, with
+Γ = ∆2ℓ−1,
+
+=== PAGE 49 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 49
+every coefficient ofΓBi(z, V;x)is an integer. To bound the resulting integer numerators, put
+Eℓ = max{1,∥e 0∥1, . . . ,∥eℓ−1∥1}, B 1 =ℓE ℓ(B+ ∆ + 2) 2ℓ−1.
+For Ai = ∆Li, the two substituted factors have integer numerators∆ej(Li)and Ai(Ai − ∆), with
+norms at mostEℓ(B + ∆)and B(B + ∆), respectively. Padding each term to denominatorΓtherefore
+gives
+∥ΓBi∥1 ⩽B 1, B 1 ⩾Γ,logB 1 =O
+ 
+ℓ2 +ℓlog(B+ ∆ + 2) + log(ℓ+ 1)
+ 
+.
+We next apply these estimates to the actual group sums. WriteSg = St,g and Cg = Ct,g, and letcg
+be the number of rows ofCg. Thus c = P
+g cg ⩽ 2τ n, and every coordinate of a Boolean measurement
+Cgxg lies in[ −D, D] ∩Z. Let mtest,g be the number of equation factors assigned to groupg at t, soP
+g mtest,g = mtest. Their product Ag,U (x; z)from (3.11) is represented inQ[z, V]/(zJ , Vℓ). It has
+denominator dividingΓ mtest,g and numerator norm, over that denominator, at mostBmtest,g
+1 . The
+neutral constant-one factors do not affect this bound.
+For a pairU⊆E⊆ [n]with |E|< J and an attainable measurement tuple⃗ y= ( y1, . . . , yr),
+choose Boolean representatives¯xh withC h ¯xh =y h. The group sum in (3.4) is
+Σg(⃗ y) =
+X
+xg∈{0,1}Sg
+Cgxg=yg
+(xg)v=1 (v∈E∩S g)
+Ag,U
+ 
+xg +
+X
+h̸=g
+¯xh;z
+ 
+.
+Here vectors on individual groups are extended by zero. The sum has at most2|Sg| terms, all over
+the same denominator, so
+∥Γmtest,g Σg(⃗ y)∥1 ⩽2 |Sg|Bmtest,g
+1 .
+For1 ⩽g⩽r , define the partial productΠ g(⃗ y) = Qg
+h=1 Σh(⃗ y), with truncation after each
+multiplication. Its denominator divides
+Γ
+P
+h⩽g mtest,h.
+Consequently every full contributionΠr(⃗ y)can be placed over the fixed denominator
+Ω = Γmtest,
+and it satisfies
+∥ΩΠr(⃗ y)∥1 ⩽2 nBmtest
+1 .
+Let Tt(z, V)be the accumulator that adds these full contributions with sign(−1)|E|−|U| over all
+pairs and measurement tuples. By(3.13), its final value is theAℓ-valued Taylor polynomialHt(z).
+The numberM ∗ of signed updates at one node is bounded by
+M∗ ⩽
+ min(J−1,n)X
+s=0
+2s
+ n
+s
+  
+(2D+ 1) c ⩽3 n(2D+ 1) c.
+Every intermediate value ofTt, not just its final value, therefore satisfies
+∥ΩTt∥1 ⩽M ∗ 2nBmtest
+1 .
+Each coefficient of the integer polynomialΩTt has
+O(log(M∗ + 1) +n+m test logB 1)
+bits. This estimate also bounds the integer numerators of all group sums and partial products with
+the fixed denominators given above. The denominator satisfies
+log Ω =km test(2ℓ−1) logd den =O(k(m testℓ+ 1)Qlog(Q+ 2)).
+Each contribution multiplies at mostmtest lifted equation factors. Processing further pairs or
+measurement tuples adds new contributions; it does not multiply them into the previous ones.
+
+=== PAGE 50 ===
+50 OPENAI
+This is why exponentially many iterations contribute onlylog(M∗ + 1)to the bit estimate. Each
+stored polynomial has at mostJ ℓ⩽ (dH + 1)ℓ coefficients. The enumeration retains its current
+indices and Boolean representatives, one group sum, one partial product, and the accumulatorTt,
+without storing a table of all assignments or all measurement tuples. These estimates give(5.6) and
+polynomial bit cost per rational operation. TheQJ ℓTaylor coefficients and the working state fit in
+poly(n, mtest, ℓ, D, Q, R, J, r, k, S)bits.
+B.3.Interpolation and the integer answer.For0 ⩽s < ℓ, let Hs(T ) = [ V s]H(T ) ∈Q [T ].
+Section B.2 bounds the computed data[zjV s]Ht(z) = [zj]Hs(t + z)for t∈ [Q],0 ⩽j < J. Fix s.
+We interpolate this coordinate, using the same rational Hermite matrix for allℓ coordinates. Put
+MH = QJ > dH. In the monomial basis1, T, . . . , TMH −1, the Hermite interpolation matrix is the
+integer matrix
+V(t,j),u =
+( u
+j
+ 
+tu−j, u⩾j,
+0, u < j, t∈[Q],0⩽j < J,0⩽u < M H .
+It is nonsingular by the Hermite interpolation statement in Section 3. Its entries haveO(MH log(Q +
+2))bits. Letybe the vector of computed coefficients[ zjV s]Ht(z), ordered by(t, j), and lethbe
+the monomial coefficient vector ofHs, padded with zeros to lengthMH. ThusVh=y. The vector
+b= Ωyis integral; write Bdata for a bound on its entries’ bit lengths. The bounds in Section B.2
+give
+Bdata ⩽poly(n, mtest, ℓ, k, Q,log(D+ 2),log(S+ 2)).
+Only the constant coefficienth0 = Hs(0)is needed. LetV (0) be obtained fromVby replacing its
+column indexed byu= 0withb, and put
+NH = detV (0), D H = detV̸= 0.
+Cramer’s rule forV(Ωh) =bgives
+Hs(0) =h 0 = NH
+ΩDH
+.(B.1)
+We compute these two determinants by fraction-free Gaussian elimination [Bar68, Sections I–II
+and IV–V]. For anMH ×MH integer matrix, this algorithm usesO(M 3
+H )integer arithmetic operations;
+pivoting allows it to handle singular matrices as well. The retained elimination entries are signed
+minors of the input matrix. Each update forms products and a difference of such entries, followed
+by an exact integer division. Consequently, bounds on the minors ofVandV(0) also bound the
+intermediate integers used to computeDH and NH. Every minor of(V | b)has absolute value at
+most
+2O(MH (Bdata+MH log(Q+2)+log(MH +1))).
+Indeed, its determinant is a sum of at mostMH !products of at most MH entries. The intermediate
+integers in fraction-free elimination therefore have
+O
+ 
+MH
+ 
+Bdata +M H log(Q+ 2) + log(M H + 1)
+  
+bits in signed binary notation. ComputingNH , DH thus uses poly(MH , Bdata)bit operations and
+bits of working space.
+At T = 0every Hs(0)is an integer by construction, so the division in(B.1) is exact for eachs.
+After computing theseℓintegers, putu= Pℓ−1
+s=0 Hs(0). By (5.5), the least nonnegative residue
+u−2 ℓ
+j u
+2ℓ
+k
+=N(P)
+is the exact count. Reusing the same workspace for successive coordinates, allℓ interpolations, the
+sum and the remainder usepoly(MH , Bdata,log (Ω + 1), ℓ)bit operations and polynomially many
+bits of working space.
+
+=== PAGE 51 ===
+THE EXPONENTIAL TIME HYPOTHESIS IS F ALSE 51
+B.4.Arithmetic for the technique overview.We also justify the bit-complexity and space
+bounds for the bounded-occurrence algorithm in Section 2. Lemma 4.6 bounds the bit lengths
+of the replacement coefficients by a polynomial inn. Solving the polynomial-size rational linear
+systems in Section 2.4 gives measurement coefficients⃗λe,v,h of polynomial bit length as well. Letδ
+be the product of the denominators of all these coefficients and all replacement coefficients, over all
+evaluation points. There are only polynomially many, soδ also has polynomial bit length. Every
+clause product uses at mostM⩽ 3n linear inputs; consequently, all coefficients in the restricted
+sums can be accumulated with common denominatorδ3n. Products of polynomially many input
+coefficients of polynomial bit length, and sums of exponentially many such terms over this common
+denominator, still have polynomial bit length. The exact Hermite interpolation above therefore
+has polynomial bit cost for these Taylor data as well. Finally, the enumerations can be performed
+sequentially, retaining only the construction, current indices, coefficient arrays, running sums, and
+the polynomially many Taylor coefficients needed for interpolation. This gives polynomial space and
+only polynomial bit-operation overhead.
+AppendixC.Additional Consequences of Refuting ETH
+Theorem 1.1 gives a circuit lower bound and subexponential-time algorithms for inverting Boolean
+maps with constant output locality. The fixed-density case gives the quantitative circuit lower bound
+in Corollary 1.4. Both circuit arguments use only the decision version of our3-SAT algorithm. Exact
+preimage counting uses its full counting guarantee.
+C.1.Circuit lower bounds forE NP.For the qualitative bound below, writeSIZE(O(n))for the
+languages having nonuniform circuits withO(n)bounded-fan-in AND, OR, and NOT gates.
+Corollary C.1.We have
+ENP ̸⊆SIZE(O(n)).
+Proof. Williams proved that if ETH is false, thenENP does not have linear-size circuits [Wil13,
+Theorem 6.1]. Apply this implication to the deterministic subexponential-time3-SAT algorithm
+supplied by Theorem 1.1.□
+The connection is an instance of deriving circuit lower bounds from faster satisfiability algorithms.
+To encode a Boolean circuit withs gates and n inputs, introduce a variable for each gate, enforce
+its value from its inputs, and add a unit clause requiring the output bit to equal1. The resulting
+3-CNF has O(n + s)variables and clauses and is satisfiable exactly when the circuit is. Our theorem
+therefore decides satisfiability of linear-size circuits in2o(n) time. Williams’s argument combines
+such a speedup with hypothetical small circuits for witnesses to contradict a nondeterministic time
+hierarchy. The corollary gives a language inENP without a linear-size circuit family; it does not
+assert a superpolynomial circuit lower bound for NP.
+Proof of Corollary 1.4.We use Williams’s witness-circuit argument [Wil13, Theorem 6.1] with the
+local reduction of Jahanjou, Miles, and Viola [JMV13, Theorem 1 and Section 6].
+By Žák’s nondeterministic time hierarchy [Žák83], in the form stated in [Wil13, Theorem 2.1
+in the full version], fix a unary languageH∈NTIME (2n) \NTIME (2n/2)on multitape Turing
+machines. For all sufficiently largen apply the local reduction to its fixed machine on1n with
+locality parameter r = 2. A time allowanceT = 2nnO(1) includes the polylogarithmic overhead of
+simulating the machine in the reduction and givesq = n + O(logn )clause-index bits. In polynomial
+time the reduction constructs a decoder giving three variable labels and their signs on each index.
+Letφ n consist of the clauses decoded on all2q indices. It is satisfiable exactly when1n ∈H.
+Each of the decoder’sO(n)output bits has a constant-depth decision tree, so it depends on at
+most a fixed numberw of index bits. Evaluating the decoder on all strings of Hamming weight at
+most w recovers each support. Indeed, two strings witnessing dependence on one coordinate can be
+
+=== PAGE 52 ===
+52 OPENAI
+set to zero off the support while retaining their differing outputs. The same evaluations give the
+truth table on each support. This constructs a decoder ofO(n)fan-in-two gates in polynomial time.
+Pad each variable label todn bits for a fixed positive integerd and declare all2dn variables. If
+|i| = dn for such ann and φn is satisfiable, letW (i)be bit i of its lexicographically first satisfying
+assignment, ordering variables by their labels. SetW (i) = 0in all other cases. The length of i
+determines n. To decide W, write out the2 q clauses, ask an NP oracle whether the formula is
+satisfiable, and, if so, recover the first assignment by asking whether its current prefix followed by
+zero has a satisfying extension. At most2dn prefix queries of length2O(n) suffice, soW∈E NP.
+Put a(t) =
+p
+log2 t. Testing whether the count in the constant-density part of Theorem 1.1 is
+positive decides3-SAT withV variables and at most5V clauses in timeV b2AV /a(V)for fixedA, b >0.
+We absorb the change of logarithm base inA. The solver uses polynomial space, so a multitape
+simulation can scan its workspace for each bit access at a costVO(1), absorbed inb.
+Fix a positive rational η < 1/(12A)and put sn = ⌊ηn⌊a(n)⌋⌋ for n⩾ 2. The threshold is
+computable using the binary length ofn and the integer square root of⌊log2 n⌋. Suppose that
+CW (dn) ⩽s n for all sufficiently largen. To decideH, reject nonunary inputs. On1n, guess a circuit
+on dn index bits with at mostsn gates. Feed the decoder’s three variable labels to three copies of
+this circuit and test whether the indexed clause is violated. Accept if the test circuit is unsatisfiable.
+When1 n ∈H , a circuit computingW at length dn gives an accepting guess. When1n /∈H, every
+guess violates a clause.
+The test circuit hasq inputs and at most3sn + O(n)gates. The encoding above uses one variable
+per input and gate, at most four clauses of width at most three per gate to enforce its truth table,
+and one unit clause to pin the output. Padding with unused variables givesUn = 3sn + Bn variables
+and at most5 Un clauses for a fixed integerB. Since Un = (3η + o(1))na(n)and a(Un) ∼a (n),
+the test takes2(3Aη+o(1))n time. Guessing and building the circuits take polynomial time, soH is
+decidable nondeterministically in time2n/2 for all sufficiently largen. The finitely many exceptional
+lengths can be hardwired, contradicting the choice ofH. Thus CW (dn) > sn for infinitely manyn.
+Sinces n ∼ηn
+p
+log2 nanddis fixed, takingL=Wand any0< c < η/(d √log 2)proves (1.2).□
+C.2.Inverting Boolean maps with constant output locality.Fix a constantd. Consider a
+Boolean mapG:{0,1} n → {0,1}m whoseith output bit has the form
+G(⃗ x)i =g i(⃗ x|Si), S i ⊆[n],|S i|⩽d.
+The input description ofG lists the setsSi and the truth tables of the Boolean functionsgi. Thus
+each output inspects only constantly many input bits, although the setsSi may overlap arbitrarily.
+Given a target⃗b∈ {0,1}m, inversion asks for any⃗ xwithG(⃗ x) =⃗b.
+Corollary C.2.For every fixed d and n⩾ 20, the number|G−1(⃗b)| can be computed exactly, and a
+preimage can be found whenever one exists, in deterministic time
+(n+m) Od(1)2Od(ρ(n))
+and space(n+m) Od(1).
+Proof.For eachiand each local assignment⃗ α∈ {0,1}Si withg i(⃗ α)̸=bi, include the clause
+_
+j∈Si
+ℓj,αj , ℓ j,0 =X j, ℓ j,1 =¬X j.
+This clause forbids exactly the local assignment⃗ α. If Si is empty, its constraint is constant and
+can be checked directly. The conjunction of the remaining clauses is a CNF on the originaln
+declared variables, with width at mostd and at most2dm clauses. Its satisfying assignments are
+exactly G−1(⃗b); no auxiliary variables or multiplicity corrections are needed. Apply Theorem 1.1
+with k = max{2, d}. The usual variable-by-variable self-reduction finds a preimage using at mostn

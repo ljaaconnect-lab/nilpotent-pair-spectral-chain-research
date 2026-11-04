@@ -1,0 +1,4 @@
+Fin.sum_univ_castSucc.{u_2} {M : Type u_2} [AddCommMonoid M] {n : ℕ} (f : Fin (n + 1) → M) :
+  ∑ i, f i = ∑ i, f i.castSucc + f (Fin.last n)
+Fin.sum_univ_one.{u_2} {M : Type u_2} [AddCommMonoid M] (f : Fin 1 → M) : ∑ i, f i = f 0
+'DenseScalar.matrix_power_correct' depends on axioms: [propext, Classical.choice, Quot.sound]

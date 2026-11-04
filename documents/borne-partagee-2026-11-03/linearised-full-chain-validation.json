@@ -1,0 +1,2249 @@
+{
+  "status": "passed",
+  "scope": "finite exact checks of complete linearised scalar compilation; no polynomial size theorem",
+  "general_polynomial_bound_established": false,
+  "source_sha256": {
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\borne-partagee-2026-11-03\\verify_linearised_full_chain.py": "8e24919d8182440872b698ecb3894c06e339aa1c5e1d9d06b011fceb525df738",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\borne-partagee-2026-11-03\\linearised_full_chain.py": "8c1ec0a7007f8a2176bbc82a76fb9d5f9061cd92dafee4ca3267042c3ebeefec",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\raccord-initialisation\\spectral\\reprise-globale\\shared_operator_dag.py": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06"
+  },
+  "reference_enumeration_only_in_verifier": true,
+  "final_runtime_inputs": "a_ij,z only",
+  "cases": [
+    {
+      "n": 1,
+      "Q": 97,
+      "N": 2,
+      "omega": 96,
+      "h": 0,
+      "labels": [
+        1
+      ],
+      "routing_index": 1,
+      "B_gates": 3,
+      "coefficient_gates": 4,
+      "F0_gates": 7,
+      "initial_joint_gates": 9,
+      "P_bound": 12,
+      "initial_joint_bound": 16,
+      "coefficient_bound": 9,
+      "stages": [
+        {
+          "factor": 0,
+          "root_gates": 7,
+          "joint_gates_with_q": 9,
+          "allocated_nodes": 17,
+          "cached_derivatives": 0,
+          "general_bound": 16
+        }
+      ],
+      "Y_gates": 5,
+      "spectra_gates": 6,
+      "true_INTT_output_gates": 11,
+      "routed_output_gates": 5,
+      "true_INTT_additional_gates": 6,
+      "spectral_increment_bound": 8,
+      "allocated_nodes": 24,
+      "elapsed_seconds": 0.00034779999987222254,
+      "runtime_inputs": "a_ij,z only",
+      "true_INTT_called": true,
+      "universal_sign": "absorbed exactly by gamma_n*q_[n]=Omega_tilde",
+      "general_polynomial_bound_established": false,
+      "verification_counts": {
+        "numeric_instances": 8,
+        "stage_equalities": 2,
+        "inverse_coordinate_equalities": 2,
+        "directional_coordinate_equalities": 1,
+        "spectrum_coordinates": 48,
+        "INTT_coordinates": 48,
+        "routed_coordinates": 48,
+        "formal_z_coordinates": 2,
+        "label_profiles": 3,
+        "original_comparator_coordinates": 16
+      },
+      "verification_status": "passed",
+      "original_coordinates_same_fusion": {
+        "Y_gates": 3,
+        "true_INTT_output_gates": 9,
+        "routed_output_gates": 3,
+        "stages": [
+          {
+            "factor": 0,
+            "root_gates": 4,
+            "allocated_nodes": 9,
+            "cached_derivatives": 0
+          }
+        ],
+        "allocated_nodes": 17,
+        "elapsed_seconds": 0.00013519999629352242,
+        "same_spectral_fusion": true,
+        "prefix_copies": 1
+      },
+      "stage_oracle_run": true,
+      "syntactic_homogeneity": {
+        "checked_allocated_nodes": 27,
+        "max_auxiliary_degree": 1,
+        "stage_degrees": [
+          1
+        ]
+      },
+      "growth_observations": {
+        "linearised_stage_increments": [],
+        "original_stage_increments": [],
+        "increments_match_after_first_factor": true,
+        "derivative_cache_counts": [
+          0
+        ],
+        "interpretation": "The derivative cache still grows; an eventually constant increment in these finite cases is not saturation of the complete cache or an asymptotic polynomial bound."
+      }
+    },
+    {
+      "n": 2,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "h": 1,
+      "labels": [
+        1,
+        0
+      ],
+      "routing_index": 1,
+      "B_gates": 15,
+      "coefficient_gates": 37,
+      "F0_gates": 52,
+      "initial_joint_gates": 63,
+      "P_bound": 70,
+      "initial_joint_bound": 86,
+      "coefficient_bound": 55,
+      "stages": [
+        {
+          "factor": 0,
+          "root_gates": 52,
+          "joint_gates_with_q": 63,
+          "allocated_nodes": 78,
+          "cached_derivatives": 0,
+          "general_bound": 86
+        },
+        {
+          "factor": 1,
+          "root_gates": 93,
+          "joint_gates_with_q": 93,
+          "allocated_nodes": 115,
+          "cached_derivatives": 64,
+          "local_bound": 1205,
+          "general_bound": 1642
+        }
+      ],
+      "Y_gates": 74,
+      "spectra_gates": 77,
+      "true_INTT_output_gates": 94,
+      "routed_output_gates": 74,
+      "true_INTT_additional_gates": 20,
+      "spectral_increment_bound": 24,
+      "allocated_nodes": 156,
+      "elapsed_seconds": 0.0028949000115972012,
+      "runtime_inputs": "a_ij,z only",
+      "true_INTT_called": true,
+      "universal_sign": "absorbed exactly by gamma_n*q_[n]=Omega_tilde",
+      "general_polynomial_bound_established": false,
+      "verification_counts": {
+        "numeric_instances": 8,
+        "stage_equalities": 4,
+        "inverse_coordinate_equalities": 4,
+        "directional_coordinate_equalities": 4,
+        "spectrum_coordinates": 96,
+        "INTT_coordinates": 96,
+        "routed_coordinates": 96,
+        "formal_z_coordinates": 4,
+        "label_profiles": 3,
+        "original_comparator_coordinates": 32
+      },
+      "verification_status": "passed",
+      "original_coordinates_same_fusion": {
+        "Y_gates": 26,
+        "true_INTT_output_gates": 46,
+        "routed_output_gates": 26,
+        "stages": [
+          {
+            "factor": 0,
+            "root_gates": 22,
+            "allocated_nodes": 31,
+            "cached_derivatives": 0
+          },
+          {
+            "factor": 1,
+            "root_gates": 34,
+            "allocated_nodes": 51,
+            "cached_derivatives": 26
+          }
+        ],
+        "allocated_nodes": 81,
+        "elapsed_seconds": 0.000986300001386553,
+        "same_spectral_fusion": true,
+        "prefix_copies": 1
+      },
+      "stage_oracle_run": true,
+      "syntactic_homogeneity": {
+        "checked_allocated_nodes": 170,
+        "max_auxiliary_degree": 2,
+        "stage_degrees": [
+          2,
+          2
+        ]
+      },
+      "growth_observations": {
+        "linearised_stage_increments": [
+          30
+        ],
+        "original_stage_increments": [
+          12
+        ],
+        "increments_match_after_first_factor": true,
+        "derivative_cache_counts": [
+          0,
+          64
+        ],
+        "interpretation": "The derivative cache still grows; an eventually constant increment in these finite cases is not saturation of the complete cache or an asymptotic polynomial bound."
+      }
+    },
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 4,
+      "omega": 22,
+      "h": 3,
+      "labels": [
+        1,
+        0,
+        1
+      ],
+      "routing_index": 2,
+      "B_gates": 35,
+      "coefficient_gates": 77,
+      "F0_gates": 100,
+      "initial_joint_gates": 117,
+      "P_bound": 118,
+      "initial_joint_bound": 142,
+      "coefficient_bound": 95,
+      "stages": [
+        {
+          "factor": 0,
+          "root_gates": 100,
+          "joint_gates_with_q": 117,
+          "allocated_nodes": 137,
+          "cached_derivatives": 0,
+          "general_bound": 142
+        },
+        {
+          "factor": 1,
+          "root_gates": 197,
+          "joint_gates_with_q": 197,
+          "allocated_nodes": 227,
+          "cached_derivatives": 144,
+          "local_bound": 3287,
+          "general_bound": 3987
+        },
+        {
+          "factor": 2,
+          "root_gates": 238,
+          "joint_gates_with_q": 238,
+          "allocated_nodes": 338,
+          "cached_derivatives": 366,
+          "local_bound": 5527,
+          "general_bound": 111647
+        },
+        {
+          "factor": 3,
+          "root_gates": 285,
+          "joint_gates_with_q": 285,
+          "allocated_nodes": 440,
+          "cached_derivatives": 510,
+          "local_bound": 6675,
+          "general_bound": 3126127
+        }
+      ],
+      "Y_gates": 241,
+      "spectra_gates": 242,
+      "true_INTT_output_gates": 258,
+      "routed_output_gates": 241,
+      "true_INTT_additional_gates": 17,
+      "spectral_increment_bound": 24,
+      "allocated_nodes": 549,
+      "elapsed_seconds": 0.011186500007170253,
+      "runtime_inputs": "a_ij,z only",
+      "true_INTT_called": true,
+      "universal_sign": "absorbed exactly by gamma_n*q_[n]=Omega_tilde",
+      "general_polynomial_bound_established": false,
+      "verification_counts": {
+        "numeric_instances": 8,
+        "stage_equalities": 8,
+        "inverse_coordinate_equalities": 6,
+        "directional_coordinate_equalities": 9,
+        "spectrum_coordinates": 96,
+        "INTT_coordinates": 96,
+        "routed_coordinates": 96,
+        "formal_z_coordinates": 4,
+        "label_profiles": 3,
+        "original_comparator_coordinates": 32
+      },
+      "verification_status": "passed",
+      "original_coordinates_same_fusion": {
+        "Y_gates": 151,
+        "true_INTT_output_gates": 168,
+        "routed_output_gates": 151,
+        "stages": [
+          {
+            "factor": 0,
+            "root_gates": 52,
+            "allocated_nodes": 67,
+            "cached_derivatives": 0
+          },
+          {
+            "factor": 1,
+            "root_gates": 90,
+            "allocated_nodes": 116,
+            "cached_derivatives": 75
+          },
+          {
+            "factor": 2,
+            "root_gates": 131,
+            "allocated_nodes": 222,
+            "cached_derivatives": 229
+          },
+          {
+            "factor": 3,
+            "root_gates": 178,
+            "allocated_nodes": 324,
+            "cached_derivatives": 353
+          }
+        ],
+        "allocated_nodes": 426,
+        "elapsed_seconds": 0.004759400006150827,
+        "same_spectral_fusion": true,
+        "prefix_copies": 1
+      },
+      "stage_oracle_run": true,
+      "syntactic_homogeneity": {
+        "checked_allocated_nodes": 577,
+        "max_auxiliary_degree": 3,
+        "stage_degrees": [
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "growth_observations": {
+        "linearised_stage_increments": [
+          80,
+          41,
+          47
+        ],
+        "original_stage_increments": [
+          38,
+          41,
+          47
+        ],
+        "increments_match_after_first_factor": true,
+        "derivative_cache_counts": [
+          0,
+          144,
+          366,
+          510
+        ],
+        "interpretation": "The derivative cache still grows; an eventually constant increment in these finite cases is not saturation of the complete cache or an asymptotic polynomial bound."
+      }
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "h": 6,
+      "labels": [
+        1,
+        4,
+        1,
+        0
+      ],
+      "routing_index": 6,
+      "B_gates": 63,
+      "coefficient_gates": 211,
+      "F0_gates": 274,
+      "initial_joint_gates": 325,
+      "P_bound": 350,
+      "initial_joint_bound": 414,
+      "coefficient_bound": 287,
+      "stages": [
+        {
+          "factor": 0,
+          "root_gates": 274,
+          "joint_gates_with_q": 325,
+          "allocated_nodes": 360,
+          "cached_derivatives": 0,
+          "general_bound": 414
+        },
+        {
+          "factor": 1,
+          "root_gates": 591,
+          "joint_gates_with_q": 591,
+          "allocated_nodes": 639,
+          "cached_derivatives": 464,
+          "local_bound": 12039,
+          "general_bound": 15332
+        },
+        {
+          "factor": 2,
+          "root_gates": 783,
+          "joint_gates_with_q": 783,
+          "allocated_nodes": 1004,
+          "cached_derivatives": 1204,
+          "local_bound": 21881,
+          "general_bound": 567298
+        },
+        {
+          "factor": 3,
+          "root_gates": 947,
+          "joint_gates_with_q": 947,
+          "allocated_nodes": 1396,
+          "cached_derivatives": 1820,
+          "local_bound": 28985,
+          "general_bound": 20990040
+        },
+        {
+          "factor": 4,
+          "root_gates": 1111,
+          "joint_gates_with_q": 1111,
+          "allocated_nodes": 1789,
+          "cached_derivatives": 2456,
+          "local_bound": 35053,
+          "general_bound": 776631494
+        },
+        {
+          "factor": 5,
+          "root_gates": 1275,
+          "joint_gates_with_q": 1275,
+          "allocated_nodes": 2182,
+          "cached_derivatives": 3092,
+          "local_bound": 41121,
+          "general_bound": 28735365292
+        },
+        {
+          "factor": 6,
+          "root_gates": 1439,
+          "joint_gates_with_q": 1439,
+          "allocated_nodes": 2575,
+          "cached_derivatives": 3728,
+          "local_bound": 47189,
+          "general_bound": 1063208515818
+        }
+      ],
+      "Y_gates": 1220,
+      "spectra_gates": 1223,
+      "true_INTT_output_gates": 1271,
+      "routed_output_gates": 1220,
+      "true_INTT_additional_gates": 51,
+      "spectral_increment_bound": 64,
+      "allocated_nodes": 3113,
+      "elapsed_seconds": 0.04097219998948276,
+      "runtime_inputs": "a_ij,z only",
+      "true_INTT_called": true,
+      "universal_sign": "absorbed exactly by gamma_n*q_[n]=Omega_tilde",
+      "general_polynomial_bound_established": false,
+      "verification_counts": {
+        "numeric_instances": 8,
+        "stage_equalities": 14,
+        "inverse_coordinate_equalities": 8,
+        "directional_coordinate_equalities": 16,
+        "spectrum_coordinates": 192,
+        "INTT_coordinates": 192,
+        "routed_coordinates": 192,
+        "formal_z_coordinates": 0,
+        "label_profiles": 3,
+        "original_comparator_coordinates": 64
+      },
+      "verification_status": "passed",
+      "original_coordinates_same_fusion": {
+        "Y_gates": 860,
+        "true_INTT_output_gates": 911,
+        "routed_output_gates": 860,
+        "stages": [
+          {
+            "factor": 0,
+            "root_gates": 94,
+            "allocated_nodes": 117,
+            "cached_derivatives": 0
+          },
+          {
+            "factor": 1,
+            "root_gates": 172,
+            "allocated_nodes": 209,
+            "cached_derivatives": 148
+          },
+          {
+            "factor": 2,
+            "root_gates": 364,
+            "allocated_nodes": 547,
+            "cached_derivatives": 656
+          },
+          {
+            "factor": 3,
+            "root_gates": 528,
+            "allocated_nodes": 940,
+            "cached_derivatives": 1220
+          },
+          {
+            "factor": 4,
+            "root_gates": 692,
+            "allocated_nodes": 1333,
+            "cached_derivatives": 1804
+          },
+          {
+            "factor": 5,
+            "root_gates": 856,
+            "allocated_nodes": 1726,
+            "cached_derivatives": 2388
+          },
+          {
+            "factor": 6,
+            "root_gates": 1020,
+            "allocated_nodes": 2119,
+            "cached_derivatives": 2972
+          }
+        ],
+        "allocated_nodes": 2630,
+        "elapsed_seconds": 0.020762999993166886,
+        "same_spectral_fusion": true,
+        "prefix_copies": 1
+      },
+      "stage_oracle_run": true,
+      "syntactic_homogeneity": {
+        "checked_allocated_nodes": 3143,
+        "max_auxiliary_degree": 4,
+        "stage_degrees": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "growth_observations": {
+        "linearised_stage_increments": [
+          266,
+          192,
+          164,
+          164,
+          164,
+          164
+        ],
+        "original_stage_increments": [
+          78,
+          192,
+          164,
+          164,
+          164,
+          164
+        ],
+        "increments_match_after_first_factor": true,
+        "derivative_cache_counts": [
+          0,
+          464,
+          1204,
+          1820,
+          2456,
+          3092,
+          3728
+        ],
+        "interpretation": "The derivative cache still grows; an eventually constant increment in these finite cases is not saturation of the complete cache or an asymptotic polynomial bound."
+      }
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "h": 10,
+      "labels": [
+        1,
+        4,
+        1,
+        0,
+        1
+      ],
+      "routing_index": 7,
+      "B_gates": 99,
+      "coefficient_gates": 299,
+      "F0_gates": 378,
+      "initial_joint_gates": 441,
+      "P_bound": 458,
+      "initial_joint_bound": 538,
+      "coefficient_bound": 379,
+      "stages": [
+        {
+          "factor": 0,
+          "root_gates": 378,
+          "joint_gates_with_q": 441,
+          "allocated_nodes": 485,
+          "cached_derivatives": 0,
+          "general_bound": 538
+        },
+        {
+          "factor": 1,
+          "root_gates": 863,
+          "joint_gates_with_q": 863,
+          "allocated_nodes": 923,
+          "cached_derivatives": 720,
+          "local_bound": 20303,
+          "general_bound": 24765
+        },
+        {
+          "factor": 2,
+          "root_gates": 1590,
+          "joint_gates_with_q": 1590,
+          "allocated_nodes": 1969,
+          "cached_derivatives": 2335,
+          "local_bound": 39715,
+          "general_bound": 1139207
+        },
+        {
+          "factor": 3,
+          "root_gates": 2672,
+          "joint_gates_with_q": 2672,
+          "allocated_nodes": 4691,
+          "cached_derivatives": 5975,
+          "local_bound": 73157,
+          "general_bound": 52403539
+        },
+        {
+          "factor": 4,
+          "root_gates": 3604,
+          "joint_gates_with_q": 3604,
+          "allocated_nodes": 6644,
+          "cached_derivatives": 9390,
+          "local_bound": 122929,
+          "general_bound": 2410562811
+        },
+        {
+          "factor": 5,
+          "root_gates": 4536,
+          "joint_gates_with_q": 4536,
+          "allocated_nodes": 8597,
+          "cached_derivatives": 12805,
+          "local_bound": 165801,
+          "general_bound": 110885889323
+        },
+        {
+          "factor": 6,
+          "root_gates": 5468,
+          "joint_gates_with_q": 5468,
+          "allocated_nodes": 10550,
+          "cached_derivatives": 16220,
+          "local_bound": 208673,
+          "general_bound": 5100750908875
+        },
+        {
+          "factor": 7,
+          "root_gates": 6400,
+          "joint_gates_with_q": 6400,
+          "allocated_nodes": 12503,
+          "cached_derivatives": 19635,
+          "local_bound": 251545,
+          "general_bound": 234634541808267
+        },
+        {
+          "factor": 8,
+          "root_gates": 7332,
+          "joint_gates_with_q": 7332,
+          "allocated_nodes": 14456,
+          "cached_derivatives": 23050,
+          "local_bound": 294417,
+          "general_bound": 10793188923180299
+        },
+        {
+          "factor": 9,
+          "root_gates": 8264,
+          "joint_gates_with_q": 8264,
+          "allocated_nodes": 16409,
+          "cached_derivatives": 26465,
+          "local_bound": 337289,
+          "general_bound": 496486690466293771
+        },
+        {
+          "factor": 10,
+          "root_gates": 9196,
+          "joint_gates_with_q": 9196,
+          "allocated_nodes": 18362,
+          "cached_derivatives": 29880,
+          "local_bound": 380161,
+          "general_bound": 22838387761449513483
+        }
+      ],
+      "Y_gates": 8238,
+      "spectra_gates": 8245,
+      "true_INTT_output_gates": 8294,
+      "routed_output_gates": 8238,
+      "true_INTT_additional_gates": 56,
+      "spectral_increment_bound": 64,
+      "allocated_nodes": 22040,
+      "elapsed_seconds": 0.6533699999999953,
+      "runtime_inputs": "a_ij,z only",
+      "true_INTT_called": true,
+      "universal_sign": "absorbed exactly by gamma_n*q_[n]=Omega_tilde",
+      "general_polynomial_bound_established": false,
+      "verification_counts": {
+        "numeric_instances": 8,
+        "stage_equalities": 22,
+        "inverse_coordinate_equalities": 10,
+        "directional_coordinate_equalities": 25,
+        "spectrum_coordinates": 192,
+        "INTT_coordinates": 192,
+        "routed_coordinates": 192,
+        "formal_z_coordinates": 0,
+        "label_profiles": 3,
+        "original_comparator_coordinates": 64
+      },
+      "verification_status": "passed",
+      "original_coordinates_same_fusion": {
+        "Y_gates": 7708,
+        "true_INTT_output_gates": 7764,
+        "routed_output_gates": 7708,
+        "stages": [
+          {
+            "factor": 0,
+            "root_gates": 148,
+            "allocated_nodes": 181,
+            "cached_derivatives": 0
+          },
+          {
+            "factor": 1,
+            "root_gates": 280,
+            "allocated_nodes": 330,
+            "cached_derivatives": 265
+          },
+          {
+            "factor": 2,
+            "root_gates": 1007,
+            "allocated_nodes": 1349,
+            "cached_derivatives": 1530
+          },
+          {
+            "factor": 3,
+            "root_gates": 2089,
+            "allocated_nodes": 4072,
+            "cached_derivatives": 5032
+          },
+          {
+            "factor": 4,
+            "root_gates": 3021,
+            "allocated_nodes": 6025,
+            "cached_derivatives": 8045
+          },
+          {
+            "factor": 5,
+            "root_gates": 3953,
+            "allocated_nodes": 7978,
+            "cached_derivatives": 11058
+          },
+          {
+            "factor": 6,
+            "root_gates": 4885,
+            "allocated_nodes": 9931,
+            "cached_derivatives": 14071
+          },
+          {
+            "factor": 7,
+            "root_gates": 5817,
+            "allocated_nodes": 11884,
+            "cached_derivatives": 17084
+          },
+          {
+            "factor": 8,
+            "root_gates": 6749,
+            "allocated_nodes": 13837,
+            "cached_derivatives": 20097
+          },
+          {
+            "factor": 9,
+            "root_gates": 7681,
+            "allocated_nodes": 15790,
+            "cached_derivatives": 23110
+          },
+          {
+            "factor": 10,
+            "root_gates": 8613,
+            "allocated_nodes": 17743,
+            "cached_derivatives": 26123
+          }
+        ],
+        "allocated_nodes": 21375,
+        "elapsed_seconds": 0.44699989999935497,
+        "same_spectral_fusion": true,
+        "prefix_copies": 1
+      },
+      "stage_oracle_run": true,
+      "syntactic_homogeneity": {
+        "checked_allocated_nodes": 22115,
+        "max_auxiliary_degree": 5,
+        "stage_degrees": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "growth_observations": {
+        "linearised_stage_increments": [
+          422,
+          727,
+          1082,
+          932,
+          932,
+          932,
+          932,
+          932,
+          932,
+          932
+        ],
+        "original_stage_increments": [
+          132,
+          727,
+          1082,
+          932,
+          932,
+          932,
+          932,
+          932,
+          932,
+          932
+        ],
+        "increments_match_after_first_factor": true,
+        "derivative_cache_counts": [
+          0,
+          720,
+          2335,
+          5975,
+          9390,
+          12805,
+          16220,
+          19635,
+          23050,
+          26465,
+          29880
+        ],
+        "interpretation": "The derivative cache still grows; an eventually constant increment in these finite cases is not saturation of the complete cache or an asymptotic polynomial bound."
+      }
+    },
+    {
+      "n": 6,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "h": 15,
+      "labels": [
+        1,
+        4,
+        1,
+        0,
+        1,
+        4
+      ],
+      "routing_index": 3,
+      "B_gates": 143,
+      "coefficient_gates": 401,
+      "F0_gates": 496,
+      "initial_joint_gates": 571,
+      "P_bound": 574,
+      "initial_joint_bound": 670,
+      "coefficient_bound": 479,
+      "stages": [
+        {
+          "factor": 0,
+          "root_gates": 496,
+          "joint_gates_with_q": 571,
+          "allocated_nodes": 626,
+          "cached_derivatives": 0,
+          "general_bound": 670
+        },
+        {
+          "factor": 1,
+          "root_gates": 1185,
+          "joint_gates_with_q": 1185,
+          "allocated_nodes": 1259,
+          "cached_derivatives": 1032,
+          "local_bound": 31425,
+          "general_bound": 36870
+        },
+        {
+          "factor": 2,
+          "root_gates": 2642,
+          "joint_gates_with_q": 2642,
+          "allocated_nodes": 3141,
+          "cached_derivatives": 3762,
+          "local_bound": 65195,
+          "general_bound": 2027870
+        },
+        {
+          "factor": 3,
+          "root_gates": 9337,
+          "joint_gates_with_q": 9337,
+          "allocated_nodes": 13862,
+          "cached_derivatives": 16500,
+          "local_bound": 145330,
+          "general_bound": 111532870
+        },
+        {
+          "factor": 4,
+          "root_gates": 14003,
+          "joint_gates_with_q": 14003,
+          "allocated_nodes": 27235,
+          "cached_derivatives": 36288,
+          "local_bound": 513555,
+          "general_bound": 6134307870
+        },
+        {
+          "factor": 5,
+          "root_gates": 18489,
+          "joint_gates_with_q": 18489,
+          "allocated_nodes": 37878,
+          "cached_derivatives": 55326,
+          "local_bound": 770185,
+          "general_bound": 337386932870
+        },
+        {
+          "factor": 6,
+          "root_gates": 22975,
+          "joint_gates_with_q": 22975,
+          "allocated_nodes": 48521,
+          "cached_derivatives": 74364,
+          "local_bound": 1016915,
+          "general_bound": 18556281307870
+        },
+        {
+          "factor": 7,
+          "root_gates": 27461,
+          "joint_gates_with_q": 27461,
+          "allocated_nodes": 59164,
+          "cached_derivatives": 93402,
+          "local_bound": 1263645,
+          "general_bound": 1020595471932870
+        },
+        {
+          "factor": 8,
+          "root_gates": 31947,
+          "joint_gates_with_q": 31947,
+          "allocated_nodes": 69807,
+          "cached_derivatives": 112440,
+          "local_bound": 1510375,
+          "general_bound": 56132750956307870
+        },
+        {
+          "factor": 9,
+          "root_gates": 36433,
+          "joint_gates_with_q": 36433,
+          "allocated_nodes": 80450,
+          "cached_derivatives": 131478,
+          "local_bound": 1757105,
+          "general_bound": 3087301302596932870
+        },
+        {
+          "factor": 10,
+          "root_gates": 40919,
+          "joint_gates_with_q": 40919,
+          "allocated_nodes": 91093,
+          "cached_derivatives": 150516,
+          "local_bound": 2003835,
+          "general_bound": 169801571642831307870
+        },
+        {
+          "factor": 11,
+          "root_gates": 45405,
+          "joint_gates_with_q": 45405,
+          "allocated_nodes": 101736,
+          "cached_derivatives": 169554,
+          "local_bound": 2250565,
+          "general_bound": 9339086440355721932870
+        },
+        {
+          "factor": 12,
+          "root_gates": 49891,
+          "joint_gates_with_q": 49891,
+          "allocated_nodes": 112378,
+          "cached_derivatives": 188592,
+          "local_bound": 2497295,
+          "general_bound": 513649754219564706307870
+        },
+        {
+          "factor": 13,
+          "root_gates": 54377,
+          "joint_gates_with_q": 54377,
+          "allocated_nodes": 123021,
+          "cached_derivatives": 207630,
+          "local_bound": 2744025,
+          "general_bound": 28250736482076058846932870
+        },
+        {
+          "factor": 14,
+          "root_gates": 58863,
+          "joint_gates_with_q": 58863,
+          "allocated_nodes": 133664,
+          "cached_derivatives": 226668,
+          "local_bound": 2990755,
+          "general_bound": 1553790506514183236581307870
+        },
+        {
+          "factor": 15,
+          "root_gates": 63349,
+          "joint_gates_with_q": 63349,
+          "allocated_nodes": 144307,
+          "cached_derivatives": 245706,
+          "local_bound": 3237485,
+          "general_bound": 85458477858280078011971932870
+        }
+      ],
+      "Y_gates": 56620,
+      "spectra_gates": 56627,
+      "true_INTT_output_gates": 56676,
+      "routed_output_gates": 56620,
+      "true_INTT_additional_gates": 56,
+      "spectral_increment_bound": 64,
+      "allocated_nodes": 168445,
+      "elapsed_seconds": 3.8373617000033846,
+      "runtime_inputs": "a_ij,z only",
+      "true_INTT_called": true,
+      "universal_sign": "absorbed exactly by gamma_n*q_[n]=Omega_tilde",
+      "general_polynomial_bound_established": false,
+      "verification_counts": {
+        "numeric_instances": 8,
+        "stage_equalities": 32,
+        "inverse_coordinate_equalities": 12,
+        "directional_coordinate_equalities": 36,
+        "spectrum_coordinates": 192,
+        "INTT_coordinates": 192,
+        "routed_coordinates": 192,
+        "formal_z_coordinates": 0,
+        "label_profiles": 3,
+        "original_comparator_coordinates": 64
+      },
+      "verification_status": "passed",
+      "original_coordinates_same_fusion": {
+        "Y_gates": 55900,
+        "true_INTT_output_gates": 55956,
+        "routed_output_gates": 55900,
+        "stages": [
+          {
+            "factor": 0,
+            "root_gates": 214,
+            "allocated_nodes": 259,
+            "cached_derivatives": 0
+          },
+          {
+            "factor": 1,
+            "root_gates": 414,
+            "allocated_nodes": 479,
+            "cached_derivatives": 390
+          },
+          {
+            "factor": 2,
+            "root_gates": 1871,
+            "allocated_nodes": 2334,
+            "cached_derivatives": 2628
+          },
+          {
+            "factor": 3,
+            "root_gates": 8566,
+            "allocated_nodes": 13056,
+            "cached_derivatives": 15366
+          },
+          {
+            "factor": 4,
+            "root_gates": 13232,
+            "allocated_nodes": 26429,
+            "cached_derivatives": 33148
+          },
+          {
+            "factor": 5,
+            "root_gates": 17718,
+            "allocated_nodes": 37072,
+            "cached_derivatives": 49790
+          },
+          {
+            "factor": 6,
+            "root_gates": 22204,
+            "allocated_nodes": 47715,
+            "cached_derivatives": 66432
+          },
+          {
+            "factor": 7,
+            "root_gates": 26690,
+            "allocated_nodes": 58358,
+            "cached_derivatives": 83074
+          },
+          {
+            "factor": 8,
+            "root_gates": 31176,
+            "allocated_nodes": 69001,
+            "cached_derivatives": 99716
+          },
+          {
+            "factor": 9,
+            "root_gates": 35662,
+            "allocated_nodes": 79644,
+            "cached_derivatives": 116358
+          },
+          {
+            "factor": 10,
+            "root_gates": 40148,
+            "allocated_nodes": 90287,
+            "cached_derivatives": 133000
+          },
+          {
+            "factor": 11,
+            "root_gates": 44634,
+            "allocated_nodes": 100930,
+            "cached_derivatives": 149642
+          },
+          {
+            "factor": 12,
+            "root_gates": 49120,
+            "allocated_nodes": 111573,
+            "cached_derivatives": 166284
+          },
+          {
+            "factor": 13,
+            "root_gates": 53606,
+            "allocated_nodes": 122216,
+            "cached_derivatives": 182926
+          },
+          {
+            "factor": 14,
+            "root_gates": 58092,
+            "allocated_nodes": 132859,
+            "cached_derivatives": 199568
+          },
+          {
+            "factor": 15,
+            "root_gates": 62578,
+            "allocated_nodes": 143502,
+            "cached_derivatives": 216210
+          }
+        ],
+        "allocated_nodes": 167597,
+        "elapsed_seconds": 2.0080202000099234,
+        "same_spectral_fusion": true,
+        "prefix_copies": 1
+      },
+      "stage_oracle_run": true,
+      "syntactic_homogeneity": {
+        "checked_allocated_nodes": 168496,
+        "max_auxiliary_degree": 6,
+        "stage_degrees": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      "growth_observations": {
+        "linearised_stage_increments": [
+          614,
+          1457,
+          6695,
+          4666,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486
+        ],
+        "original_stage_increments": [
+          200,
+          1457,
+          6695,
+          4666,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486
+        ],
+        "increments_match_after_first_factor": true,
+        "derivative_cache_counts": [
+          0,
+          1032,
+          3762,
+          16500,
+          36288,
+          55326,
+          74364,
+          93402,
+          112440,
+          131478,
+          150516,
+          169554,
+          188592,
+          207630,
+          226668,
+          245706
+        ],
+        "interpretation": "The derivative cache still grows; an eventually constant increment in these finite cases is not saturation of the complete cache or an asymptotic polynomial bound."
+      }
+    }
+  ],
+  "cross_field_cases": [
+    {
+      "n": 3,
+      "Q": 257,
+      "N": 4,
+      "omega": 16,
+      "h": 3,
+      "labels": [
+        1,
+        0,
+        1
+      ],
+      "routing_index": 2,
+      "B_gates": 35,
+      "coefficient_gates": 77,
+      "F0_gates": 100,
+      "initial_joint_gates": 117,
+      "P_bound": 118,
+      "initial_joint_bound": 142,
+      "coefficient_bound": 95,
+      "stages": [
+        {
+          "factor": 0,
+          "root_gates": 100,
+          "joint_gates_with_q": 117,
+          "allocated_nodes": 137,
+          "cached_derivatives": 0,
+          "general_bound": 142
+        },
+        {
+          "factor": 1,
+          "root_gates": 197,
+          "joint_gates_with_q": 197,
+          "allocated_nodes": 227,
+          "cached_derivatives": 144,
+          "local_bound": 3287,
+          "general_bound": 3987
+        },
+        {
+          "factor": 2,
+          "root_gates": 238,
+          "joint_gates_with_q": 238,
+          "allocated_nodes": 338,
+          "cached_derivatives": 366,
+          "local_bound": 5527,
+          "general_bound": 111647
+        },
+        {
+          "factor": 3,
+          "root_gates": 285,
+          "joint_gates_with_q": 285,
+          "allocated_nodes": 440,
+          "cached_derivatives": 510,
+          "local_bound": 6675,
+          "general_bound": 3126127
+        }
+      ],
+      "Y_gates": 241,
+      "spectra_gates": 242,
+      "true_INTT_output_gates": 258,
+      "routed_output_gates": 241,
+      "true_INTT_additional_gates": 17,
+      "spectral_increment_bound": 24,
+      "allocated_nodes": 549,
+      "elapsed_seconds": 0.006928100003278814,
+      "runtime_inputs": "a_ij,z only",
+      "true_INTT_called": true,
+      "universal_sign": "absorbed exactly by gamma_n*q_[n]=Omega_tilde",
+      "general_polynomial_bound_established": false,
+      "verification_counts": {
+        "numeric_instances": 8,
+        "stage_equalities": 0,
+        "inverse_coordinate_equalities": 0,
+        "directional_coordinate_equalities": 9,
+        "spectrum_coordinates": 96,
+        "INTT_coordinates": 96,
+        "routed_coordinates": 96,
+        "formal_z_coordinates": 4,
+        "label_profiles": 3,
+        "original_comparator_coordinates": 32
+      },
+      "verification_status": "passed",
+      "original_coordinates_same_fusion": {
+        "Y_gates": 151,
+        "true_INTT_output_gates": 168,
+        "routed_output_gates": 151,
+        "stages": [
+          {
+            "factor": 0,
+            "root_gates": 52,
+            "allocated_nodes": 67,
+            "cached_derivatives": 0
+          },
+          {
+            "factor": 1,
+            "root_gates": 90,
+            "allocated_nodes": 116,
+            "cached_derivatives": 75
+          },
+          {
+            "factor": 2,
+            "root_gates": 131,
+            "allocated_nodes": 222,
+            "cached_derivatives": 229
+          },
+          {
+            "factor": 3,
+            "root_gates": 178,
+            "allocated_nodes": 324,
+            "cached_derivatives": 353
+          }
+        ],
+        "allocated_nodes": 426,
+        "elapsed_seconds": 0.003948900004616007,
+        "same_spectral_fusion": true,
+        "prefix_copies": 1
+      },
+      "stage_oracle_run": false,
+      "syntactic_homogeneity": {
+        "checked_allocated_nodes": 577,
+        "max_auxiliary_degree": 3,
+        "stage_degrees": [
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "growth_observations": {
+        "linearised_stage_increments": [
+          80,
+          41,
+          47
+        ],
+        "original_stage_increments": [
+          38,
+          41,
+          47
+        ],
+        "increments_match_after_first_factor": true,
+        "derivative_cache_counts": [
+          0,
+          144,
+          366,
+          510
+        ],
+        "interpretation": "The derivative cache still grows; an eventually constant increment in these finite cases is not saturation of the complete cache or an asymptotic polynomial bound."
+      }
+    },
+    {
+      "n": 4,
+      "Q": 257,
+      "N": 8,
+      "omega": 4,
+      "h": 6,
+      "labels": [
+        1,
+        4,
+        1,
+        0
+      ],
+      "routing_index": 6,
+      "B_gates": 63,
+      "coefficient_gates": 211,
+      "F0_gates": 274,
+      "initial_joint_gates": 325,
+      "P_bound": 350,
+      "initial_joint_bound": 414,
+      "coefficient_bound": 287,
+      "stages": [
+        {
+          "factor": 0,
+          "root_gates": 274,
+          "joint_gates_with_q": 325,
+          "allocated_nodes": 360,
+          "cached_derivatives": 0,
+          "general_bound": 414
+        },
+        {
+          "factor": 1,
+          "root_gates": 591,
+          "joint_gates_with_q": 591,
+          "allocated_nodes": 639,
+          "cached_derivatives": 464,
+          "local_bound": 12039,
+          "general_bound": 15332
+        },
+        {
+          "factor": 2,
+          "root_gates": 783,
+          "joint_gates_with_q": 783,
+          "allocated_nodes": 1006,
+          "cached_derivatives": 1204,
+          "local_bound": 21881,
+          "general_bound": 567298
+        },
+        {
+          "factor": 3,
+          "root_gates": 947,
+          "joint_gates_with_q": 947,
+          "allocated_nodes": 1399,
+          "cached_derivatives": 1820,
+          "local_bound": 28985,
+          "general_bound": 20990040
+        },
+        {
+          "factor": 4,
+          "root_gates": 1111,
+          "joint_gates_with_q": 1111,
+          "allocated_nodes": 1791,
+          "cached_derivatives": 2456,
+          "local_bound": 35053,
+          "general_bound": 776631494
+        },
+        {
+          "factor": 5,
+          "root_gates": 1275,
+          "joint_gates_with_q": 1275,
+          "allocated_nodes": 2184,
+          "cached_derivatives": 3088,
+          "local_bound": 41121,
+          "general_bound": 28735365292
+        },
+        {
+          "factor": 6,
+          "root_gates": 1439,
+          "joint_gates_with_q": 1439,
+          "allocated_nodes": 2577,
+          "cached_derivatives": 3724,
+          "local_bound": 47189,
+          "general_bound": 1063208515818
+        }
+      ],
+      "Y_gates": 1220,
+      "spectra_gates": 1223,
+      "true_INTT_output_gates": 1271,
+      "routed_output_gates": 1220,
+      "true_INTT_additional_gates": 51,
+      "spectral_increment_bound": 64,
+      "allocated_nodes": 3119,
+      "elapsed_seconds": 0.04664849999244325,
+      "runtime_inputs": "a_ij,z only",
+      "true_INTT_called": true,
+      "universal_sign": "absorbed exactly by gamma_n*q_[n]=Omega_tilde",
+      "general_polynomial_bound_established": false,
+      "verification_counts": {
+        "numeric_instances": 8,
+        "stage_equalities": 0,
+        "inverse_coordinate_equalities": 0,
+        "directional_coordinate_equalities": 16,
+        "spectrum_coordinates": 192,
+        "INTT_coordinates": 192,
+        "routed_coordinates": 192,
+        "formal_z_coordinates": 0,
+        "label_profiles": 3,
+        "original_comparator_coordinates": 64
+      },
+      "verification_status": "passed",
+      "original_coordinates_same_fusion": {
+        "Y_gates": 860,
+        "true_INTT_output_gates": 911,
+        "routed_output_gates": 860,
+        "stages": [
+          {
+            "factor": 0,
+            "root_gates": 94,
+            "allocated_nodes": 117,
+            "cached_derivatives": 0
+          },
+          {
+            "factor": 1,
+            "root_gates": 172,
+            "allocated_nodes": 209,
+            "cached_derivatives": 148
+          },
+          {
+            "factor": 2,
+            "root_gates": 364,
+            "allocated_nodes": 547,
+            "cached_derivatives": 656
+          },
+          {
+            "factor": 3,
+            "root_gates": 528,
+            "allocated_nodes": 940,
+            "cached_derivatives": 1220
+          },
+          {
+            "factor": 4,
+            "root_gates": 692,
+            "allocated_nodes": 1333,
+            "cached_derivatives": 1804
+          },
+          {
+            "factor": 5,
+            "root_gates": 856,
+            "allocated_nodes": 1726,
+            "cached_derivatives": 2388
+          },
+          {
+            "factor": 6,
+            "root_gates": 1020,
+            "allocated_nodes": 2119,
+            "cached_derivatives": 2972
+          }
+        ],
+        "allocated_nodes": 2630,
+        "elapsed_seconds": 0.019105400002445094,
+        "same_spectral_fusion": true,
+        "prefix_copies": 1
+      },
+      "stage_oracle_run": false,
+      "syntactic_homogeneity": {
+        "checked_allocated_nodes": 3149,
+        "max_auxiliary_degree": 4,
+        "stage_degrees": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ]
+      },
+      "growth_observations": {
+        "linearised_stage_increments": [
+          266,
+          192,
+          164,
+          164,
+          164,
+          164
+        ],
+        "original_stage_increments": [
+          78,
+          192,
+          164,
+          164,
+          164,
+          164
+        ],
+        "increments_match_after_first_factor": true,
+        "derivative_cache_counts": [
+          0,
+          464,
+          1204,
+          1820,
+          2456,
+          3088,
+          3724
+        ],
+        "interpretation": "The derivative cache still grows; an eventually constant increment in these finite cases is not saturation of the complete cache or an asymptotic polynomial bound."
+      }
+    },
+    {
+      "n": 5,
+      "Q": 257,
+      "N": 8,
+      "omega": 4,
+      "h": 10,
+      "labels": [
+        1,
+        4,
+        1,
+        0,
+        1
+      ],
+      "routing_index": 7,
+      "B_gates": 99,
+      "coefficient_gates": 299,
+      "F0_gates": 378,
+      "initial_joint_gates": 441,
+      "P_bound": 458,
+      "initial_joint_bound": 538,
+      "coefficient_bound": 379,
+      "stages": [
+        {
+          "factor": 0,
+          "root_gates": 378,
+          "joint_gates_with_q": 441,
+          "allocated_nodes": 485,
+          "cached_derivatives": 0,
+          "general_bound": 538
+        },
+        {
+          "factor": 1,
+          "root_gates": 863,
+          "joint_gates_with_q": 863,
+          "allocated_nodes": 923,
+          "cached_derivatives": 720,
+          "local_bound": 20303,
+          "general_bound": 24765
+        },
+        {
+          "factor": 2,
+          "root_gates": 1590,
+          "joint_gates_with_q": 1590,
+          "allocated_nodes": 1971,
+          "cached_derivatives": 2335,
+          "local_bound": 39715,
+          "general_bound": 1139207
+        },
+        {
+          "factor": 3,
+          "root_gates": 2672,
+          "joint_gates_with_q": 2672,
+          "allocated_nodes": 4694,
+          "cached_derivatives": 5975,
+          "local_bound": 73157,
+          "general_bound": 52403539
+        },
+        {
+          "factor": 4,
+          "root_gates": 3604,
+          "joint_gates_with_q": 3604,
+          "allocated_nodes": 6646,
+          "cached_derivatives": 9390,
+          "local_bound": 122929,
+          "general_bound": 2410562811
+        },
+        {
+          "factor": 5,
+          "root_gates": 4536,
+          "joint_gates_with_q": 4536,
+          "allocated_nodes": 8599,
+          "cached_derivatives": 12800,
+          "local_bound": 165801,
+          "general_bound": 110885889323
+        },
+        {
+          "factor": 6,
+          "root_gates": 5468,
+          "joint_gates_with_q": 5468,
+          "allocated_nodes": 10552,
+          "cached_derivatives": 16215,
+          "local_bound": 208673,
+          "general_bound": 5100750908875
+        },
+        {
+          "factor": 7,
+          "root_gates": 6400,
+          "joint_gates_with_q": 6400,
+          "allocated_nodes": 12505,
+          "cached_derivatives": 19630,
+          "local_bound": 251545,
+          "general_bound": 234634541808267
+        },
+        {
+          "factor": 8,
+          "root_gates": 7332,
+          "joint_gates_with_q": 7332,
+          "allocated_nodes": 14458,
+          "cached_derivatives": 23045,
+          "local_bound": 294417,
+          "general_bound": 10793188923180299
+        },
+        {
+          "factor": 9,
+          "root_gates": 8264,
+          "joint_gates_with_q": 8264,
+          "allocated_nodes": 16411,
+          "cached_derivatives": 26460,
+          "local_bound": 337289,
+          "general_bound": 496486690466293771
+        },
+        {
+          "factor": 10,
+          "root_gates": 9196,
+          "joint_gates_with_q": 9196,
+          "allocated_nodes": 18364,
+          "cached_derivatives": 29875,
+          "local_bound": 380161,
+          "general_bound": 22838387761449513483
+        }
+      ],
+      "Y_gates": 8238,
+      "spectra_gates": 8245,
+      "true_INTT_output_gates": 8294,
+      "routed_output_gates": 8238,
+      "true_INTT_additional_gates": 56,
+      "spectral_increment_bound": 64,
+      "allocated_nodes": 22055,
+      "elapsed_seconds": 0.34328180000011344,
+      "runtime_inputs": "a_ij,z only",
+      "true_INTT_called": true,
+      "universal_sign": "absorbed exactly by gamma_n*q_[n]=Omega_tilde",
+      "general_polynomial_bound_established": false,
+      "verification_counts": {
+        "numeric_instances": 8,
+        "stage_equalities": 0,
+        "inverse_coordinate_equalities": 0,
+        "directional_coordinate_equalities": 25,
+        "spectrum_coordinates": 192,
+        "INTT_coordinates": 192,
+        "routed_coordinates": 192,
+        "formal_z_coordinates": 0,
+        "label_profiles": 3,
+        "original_comparator_coordinates": 64
+      },
+      "verification_status": "passed",
+      "original_coordinates_same_fusion": {
+        "Y_gates": 7708,
+        "true_INTT_output_gates": 7764,
+        "routed_output_gates": 7708,
+        "stages": [
+          {
+            "factor": 0,
+            "root_gates": 148,
+            "allocated_nodes": 181,
+            "cached_derivatives": 0
+          },
+          {
+            "factor": 1,
+            "root_gates": 280,
+            "allocated_nodes": 330,
+            "cached_derivatives": 265
+          },
+          {
+            "factor": 2,
+            "root_gates": 1007,
+            "allocated_nodes": 1349,
+            "cached_derivatives": 1530
+          },
+          {
+            "factor": 3,
+            "root_gates": 2089,
+            "allocated_nodes": 4072,
+            "cached_derivatives": 5032
+          },
+          {
+            "factor": 4,
+            "root_gates": 3021,
+            "allocated_nodes": 6025,
+            "cached_derivatives": 8045
+          },
+          {
+            "factor": 5,
+            "root_gates": 3953,
+            "allocated_nodes": 7978,
+            "cached_derivatives": 11058
+          },
+          {
+            "factor": 6,
+            "root_gates": 4885,
+            "allocated_nodes": 9931,
+            "cached_derivatives": 14071
+          },
+          {
+            "factor": 7,
+            "root_gates": 5817,
+            "allocated_nodes": 11884,
+            "cached_derivatives": 17084
+          },
+          {
+            "factor": 8,
+            "root_gates": 6749,
+            "allocated_nodes": 13837,
+            "cached_derivatives": 20097
+          },
+          {
+            "factor": 9,
+            "root_gates": 7681,
+            "allocated_nodes": 15790,
+            "cached_derivatives": 23110
+          },
+          {
+            "factor": 10,
+            "root_gates": 8613,
+            "allocated_nodes": 17743,
+            "cached_derivatives": 26123
+          }
+        ],
+        "allocated_nodes": 21374,
+        "elapsed_seconds": 0.2136056000017561,
+        "same_spectral_fusion": true,
+        "prefix_copies": 1
+      },
+      "stage_oracle_run": false,
+      "syntactic_homogeneity": {
+        "checked_allocated_nodes": 22130,
+        "max_auxiliary_degree": 5,
+        "stage_degrees": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ]
+      },
+      "growth_observations": {
+        "linearised_stage_increments": [
+          422,
+          727,
+          1082,
+          932,
+          932,
+          932,
+          932,
+          932,
+          932,
+          932
+        ],
+        "original_stage_increments": [
+          132,
+          727,
+          1082,
+          932,
+          932,
+          932,
+          932,
+          932,
+          932,
+          932
+        ],
+        "increments_match_after_first_factor": true,
+        "derivative_cache_counts": [
+          0,
+          720,
+          2335,
+          5975,
+          9390,
+          12800,
+          16215,
+          19630,
+          23045,
+          26460,
+          29875
+        ],
+        "interpretation": "The derivative cache still grows; an eventually constant increment in these finite cases is not saturation of the complete cache or an asymptotic polynomial bound."
+      }
+    },
+    {
+      "n": 6,
+      "Q": 257,
+      "N": 8,
+      "omega": 4,
+      "h": 15,
+      "labels": [
+        1,
+        4,
+        1,
+        0,
+        1,
+        4
+      ],
+      "routing_index": 3,
+      "B_gates": 143,
+      "coefficient_gates": 401,
+      "F0_gates": 496,
+      "initial_joint_gates": 571,
+      "P_bound": 574,
+      "initial_joint_bound": 670,
+      "coefficient_bound": 479,
+      "stages": [
+        {
+          "factor": 0,
+          "root_gates": 496,
+          "joint_gates_with_q": 571,
+          "allocated_nodes": 626,
+          "cached_derivatives": 0,
+          "general_bound": 670
+        },
+        {
+          "factor": 1,
+          "root_gates": 1185,
+          "joint_gates_with_q": 1185,
+          "allocated_nodes": 1259,
+          "cached_derivatives": 1032,
+          "local_bound": 31425,
+          "general_bound": 36870
+        },
+        {
+          "factor": 2,
+          "root_gates": 2642,
+          "joint_gates_with_q": 2642,
+          "allocated_nodes": 3143,
+          "cached_derivatives": 3762,
+          "local_bound": 65195,
+          "general_bound": 2027870
+        },
+        {
+          "factor": 3,
+          "root_gates": 9337,
+          "joint_gates_with_q": 9337,
+          "allocated_nodes": 13865,
+          "cached_derivatives": 16500,
+          "local_bound": 145330,
+          "general_bound": 111532870
+        },
+        {
+          "factor": 4,
+          "root_gates": 14003,
+          "joint_gates_with_q": 14003,
+          "allocated_nodes": 27237,
+          "cached_derivatives": 36288,
+          "local_bound": 513555,
+          "general_bound": 6134307870
+        },
+        {
+          "factor": 5,
+          "root_gates": 18489,
+          "joint_gates_with_q": 18489,
+          "allocated_nodes": 37880,
+          "cached_derivatives": 55320,
+          "local_bound": 770185,
+          "general_bound": 337386932870
+        },
+        {
+          "factor": 6,
+          "root_gates": 22975,
+          "joint_gates_with_q": 22975,
+          "allocated_nodes": 48523,
+          "cached_derivatives": 74358,
+          "local_bound": 1016915,
+          "general_bound": 18556281307870
+        },
+        {
+          "factor": 7,
+          "root_gates": 27461,
+          "joint_gates_with_q": 27461,
+          "allocated_nodes": 59166,
+          "cached_derivatives": 93396,
+          "local_bound": 1263645,
+          "general_bound": 1020595471932870
+        },
+        {
+          "factor": 8,
+          "root_gates": 31947,
+          "joint_gates_with_q": 31947,
+          "allocated_nodes": 69809,
+          "cached_derivatives": 112434,
+          "local_bound": 1510375,
+          "general_bound": 56132750956307870
+        },
+        {
+          "factor": 9,
+          "root_gates": 36433,
+          "joint_gates_with_q": 36433,
+          "allocated_nodes": 80452,
+          "cached_derivatives": 131472,
+          "local_bound": 1757105,
+          "general_bound": 3087301302596932870
+        },
+        {
+          "factor": 10,
+          "root_gates": 40919,
+          "joint_gates_with_q": 40919,
+          "allocated_nodes": 91095,
+          "cached_derivatives": 150510,
+          "local_bound": 2003835,
+          "general_bound": 169801571642831307870
+        },
+        {
+          "factor": 11,
+          "root_gates": 45405,
+          "joint_gates_with_q": 45405,
+          "allocated_nodes": 101738,
+          "cached_derivatives": 169548,
+          "local_bound": 2250565,
+          "general_bound": 9339086440355721932870
+        },
+        {
+          "factor": 12,
+          "root_gates": 49891,
+          "joint_gates_with_q": 49891,
+          "allocated_nodes": 112381,
+          "cached_derivatives": 188586,
+          "local_bound": 2497295,
+          "general_bound": 513649754219564706307870
+        },
+        {
+          "factor": 13,
+          "root_gates": 54377,
+          "joint_gates_with_q": 54377,
+          "allocated_nodes": 123024,
+          "cached_derivatives": 207624,
+          "local_bound": 2744025,
+          "general_bound": 28250736482076058846932870
+        },
+        {
+          "factor": 14,
+          "root_gates": 58863,
+          "joint_gates_with_q": 58863,
+          "allocated_nodes": 133667,
+          "cached_derivatives": 226662,
+          "local_bound": 2990755,
+          "general_bound": 1553790506514183236581307870
+        },
+        {
+          "factor": 15,
+          "root_gates": 63349,
+          "joint_gates_with_q": 63349,
+          "allocated_nodes": 144310,
+          "cached_derivatives": 245700,
+          "local_bound": 3237485,
+          "general_bound": 85458477858280078011971932870
+        }
+      ],
+      "Y_gates": 56620,
+      "spectra_gates": 56627,
+      "true_INTT_output_gates": 56676,
+      "routed_output_gates": 56620,
+      "true_INTT_additional_gates": 56,
+      "spectral_increment_bound": 64,
+      "allocated_nodes": 168461,
+      "elapsed_seconds": 4.002420299992082,
+      "runtime_inputs": "a_ij,z only",
+      "true_INTT_called": true,
+      "universal_sign": "absorbed exactly by gamma_n*q_[n]=Omega_tilde",
+      "general_polynomial_bound_established": false,
+      "verification_counts": {
+        "numeric_instances": 8,
+        "stage_equalities": 0,
+        "inverse_coordinate_equalities": 0,
+        "directional_coordinate_equalities": 36,
+        "spectrum_coordinates": 192,
+        "INTT_coordinates": 192,
+        "routed_coordinates": 192,
+        "formal_z_coordinates": 0,
+        "label_profiles": 3,
+        "original_comparator_coordinates": 64
+      },
+      "verification_status": "passed",
+      "original_coordinates_same_fusion": {
+        "Y_gates": 55900,
+        "true_INTT_output_gates": 55956,
+        "routed_output_gates": 55900,
+        "stages": [
+          {
+            "factor": 0,
+            "root_gates": 214,
+            "allocated_nodes": 259,
+            "cached_derivatives": 0
+          },
+          {
+            "factor": 1,
+            "root_gates": 414,
+            "allocated_nodes": 479,
+            "cached_derivatives": 390
+          },
+          {
+            "factor": 2,
+            "root_gates": 1871,
+            "allocated_nodes": 2334,
+            "cached_derivatives": 2628
+          },
+          {
+            "factor": 3,
+            "root_gates": 8566,
+            "allocated_nodes": 13056,
+            "cached_derivatives": 15366
+          },
+          {
+            "factor": 4,
+            "root_gates": 13232,
+            "allocated_nodes": 26429,
+            "cached_derivatives": 33148
+          },
+          {
+            "factor": 5,
+            "root_gates": 17718,
+            "allocated_nodes": 37072,
+            "cached_derivatives": 49790
+          },
+          {
+            "factor": 6,
+            "root_gates": 22204,
+            "allocated_nodes": 47715,
+            "cached_derivatives": 66432
+          },
+          {
+            "factor": 7,
+            "root_gates": 26690,
+            "allocated_nodes": 58358,
+            "cached_derivatives": 83074
+          },
+          {
+            "factor": 8,
+            "root_gates": 31176,
+            "allocated_nodes": 69001,
+            "cached_derivatives": 99716
+          },
+          {
+            "factor": 9,
+            "root_gates": 35662,
+            "allocated_nodes": 79644,
+            "cached_derivatives": 116358
+          },
+          {
+            "factor": 10,
+            "root_gates": 40148,
+            "allocated_nodes": 90287,
+            "cached_derivatives": 133000
+          },
+          {
+            "factor": 11,
+            "root_gates": 44634,
+            "allocated_nodes": 100930,
+            "cached_derivatives": 149642
+          },
+          {
+            "factor": 12,
+            "root_gates": 49120,
+            "allocated_nodes": 111573,
+            "cached_derivatives": 166284
+          },
+          {
+            "factor": 13,
+            "root_gates": 53606,
+            "allocated_nodes": 122216,
+            "cached_derivatives": 182926
+          },
+          {
+            "factor": 14,
+            "root_gates": 58092,
+            "allocated_nodes": 132859,
+            "cached_derivatives": 199568
+          },
+          {
+            "factor": 15,
+            "root_gates": 62578,
+            "allocated_nodes": 143502,
+            "cached_derivatives": 216210
+          }
+        ],
+        "allocated_nodes": 167596,
+        "elapsed_seconds": 2.576853200007463,
+        "same_spectral_fusion": true,
+        "prefix_copies": 1
+      },
+      "stage_oracle_run": false,
+      "syntactic_homogeneity": {
+        "checked_allocated_nodes": 168512,
+        "max_auxiliary_degree": 6,
+        "stage_degrees": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ]
+      },
+      "growth_observations": {
+        "linearised_stage_increments": [
+          614,
+          1457,
+          6695,
+          4666,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486
+        ],
+        "original_stage_increments": [
+          200,
+          1457,
+          6695,
+          4666,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486,
+          4486
+        ],
+        "increments_match_after_first_factor": true,
+        "derivative_cache_counts": [
+          0,
+          1032,
+          3762,
+          16500,
+          36288,
+          55320,
+          74358,
+          93396,
+          112434,
+          131472,
+          150510,
+          169548,
+          188586,
+          207624,
+          226662,
+          245700
+        ],
+        "interpretation": "The derivative cache still grows; an eventually constant increment in these finite cases is not saturation of the complete cache or an asymptotic polynomial bound."
+      }
+    }
+  ],
+  "optional_attempts": [],
+  "comparison_scope": "historical original-coordinate prefix compiled once; same phase sharing and real INTT in both versions",
+  "growth_interpretation": "finite stage profiles only; derivative-cache growth is recorded; same gate profiles in a second field and after removing the Fourier representation do not establish a polynomial bound",
+  "larger_orders": "n=7,8 not attempted; optional and not needed for the stated finite verification scope",
+  "elapsed_seconds": 39.65892700001132
+}

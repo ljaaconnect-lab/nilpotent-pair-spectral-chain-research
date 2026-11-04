@@ -1,0 +1,419 @@
+{
+  "status": "identities_verified",
+  "source_sha256": {
+    "etudes/2026-11-01/linearisation-orientee-convolution/determinants/verify_determinant_channels.py": "adf61e45ed4e333dbc3f09759325cb4fd46c8e758713185a216be39d01ed7a0a",
+    "etudes/2026-11-01/linearisation-orientee-convolution/determinants/CANAUX_DETERMINANTS.md": "7129323f2ee7de99e1d57b8e51769d2c8db3d001e0bd6cb5ff15dcb583a143eb",
+    "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/verify_shared_operator_dag.py": "26b8ccc63937921a894d3e272ceaadd4445f19e862f62a3be536bb539d8037e9"
+  },
+  "cases": [
+    {
+      "n": 3,
+      "Q": 97,
+      "N": 8,
+      "omega": 33,
+      "spectral_labels": [
+        1,
+        1,
+        6
+      ],
+      "scalar_gate_calls_from_a_z": 1082,
+      "gate_formula": 1082,
+      "orientation_classes": 4,
+      "mixed_orientation_classes": 0,
+      "correct_for_all_B_at_this_n": true,
+      "g_nonzero": {
+        "1": -1,
+        "2": 1,
+        "4": -1,
+        "5": 1
+      },
+      "tests": [
+        {
+          "value": 0,
+          "target": 0,
+          "residual": 0,
+          "routing_index": 0
+        },
+        {
+          "value": 77,
+          "target": 77,
+          "residual": 0,
+          "routing_index": 0
+        },
+        {
+          "value": 58,
+          "target": 58,
+          "residual": 0,
+          "routing_index": 0
+        },
+        {
+          "value": 33,
+          "target": 33,
+          "residual": 0,
+          "routing_index": 0
+        }
+      ],
+      "formal_z_checks": 2,
+      "isolated_witness": null
+    },
+    {
+      "n": 4,
+      "Q": 97,
+      "N": 16,
+      "omega": 8,
+      "spectral_labels": [
+        12,
+        4,
+        15,
+        15
+      ],
+      "scalar_gate_calls_from_a_z": 6590,
+      "gate_formula": 6590,
+      "orientation_classes": 11,
+      "mixed_orientation_classes": 0,
+      "correct_for_all_B_at_this_n": true,
+      "g_nonzero": {
+        "4": 1,
+        "5": -1,
+        "6": 1,
+        "7": 1,
+        "8": -1,
+        "9": -1,
+        "10": -1,
+        "11": 1,
+        "12": 1,
+        "13": -1,
+        "14": 1
+      },
+      "tests": [
+        {
+          "value": 0,
+          "target": 0,
+          "residual": 0,
+          "routing_index": 14
+        },
+        {
+          "value": 93,
+          "target": 93,
+          "residual": 0,
+          "routing_index": 14
+        },
+        {
+          "value": 66,
+          "target": 66,
+          "residual": 0,
+          "routing_index": 14
+        },
+        {
+          "value": 48,
+          "target": 48,
+          "residual": 0,
+          "routing_index": 14
+        }
+      ],
+      "formal_z_checks": 0,
+      "isolated_witness": null
+    },
+    {
+      "n": 5,
+      "Q": 97,
+      "N": 32,
+      "omega": 19,
+      "spectral_labels": [
+        5,
+        30,
+        10,
+        4,
+        18
+      ],
+      "scalar_gate_calls_from_a_z": 32482,
+      "gate_formula": 32482,
+      "orientation_classes": 21,
+      "mixed_orientation_classes": 3,
+      "correct_for_all_B_at_this_n": false,
+      "g_nonzero": {
+        "10": 1,
+        "11": -1,
+        "12": 1,
+        "13": 1,
+        "14": -1,
+        "15": 1,
+        "16": -1,
+        "17": 1,
+        "18": 1,
+        "19": -1,
+        "20": 1,
+        "21": -1,
+        "22": 1,
+        "23": 1,
+        "24": -1,
+        "25": -1,
+        "26": -1,
+        "27": 1,
+        "28": 1,
+        "29": -1,
+        "30": 1
+      },
+      "tests": [
+        {
+          "value": 0,
+          "target": 0,
+          "residual": 0,
+          "routing_index": 3
+        },
+        {
+          "value": 20,
+          "target": 45,
+          "residual": 72,
+          "routing_index": 3
+        },
+        {
+          "value": 15,
+          "target": 7,
+          "residual": 8,
+          "routing_index": 3
+        },
+        {
+          "value": 19,
+          "target": 80,
+          "residual": 36,
+          "routing_index": 3
+        }
+      ],
+      "formal_z_checks": 0,
+      "isolated_witness": {
+        "score": 25,
+        "first_orientation": [
+          0,
+          2,
+          4,
+          1,
+          3
+        ],
+        "opposite_orientation": [
+          1,
+          0,
+          4,
+          3,
+          2
+        ],
+        "first_sign": -1,
+        "opposite_sign": 1,
+        "target": 1,
+        "actual": 96,
+        "residual": 95,
+        "original_inputs_realization": {
+          "z": 1,
+          "a": [
+            [
+              22,
+              0,
+              22,
+              22,
+              22
+            ],
+            [
+              0,
+              22,
+              22,
+              22,
+              22
+            ],
+            [
+              22,
+              22,
+              22,
+              22,
+              0
+            ],
+            [
+              22,
+              22,
+              22,
+              0,
+              22
+            ],
+            [
+              22,
+              22,
+              0,
+              22,
+              22
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "n": 6,
+      "Q": 193,
+      "N": 64,
+      "omega": 11,
+      "spectral_labels": [
+        12,
+        59,
+        62,
+        3,
+        7,
+        20
+      ],
+      "scalar_gate_calls_from_a_z": 137166,
+      "gate_formula": 137166,
+      "orientation_classes": 36,
+      "mixed_orientation_classes": 26,
+      "correct_for_all_B_at_this_n": false,
+      "g_nonzero": {
+        "20": -1,
+        "21": 1,
+        "22": -1,
+        "23": -1,
+        "24": 1,
+        "25": -1,
+        "26": 1,
+        "27": -1,
+        "28": 1,
+        "29": 1,
+        "30": -1,
+        "31": 1,
+        "32": -1,
+        "33": -1,
+        "34": 1,
+        "35": 1,
+        "36": -1,
+        "37": 1,
+        "38": 1,
+        "39": -1,
+        "40": 1,
+        "41": -1,
+        "42": 1,
+        "43": 1,
+        "44": -1,
+        "45": 1,
+        "46": -1,
+        "47": 1,
+        "48": 1,
+        "49": -1,
+        "50": -1,
+        "51": -1,
+        "52": 1,
+        "53": 1,
+        "54": -1,
+        "55": 1
+      },
+      "tests": [
+        {
+          "value": 0,
+          "target": 0,
+          "residual": 0,
+          "routing_index": 35
+        },
+        {
+          "value": 170,
+          "target": 159,
+          "residual": 11,
+          "routing_index": 35
+        },
+        {
+          "value": 188,
+          "target": 91,
+          "residual": 97,
+          "routing_index": 35
+        },
+        {
+          "value": 95,
+          "target": 28,
+          "residual": 67,
+          "routing_index": 35
+        }
+      ],
+      "formal_z_checks": 0,
+      "isolated_witness": {
+        "score": 52,
+        "first_orientation": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          3
+        ],
+        "opposite_orientation": [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4
+        ],
+        "first_sign": 1,
+        "opposite_sign": -1,
+        "target": 1,
+        "actual": 192,
+        "residual": 191,
+        "original_inputs_realization": {
+          "z": 1,
+          "a": [
+            [
+              81,
+              0,
+              81,
+              81,
+              81,
+              81
+            ],
+            [
+              0,
+              81,
+              81,
+              81,
+              81,
+              81
+            ],
+            [
+              81,
+              81,
+              81,
+              0,
+              81,
+              81
+            ],
+            [
+              81,
+              81,
+              0,
+              81,
+              81,
+              81
+            ],
+            [
+              81,
+              81,
+              81,
+              81,
+              81,
+              0
+            ],
+            [
+              81,
+              81,
+              81,
+              81,
+              0,
+              81
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "general_polynomial_circuit": false,
+  "collision_columns_annihilated_in_each_determinant": true,
+  "failure_kind": "opposite orientations at the same scalar frequency score",
+  "runtime_operations": [
+    "+",
+    "*"
+  ],
+  "general_full_chain_correctness": false,
+  "general_impossibility_claim": false,
+  "small_case_readout_constant_search_is_not_claimed_uniform_polynomial": true
+}

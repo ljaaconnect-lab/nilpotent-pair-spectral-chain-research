@@ -1,0 +1,16 @@
+{
+  "manifest_files_verified": 124,
+  "accepted_delivery_sources": [
+    "HadamardPfaffian.lean",
+    "MobiusBridge.lean"
+  ],
+  "accepted_delta_declarations": 10,
+  "accepted_new_local_hadamard_theorems": 3,
+  "source_freezes_verified": [
+    "n66-base",
+    "n66-carry-supplement-v1"
+  ],
+  "root_conjecture_verified": false,
+  "formal_window_compiler_invocations": 19,
+  "scope": "File integrity and already completed Lean replay evidence; no additional compiler invocation or held-out test"
+}

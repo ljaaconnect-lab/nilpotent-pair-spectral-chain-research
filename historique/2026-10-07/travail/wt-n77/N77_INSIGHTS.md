@@ -1,0 +1,17 @@
+# n77 — complete direct scalar reference
+
+Artifact `n77-direct-corrected-scalar-dag-v1` constructs the entire corrected polynomial `PA(z)=Cn(DA(z))` from the prescribed `p_ij=1+a_ij^2` leaves, `z`, and the literal `1`. Every internal node is a binary scalar addition or multiplication with earlier operands. There is no derivative, determinant, sign-corrector, coefficient extractor, or unknown answer in the inputs.
+
+The first evaluator invocation stopped before circuit construction because the freeze JSON used a list where its reader expected a path-keyed dictionary. `n77-source-freeze-v1.json` and `n77-first-attempt-log.json` preserve that attempt. The format repair preserved every source hash. The next invocation exited zero, took 0.155735 seconds, and passed all 36 frozen positive Fraction evaluations: n=2,3,4,5, identity/Vandermonde/cycle, and z=-1,0,1. The independent reference enumerated permutations. No cases or sources were selected or repaired using their numerical outputs.
+
+The four frozen local obligations pass: initialized allowed scalar topology, all-stage measured counts and sharing, prescribed input/literal provenance, and exact terminal agreement. Local score is 4/4=1.0. The root score is 0 because the reference has 2^n states; this result does not supply a polynomial compression.
+
+For n=1,2,3,4,5, actual arithmetic counts are 2,12,34,80,178. Shared marker squarings are 0,3,8,15,24; entry-weight products are 1,4,9,16,25; recurrence products are 1,4,12,32,80; recurrence additions are 0,1,5,17,49. The full generic formulas are n^2-1 marker squarings, n^2 entry products, n*2^(n-1) recurrence products, and n*2^(n-1)-(2^n-1) recurrence additions. Thus the complete marked circuit uses (n-1)*2^n+2*n^2 gates. Singleton multiplication by the initialized one is included. All nodes in each serialized DAG reach the output.
+
+The only literal is rational 1, with numerator-plus-denominator bit count 2. The evaluator records the input A, prescribed p, and intermediate Fraction bit lengths for every case. The prescribed p leaves are parameters with explicit provenance; their preparation from numerical A occurs in input binding and is not silently reclassified as part of the quoted p,z input circuit count. No bit complexity conclusion for general z follows from the chosen values -1,0,1.
+
+Existing n73 proves the mathematical subset recurrence and marked target for all n and A. This leaf runs no Lean compiler, probe, or build and adds no theorem certifying the Python lowering. Its explicit wiring and code checks provide a reproducible scalar reference. The central coefficient route is archived and absent from the construction.
+
+The next construction must replace the shared 2^n-state reference by explicitly initialized states and scalar transitions of polynomial total cost, while preserving the complete formal marked polynomial for every n and every rational A. It must charge all initialization, markers, literal sizes, transitions, and final readout and connect its executable DAG to the proved target. No such compression is established here, and no impossibility statement is inferred.
+
+Reproduction inside this worktree: run `python evaluate_direct_corrected.py`. It checks the frozen source hashes before any construction or evaluation, emits `n77-direct-dag-n1.json` through `n77-direct-dag-n5.json`, and writes `n77-dev-report.json`. Standalone serialization is also available through `python direct_corrected_circuit.py --n 5 --output circuit.json`.

@@ -1,0 +1,55 @@
+{
+  "node": "n68",
+  "artifact_version": "n68-contextual-closure-search-v1",
+  "dev_score": null,
+  "score_reason": "Neither analytical candidate supplies an eligible complete polynomial-dimensional scalar closure; no replacement identity tests were run",
+  "root_obligations_discharged": 0,
+  "root_obligations_total": 3,
+  "root_conjecture_verified": false,
+  "complete_scalar_compiler": false,
+  "supporting_results": [
+    {
+      "name": "contextual_row_incidence_quotient",
+      "status": "informal termwise derivation, unverified by Lean",
+      "statement": "For every real-port subset Q, F_Q*(Gtilde_Q-Grow_Q)=0; this preserves every commuting diagonal weight omega(Q)",
+      "rank_data": "Krow_aa=R^T*J_n*R; Krow_bb=-C^T*J_n*C; explicit local-pair plus order-(2n+2) incidence update",
+      "root_obligation_discharged": false
+    },
+    {
+      "name": "full_context_moment_transition",
+      "status": "informal exact algebraic transition; no executable closed module",
+      "conditional_gate_bound": "4*H^2+6*H+10 per retained moment, H=binom(d,2), only if all required moment inputs are supplied",
+      "missing": "Polynomial closure of higher contextual moments, full Q_future derivatives, lawful initialization and charts"
+    },
+    {
+      "name": "paired_commuting_occupation_transition",
+      "status": "informal exact prototype transition; not a new complete target representation",
+      "reference_states": "binom(2*n,n)",
+      "reference_gates_per_edge": "2*binom(2*n-2,n-1)",
+      "derived_n_2_3_4_5_states": [6, 20, 70, 252],
+      "derived_n_2_3_4_5_gates_per_edge": [4, 12, 40, 140],
+      "derived_n_2_3_4_5_no_fold_all_edge_gates": [16, 108, 640, 3500],
+      "count_provenance": "Analytical counts of the explicit reference family; not measured, not Lean certified, not a lower bound",
+      "missing": "Original-kernel transport, orientation, polynomial aggregation and terminal extraction"
+    }
+  ],
+  "remaining_root_criterion": "An explicit polynomial-dimensional initialized state and charged scalar updates/boundary for every synchronization of the actual two-family Pfaffian contraction, preserving generic marked entries",
+  "budget": {
+    "candidate_limit": 2,
+    "analytical_candidate_attempts": 2,
+    "complete_candidate_implementations": 0,
+    "sympy_validations": 0,
+    "numerical_experiments": 0,
+    "lean_allocation": 0,
+    "lean_complete_candidate_compiles": 0,
+    "lean_dependency_compiles": 0,
+    "lean_probes": 0
+  },
+  "held_out_reads": 0,
+  "shared_arbor_writes": 0,
+  "output_directory_writes": 0,
+  "counterexample_searches": 0,
+  "lower_bound_experiments": 0,
+  "unknown_target_input_used": false,
+  "new_general_claims_kernel_verified": false
+}

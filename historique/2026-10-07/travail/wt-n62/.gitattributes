@@ -1,0 +1,21 @@
+# Preserve the exact bytes whose hashes bind n55 compiler evidence.
+/DeterminantBridge.lean -text
+/compile_n55.py -text
+/verify_n55.py -text
+/n55-* -text
+/n55-compiler-rounds/** -text
+/EncodingBridge.lean -text
+/ReverseVandermonde.lean -text
+/compile_n60.py -text
+/verify_n60.py -text
+/n60-* -text
+/n60-compiler-rounds/** -text
+/DirectProjector.lean -text
+/compile_n62.py -text
+/verify_n62.py -text
+/local_sympy_probe.py -text
+/n62-* -text
+/n62-compiler-rounds/** -text
+
+# Publication: retain every archived file byte on all platforms.
+* -text

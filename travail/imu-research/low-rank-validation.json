@@ -1,0 +1,439 @@
+{
+  "cases": 72,
+  "passed": true,
+  "details": [
+    {
+      "n": 1,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 0
+    },
+    {
+      "n": 1,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 1
+    },
+    {
+      "n": 1,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 2
+    },
+    {
+      "n": 1,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 0
+    },
+    {
+      "n": 1,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 1
+    },
+    {
+      "n": 1,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 2
+    },
+    {
+      "n": 2,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 0
+    },
+    {
+      "n": 2,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 1
+    },
+    {
+      "n": 2,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 2
+    },
+    {
+      "n": 2,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 0
+    },
+    {
+      "n": 2,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 1
+    },
+    {
+      "n": 2,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 2
+    },
+    {
+      "n": 2,
+      "rank_parameter": 2,
+      "prime": 101,
+      "trial": 0
+    },
+    {
+      "n": 2,
+      "rank_parameter": 2,
+      "prime": 101,
+      "trial": 1
+    },
+    {
+      "n": 2,
+      "rank_parameter": 2,
+      "prime": 101,
+      "trial": 2
+    },
+    {
+      "n": 2,
+      "rank_parameter": 2,
+      "prime": 1009,
+      "trial": 0
+    },
+    {
+      "n": 2,
+      "rank_parameter": 2,
+      "prime": 1009,
+      "trial": 1
+    },
+    {
+      "n": 2,
+      "rank_parameter": 2,
+      "prime": 1009,
+      "trial": 2
+    },
+    {
+      "n": 3,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 0
+    },
+    {
+      "n": 3,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 1
+    },
+    {
+      "n": 3,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 2
+    },
+    {
+      "n": 3,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 0
+    },
+    {
+      "n": 3,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 1
+    },
+    {
+      "n": 3,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 2
+    },
+    {
+      "n": 3,
+      "rank_parameter": 2,
+      "prime": 101,
+      "trial": 0
+    },
+    {
+      "n": 3,
+      "rank_parameter": 2,
+      "prime": 101,
+      "trial": 1
+    },
+    {
+      "n": 3,
+      "rank_parameter": 2,
+      "prime": 101,
+      "trial": 2
+    },
+    {
+      "n": 3,
+      "rank_parameter": 2,
+      "prime": 1009,
+      "trial": 0
+    },
+    {
+      "n": 3,
+      "rank_parameter": 2,
+      "prime": 1009,
+      "trial": 1
+    },
+    {
+      "n": 3,
+      "rank_parameter": 2,
+      "prime": 1009,
+      "trial": 2
+    },
+    {
+      "n": 3,
+      "rank_parameter": 3,
+      "prime": 101,
+      "trial": 0
+    },
+    {
+      "n": 3,
+      "rank_parameter": 3,
+      "prime": 101,
+      "trial": 1
+    },
+    {
+      "n": 3,
+      "rank_parameter": 3,
+      "prime": 101,
+      "trial": 2
+    },
+    {
+      "n": 3,
+      "rank_parameter": 3,
+      "prime": 1009,
+      "trial": 0
+    },
+    {
+      "n": 3,
+      "rank_parameter": 3,
+      "prime": 1009,
+      "trial": 1
+    },
+    {
+      "n": 3,
+      "rank_parameter": 3,
+      "prime": 1009,
+      "trial": 2
+    },
+    {
+      "n": 4,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 0
+    },
+    {
+      "n": 4,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 1
+    },
+    {
+      "n": 4,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 2
+    },
+    {
+      "n": 4,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 0
+    },
+    {
+      "n": 4,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 1
+    },
+    {
+      "n": 4,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 2
+    },
+    {
+      "n": 4,
+      "rank_parameter": 2,
+      "prime": 101,
+      "trial": 0
+    },
+    {
+      "n": 4,
+      "rank_parameter": 2,
+      "prime": 101,
+      "trial": 1
+    },
+    {
+      "n": 4,
+      "rank_parameter": 2,
+      "prime": 101,
+      "trial": 2
+    },
+    {
+      "n": 4,
+      "rank_parameter": 2,
+      "prime": 1009,
+      "trial": 0
+    },
+    {
+      "n": 4,
+      "rank_parameter": 2,
+      "prime": 1009,
+      "trial": 1
+    },
+    {
+      "n": 4,
+      "rank_parameter": 2,
+      "prime": 1009,
+      "trial": 2
+    },
+    {
+      "n": 4,
+      "rank_parameter": 3,
+      "prime": 101,
+      "trial": 0
+    },
+    {
+      "n": 4,
+      "rank_parameter": 3,
+      "prime": 101,
+      "trial": 1
+    },
+    {
+      "n": 4,
+      "rank_parameter": 3,
+      "prime": 101,
+      "trial": 2
+    },
+    {
+      "n": 4,
+      "rank_parameter": 3,
+      "prime": 1009,
+      "trial": 0
+    },
+    {
+      "n": 4,
+      "rank_parameter": 3,
+      "prime": 1009,
+      "trial": 1
+    },
+    {
+      "n": 4,
+      "rank_parameter": 3,
+      "prime": 1009,
+      "trial": 2
+    },
+    {
+      "n": 5,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 0
+    },
+    {
+      "n": 5,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 1
+    },
+    {
+      "n": 5,
+      "rank_parameter": 1,
+      "prime": 101,
+      "trial": 2
+    },
+    {
+      "n": 5,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 0
+    },
+    {
+      "n": 5,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 1
+    },
+    {
+      "n": 5,
+      "rank_parameter": 1,
+      "prime": 1009,
+      "trial": 2
+    },
+    {
+      "n": 5,
+      "rank_parameter": 2,
+      "prime": 101,
+      "trial": 0
+    },
+    {
+      "n": 5,
+      "rank_parameter": 2,
+      "prime": 101,
+      "trial": 1
+    },
+    {
+      "n": 5,
+      "rank_parameter": 2,
+      "prime": 101,
+      "trial": 2
+    },
+    {
+      "n": 5,
+      "rank_parameter": 2,
+      "prime": 1009,
+      "trial": 0
+    },
+    {
+      "n": 5,
+      "rank_parameter": 2,
+      "prime": 1009,
+      "trial": 1
+    },
+    {
+      "n": 5,
+      "rank_parameter": 2,
+      "prime": 1009,
+      "trial": 2
+    },
+    {
+      "n": 5,
+      "rank_parameter": 3,
+      "prime": 101,
+      "trial": 0
+    },
+    {
+      "n": 5,
+      "rank_parameter": 3,
+      "prime": 101,
+      "trial": 1
+    },
+    {
+      "n": 5,
+      "rank_parameter": 3,
+      "prime": 101,
+      "trial": 2
+    },
+    {
+      "n": 5,
+      "rank_parameter": 3,
+      "prime": 1009,
+      "trial": 0
+    },
+    {
+      "n": 5,
+      "rank_parameter": 3,
+      "prime": 1009,
+      "trial": 1
+    },
+    {
+      "n": 5,
+      "rank_parameter": 3,
+      "prime": 1009,
+      "trial": 2
+    }
+  ],
+  "scope": "Exact all-moment initialization on supplied rank-r factorization; polynomial for fixed r only; no generic I_mu(n) polynomial claim."
+}

@@ -1,0 +1,19 @@
+{
+  "node_id": "n71",
+  "artifact_version": "n71-finite-scalar-DAG-v1",
+  "dev_score": 0,
+  "root_score": 0,
+  "result": "Finite scalar DAG interface and unconditional existential algebraic-circuit proposition elaborated by Lean; proposition remains unproved",
+  "insight": "Only designated p_ij, z and short rational literals can enter the DAG; prior-node references implement sharing without hidden polynomial, coefficient or jet inputs. Uniform operational construction remains REQUIRED.",
+  "branch_ref": "arbor/n71",
+  "source": "ScalarDAG.lean",
+  "source_sha256": "9f05b9ce092e13dbd9828f696c619d8f4858fccb6821e7b2dcf1ffd1f9c8c9f8",
+  "compiled_artifact_sha256": "87e98ee42a322db3c03a81dd10e0761c3d24258024296f704797ec30e30abde1",
+  "compiler_invocations": 2,
+  "dependency_builds": 0,
+  "probe_compilations": 0,
+  "report": "n71-strict-report.json",
+  "next_substantive_obligation": "Actual constructor from n69/n70 with a globally closed state or network invariant, exact DAG output, polynomial resource bounds and operational uniformity proof",
+  "root_conjecture_verified": false,
+  "heldout_tests_run": false
+}

@@ -1,0 +1,12 @@
+{
+  "attempt": 1,
+  "exit_code": 1,
+  "file": "evaluate_direct_corrected.py",
+  "line": 29,
+  "operation": "for name, expected in freeze[files].items()",
+  "exception": "AttributeError: 'list' object has no attribute 'items'",
+  "construction_started": false,
+  "evaluation_started": false,
+  "source_modified": false,
+  "resolution": "Freeze JSON files format changed from list to path-keyed dictionary, same SHA256 records."
+}

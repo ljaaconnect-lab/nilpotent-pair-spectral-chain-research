@@ -1,0 +1,82 @@
+Cible active : Conjecture 1.5, correction polynomiale des signes
+
+L'énoncé (page5 du PDF fourni) demande un circuit scalaire sur Q pour
+PA(z)=Cn(DA(z)), de taille Pi(n), avec constantes p_ij ou rationnelles de
+longueur binaire <=Pi(n), et une construction uniforme en temps polynomial
+en n,L. Le coefficient central est une équivalence annoncée dans le même
+énoncé, pas une obligation indépendante. La recherche présente cible PA.
+
+Raccord concret complet de référence, sans extraction centrale
+
+1. Entrées : p_ij=1+a_ij^2 autorisées par la conjecture, et variable z.
+2. Marques : z,z^2,z^4,... par carrés partagés ; b_ij=p_ij*z^(2^(in+j)).
+   Coût exact de cette recette : n^2-1 carrés et n^2 produits =2n^2-1.
+3. Initialisation : F(vide)=1. Aucun coefficient à calculer n'est une entrée.
+4. Mise à jour : pour U non vide, k=|U|,
+      F(U)=somme_(j dans U) b_(k-1,j)*F(U.erase j).
+   Chaque terme correspond à la dernière colonne choisie de l'affectation.
+5. Lecture : F(toutes les colonnes)=PA(z), le polynôme corrigé complet.
+   Le théorème Lean n73 marked_target relie exactement la récurrence aux
+   monômes de markedPermanent pour tous n,A. La fonction de compilation
+   Python émet chaque porte ; elle n'est pas une nouvelle preuve Lean de
+   cette compilation ou de sa borne de coût.
+
+Avec une multiplication explicite par1 dans chaque état singleton, le
+compte analytique est : n*2^(n-1) multiplications de mise à jour et
+n*2^(n-1)-(2^n-1) additions. La recette complète compte donc
+      G(n)=(n-1)*2^n+2*n^2.
+Pour n=2,3,4,5 les comptes correspondants sont12,34,80,178 ; consulter les
+DAGs et le rapport n77 pour leurs vérifications effectives.
+Cette recette est entièrement raccordée, mais sa taille et son temps de
+construction augmentent exponentiellement avec n. Elle ne démontre pas Pi.
+
+Obligations élémentaires résolues
+
+Les six obligations A1..A6 (premier préfixe) et les quatre obligations
+B1..B4 (deuxième préfixe) sont compilées et répétées depuis des commits
+indépendants, exit0. Elles donnent notamment une réponse de profondeur2
+initialisée par b,c,b*c et leurs trois sommes, calculable en O(n) pour J
+fixé, sans division. Les sources sont AtomicFirstPrefix.lean et
+AtomicSecondPrefix.lean. Les hypothèses de normalisation locales sont
+écrites dans les énoncés et ne constituent aucune hypothèse sur la conjecture.
+
+Problème suivant, encore ouvert
+
+Remplacer F et ses 2^n coordonnées par une représentation à taille
+polynomiale, qui se construit depuis les entrées prescrites, se met à jour
+pour chacun des n préfixes, et se lit en PA avec un coût polynomial total.
+Le coût de toutes les données, de toutes les mises à jour, des littéraux et
+du constructeur doit être compté. Une action Cn, une réponse du suffixe,
+une projection ou une contraction ne sera pas déclarée porte gratuite.
+
+La somme des coûts est le critère décisif : avoir O(n) opérations par
+requête et 2^n requêtes ne donne pas une borne polynomiale. Les identités
+élémentaires établies ne fournissent pas encore une représentation compacte
+fermée pour un nombre de préfixes qui varie jusqu'à n.
+
+État formel exact
+
+Lean vérifie la cible développée markedPermanent et les identités indiquées.
+Le raccord avec l'opérateur diagonal Cn littéral est un résultat du document
+fourni ; sa définition et ce raccord ne figurent pas encore comme un
+théorème nouveau compilé dans cette livraison. La conjecture reste ouverte.
+
+Décomposition du raccord sémantique littéral (plan, non compilé)
+
+S1. B=2^n>0 et les chiffres 2^sigma(i) sont strictement inférieurs à B.
+S2. Réécrire E(sigma) comme un label en base B, via pow_add/pow_mul.
+S3. Utiliser assignmentLabel_injective, puis Nat.pow_right_injective pour
+    l'injectivité du véritable adressage binaire E. L'ancien label base-n
+    rho n'est pas E ; sa preuve ne remplace pas cette étape.
+S4. Définir chi_n sur l'image de E, et vérifier sa valeur sgn(sigma).
+S5. Définir l'application linéaire diagonale Cn via Polynomial.lsum et
+    Polynomial.monomial ; vérifier son action monomiale et coefficientielle.
+S6. Développer le vrai déterminant D_A=(markedWeights A).det via le lemme
+    forward_determinant_expansion déjà disponible.
+S7. Corriger chaque terme avec permutation_sign_square.
+S8. Sommer par map_sum pour obtenir CnDA=markedPermanent A.
+Ce plan utilise des modules Mathlib déjà compilés mais n'a pas été compilé
+comme nouveau fichier de preuve. Il ne donne aucune porte scalaire gratuite.
+Une fois cette identité prouvée, le constructeur polynomial demeure
+l'obligation centrale de recherche. Une identité d'applications linéaires
+ne borne pas son coût d'application à tout le polynôme.

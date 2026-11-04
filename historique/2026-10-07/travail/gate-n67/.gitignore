@@ -1,0 +1,6 @@
+__pycache__/
+.arbor/
+*.pyc
+
+/HadamardPfaffian.olean
+/.n67-compile-lock

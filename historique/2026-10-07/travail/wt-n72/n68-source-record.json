@@ -1,0 +1,24 @@
+{
+  "node": "n68",
+  "artifact_version": "n68-contextual-closure-search-v1",
+  "parent_commit": "c785376a2d255cc76db771d239c86c89cc7b888f",
+  "support_frozen_before_verification": true,
+  "verification_executed": false,
+  "files": {
+    "n68-protocol.json": "08abcfcb57a95bf3ce1f8a2653e26bf9fe5f045d839e5eec58024ee0b69d2d4e",
+    "n68-support-protocol.json": "2a0c05a708a29b4c24fe43720df8b62294a993255aef91a766c317ae5f766087",
+    "N68_CONTEXTUAL_QUOTIENT.md": "95df89d1c7df9156043c16a5f8c12e7c1ec67720ad6d773008dabc26d3e81004",
+    "N68_BLUEPRINT.md": "0a37e2b992b2b28c5f82d587d6a075866cbc15590af58912d5c4622562040629",
+    "N68_INSIGHTS.md": "241909a7aff7da80b42b464833a7d0c272caf46601be3e98bb344a855f5835a0",
+    "n68-dev-report.json": "01dc52fc46dfdcf3500653027e26c9778fec399180d337f006359b901a649d65"
+  },
+  "inherited_dependencies": [
+    "N64_BLUEPRINT.md",
+    "blueprint-pfaffian-aggregation.md"
+  ],
+  "read_only_external_dependency": {
+    "path": "work/wt-n66/N66_BLUEPRINT.md",
+    "sha256": "0c6b885d70e8fb94da075ba4c76edba16120b94a2802d87ad0d131cbac823b5d"
+  },
+  "source_scope": "Mathematical blueprint sources; no complete executable closure candidate"
+}

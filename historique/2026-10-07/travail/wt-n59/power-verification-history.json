@@ -1,0 +1,960 @@
+{
+  "probes": 27,
+  "candidate_rounds": 3,
+  "runs": [
+    {
+      "tag": "probe-01",
+      "kind": "probe",
+      "exit_code": null,
+      "source": "PowerProbe.lean",
+      "harness_error": "Compiler returned output, but default cp1252 encoding failed writing stdout.log: UnicodeEncodeError for U+2264. Compiler exit/audit were not preserved by this failed harness invocation.",
+      "error_count": null,
+      "score": null,
+      "root_conjecture_verified": false
+    },
+    {
+      "tag": "probe-02",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerProbe.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "9dd04da9090f6e2895fdaa7e17592472695eb94cfa248fe186b5a8ca47e42d0d",
+      "elapsed_seconds": 5.910622596740723,
+      "error_count": 0,
+      "axiom_audit": {},
+      "source_clean": true,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-02"
+    },
+    {
+      "tag": "probe-03",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "943831f071c90e0f0bc58658a5c967ebe61c55c68a51480764af5bb5c4570346",
+      "elapsed_seconds": 4.170600175857544,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "sorryAx"
+        ]
+      },
+      "source_clean": true,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-03"
+    },
+    {
+      "tag": "probe-04",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "1220ad9755db7bdd68907c980fd90b30e9ca060eae76fc5a0d0ac7fb90d585b1",
+      "elapsed_seconds": 2.6791746616363525,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "sorryAx"
+        ]
+      },
+      "source_clean": true,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-04"
+    },
+    {
+      "tag": "probe-05",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "11622f953b73b5c92dae6b0eb0760febf07a9e69f41297606e6f3914ba2a16f7",
+      "elapsed_seconds": 3.938882350921631,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "sorryAx"
+        ]
+      },
+      "source_clean": true,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-05"
+    },
+    {
+      "tag": "probe-06",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "a424e8e697ae2b6ae78357a5f016f7250994353a4696a1d02acea85db43ed7c0",
+      "elapsed_seconds": 8.024430751800537,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ]
+      },
+      "source_clean": true,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-06"
+    },
+    {
+      "tag": "probe-07",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 0,
+      "source_sha256": "d6544d2f3b40c458f3237ed89d74d8f2cf9aca38adf489fa203098d57e32957e",
+      "elapsed_seconds": 3.6851978302001953,
+      "error_count": 0,
+      "axiom_audit": {
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_clean": true,
+      "main_obligations_passed": 1,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-07"
+    },
+    {
+      "tag": "probe-08",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "7e8ff74396908ffd8043999ad33ce786a8891ba8fe3d3018954c871a78715c64",
+      "elapsed_seconds": 7.545773267745972,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.power_add": [
+          "sorryAx"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_clean": true,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-08"
+    },
+    {
+      "tag": "probe-09",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 0,
+      "source_sha256": "058050a4db3e9f7d398cf59ee477a0087d072c67d7802eff8acb467ea5589eea",
+      "elapsed_seconds": 47.47382473945618,
+      "error_count": 0,
+      "axiom_audit": {
+        "SharedBinaryPower.power_add": [
+          "propext"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "source_clean": true,
+      "main_obligations_passed": 1,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-09"
+    },
+    {
+      "tag": "probe-10",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": null,
+      "source_sha256": "4724328226f007aecda106590cdd5d121cfd5ea9c7bcff5813b20cc6d3dd95cf",
+      "elapsed_seconds": 60.084270000457764,
+      "error_count": 0,
+      "axiom_audit": {},
+      "source_clean": true,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-10"
+    },
+    {
+      "tag": "probe-11",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "c41b26e2bd7fc4dbbe2ac049cbb6ec1e70a72b90df7a39ff677f7027a82d702c",
+      "elapsed_seconds": 15.411570310592651,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": true,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-11"
+    },
+    {
+      "tag": "probe-12",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "24903fdeab2c075979bab4601eea9f40c38ffc8f0cac1210fe064745f87ca8d6",
+      "elapsed_seconds": 3.8297462463378906,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": true,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-12"
+    },
+    {
+      "tag": "probe-13",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "c50ad85d906ea771c1592039d1102bf6aa4773b0603e6b2bdea37e980cc297b9",
+      "elapsed_seconds": 4.102473735809326,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": true,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-13"
+    },
+    {
+      "tag": "probe-14",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "6219c38b8c3f3cffadbcd71064cabf28cf98639a73d85fc92dfb16cfa460de19",
+      "elapsed_seconds": 5.49419641494751,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": false,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-14"
+    },
+    {
+      "tag": "probe-15",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "431881387604dd50e08ecbb043bbd5a178bb97209a10602bcf1141c769702086",
+      "elapsed_seconds": 5.878428220748901,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": false,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-15"
+    },
+    {
+      "tag": "probe-16",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "dae8890150cb60852535b2bbf0a20405d486c2c905c9b1975881e6881a0b6d14",
+      "elapsed_seconds": 3.971935987472534,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": false,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-16"
+    },
+    {
+      "tag": "probe-17",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "ff12a63804853318ba01891950b0b4b8b888cc60752c92f2f18055cd4543715c",
+      "elapsed_seconds": 17.001093864440918,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": false,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-17"
+    },
+    {
+      "tag": "probe-18",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "d59e16d025371f761a255a679407d265e25323b69942e8a240750c4b37af567c",
+      "elapsed_seconds": 14.780027627944946,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": false,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-18"
+    },
+    {
+      "tag": "probe-19",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 0,
+      "source_sha256": "142dcf37b83edac03188708699238fd079de0988f5712e94e590aa19089b45b4",
+      "elapsed_seconds": 16.91002058982849,
+      "error_count": 0,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": false,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-19"
+    },
+    {
+      "tag": "probe-20",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 0,
+      "source_sha256": "c349327b3387352491f2eaeb682b30ec716dfe5e333938c273eded00d151437d",
+      "elapsed_seconds": 3.6025733947753906,
+      "error_count": 0,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": true,
+      "main_obligations_passed": 1,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-20"
+    },
+    {
+      "tag": "probe-21",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "ae460b57504477d5aca5e63ece81b02bc88624f849bac0fd0f4148768577d080",
+      "elapsed_seconds": 5.30421257019043,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_logarithmic": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": true,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-21"
+    },
+    {
+      "tag": "probe-22",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "9077ae5e338991f1d75a1aaded78162cf64b8c8d04cdaf003fd9a755caea8898",
+      "elapsed_seconds": 6.416778564453125,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_logarithmic": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": false,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-22"
+    },
+    {
+      "tag": "probe-23",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "fd8d8922f142f925c4f6ebf712ba44a4fa0bdbaf5feba10791ffd405c604d1d8",
+      "elapsed_seconds": 8.049767255783081,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_logarithmic": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": false,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-23"
+    },
+    {
+      "tag": "probe-24",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "cd60f4837c6646169425f2afcee213ef18dae08dd694b8252b34bb2ee4ec849f",
+      "elapsed_seconds": 5.174328804016113,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_logarithmic": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": false,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-24"
+    },
+    {
+      "tag": "probe-25",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "d7d0a786cdf67b7bcaa98e7a49aa77bc326f91ef69ec37ff1b43218aa9fc3604",
+      "elapsed_seconds": 7.04593825340271,
+      "error_count": 2,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_logarithmic": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": false,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-25"
+    },
+    {
+      "tag": "probe-26",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 1,
+      "source_sha256": "a85b38f525bda2a59e0f412fea7bd94ecddf92cc029a0fb337d472c99238fad5",
+      "elapsed_seconds": 22.978974103927612,
+      "error_count": 1,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_logarithmic": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": false,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-26"
+    },
+    {
+      "tag": "probe-27",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "probe",
+      "exit_code": 0,
+      "source_sha256": "7f51658dc2b101ad8a332dc22ab67cf79fb433164f1f610233bad41447bbe304",
+      "elapsed_seconds": 6.0430684089660645,
+      "error_count": 0,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_logarithmic": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": false,
+      "main_obligations_passed": 0,
+      "score": null,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\probe-27"
+    },
+    {
+      "tag": "candidate-01",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "candidate",
+      "exit_code": 1,
+      "source_sha256": "33a6366cd964db1e8fec41844929c107e3384530e8e45e96cf28a78b1448456a",
+      "elapsed_seconds": 7.107016563415527,
+      "error_count": 2,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_logarithmic": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": true,
+      "main_obligations_passed": 0,
+      "score": 0.0,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\candidate-01"
+    },
+    {
+      "tag": "candidate-02",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "candidate",
+      "exit_code": 0,
+      "source_sha256": "d961bf168c24645a6646f93c94e10fe3c4a527f6ddce1f8eb3d9dc2196347eb2",
+      "elapsed_seconds": 12.553012609481812,
+      "error_count": 0,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_logarithmic": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": true,
+      "main_obligations_passed": 3,
+      "score": 1.0,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\candidate-02"
+    },
+    {
+      "tag": "candidate-03",
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\PowerCompiler.lean"
+      ],
+      "kind": "candidate",
+      "exit_code": 0,
+      "source_sha256": "c66d703e08237358eb992905106e01cb040d27314d42053030821f335450c863",
+      "elapsed_seconds": 4.481088399887085,
+      "error_count": 0,
+      "axiom_audit": {
+        "SharedBinaryPower.run_append": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.positive_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_correct": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.binary_plan_logarithmic": [
+          "propext",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_exponent_log_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.central_plan_gate_bound": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "SharedBinaryPower.power_add": []
+      },
+      "source_clean": true,
+      "main_obligations_passed": 3,
+      "score": 1.0,
+      "root_conjecture_verified": false,
+      "log_directory": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n40\\power-logs\\candidate-03"
+    }
+  ]
+}

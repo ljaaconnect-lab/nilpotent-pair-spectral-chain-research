@@ -1,0 +1,58 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fermeture-generale\\Insertion.lean",
+  "version": 5,
+  "completed": true,
+  "seconds": 0.407,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 27,
+          "line": 13
+        },
+        "start": {
+          "character": 8,
+          "line": 13
+        }
+      },
+      "message": "declaration uses `sorry`",
+      "range": {
+        "end": {
+          "character": 27,
+          "line": 13
+        },
+        "start": {
+          "character": 8,
+          "line": 13
+        }
+      },
+      "severity": 2,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 26,
+          "line": 19
+        },
+        "start": {
+          "character": 8,
+          "line": 19
+        }
+      },
+      "message": "declaration uses `sorry`",
+      "range": {
+        "end": {
+          "character": 26,
+          "line": 19
+        },
+        "start": {
+          "character": 8,
+          "line": 19
+        }
+      },
+      "severity": 2,
+      "source": "Lean 4"
+    }
+  ]
+}

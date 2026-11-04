@@ -1,0 +1,13 @@
+{
+  "node": "n60",
+  "dependency": "ReverseVandermonde.lean",
+  "source_node": "n58",
+  "source_commit": "96fdd0ca11ad17b0824d213539cc6166df569de0",
+  "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean",
+  "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+  "committed_source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+  "matches_committed_content_modulo_line_endings": true,
+  "copied_bytes_exactly": true,
+  "source_hash_verified_before_copy": true,
+  "root_conjecture_verified": false
+}

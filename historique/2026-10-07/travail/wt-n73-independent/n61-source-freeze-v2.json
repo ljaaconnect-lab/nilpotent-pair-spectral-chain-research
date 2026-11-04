@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-10-07T14:12:06.023830+00:00",
+  "evaluator_revision": "v2-domain-normalization",
+  "source_hashes": {
+    "n61-protocol.json": "f599b50a2a6e94fe6c2a2b2a5dd45b1b57cad74d4780e0a3f317373da4e16061",
+    "euler_identity.py": "2b346b46e559f6b1d39f422e2bb4878b228bc148552effd04c11dd5dc1be11d9",
+    "euler_compiler.py": "baf3ad1ba13b39e6895f86f1319ee7c928e3ad37283ea48ba133331b91d30320",
+    "evaluate_euler.py": "cfa5e99acef39e607cfcbcd99b480364af3cf34f478986cf68eb684bf99d2153",
+    "candidate.py": "6f1143d634ebd7d98bce9fb5fd1ef7eb29dbb7868cd67ac29761c5d7b020a84c"
+  },
+  "prior_validation": "n61-validation-n2-v1.json",
+  "denominator": 24
+}

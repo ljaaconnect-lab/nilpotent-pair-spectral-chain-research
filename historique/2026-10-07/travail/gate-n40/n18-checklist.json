@@ -1,0 +1,28 @@
+{
+  "node": "n18",
+  "artifact_version": "n18-occupation-gram-v1",
+  "hypothesis": "A cheap column-incidence Gram determinant neutralizes its Cauchy-Binet minor signs and encodes the original marked permanent as a row-occupation coefficient",
+  "dimensions": [2, 3, 4, 5],
+  "construction": "X[j,(i,k)]=1 when j=k, W[(i,j),(i,j)]=b_ij*y_i; det(XWX^T)=product_j sum_i b_ij*y_i",
+  "kronecker_encoding": "q=n+1, y_i=s^(q^i), T=sum_i q^i",
+  "scalar_gate_formula": "4*n^2-2+(n-1)*(floor(log2(n+1))+popcount(n+1)-1)",
+  "intended_bound": "O(n^2+n log n) gates for the full coefficient-encoding polynomial, no extraction bound",
+  "initial_data": "original p_ij=1+a_ij^2 and z markers; auxiliary s; constants 0 and 1 for incidence descriptions; no target coefficient as data",
+  "boundary": "B_dev-n18-positive",
+  "checks_per_dimension": [
+    "gram_equals_explicit_diagonal",
+    "gram_determinant_equals_column_product",
+    "supported_cauchy_binet_minor_square_sum_equals_column_product",
+    "squarefree_occupation_coefficient_equals_generic_permanent",
+    "kronecker_coefficient_equals_generic_permanent",
+    "original_marked_scalar_dag_coefficient_equals_independent_oracle",
+    "exact_scalar_gate_formula_and_components",
+    "target_independent_scalar_leaf_data",
+    "occupation_digit_selection_identity"
+  ],
+  "total_checks": 36,
+  "metric": "Equally weighted positive exact assertions; failures or infrastructure errors count as failed checks; not proof confidence",
+  "rational_input": "A_ij=((i+1)*(j+3)-2*j)/(i+2*j+3), zero-based indices, formal z throughout",
+  "general_proof_status": "UNVERIFIED unless separately kernel checked",
+  "remaining_obligation": "A uniformly polynomial scalar circuit for extracting the squarefree occupation coefficient or its univariate Kronecker image"
+}

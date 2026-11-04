@@ -1,0 +1,36 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fermeture-generale\\ClockContraction.lean",
+  "version": 1,
+  "completed": true,
+  "seconds": 153.157,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 22
+        },
+        "start": {
+          "character": 2,
+          "line": 22
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\nP : Type u_1\nB : Type u_2\nJ : Type u_3\nR : Type u_4\ninst✝⁴ : Fintype P\ninst✝³ : Fintype B\ninst✝² : Fintype J\ninst✝¹ : DecidableEq B\ninst✝ : CommSemiring R\nπ : P → B\na : P → J → R\n⊢ ∑ f, ∏ p, a p (f (π p)) = ∏ b, ∑ j, ∏ p with π p = b, a p j",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 22
+        },
+        "start": {
+          "character": 2,
+          "line": 22
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    }
+  ]
+}

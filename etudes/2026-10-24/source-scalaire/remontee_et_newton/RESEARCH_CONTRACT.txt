@@ -1,0 +1,34 @@
+Target: for every n>=1 and every rational A, compile PA(z)=per(B_A(z)),
+B_ij=(1+a_ij^2) z^(2^(in+j)) with zero-based i,j, as a scalar +,-,* DAG.
+p_ij leaves are allowed. Auxiliary rational literal bit lengths must be
+polynomial in n. Size bounded by one polynomial in n, constructor polynomial
+in (n,L). All marks, preparation, updates, fusion and output are charged.
+
+Authoritative supplied paper: annihilation_raccord_spectral_demonstrations.pdf,
+63 pages, SHA256 ed1f05cd132305ec98ec4f195ae395123cc4ae68e1a137ac4a78898f4d5199f4.
+Extract: ../raccord-spectral.txt (main workspace; paths differ in worktrees).
+B.18 already supplies downstream overhead 2N log2N+3N-3, N power of two.
+B.26: global collision projector pi_n(L), where L=1/2 sum t_j^2 d_j^2.
+B.27: PA=D_A Hadamard E_n. Neither global scalar source is constructed there.
+
+Baseline candidate.py produces an actual scalar DAG with (n-1)2^n+2n^2 gates.
+Development evaluator: python evaluate_dev.py. Minimize actual n=8 gate count
+subject to all exact finite-field checks. Evaluator is frozen. Executors must
+not change dag.py or evaluate_dev.py. A score improvement is not a general
+polynomial proof. Separate written identities, full gate bounds and uniformity
+are mandatory before claiming the root objective. No oracle operations,
+arbitrary coefficient extraction, implicit exponential algebra operations,
+numerical approximations, or expanded-output requests.
+
+Known constraints to build on: weighted coefficient-only polynomial summaries
+with polynomial decoders need binom(n,i) coordinates. Full marked B and its
+entrywise reciprocal have full rank over Q(z). Low-rank rows do not apply.
+Fixed scalar sampling of D_A with A-independent linear reconstruction needs
+n! samples. Fixed shared sample-vectors on the auxiliary product need
+2^(n-1) samples (Waring rank); adaptive/input-dependent approaches are outside
+these bounds. Input factors themselves are a compact description; a reader
+with a counted scalar implementation still has to be supplied.
+
+No new theorem is Lean-certified in this run. Preserve original paper and
+earlier outputs. Work only in the assigned worktree. Return exact evidence
+and commit the attempt, even if no new compiler is obtained.

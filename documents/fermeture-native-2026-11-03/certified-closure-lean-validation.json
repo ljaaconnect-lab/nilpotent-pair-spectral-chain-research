@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "source_sha256": {
+    "documents/fermeture-native-2026-11-03/CertifiedScalarClosure.lean": "b09edb916051ee7b7506acacb9a8e64210260084c3c426fb040b79a908f4a0e1",
+    "documents/fermeture-native-2026-11-03/replay_certified_closure.py": "0261ac7be792122e18aa670ec171d4b15fe14e7ba166c960c0767196be0de507",
+    "etudes/2026-11-01/lean-operateurs/lean_check.py": "a5e21cfb624e5258009425f6c6eecaf0eb1b529d953bbb2607717dab44a439ad",
+    "documents/fermeture-native-2026-11-03/AuxiliaryErasure.lean": "61f744b1965e479226532e05a2c5c9f27a0a944ee4919134edaf01f505f93536",
+    "travail/fermeture-native/build/AuxiliaryErasure.olean": "3a2d56048aacb81fc205281d58ee789a13b26e1a7dd3ba42c856f53f5e49df00",
+    "documents/fermeture-native-2026-11-03/SharedStateClosure.lean": "3a8967002e677b413ed521ac6d2f2b0646a3b50ac553e30dd19a4b66f53b968e",
+    "travail/fermeture-native/build/SharedStateClosure.olean": "81546b72edaa4082395e7295ae4232519de17cfb5edec9dff4a0bb2cffe6979c",
+    "documents/fermeture-native-2026-11-03/TerminalTaggedClosure.lean": "629fb2f327960bd626d6b5847ebe6841094685e857e9576166273cc99bfbd09a",
+    "travail/fermeture-native/build/TerminalTaggedClosure.olean": "5c159311e86b0d84ecce3ded15b69410781ab6c5db87c4817c95f6fdaf664321",
+    "documents/induction-native-2026-11-03/SharedCostInduction.lean": "4a697eaa53d71cf620fad2dcf766ea41dbad3f6816435538d8e8125ab27a6009",
+    "travail/fermeture-native/build/SharedCostInduction.olean": "f8f9a69df6fb3829b0cd57e62211b2a1e669b6a086ebde69fb7428e8d8a64794"
+  },
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "-o",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\fermeture-native\\build\\CertifiedScalarClosure.olean",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\fermeture-native-2026-11-03\\CertifiedScalarClosure.lean"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 14.359,
+  "stdout": "'CertifiedScalarClosure.reader_gates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CertifiedScalarClosure.reader_tagged_correct' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CertifiedScalarClosure.certified_scalar_closure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CertifiedScalarClosure.certified_polynomial_family' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "reader_gates",
+    "reader_tagged_correct",
+    "certified_scalar_closure",
+    "certified_polynomial_family"
+  ],
+  "no_placeholders_or_added_axioms": true,
+  "all_axioms_printed": true,
+  "sources_and_dependencies_unchanged": true,
+  "reader_construction": "eraseAux (chain.compile ; wire select)",
+  "reader_gate_count": "exactly chain.gateBudget",
+  "polynomial_family_bound": "(K0 + Klen*K) * n^max(a,b+c), n>=1",
+  "polynomial_family_constants_independent_of_n": true,
+  "scalar_increment_bounds_and_normalization_are_hypotheses": true,
+  "normalization_of_selected_coefficient_wires_is_an_explicit_hypothesis": true,
+  "native_specification_used_as_a_program_input": false,
+  "general_native_normalization_constructed": false,
+  "unconditional_native_scalar_closure_proved": false
+}

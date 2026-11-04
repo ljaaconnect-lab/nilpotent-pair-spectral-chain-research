@@ -1,0 +1,6 @@
+'SharedBinaryPower.run_append' depends on axioms: [propext, Quot.sound]
+'SharedBinaryPower.power_add' does not depend on any axioms
+'SharedBinaryPower.positive_plan_correct' depends on axioms: [propext, Quot.sound]
+'SharedBinaryPower.binary_plan_correct' depends on axioms: [propext, Quot.sound]
+'SharedBinaryPower.binary_plan_logarithmic' depends on axioms: [propext, Quot.sound]
+'SharedBinaryPower.central_exponent_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

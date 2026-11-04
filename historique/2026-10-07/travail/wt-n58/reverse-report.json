@@ -1,0 +1,81 @@
+{
+  "node": "n58",
+  "dev_score": 1.0,
+  "metric": "accepted_frozen_obligations / 6",
+  "compiler_exit_code": 0,
+  "lean_version": "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+  "complete_rounds": 12,
+  "complete_round_budget": 20,
+  "import_name_probes": 1,
+  "tactic_probes": 0,
+  "domain": "Arbitrary n:Nat and arbitrary CommRing R; no positivity, injectivity, domain, or characteristic assumption",
+  "accepted": [
+    "ReverseVandermonde.reverse_matrix_as_projective",
+    "ReverseVandermonde.reverse_vandermonde",
+    "ReverseVandermonde.power_entries",
+    "ReverseVandermonde.reverse_vandermonde_polynomial",
+    "ReverseVandermonde.complementary_exponent",
+    "ReverseVandermonde.paper_complementary_det"
+  ],
+  "additional_verified": [
+    "ReverseVandermonde.unit_monomial_pow",
+    "ReverseVandermonde.paper_monomial_matrix_eq",
+    "ReverseVandermonde.paper_monomial_det"
+  ],
+  "axiom_audit": {
+    "ReverseVandermonde.reverse_vandermonde": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ReverseVandermonde.reverse_matrix_as_projective": [
+      "propext",
+      "Quot.sound"
+    ],
+    "ReverseVandermonde.power_entries": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ReverseVandermonde.reverse_vandermonde_polynomial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ReverseVandermonde.complementary_exponent": [
+      "propext"
+    ],
+    "ReverseVandermonde.paper_complementary_det": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ReverseVandermonde.unit_monomial_pow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ReverseVandermonde.paper_monomial_matrix_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ReverseVandermonde.paper_monomial_det": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "unapproved_axioms": {},
+  "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+  "protocol_sha256": "6d293b98e6104c4011c9ba2d026376e51a040d7d038f284255ff1f7476460148",
+  "includes_n_zero_and_one": true,
+  "orientation": "product over i<l of v_i-v_l",
+  "proof_route": "Matrix.det_projVandermonde specialized at const1,v",
+  "n55_interface": "The verified raw monomial matrix is the definitional unfolding of reverseMatrix(baseLabels n)(baseCaps n). The named n55 module is not imported by this self-contained artifact.",
+  "root_conjecture_verified": false,
+  "held_out_accessed": false,
+  "counterexample_generation": false,
+  "result": "Exact reverse Vandermonde, complementary subtraction, and the paper-entry monomial determinant formula verified.",
+  "remaining_constructive_obligation": "Construct a polynomial-size scalar circuit for the required central coefficient, without treating projection or extraction as free."
+}

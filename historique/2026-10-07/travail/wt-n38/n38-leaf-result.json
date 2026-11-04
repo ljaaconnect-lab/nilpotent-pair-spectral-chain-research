@@ -1,0 +1,19 @@
+{
+  "dev_score": 1.0,
+  "result": {
+    "node_id": "n38",
+    "artifact_version": "n38-indexed-label-bridge-v1",
+    "status": "indexed_labels_occupation_selector_and_sparse_pairing_verified",
+    "new_declarations_accepted": 13,
+    "compiler_exit_code": 0,
+    "compiler_invocations": 24,
+    "candidate_rounds": 22,
+    "dependency_builds": 2,
+    "global_compiler_invocations_after_node": 62,
+    "root_conjecture_verified": false,
+    "Polynomial_library_interpretation_verified": false,
+    "heldout_tests_run": false
+  },
+  "insight": "Actual indexed assignment labels are now formally bounded and injective, and the natural occupation sum in base n+1 selects all-one counts under count<=n. Duplicate-free assignment families satisfy the general-ring actual sparse-product central pairing. Polynomial-library, determinant/Vandermonde and scalar-complexity bridges remain separate obligations.",
+  "branch_ref": "arbor/n38"
+}

@@ -1,0 +1,31 @@
+{
+  "protocol": "square-zero-rank-one-proof-v1",
+  "node": "n39",
+  "complete_candidate_budget": 16,
+  "obligation_count": 5,
+  "obligations": [
+    {
+      "name": "SquareZeroRankOne.scalar_product",
+      "statement": "For any commutative ring R, x*x=0 implies (1-x*c)*(1+x*c)=1."
+    },
+    {
+      "name": "SquareZeroRankOne.matrix_right_product",
+      "statement": "For finite square matrices over a commutative ring, x*x=0 and A*G=1 imply (A-x•U)*(G+x•(G*U*G))=1 for every U."
+    },
+    {
+      "name": "SquareZeroRankOne.matrix_left_product",
+      "statement": "For finite square matrices over a commutative ring, x*x=0 and G*A=1 imply (G+x•(G*U*G))*(A-x•U)=1 for every U."
+    },
+    {
+      "name": "SquareZeroRankOne.rank_one_two_sided",
+      "statement": "Specialize the two matrix product equalities to U=vecMulVec u v, retaining both A*G=G*A=1 assumptions."
+    },
+    {
+      "name": "SquareZeroRankOne.propagate_left_factor",
+      "statement": "B*(G+x•(G*U*G))=B*G+x•((B*G)*U*G), as an explicit scalar-linear matrix identity."
+    }
+  ],
+  "trust_base": ["propext", "Quot.sound", "Classical.choice"],
+  "rejected": ["sorryAx", "new axiom declarations", "unverified compiler exit status"],
+  "scope": "Explicit square-zero update identities; no root polynomial-extraction assumption."
+}

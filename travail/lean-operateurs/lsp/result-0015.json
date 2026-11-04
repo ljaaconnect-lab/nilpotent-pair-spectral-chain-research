@@ -1,0 +1,35 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\WeylOperators.lean",
+  "version": 1,
+  "seconds": 18.891,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 20,
+          "line": 12
+        },
+        "start": {
+          "character": 43,
+          "line": 11
+        }
+      },
+      "leanTags": [
+        1
+      ],
+      "message": "unsolved goals\nR : Type u_1\ninst✝ : Ring R\nx d : R\nhdx : d * x = x * d + 1\n⊢ -2 • (x * (x * (x * d))) + x * (x * (d * (x * (x * d)))) = x * (x * (x * (x * (d * d))))",
+      "range": {
+        "end": {
+          "character": 0,
+          "line": 12
+        },
+        "start": {
+          "character": 43,
+          "line": 11
+        }
+      },
+      "severity": 1,
+      "source": "Lean 4"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "commit": "b51d545902ef7159c104c98f8abfae4714bc4d5c",
+  "detached_worktree": "work/wt-chain-heldout",
+  "numeric_full_table_checks": 56,
+  "formal_full_table_checks": 8,
+  "gate_counts": {"1": 1, "2": 10, "3": 31, "4": 76, "5": 173, "6": 386, "7": 859, "8": 1912},
+  "score": 1912,
+  "score_direction": "min",
+  "general_polynomial_proof": false,
+  "candidate_sha256": "43b18fca3911e2c446c062d3026217ae63ecfd85ad986f58bf2f2ae52176e64f",
+  "evaluator_sha256": "d5e522463357456a8dae97460b24f375748bf9f5beadb731e073ee72adb39fc3",
+  "note": "Git worktree checkout converts baseline LF to CRLF under core.autocrlf; git diff verifies frozen files unchanged. Score improvement only folds the spectral tail in a known exponential reference."
+}

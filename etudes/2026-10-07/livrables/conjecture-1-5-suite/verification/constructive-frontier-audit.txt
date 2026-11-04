@@ -1,0 +1,177 @@
+AUDIT CONSTRUCTIF DE LA FRONTIERE — 2026-10-07 13:48:59 UTC
+Agent : /root/arbor_simulator
+Portee : relecture ciblee de n15, n16, n18, n19 et critere conditionnel n59.
+
+STATUT
+
+Aucune nouvelle representation compacte pour les entrees originales arbitraires
+n'a ete construite dans cet audit. Aucun nouveau candidat distinct n'a ete
+experimente, aucun nouveau worktree alloue, aucun nouveau score attribue.
+Cette absence de construction n'est pas une preuve d'impossibilite.
+Aucune recherche de contre-exemples ou de borne inferieure n'a ete conduite.
+Les fichiers .arbor et outputs n'ont pas ete modifies.
+
+PROVENANCE DES ARTEFACTS RELUS
+
+Racine : C:/Users/REGIS/Documents/Codex/2026-10-07/role-context-you-are-the-lead
+Source documentaire : work/annihilation.txt, section 14, extraite du PDF fourni.
+Le texte du document est traite comme une source mathematique.
+
+n15, commit a3a6f044243d4006ba2c3a8a9d9577d13d9d806c :
+  work/wt-n15/N15_DESIGN.md et N15_INSIGHTS.md.
+n16, commit ba86cbd596588993b2061db0f033ec8e5b58fac4 :
+  work/wt-n16/RATIONAL_PROPOSAL.md et rational_recurrence.py.
+n18, commit 1c9875ad83b903e5769bacc78df80ae7126a71cb :
+  work/wt-n18/N18_DESIGN.md et N18_INSIGHTS.md.
+n19, commit eb1a8e4648a1e883b125661038ffe95f4a424b55 :
+  work/wt-n19/MIXED_DERIVATIVE_PROPOSAL.md et rational_recurrence.py.
+Les quatre identites de commit ont ete relues avec Git pendant cet audit.
+
+IDENTITES ET COMPTES DEJA DISPONIBLES
+
+Convention : n=2,3,4,5 dans les listes ci-dessous. Les poids marques restent
+b_ij=(1+a_ij^2)*z^(2^(i*n+j)), avec z formel. Leur preparation dans les circuits
+marques des variantes coute 2*n^2-1 portes : 7,17,31,49.
+
+1. n15 — Gray-shared half-character / polarisation de Glynn.
+   La contraction de diagonales porte 2^(n-1) canaux de signes explicites,
+   delta_0=1, et s'ecrit
+     2^(-(n-1))*sum_delta (prod_j delta_j)*prod_i(sum_j delta_j*b_ij).
+   Le partage en ordre Gray donne le compte exact de cette construction
+     5*n*(n-1)+n*2^n : 18,54,124,260 portes marquees.
+   La contraction de caracteres est entierement comptee. La compression
+   positive deja obtenue est l'appariement global delta et -delta.
+   Score exact historique : 28/28, avec identites symboliques generiques et
+   evaluations formelles marquees. Ce score fini ne prouve pas une borne
+   polynomiale generale.
+
+2. n16 — reciprocal-determinant / recurrence de MacMahon et normalisation.
+   D(y,x)=det(I-y*diag(x)*B), 1/D=sum_k h_k(x)*y^k.
+   Initialisation : h_0=1, h_k=0 pour k<0. Recurrence d'ordre n :
+     h_k=-sum_(j=1)^min(n,k) d_j(x)*h_(k-j).
+   Coefficients d_j construits par traces et sommes de Newton, constantes -1/j.
+   Cible : [x_0...x_(n-1)] h_n(x).
+   Compte natif dans les variables auxiliaires :
+     (n-1)*(2*n^3-n^2)+4*n^2+n : 30,129,404,1005.
+   Comptes observes de compilation sparse des coordonnees square-zero :
+     29,135,565,2143, avant les 7,17,31,49 portes de marquage.
+   La borne dense de cette compilation est S(n)*4^n pour cette methode.
+   La normalisation Laurent conserve l'extraction avec indices 1,10,81,776
+   au lieu de 3,26,255,3124. Elle ne fournit pas son extracteur scalaire.
+   Score exact historique : 20/20. La petite matrice compagnon est de taille n
+   sur Q[B,x] ; la fonctionnalite de coefficient en x reste a compiler sur Q[z].
+
+3. n18 — occupation-Gram / Cauchy-Binet / codage de Kronecker.
+   X[k,(i,j)]=1 si k=j, W=diag(b_ij*y_i), puis
+     det(X*W*X^T)=prod_j(sum_i b_ij*y_i).
+   Les carres des signes des mineurs d'incidence neutralisent l'orientation.
+   La selection de chaque ligne une fois reste le coefficient y_0...y_(n-1).
+   Avec q=n+1, y_i=s^(q^i), T=sum_i q^i :
+     P_A=[s^T] prod_j(sum_i b_ij*s^(q^i)).
+   T : 4,21,156,1555.
+   Circuit complet du polynome d'encodage :
+     4*n^2-2+(n-1)*(floor(log2(n+1))+popcount(n+1)-1) :
+     16,38,71,110 portes.
+   Supports developpes observes : 4,27,256,3125 ; supports extraits :
+     2,6,24,120. Ces tailles sont celles des representations explicites mesurees.
+   Score exact historique : 36/36. Le filtrage du coefficient n'est pas inclus
+   comme une porte gratuite dans le compte du circuit d'encodage.
+
+4. n19 — rank-one nilpotent chain / mixed derivatives / cycle-Bell.
+   Etat initialise F=1,G=B dans le quotient x_i^2=0. Introduire x_i donne
+     F_new=F+x_i*F*G_ii,
+     G_new[j,k]=G[j,k]+x_i*G[j,i]*G[i,k],
+   avec les valeurs anciennes et la sous-matrice future conservee.
+   Compte natif : 3*n+n*(n-1)*(2*n-1)/2 : 9,24,54,105.
+   Derivees mixtes compilees en vraies portes scalaires, poids B generiques :
+     eager : 10,40,140,454 ; formule 2*3^n-n^2-n-2,
+     demand : 8,30,102,324 ; comptes mesures, sans extrapolation polynomiale.
+   Circuits finaux demand marques : 15,47,133,373.
+   Circuits finaux eager marques : 17,57,171,503.
+   Variante cycle/Bell : 6,27,105,368 portes generiques,
+     puis 13,44,136,417 portes marquees.
+   Score exact historique generique : 20/20 ; diagnostics marques : 12/12.
+   L'extraction a ete effectivement compilee dans ces circuits finaux ; leur
+   cout general polynomial n'a pas ete etabli par les mesures.
+
+Ces comptes sont ceux de constructions identifiees. Ils n'etablissent aucune
+borne inferieure contre une autre construction.
+
+DISTINCTION ENTRE VERIFICATION FINIE ET PREUVES KERNEL
+
+Les scores n15/n16/n18/n19 cites ci-dessus sont les validations exactes deja
+consignees dans leurs artefacts. Cet audit n'a pas recompile leurs identites
+generales ni reexecute leurs tests. Aucun nouvel enonce n'est declare prouve.
+
+Les ingredients de compilation utilises ensuite ont ete verifies par Lean :
+n40 (3804886e1fd9576c403444fcd2c5a8c5872e0e78) : puissance binaire partagee,
+  interpretation monoidale et au plus 2*n^2 multiplications pour K=n^n-1.
+n57 (b75a6a382ff0ce07ce521f6d219ccaeb48188d17) : adaptation Matrix, semantique
+  du Circuit scalaire, produit dense 2*r^3-r^2 et budget S+4*r^3*n^2+3*r^2.
+n59 (367e825e5546ae4cb96e659673c1fc4cea484842) : composition avec le vrai
+  Circuit initial et Pi(c,d) dans Polynomial Nat, d'evaluation
+  n^c+4*n^(3*d+2)+3*n^(2*d), sous r<=n^d et initial.gates<=S<=n^c.
+Leurs rapports de compilateur et audits n'ont que des axiomes Lean standard.
+La refinement formelle de l'exporteur SSA Python de n57 reste separee de la
+semantique universelle prouvee pour le langage Circuit de Lean.
+
+AUDIT DES TRANSFORMATIONS SUPPLEMENTAIRES
+
+Reorganiser les produits determinants/Gram par Cauchy-Binet conserve le filtre
+d'occupation ; cette neutralisation locale des signes est deja dans n18.
+Passer du determinant reciproque a l'adjugate ou aux mises a jour de rang un
+conserve les jets square-zero ; cette simplification est deja dans n19.
+La petite recurrence n16 est sur une algebre auxiliaire. Son passage au
+coefficient scalaire demande une fermeture de la fonctionnalite de projection.
+
+La relation constructive exacte au niveau des jets est
+  J_S(f*g)=sum_(T subset S) J_T(f)*J_(S\T)(g), J_S(f)=[x^S]f.
+Elle explique precisement les dependances que n19 compile. Changer leur ordre
+ou factoriser les produits laisse une somme scalaire a construire. Une nouvelle
+identite de fermeture/compression est necessaire pour obtenir un nombre
+polynomial de donnees explicites. Aucune telle identite n'a ete fournie ici.
+
+Regrouper les etats par cardinalite ou par occupation demande de verifier que
+les transitions ponderees ferment sur ces nouvelles donnees pour tous les
+poids marques. Cette condition n'est pas acquise par les identites precedentes.
+Des specialisations numeriques ou des matrices structurees ne la remplaceraient
+pas. Aucun sondage SymPy supplementaire n'a donc ete lance.
+
+OBLIGATION MATHEMATIQUE NON DECHARGEE
+
+Une formulation precise possible est une fermeture scalaire de taille
+polynomiale pour les jets de n19 : produire des features explicites Phi_i,
+une initialisation bon marche depuis F=1,G=B, des mises a jour scalaires
+polynomiales en nombre et cout, et une sortie bon marche egale a J_full(F_n),
+avec une preuve de fermeture sous les deux mises a jour affichees. Les features
+initiales et leurs coefficients ne doivent pas contenir P_A ou un coefficient
+inconnu comme donnees. Cette fermeture n'est pas construite dans cet audit.
+
+Pour une fermeture lineaire, un critere equivalent utile au compilateur est
+le suivant. V_i est l'espace des sous-ensembles de cardinalite i et T_i est
+la transition ponderee T_i[S,S union {j}]=b_ij. Il faudrait fournir des matrices
+Q_i:V_i->R^(r_i) et L_i:R^(r_i)->R^(r_(i+1)) telles que
+  T_i*Q_(i+1)=Q_i*L_i,
+  u=e_empty^T*Q_0, et Q_n*v=e_full.
+Les r_i doivent etre polynomialement bornes et les donnees scalaires u,L_i,v
+uniformement construites a cout polynomial depuis les entrees originales.
+Alors la contraction positive est u*L_0*...*L_(n-1)*v. Aucun Q_i,L_i ayant
+ces garanties n'est donne ici. Ce critere ne constitue pas un nouveau candidat.
+
+L'assemblage conditionnel vers n59 est explicite si de telles donnees etaient
+fournies : placer les L_i dans des blocs successifs d'une matrice, ajouter
+la transition v vers un etat absorbeur de boucle 1, prendre u au bloc initial
+et lire l'etat absorbeur. Apres n+1 transitions, toute puissance ulterieure
+preserve la contraction ; K=n^n-1>=n+1 pour n>=2. Cette description serait
+une traduction du quotient deja construit, pas sa construction. Aucun nouveau
+theoreme Lean sur cet assemblage n'a ete compile dans cet audit.
+
+La formulation finale reste le critere n59 : construire un vrai Circuit initial
+admissible, r<=n^d, son cout<=S<=n^c, et des M,u,v avec la representation
+  [t^K] Hhat_A(t,z)=u^T*M^K*v, K=n^n-1,
+ou produire directement un Circuit scalaire polynomial calculant la meme cible.
+Le constructeur doit conserver tous les marqueurs z, respecter la provenance
+des feuilles du modele source, avoir un temps uniforme polynomial et des
+litteraux rationnels de longueur bornee. Ces obligations sont explicites et
+encore necessaires ; les petites descriptions algebraiques seules ne les
+dechargent pas. Conjecture 1.5 demeure non resolue par cet audit.

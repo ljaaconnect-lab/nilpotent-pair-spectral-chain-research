@@ -1,0 +1,32 @@
+{
+  "mode": "Positive reference-only B_dev; original node metric unchanged",
+  "ns": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "matrices": [
+    "identity",
+    "vandermonde",
+    "cyclic"
+  ],
+  "z_values": [
+    -1,
+    0,
+    1
+  ],
+  "root_credit": false,
+  "B_test_opened": false,
+  "code_sha256": "a5dd55257f955e868f49535ef5ed11414a70c7d2cac27ae6f769fbd8d3d3f9f1",
+  "dags": {
+    "n69-rowjet_generic_reference-n2.json": "5c20b88c910f43162cc50473899ac6916d12d509628036f89b3ac2216ed60e18",
+    "n69-rowjet_marked_reference-n2.json": "a2c423d5ac7b28beaa0891d917bcb400ca459c06733e924d005d240f53ad0d0e",
+    "n69-rowjet_generic_reference-n3.json": "0f11de18cdaf394d92d05661287693aa2af6e4b4bc45b0fde32d7a76dbd5988b",
+    "n69-rowjet_marked_reference-n3.json": "e3c87144461d7a61c36058893ff8c93cf785fe8d3035697550e600358a2a8e22",
+    "n69-rowjet_generic_reference-n4.json": "afc4b81ce61be9a319e636901a41c04f885884a6da09adc46dd4df0485677a13",
+    "n69-rowjet_marked_reference-n4.json": "6515808f7de0396f216b44cdef2c813062eb242e1e8291f57153fa6a42e6915b",
+    "n69-rowjet_generic_reference-n5.json": "916a1e7eb0b1675a00652e70cfa3c7770136218bd668f1ffe436f4554f2af76d",
+    "n69-rowjet_marked_reference-n5.json": "985ee11782f589b61b6e46ba9406c8cdc922df3e9d2d23402a17e07aeafed491"
+  }
+}

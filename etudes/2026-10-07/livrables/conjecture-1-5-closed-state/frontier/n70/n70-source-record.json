@@ -1,0 +1,38 @@
+{
+  "node": "n70",
+  "artifact_version": "n70-row-block-transfer-v1",
+  "parent_commit": "1c3ee90c7cd972413db18112a8578ea96a34b2bb",
+  "candidate_limit": 3,
+  "analytical_candidates": 3,
+  "refinements_within_candidates": 2,
+  "root_protocol_unchanged": true,
+  "frozen_before_any_evaluation": true,
+  "mathematical_evaluations_executed": 0,
+  "files": {
+    "n70-protocol.json": {
+      "sha256_raw": "e09051d4dd010a58674816020487b9ccf30f26c2399edfa8f61ea334a344d548",
+      "sha256_utf8_lf_without_bom": "d334950996a4a83e07a637a6cd1baf4b353c26df54c503decbc8565ada629064"
+    },
+    "n70-candidates.json": {
+      "sha256_raw": "1525641e232465bd50614d82c197b2a5696279b349a92a65398fa37d6757d5ec",
+      "sha256_utf8_lf_without_bom": "1525641e232465bd50614d82c197b2a5696279b349a92a65398fa37d6757d5ec"
+    },
+    "N70_BLUEPRINT.md": {
+      "sha256_raw": "c5415785896586b6a59fc577675605397ff6faccb1acbc26f1ebf2aa5e72f531",
+      "sha256_utf8_lf_without_bom": "c5415785896586b6a59fc577675605397ff6faccb1acbc26f1ebf2aa5e72f531"
+    },
+    "N70_FRAME_TRANSPORT.md": {
+      "sha256_raw": "6103bf62cfa63bf2d1839545691cf9623fb457db1ffbc87eb3a05e6a2e00e51b",
+      "sha256_utf8_lf_without_bom": "6103bf62cfa63bf2d1839545691cf9623fb457db1ffbc87eb3a05e6a2e00e51b"
+    },
+    "N70_INSIGHTS.md": {
+      "sha256_raw": "e214310127e4fbcb653604aa210dd51671691c1d31868c4f0559df2420b1365c",
+      "sha256_utf8_lf_without_bom": "e214310127e4fbcb653604aa210dd51671691c1d31868c4f0559df2420b1365c"
+    },
+    "n70-dev-report.json": {
+      "sha256_raw": "64c2476614767598e32f32fa2ffa2b88f7e735f34ff153e5fadd1562b46839cd",
+      "sha256_utf8_lf_without_bom": "64c2476614767598e32f32fa2ffa2b88f7e735f34ff153e5fadd1562b46839cd"
+    }
+  },
+  "hash_note": "Raw hashes identify working-tree bytes; UTF8 LF without BOM hashes reproduce content across Git line-ending conversions."
+}

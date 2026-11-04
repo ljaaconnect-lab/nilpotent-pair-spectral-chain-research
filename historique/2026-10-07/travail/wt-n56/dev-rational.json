@@ -1,0 +1,308 @@
+{
+  "protocol": "positive-rational-dev-v1",
+  "split": "dev",
+  "score": 1.0,
+  "passed": 20,
+  "total": 20,
+  "evaluator_sha256": "903967655e28db2b7d1b4d33e6d98b09a46e0b132723494126150b7f6d1dfaed",
+  "artifact_sha256": "3e3cc6589f6a29b3392d478c2c61e52aba9202f47afcb9ce6c93d43b6d8e76fe",
+  "cases": [
+    {
+      "n": 2,
+      "checks": {
+        "newton_determinant_coefficients": true,
+        "reciprocal_coordinates": true,
+        "reciprocal_generic_permanent": true,
+        "laurent_full_pair_identity": true,
+        "laurent_central_identity": true
+      },
+      "reciprocal": {
+        "n": 2,
+        "determinant_coefficients_exact": true,
+        "reciprocal_coordinates_exact": true,
+        "generic_permanent_exact": true,
+        "generic_weight_variables": 4,
+        "output_monomials": 2,
+        "construction": {
+          "order": 2,
+          "initial_data": "h_0=1, h_negative=0",
+          "native_scalar_gates": 30,
+          "formula": "(n-1)*(2*n^3-n^2)+4*n^2+n",
+          "integer_denominators": [
+            1,
+            2
+          ],
+          "original_marker_substitution_gates": 7,
+          "coefficient_extraction_charged_separately": true
+        },
+        "evaluation": {
+          "peak_coordinates": 2,
+          "coefficient_multiplications": 24,
+          "coefficient_additions": 5,
+          "compiled_scalar_gates": 29,
+          "native_scalar_gates_in_B_and_x": 30,
+          "safe_dense_quotient_compilation_bound": 480
+        },
+        "d_coordinate_counts": [
+          1,
+          2,
+          1
+        ],
+        "h_coordinate_counts": [
+          1,
+          2,
+          1
+        ],
+        "newton_recurrence": "d_k=-(1/k)*sum_(j=1)^k d_(k-j)*tr(T^j)",
+        "reciprocal_recurrence": "h_k=-sum_(j=1)^min(n,k) d_j*h_(k-j)"
+      },
+      "laurent": {
+        "n": 2,
+        "K": 3,
+        "shift": 2,
+        "divisor": 1,
+        "normalized_center": 1,
+        "row_weights": [
+          0,
+          1
+        ],
+        "all_generic_weight_coefficients_exact": true,
+        "central_generic_permanent_exact": true,
+        "formula": "H(t)=t^(n*(n-1))*H_normalized(t^(n-1))",
+        "normalized_label_identity_exact": true,
+        "amplitude_monomials": 2,
+        "pair_terms_checked": 4
+      },
+      "seconds": 0.4360476000001654
+    },
+    {
+      "n": 3,
+      "checks": {
+        "newton_determinant_coefficients": true,
+        "reciprocal_coordinates": true,
+        "reciprocal_generic_permanent": true,
+        "laurent_full_pair_identity": true,
+        "laurent_central_identity": true
+      },
+      "reciprocal": {
+        "n": 3,
+        "determinant_coefficients_exact": true,
+        "reciprocal_coordinates_exact": true,
+        "generic_permanent_exact": true,
+        "generic_weight_variables": 9,
+        "output_monomials": 6,
+        "construction": {
+          "order": 3,
+          "initial_data": "h_0=1, h_negative=0",
+          "native_scalar_gates": 129,
+          "formula": "(n-1)*(2*n^3-n^2)+4*n^2+n",
+          "integer_denominators": [
+            1,
+            2,
+            3
+          ],
+          "original_marker_substitution_gates": 17,
+          "coefficient_extraction_charged_separately": true
+        },
+        "evaluation": {
+          "peak_coordinates": 3,
+          "coefficient_multiplications": 97,
+          "coefficient_additions": 38,
+          "compiled_scalar_gates": 135,
+          "native_scalar_gates_in_B_and_x": 129,
+          "safe_dense_quotient_compilation_bound": 8256
+        },
+        "d_coordinate_counts": [
+          1,
+          3,
+          3,
+          1
+        ],
+        "h_coordinate_counts": [
+          1,
+          3,
+          3,
+          1
+        ],
+        "newton_recurrence": "d_k=-(1/k)*sum_(j=1)^k d_(k-j)*tr(T^j)",
+        "reciprocal_recurrence": "h_k=-sum_(j=1)^min(n,k) d_j*h_(k-j)"
+      },
+      "laurent": {
+        "n": 3,
+        "K": 26,
+        "shift": 6,
+        "divisor": 2,
+        "normalized_center": 10,
+        "row_weights": [
+          0,
+          1,
+          4
+        ],
+        "all_generic_weight_coefficients_exact": true,
+        "central_generic_permanent_exact": true,
+        "formula": "H(t)=t^(n*(n-1))*H_normalized(t^(n-1))",
+        "normalized_label_identity_exact": true,
+        "amplitude_monomials": 6,
+        "pair_terms_checked": 36
+      },
+      "seconds": 0.36214169999584556
+    },
+    {
+      "n": 4,
+      "checks": {
+        "newton_determinant_coefficients": true,
+        "reciprocal_coordinates": true,
+        "reciprocal_generic_permanent": true,
+        "laurent_full_pair_identity": true,
+        "laurent_central_identity": true
+      },
+      "reciprocal": {
+        "n": 4,
+        "determinant_coefficients_exact": true,
+        "reciprocal_coordinates_exact": true,
+        "generic_permanent_exact": true,
+        "generic_weight_variables": 16,
+        "output_monomials": 24,
+        "construction": {
+          "order": 4,
+          "initial_data": "h_0=1, h_negative=0",
+          "native_scalar_gates": 404,
+          "formula": "(n-1)*(2*n^3-n^2)+4*n^2+n",
+          "integer_denominators": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "original_marker_substitution_gates": 31,
+          "coefficient_extraction_charged_separately": true
+        },
+        "evaluation": {
+          "peak_coordinates": 6,
+          "coefficient_multiplications": 368,
+          "coefficient_additions": 197,
+          "compiled_scalar_gates": 565,
+          "native_scalar_gates_in_B_and_x": 404,
+          "safe_dense_quotient_compilation_bound": 103424
+        },
+        "d_coordinate_counts": [
+          1,
+          4,
+          6,
+          4,
+          1
+        ],
+        "h_coordinate_counts": [
+          1,
+          4,
+          6,
+          4,
+          1
+        ],
+        "newton_recurrence": "d_k=-(1/k)*sum_(j=1)^k d_(k-j)*tr(T^j)",
+        "reciprocal_recurrence": "h_k=-sum_(j=1)^min(n,k) d_j*h_(k-j)"
+      },
+      "laurent": {
+        "n": 4,
+        "K": 255,
+        "shift": 12,
+        "divisor": 3,
+        "normalized_center": 81,
+        "row_weights": [
+          0,
+          1,
+          5,
+          21
+        ],
+        "all_generic_weight_coefficients_exact": true,
+        "central_generic_permanent_exact": true,
+        "formula": "H(t)=t^(n*(n-1))*H_normalized(t^(n-1))",
+        "normalized_label_identity_exact": true,
+        "amplitude_monomials": 24,
+        "pair_terms_checked": 576
+      },
+      "seconds": 3.0550982000058866
+    },
+    {
+      "n": 5,
+      "checks": {
+        "newton_determinant_coefficients": true,
+        "reciprocal_coordinates": true,
+        "reciprocal_generic_permanent": true,
+        "laurent_full_pair_identity": true,
+        "laurent_central_identity": true
+      },
+      "reciprocal": {
+        "n": 5,
+        "determinant_coefficients_exact": true,
+        "reciprocal_coordinates_exact": true,
+        "generic_permanent_exact": true,
+        "generic_weight_variables": 25,
+        "output_monomials": 120,
+        "construction": {
+          "order": 5,
+          "initial_data": "h_0=1, h_negative=0",
+          "native_scalar_gates": 1005,
+          "formula": "(n-1)*(2*n^3-n^2)+4*n^2+n",
+          "integer_denominators": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "original_marker_substitution_gates": 49,
+          "coefficient_extraction_charged_separately": true
+        },
+        "evaluation": {
+          "peak_coordinates": 10,
+          "coefficient_multiplications": 1309,
+          "coefficient_additions": 834,
+          "compiled_scalar_gates": 2143,
+          "native_scalar_gates_in_B_and_x": 1005,
+          "safe_dense_quotient_compilation_bound": 1029120
+        },
+        "d_coordinate_counts": [
+          1,
+          5,
+          10,
+          10,
+          5,
+          1
+        ],
+        "h_coordinate_counts": [
+          1,
+          5,
+          10,
+          10,
+          5,
+          1
+        ],
+        "newton_recurrence": "d_k=-(1/k)*sum_(j=1)^k d_(k-j)*tr(T^j)",
+        "reciprocal_recurrence": "h_k=-sum_(j=1)^min(n,k) d_j*h_(k-j)"
+      },
+      "laurent": {
+        "n": 5,
+        "K": 3124,
+        "shift": 20,
+        "divisor": 4,
+        "normalized_center": 776,
+        "row_weights": [
+          0,
+          1,
+          6,
+          31,
+          156
+        ],
+        "all_generic_weight_coefficients_exact": true,
+        "central_generic_permanent_exact": true,
+        "formula": "H(t)=t^(n*(n-1))*H_normalized(t^(n-1))",
+        "normalized_label_identity_exact": true,
+        "amplitude_monomials": 120,
+        "pair_terms_checked": 14400
+      },
+      "seconds": 26.33505690000311
+    }
+  ],
+  "scope": "Generic formal-weight finite identities; quotient compilation charged; no Lean proof."
+}

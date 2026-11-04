@@ -1,0 +1,18 @@
+'SharedBinaryPower.power_add' does not depend on any axioms
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerCompiler.lean:58:22: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerCompiler.lean:59:6: error: unsolved goals
+case neg
+α : Type u
+M : MonoidData α
+a : α
+k : Nat
+ih : ∀ (m : Nat), m < k → 0 < m → run M a a (binaryPlan m) = power M a m
+hk : 0 < k
+hsmall : ¬k ≤ 1
+hrec : run M a a (binaryPlan (k / 2)) = power M a (k / 2)
+⊢ run M a a
+      (binaryPlan (k / 2) ++
+        if k % 2 = 0 then [Instruction.square] else [Instruction.square, Instruction.multiplyBase]) =
+    power M a k
+'SharedBinaryPower.positive_plan_correct' depends on axioms: [propext, sorryAx, Quot.sound]
+'SharedBinaryPower.central_exponent_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

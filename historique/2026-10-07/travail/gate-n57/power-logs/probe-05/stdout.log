@@ -1,0 +1,133 @@
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerCompiler.lean:10:2: error: `grind` failed
+case grind.1.1.2
+n : Nat
+hn : 2 ≤ n
+hsmall : n ≤ 2 ^ n
+hbig : n ^ n ≤ 2 ^ (n * n)
+h : n ^ 2 + 1 ≤ (n ^ n - 1).log2
+h_1 : ¬n = 0
+h_2 : n = n * n
+h_3 : ¬n = 2
+⊢ False
+[grind] Goal diagnostics
+  [facts] Asserted facts
+    [prop] 2 ≤ n
+    [prop] n ≤ 2 ^ n
+    [prop] n ^ n ≤ 2 ^ (n * n)
+    [prop] n ^ 2 + 1 ≤ (n ^ n - 1).log2
+    [prop] ↑(n ^ n - 1) = if -1 * ↑n ^ n + 1 ≤ 0 then ↑n ^ n + -1 else 0
+    [prop] n ^ 2 = n * n
+    [prop] n ≤ n ^ 2
+    [prop] ¬n * n = 0 → 2 ≤ 2 ^ (n * n)
+    [prop] ¬n = 0 → n ≤ n ^ n
+    [prop] ¬n = 0 → 2 ≤ 2 ^ n
+    [prop] 1 ≤ n ^ n
+    [prop] ¬n = 0
+    [prop] n = n * n
+    [prop] ¬n = 2
+  [eqc] True propositions
+    [prop] n = n * n
+    [prop] -1 * ↑n ^ n + 1 ≤ 0
+    [prop] n ≤ 2 ^ n
+    [prop] 2 ≤ n
+    [prop] n ^ 2 + 1 ≤ (n ^ n - 1).log2
+    [prop] n ^ n ≤ 2 ^ (n * n)
+    [prop] ¬n = 0
+    [prop] ¬n * n = 0
+    [prop] n ≤ n ^ n
+    [prop] n ≤ n ^ 2
+    [prop] 1 ≤ n ^ n
+    [prop] 2 ≤ 2 ^ n
+    [prop] 2 ≤ 2 ^ (n * n)
+    [prop] ¬n = 0 → n ≤ n ^ n
+    [prop] ¬n = 0 → 2 ≤ 2 ^ n
+    [prop] ¬n * n = 0 → 2 ≤ 2 ^ (n * n)
+  [eqc] False propositions
+    [prop] n = 2
+    [prop] 2 = n * n
+    [prop] n = 0
+    [prop] n * n = 0
+  [eqc] Equivalence classes
+    [eqc] {n, n * n, n ^ 2}
+    [eqc] {-1 * 2 ^ n + 2, -1 * 2 ^ (n * n) + 2}
+    [eqc] {-1 * 2 ^ n, -1 * 2 ^ (n * n)}
+    [eqc] {2 ^ n, 2 ^ (n * n)}
+    [eqc] {2 ^ n, 2 ^ (n * n)}
+    [eqc] others
+      [eqc] {↑n, ↑(n * n), ↑(n ^ 2)}
+      [eqc] {↑(2 ^ n), ↑(2 ^ (n * n))}
+      [eqc] {↑(n ^ n - 1), if -1 * ↑n ^ n + 1 ≤ 0 then ↑n ^ n + -1 else 0, ↑n ^ n + -1}
+  [cases] Case analyses
+    [cases] [1/2]: ¬n = 0
+      [cases] source: E-matching `Nat.le_self_pow`
+    [cases] [1/2]: n = n * n
+      [cases] source: Model-based theory combination at argument #5 of
+            2 ^ (n * n)
+          and
+            2 ^ n
+    [cases] [2/2]: n = 2
+      [cases] source: Model-based theory combination at argument #4 of
+            n ^ n
+          and
+            2 ^ n
+  [ematch] E-matching patterns
+    [thm] Nat.log2_lt: [@LE.le `[Nat] `[instLENat] ((Nat.log2 #2) + 1) #1]
+    [thm] Nat.pow_two: [@HPow.hPow `[Nat] `[Nat] `[Nat] `[instHPow] #0 `[2]]
+    [thm] Nat.le_self_pow: [@HPow.hPow `[Nat] `[Nat] `[Nat] `[instHPow] #0 #2]
+    [thm] Nat.pow_self_pos: [@HPow.hPow `[Nat] `[Nat] `[Nat] `[instHPow] #0 #0]
+  [cutsat] Assignment satisfying linear constraints
+    [assign] n := 3
+    [assign] (n ^ n - 1).log2 := 4
+    [assign] 「↑n ^ n」 := 3
+    [assign] 「↑n ^ 2」 := 3
+    [assign] 「2 ^ n」 := 3
+    [assign] 「2 ^ (n * n)」 := 3
+    [assign] 「n ^ n」 := 3
+    [assign] 「n ^ 2」 := 3
+    [assign] 「2 ^ n」 := 3
+    [assign] 「2 ^ (n * n)」 := 3
+  [ring] Rings
+    [ring] Ring `Int`
+      [basis] Basis
+        [_] 2 ^ n + -1 * 2 ^ (n * n) = 0
+    [ring] Ring `Lean.Grind.Ring.OfSemiring.Q Nat`
+      [basis] Basis
+        [_] ↑n ^ 2 + -1 * ↑n = 0
+      [diseqs] Disequalities
+        [_] ¬↑n = 0
+        [_] ¬↑n = 0
+        [_] ¬↑n + -2 = 0
+        [_] ¬-1 * ↑n + 2 = 0
+[grind] Issues
+  [issue] ring term with unexpected instance
+        2 ^ n
+  [issue] ring term with unexpected instance
+        2 ^ n
+  [issue] ring term with unexpected instance
+        2 ^ n
+  [issue] ring term with unexpected instance
+        ↑n ^ n
+  [issue] ring term with unexpected instance
+        ↑n ^ n
+  [issue] ring term with unexpected instance
+        2 ^ (n * n)
+  [issue] ring term with unexpected instance
+        2 ^ (n * n)
+  [issue] ring term with unexpected instance
+        ↑n ^ n
+  [issue] ring term with unexpected instance
+        2 ^ (n * n)
+  [issue] ring term with unexpected instance
+        2 ^ (n * n)
+  [issue] ring term with unexpected instance
+        ↑n ^ n
+  [issue] ring term with unexpected instance
+        2 ^ n
+  [issue] ring term with unexpected instance
+        ↑n ^ n
+[grind] Diagnostics
+  [thm] E-Matching instances
+    [thm] Nat.le_self_pow ↦ 4
+    [thm] Nat.pow_self_pos ↦ 1
+    [thm] Nat.pow_two ↦ 1
+'SharedBinaryPower.central_exponent_log_bound' depends on axioms: [propext, sorryAx]

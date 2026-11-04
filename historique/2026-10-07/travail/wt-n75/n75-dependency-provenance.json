@@ -1,0 +1,22 @@
+{
+  "compiler_path": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+  "compiler_sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+  "environment_sha256": "966794f117d8240462ec155c6b3d1c3096d02c679eb5d05256df07eecfe2dd12",
+  "imports": {
+    "Mathlib.LinearAlgebra.Matrix.SchurComplement": {
+      "source_sha256": "a064102c025395540240d0ca8df41b42fba25f4a874e0817ff9e3c58c1b9e43d",
+      "compiled_sha256": "98900b8687553a4090d7016c7b048b27beca907125b0dbe2423c92adedf216ed"
+    },
+    "Mathlib.Algebra.BigOperators.Group.Finset.Powerset": {
+      "source_sha256": "83ef256b00eaabc046b2d245e2adc8c1576f7ab1aa25321266acbd7fdf864470",
+      "compiled_sha256": "68d1397bf26fb9afe3ad6c76cca5fc7d70bbb8027fcd89b862f9160e2aa3537a"
+    },
+    "Mathlib.Tactic.Ring": {
+      "source_sha256": "d3ef5c49ebbd1108ce3f935e5ad95485e143abf02f28c027dba4bb6f3be8196e",
+      "compiled_sha256": "301e95fbad73634f1e47fe918723c2d5443cec154d15622c3475e766e9405077"
+    }
+  },
+  "cache_mutated": false,
+  "outputs_accessed": false,
+  "inherited_cache_used": false
+}

@@ -1,0 +1,133 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fermeture-generale\\Insertion.lean",
+  "version": 18,
+  "completed": true,
+  "seconds": 0.422,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 56
+        },
+        "start": {
+          "character": 0,
+          "line": 56
+        }
+      },
+      "message": "'OrientedOperators.FullInsertion.insert_after_prefix' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 56
+        },
+        "start": {
+          "character": 0,
+          "line": 56
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 57
+        },
+        "start": {
+          "character": 0,
+          "line": 57
+        }
+      },
+      "message": "'OrientedOperators.FullInsertion.insertion_commutes' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 57
+        },
+        "start": {
+          "character": 0,
+          "line": 57
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 58
+        },
+        "start": {
+          "character": 0,
+          "line": 58
+        }
+      },
+      "message": "'OrientedOperators.FullInsertion.insertion_commutes_on_polynomials' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 58
+        },
+        "start": {
+          "character": 0,
+          "line": 58
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 59
+        },
+        "start": {
+          "character": 0,
+          "line": 59
+        }
+      },
+      "message": "'OrientedOperators.FullInsertion.insertion_is_derivation_plus_right' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 59
+        },
+        "start": {
+          "character": 0,
+          "line": 59
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 60
+        },
+        "start": {
+          "character": 0,
+          "line": 60
+        }
+      },
+      "message": "'OrientedOperators.FullInsertion.derivation_product_rule' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 60
+        },
+        "start": {
+          "character": 0,
+          "line": 60
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    }
+  ]
+}

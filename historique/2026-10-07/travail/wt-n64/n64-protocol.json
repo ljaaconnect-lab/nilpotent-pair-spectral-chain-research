@@ -1,0 +1,38 @@
+{
+  "parent": "n61",
+  "base_ref": "2a3a6830f57eb8df200f920ec5058214bec5c32e",
+  "hypothesis": "A single local Pfaffian computes c(S); fixed global aggregation is a separate obligation",
+  "dev_boundary": "All partial matchings for n=2,3,4,5; compare n61 recurrence, explicit Mobius sum, local Pfaffian, and charged trace recurrence",
+  "test_boundary": "Coordinator-only fixed fresh permutations and partial matchings at n=6,7,8; independent exact evaluator, committed source before boundary read",
+  "metric": "fraction of four local coefficient identities checked; no local score proves a global polynomial extractor",
+  "gate_count": "Count all add/mul of symbolic-entry trace Pfaffian recurrence; fixed rational divisions lower to rational-literal multiplication. Construction operations reported separately from scalar output gates.",
+  "formal_status": "Local Pfaffian formula remains informal until a complete generic Lean dependency chain exists",
+  "forbidden": [
+    "counterexample generation",
+    "lower-bound experiments",
+    "free contraction",
+    "claiming S-dependent matrices form one global representation"
+  ],
+  "root_conjecture_verified": false,
+  "frozen_extension": {
+    "node": "n64",
+    "artifact_version": "n64-fixed-ports-v1",
+    "fixed_matrix": "Two interleaved ports a_e,b_e per lexicographic edge e, then dummy g. K(a_e,b_e)=-1, K(a_g,b_g)=1; K(a_e,a_f)=1 for e<f; K(b_e,b_f)=-sgn(col_f-col_e); off-edge a/b couplings zero; dummy column larger than every real column. c(S)=Pf K[ports(S)+ports(g)]. Universe order 2n^2+2 is fixed before S.",
+    "n_values": [2,3,4,5],
+    "matching_counts": [7,34,209,1546],
+    "four_assertions_per_matching": [
+      "n61 recurrence coefficient equals independent Boolean Mobius sum",
+      "local Pfaffian equals Boolean Mobius sum",
+      "fixed paired principal Pfaffian equals Boolean Mobius sum",
+      "charged scalar trace compiler evaluates both Pfaffians exactly"
+    ],
+    "frozen_denominator": 7184,
+    "time_limit_per_validation_seconds": 120,
+    "trace_compiler": "Upper skew entries are formal input leaves; construct lower entries by negation gates, B=-J*A by a charged row negation/permutation, shared dense powers B^i, traces, and q_k=(1/(2k))*sum_i (-1)^(i-1) tr(B^i)q_(k-i). q0=1, output q_(d/2). No free extraction, Pfaffian, or derivative primitive.",
+    "trace_gate_formula": "d=2m: d(d-1)/2+d^2/2+(m-1)(2d^3-d^2)+m(d-1)+floor(m/2)+m(m+1)",
+    "validation_strategy": "Enumerate every matching. Cache values by its canonical column-order permutation only after deriving that both concrete matrices depend on that pattern; actual circuit shapes, binary operations and input assignments remain explicit. This cache is finite validation reuse, not a global contraction algorithm.",
+    "aggregation_scope": "Read-only mathematical examination of synchronized paired subsets; no negative experiment or arbitrary unpaired-subset oracle is run.",
+    "held_out_access": false,
+    "shared_arbor_writes": false
+  }
+}

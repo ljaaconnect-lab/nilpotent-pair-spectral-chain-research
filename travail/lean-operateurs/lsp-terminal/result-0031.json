@@ -1,0 +1,83 @@
+{
+  "file": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\fusion-ntt\\TerminalDifference.lean",
+  "version": 31,
+  "completed": true,
+  "seconds": 1.375,
+  "diagnostics": [
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 68
+        },
+        "start": {
+          "character": 0,
+          "line": 68
+        }
+      },
+      "message": "'OrientedOperators.TerminalDifference.coeff_product_below_length' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 68
+        },
+        "start": {
+          "character": 0,
+          "line": 68
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 69
+        },
+        "start": {
+          "character": 0,
+          "line": 69
+        }
+      },
+      "message": "'OrientedOperators.TerminalDifference.coeff_product_at_length' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 69
+        },
+        "start": {
+          "character": 0,
+          "line": 69
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    },
+    {
+      "fullRange": {
+        "end": {
+          "character": 6,
+          "line": 70
+        },
+        "start": {
+          "character": 0,
+          "line": 70
+        }
+      },
+      "message": "'OrientedOperators.TerminalDifference.coeff_transport_differences' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]",
+      "range": {
+        "end": {
+          "character": 6,
+          "line": 70
+        },
+        "start": {
+          "character": 0,
+          "line": 70
+        }
+      },
+      "severity": 3,
+      "source": "Lean 4"
+    }
+  ]
+}

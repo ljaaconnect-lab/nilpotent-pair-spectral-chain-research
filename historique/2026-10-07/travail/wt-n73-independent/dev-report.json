@@ -1,0 +1,128 @@
+{
+  "protocol": "simulation-v1",
+  "split": "dev",
+  "score": 1.0,
+  "passed": 36,
+  "total": 36,
+  "evaluator_sha256": "2c393f62241c992bc816d717a2b15fe5f368e2c9064fa1b92f566020dc5dfa1c",
+  "cases": [
+    {
+      "case": "n2-identity",
+      "n": 2,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 48,
+      "K": 3,
+      "hhat_terms": 6
+    },
+    {
+      "case": "n2-cyclic",
+      "n": 2,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 48,
+      "K": 3,
+      "hhat_terms": 6
+    },
+    {
+      "case": "n2-vandermonde",
+      "n": 2,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 48,
+      "K": 3,
+      "hhat_terms": 6
+    },
+    {
+      "case": "n3-identity",
+      "n": 3,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 198,
+      "K": 26,
+      "hhat_terms": 38
+    },
+    {
+      "case": "n3-cyclic",
+      "n": 3,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 198,
+      "K": 26,
+      "hhat_terms": 38
+    },
+    {
+      "case": "n3-vandermonde",
+      "n": 3,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 198,
+      "K": 26,
+      "hhat_terms": 38
+    },
+    {
+      "case": "n4-identity",
+      "n": 4,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 568,
+      "K": 255,
+      "hhat_terms": 578
+    },
+    {
+      "case": "n4-cyclic",
+      "n": 4,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 568,
+      "K": 255,
+      "hhat_terms": 578
+    },
+    {
+      "case": "n4-vandermonde",
+      "n": 4,
+      "checks": {
+        "central_exact": true,
+        "full_exact": true,
+        "index_exact": true,
+        "gate_bound": true
+      },
+      "gates": 568,
+      "K": 255,
+      "hhat_terms": 578
+    }
+  ],
+  "scope": "Finite exact checks; no proof of asymptotic circuit complexity."
+}

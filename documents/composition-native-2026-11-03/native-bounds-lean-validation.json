@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "date": "2026-11-03",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\composition-native-2026-11-03\\NativeCompositionBounds.lean"
+  ],
+  "source": "NativeCompositionBounds.lean",
+  "source_sha256": "0bb0960ddeb106a1b6c587187bfb5ee3cb7b501aa0da478e0aa8b706fb6e9a30",
+  "replay_sha256": "2d01938cc931a7a6ce2a1c126c89566c836633e89480035b4af49405a78fe802",
+  "environment_helper": "D:\\Codex\\Projets\\annihilation-collision-orientee\\etudes\\2026-11-01\\lean-operateurs\\lean_check.py",
+  "environment_helper_sha256": "a5e21cfb624e5258009425f6c6eecaf0eb1b529d953bbb2607717dab44a439ad",
+  "source_changed_during_check": false,
+  "exit_code": 0,
+  "seconds": 17.016,
+  "stdout": "'NativeCompositionBounds.typed_with_spectral_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativeCompositionBounds.representative_with_spectral_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativeCompositionBounds.representative_preparation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativeCompositionBounds.representative_routed_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NativeCompositionBounds.typed_routed_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "theorems": [
+    "typed_with_spectral_bound",
+    "representative_with_spectral_bound",
+    "representative_preparation_bound",
+    "representative_routed_bound",
+    "typed_routed_bound"
+  ],
+  "all_theorem_axioms_printed": true,
+  "source_has_no_placeholders_or_added_axioms": true,
+  "scope": "Natural-number inequalities conditional on externally justified gate counts.",
+  "numeric_hypotheses": [
+    "n >= 1",
+    "N <= 2*n",
+    "ell <= n",
+    "eps <= 1"
+  ],
+  "bounds": {
+    "typed_with_spectral": "6*n^2+n-2+eps+(2*N*ell+3*N-3) <= 17*n^2",
+    "typed_routed": "6*n^2+n-2+eps <= 7*n^2",
+    "representative_preparation": "P = 4*n^2-2+2*n*N*ell+3*n*N <= 18*n^3",
+    "representative_routed": "P+eps <= 18*n^3+1",
+    "representative_with_spectral": "P+eps+(2*N*ell+3*N-3) <= 29*n^3"
+  },
+  "gate_count_hypotheses_are_external": true,
+  "compiler_formalized": false,
+  "gate_count_derivation_from_program_formalized": false,
+  "typed_algebra_gates_identified_with_scalar_gates": false,
+  "oriented_product_scalarization_proved": false,
+  "auxiliary_variables_eliminated": false,
+  "complete_scalar_chain_polynomial_bound_proved": false
+}

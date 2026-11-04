@@ -1,0 +1,11 @@
+# n73 actual closed subset baseline
+
+The complete accepted source `ActualClosedSubsetTransfer.lean` contains 18 kernel-verified theorems. The frozen contract covers the actual delta initialization, the explicit row recurrence over U.erase j, the coefficient invariant for every n,k,U, the permutation terminal for arbitrary B, its marked central specialization for n>=2, and the exact cardinal 2^n of the state family. `marked_target` also identifies the marked permanent for every n directly.
+
+Run `python verify_n73.py` to audit exact-source evidence without invoking Lean. `python compile_n73.py` performs a separately counted complete invocation, using the pinned absolute Lean 4.34.1 executable and all three prepared environment entries. It prefixes this checkout and the immutable delivered proof cache to LEAN_PATH, writes a unique source snapshot and diagnostics, emits the local olean and waits for the actual final exit. Every invocation counts toward its cap of eight; the lock prevents overlapping runners.
+
+Development used four complete compiler invocations: exits 1,0,0,0. No probe or dependency compiler was used. The first failed membership subgoal resulted from simp unfolding a permutation's bijectivity; the next source supplied the genuine bijectivity proof directly. The hardest terminal-coefficient branch was verified before the true recurrence invariant was joined to it. The final source has no compiler warning, placeholder, custom axiom or native decision. Its audit permits only propext, Classical.choice and Quot.sound.
+
+The selected LEAP graph is recorded in `n73-leap-progress.json`, including exact source statements and an acyclicity check. Old delivered source hashes are checked against the coordinator replay before import; their compiled cache bytes and direct Mathlib import bytes are frozen. The cache and delivered outputs were read only, and no held-out test was accessed.
+
+Baseline score is 4/4. Conjecture 1.5 credit is zero. The state definition itself contains no coefficient extraction or supplied terminal quantity; coefficients appear only in the proved invariant. The exact family is exponential in n. Polynomial scalar compression, its resource bounds and an operational uniform polynomial constructor remain open.

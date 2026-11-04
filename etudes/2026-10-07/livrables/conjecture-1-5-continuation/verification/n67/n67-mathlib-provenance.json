@@ -1,0 +1,31 @@
+{
+  "modules": {
+    "Mathlib.Data.Matrix.Basic": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\Data\\Matrix\\Basic.lean",
+      "source_sha256": "fd8cab9e5ab6568a12306feab85f74b81487d99b1b3fac6769e4cd06c1d7722c",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Data\\Matrix\\Basic.olean",
+      "compiled_sha256": "470e120b05e9734139f6f8beb600c9d4f6361ad5504dfe4d47883e92575b98ac"
+    },
+    "Mathlib.Algebra.Ring.Rat": {
+      "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\Mathlib\\Algebra\\Ring\\Rat.lean",
+      "source_sha256": "79f6035d695e48393153602fb2bbd2c858621816a9bc3b0b82453b69ca7db6ea",
+      "compiled_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean\\Mathlib\\Algebra\\Ring\\Rat.olean",
+      "compiled_sha256": "b8c9f0ceda29696d45ff7ac22363649d10eb616da863839f9e788671dead1a37"
+    }
+  },
+  "compiler": {
+    "path": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "sha256": "fcc4a10077d5fdd575592cea5f2981c91cbd77c490c80bc74407908e57e8b87b",
+    "version": "Lean 4.34.1"
+  },
+  "environment_source": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib-environment.json",
+  "environment_sha256": "966794f117d8240462ec155c6b3d1c3096d02c679eb5d05256df07eecfe2dd12",
+  "decide_kernel_implementation": {
+    "source_path": "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\src\\lean\\Lean\\Elab\\Tactic\\Decide.lean",
+    "source_sha256": "99e84ce67778157e77d7261aa25b64ed72da16e9d1f60031cf2aa26f5ea6ee68",
+    "method": "decide +kernel uses doKernel/mkAuxLemma; no native reduction or additional axiom"
+  },
+  "mathlib_cache_mutated": false,
+  "mathlib_git_revision": null,
+  "revision_note": "Read-only acquired Mathlib sources and compiled files identified by hashes; no separate Mathlib Git HEAD asserted"
+}

@@ -1,0 +1,147 @@
+{
+  "protocol": "positive-transfer-heldout-v1",
+  "split": "test",
+  "passed": 40,
+  "total": 40,
+  "cases": [
+    {
+      "case": "n2-heldout-0",
+      "n": 2,
+      "checks": {
+        "matrix_K": true,
+        "matrix_n": true,
+        "row_chain": true,
+        "subset_dp": true,
+        "tensor": true
+      },
+      "gates": {
+        "matrix_K": 17,
+        "matrix_n": 13,
+        "row_chain": 12,
+        "subset_dp": 12
+      }
+    },
+    {
+      "case": "n2-heldout-1",
+      "n": 2,
+      "checks": {
+        "matrix_K": true,
+        "matrix_n": true,
+        "row_chain": true,
+        "subset_dp": true,
+        "tensor": true
+      },
+      "gates": {
+        "matrix_K": 17,
+        "matrix_n": 13,
+        "row_chain": 12,
+        "subset_dp": 12
+      }
+    },
+    {
+      "case": "n3-heldout-0",
+      "n": 3,
+      "checks": {
+        "matrix_K": true,
+        "matrix_n": true,
+        "row_chain": true,
+        "subset_dp": true,
+        "tensor": true
+      },
+      "gates": {
+        "matrix_K": 83,
+        "matrix_n": 51,
+        "row_chain": 34,
+        "subset_dp": 34
+      }
+    },
+    {
+      "case": "n3-heldout-1",
+      "n": 3,
+      "checks": {
+        "matrix_K": true,
+        "matrix_n": true,
+        "row_chain": true,
+        "subset_dp": true,
+        "tensor": true
+      },
+      "gates": {
+        "matrix_K": 83,
+        "matrix_n": 51,
+        "row_chain": 34,
+        "subset_dp": 34
+      }
+    },
+    {
+      "case": "n4-heldout-0",
+      "n": 4,
+      "checks": {
+        "matrix_K": true,
+        "matrix_n": true,
+        "row_chain": true,
+        "subset_dp": true,
+        "tensor": true
+      },
+      "gates": {
+        "matrix_K": 357,
+        "matrix_n": 150,
+        "row_chain": 80,
+        "subset_dp": 80
+      }
+    },
+    {
+      "case": "n4-heldout-1",
+      "n": 4,
+      "checks": {
+        "matrix_K": true,
+        "matrix_n": true,
+        "row_chain": true,
+        "subset_dp": true,
+        "tensor": true
+      },
+      "gates": {
+        "matrix_K": 357,
+        "matrix_n": 150,
+        "row_chain": 80,
+        "subset_dp": 80
+      }
+    },
+    {
+      "case": "n5-positive-validation-0",
+      "n": 5,
+      "checks": {
+        "matrix_K": true,
+        "matrix_n": true,
+        "row_chain": true,
+        "subset_dp": true,
+        "tensor": true
+      },
+      "gates": {
+        "matrix_K": 975,
+        "matrix_n": 511,
+        "row_chain": 178,
+        "subset_dp": 178
+      }
+    },
+    {
+      "case": "n5-positive-validation-1",
+      "n": 5,
+      "checks": {
+        "matrix_K": true,
+        "matrix_n": true,
+        "row_chain": true,
+        "subset_dp": true,
+        "tensor": true
+      },
+      "gates": {
+        "matrix_K": 975,
+        "matrix_n": 511,
+        "row_chain": 178,
+        "subset_dp": 178
+      }
+    }
+  ],
+  "boundary_sha256": "f354ae56cf921e8fea3714f289a27ffa0683260730c1cb22754fd8c849267091",
+  "scope": "Independent exact formal-z checks. No formal proof or polynomial complexity claim.",
+  "score": 1.0
+}

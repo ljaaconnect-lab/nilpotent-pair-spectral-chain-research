@@ -1,0 +1,627 @@
+{
+  "protocol_sha256": "6d293b98e6104c4011c9ba2d026376e51a040d7d038f284255ff1f7476460148",
+  "complete_rounds": 12,
+  "tactic_probes": 0,
+  "rounds": [
+    {
+      "round": 1,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "d1a8046ec671d46d49e063ee637f3e4b94059e3561ac4e6d749297814ff385db",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'ReverseVandermonde.reverse_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [
+        "ReverseVandermonde.reverse_vandermonde"
+      ],
+      "axiom_audit": {
+        "ReverseVandermonde.reverse_vandermonde": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unapproved_axioms": {}
+    },
+    {
+      "round": 2,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "e2d807ffbf7b97ecac97337ee3447c3c131de34a56bfadb3d1fc602f35f16d2c",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'ReverseVandermonde.reverse_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_matrix_as_projective' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [
+        "ReverseVandermonde.reverse_matrix_as_projective",
+        "ReverseVandermonde.reverse_vandermonde"
+      ],
+      "axiom_audit": {
+        "ReverseVandermonde.reverse_vandermonde": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_matrix_as_projective": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "unapproved_axioms": {}
+    },
+    {
+      "round": 3,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "f273bf40ef0c09232004bb95e95a7c2b48bd3dc9d9a5c41a721b91a6588baf62",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'ReverseVandermonde.reverse_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_matrix_as_projective' depends on axioms: [propext, Quot.sound]\n'ReverseVandermonde.power_entries' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [
+        "ReverseVandermonde.reverse_matrix_as_projective",
+        "ReverseVandermonde.reverse_vandermonde",
+        "ReverseVandermonde.power_entries"
+      ],
+      "axiom_audit": {
+        "ReverseVandermonde.reverse_vandermonde": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_matrix_as_projective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.power_entries": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unapproved_axioms": {}
+    },
+    {
+      "round": 4,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "b6da09c1af897cd61cdbb7fc0e4141e0ab8ca28eed6c6ee402c2c5a797b0ea61",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'ReverseVandermonde.reverse_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_matrix_as_projective' depends on axioms: [propext, Quot.sound]\n'ReverseVandermonde.power_entries' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_vandermonde_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [
+        "ReverseVandermonde.reverse_matrix_as_projective",
+        "ReverseVandermonde.reverse_vandermonde",
+        "ReverseVandermonde.power_entries",
+        "ReverseVandermonde.reverse_vandermonde_polynomial"
+      ],
+      "axiom_audit": {
+        "ReverseVandermonde.reverse_vandermonde": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_matrix_as_projective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.power_entries": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_vandermonde_polynomial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unapproved_axioms": {}
+    },
+    {
+      "round": 5,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "85b0b2d4dc86e367d900317ffd0b1aa392c8eb8ea7fb6d55a24c9e65f0d7382b",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'ReverseVandermonde.reverse_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_matrix_as_projective' depends on axioms: [propext, Quot.sound]\n'ReverseVandermonde.power_entries' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_vandermonde_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.complementary_exponent' depends on axioms: [propext]\n",
+      "stderr": "",
+      "accepted": [
+        "ReverseVandermonde.reverse_matrix_as_projective",
+        "ReverseVandermonde.reverse_vandermonde",
+        "ReverseVandermonde.power_entries",
+        "ReverseVandermonde.reverse_vandermonde_polynomial",
+        "ReverseVandermonde.complementary_exponent"
+      ],
+      "axiom_audit": {
+        "ReverseVandermonde.reverse_vandermonde": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_matrix_as_projective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.power_entries": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_vandermonde_polynomial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.complementary_exponent": [
+          "propext"
+        ]
+      },
+      "unapproved_axioms": {}
+    },
+    {
+      "round": 6,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "8c5d72fba7adf4f711f0abaae22f8e374208dd2603a2a3a71be5fc3403b7c218",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'ReverseVandermonde.reverse_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_matrix_as_projective' depends on axioms: [propext, Quot.sound]\n'ReverseVandermonde.power_entries' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_vandermonde_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.complementary_exponent' depends on axioms: [propext]\n'ReverseVandermonde.paper_complementary_det' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [
+        "ReverseVandermonde.reverse_matrix_as_projective",
+        "ReverseVandermonde.reverse_vandermonde",
+        "ReverseVandermonde.power_entries",
+        "ReverseVandermonde.reverse_vandermonde_polynomial",
+        "ReverseVandermonde.complementary_exponent",
+        "ReverseVandermonde.paper_complementary_det"
+      ],
+      "axiom_audit": {
+        "ReverseVandermonde.reverse_vandermonde": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_matrix_as_projective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.power_entries": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_vandermonde_polynomial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.complementary_exponent": [
+          "propext"
+        ],
+        "ReverseVandermonde.paper_complementary_det": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unapproved_axioms": {}
+    },
+    {
+      "round": 7,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "2bc1adf254a570fd591ebdbffb2ca2d69c8c1e9e6bb6c144060c544c5f971d0b",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'ReverseVandermonde.reverse_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_matrix_as_projective' depends on axioms: [propext, Quot.sound]\n'ReverseVandermonde.power_entries' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_vandermonde_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.complementary_exponent' depends on axioms: [propext]\n'ReverseVandermonde.paper_complementary_det' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.unit_monomial_pow' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [
+        "ReverseVandermonde.reverse_matrix_as_projective",
+        "ReverseVandermonde.reverse_vandermonde",
+        "ReverseVandermonde.power_entries",
+        "ReverseVandermonde.reverse_vandermonde_polynomial",
+        "ReverseVandermonde.complementary_exponent",
+        "ReverseVandermonde.paper_complementary_det"
+      ],
+      "axiom_audit": {
+        "ReverseVandermonde.reverse_vandermonde": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_matrix_as_projective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.power_entries": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_vandermonde_polynomial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.complementary_exponent": [
+          "propext"
+        ],
+        "ReverseVandermonde.paper_complementary_det": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.unit_monomial_pow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unapproved_axioms": {}
+    },
+    {
+      "round": 8,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "a3fba1c853c66698730fb3dba151df98345820fa4cebaf27048e9f03d323216b",
+      "banned_tokens": [],
+      "exit_code": 1,
+      "stdout": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean:54:74: error: unsolved goals\nR : Type u_1\ninst\u271d : CommRing R\nn : \u2115\n\u22a2 (fun i j => Polynomial.X ^ (n ^ \u2191i * (n - 1 - \u2191j))) = Matrix.of fun i j => Polynomial.X ^ (n ^ \u2191i * (n - 1 - \u2191j))\n'ReverseVandermonde.reverse_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_matrix_as_projective' depends on axioms: [propext, Quot.sound]\n'ReverseVandermonde.power_entries' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_vandermonde_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.complementary_exponent' depends on axioms: [propext]\n'ReverseVandermonde.paper_complementary_det' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.unit_monomial_pow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.paper_monomial_matrix_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [],
+      "axiom_audit": {
+        "ReverseVandermonde.reverse_vandermonde": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_matrix_as_projective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.power_entries": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_vandermonde_polynomial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.complementary_exponent": [
+          "propext"
+        ],
+        "ReverseVandermonde.paper_complementary_det": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.unit_monomial_pow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.paper_monomial_matrix_eq": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unapproved_axioms": {
+        "ReverseVandermonde.paper_monomial_matrix_eq": [
+          "sorryAx"
+        ]
+      }
+    },
+    {
+      "round": 9,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "b45c01c3942beb886fcb5a47ca89ae7e817ad77ffb68fd2e45379cbe6397c88e",
+      "banned_tokens": [],
+      "exit_code": 1,
+      "stdout": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean:54:74: error: unsolved goals\nR : Type u_1\ninst\u271d : CommRing R\nn : \u2115\n\u22a2 (fun i j => Polynomial.X ^ (n ^ \u2191i * (n - 1 - \u2191j))) =\n    (Equiv.refl (Fin n \u2192 Fin n \u2192 Polynomial R)) fun i j => Polynomial.X ^ (n ^ \u2191i * (n - 1 - \u2191j))\n'ReverseVandermonde.reverse_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_matrix_as_projective' depends on axioms: [propext, Quot.sound]\n'ReverseVandermonde.power_entries' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_vandermonde_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.complementary_exponent' depends on axioms: [propext]\n'ReverseVandermonde.paper_complementary_det' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.unit_monomial_pow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.paper_monomial_matrix_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [],
+      "axiom_audit": {
+        "ReverseVandermonde.reverse_vandermonde": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_matrix_as_projective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.power_entries": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_vandermonde_polynomial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.complementary_exponent": [
+          "propext"
+        ],
+        "ReverseVandermonde.paper_complementary_det": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.unit_monomial_pow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.paper_monomial_matrix_eq": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unapproved_axioms": {
+        "ReverseVandermonde.paper_monomial_matrix_eq": [
+          "sorryAx"
+        ]
+      }
+    },
+    {
+      "round": 10,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "38d13b7ee7c0e30a8fc2ff51507a82d0b902e56fe053ffc16b31fd872b175e12",
+      "banned_tokens": [],
+      "exit_code": 1,
+      "stdout": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean:54:74: error: unsolved goals\nR : Type u_1\ninst\u271d : CommRing R\nn : \u2115\n\u22a2 (fun i j => Polynomial.X ^ (n ^ \u2191i * (n - 1 - \u2191j))) =\n    (Equiv.refl (Fin n \u2192 Fin n \u2192 Polynomial R)) fun i j => Polynomial.X ^ (n ^ \u2191i * (n - 1 - \u2191j))\nC:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean:55:67: warning: This simp argument is unused:\n  Equiv.refl_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [unit_monomial_pow, complementary_exponent, Matrix.of]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n'ReverseVandermonde.reverse_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_matrix_as_projective' depends on axioms: [propext, Quot.sound]\n'ReverseVandermonde.power_entries' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_vandermonde_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.complementary_exponent' depends on axioms: [propext]\n'ReverseVandermonde.paper_complementary_det' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.unit_monomial_pow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.paper_monomial_matrix_eq' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [],
+      "axiom_audit": {
+        "ReverseVandermonde.reverse_vandermonde": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_matrix_as_projective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.power_entries": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_vandermonde_polynomial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.complementary_exponent": [
+          "propext"
+        ],
+        "ReverseVandermonde.paper_complementary_det": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.unit_monomial_pow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.paper_monomial_matrix_eq": [
+          "propext",
+          "sorryAx",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unapproved_axioms": {
+        "ReverseVandermonde.paper_monomial_matrix_eq": [
+          "sorryAx"
+        ]
+      }
+    },
+    {
+      "round": 11,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "4ae73927271f1f4a1c33f4763dcde098ea7d2b155abeaa2519bddb35760aff56",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'ReverseVandermonde.reverse_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_matrix_as_projective' depends on axioms: [propext, Quot.sound]\n'ReverseVandermonde.power_entries' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_vandermonde_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.complementary_exponent' depends on axioms: [propext]\n'ReverseVandermonde.paper_complementary_det' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.unit_monomial_pow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.paper_monomial_matrix_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [
+        "ReverseVandermonde.reverse_matrix_as_projective",
+        "ReverseVandermonde.reverse_vandermonde",
+        "ReverseVandermonde.power_entries",
+        "ReverseVandermonde.reverse_vandermonde_polynomial",
+        "ReverseVandermonde.complementary_exponent",
+        "ReverseVandermonde.paper_complementary_det"
+      ],
+      "axiom_audit": {
+        "ReverseVandermonde.reverse_vandermonde": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_matrix_as_projective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.power_entries": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_vandermonde_polynomial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.complementary_exponent": [
+          "propext"
+        ],
+        "ReverseVandermonde.paper_complementary_det": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.unit_monomial_pow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.paper_monomial_matrix_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unapproved_axioms": {}
+    },
+    {
+      "round": 12,
+      "command": [
+        "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+        "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58\\ReverseVandermonde.lean"
+      ],
+      "lean_path": "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n58;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Cli\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\batteries\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\Qq\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\aesop\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\proofwidgets\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\importGraph\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\LeanSearchClient\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\packages\\plausible\\.lake\\build\\lib\\lean;C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\mathlib\\.lake\\build\\lib\\lean;c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\lib\\lean",
+      "lean_sysroot": "c:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1",
+      "timeout_seconds": 180,
+      "source_sha256": "457aacf7229668489f1750f68ffdee9e7a497773e9ed7b60ba80135486f6c88a",
+      "banned_tokens": [],
+      "exit_code": 0,
+      "stdout": "'ReverseVandermonde.reverse_vandermonde' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_matrix_as_projective' depends on axioms: [propext, Quot.sound]\n'ReverseVandermonde.power_entries' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.reverse_vandermonde_polynomial' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.complementary_exponent' depends on axioms: [propext]\n'ReverseVandermonde.paper_complementary_det' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.unit_monomial_pow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.paper_monomial_matrix_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReverseVandermonde.paper_monomial_det' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": "",
+      "accepted": [
+        "ReverseVandermonde.reverse_matrix_as_projective",
+        "ReverseVandermonde.reverse_vandermonde",
+        "ReverseVandermonde.power_entries",
+        "ReverseVandermonde.reverse_vandermonde_polynomial",
+        "ReverseVandermonde.complementary_exponent",
+        "ReverseVandermonde.paper_complementary_det"
+      ],
+      "axiom_audit": {
+        "ReverseVandermonde.reverse_vandermonde": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_matrix_as_projective": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.power_entries": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.reverse_vandermonde_polynomial": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.complementary_exponent": [
+          "propext"
+        ],
+        "ReverseVandermonde.paper_complementary_det": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.unit_monomial_pow": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.paper_monomial_matrix_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReverseVandermonde.paper_monomial_det": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "unapproved_axioms": {}
+    }
+  ],
+  "accepted": [
+    "ReverseVandermonde.reverse_matrix_as_projective",
+    "ReverseVandermonde.reverse_vandermonde",
+    "ReverseVandermonde.power_entries",
+    "ReverseVandermonde.reverse_vandermonde_polynomial",
+    "ReverseVandermonde.complementary_exponent",
+    "ReverseVandermonde.paper_complementary_det"
+  ],
+  "dev_score": 1.0,
+  "obligation_count": 6,
+  "root_conjecture_verified": false
+}

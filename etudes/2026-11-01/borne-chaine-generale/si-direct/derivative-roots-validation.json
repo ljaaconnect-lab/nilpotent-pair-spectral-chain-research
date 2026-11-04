@@ -1,0 +1,205 @@
+{
+  "scope": "Existing direct compiler only; finite structural checks, not a general-circuit lower bound",
+  "general_claim": "S_I^(1)(2m) >= binomial(2m,m) >= 2^m for m>=2",
+  "proof_note": "CROISSANCE_DAG_DIRECT.md",
+  "compiler": "etudes/2026-11-01/raccord-initialisation/spectral/reprise-globale/shared_operator_dag.py",
+  "compiler_sha256": "a17cbcdae56dc3338ae46d42239d2a1a99e0b169865f16fc62f5c83b31cb3b06",
+  "fused_compiler_source": "etudes/2026-11-01/fusion-double-log/fused_circuit.py",
+  "fused_compiler_sha256": "42fc48847aef4f8b19490f0e2ee3055818e9ee3d114e13371855eb23a2be0515",
+  "verifier_sha256": "f190eccf3087c4d3db779a15e4b875270929de58314b231f3645b2b2006ebd81",
+  "proof_note_sha256": "922c80d3b82d8d5f39336039f694eb31a8e8b92b84be785cf54862182e99f8be",
+  "cases": [
+    {
+      "n": 4,
+      "m": 2,
+      "Q": 97,
+      "I": [
+        1,
+        2
+      ],
+      "initialization": "B_ij=(1+a_ij^2)*z^(2^(i*n+j)), formal a,z",
+      "checkpoints": [
+        {
+          "checkpoint": "first_m_factors",
+          "scalar_gates_after_s_equals_one": 316,
+          "witnesses_expected": 6,
+          "distinct_witness_roots": 6,
+          "reachable_before_substitution": 6,
+          "reachable_after_substitution": 6,
+          "query_allocations_before_substitution": 0,
+          "query_allocations_after_substitution": 0,
+          "witnesses_are_s_free_arithmetic_gates": true,
+          "witness_root_ids": [
+            288,
+            297,
+            305,
+            386,
+            394,
+            470
+          ]
+        },
+        {
+          "checkpoint": "full_I_prefix",
+          "scalar_gates_after_s_equals_one": 316,
+          "witnesses_expected": 6,
+          "distinct_witness_roots": 6,
+          "reachable_before_substitution": 6,
+          "reachable_after_substitution": 6,
+          "query_allocations_before_substitution": 0,
+          "query_allocations_after_substitution": 0,
+          "witnesses_are_s_free_arithmetic_gates": true,
+          "witness_root_ids": [
+            288,
+            297,
+            305,
+            386,
+            394,
+            470
+          ]
+        }
+      ],
+      "semantic_separator_inputs": 6,
+      "semantic_separation_checks": 36,
+      "pass": true,
+      "fresh_without_intermediate_substitution": {
+        "checkpoint": "full_I_prefix",
+        "scalar_gates_after_s_equals_one": 316,
+        "witnesses_expected": 6,
+        "distinct_witness_roots": 6,
+        "reachable_before_substitution": 6,
+        "reachable_after_substitution": 6,
+        "query_allocations_before_substitution": 0,
+        "query_allocations_after_substitution": 0,
+        "witnesses_are_s_free_arithmetic_gates": true,
+        "witness_root_ids": [
+          288,
+          297,
+          305,
+          386,
+          394,
+          470
+        ]
+      }
+    },
+    {
+      "n": 6,
+      "m": 3,
+      "Q": 97,
+      "I": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "initialization": "B_ij=(1+a_ij^2)*z^(2^(i*n+j)), formal a,z",
+      "checkpoints": [
+        {
+          "checkpoint": "first_m_factors",
+          "scalar_gates_after_s_equals_one": 8164,
+          "witnesses_expected": 20,
+          "distinct_witness_roots": 20,
+          "reachable_before_substitution": 20,
+          "reachable_after_substitution": 20,
+          "query_allocations_before_substitution": 0,
+          "query_allocations_after_substitution": 0,
+          "witnesses_are_s_free_arithmetic_gates": true,
+          "witness_root_ids": [
+            7951,
+            9689,
+            11282,
+            12800,
+            9783,
+            11378,
+            12896,
+            11471,
+            12989,
+            12524,
+            9795,
+            11390,
+            12908,
+            11483,
+            13001,
+            12538,
+            11496,
+            13014,
+            12553,
+            12567
+          ]
+        },
+        {
+          "checkpoint": "full_I_prefix",
+          "scalar_gates_after_s_equals_one": 20278,
+          "witnesses_expected": 20,
+          "distinct_witness_roots": 20,
+          "reachable_before_substitution": 20,
+          "reachable_after_substitution": 20,
+          "query_allocations_before_substitution": 0,
+          "query_allocations_after_substitution": 0,
+          "witnesses_are_s_free_arithmetic_gates": true,
+          "witness_root_ids": [
+            7951,
+            9689,
+            11282,
+            12800,
+            9783,
+            11378,
+            12896,
+            11471,
+            12989,
+            12524,
+            9795,
+            11390,
+            12908,
+            11483,
+            13001,
+            12538,
+            11496,
+            13014,
+            12553,
+            12567
+          ]
+        }
+      ],
+      "semantic_separator_inputs": 20,
+      "semantic_separation_checks": 400,
+      "pass": true,
+      "fresh_without_intermediate_substitution": {
+        "checkpoint": "full_I_prefix",
+        "scalar_gates_after_s_equals_one": 20278,
+        "witnesses_expected": 20,
+        "distinct_witness_roots": 20,
+        "reachable_before_substitution": 20,
+        "reachable_after_substitution": 20,
+        "query_allocations_before_substitution": 0,
+        "query_allocations_after_substitution": 0,
+        "witnesses_are_s_free_arithmetic_gates": true,
+        "witness_root_ids": [
+          7951,
+          9689,
+          11282,
+          12800,
+          9783,
+          11378,
+          12896,
+          11471,
+          12989,
+          12524,
+          9795,
+          11390,
+          12908,
+          11483,
+          13001,
+          12538,
+          11496,
+          13014,
+          12553,
+          12567
+        ]
+      }
+    }
+  ],
+  "pass": true,
+  "lean_status": "The general compiler reachability theorem is not formalized in Lean."
+}

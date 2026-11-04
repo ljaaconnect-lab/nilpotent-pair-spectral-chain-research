@@ -1,0 +1,258 @@
+{
+  "protocol": "structural-dev-v1",
+  "split": "dev",
+  "score": 1.0,
+  "passed": 9,
+  "total": 9,
+  "evaluator_sha256": "c8991cc28d9649b7eb67e7ddb958c24934e7891d16b62d1e8a7b9eaf0c0636d9",
+  "artifact_sha256": "f260c690c292cf92335f5cc7036a94909f9504d84ae540a9d1dd5c730496471c",
+  "cases": [
+    {
+      "case": "n2-identity",
+      "n": 2,
+      "nodes": [
+        0,
+        1,
+        4
+      ],
+      "samples": [
+        "2",
+        "5",
+        "26"
+      ],
+      "expected": 1,
+      "recovered": "1",
+      "exact": true,
+      "crt_samples_exact": true
+    },
+    {
+      "case": "n2-cyclic",
+      "n": 2,
+      "nodes": [
+        0,
+        1,
+        4
+      ],
+      "samples": [
+        "2",
+        "5",
+        "26"
+      ],
+      "expected": 1,
+      "recovered": "1",
+      "exact": true,
+      "crt_samples_exact": true
+    },
+    {
+      "case": "n2-band",
+      "n": 2,
+      "nodes": [
+        0,
+        1,
+        4
+      ],
+      "samples": [
+        "2",
+        "8",
+        "50"
+      ],
+      "expected": 2,
+      "recovered": "2",
+      "exact": true,
+      "crt_samples_exact": true
+    },
+    {
+      "case": "n3-identity",
+      "n": 3,
+      "nodes": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "samples": [
+        "6",
+        "16",
+        "142",
+        "1032"
+      ],
+      "expected": 1,
+      "recovered": "1",
+      "exact": true,
+      "crt_samples_exact": true
+    },
+    {
+      "case": "n3-cyclic",
+      "n": 3,
+      "nodes": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "samples": [
+        "6",
+        "16",
+        "142",
+        "1032"
+      ],
+      "expected": 1,
+      "recovered": "1",
+      "exact": true,
+      "crt_samples_exact": true
+    },
+    {
+      "case": "n3-band",
+      "n": 3,
+      "nodes": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "samples": [
+        "6",
+        "34",
+        "430",
+        "3210"
+      ],
+      "expected": 3,
+      "recovered": "3",
+      "exact": true,
+      "crt_samples_exact": true
+    },
+    {
+      "case": "n4-identity",
+      "n": 4,
+      "nodes": [
+        0,
+        1,
+        4,
+        9,
+        16
+      ],
+      "samples": [
+        "24",
+        "65",
+        "824",
+        "10689",
+        "85400"
+      ],
+      "expected": 1,
+      "recovered": "1",
+      "exact": true,
+      "crt_samples_exact": true
+    },
+    {
+      "case": "n4-cyclic",
+      "n": 4,
+      "nodes": [
+        0,
+        1,
+        4,
+        9,
+        16
+      ],
+      "samples": [
+        "24",
+        "65",
+        "824",
+        "10689",
+        "85400"
+      ],
+      "expected": 1,
+      "recovered": "1",
+      "exact": true,
+      "crt_samples_exact": true
+    },
+    {
+      "case": "n4-band",
+      "n": 4,
+      "nodes": [
+        0,
+        1,
+        4,
+        9,
+        16
+      ],
+      "samples": [
+        "24",
+        "173",
+        "4136",
+        "57021",
+        "450008"
+      ],
+      "expected": 5,
+      "recovered": "5",
+      "exact": true,
+      "crt_samples_exact": true
+    }
+  ],
+  "symbolic_interpolation": [
+    {
+      "identity": "a2",
+      "expected": "a2",
+      "exact": true,
+      "closed_form_exact": true,
+      "nodes": [
+        0,
+        1,
+        4
+      ],
+      "weights": [
+        "1/4",
+        "-1/3",
+        "1/12"
+      ]
+    },
+    {
+      "identity": "a3",
+      "expected": "a3",
+      "exact": true,
+      "closed_form_exact": true,
+      "nodes": [
+        0,
+        1,
+        4,
+        9
+      ],
+      "weights": [
+        "-1/36",
+        "1/24",
+        "-1/60",
+        "1/360"
+      ]
+    },
+    {
+      "identity": "a4",
+      "expected": "a4",
+      "exact": true,
+      "closed_form_exact": true,
+      "nodes": [
+        0,
+        1,
+        4,
+        9,
+        16
+      ],
+      "weights": [
+        "1/576",
+        "-1/360",
+        "1/720",
+        "-1/2520",
+        "1/20160"
+      ]
+    }
+  ],
+  "modular_cancellation": {
+    "value": 1,
+    "primes": [
+      2,
+      3
+    ],
+    "avoids_denominator_seven": true,
+    "integer_bits_before_cancellation": "2**2000+1"
+  },
+  "formal_status": "UNVERIFIED: Lean unavailable; no theorem compilation",
+  "scope": "Exact finite reduction checks; default oracle is factorial-size."
+}

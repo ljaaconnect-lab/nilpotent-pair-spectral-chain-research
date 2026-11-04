@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\REGIS\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n61\\evaluate_euler.py",
+    "--child",
+    "validation",
+    "--n",
+    "2"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"n\": 2,\n  \"mode\": \"validation\",\n  \"result\": {\n    \"euler_diagonal_identity\": true,\n    \"grouped_row_identity\": true,\n    \"partial_matching_cofactor_identity\": true,\n    \"final_cofactor_scalar_DAG_generic_evaluation\": false,\n    \"final_marked_formal_z_evaluation\": true,\n    \"serialized_topology_count_input_audit\": true\n  }\n}\n",
+  "stderr": ""
+}

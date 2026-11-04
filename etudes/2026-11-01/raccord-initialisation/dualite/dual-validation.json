@@ -1,0 +1,367 @@
+{
+  "status": "passed",
+  "scope": "finite verification of an exact reader law; explicit realization is not polynomial",
+  "general_polynomial_closure": false,
+  "shift_identity_checks": 2000,
+  "full_tables": 24,
+  "frequency_checks": 136,
+  "local_moment_counterexample_checked": true,
+  "cases": [
+    {
+      "n": 1,
+      "q": 17,
+      "N": 2,
+      "reader": "arbitrary",
+      "propagation_scalar_gates_per_frequency": 1,
+      "table": [
+        10,
+        0
+      ]
+    },
+    {
+      "n": 1,
+      "q": 17,
+      "N": 2,
+      "reader": "projector",
+      "propagation_scalar_gates_per_frequency": 1,
+      "table": [
+        4,
+        0
+      ]
+    },
+    {
+      "n": 2,
+      "q": 17,
+      "N": 4,
+      "reader": "arbitrary",
+      "propagation_scalar_gates_per_frequency": 9,
+      "table": [
+        0,
+        0,
+        7,
+        15
+      ]
+    },
+    {
+      "n": 2,
+      "q": 17,
+      "N": 4,
+      "reader": "projector",
+      "propagation_scalar_gates_per_frequency": 9,
+      "table": [
+        0,
+        0,
+        0,
+        13
+      ]
+    },
+    {
+      "n": 3,
+      "q": 17,
+      "N": 4,
+      "reader": "arbitrary",
+      "propagation_scalar_gates_per_frequency": 50,
+      "table": [
+        0,
+        5,
+        0,
+        12
+      ]
+    },
+    {
+      "n": 3,
+      "q": 17,
+      "N": 4,
+      "reader": "projector",
+      "propagation_scalar_gates_per_frequency": 50,
+      "table": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "n": 4,
+      "q": 17,
+      "N": 8,
+      "reader": "arbitrary",
+      "propagation_scalar_gates_per_frequency": 245,
+      "table": [
+        13,
+        0,
+        8,
+        15,
+        11,
+        11,
+        13,
+        8
+      ]
+    },
+    {
+      "n": 4,
+      "q": 17,
+      "N": 8,
+      "reader": "projector",
+      "propagation_scalar_gates_per_frequency": 245,
+      "table": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 5,
+      "q": 17,
+      "N": 8,
+      "reader": "arbitrary",
+      "propagation_scalar_gates_per_frequency": 1134,
+      "table": [
+        2,
+        7,
+        14,
+        9,
+        15,
+        9,
+        3,
+        16
+      ]
+    },
+    {
+      "n": 5,
+      "q": 17,
+      "N": 8,
+      "reader": "projector",
+      "propagation_scalar_gates_per_frequency": 1134,
+      "table": [
+        0,
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 6,
+      "q": 17,
+      "N": 8,
+      "reader": "arbitrary",
+      "propagation_scalar_gates_per_frequency": 5082,
+      "table": [
+        8,
+        0,
+        3,
+        16,
+        1,
+        4,
+        11,
+        2
+      ]
+    },
+    {
+      "n": 6,
+      "q": 17,
+      "N": 8,
+      "reader": "projector",
+      "propagation_scalar_gates_per_frequency": 5082,
+      "table": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 1,
+      "q": 97,
+      "N": 2,
+      "reader": "arbitrary",
+      "propagation_scalar_gates_per_frequency": 1,
+      "table": [
+        0,
+        36
+      ]
+    },
+    {
+      "n": 1,
+      "q": 97,
+      "N": 2,
+      "reader": "projector",
+      "propagation_scalar_gates_per_frequency": 1,
+      "table": [
+        0,
+        41
+      ]
+    },
+    {
+      "n": 2,
+      "q": 97,
+      "N": 4,
+      "reader": "arbitrary",
+      "propagation_scalar_gates_per_frequency": 9,
+      "table": [
+        25,
+        0,
+        53,
+        0
+      ]
+    },
+    {
+      "n": 2,
+      "q": 97,
+      "N": 4,
+      "reader": "projector",
+      "propagation_scalar_gates_per_frequency": 9,
+      "table": [
+        76,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 3,
+      "q": 97,
+      "N": 4,
+      "reader": "arbitrary",
+      "propagation_scalar_gates_per_frequency": 50,
+      "table": [
+        21,
+        74,
+        82,
+        85
+      ]
+    },
+    {
+      "n": 3,
+      "q": 97,
+      "N": 4,
+      "reader": "projector",
+      "propagation_scalar_gates_per_frequency": 50,
+      "table": [
+        35,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 4,
+      "q": 97,
+      "N": 8,
+      "reader": "arbitrary",
+      "propagation_scalar_gates_per_frequency": 245,
+      "table": [
+        2,
+        11,
+        31,
+        20,
+        46,
+        91,
+        47,
+        52
+      ]
+    },
+    {
+      "n": 4,
+      "q": 97,
+      "N": 8,
+      "reader": "projector",
+      "propagation_scalar_gates_per_frequency": 245,
+      "table": [
+        0,
+        0,
+        0,
+        0,
+        73,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 5,
+      "q": 97,
+      "N": 8,
+      "reader": "arbitrary",
+      "propagation_scalar_gates_per_frequency": 1134,
+      "table": [
+        2,
+        73,
+        72,
+        72,
+        90,
+        38,
+        94,
+        89
+      ]
+    },
+    {
+      "n": 5,
+      "q": 97,
+      "N": 8,
+      "reader": "projector",
+      "propagation_scalar_gates_per_frequency": 1134,
+      "table": [
+        0,
+        27,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 6,
+      "q": 97,
+      "N": 8,
+      "reader": "arbitrary",
+      "propagation_scalar_gates_per_frequency": 5082,
+      "table": [
+        41,
+        48,
+        45,
+        72,
+        2,
+        0,
+        24,
+        7
+      ]
+    },
+    {
+      "n": 6,
+      "q": 97,
+      "N": 8,
+      "reader": "projector",
+      "propagation_scalar_gates_per_frequency": 5082,
+      "table": [
+        0,
+        0,
+        0,
+        0,
+        92,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "source_sha256": {
+    "verify_dual.py": "152eb6afb8c71066ca84a3ee9ccf3faaadea3a92cf9a51c341e9922d4ba09b97",
+    "RACCORD_DUAL.md": "9e31509ed7d6ca2b446e9cdbb11f42ee04e11a77b0bdf56f548d13ab051ee024"
+  }
+}

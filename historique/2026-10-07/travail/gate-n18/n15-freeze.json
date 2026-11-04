@@ -1,0 +1,9 @@
+{
+  "artifact_version": "n15-gray-half-character-v1",
+  "timestamp_utc": "2026-10-07T11:28:11.9015323Z",
+  "recorded_before_first_execution": true,
+  "hypothesis_sha256": "619965bbc4a4ce3bd3263384c9654d42762454935fb67530922d572b48c06363",
+  "implementation_sha256": "cd6660fb8e5f87e684d0851946892bd79ac380737b9b3f14776ee908be544edc",
+  "evaluator_sha256": "37d0d45693416ab6d317514116e47c5fd8edd4c5355b4b5257cb71be0a292ab2",
+  "total_checks": 28
+}

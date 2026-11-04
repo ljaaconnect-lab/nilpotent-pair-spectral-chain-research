@@ -1,0 +1,17 @@
+C:\Users\REGIS\Documents\Codex\2026-10-07\role-context-you-are-the-lead\work\wt-n40\PowerCompiler.lean:45:2: error: unsolved goals
+case zero
+α : Type u
+M : MonoidData α
+a : α
+j : Nat
+⊢ power M a (j + 0) = M.mul (power M a j) (power M a 0)
+
+case succ
+α : Type u
+M : MonoidData α
+a : α
+j n✝ : Nat
+a✝ : power M a (j + n✝) = M.mul (power M a j) (power M a n✝)
+⊢ power M a (j + (n✝ + 1)) = M.mul (power M a j) (power M a (n✝ + 1))
+'SharedBinaryPower.power_add' depends on axioms: [sorryAx]
+'SharedBinaryPower.central_exponent_log_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

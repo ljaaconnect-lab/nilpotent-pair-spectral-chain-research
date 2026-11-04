@@ -1,0 +1,35 @@
+{
+  "scope": "Local division-free polynomial readout identity only. No bound for constructing the sampled polynomial values is assumed or proved.",
+  "source": "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\papier-eth-2026-11-02\\lean\\FiniteDifferenceReadout.lean",
+  "source_sha256": "5de27ee4b1071742044fa329841faeb35b87d774c33edb91f84d38c5529457fb",
+  "source_changed_during_check": false,
+  "replay_sha256": "544ed0a85305b6624a9573994deee760bc0ca257d467ef37b9733878ffcc683e",
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-j1",
+    "-o",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\papier-eth-finite-difference\\FiniteDifferenceReadout.olean",
+    "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\papier-eth-2026-11-02\\lean\\FiniteDifferenceReadout.lean"
+  ],
+  "exit_code": 0,
+  "dependency": {
+    "original_source": "Mathlib/Algebra/Group/ForwardDiff.lean from the project mathlib environment (Lean 4.34.1); MIT license and authors retained verbatim.",
+    "source_sha256": "9823a33fddd322eba9bb427831f175e18efb812bccc97e845a7b7ae1b0421676",
+    "source_copy_identical": true,
+    "exit_code": 0,
+    "command": [
+      "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+      "-j1",
+      "-o",
+      "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\papier-eth-finite-difference\\ForwardDiffLocal.olean",
+      "D:\\Codex\\Projets\\annihilation-collision-orientee\\travail\\papier-eth-finite-difference\\ForwardDiffLocal.lean"
+    ],
+    "stdout": "",
+    "stderr": "",
+    "bundled_source": "D:\\Codex\\Projets\\annihilation-collision-orientee\\documents\\papier-eth-2026-11-02\\lean\\deps\\ForwardDiffLocal.lean",
+    "bundled_source_sha256": "9823a33fddd322eba9bb427831f175e18efb812bccc97e845a7b7ae1b0421676"
+  },
+  "seconds": 17.75,
+  "stdout": "'FiniteDifferenceReadout.eval_zero_from_positive_samples' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FiniteDifferenceReadout.translate_fusion' depends on axioms: [Quot.sound]\n",
+  "stderr": ""
+}

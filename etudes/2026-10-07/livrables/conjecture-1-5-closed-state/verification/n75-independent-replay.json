@@ -1,0 +1,53 @@
+{
+  "node": "n75",
+  "commit": "0f0ba2a8994dd06d91ac824e3ac64d4649f06944",
+  "kind": "independent committed atomic replay",
+  "source_sha256": "2e4ce93c35638d5ec2f6e784dc511874352d4a753a5691d71448972e66c96cdf",
+  "raw_source_equal": true,
+  "command": [
+    "C:\\Users\\REGIS\\Documents\\Codex\\runtimes\\elan\\toolchains\\leanprover--lean4---v4.34.1\\bin\\lean.exe",
+    "-o",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n75-independent\\AtomicFirstPrefix.olean",
+    "C:\\Users\\REGIS\\Documents\\Codex\\2026-10-07\\role-context-you-are-the-lead\\work\\wt-n75-independent\\AtomicFirstPrefix.lean"
+  ],
+  "exit_code": 0,
+  "stdout": "'AtomicFirstPrefix.minor_determinant' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AtomicFirstPrefix.sum_complement' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AtomicFirstPrefix.single_response' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AtomicFirstPrefix.weighted_response' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AtomicFirstPrefix.normalized_minor_response' depends on axioms: [propext, Classical.choice, Quot.sound]\n'AtomicFirstPrefix.linear_extension' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+  "stderr": "",
+  "audits": {
+    "AtomicFirstPrefix.minor_determinant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicFirstPrefix.sum_complement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicFirstPrefix.single_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicFirstPrefix.weighted_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicFirstPrefix.normalized_minor_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "AtomicFirstPrefix.linear_extension": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "accepted_declarations": 6,
+  "atomic_lemmas_verified": true,
+  "elapsed_seconds": 24.26600000000326,
+  "root_conjecture_verified": false,
+  "compiled_sha256": "0c80d814fa193e5156d29452c350acb3cd7d3d51b54431c33932a3fd2ae569ee"
+}

@@ -1,0 +1,17 @@
+{
+  "node": "n59",
+  "artifact_version": "n59-composed-polynomial-criterion-v1",
+  "boundary": "B_dev-conditional-compiler-criterion",
+  "principal_obligations": [
+    {"name": "ConditionalCriterion.compose_input_correct", "statement": "Compose an actual input Circuit with scalarCircuit; its output agrees with the genuine matrix-power contraction under explicit input semantics, and its gate count includes every input Circuit gate."},
+    {"name": "ConditionalCriterion.polynomial_composed_budget", "statement": "For r>=1,n>=2,r<=n^d and input gates<=S<=n^c, the actual composed Circuit gate count is bounded by eval n of a constructed Polynomial Nat Pi(c,d)."}
+  ],
+  "metric": "Number of clean kernel-verified principal obligations divided by 2; supporting declarations must use only standard Lean axioms. Helpers do not change the denominator.",
+  "complete_candidate_budget": 12,
+  "dependency_compiles_separate": true,
+  "probes_counted_separately": true,
+  "new_numerical_experiments": false,
+  "scope": "Conditional scalar gate criterion only. Target representation, uniform constructor running time, rational-literal bit lengths, and admissibility of parameter/rational input leaves remain additional obligations.",
+  "held_out_access": false,
+  "cache_mutations": false
+}
